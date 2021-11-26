@@ -1,0 +1,4 @@
+@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":8:23:8:24|duplicate entity name dsw_pwrok_block
+@E: CD169 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":19:0:19:6|Illegal declaration
+@E: Parse errors encountered - exiting
+

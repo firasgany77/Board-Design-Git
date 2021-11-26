@@ -1,0 +1,1 @@
+@W: MT529 :"c:\users\firas.abdelghani\dropbox\board-design\fpga\lattice\projects\tensor_i22\source\counter.vhd":28:2:28:3|Found inferred clock TOP|FPGA_OSC which controls 8 sequential elements including b2v_inst20.counter[6:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

@@ -1,0 +1,129 @@
+# Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
+# Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Fri Nov 26 12:11:49 2021
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "TOP"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                             Ending                               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                               System                               |     1000.000         |     No paths         |     No paths         |     No paths                         
+TOP|FPGA_OSC                         TOP|FPGA_OSC                         |     1000.000         |     No paths         |     No paths         |     No paths                         
+TOP|FPGA_OSC                         counter|clk_100Khz_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
+counter|clk_100Khz_derived_clock     counter|clk_100Khz_derived_clock     |     No paths         |     1000.000         |     No paths         |     500.000                          
+=====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:DSW_PWROK
+p:FPGA_GPIO_WD
+p:FPGA_TP1
+p:FPGA_TP2
+p:FP_RSTn
+p:GPIO_FPGA_HDR_1
+p:GPIO_FPGA_HDR_2
+p:GPIO_FPGA_HDR_3
+p:GPIO_FPGA_PCH_1
+p:GPIO_FPGA_PCH_2
+p:GPIO_FPGA_PCH_3
+p:GPIO_FPGA_PCH_4
+p:GPIO_FPGA_PCH_5
+p:GPIO_FPGA_PM_1
+p:GPIO_FPGA_PM_2
+p:GPIO_FPGA_PM_3
+p:GPIO_FPGA_PM_4
+p:GPIO_FPGA_SV_1
+p:GPIO_FPGA_SV_2
+p:GPIO_FPGA_SV_3
+p:GPIO_FPGA_SV_4
+p:HDA_SDO_FPGA
+p:PCH_PWROK
+p:PLTRSTn
+p:PM_PWROK
+p:PWRBTN_LED
+p:PWRBTNn
+p:RSMRSTn
+p:RTCRSTn_FPGA
+p:SLP_S3n
+p:SLP_S4n
+p:SLP_S5n
+p:SLP_SUSn
+p:SV_WD_RESET
+p:SYS_PWROK
+p:TPM_GPIO
+p:V1P8A_OK
+p:V5A_EN
+p:V5A_OK
+p:V5S_ENn
+p:V5S_OK
+p:V12S_EN
+p:V12S_EN_PM
+p:V12S_OK
+p:V33A_ENn
+p:V33A_OK
+p:V33DSW_OK
+p:V33S_ENn
+p:V33S_OK
+p:V105A_EN
+p:V105A_OK
+p:VCCIO_EN
+p:VCCIO_OK
+p:VCCSA_EN
+p:VCCSA_READY
+p:VCCST_ENn
+p:VCCST_OK
+p:VCCST_PWRGD_3V3
+p:VDDQ_EN
+p:VDDQ_OK
+p:VPP_EN
+p:VPP_OK
+p:VR_EN
+p:VR_READY
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report
