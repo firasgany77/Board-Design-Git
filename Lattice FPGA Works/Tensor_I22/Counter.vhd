@@ -21,7 +21,8 @@ BEGIN
 
 	PROCESS (CLK_10mhz)
 	BEGIN
-		--if resetn = '0' then
+		--if resetn = '0' then 
+		-- do we need to initialize clk_10mhz?
 		--	counter <= 0;
 		--	clk_100Khz <= '0';
 		--else
