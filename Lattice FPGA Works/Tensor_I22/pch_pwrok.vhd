@@ -2,11 +2,15 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
--- SLP_S3# asserted with or befor PCH_PWROK
+-- SLP_S3# asserted with or before PCH_PWROK
 -- PCH_PWROK is derived from PG of the CPU's VR, with a delay at rising edge after SLP_S3# deassertion of minimum 1 msec (actual 3 msec).
 -- VCCST_PWRGD is tied to PCH_PWROK, and should have a hardware resistive divider, to be at 1V domain (CPU input).
 -- SLP_S3# assertion to VCCST_PWRGD de-assertion: maximum of 1 usec.
 -- VR_VSA_READY is a signal to EC. in the CRB it is connected to VR_READY.
+
+--added:
+-- VCCST_PWRGD can assert before or equal to PCH_PWROK, but must never lag it. It is recommended that both
+-- vccst_pwrgd_3v3 and pch_pwrok are the same signal. why?
 
 ENTITY pch_pwrok_block IS
 	PORT (

@@ -1,9 +1,9 @@
 LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
-
+-- in Tensor_I22 VCCIO, VCCSA are replaced with VCCIN. 
 -- VCCIO and VCCSA must ramp after VCCST and VDDQ are ready.
--- VCCSA_EN wil ramp only after VCCIO_PWROK <- taken care for at vccsa_vr_en_block.
+-- VCCSA_EN wil ramp only after VCCIO_PWROK (Implemented at vccsa_vr_en).
 -- VDDQ probably ramps up after VCCST (FET opening of VCCST VS. VDDQ VR ramp-up).
 -- SLP_S3# assertion to VCCIO VR disabled: 1 usec (from PDG)
 
