@@ -132,8 +132,8 @@
            (port N_551_g (direction INPUT))
            (port SYNTHESIZED_WIRE_47keep_3 (direction INPUT))
            (port G_2820 (direction INPUT))
-           (port delayed_vr_vccsa_ok_RNIM4I69 (direction OUTPUT))
-           (port delayed_vr_vccsa_ok (direction OUTPUT))
+           (port delayed_vccin_vccinaux_ok_RNIM4I69 (direction OUTPUT))
+           (port delayed_vccin_vccinaux_ok (direction OUTPUT))
            (port SYNTHESIZED_WIRE_2 (direction INPUT))
          )
          (contents
@@ -221,7 +221,7 @@
           (instance (rename count_RNIT3GF7_15 "count_RNIT3GF7[15]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "E2E2"))
           )
-          (instance delayed_vr_vccsa_ok_RNIM4I69 (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+          (instance delayed_vccin_vccinaux_ok_RNIM4I69 (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "8888"))
           )
           (instance (rename curr_state_RNI8KCH_1 "curr_state_RNI8KCH[1]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
@@ -230,7 +230,7 @@
           (instance (rename curr_state_RNI5CKH3_0 "curr_state_RNI5CKH3[0]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "E2E2"))
           )
-          (instance delayed_vr_vccsa_ok_RNI2RRN6 (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+          (instance delayed_vccin_vccinaux_ok_RNI2RRN6 (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "F4B0"))
           )
           (instance (rename curr_state_7_1_0__N_33_i "curr_state_7_1_0_.N_33_i") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
@@ -347,7 +347,7 @@
           )
           (instance (rename count_13 "count[13]") (viewRef PRIM (cellRef SB_DFFER (libraryRef sb_ice)))
           )
-          (instance delayed_vr_vccsa_ok (viewRef PRIM (cellRef SB_DFF (libraryRef sb_ice)))
+          (instance delayed_vccin_vccinaux_ok (viewRef PRIM (cellRef SB_DFF (libraryRef sb_ice)))
           )
           (instance un2_count_1_cry_1_c (viewRef PRIM (cellRef SB_CARRY (libraryRef sb_ice)))          )
           (instance un2_count_1_cry_2_c (viewRef PRIM (cellRef SB_CARRY (libraryRef sb_ice)))          )
@@ -530,8 +530,8 @@
            (portRef I3 (instanceRef curr_state_7_1_0__N_33_i))
            (portRef I2 (instanceRef curr_state_7_1_0__N_33_i))
            (portRef I3 (instanceRef curr_state_RNI5CKH3_0))
-           (portRef I3 (instanceRef delayed_vr_vccsa_ok_RNIM4I69))
-           (portRef I2 (instanceRef delayed_vr_vccsa_ok_RNIM4I69))
+           (portRef I3 (instanceRef delayed_vccin_vccinaux_ok_RNIM4I69))
+           (portRef I2 (instanceRef delayed_vccin_vccinaux_ok_RNIM4I69))
            (portRef I3 (instanceRef count_RNIT3GF7_15))
            (portRef I3 (instanceRef count_RNIR0FF7_14))
            (portRef I3 (instanceRef count_RNILNBF7_11))
@@ -832,17 +832,17 @@
           (net (rename synthesized_wire_2 "SYNTHESIZED_WIRE_2") (joined
            (portRef SYNTHESIZED_WIRE_2)
            (portRef I0 (instanceRef count_0_sqmuxa_0_o2_4))
-           (portRef I0 (instanceRef delayed_vr_vccsa_ok_RNIM4I69))
+           (portRef I0 (instanceRef delayed_vccin_vccinaux_ok_RNIM4I69))
           ))
-          (net (rename delayed_vr_vccsa_okZ0 "delayed_vr_vccsa_ok") (joined
-           (portRef O (instanceRef delayed_vr_vccsa_ok_RNI2RRN6))
-           (portRef D (instanceRef delayed_vr_vccsa_ok))
-           (portRef I1 (instanceRef delayed_vr_vccsa_ok_RNIM4I69))
-           (portRef delayed_vr_vccsa_ok)
+          (net (rename delayed_vccin_vccinaux_okZ0 "delayed_vccin_vccinaux_ok") (joined
+           (portRef O (instanceRef delayed_vccin_vccinaux_ok_RNI2RRN6))
+           (portRef D (instanceRef delayed_vccin_vccinaux_ok))
+           (portRef I1 (instanceRef delayed_vccin_vccinaux_ok_RNIM4I69))
+           (portRef delayed_vccin_vccinaux_ok)
           ))
-          (net (rename delayed_vr_vccsa_ok_RNIM4IZ0Z69 "delayed_vr_vccsa_ok_RNIM4I69") (joined
-           (portRef O (instanceRef delayed_vr_vccsa_ok_RNIM4I69))
-           (portRef delayed_vr_vccsa_ok_RNIM4I69)
+          (net (rename delayed_vccin_vccinaux_ok_RNIM4IZ0Z69 "delayed_vccin_vccinaux_ok_RNIM4I69") (joined
+           (portRef O (instanceRef delayed_vccin_vccinaux_ok_RNIM4I69))
+           (portRef delayed_vccin_vccinaux_ok_RNIM4I69)
           ))
           (net (rename g_2820 "G_2820") (joined
            (portRef G_2820)
@@ -877,22 +877,22 @@
           ))
           (net N_223_0 (joined
            (portRef O (instanceRef curr_state_RNIUO703_0_0))
-           (portRef I0 (instanceRef delayed_vr_vccsa_ok_RNI2RRN6))
+           (portRef I0 (instanceRef delayed_vccin_vccinaux_ok_RNI2RRN6))
           ))
           (net (rename n_551_g "N_551_g") (joined
            (portRef N_551_g)
            (portRef E (instanceRef curr_state_1))
            (portRef E (instanceRef curr_state_0))
-           (portRef I1 (instanceRef delayed_vr_vccsa_ok_RNI2RRN6))
+           (portRef I1 (instanceRef delayed_vccin_vccinaux_ok_RNI2RRN6))
           ))
-          (net delayed_vr_vccsa_ok_0 (joined
-           (portRef Q (instanceRef delayed_vr_vccsa_ok))
-           (portRef I2 (instanceRef delayed_vr_vccsa_ok_RNI2RRN6))
+          (net delayed_vccin_vccinaux_ok_0 (joined
+           (portRef Q (instanceRef delayed_vccin_vccinaux_ok))
+           (portRef I2 (instanceRef delayed_vccin_vccinaux_ok_RNI2RRN6))
           ))
           (net (rename curr_state_RNIUO703Z0Z_0 "curr_state_RNIUO703(0)") (joined
            (portRef O (instanceRef curr_state_RNIUO703_0))
            (portRef I2 (instanceRef curr_state_7_1_0__m4_0))
-           (portRef I3 (instanceRef delayed_vr_vccsa_ok_RNI2RRN6))
+           (portRef I3 (instanceRef delayed_vccin_vccinaux_ok_RNI2RRN6))
           ))
           (net N_33_i (joined
            (portRef O (instanceRef curr_state_7_1_0__N_33_i))
@@ -994,7 +994,7 @@
           ))
           (net (rename fpga_osc "FPGA_OSC") (joined
            (portRef FPGA_OSC)
-           (portRef C (instanceRef delayed_vr_vccsa_ok))
+           (portRef C (instanceRef delayed_vccin_vccinaux_ok))
            (portRef C (instanceRef count_13))
            (portRef C (instanceRef count_14))
            (portRef C (instanceRef count_15))
@@ -2733,9 +2733,9 @@
            (port V5S_ENn (direction OUTPUT))
            (port SLP_S3n (direction INPUT))
            (port RSMRSTn_RNIIJR02 (direction INPUT))
-           (port delayed_vr_vccsa_ok_RNIM4I69 (direction INPUT))
+           (port delayed_vccin_vccinaux_ok_RNIM4I69 (direction INPUT))
            (port GPIO_FPGA_PCH_1 (direction INPUT))
-           (port delayed_vr_vccsa_ok (direction INPUT))
+           (port delayed_vccin_vccinaux_ok (direction INPUT))
            (port SYNTHESIZED_WIRE_2 (direction OUTPUT))
            (port SYNTHESIZED_WIRE_47keep_3 (direction INPUT))
          )
@@ -3329,8 +3329,8 @@
            (portRef I2 (instanceRef curr_state_13_2_0__m6_am))
            (portRef SYNTHESIZED_WIRE_2)
           ))
-          (net delayed_vr_vccsa_ok (joined
-           (portRef delayed_vr_vccsa_ok)
+          (net delayed_vccin_vccinaux_ok (joined
+           (portRef delayed_vccin_vccinaux_ok)
            (portRef I3 (instanceRef curr_state_13_2_0__m6_bm))
            (portRef I3 (instanceRef curr_state_13_2_0__m6_am))
           ))
@@ -3348,8 +3348,8 @@
            (portRef I0 (instanceRef curr_state_13_2_0__N_7_i))
            (portRef I2 (instanceRef curr_state_13_2_0__m6_ns))
           ))
-          (net (rename delayed_vr_vccsa_ok_rnim4i69 "delayed_vr_vccsa_ok_RNIM4I69") (joined
-           (portRef delayed_vr_vccsa_ok_RNIM4I69)
+          (net (rename delayed_vccin_vccinaux_ok_rnim4i69 "delayed_vccin_vccinaux_ok_RNIM4I69") (joined
+           (portRef delayed_vccin_vccinaux_ok_RNIM4I69)
            (portRef I1 (instanceRef curr_state_13_2_0__i4_mux_i))
            (portRef I0 (instanceRef curr_state_13_2_0__N_9_i))
            (portRef I2 (instanceRef curr_state_13_2_0__m11_ns))
@@ -13823,9 +13823,9 @@
            (portRef SYNTHESIZED_WIRE_26 (instanceRef b2v_inst5))
            (portRef SYNTHESIZED_WIRE_26 (instanceRef b2v_inst31))
           ))
-          (net (rename b2v_inst6_delayed_vr_vccsa_ok "b2v_inst6.delayed_vr_vccsa_ok") (joined
-           (portRef delayed_vr_vccsa_ok (instanceRef b2v_inst6))
-           (portRef delayed_vr_vccsa_ok (instanceRef b2v_inst200))
+          (net (rename b2v_inst6_delayed_vccin_vccinaux_ok "b2v_inst6.delayed_vccin_vccinaux_ok") (joined
+           (portRef delayed_vccin_vccinaux_ok (instanceRef b2v_inst6))
+           (portRef delayed_vccin_vccinaux_ok (instanceRef b2v_inst200))
           ))
           (net (rename b2v_inst11_g1_0_0 "b2v_inst11.g1_0_0") (joined
            (portRef O (instanceRef SLP_S3n_RNIN0HS2))
@@ -13895,8 +13895,8 @@
            (portRef V5A_EN)
           ))
           (net (rename vccst_pwrgd_3v3 "VCCST_PWRGD_3V3") (joined
-           (portRef delayed_vr_vccsa_ok_RNIM4I69 (instanceRef b2v_inst6))
-           (portRef delayed_vr_vccsa_ok_RNIM4I69 (instanceRef b2v_inst200))
+           (portRef delayed_vccin_vccinaux_ok_RNIM4I69 (instanceRef b2v_inst6))
+           (portRef delayed_vccin_vccinaux_ok_RNIM4I69 (instanceRef b2v_inst200))
            (portRef VCCST_PWRGD_3V3)
            (portRef SYS_PWROK)
            (portRef PCH_PWROK)

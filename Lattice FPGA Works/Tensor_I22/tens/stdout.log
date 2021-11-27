@@ -721,3 +721,113 @@ Return Code: 1
 Run Time:00h:00m:06s
 Complete: Map on tens_syn|tens_Implmnt
 Complete: Logic Synthesis on tens_syn|tens_Implmnt
+log file: "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srr"
+Running: tens_Implmnt in foreground
+
+Running tens_syn|tens_Implmnt
+
+Running: compile (Compile) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:19:42 2021
+
+Running: compile_flow (Compile Process) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:19:42 2021
+
+Running: compiler (Compile Input) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:19:42 2021
+compiler exited with errors
+Job failed on: tens_syn|tens_Implmnt
+
+Job: "compiler" terminated with error status: 2
+See log file: "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synlog\tens_compiler.srr"
+# Sat Nov 27 18:19:42 2021
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on tens_syn|tens_Implmnt
+Complete: Compile on tens_syn|tens_Implmnt
+Complete: Logic Synthesis on tens_syn|tens_Implmnt
+Opening object source file c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+log file: "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srr"
+Running: compile in foreground
+
+
+Running: compile (Compile) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:02 2021
+
+Running: compile_flow (Compile Process) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:02 2021
+
+Running: compiler (Compile Input) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:02 2021
+Copied C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_comp.srs to C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srs
+
+compiler completed
+# Sat Nov 27 18:20:03 2021
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Running: multi_srs_gen (Multi-srs Generator) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:03 2021
+
+multi_srs_gen completed
+# Sat Nov 27 18:20:03 2021
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_mult.srs to C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srs
+Complete: Compile Process on tens_syn|tens_Implmnt
+
+Running: premap (Pre-mapping) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:03 2021
+
+premap completed with warnings
+# Sat Nov 27 18:20:04 2021
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on tens_syn|tens_Implmnt
+log file: "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srr"
+Running: tens_Implmnt in foreground
+
+Running tens_syn|tens_Implmnt
+
+Running: compile (Compile) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+
+Running: compile_flow (Compile Process) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+
+Running: compiler (Compile Input) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+
+compiler completed
+# Sat Nov 27 18:20:18 2021
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Running: multi_srs_gen (Multi-srs Generator) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+Up-To-Date: multi_srs_gen. No run necessary
+Complete: Compile Process on tens_syn|tens_Implmnt
+
+Running: premap (Pre-mapping) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+Up-To-Date: premap. No run necessary
+Complete: Compile on tens_syn|tens_Implmnt
+
+Running: map (Map) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+
+Running: fpga_mapper (Map & Optimize) on tens_syn|tens_Implmnt
+# Sat Nov 27 18:20:18 2021
+Copied C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_m.srm to C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srm
+
+fpga_mapper completed with warnings
+# Sat Nov 27 18:20:25 2021
+
+Return Code: 1
+Run Time:00h:00m:07s
+Complete: Map on tens_syn|tens_Implmnt
+Complete: Logic Synthesis on tens_syn|tens_Implmnt

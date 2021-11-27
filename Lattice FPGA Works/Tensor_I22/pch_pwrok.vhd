@@ -27,34 +27,34 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 	ATTRIBUTE enum_encoding : STRING;
 	ATTRIBUTE enum_encoding OF state_type : TYPE IS "01 00 10"; --<< no_pwrgd is default after FPGA power-on
 	SIGNAL curr_state : state_type := no_pwrgd;
-	SIGNAL delayed_vr_vccsa_ok : STD_LOGIC := '0';
-	SIGNAL vr_vccsa_ok : STD_LOGIC;
+	SIGNAL delayed_vccin_vccinaux_ok : STD_LOGIC := '0';
+	SIGNAL vccin_vccinaux_ok : STD_LOGIC;
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	vr_vccsa_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3 = '1') -- Delay trigger
+	vccin_vccinaux_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3 = '1') -- Delay trigger
 		ELSE
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vr_vccsa_ok = '1') AND (slp_s3 = '1') -- Output
+	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output
 		ELSE
 		'0';
 
-	vccst_pwrgd_3v3 <= '1' WHEN (delayed_vr_vccsa_ok = '1') AND (slp_s3 = '1') -- Output   
+	vccst_pwrgd_3v3 <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output   
 		ELSE
 		'0';
 
-	PROCESS (clk_100k) -- 5 mSec delay process, delay at pwrok rising edge:  vr_vccsa_ok -> delayed_vr_vccsa_ok
+	PROCESS (clk_100k) -- 5 mSec delay process, delay at pwrok rising edge:  vccin_vccinaux_ok -> delayed_vccin_vccinaux_ok
 	BEGIN
 		IF (clk_100k = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>
-					IF (vr_vccsa_ok = '1') THEN
+					IF (vccin_vccinaux_ok = '1') THEN
 						curr_state <= pwrgd;
-						delayed_vr_vccsa_ok <= '1';
+						delayed_vccin_vccinaux_ok <= '1';
 					ELSE
-						curr_state <= no_pwrgd; -- short delay at vr_vccsa_ok transition from 1 to 0
-						delayed_vr_vccsa_ok <= '0'; -- delayed_vr_vccsa_ok signal will not assert at vr_vccsa_ok glitches of 1T
+						curr_state <= no_pwrgd; -- short delay at vccin_vccinaux_ok transition from 1 to 0
+						delayed_vccin_vccinaux_ok <= '0'; -- delayed_vccin_vccinaux_ok signal will not assert at vccin_vccinaux_ok glitches of 1T
 					END IF;
 
 				WHEN delay => -- 	
@@ -65,12 +65,12 @@ BEGIN
 						count <= count + 1;
 						curr_state <= delay;
 					END IF;
-					delayed_vr_vccsa_ok <= '0';
+					delayed_vccin_vccinaux_ok <= '0';
 				WHEN no_pwrgd =>
-					IF (vr_vccsa_ok = '1') THEN
+					IF (vccin_vccinaux_ok = '1') THEN
 						curr_state <= delay; -- transition to high can be done without a delay (SLP_S4# is already high)
 						count <= (OTHERS => '0');
-						delayed_vr_vccsa_ok <= '0';
+						delayed_vccin_vccinaux_ok <= '0';
 					ELSE
 						curr_state <= no_pwrgd;
 					END IF;
