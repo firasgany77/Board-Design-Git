@@ -22,7 +22,7 @@ END counter;
 ARCHITECTURE counter_arch OF counter IS
 	SIGNAL counter : INTEGER := 1;
 	SIGNAL tmp : STD_LOGIC := '0';
-	locked <= 1;
+	SIGNAL tmp_locked: STD_LOGIC := '1';
 BEGIN
 
 	PROCESS (CLK_10mhz)
@@ -38,6 +38,7 @@ BEGIN
 				END IF;
 			END IF;
 			clk_100Khz <= tmp;
+			locked <=tmp_locked;
 --		END IF;
 	END PROCESS;
 
