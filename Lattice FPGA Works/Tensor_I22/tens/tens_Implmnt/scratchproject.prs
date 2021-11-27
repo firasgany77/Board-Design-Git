@@ -5,9 +5,9 @@
 #project files
 add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/Counter.vhd"
 add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/dsw_pwrok.vhd"
-add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/hda_strap_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/pch_pwrok_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/powerled_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/hda_strap.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/pch_pwrok.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/powerled.vhd"
 add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/pwrbtn.vhd"
 add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/rsmrst_pwrgd_vh.vhd"
 add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/Top.vhd"

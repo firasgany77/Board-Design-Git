@@ -1,3 +1,2 @@
-@E: CD204 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":31:1:31:6|Expecting sequential statement
-@E: Parse errors encountered - exiting
+@E: Can't open input file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap_vh.vhd
 

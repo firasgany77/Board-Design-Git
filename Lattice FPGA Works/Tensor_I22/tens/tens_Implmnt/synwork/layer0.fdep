@@ -12,9 +12,9 @@
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\hyperents.vhd":1637487772
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\Counter.vhd":1638016772
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\dsw_pwrok.vhd":1637847909
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\hda_strap_vh.vhd":1638016377
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\pch_pwrok_vh.vhd":1638015796
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\powerled_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\hda_strap.vhd":1638019385
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\pch_pwrok.vhd":1638019391
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\powerled.vhd":1638019402
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\pwrbtn.vhd":1637847909
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\rsmrst_pwrgd_vh.vhd":1637847909
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\vccio_en_vh.vhd":1637847909
@@ -23,9 +23,9 @@
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\Top.vhd":1638011823
 0 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd" vhdl
 1 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd" vhdl
-2 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap_vh.vhd" vhdl
-3 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok_vh.vhd" vhdl
-4 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled_vh.vhd" vhdl
+2 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap.vhd" vhdl
+3 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd" vhdl
+4 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd" vhdl
 5 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pwrbtn.vhd" vhdl
 6 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd_vh.vhd" vhdl
 7 "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd" vhdl
