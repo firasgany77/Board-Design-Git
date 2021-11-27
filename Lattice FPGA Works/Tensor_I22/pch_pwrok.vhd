@@ -6,18 +6,17 @@ USE IEEE.numeric_std.ALL;
 -- PCH_PWROK is derived from PG of the CPU's VR, with a delay at rising edge after SLP_S3# deassertion of minimum 1 msec (actual 3 msec).
 -- VCCST_PWRGD is tied to PCH_PWROK, and should have a hardware resistive divider, to be at 1V domain (CPU input).
 -- SLP_S3# assertion to VCCST_PWRGD de-assertion: maximum of 1 usec.
--- VR_VSA_READY is a signal to EC. in the CRB it is connected to VR_READY.
 
 --added:
 -- VCCST_PWRGD can assert before or equal to PCH_PWROK, but must never lag it. It is recommended that both
 -- vccst_pwrgd_3v3 and pch_pwrok are the same signal. why?
--- vccin_pwrok relpaced vccsa_pwrok
+-- vr_ready_vccinaux relpaced vccsa_pwrok
 
 ENTITY pch_pwrok_block IS
 	PORT (
 		slp_s3 : IN STD_LOGIC; -- SLP_S3#
-		vr_ready : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		vccin_pwrok : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		vr_ready_vccin : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		vr_ready_vccinaux : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		vccst_pwrgd_3v3 : OUT STD_LOGIC;
 		pch_pwrok : OUT STD_LOGIC);
@@ -32,7 +31,7 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 	SIGNAL vr_vccsa_ok : STD_LOGIC;
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	vr_vccsa_ok <= '1' WHEN (vr_ready = '1') AND (vccin_pwrok = '1') AND (slp_s3 = '1') -- Delay trigger
+	vr_vccsa_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3 = '1') -- Delay trigger
 		ELSE
 		'0';
 

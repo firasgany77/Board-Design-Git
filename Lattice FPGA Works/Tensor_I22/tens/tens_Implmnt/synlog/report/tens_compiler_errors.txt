@@ -1,2 +1,3 @@
-@E: Can't open input file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd_vh.vhd
+@E: CD126 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":92:1:92:1|Expecting identifier
+@E: Parse errors encountered - exiting
 

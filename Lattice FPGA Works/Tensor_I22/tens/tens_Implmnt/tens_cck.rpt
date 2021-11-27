@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Sat Nov 27 15:26:17 2021
+# Written on Sat Nov 27 18:20:04 2021
 
 
 ##### DESIGN INFO #######################################################
@@ -90,7 +90,6 @@ p:V105A_OK
 p:VCCIO_EN
 p:VCCIO_OK
 p:VCCSA_EN
-p:VCCSA_READY
 p:VCCST_ENn
 p:VCCST_OK
 p:VCCST_PWRGD_3V3
@@ -99,7 +98,8 @@ p:VDDQ_OK
 p:VPP_EN
 p:VPP_OK
 p:VR_EN
-p:VR_READY
+p:VR_READY_VCCIN
+p:VR_READY_VCCINAUX
 
 
 Inapplicable constraints

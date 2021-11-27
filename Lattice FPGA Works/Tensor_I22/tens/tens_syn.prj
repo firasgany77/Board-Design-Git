@@ -1,21 +1,21 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_syn.prj
-#--  Written on Sat Nov 27 13:04:35 2021
+#--  Written on Sat Nov 27 18:19:39 2021
 
 
 #project files
 add_file -vhdl -lib work "../Counter.vhd"
 add_file -vhdl -lib work "../dsw_pwrok.vhd"
-add_file -vhdl -lib work "../hda_strap_vh.vhd"
-add_file -vhdl -lib work "../pch_pwrok_vh.vhd"
-add_file -vhdl -lib work "../powerled_vh.vhd"
+add_file -vhdl -lib work "../hda_strap.vhd"
+add_file -vhdl -lib work "../pch_pwrok.vhd"
+add_file -vhdl -lib work "../powerled.vhd"
 add_file -vhdl -lib work "../pwrbtn.vhd"
-add_file -vhdl -lib work "../rsmrst_pwrgd_vh.vhd"
+add_file -vhdl -lib work "../rsmrst_pwrgd.vhd"
 add_file -vhdl -lib work "../Top.vhd"
-add_file -vhdl -lib work "../vccio_en_vh.vhd"
-add_file -vhdl -lib work "../vccsa_vr_en_vh.vhd"
-add_file -vhdl -lib work "../vpp_vddq_vh.vhd"
+add_file -vhdl -lib work "../vccio_en.vhd"
+add_file -vhdl -lib work "../vccsa_vr_en.vhd"
+add_file -vhdl -lib work "../vpp_vddq.vhd"
 
 
 

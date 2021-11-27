@@ -12,14 +12,14 @@
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\Counter.vhd":1638016772
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\dsw_pwrok.vhd":1637847909
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\hda_strap.vhd":1638019385
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\pch_pwrok.vhd":1638019391
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\pch_pwrok.vhd":1638029964
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\powerled.vhd":1638019402
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\pwrbtn.vhd":1637847909
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\rsmrst_pwrgd.vhd":1638019481
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\vccio_en.vhd":1638019488
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\vccsa_vr_en.vhd":1638019524
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\vccio_en.vhd":1638021772
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\vccsa_vr_en.vhd":1638020678
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\vpp_vddq.vhd":1638019503
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\Top.vhd":1638011823
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\Tensor_I22\\Top.vhd":1638029998
 0			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd" vhdl
 1			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd" vhdl
 2			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap.vhd" vhdl

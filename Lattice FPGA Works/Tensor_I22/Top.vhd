@@ -51,11 +51,11 @@ ENTITY TOP IS
 		V5A_OK : IN STD_LOGIC;
 		V5S_OK : IN STD_LOGIC;
 		VCCIO_OK : IN STD_LOGIC;
-		VCCIN_READY : IN STD_LOGIC; --replaced VCCSA_READY
+		VR_READY_VCCINAUX : IN STD_LOGIC; --replaced VCCSA_READY
 		VCCST_OK : IN STD_LOGIC;
 		VDDQ_OK : IN STD_LOGIC;
 		VPP_OK : IN STD_LOGIC;
-		VR_READY : IN STD_LOGIC;
+		VR_READY_VCCIN : IN STD_LOGIC; --replaced VR_READY
 		FP_RSTn : IN STD_LOGIC;
 		PLTRSTn : IN STD_LOGIC;
 		SLP_S3n : IN STD_LOGIC;
@@ -86,10 +86,8 @@ ENTITY TOP IS
 		V5S_ENn : OUT STD_LOGIC;
 		VCCST_ENn : OUT STD_LOGIC;
 		V33A_ENn : OUT STD_LOGIC;
-		HDA_SDO_FPGA : OUT STD_LOGIC;
+		HDA_SDO_FPGA : OUT STD_LOGIC
 
-		--NEW
-		VR_READY_VCCINAUX: IN STD_LOGIC
 
 	);
 END TOP;
@@ -228,8 +226,8 @@ ARCHITECTURE bdf_type OF TOP IS
 	COMPONENT pch_pwrok_block
 		PORT (
 			slp_s3 : IN STD_LOGIC;
-			vr_ready : IN STD_LOGIC;
-			vccsa_pwrok : IN STD_LOGIC;
+			vr_ready_vccin : IN STD_LOGIC;
+			vr_ready_vccinaux : IN STD_LOGIC;
 			clk_100k : IN STD_LOGIC;
 			vccst_pwrgd_3v3 : OUT STD_LOGIC;
 			pch_pwrok : OUT STD_LOGIC
@@ -398,8 +396,8 @@ BEGIN
 	b2v_inst6 : pch_pwrok_block
 	PORT MAP(
 		slp_s3 => SYNTHESIZED_WIRE_48,
-		vr_ready => VR_READY,
-		vccsa_pwrok => VCCIN_READY,
+		vr_ready_vccin => VR_READY_VCCIN,
+		vr_ready_vccinaux => VR_READY_VCCINAUX,
 		clk_100k => SYNTHESIZED_WIRE_47,
 		vccst_pwrgd_3v3 => SYNTHESIZED_WIRE_11,
 		pch_pwrok => SYNTHESIZED_WIRE_28);
