@@ -1,5 +1,5 @@
-@W: CD280 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":148:11:148:13|Unbound component adc mapped to black box
-@W: CD280 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":191:11:191:25|Unbound component voltage_monitor mapped to black box
+@W: CD280 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":146:11:146:13|Unbound component adc mapped to black box
+@W: CD280 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":189:11:189:25|Unbound component voltage_monitor mapped to black box
 @W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok_vh.vhd":42:1:42:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok_vh.vhd":57:9:57:13|Referenced variable count is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok_vh.vhd":48:9:48:19|Referenced variable vr_vccsa_ok is not in sensitivity list.
@@ -57,5 +57,4 @@
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled_vh.vhd":34:2:34:3|Latch generated from process for signal count_clk(15 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled_vh.vhd":34:2:34:3|Latch generated from process for signal func_state(1 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled_vh.vhd":136:2:136:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL240 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":90:2:90:9|Signal FPGA_TP2 is floating; a simulation mismatch is possible.
 
