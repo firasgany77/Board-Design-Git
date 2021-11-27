@@ -1,4 +1,4 @@
-# Fri Nov 26 12:11:48 2021
+# Sat Nov 27 13:04:45 2021
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -7,8 +7,8 @@ Product Version L-2016.09L+ice40
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
 @A: MF827 |No constraint file specified.
-@L: C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\tens\tens_Implmnt\tens_scck.rpt 
-Printing clock  summary report in "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\tens\tens_Implmnt\tens_scck.rpt" file 
+@L: C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens_scck.rpt 
+Printing clock  summary report in "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
@@ -35,18 +35,18 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 *****************
 
-Start                                Requested     Requested     Clock                           Clock                     Clock
-Clock                                Frequency     Period        Type                            Group                     Load 
---------------------------------------------------------------------------------------------------------------------------------
-System                               1.0 MHz       1000.000      system                          system_clkgroup           0    
-TOP|FPGA_OSC                         1.0 MHz       1000.000      inferred                        Autoconstr_clkgroup_0     8    
-counter|clk_100Khz_derived_clock     1.0 MHz       1000.000      derived (from TOP|FPGA_OSC)     Autoconstr_clkgroup_0     935  
-================================================================================================================================
+Start                         Requested     Requested     Clock                           Clock                     Clock
+Clock                         Frequency     Period        Type                            Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------
+System                        1.0 MHz       1000.000      system                          system_clkgroup           0    
+TOP|FPGA_OSC                  1.0 MHz       1000.000      inferred                        Autoconstr_clkgroup_0     33   
+counter|tmp_derived_clock     1.0 MHz       1000.000      derived (from TOP|FPGA_OSC)     Autoconstr_clkgroup_0     935  
+=========================================================================================================================
 
-@W: MT529 :"c:\users\firas.abdelghani\dropbox\board-design\fpga\lattice\projects\tensor_i22\source\counter.vhd":28:2:28:3|Found inferred clock TOP|FPGA_OSC which controls 8 sequential elements including b2v_inst20.counter[6:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":33:3:33:4|Found inferred clock TOP|FPGA_OSC which controls 33 sequential elements including b2v_inst20.counter[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\tens\tens_Implmnt\tens.sap.
+@N: BN225 |Writing default property annotation file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
@@ -60,6 +60,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Nov 26 12:11:49 2021
+# Sat Nov 27 13:04:46 2021
 
 ###########################################################]

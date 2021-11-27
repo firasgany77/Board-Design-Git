@@ -33,9 +33,8 @@ BEGIN
 			IF rising_edge(CLK_10mhz) THEN
 				counter <= counter + 1;
 				IF (counter = 50) THEN
-					counter <= 0;
 					tmp <= NOT tmp;
-					tmp <= 1;
+					counter <= 1;
 				END IF;
 			END IF;
 			clk_100Khz <= tmp;
