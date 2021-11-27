@@ -1,2 +1,3 @@
-@E: CD648 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":38:12:38:12|Expression does not match type std_ulogic
+@E: CD169 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":25:1:25:6|Illegal declaration
+@E: Parse errors encountered - exiting
 
