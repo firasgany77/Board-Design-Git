@@ -20,8 +20,8 @@
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq.vhd":20:17:20:18|Using user defined encoding for type state_type.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd":5:7:5:20|Synthesizing work.powerled_block.powerled_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd":16:17:16:18|Using user defined encoding for type state_type.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":15:2:15:9|Input clk_100k is unused.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en.vhd":16:2:16:9|Input clk_100k is unused.
+@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":15:2:15:11|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en.vhd":16:2:16:11|Input clk_100Khz is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd":11:2:11:11|Input mainpwr_OK is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":27:2:27:16|Input GPIO_FPGA_HDR_1 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":28:2:28:16|Input GPIO_FPGA_HDR_2 is unused.
@@ -48,4 +48,6 @@
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":67:2:67:9|Input SLP_SUSn is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":68:2:68:9|Input PM_PWROK is unused.
 @N|Running in 64-bit mode
+@N: NF107 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":25:7:25:9|Selected library: work cell: TOP view bdf_type as top level
+@N: NF107 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":25:7:25:9|Selected library: work cell: TOP view bdf_type as top level
 

@@ -1,3 +1,3 @@
-@E: CD126 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":92:1:92:1|Expecting identifier
+@E: CD200 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":41:3:41:14|Misspelled variable, signal or procedure name?
 @E: Parse errors encountered - exiting
 

@@ -12,7 +12,7 @@ ENTITY vccio_en_block IS
 		slp_s3 : IN STD_LOGIC; -- SLP_S3#
 		vddq_ok : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vccst_ok : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec   <- PROVISION, NOT IN USE	
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec   <- PROVISION, NOT IN USE	
 		vccio_en : OUT STD_LOGIC);
 END vccio_en_block;
 

@@ -17,7 +17,7 @@ ENTITY pch_pwrok_block IS
 		slp_s3 : IN STD_LOGIC; -- SLP_S3#
 		vr_ready_vccin : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vr_ready_vccinaux : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		vccst_pwrgd_3v3 : OUT STD_LOGIC;
 		pch_pwrok : OUT STD_LOGIC);
 END pch_pwrok_block;
@@ -43,9 +43,9 @@ BEGIN
 		ELSE
 		'0';
 
-	PROCESS (clk_100k) -- 5 mSec delay process, delay at pwrok rising edge:  vccin_vccinaux_ok -> delayed_vccin_vccinaux_ok
+	PROCESS (clk_100Khz) -- 5 mSec delay process, delay at pwrok rising edge:  vccin_vccinaux_ok -> delayed_vccin_vccinaux_ok
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>

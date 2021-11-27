@@ -7,7 +7,7 @@ ENTITY hda_strap_block IS
 	PORT (
 		pch_pwrok : IN STD_LOGIC; -- SLP_S3# + 3 msec delay (comes from vccst_pwrgd_3v3)
 		GPIO_PCH : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		HDA_SDO_FPGA : OUT STD_LOGIC);
 END hda_strap_block;
 
@@ -19,9 +19,9 @@ ARCHITECTURE hda_strap_block_arch OF hda_strap_block IS
 	SIGNAL count : unsigned(17 DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
-	PROCESS (clk_100k) -- 
+	PROCESS (clk_100Khz) -- 
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN start => -- 	After FPGA power on, waiting for PCH_PWROK = 1

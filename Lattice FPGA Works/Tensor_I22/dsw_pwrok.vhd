@@ -10,7 +10,7 @@ ENTITY dsw_pwrok_block IS
 		V33DSW_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		mainpwr_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		PM_PWROK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		DSW_PWROK : OUT STD_LOGIC);
 END dsw_pwrok_block;
 
@@ -28,9 +28,9 @@ BEGIN
 		ELSE
 		'0';
 
-	PROCESS (clk_100k)
+	PROCESS (clk_100Khz)
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>

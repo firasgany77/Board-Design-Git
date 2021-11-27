@@ -4,7 +4,7 @@
 @N: MF236 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":30:25:30:55|Generating a type div divider 
 @N: BN362 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Removing sequential instance b2v_inst20.tmp (in view: work.TOP(bdf_type)) because it does not drive other instances.
 @N: BN362 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Removing sequential instance b2v_inst20.tmp_0 (in view: work.TOP(bdf_type)) because it does not drive other instances.
-@N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Replicating instance b2v_inst20.tmp_1 (in view: work.TOP(bdf_type)) with 74 loads 2 times to improve timing.
+@N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Replicating instance b2v_inst20.tmp_1 (in view: work.TOP(bdf_type)) with 93 loads 2 times to improve timing.
 @N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":137:3:137:6|Replicating instance b2v_inst11.curr_state_3_i_m2_i_o2[0] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
 @N: FX1017 :|SB_GB inserted on the net N_551.
 @N: FX1017 :|SB_GB inserted on the net b2v_inst200.count_en_1.

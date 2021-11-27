@@ -13,7 +13,7 @@ ENTITY rsmrst_pwrgd_block IS
 		V1P8A_OK : IN STD_LOGIC; -- NEW
 		--	tpm_gpio:  		   in std_logic; -- Provision
 		SLP_SUSn : IN STD_LOGIC;
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		RSMRSTn : OUT STD_LOGIC; --with 10ms delay on rising edge
 		rsmrst_pwrgd_out : OUT STD_LOGIC);--without delay
 END rsmrst_pwrgd_block;
@@ -32,9 +32,9 @@ BEGIN
 		ELSE
 		'0';
 
-	PROCESS (clk_100k)
+	PROCESS (clk_100Khz)
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>

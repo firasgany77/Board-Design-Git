@@ -9,7 +9,7 @@ USE IEEE.numeric_std.ALL;
 ENTITY pwrbtn_block IS
 	PORT (
 		rsmrst_n : IN STD_LOGIC; -- RSMRST#, active low (connected on-board to DSW_PWROK)
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		pwrbtn : OUT STD_LOGIC);
 END pwrbtn_block;
 
@@ -21,9 +21,9 @@ ARCHITECTURE pwrbtn_arch OF pwrbtn_block IS
 	SIGNAL trigger : STD_LOGIC := '0';
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	PROCESS (clk_100k) -- 30 mSec delay process:  asserted -> not_asserted
+	PROCESS (clk_100Khz) -- 30 mSec delay process:  asserted -> not_asserted
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 				WHEN not_asserted => -- Before assertion	
 					IF (count = to_unsigned(3000, 16)) THEN -- 3000 * 10uSec = 30 mSec

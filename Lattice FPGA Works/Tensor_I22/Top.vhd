@@ -99,7 +99,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			periodclocks : INTEGER
 		);
 		PORT (
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			SLP_S3n : IN STD_LOGIC;
 			SLP_S4n : IN STD_LOGIC;
 			mem_alert : IN STD_LOGIC;
@@ -112,7 +112,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			slp_s4 : IN STD_LOGIC;
 			vddq_pwrgd : IN STD_LOGIC;
 			vpp_pwrgd : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			vpp_en : OUT STD_LOGIC;
 			vddq_en : OUT STD_LOGIC
 		);
@@ -123,7 +123,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			slp_s3 : IN STD_LOGIC;
 			vddq_ok : IN STD_LOGIC;
 			vccst_ok : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			vccio_en : OUT STD_LOGIC
 		);
 	END COMPONENT;
@@ -140,7 +140,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		PORT (
 			pch_pwrok : IN STD_LOGIC;
 			GPIO_PCH : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			HDA_SDO_FPGA : OUT STD_LOGIC
 		);
 	END COMPONENT;
@@ -172,7 +172,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			vccio_pwrok : IN STD_LOGIC;
 			slp_s3 : IN STD_LOGIC;
 			rsmrst_pwrgd : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			vr_en : OUT STD_LOGIC;
 			vccsa_en : OUT STD_LOGIC
 		);
@@ -183,7 +183,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			V33DSW_OK : IN STD_LOGIC;
 			mainpwr_OK : IN STD_LOGIC;
 			PM_PWROK : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			DSW_PWROK : OUT STD_LOGIC
 		);
 	END COMPONENT;
@@ -217,7 +217,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			V5A_OK : IN STD_LOGIC;
 			V1P8A_OK : IN STD_LOGIC;
 			SLP_SUSn : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			RSMRSTn : OUT STD_LOGIC;
 			rsmrst_pwrgd_out : OUT STD_LOGIC
 		);
@@ -228,7 +228,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			slp_s3 : IN STD_LOGIC;
 			vr_ready_vccin : IN STD_LOGIC;
 			vr_ready_vccinaux : IN STD_LOGIC;
-			clk_100k : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
 			vccst_pwrgd_3v3 : OUT STD_LOGIC;
 			pch_pwrok : OUT STD_LOGIC
 		);
@@ -273,7 +273,7 @@ BEGIN
 		periodclocks => 100
 	)
 	PORT MAP(
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		SLP_S3n => SYNTHESIZED_WIRE_48,
 		SLP_S4n => SYNTHESIZED_WIRE_49,
 		mem_alert => SYNTHESIZED_WIRE_4,
@@ -285,7 +285,7 @@ BEGIN
 		slp_s4 => SYNTHESIZED_WIRE_49,
 		vddq_pwrgd => VDDQ_OK,
 		vpp_pwrgd => VPP_OK,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
 	b2v_inst17 : vccio_en_block
@@ -293,7 +293,7 @@ BEGIN
 		slp_s3 => SYNTHESIZED_WIRE_48,
 		vddq_ok => VDDQ_OK,
 		vccst_ok => VCCST_OK,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccio_en => VCCIO_EN);
 
 	V12S_EN <= SYNTHESIZED_WIRE_48;
@@ -308,7 +308,7 @@ BEGIN
 	PORT MAP(
 		pch_pwrok => SYNTHESIZED_WIRE_11,
 		GPIO_PCH => GPIO_FPGA_PCH_1,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		HDA_SDO_FPGA => HDA_SDO_FPGA);
 
 	V12S_EN_PM <= SYNTHESIZED_WIRE_48;
@@ -344,7 +344,7 @@ BEGIN
 		vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
 		slp_s3 => SYNTHESIZED_WIRE_48,
 		rsmrst_pwrgd => SYNTHESIZED_WIRE_26,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vr_en => VR_EN,
 		vccsa_en => VCCSA_EN);
 
@@ -355,7 +355,7 @@ BEGIN
 		V33DSW_OK => V33DSW_OK,
 		mainpwr_OK => SYNTHESIZED_WIRE_29,
 		PM_PWROK => SYNTHESIZED_WIRE_30,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		DSW_PWROK => SYNTHESIZED_WIRE_24);
 
 	b2v_inst40 : voltage_monitor
@@ -390,7 +390,7 @@ BEGIN
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
 		SLP_SUSn => SYNTHESIZED_WIRE_46,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		RSMRSTn => SYNTHESIZED_WIRE_50,
 		rsmrst_pwrgd_out => SYNTHESIZED_WIRE_26);
 	b2v_inst6 : pch_pwrok_block
@@ -398,7 +398,7 @@ BEGIN
 		slp_s3 => SYNTHESIZED_WIRE_48,
 		vr_ready_vccin => VR_READY_VCCIN,
 		vr_ready_vccinaux => VR_READY_VCCINAUX,
-		clk_100k => SYNTHESIZED_WIRE_47,
+		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccst_pwrgd_3v3 => SYNTHESIZED_WIRE_11,
 		pch_pwrok => SYNTHESIZED_WIRE_28);
 	SYNTHESIZED_WIRE_4 <= NOT(GPIO_FPGA_PCH_5);

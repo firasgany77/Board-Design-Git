@@ -11,7 +11,7 @@ ENTITY vpp_vddq_block IS
 		slp_s4 : IN STD_LOGIC; -- SLP_S4#
 		vddq_pwrgd : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vpp_pwrgd : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		vpp_en : OUT STD_LOGIC;
 		vddq_en : OUT STD_LOGIC);
 END vpp_vddq_block;
@@ -33,9 +33,9 @@ BEGIN
 		ELSE
 		'0';
 
-	PROCESS (clk_100k) -- 30 mSec delay process:  vddq_pwrgd -> delayed_vddq_pwrgd
+	PROCESS (clk_100Khz) -- 30 mSec delay process:  vddq_pwrgd -> delayed_vddq_pwrgd
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>

@@ -7,7 +7,7 @@ Post processing for work.voltage_monitor.syn_black_box
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":26:17:26:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":46:1:46:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":61:9:61:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":52:9:52:19|Referenced variable vccin_vccinaux_ok is not in sensitivity list.
+@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":52:9:52:25|Referenced variable vccin_vccinaux_ok is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":49:8:49:17|Referenced variable curr_state is not in sensitivity list.
 Post processing for work.pch_pwrok_block.pch_pwrok_block_arch
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":48:2:48:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
@@ -91,8 +91,8 @@ Post processing for work.powerled_block.powerled_arch
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd":34:2:34:3|Latch generated from process for signal func_state(1 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd":136:2:136:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
 Post processing for work.top.bdf_type
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":15:2:15:9|Input clk_100k is unused.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en.vhd":16:2:16:9|Input clk_100k is unused.
+@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":15:2:15:11|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en.vhd":16:2:16:11|Input clk_100Khz is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd":11:2:11:11|Input mainpwr_OK is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":27:2:27:16|Input GPIO_FPGA_HDR_1 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":28:2:28:16|Input GPIO_FPGA_HDR_2 is unused.

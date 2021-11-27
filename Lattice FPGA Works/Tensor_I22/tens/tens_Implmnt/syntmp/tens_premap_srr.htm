@@ -1,18 +1,18 @@
 <html><body><samp><pre>
-<!@TC:1638030004>
-# Sat Nov 27 18:20:03 2021
+<!@TC:1638031172>
+# Sat Nov 27 18:39:32 2021
 
-<a name=mapperReport148></a>Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
+<a name=mapperReport179></a>Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 Product Version L-2016.09L+ice40
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1638030004> | No constraint file specified. 
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1638031172> | No constraint file specified. 
 @L: C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens_scck.rpt 
 Printing clock  summary report in "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens_scck.rpt" file 
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1638030004> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1638030004> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1638031172> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1638031172> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
 
@@ -25,6 +25,20 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
 
+<font color=#A52A2A>@W:<a href="@W:MO129:@XP_HELP">MO129</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd:37:2:37:4:@W:MO129:@XP_MSG">rsmrst_pwrgd.vhd(37)</a><!@TM:1638031172> | Sequential instance b2v_inst5.RSMRSTn is reduced to a combinational gate by constant propagation.</font>
+<font color=#A52A2A>@W:<a href="@W:MO129:@XP_HELP">MO129</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd:33:2:33:4:@W:MO129:@XP_MSG">dsw_pwrok.vhd(33)</a><!@TM:1638031172> | Sequential instance b2v_inst36.DSW_PWROK is reduced to a combinational gate by constant propagation.</font>
+<font color=#A52A2A>@W:<a href="@W:MO129:@XP_HELP">MO129</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd:24:2:24:4:@W:MO129:@XP_MSG">hda_strap.vhd(24)</a><!@TM:1638031172> | Sequential instance b2v_inst200.HDA_SDO_FPGA is reduced to a combinational gate by constant propagation.</font>
+<font color=#A52A2A>@W:<a href="@W:MO129:@XP_HELP">MO129</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd:136:2:136:4:@W:MO129:@XP_MSG">powerled.vhd(136)</a><!@TM:1638031172> | Sequential instance b2v_inst11.pwm_out is reduced to a combinational gate by constant propagation.</font>
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd:48:2:48:4:@N:BN362:@XP_MSG">pch_pwrok.vhd(48)</a><!@TM:1638031172> | Removing sequential instance delayed_vccin_vccinaux_ok (in view: work.pch_pwrok_block(pch_pwrok_block_arch)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:302:1:302:11:@N:BN115:@XP_MSG">top.vhd(302)</a><!@TM:1638031172> | Removing instance b2v_inst20 (in view: work.TOP(bdf_type)) of type view:work.counter(counter_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:386:1:386:10:@N:BN115:@XP_MSG">top.vhd(386)</a><!@TM:1638031172> | Removing instance b2v_inst5 (in view: work.TOP(bdf_type)) of type view:work.rsmrst_pwrgd_block(rsmrst_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:353:1:353:11:@N:BN115:@XP_MSG">top.vhd(353)</a><!@TM:1638031172> | Removing instance b2v_inst36 (in view: work.TOP(bdf_type)) of type view:work.dsw_pwrok_block(dsw_pwrok_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:307:1:307:12:@N:BN115:@XP_MSG">top.vhd(307)</a><!@TM:1638031172> | Removing instance b2v_inst200 (in view: work.TOP(bdf_type)) of type view:work.hda_strap_block(hda_strap_block_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:271:1:271:11:@N:BN115:@XP_MSG">top.vhd(271)</a><!@TM:1638031172> | Removing instance b2v_inst11 (in view: work.TOP(bdf_type)) of type view:work.powerled_block(powerled_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:396:1:396:10:@N:BN115:@XP_MSG">top.vhd(396)</a><!@TM:1638031172> | Removing instance b2v_inst6 (in view: work.TOP(bdf_type)) of type view:work.pch_pwrok_block(pch_pwrok_block_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:291:1:291:11:@N:BN115:@XP_MSG">top.vhd(291)</a><!@TM:1638031172> | Removing instance b2v_inst17 (in view: work.TOP(bdf_type)) of type view:work.vccio_en_block(vccio_en_block_arch) because it does not drive other instances.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd:339:1:339:11:@N:BN115:@XP_MSG">top.vhd(339)</a><!@TM:1638031172> | Removing instance b2v_inst31 (in view: work.TOP(bdf_type)) of type view:work.vccsa_vr_en_block(vccsa_vr_arch) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd:34:2:34:4:@N:BN362:@XP_MSG">powerled.vhd(34)</a><!@TM:1638031172> | Removing sequential instance count_clk[15:0] (in view: work.powerled_block(powerled_arch)) of type view:PrimLib.lat(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -34,35 +48,31 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-<a name=mapperReport149></a>Clock Summary</a>
+<a name=mapperReport180></a>Clock Summary</a>
 *****************
 
-Start                         Requested     Requested     Clock                           Clock                     Clock
-Clock                         Frequency     Period        Type                            Group                     Load 
--------------------------------------------------------------------------------------------------------------------------
-System                        1.0 MHz       1000.000      system                          system_clkgroup           0    
-TOP|FPGA_OSC                  1.0 MHz       1000.000      inferred                        Autoconstr_clkgroup_0     33   
-counter|tmp_derived_clock     1.0 MHz       1000.000      derived (from TOP|FPGA_OSC)     Autoconstr_clkgroup_0     935  
-=========================================================================================================================
-
-<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd:34:3:34:5:@W:MT529:@XP_MSG">counter.vhd(34)</a><!@TM:1638030004> | Found inferred clock TOP|FPGA_OSC which controls 33 sequential elements including b2v_inst20.counter[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+Start      Requested     Requested     Clock      Clock               Clock
+Clock      Frequency     Period        Type       Group               Load 
+---------------------------------------------------------------------------
+System     1.0 MHz       1000.000      system     system_clkgroup     0    
+===========================================================================
 
 Finished Pre Mapping Phase.
-@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1638030004> | Writing default property annotation file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.sap. 
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1638031172> | Writing default property annotation file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.sap. 
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Nov 27 18:20:04 2021
+# Sat Nov 27 18:39:32 2021
 
 ###########################################################]
 

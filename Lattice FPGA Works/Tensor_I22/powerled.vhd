@@ -3,9 +3,9 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
 ENTITY powerled_block IS
-	GENERIC (periodclocks : INTEGER RANGE 0 TO 33000 := 100); -- number of clk_100k clock periods (10uSec) for each PWM full period
+	GENERIC (periodclocks : INTEGER RANGE 0 TO 33000 := 100); -- number of clk_100Khz clock periods (10uSec) for each PWM full period
 	PORT (
-		clk_100k : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		SLP_S3n : IN STD_LOGIC;
 		SLP_S4n : IN STD_LOGIC;
 		mem_alert : IN STD_LOGIC;
@@ -29,9 +29,9 @@ BEGIN
 
 	onclocks <= to_integer((dutycycle * periodclocks) / 100);
 
-	PROCESS (clk_100k) -- LED intensity function
+	PROCESS (clk_100Khz) -- LED intensity function
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			IF ((SLP_S3n = '0') AND (SLP_S4n = '1')) THEN -- Computer is at S3 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 				CASE func_state IS
 					WHEN pwm_high_state => -- Intensity is going low
@@ -131,9 +131,9 @@ BEGIN
 			END IF;
 		END IF;
 	END PROCESS;
-	PROCESS (clk_100k) -- PWM signal generation
+	PROCESS (clk_100Khz) -- PWM signal generation
 	BEGIN
-		IF (clk_100k = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 				WHEN pwm_low_state => -- pwm is low
 					IF (count >= to_unsigned(periodclocks, 16)) THEN -- end of period, PWM goes high
