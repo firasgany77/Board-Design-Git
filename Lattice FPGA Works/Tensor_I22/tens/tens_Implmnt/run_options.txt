@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\run_options.txt
-#--  Written on Sat Nov 27 15:24:17 2021
+#--  Written on Sat Nov 27 15:26:15 2021
 
 
 #project files
@@ -11,11 +11,11 @@ add_file -vhdl -lib work "../hda_strap.vhd"
 add_file -vhdl -lib work "../pch_pwrok.vhd"
 add_file -vhdl -lib work "../powerled.vhd"
 add_file -vhdl -lib work "../pwrbtn.vhd"
-add_file -vhdl -lib work "../rsmrst_pwrgd_vh.vhd"
+add_file -vhdl -lib work "../rsmrst_pwrgd.vhd"
 add_file -vhdl -lib work "../Top.vhd"
-add_file -vhdl -lib work "../vccio_en_vh.vhd"
-add_file -vhdl -lib work "../vccsa_vr_en_vh.vhd"
-add_file -vhdl -lib work "../vpp_vddq_vh.vhd"
+add_file -vhdl -lib work "../vccio_en.vhd"
+add_file -vhdl -lib work "../vccsa_vr_en.vhd"
+add_file -vhdl -lib work "../vpp_vddq.vhd"
 
 
 

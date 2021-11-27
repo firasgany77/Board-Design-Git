@@ -1,4 +1,4 @@
-# Sat Nov 27 15:24:19 2021
+# Sat Nov 27 15:26:17 2021
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -53,17 +53,17 @@ Available hyper_sources - for debug and ip models
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|User-specified initial value defined for instance b2v_inst11.dutycycle[0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|User-specified initial value defined for instance b2v_inst11.count_clk[15:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|User-specified initial value defined for instance b2v_inst11.count[15:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|User-specified initial value defined for instance b2v_inst16.count[15:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|User-specified initial value defined for instance b2v_inst16.curr_state[1:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|User-specified initial value defined for instance b2v_inst16.delayed_vddq_pwrgd is being ignored. 
+@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|User-specified initial value defined for instance b2v_inst16.count[15:0] is being ignored. 
+@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|User-specified initial value defined for instance b2v_inst16.curr_state[1:0] is being ignored. 
+@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|User-specified initial value defined for instance b2v_inst16.delayed_vddq_pwrgd is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|User-specified initial value defined for instance b2v_inst20.counter[31:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|User-specified initial value defined for instance b2v_inst20.tmp is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|User-specified initial value defined for instance b2v_inst200.count[17:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|User-specified initial value defined for instance b2v_inst200.curr_state[2:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|User-specified initial value defined for instance b2v_inst36.count[15:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|User-specified initial value defined for instance b2v_inst36.curr_state[1:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|User-specified initial value defined for instance b2v_inst5.count[15:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|User-specified initial value defined for instance b2v_inst5.curr_state[1:0] is being ignored. 
+@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|User-specified initial value defined for instance b2v_inst5.count[15:0] is being ignored. 
+@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|User-specified initial value defined for instance b2v_inst5.curr_state[1:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|User-specified initial value defined for instance b2v_inst6.count[15:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|User-specified initial value defined for instance b2v_inst6.curr_state[1:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|User-specified initial value defined for instance b2v_inst6.delayed_vr_vccsa_ok is being ignored. 
@@ -75,7 +75,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 144MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 144MB)
 
 @N: BN362 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Removing sequential instance b2v_inst20.tmp (in view: work.TOP(bdf_type)) because it does not drive other instances.
 @N: BN362 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Removing sequential instance b2v_inst20.tmp_0 (in view: work.TOP(bdf_type)) because it does not drive other instances.
@@ -99,7 +99,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst11.curr_state_latmux (cell mux)
     output pin b2v_inst11.curr_state_latmux/OUT[0]
     net        b2v_inst11.curr_state[0]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.curr_state[0]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.curr_state[0]
 2) instance b2v_inst5.curr_state_latmux (in view: work.TOP(bdf_type)), output net b2v_inst5.curr_state[0] (in view: work.TOP(bdf_type))
     net        b2v_inst5.curr_state[0]
     input  pin b2v_inst5.curr_state_7_1_0_.m1/I[0]
@@ -114,7 +114,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.curr_state_latmux (cell mux)
     output pin b2v_inst5.curr_state_latmux/OUT[0]
     net        b2v_inst5.curr_state[0]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.curr_state[1]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.curr_state[1]
 3) instance b2v_inst5.curr_state_latmux_0 (in view: work.TOP(bdf_type)), output net b2v_inst5.curr_state[1] (in view: work.TOP(bdf_type))
     net        b2v_inst5.curr_state[1]
     input  pin b2v_inst5.curr_state_7_1_0_.m5/SEL
@@ -129,7 +129,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.curr_state_latmux_0 (cell mux)
     output pin b2v_inst5.curr_state_latmux_0/OUT[0]
     net        b2v_inst5.curr_state[1]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.curr_state_7_1_0_.N_1_i_i_3
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.curr_state_7_1_0_.N_1_i_i_3
 4) instance b2v_inst5.N_1_i_i (in view: work.TOP(bdf_type)), output net b2v_inst5.curr_state_7_1_0_.N_1_i_i_3 (in view: work.TOP(bdf_type))
     net        b2v_inst5.curr_state_7_1_0_.N_1_i_i_3
     input  pin b2v_inst5.count_1[4]/I[0]
@@ -168,7 +168,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.N_1_i_i (cell inv)
     output pin b2v_inst5.N_1_i_i/OUT[0]
     net        b2v_inst5.curr_state_7_1_0_.N_1_i_i_3
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[0]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[0]
 5) instance b2v_inst5.count_latmux_14 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[0] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[0]
     input  pin b2v_inst5.count_i[0]/I[0]
@@ -191,7 +191,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_14 (cell mux)
     output pin b2v_inst5.count_latmux_14/OUT[0]
     net        b2v_inst5.count[0]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[1]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[1]
 6) instance b2v_inst5.count_latmux_13 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[1] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[1]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[1]
@@ -210,7 +210,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_13 (cell mux)
     output pin b2v_inst5.count_latmux_13/OUT[0]
     net        b2v_inst5.count[1]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[2]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[2]
 7) instance b2v_inst5.count_latmux_12 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[2] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[2]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[2]
@@ -229,7 +229,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_12 (cell mux)
     output pin b2v_inst5.count_latmux_12/OUT[0]
     net        b2v_inst5.count[2]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[3]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[3]
 8) instance b2v_inst5.count_latmux_11 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[3] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[3]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[3]
@@ -248,7 +248,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_11 (cell mux)
     output pin b2v_inst5.count_latmux_11/OUT[0]
     net        b2v_inst5.count[3]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[4]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[4]
 9) instance b2v_inst5.count_latmux_10 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[4] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[4]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[4]
@@ -271,7 +271,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_10 (cell mux)
     output pin b2v_inst5.count_latmux_10/OUT[0]
     net        b2v_inst5.count[4]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[5]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[5]
 10) instance b2v_inst5.count_latmux_9 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[5] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[5]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[5]
@@ -290,7 +290,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_9 (cell mux)
     output pin b2v_inst5.count_latmux_9/OUT[0]
     net        b2v_inst5.count[5]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[6]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[6]
 11) instance b2v_inst5.count_latmux_8 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[6] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[6]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[6]
@@ -309,7 +309,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_8 (cell mux)
     output pin b2v_inst5.count_latmux_8/OUT[0]
     net        b2v_inst5.count[6]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[7]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[7]
 12) instance b2v_inst5.count_latmux_7 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[7] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[7]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[7]
@@ -328,7 +328,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_7 (cell mux)
     output pin b2v_inst5.count_latmux_7/OUT[0]
     net        b2v_inst5.count[7]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[8]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[8]
 13) instance b2v_inst5.count_latmux_6 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[8] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[8]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[8]
@@ -351,7 +351,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_6 (cell mux)
     output pin b2v_inst5.count_latmux_6/OUT[0]
     net        b2v_inst5.count[8]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[9]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[9]
 14) instance b2v_inst5.count_latmux_5 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[9] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[9]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[9]
@@ -374,7 +374,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_5 (cell mux)
     output pin b2v_inst5.count_latmux_5/OUT[0]
     net        b2v_inst5.count[9]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[10]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[10]
 15) instance b2v_inst5.count_latmux_4 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[10] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[10]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[10]
@@ -397,7 +397,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_4 (cell mux)
     output pin b2v_inst5.count_latmux_4/OUT[0]
     net        b2v_inst5.count[10]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[11]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[11]
 16) instance b2v_inst5.count_latmux_3 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[11] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[11]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[11]
@@ -416,7 +416,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_3 (cell mux)
     output pin b2v_inst5.count_latmux_3/OUT[0]
     net        b2v_inst5.count[11]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[12]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[12]
 17) instance b2v_inst5.count_latmux_2 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[12] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[12]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[12]
@@ -435,7 +435,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_2 (cell mux)
     output pin b2v_inst5.count_latmux_2/OUT[0]
     net        b2v_inst5.count[12]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[13]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[13]
 18) instance b2v_inst5.count_latmux_1 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[13] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[13]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[13]
@@ -458,7 +458,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_1 (cell mux)
     output pin b2v_inst5.count_latmux_1/OUT[0]
     net        b2v_inst5.count[13]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[14]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[14]
 19) instance b2v_inst5.count_latmux_0 (in view: work.TOP(bdf_type)), output net b2v_inst5.count[14] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[14]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[14]
@@ -477,7 +477,7 @@ Warning: Found 196 combinational loops!
     instance   b2v_inst5.count_latmux_0 (cell mux)
     output pin b2v_inst5.count_latmux_0/OUT[0]
     net        b2v_inst5.count[14]
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[15]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Found combinational loop during mapping at net b2v_inst5.count[15]
 20) instance b2v_inst5.count_latmux (in view: work.TOP(bdf_type)), output net b2v_inst5.count[15] (in view: work.TOP(bdf_type))
     net        b2v_inst5.count[15]
     input  pin b2v_inst5.un2_count_1[15:0]/D0[15]
@@ -5930,47 +5930,47 @@ Warning: Found 196 combinational loops!
 174) instance b2v_inst36.count_latmux_0 (in view: work.TOP(bdf_type)), output net b2v_inst36.count[14] (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Found combinational loop during mapping at net b2v_inst36.count[15]
 175) instance b2v_inst36.count_latmux (in view: work.TOP(bdf_type)), output net b2v_inst36.count[15] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":59:4:59:19|Found combinational loop during mapping at net N_204
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":59:4:59:19|Found combinational loop during mapping at net N_204
 176) instance b2v_inst16.count_1_sqmuxa_i_0_o3_0 (in view: work.TOP(bdf_type)), output net N_204 (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.curr_state[1]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.curr_state[1]
 177) instance b2v_inst16.curr_state_latmux_0 (in view: work.TOP(bdf_type)), output net b2v_inst16.curr_state[1] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count_en
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count_en
 178) instance b2v_inst16.count_en (in view: work.TOP(bdf_type)), output net b2v_inst16.count_en (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[0]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[0]
 179) instance b2v_inst16.count_latmux_5 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[0] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[1]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[1]
 180) instance b2v_inst16.count_latmux_6 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[1] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":59:4:59:19|Found combinational loop during mapping at net N_24
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":59:4:59:19|Found combinational loop during mapping at net N_24
 181) instance b2v_inst16.count_1_sqmuxa_i_0 (in view: work.TOP(bdf_type)), output net N_24 (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[2]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[2]
 182) instance b2v_inst16.count_latmux_7 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[2] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[3]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[3]
 183) instance b2v_inst16.count_latmux_8 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[3] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":39:3:39:6|Found combinational loop during mapping at net b2v_inst16.un13_clk_100k_i_3
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":39:3:39:6|Found combinational loop during mapping at net b2v_inst16.un13_clk_100k_i_3
 184) instance b2v_inst16.un13_clk_100k_i (in view: work.TOP(bdf_type)), output net b2v_inst16.un13_clk_100k_i_3 (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[4]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[4]
 185) instance b2v_inst16.count_latmux_9 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[4] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[5]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[5]
 186) instance b2v_inst16.count_latmux_10 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[5] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[6]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[6]
 187) instance b2v_inst16.count_latmux_11 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[6] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[7]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[7]
 188) instance b2v_inst16.count_latmux_12 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[7] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[8]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[8]
 189) instance b2v_inst16.count_latmux_13 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[8] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[9]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[9]
 190) instance b2v_inst16.count_latmux_14 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[9] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[10]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[10]
 191) instance b2v_inst16.count_latmux (in view: work.TOP(bdf_type)), output net b2v_inst16.count[10] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[11]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[11]
 192) instance b2v_inst16.count_latmux_0 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[11] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[12]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[12]
 193) instance b2v_inst16.count_latmux_1 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[12] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[13]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[13]
 194) instance b2v_inst16.count_latmux_2 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[13] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[14]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[14]
 195) instance b2v_inst16.count_latmux_3 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[14] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[15]
+@W: BN137 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Found combinational loop during mapping at net b2v_inst16.count[15]
 196) instance b2v_inst16.count_latmux_4 (in view: work.TOP(bdf_type)), output net b2v_inst16.count[15] (in view: work.TOP(bdf_type))
 End of loops
 
@@ -5996,15 +5996,15 @@ Pass		 CPU time		Worst Slack		Luts / Registers
    1		0h:00m:03s		   -14.09ns		1010 /       199
    2		0h:00m:03s		   -14.09ns		1001 /       199
    3		0h:00m:03s		   -11.46ns		1001 /       199
-   4		0h:00m:04s		   -11.46ns		1001 /       199
+   4		0h:00m:03s		   -11.46ns		1001 /       199
 @N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Replicating instance b2v_inst20.tmp_1 (in view: work.TOP(bdf_type)) with 74 loads 2 times to improve timing.
 @N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":137:3:137:6|Replicating instance b2v_inst11.curr_state_3_i_m2_i_o2[0] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
 Timing driven replication report
 Added 2 Registers via timing driven replication
 Added 3 LUTs via timing driven replication
 
-   5		0h:00m:05s		   -11.46ns		1020 /       201
-   6		0h:00m:05s		   -11.29ns		1021 /       201
+   5		0h:00m:04s		   -11.46ns		1020 /       201
+   6		0h:00m:04s		   -11.29ns		1021 /       201
    7		0h:00m:05s		   -11.29ns		1032 /       201
 
 
@@ -6029,23 +6029,23 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.un1_func_state25_4_i_a2_1_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.dutycycle_1_0_iv_0_o2[6] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_o2_4_N_3L3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count_en which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":34:3:34:6|Unbuffered I/O b2v_inst36.curr_state_7_1_0_.m4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":34:3:34:6|Unbuffered I/O b2v_inst36.curr_state_7_1_0_.m6 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":55:4:55:19|Unbuffered I/O b2v_inst36.count_0_sqmuxa_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":37:9:37:19|Unbuffered I/O b2v_inst36.DSW_PWROK_0_sqmuxa which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":59:4:59:19|Unbuffered I/O b2v_inst16.count_1_sqmuxa_i_0_o2_0 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":59:4:59:19|Unbuffered I/O b2v_inst16.count_1_sqmuxa_i_0_o2_0 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.dutycycle_1_0_iv_0_m3[5] which could cause problems in P&R 
@@ -6113,8 +6113,8 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[15] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.curr_state[0] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.curr_state[1] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[10] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[11] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[12] which could cause problems in P&R 
@@ -6123,13 +6123,13 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state[0] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state[2] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[6] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[7] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[8] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[9] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[2] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[3] which could cause problems in P&R 
@@ -6153,24 +6153,24 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.count[15] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.count[14] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.count[13] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[2] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[1] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[2] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[0] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.delayed_vr_vccsa_ok which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[6] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[5] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[4] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[3] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[9] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[8] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[7] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[13] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[12] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[11] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[10] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[6] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[5] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[4] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[3] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[9] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[8] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[7] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[13] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[12] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[11] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[10] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[15] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[14] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[15] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[14] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[4] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[3] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[2] which could cause problems in P&R 
@@ -6188,7 +6188,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[12] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[11] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[10] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.delayed_vddq_pwrgd which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.delayed_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[15] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[0] which could cause problems in P&R 
@@ -6256,27 +6256,27 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.count[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.count[2] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.count[3] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[6] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[7] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[8] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[9] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[2] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[3] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[4] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[5] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[14] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[15] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[1] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[11] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[12] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[13] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[10] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[6] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[7] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[8] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[9] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[2] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[3] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[4] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[5] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[14] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[15] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[11] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[12] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[13] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[10] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.DSW_PWROK which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.HDA_SDO_FPGA which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Unbuffered I/O b2v_inst20.tmp_1_fast which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Unbuffered I/O b2v_inst20.tmp_1_rep1 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":34:24:34:67|Unbuffered I/O b2v_inst6.un1_pch_pwrok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m11_ns which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m8 which could cause problems in P&R 
@@ -6308,7 +6308,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m6_bm which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_o2_4_N_4L5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk_en_2 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_a2_5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.N_178_i which could cause problems in P&R 
@@ -6321,7 +6321,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_o3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.func_state_1_ss0_i_0_a2 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O b2v_inst11.un1_count_clk_1_sqmuxa_0_m3_e which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_33_and_i_i_a3_0_2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_0_0 which could cause problems in P&R 
@@ -6347,7 +6347,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m6_bm which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_o2_4_N_4L5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk_en_2 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_a2_5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.N_178_i which could cause problems in P&R 
@@ -6360,7 +6360,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_o3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.func_state_1_ss0_i_0_a2 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O b2v_inst11.un1_count_clk_1_sqmuxa_0_m3_e which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_33_and_i_i_a3_0_2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_0_0 which could cause problems in P&R 
@@ -6395,17 +6395,17 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":30:25:30:55|Unbuffered I/O b2v_inst11.un1_onclocks.if_generate_plus®mult1_un117_sum_cry_2_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":30:25:30:55|Unbuffered I/O b2v_inst11.un1_onclocks.if_generate_plus®mult1_un124_sum_cry_2_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.un1_dutycycle_94_cry_0_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":34:24:34:67|Unbuffered I/O b2v_inst6.un1_pch_pwrok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m11_ns which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m8 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.N_9_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.i4_mux_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O b2v_inst16.un2_vpp_en_0_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn_latmux which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn_latmux which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2_0 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O G_16_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.dutycycle_1_0_iv_0_m3[5] which could cause problems in P&R 
@@ -6502,26 +6502,26 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":50:15:50:23|Unbuffered I/O b2v_inst36.un2_count_1_cry_12_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":50:15:50:23|Unbuffered I/O b2v_inst36.un2_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":50:15:50:23|Unbuffered I/O b2v_inst36.un2_count_1_cry_14_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_1_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_2_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_3_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_4_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_8_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_9_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_10_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_11_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_12_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_13_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_14_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_2_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_3_c which could cause problems in P&R 
@@ -6536,22 +6536,22 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_12_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_14_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_2_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_3_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_4_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_5_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_6_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_7_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_8_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_9_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_10_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_11_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_12_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_13_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_14_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":35:15:35:25|Unbuffered I/O b2v_inst20.counter_1_cry_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":35:15:35:25|Unbuffered I/O b2v_inst20.counter_1_cry_2_s which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":35:15:35:25|Unbuffered I/O b2v_inst20.counter_1_cry_2_s which could cause problems in P&R 
@@ -6835,23 +6835,23 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.un1_func_state25_4_i_a2_1_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.dutycycle_1_0_iv_0_o2[6] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_o2_4_N_3L3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count_en which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":34:3:34:6|Unbuffered I/O b2v_inst36.curr_state_7_1_0_.m4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":34:3:34:6|Unbuffered I/O b2v_inst36.curr_state_7_1_0_.m6 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":55:4:55:19|Unbuffered I/O b2v_inst36.count_0_sqmuxa_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":37:9:37:19|Unbuffered I/O b2v_inst36.DSW_PWROK_0_sqmuxa which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":59:4:59:19|Unbuffered I/O b2v_inst16.count_1_sqmuxa_i_0_o2_0 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":59:4:59:19|Unbuffered I/O b2v_inst16.count_1_sqmuxa_i_0_o2_0 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.dutycycle_1_0_iv_0_m3[5] which could cause problems in P&R 
@@ -6919,8 +6919,8 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[15] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.curr_state[0] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.curr_state[1] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.curr_state[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[10] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[11] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[12] which could cause problems in P&R 
@@ -6929,13 +6929,13 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state[0] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state[2] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.curr_state[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[6] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[7] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[8] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[9] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[2] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":136:2:136:3|Unbuffered I/O b2v_inst11.count[3] which could cause problems in P&R 
@@ -6959,24 +6959,24 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.count[15] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.count[14] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.count[13] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[2] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[1] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[2] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[0] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":44:2:44:3|Unbuffered I/O b2v_inst6.delayed_vr_vccsa_ok which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[6] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[5] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[4] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[3] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[9] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[8] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[7] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[13] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[12] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[11] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[10] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[6] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[5] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[4] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[3] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[9] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[8] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[7] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[13] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[12] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[11] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[10] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[15] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[14] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[15] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.count[14] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[4] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[3] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[2] which could cause problems in P&R 
@@ -6994,7 +6994,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[12] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[11] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[10] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.delayed_vddq_pwrgd which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.delayed_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.count[15] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk[0] which could cause problems in P&R 
@@ -7062,27 +7062,27 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.count[1] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.count[2] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.count[3] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[6] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[7] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[8] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[9] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[2] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[3] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[4] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[5] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[14] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[15] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[0] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[1] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[11] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[12] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[13] which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[10] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[6] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[7] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[8] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[9] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[2] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[3] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[4] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[5] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[14] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[15] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[0] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[1] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[11] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[12] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[13] which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":38:2:38:3|Unbuffered I/O b2v_inst16.count[10] which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":33:2:33:3|Unbuffered I/O b2v_inst36.DSW_PWROK which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.HDA_SDO_FPGA which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Unbuffered I/O b2v_inst20.tmp_1_fast which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":34:3:34:4|Unbuffered I/O b2v_inst20.tmp_1_rep1 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":31:27:31:121|Unbuffered I/O b2v_inst5.un8_rsmrst_pwrgd_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":34:24:34:67|Unbuffered I/O b2v_inst6.un1_pch_pwrok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m11_ns which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m8 which could cause problems in P&R 
@@ -7114,7 +7114,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m6_bm which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_o2_4_N_4L5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk_en_2 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_a2_5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.N_178_i which could cause problems in P&R 
@@ -7127,7 +7127,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_o3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.func_state_1_ss0_i_0_a2 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O b2v_inst11.un1_count_clk_1_sqmuxa_0_m3_e which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_33_and_i_i_a3_0_2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_0_0 which could cause problems in P&R 
@@ -7153,7 +7153,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m6_bm which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_o2_4_N_4L5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.count_clk_en_2 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output_3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_51_and_i_a2_5 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.N_178_i which could cause problems in P&R 
@@ -7166,7 +7166,7 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_o3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.func_state_1_ss0_i_0_a2 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O b2v_inst11.un1_count_clk_1_sqmuxa_0_m3_e which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":65:4:65:19|Unbuffered I/O b2v_inst6.count_0_sqmuxa_0_o2_4 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_33_and_i_i_a3_0_2 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd":269:1:269:10|Unbuffered I/O b2v_inst11.un1_clk_100k_26_and_i_0_0 which could cause problems in P&R 
@@ -7201,17 +7201,17 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":30:25:30:55|Unbuffered I/O b2v_inst11.un1_onclocks.if_generate_plus®mult1_un117_sum_cry_2_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":30:25:30:55|Unbuffered I/O b2v_inst11.un1_onclocks.if_generate_plus®mult1_un124_sum_cry_2_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.un1_dutycycle_94_cry_0_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en_vh.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccio_en.vhd":22:23:22:75|Unbuffered I/O b2v_inst17.un4_vccio_en_0_a3 which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":34:24:34:67|Unbuffered I/O b2v_inst6.un1_pch_pwrok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m11_ns which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":25:3:25:6|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.m8 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.N_9_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\hda_strap.vhd":24:2:24:3|Unbuffered I/O b2v_inst200.curr_state_13_2_0_.i4_mux_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":32:22:32:55|Unbuffered I/O b2v_inst16.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O b2v_inst16.un2_vpp_en_0_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en_vh.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn_latmux which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vccsa_vr_en.vhd":25:21:25:149|Unbuffered I/O b2v_inst31.un10_output which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":37:2:37:3|Unbuffered I/O b2v_inst5.RSMRSTn_latmux which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":90:8:90:22|Unbuffered I/O b2v_inst11.func_state_0_sqmuxa_0_o2_0 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O G_16_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\powerled.vhd":34:2:34:3|Unbuffered I/O b2v_inst11.dutycycle_1_0_iv_0_m3[5] which could cause problems in P&R 
@@ -7308,26 +7308,26 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":50:15:50:23|Unbuffered I/O b2v_inst36.un2_count_1_cry_12_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":50:15:50:23|Unbuffered I/O b2v_inst36.un2_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\dsw_pwrok.vhd":50:15:50:23|Unbuffered I/O b2v_inst36.un2_count_1_cry_14_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_1_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_2_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_3_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_4_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_8_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_9_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_10_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_11_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_12_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_13_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd_vh.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\rsmrst_pwrgd.vhd":54:15:54:23|Unbuffered I/O b2v_inst5.un2_count_1_cry_14_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_2_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_3_c which could cause problems in P&R 
@@ -7342,22 +7342,22 @@ Added 3 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_12_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\pch_pwrok.vhd":61:15:61:23|Unbuffered I/O b2v_inst6.un2_count_1_cry_14_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_2_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_3_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_4_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_5_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_6_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_7_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_8_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_9_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_10_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_11_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_12_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_13_c which could cause problems in P&R 
-@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq_vh.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\vpp_vddq.vhd":55:15:55:23|Unbuffered I/O b2v_inst16.un4_count_1_cry_14_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":35:15:35:25|Unbuffered I/O b2v_inst20.counter_1_cry_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":35:15:35:25|Unbuffered I/O b2v_inst20.counter_1_cry_2_s which could cause problems in P&R 
 @W: FX689 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\counter.vhd":35:15:35:25|Unbuffered I/O b2v_inst20.counter_1_cry_2_s which could cause problems in P&R 
@@ -7655,7 +7655,7 @@ Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05
 
 Writing Analyst data base C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 169MB peak: 172MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 169MB peak: 172MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -11162,7 +11162,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Nov 27 15:24:26 2021
+# Timing Report written on Sat Nov 27 15:26:23 2021
 #
 
 
@@ -13693,6 +13693,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 32MB peak: 173MB)
 
 Process took 0h:00m:06s realtime, 0h:00m:06s cputime
-# Sat Nov 27 15:24:26 2021
+# Sat Nov 27 15:26:23 2021
 
 ###########################################################]

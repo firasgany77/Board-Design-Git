@@ -6,22 +6,22 @@
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":189:11:189:25|Synthesizing work.voltage_monitor.syn_black_box.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":11:7:11:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":22:17:22:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd_vh.vhd":8:7:8:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
-@N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd_vh.vhd":22:17:22:18|Using user defined encoding for type state_type.
+@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd.vhd":8:7:8:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
+@N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd.vhd":22:17:22:18|Using user defined encoding for type state_type.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd":8:7:8:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd":18:17:18:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en_vh.vhd":8:7:8:23|Synthesizing work.vccsa_vr_en_block.vccsa_vr_arch.
+@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en.vhd":8:7:8:23|Synthesizing work.vccsa_vr_en_block.vccsa_vr_arch.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":146:11:146:13|Synthesizing work.adc.syn_black_box.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap.vhd":6:7:6:21|Synthesizing work.hda_strap_block.hda_strap_block_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap.vhd":15:17:15:18|Using user defined encoding for type state_type.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":7:7:7:13|Synthesizing work.counter.counter_arch.
-@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en_vh.vhd":10:7:10:20|Synthesizing work.vccio_en_block.vccio_en_block_arch.
-@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq_vh.vhd":9:7:9:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
-@N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq_vh.vhd":20:17:20:18|Using user defined encoding for type state_type.
+@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":10:7:10:20|Synthesizing work.vccio_en_block.vccio_en_block_arch.
+@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq.vhd":9:7:9:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
+@N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq.vhd":20:17:20:18|Using user defined encoding for type state_type.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd":5:7:5:20|Synthesizing work.powerled_block.powerled_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd":16:17:16:18|Using user defined encoding for type state_type.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en_vh.vhd":15:2:15:9|Input clk_100k is unused.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en_vh.vhd":16:2:16:9|Input clk_100k is unused.
+@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":15:2:15:9|Input clk_100k is unused.
+@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccsa_vr_en.vhd":16:2:16:9|Input clk_100k is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd":11:2:11:11|Input mainpwr_OK is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":27:2:27:16|Input GPIO_FPGA_HDR_1 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":28:2:28:16|Input GPIO_FPGA_HDR_2 is unused.
