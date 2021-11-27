@@ -18,15 +18,16 @@ END counter;
 -- half of the 100 times times, will be on T_100Khz ON time. 
 -- so T_100Khz_ON = 0.5*100 = 50
 -- counter will count to 50.
+	
 
 ARCHITECTURE counter_arch OF counter IS
 	SIGNAL counter : INTEGER := 1;
 	SIGNAL tmp : STD_LOGIC := '0';
-	SIGNAL tmp_locked: STD_LOGIC := '1';
+    SIGNAL tmp_locked: STD_LOGIC := '1';
 BEGIN
 
 	PROCESS (CLK_10mhz)
-	BEGIN
+	BEGIN	
 --		IF (resetN = '1') THEN
 --			count <= 1;
 --			tmp <= '0';
@@ -38,7 +39,7 @@ BEGIN
 				END IF;
 			END IF;
 			clk_100Khz <= tmp;
-			locked <=tmp_locked;
+			locked <= tmp_locked;
 --		END IF;
 	END PROCESS;
 

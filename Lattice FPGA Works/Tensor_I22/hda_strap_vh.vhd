@@ -2,7 +2,6 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
--- 
 
 ENTITY hda_strap_block IS
 	PORT (

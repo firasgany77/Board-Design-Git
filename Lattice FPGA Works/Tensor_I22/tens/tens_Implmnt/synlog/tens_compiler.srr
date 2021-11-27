@@ -65,9 +65,9 @@ Post processing for work.hda_strap_block.hda_strap_block_arch
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap_vh.vhd":25:2:25:3|Latch generated from process for signal curr_state(2 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap_vh.vhd":25:2:25:3|Latch generated from process for signal HDA_SDO_FPGA; possible missing assignment in an if or case statement.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":7:7:7:13|Synthesizing work.counter.counter_arch.
-@W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":28:1:28:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":41:12:41:21|Referenced variable tmp_locked is not in sensitivity list.
-@W: CD638 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":25:8:25:17|Signal tmp_locked is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":29:1:29:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":42:13:42:22|Referenced variable tmp_locked is not in sensitivity list.
+@W: CD638 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Counter.vhd":26:11:26:20|Signal tmp_locked is undriven. Either assign the signal a value or remove the signal declaration.
 Post processing for work.counter.counter_arch
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en_vh.vhd":10:7:10:20|Synthesizing work.vccio_en_block.vccio_en_block_arch.
 Post processing for work.vccio_en_block.vccio_en_block_arch
@@ -140,7 +140,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Nov 27 13:29:07 2021
+# Sat Nov 27 14:39:32 2021
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -154,7 +154,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Nov 27 13:29:07 2021
+# Sat Nov 27 14:39:32 2021
 
 ###########################################################]
 @END
@@ -164,6 +164,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Nov 27 13:29:07 2021
+# Sat Nov 27 14:39:32 2021
 
 ###########################################################]
