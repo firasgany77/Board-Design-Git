@@ -1,31 +1,32 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\tens\tens_Implmnt\scratchproject.prs
+#--  Project file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\scratchproject.prs
 
 #project files
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/dsw_pwrok.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/hda_strap_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/pch_pwrok_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/powerled_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/pwrbtn.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/rsmrst_pwrgd_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/vccio_en_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/vccsa_vr_en_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/vpp_vddq_vh.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/Top.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/Source/Counter.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/Counter.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/dsw_pwrok.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/hda_strap_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/pch_pwrok_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/powerled_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/pwrbtn.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/rsmrst_pwrgd_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/Test_VHDL.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/Top.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/vccio_en_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/vccsa_vr_en_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/vpp_vddq_vh.vhd"
 
 
 
 #implementation: "tens_Implmnt"
-impl -add C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\tens\tens_Implmnt -type fpga
+impl -add "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt" -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/}
+set_option -include_path {C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/tens/}
 
 #device options
 set_option -technology SBTiCE40
@@ -74,5 +75,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.edf"
+project -result_file "C:/Users/firas/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/Tensor_I22/tens/tens_Implmnt/tens.edf"
 impl -active "tens_Implmnt"

@@ -2,17 +2,18 @@
 #-- Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\tens\tens_syn.prj
 #project files
 
-add_file -vhdl -lib work "../Source/dsw_pwrok.vhd" 
-add_file -vhdl -lib work "../Source/hda_strap_vh.vhd" 
-add_file -vhdl -lib work "../Source/pch_pwrok_vh.vhd" 
-add_file -vhdl -lib work "../Source/powerled_vh.vhd" 
-add_file -vhdl -lib work "../Source/pwrbtn.vhd" 
-add_file -vhdl -lib work "../Source/rsmrst_pwrgd_vh.vhd" 
-add_file -vhdl -lib work "../Source/vccio_en_vh.vhd" 
-add_file -vhdl -lib work "../Source/vccsa_vr_en_vh.vhd" 
-add_file -vhdl -lib work "../Source/vpp_vddq_vh.vhd" 
-add_file -vhdl -lib work "../Source/Top.vhd" 
-add_file -vhdl -lib work "../Source/Counter.vhd" 
+add_file -vhdl -lib work "../Counter.vhd" 
+add_file -vhdl -lib work "../dsw_pwrok.vhd" 
+add_file -vhdl -lib work "../hda_strap_vh.vhd" 
+add_file -vhdl -lib work "../pch_pwrok_vh.vhd" 
+add_file -vhdl -lib work "../powerled_vh.vhd" 
+add_file -vhdl -lib work "../pwrbtn.vhd" 
+add_file -vhdl -lib work "../rsmrst_pwrgd_vh.vhd" 
+add_file -vhdl -lib work "../Test_VHDL.vhd" 
+add_file -vhdl -lib work "../Top.vhd" 
+add_file -vhdl -lib work "../vccio_en_vh.vhd" 
+add_file -vhdl -lib work "../vccsa_vr_en_vh.vhd" 
+add_file -vhdl -lib work "../vpp_vddq_vh.vhd" 
 #implementation: "tens_Implmnt"
 impl -add tens_Implmnt -type fpga
 
