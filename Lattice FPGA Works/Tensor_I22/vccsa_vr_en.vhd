@@ -27,7 +27,7 @@ BEGIN
 		ELSE
 		'0';
 
-	vr_en <= output;
-	vccsa_en <= output;
+	vr_en <= output; -- (Enable the VCCIN in Tensor I22)
+	vccsa_en <= output; -- (Enable the VCCIN_AUX in Tensor I22)
 
 END vccsa_vr_arch;
