@@ -109,7 +109,7 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT vpp_vddq_block
 		PORT (
-			slp_s4 : IN STD_LOGIC;
+			slp_s4n : IN STD_LOGIC;
 			vddq_pwrgd : IN STD_LOGIC;
 			vpp_pwrgd : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
@@ -282,7 +282,7 @@ BEGIN
 
 	b2v_inst16 : vpp_vddq_block
 	PORT MAP(
-		slp_s4 => SYNTHESIZED_WIRE_49,
+		slp_s4n => SYNTHESIZED_WIRE_49,
 		vddq_pwrgd => VDDQ_OK,
 		vpp_pwrgd => VPP_OK,
 		clk_100Khz => SYNTHESIZED_WIRE_47,

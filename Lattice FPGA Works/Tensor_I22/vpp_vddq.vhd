@@ -8,7 +8,7 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY vpp_vddq_block IS
 	PORT (
-		slp_s4 : IN STD_LOGIC; -- SLP_S4#
+		slp_s4n : IN STD_LOGIC; -- SLP_S4#
 		vddq_pwrgd : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vpp_pwrgd : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
@@ -25,11 +25,11 @@ ARCHITECTURE vpp_vddq_arch OF vpp_vddq_block IS
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
-	vpp_en <= '1' WHEN (slp_s4 = '1') OR (delayed_vddq_pwrgd = '1')
+	vpp_en <= '1' WHEN (slp_s4n = '1') OR (delayed_vddq_pwrgd = '1')
 		ELSE
 		'0';
 
-	vddq_en <= '1' WHEN (slp_s4 = '1') AND (vpp_pwrgd = '1')
+	vddq_en <= '1' WHEN (slp_s4n= '1') AND (vpp_pwrgd = '1')
 		ELSE
 		'0';
 
@@ -39,7 +39,7 @@ BEGIN
 			CASE curr_state IS
 
 				WHEN pwrgd =>
-					IF ((vddq_pwrgd = '1') AND (slp_s4 = '1')) THEN
+					IF ((vddq_pwrgd = '1') AND (slp_s4n = '1')) THEN
 						curr_state <= pwrgd;
 						delayed_vddq_pwrgd <= '1';
 					ELSE
@@ -57,7 +57,7 @@ BEGIN
 					END IF;
 					delayed_vddq_pwrgd <= '1';
 				WHEN no_pwrgd =>
-					IF ((vddq_pwrgd = '1') AND (slp_s4 = '1')) THEN
+					IF ((vddq_pwrgd = '1') AND (slp_s4n = '1')) THEN
 						curr_state <= pwrgd; -- transition to high can be done without a delay (SLP_S4# is already high)
 						delayed_vddq_pwrgd <= '1';
 					ELSE

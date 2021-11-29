@@ -438,3 +438,115 @@ Run Time:00h:00m:00s
 Complete: Compile Process on tens_syn|tens_Implmnt
 Complete: Compile on tens_syn|tens_Implmnt
 Complete: Logic Synthesis on tens_syn|tens_Implmnt
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\counter.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pwrbtn.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccinaux_vccin_en.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq.vhd"
+log file: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srr"
+Running: tens_Implmnt in foreground
+
+Running tens_syn|tens_Implmnt
+
+Running: compile (Compile) on tens_syn|tens_Implmnt
+# Mon Nov 29 18:58:58 2021
+
+Running: compile_flow (Compile Process) on tens_syn|tens_Implmnt
+# Mon Nov 29 18:58:58 2021
+
+Running: compiler (Compile Input) on tens_syn|tens_Implmnt
+# Mon Nov 29 18:58:58 2021
+compiler exited with errors
+Job failed on: tens_syn|tens_Implmnt
+
+Job: "compiler" terminated with error status: 2
+See log file: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synlog\tens_compiler.srr"
+# Mon Nov 29 18:58:58 2021
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on tens_syn|tens_Implmnt
+Complete: Compile on tens_syn|tens_Implmnt
+Complete: Logic Synthesis on tens_syn|tens_Implmnt
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\tens\tens_implmnt\tens.srr
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Opening object source file c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\top.vhd
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\counter.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\dsw_pwrok.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\hda_strap.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\powerled.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pwrbtn.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\rsmrst_pwrgd.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccinaux_vccin_en.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd"
+Warning: File already exists in project: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vpp_vddq.vhd"
+log file: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srr"
+Running: tens_Implmnt in foreground
+
+Running tens_syn|tens_Implmnt
+
+Running: compile (Compile) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:17 2021
+
+Running: compile_flow (Compile Process) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:17 2021
+
+Running: compiler (Compile Input) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:17 2021
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_comp.srs to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srs
+
+compiler completed
+# Mon Nov 29 19:02:19 2021
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:19 2021
+
+multi_srs_gen completed
+# Mon Nov 29 19:02:19 2021
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_mult.srs to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srs
+Complete: Compile Process on tens_syn|tens_Implmnt
+
+Running: premap (Pre-mapping) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:19 2021
+
+premap completed with warnings
+# Mon Nov 29 19:02:20 2021
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on tens_syn|tens_Implmnt
+
+Running: map (Map) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:20 2021
+
+Running: fpga_mapper (Map & Optimize) on tens_syn|tens_Implmnt
+# Mon Nov 29 19:02:20 2021
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\synwork\tens_m.srm to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\tens.srm
+
+fpga_mapper completed with warnings
+# Mon Nov 29 19:02:27 2021
+
+Return Code: 1
+Run Time:00h:00m:07s
+Complete: Map on tens_syn|tens_Implmnt
+Complete: Logic Synthesis on tens_syn|tens_Implmnt
