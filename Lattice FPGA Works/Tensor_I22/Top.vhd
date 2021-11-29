@@ -76,11 +76,11 @@ ENTITY TOP IS
 		V12S_EN_PM : OUT STD_LOGIC;
 		V5A_EN : OUT STD_LOGIC;
 		VCCIO_EN : OUT STD_LOGIC; -- DELETE?
-		VCCSA_EN : OUT STD_LOGIC;
-		VCCST_PWRGD_3V3 : OUT STD_LOGIC;
+		VCCINAUX_EN : OUT STD_LOGIC;
+		VCCST_PWRGD : OUT STD_LOGIC; -- is this 3V3 Signal? better be. because the SoC expectes 1.05 tolerance.
 		VDDQ_EN : OUT STD_LOGIC;
 		VPP_EN : OUT STD_LOGIC;
-		VR_EN : OUT STD_LOGIC; -- In Tensor this will be EN_VR_VCCIN
+		VCCIN_EN : OUT STD_LOGIC; 
 		RSMRSTn : OUT STD_LOGIC;
 		V33S_ENn : OUT STD_LOGIC;
 		V5S_ENn : OUT STD_LOGIC;
@@ -164,7 +164,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT vccsa_vr_en_block
+	COMPONENT vccinaux_vccin_en_block
 		PORT (
 			v12s_pwrgd : IN STD_LOGIC;
 			v5s_pwrgd : IN STD_LOGIC;
@@ -173,8 +173,8 @@ ARCHITECTURE bdf_type OF TOP IS
 			slp_s3 : IN STD_LOGIC;
 			rsmrst_pwrgd : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
-			vr_en : OUT STD_LOGIC;
-			vccsa_en : OUT STD_LOGIC
+			vccin_en : OUT STD_LOGIC;
+			vccinaux_en : OUT STD_LOGIC
 		);
 	END COMPONENT;
 
@@ -229,7 +229,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			vr_ready_vccin : IN STD_LOGIC;
 			vr_ready_vccinaux : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
-			vccst_pwrgd_3v3 : OUT STD_LOGIC;
+			vccst_pwrgd : OUT STD_LOGIC;
 			pch_pwrok : OUT STD_LOGIC
 		);
 	END COMPONENT;
@@ -262,7 +262,7 @@ BEGIN
 
 	PCH_PWROK <= SYNTHESIZED_WIRE_28;
 	DSW_PWROK <= SYNTHESIZED_WIRE_24;
-	VCCST_PWRGD_3V3 <= SYNTHESIZED_WIRE_11;
+	vccst_pwrgd <= SYNTHESIZED_WIRE_11;
 	RSMRSTn <= SYNTHESIZED_WIRE_50;
 	SYNTHESIZED_WIRE_46 <= '1'; -- in .bdf, this assigment was made by connector VCC to SLP_SUSn
 	SYNTHESIZED_WIRE_30 <= '1';
@@ -336,7 +336,7 @@ BEGIN
 
 	V105A_EN <= SYNTHESIZED_WIRE_24;
 
-	b2v_inst31 : vccsa_vr_en_block
+	b2v_inst31 : vccinaux_vccin_en_block
 	PORT MAP(
 		v12s_pwrgd => V12S_OK,
 		v5s_pwrgd => V5S_OK,
@@ -345,10 +345,10 @@ BEGIN
 		slp_s3 => SYNTHESIZED_WIRE_48,
 		rsmrst_pwrgd => SYNTHESIZED_WIRE_26,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
-		vr_en => VR_EN,
-		vccsa_en => VCCSA_EN);
+		vccin_en => vccin_en,
+		vccinaux_en => VCCINAUX_EN);
 
-	SYS_PWROK <= SYNTHESIZED_WIRE_28;
+	SYS_PWROK <= SYNTHESIZED_WIRE_28;-- SYS_PWROK is output. SYS_PWROK is generated from PCH_PWROK.
 
 	b2v_inst36 : dsw_pwrok_block
 	PORT MAP(
@@ -399,7 +399,7 @@ BEGIN
 		vr_ready_vccin => VR_READY_VCCIN,
 		vr_ready_vccinaux => VR_READY_VCCINAUX,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
-		vccst_pwrgd_3v3 => SYNTHESIZED_WIRE_11,
+		vccst_pwrgd => SYNTHESIZED_WIRE_11,
 		pch_pwrok => SYNTHESIZED_WIRE_28);
 	SYNTHESIZED_WIRE_4 <= NOT(GPIO_FPGA_PCH_5);
 

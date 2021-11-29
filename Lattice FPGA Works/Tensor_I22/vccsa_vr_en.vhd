@@ -5,7 +5,7 @@ USE IEEE.numeric_std.ALL;
 -- CPU VR must ramp up after +12VS, +5VS, +3V3S and VCCIO are OK.
 -- VCCSA can ramp up after VCCIO.
 
-ENTITY vccsa_vr_en_block IS
+ENTITY vccinaux_vccin_en_block IS
 	PORT (
 		v12s_pwrgd : IN STD_LOGIC; --iPU pulls up also if power module is not connected by ribbon
 		v5s_pwrgd : IN STD_LOGIC;
@@ -14,11 +14,11 @@ ENTITY vccsa_vr_en_block IS
 		slp_s3 : IN STD_LOGIC;
 		rsmrst_pwrgd : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec	<- PROVISION, NOT IN USE	
-		vr_en : OUT STD_LOGIC;
-		vccsa_en : OUT STD_LOGIC);
-END vccsa_vr_en_block;
+		vccin_en : OUT STD_LOGIC;
+		vccinaux_en : OUT STD_LOGIC);
+END vccinaux_vccin_en_block;
 
-ARCHITECTURE vccsa_vr_arch OF vccsa_vr_en_block IS
+ARCHITECTURE vccinaux_vccin_arch OF vccinaux_vccin_en_block IS
 	SIGNAL output : STD_LOGIC;
 BEGIN
 -- according to CFL_PDF (or All_Code.pdf page 16), we can see that VCCSA comes after VCCIO in the diagram.
@@ -27,7 +27,7 @@ BEGIN
 		ELSE
 		'0';
 
-	vr_en <= output; -- (Enable the VCCIN in Tensor I22)
-	vccsa_en <= output; -- (Enable the VCCIN_AUX in Tensor I22)
+	vccin_en <= output; -- (Enable the VCCIN in Tensor I22)
+	vccinaux_en <= output; -- (Enable the VCCIN_AUX in Tensor I22)
 
-END vccsa_vr_arch;
+END vccinaux_vccin_arch;

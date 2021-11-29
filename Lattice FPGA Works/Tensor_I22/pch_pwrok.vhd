@@ -4,13 +4,17 @@ USE IEEE.numeric_std.ALL;
 
 -- SLP_S3# asserted with or before PCH_PWROK
 -- PCH_PWROK is derived from PG of the CPU's VR, with a delay at rising edge after SLP_S3# deassertion of minimum 1 msec (actual 3 msec).
--- VCCST_PWRGD is tied to PCH_PWROK, and should have a hardware resistive divider, to be at 1V domain (CPU input).
--- SLP_S3# assertion to VCCST_PWRGD de-assertion: maximum of 1 usec.
+-- vccst_pwrgd is tied to PCH_PWROK, and should have a hardware resistive divider, to be at 1V domain (CPU input).
+-- SLP_S3# assertion to vccst_pwrgd de-assertion: maximum of 1 usec.
 
 --added:
--- VCCST_PWRGD can assert before or equal to PCH_PWROK, but must never lag it. It is recommended that both
--- vccst_pwrgd_3v3 and pch_pwrok are the same signal. why?
+-- vccst_pwrgd can assert before or equal to PCH_PWROK, but must never lag it. 
+-- vccst_pwrgd and pch_pwrok are the same signal. why?
 -- vr_ready_vccinaux relpaced vccsa_pwrok
+-- VCCIN and VCCIN_AUX are expected to 0V during states SLP_S0# is asserted (SLP_S0#=0)
+-- PCH_PWROK output is connected to SYS_PWROK.
+-- vccst_pwrgd must go low during Sx (System state S3, S4 or S5), regardless of voltage level of VCCST. 
+
 
 ENTITY pch_pwrok_block IS
 	PORT (
@@ -18,8 +22,8 @@ ENTITY pch_pwrok_block IS
 		vr_ready_vccin : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vr_ready_vccinaux : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
-		vccst_pwrgd_3v3 : OUT STD_LOGIC;
-		pch_pwrok : OUT STD_LOGIC);
+		vccst_pwrgd : OUT STD_LOGIC; -- is this 3V3 Signal?
+		pch_pwrok : OUT STD_LOGIC); -- Signal #7 Premium PWROK Generation Flow Diagram
 END pch_pwrok_block;
 
 ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
@@ -38,8 +42,8 @@ BEGIN
 	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output
 		ELSE
 		'0';
-
-	vccst_pwrgd_3v3 <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output   
+    
+	vccst_pwrgd <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output   
 		ELSE
 		'0';
 

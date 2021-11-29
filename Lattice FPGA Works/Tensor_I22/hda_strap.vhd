@@ -5,7 +5,7 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY hda_strap_block IS
 	PORT (
-		pch_pwrok : IN STD_LOGIC; -- SLP_S3# + 3 msec delay (comes from vccst_pwrgd_3v3)
+		pch_pwrok : IN STD_LOGIC; -- SLP_S3# + 3 msec delay (comes from vccst_pwrgd)
 		GPIO_PCH : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		HDA_SDO_FPGA : OUT STD_LOGIC);

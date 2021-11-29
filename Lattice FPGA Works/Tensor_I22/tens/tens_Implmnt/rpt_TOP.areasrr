@@ -164,6 +164,18 @@ CARRYS     14                 4.58 %
 ===================================================
 Total COMBINATIONAL LOGIC in the block TOP.rsmrst_pwrgd_block:	66 (4.57 % Utilization)
 
+-----------------------------------------------------------------------------
+########   Utilization report for  cell:   vccinaux_vccin_en_block   ########
+Instance path:   TOP.vccinaux_vccin_en_block                                 
+=============================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  0.2190 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block TOP.vccinaux_vccin_en_block:	2 (0.14 % Utilization)
+
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   vccio_en_block   ########
 Instance path:   TOP.vccio_en_block                                 
@@ -175,18 +187,6 @@ Name     Total elements     Utilization     Notes
 LUTS     1                  0.1090 %             
 =================================================
 Total COMBINATIONAL LOGIC in the block TOP.vccio_en_block:	1 (0.07 % Utilization)
-
------------------------------------------------------------------------
-########   Utilization report for  cell:   vccsa_vr_en_block   ########
-Instance path:   TOP.vccsa_vr_en_block                                 
-=======================================================================
-
-COMBINATIONAL LOGIC
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-LUTS     2                  0.2190 %             
-=================================================
-Total COMBINATIONAL LOGIC in the block TOP.vccsa_vr_en_block:	2 (0.14 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   vpp_vddq_block   ########

@@ -1,270 +1,499 @@
 12:32:27
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "tens_syn.prj" -log "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.srr"
-starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-
-==contents of C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.srr
-#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
-#install: C:\lscc\iCEcube2.2020.12\synpbase
-#OS: Windows 8 6.2
-#Hostname: FIRAS-AIRTOP
-
-# Thu Nov 25 13:21:44 2021
-
-#Implementation: tens_Implmnt
-
-Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd":9:7:9:20|Top entity is set to vpp_vddq_block.
-@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":10:23:10:24|duplicate entity name dsw_pwrok_block
-@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":29:43:29:43|No identifier "vdc_ok" in scope
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\hda_strap_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pch_pwrok_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\powerled_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\rsmrst_pwrgd_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccio_en_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccsa_vr_en_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd
-@E: Parse errors encountered - exiting
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 13:21:44 2021
-
-###########################################################]
-@END
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 13:21:44 2021
-
-###########################################################]
-
-
-Synthesis exit by 2.
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+
+
+==contents of C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.srr
+
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+
+#OS: Windows 8 6.2
+
+#Hostname: FIRAS-AIRTOP
+
+
+
+# Thu Nov 25 13:21:44 2021
+
+
+
+#Implementation: tens_Implmnt
+
+
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+vccin_en
+Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+
+@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd":9:7:9:20|Top entity is set to vpp_vddq_block.
+
+@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":10:23:10:24|duplicate entity name dsw_pwrok_block
+
+@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":29:43:29:43|No identifier "vdc_ok" in scope
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\hda_strap_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pch_pwrok_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\powerled_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\rsmrst_pwrgd_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccio_en_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccsa_vr_en_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd
+
+@E: Parse errors encountered - exiting
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 13:21:44 2021
+
+
+
+###########################################################]
+
+@END
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+vccin_en
+# Thu Nov 25 13:21:44 2021
+
+
+
+###########################################################]
+
+
+
+
+
+Synthesis exit by 2.
+
 Synthesis failed.
 Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "tens_syn.prj" -log "tens_Implmnt/tens.srr"
-starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-
-==contents of tens_Implmnt/tens.srr
-#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
-#install: C:\lscc\iCEcube2.2020.12\synpbase
-#OS: Windows 8 6.2
-#Hostname: FIRAS-AIRTOP
-
-# Thu Nov 25 13:21:57 2021
-
-#Implementation: tens_Implmnt
-
-Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":25:7:25:9|Top entity is set to TOP.
-@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":10:23:10:24|duplicate entity name dsw_pwrok_block
-@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":29:43:29:43|No identifier "vdc_ok" in scope
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\hda_strap_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pch_pwrok_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\powerled_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\rsmrst_pwrgd_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccio_en_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccsa_vr_en_vh.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd
-@E: CD126 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":129:37:129:37|Expecting identifier
-3 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd
-@E: Parse errors encountered - exiting
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 13:21:58 2021
-
-###########################################################]
-@END
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 13:21:58 2021
-
-###########################################################]
-
-
-Synthesis exit by 2.
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+
+
+==contents of tens_Implmnt/tens.srr
+
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+
+#OS: Windows 8 6.2
+
+#Hostname: FIRAS-AIRTOP
+
+
+
+# Thu Nov 25 13:21:57 2021
+
+
+
+#Implementation: tens_Implmnt
+
+
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+
+@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":25:7:25:9|Top entity is set to TOP.
+
+@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":10:23:10:24|duplicate entity name dsw_pwrok_block
+
+@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":29:43:29:43|No identifier "vdc_ok" in scope
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\hda_strap_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pch_pwrok_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\powerled_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\rsmrst_pwrgd_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccio_en_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccsa_vr_en_vh.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd
+
+@E: CD126 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":129:37:129:37|Expecting identifier
+
+3 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd
+
+@E: Parse errors encountered - exiting
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 13:21:58 2021
+
+
+
+###########################################################]
+
+@END
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 13:21:58 2021
+
+
+
+###########################################################]
+
+
+
+
+
+Synthesis exit by 2.
+
 Synthesis failed.
 Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 15 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 398 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "tens_syn.prj" -log "tens_Implmnt/tens.srr"
-starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-
-==contents of tens_Implmnt/tens.srr
-#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
-#install: C:\lscc\iCEcube2.2020.12\synpbase
-#OS: Windows 8 6.2
-#Hostname: FIRAS-AIRTOP
-
-# Thu Nov 25 14:08:16 2021
-
-#Implementation: tens_Implmnt
-
-Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":25:7:25:9|Top entity is set to TOP.
-Options changed - recompiling
-@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":8:23:8:24|duplicate entity name dsw_pwrok_block
-@E: CD169 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":19:0:19:6|Illegal declaration
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd
-@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":10:23:10:24|duplicate entity name dsw_pwrok_block
-@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":29:43:29:43|No identifier "vdc_ok" in scope
-4 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd
-4 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd
-@E: Parse errors encountered - exiting
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 14:08:16 2021
-
-###########################################################]
-@END
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 14:08:16 2021
-
-###########################################################]
-
-
-Synthesis exit by 2.
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+
+
+==contents of tens_Implmnt/tens.srr
+
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+
+#OS: Windows 8 6.2
+
+#Hostname: FIRAS-AIRTOP
+
+
+
+# Thu Nov 25 14:08:16 2021
+
+
+
+#Implementation: tens_Implmnt
+
+
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+
+@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":25:7:25:9|Top entity is set to TOP.
+
+Options changed - recompiling
+
+@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":8:23:8:24|duplicate entity name dsw_pwrok_block
+
+@E: CD169 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":19:0:19:6|Illegal declaration
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd
+
+@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":10:23:10:24|duplicate entity name dsw_pwrok_block
+
+@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd":29:43:29:43|No identifier "vdc_ok" in scope
+
+4 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok_vh.vhd
+
+4 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd
+
+@E: Parse errors encountered - exiting
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 14:08:16 2021
+
+
+
+###########################################################]
+
+@END
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 14:08:16 2021
+
+
+
+###########################################################]
+
+
+
+
+
+Synthesis exit by 2.
+
 Synthesis failed.
 Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 18 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "tens_syn.prj" -log "tens_Implmnt/tens.srr"
-starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-
-==contents of tens_Implmnt/tens.srr
-#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
-#install: C:\lscc\iCEcube2.2020.12\synpbase
-#OS: Windows 8 6.2
-#Hostname: FIRAS-AIRTOP
-
-# Thu Nov 25 14:11:27 2021
-
-#Implementation: tens_Implmnt
-
-Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
-@N|Running in 64-bit mode
-Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
-
-@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":25:7:25:9|Top entity is set to TOP.
-Options changed - recompiling
-@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":8:23:8:24|duplicate entity name dsw_pwrok_block
-@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":24:19:24:19|No identifier "clk_10mhz" in scope
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd
-2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd
-@E: Parse errors encountered - exiting
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 14:11:27 2021
-
-###########################################################]
-@END
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Nov 25 14:11:27 2021
-
-###########################################################]
-
-
-Synthesis exit by 2.
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+
+
+==contents of tens_Implmnt/tens.srr
+
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+
+#OS: Windows 8 6.2
+
+#Hostname: FIRAS-AIRTOP
+
+
+
+# Thu Nov 25 14:11:27 2021
+
+
+
+#Implementation: tens_Implmnt
+
+
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+Synopsys VHDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+
+
+@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+
+@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd":25:7:25:9|Top entity is set to TOP.
+
+Options changed - recompiling
+
+@E: CD632 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":8:23:8:24|duplicate entity name dsw_pwrok_block
+
+@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd":24:19:24:19|No identifier "clk_10mhz" in scope
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd
+
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd
+
+@E: Parse errors encountered - exiting
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 14:11:27 2021
+
+
+
+###########################################################]
+
+@END
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+# Thu Nov 25 14:11:27 2021
+
+
+
+###########################################################]
+
+
+
+
+
+Synthesis exit by 2.
+
 Synthesis failed.
 Synthesis batch mode runtime 1 seconds"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 28 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt
 
 
 "C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\edifparser.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev" "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.edf " "C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt\netlist" "-pQN84" -c -e --devicename iCE40LP1K
-starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
-Release:        2020.12.27943
-Build Date:     Dec  9 2020 17:30:22
-
-Parsing edif file: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.edf...
-start to read sdc/scf file C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.scf
-sdc_reader OK C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.scf
-Stored edif netlist at C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt\netlist\oadb-TOP...
-Warning: Removing the net 'GPIO_FPGA_SV_3' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PM_3' becasue it is not driving any logic
-Warning: Removing the net 'TPM_GPIO' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_HDR_3' becasue it is not driving any logic
-Warning: Removing the net 'SV_WD_RESET' becasue it is not driving any logic
-Warning: Removing the net 'FP_RSTn' becasue it is not driving any logic
-Warning: Removing the net 'FPGA_GPIO_WD' becasue it is not driving any logic
-Warning: Removing the net 'PM_PWROK' becasue it is not driving any logic
-Warning: Removing the net 'PLTRSTn' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PM_4' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PCH_2' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_HDR_2' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_SV_2' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PM_2' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_SV_1' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_SV_4' becasue it is not driving any logic
-Warning: Removing the net 'SLP_SUSn' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PCH_3' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_HDR_1' becasue it is not driving any logic
-Warning: Removing the net 'RTCRSTn_FPGA' becasue it is not driving any logic
-Warning: Removing the net 'PWRBTNn' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PCH_4' becasue it is not driving any logic
-Warning: Removing the net 'GPIO_FPGA_PM_1' becasue it is not driving any logic
-
-write Timing Constraint to C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt/Temp/sbt_temp.sdc
-
-EDIF Parser succeeded
-Top module is: TOP
-
-EDF Parser run-time: 3 (sec)
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+
+Release:        2020.12.27943
+
+Build Date:     Dec  9 2020 17:30:22
+
+
+
+Parsing edif file: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.edf...
+
+start to read sdc/scf file C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.scf
+
+sdc_reader OK C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt/tens.scf
+
+Stored edif netlist at C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt\netlist\oadb-TOP...
+
+Warning: Removing the net 'GPIO_FPGA_SV_3' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PM_3' becasue it is not driving any logic
+
+Warning: Removing the net 'TPM_GPIO' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_HDR_3' becasue it is not driving any logic
+
+Warning: Removing the net 'SV_WD_RESET' becasue it is not driving any logic
+
+Warning: Removing the net 'FP_RSTn' becasue it is not driving any logic
+
+Warning: Removing the net 'FPGA_GPIO_WD' becasue it is not driving any logic
+
+Warning: Removing the net 'PM_PWROK' becasue it is not driving any logic
+
+Warning: Removing the net 'PLTRSTn' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PM_4' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PCH_2' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_HDR_2' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_SV_2' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PM_2' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_SV_1' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_SV_4' becasue it is not driving any logic
+
+Warning: Removing the net 'SLP_SUSn' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PCH_3' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_HDR_1' becasue it is not driving any logic
+
+Warning: Removing the net 'RTCRSTn_FPGA' becasue it is not driving any logic
+
+Warning: Removing the net 'PWRBTNn' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PCH_4' becasue it is not driving any logic
+
+Warning: Removing the net 'GPIO_FPGA_PM_1' becasue it is not driving any logic
+
+
+
+write Timing Constraint to C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt/Temp/sbt_temp.sdc
+
+
+
+EDIF Parser succeeded
+
+Top module is: TOP
+
+
+
+EDF Parser run-time: 3 (sec)
+
 edif parser succeed.
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 1289 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 1929 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt
 "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -options "tens_syn.prj" 
-starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
-Information : Using arguments of synplify instead, will not check them here.
+starting Synplify_Prorunning Synplify_ProCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+Information : Using arguments of synplify instead, will not check them here.
+
 Synplify_Pro succeed.
 Synthesis runtime 2389 seconds
 Current Implementation tens_Implmnt its sbt path: C:/Users/firas.abdelghani/Dropbox/Board-Design/FPGA/Lattice/Projects/Tensor_I22/tens/tens_Implmnt\sbt

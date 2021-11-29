@@ -29,7 +29,7 @@ BEGIN
 		ELSE
 		'0';
 
-	vddq_en <= '1' WHEN (vpp_pwrgd = '1') AND (slp_s4 = '1')
+	vddq_en <= '1' WHEN (slp_s4 = '1') AND (vpp_pwrgd = '1')
 		ELSE
 		'0';
 

@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2021 11 27 18 41 23)
+      (timeStamp 2021 11 29 18 11 18)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L+ice40, mapper maplat, Build 1612R"))
      )
@@ -2655,14 +2655,14 @@
         (property orig_inst_of (string "dsw_pwrok_block"))
        )
     )
-    (cell vccsa_vr_en_block (cellType GENERIC)
+    (cell vccinaux_vccin_en_block (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
            (port V12S_OK (direction INPUT))
            (port SYNTHESIZED_WIRE_2 (direction INPUT))
            (port V5S_OK (direction INPUT))
            (port SYNTHESIZED_WIRE_26 (direction INPUT))
-           (port VR_EN (direction OUTPUT))
+           (port VCCIN_EN (direction OUTPUT))
            (port VCCIO_OK (direction INPUT))
            (port V33S_OK (direction INPUT))
          )
@@ -2691,9 +2691,9 @@
            (portRef Y (instanceRef GND))
            (portRef I3 (instanceRef un10_output))
           ))
-          (net (rename vr_en "VR_EN") (joined
+          (net (rename vccin_en "VCCIN_EN") (joined
            (portRef O (instanceRef un10_output))
-           (portRef VR_EN)
+           (portRef VCCIN_EN)
           ))
           (net (rename synthesized_wire_26 "SYNTHESIZED_WIRE_26") (joined
            (portRef SYNTHESIZED_WIRE_26)
@@ -2715,7 +2715,7 @@
            (portRef Y (instanceRef VCC))
           ))
          )
-        (property orig_inst_of (string "vccsa_vr_en_block"))
+        (property orig_inst_of (string "vccinaux_vccin_en_block"))
        )
     )
     (cell hda_strap_block (cellType GENERIC)
@@ -13525,7 +13525,6 @@
            (port SLP_S4n (direction INPUT))
            (port SLP_S5n (direction INPUT))
            (port PWRBTNn (direction INPUT))
-           (port RTCRSTn_FPGA (direction INPUT))
            (port FPGA_OSC (direction INPUT))
            (port SLP_SUSn (direction INPUT))
            (port PM_PWROK (direction INPUT))
@@ -13539,11 +13538,11 @@
            (port V12S_EN_PM (direction OUTPUT))
            (port V5A_EN (direction OUTPUT))
            (port VCCIO_EN (direction OUTPUT))
-           (port VCCSA_EN (direction OUTPUT))
-           (port VCCST_PWRGD_3V3 (direction OUTPUT))
+           (port VCCINAUX_EN (direction OUTPUT))
+           (port VCCST_PWRGD (direction OUTPUT))
            (port VDDQ_EN (direction OUTPUT))
            (port VPP_EN (direction OUTPUT))
-           (port VR_EN (direction OUTPUT))
+           (port VCCIN_EN (direction OUTPUT))
            (port RSMRSTn (direction OUTPUT))
            (port V33S_ENn (direction OUTPUT))
            (port V5S_ENn (direction OUTPUT))
@@ -13572,7 +13571,7 @@
           )
           (instance b2v_inst200 (viewRef netlist (cellRef hda_strap_block))
           )
-          (instance b2v_inst31 (viewRef netlist (cellRef vccsa_vr_en_block))
+          (instance b2v_inst31 (viewRef netlist (cellRef vccinaux_vccin_en_block))
           )
           (instance b2v_inst36 (viewRef netlist (cellRef dsw_pwrok_block))
           )
@@ -13717,9 +13716,6 @@
           ))
           (net (rename pwrbtnn "PWRBTNn") (joined
            (portRef PWRBTNn)
-          ))
-          (net (rename rtcrstn_fpga "RTCRSTn_FPGA") (joined
-           (portRef RTCRSTn_FPGA)
           ))
           (net (rename slp_susn "SLP_SUSn") (joined
            (portRef SLP_SUSn)
@@ -13881,10 +13877,10 @@
            (portRef Y (instanceRef VCC))
            (portRef V5A_EN)
           ))
-          (net (rename vccst_pwrgd_3v3 "VCCST_PWRGD_3V3") (joined
+          (net (rename vccst_pwrgd "VCCST_PWRGD") (joined
            (portRef delayed_vccin_vccinaux_ok_RNIIGI89 (instanceRef b2v_inst6))
            (portRef delayed_vccin_vccinaux_ok_RNIIGI89 (instanceRef b2v_inst200))
-           (portRef VCCST_PWRGD_3V3)
+           (portRef VCCST_PWRGD)
            (portRef SYS_PWROK)
            (portRef PCH_PWROK)
           ))
@@ -13892,10 +13888,10 @@
            (portRef VPP_EN (instanceRef b2v_inst16))
            (portRef VPP_EN)
           ))
-          (net (rename vr_en "VR_EN") (joined
-           (portRef VR_EN (instanceRef b2v_inst31))
-           (portRef VR_EN)
-           (portRef VCCSA_EN)
+          (net (rename vccin_en "VCCIN_EN") (joined
+           (portRef VCCIN_EN (instanceRef b2v_inst31))
+           (portRef VCCIN_EN)
+           (portRef VCCINAUX_EN)
           ))
           (net (rename v5s_enn "V5S_ENn") (joined
            (portRef V5S_ENn (instanceRef b2v_inst200))
