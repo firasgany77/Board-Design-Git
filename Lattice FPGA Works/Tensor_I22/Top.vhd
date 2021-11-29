@@ -120,7 +120,7 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT vccio_en_block
 		PORT (
-			slp_s3 : IN STD_LOGIC;
+			slp_s3n : IN STD_LOGIC;
 			vddq_ok : IN STD_LOGIC;
 			vccst_ok : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
@@ -170,7 +170,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			v5s_pwrgd : IN STD_LOGIC;
 			v33s_pwrgd : IN STD_LOGIC;
 			vccio_pwrok : IN STD_LOGIC;
-			slp_s3 : IN STD_LOGIC;
+			slp_s3n: IN STD_LOGIC;
 			rsmrst_pwrgd : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			vccin_en : OUT STD_LOGIC;
@@ -225,7 +225,7 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT pch_pwrok_block
 		PORT (
-			slp_s3 : IN STD_LOGIC;
+			slp_s3n: IN STD_LOGIC;
 			vr_ready_vccin : IN STD_LOGIC;
 			vr_ready_vccinaux : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
@@ -290,7 +290,7 @@ BEGIN
 		vddq_en => VDDQ_EN);
 	b2v_inst17 : vccio_en_block
 	PORT MAP(
-		slp_s3 => SYNTHESIZED_WIRE_48,
+		slp_s3n=> SYNTHESIZED_WIRE_48,
 		vddq_ok => VDDQ_OK,
 		vccst_ok => VCCST_OK,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
@@ -342,7 +342,7 @@ BEGIN
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
 		vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
-		slp_s3 => SYNTHESIZED_WIRE_48,
+		slp_s3n=> SYNTHESIZED_WIRE_48,
 		rsmrst_pwrgd => SYNTHESIZED_WIRE_26,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccin_en => vccin_en,
@@ -395,7 +395,7 @@ BEGIN
 		rsmrst_pwrgd_out => SYNTHESIZED_WIRE_26);
 	b2v_inst6 : pch_pwrok_block
 	PORT MAP(
-		slp_s3 => SYNTHESIZED_WIRE_48,
+		slp_s3n=> SYNTHESIZED_WIRE_48,
 		vr_ready_vccin => VR_READY_VCCIN,
 		vr_ready_vccinaux => VR_READY_VCCINAUX,
 		clk_100Khz => SYNTHESIZED_WIRE_47,

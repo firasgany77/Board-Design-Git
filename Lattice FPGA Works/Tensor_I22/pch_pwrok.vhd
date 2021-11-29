@@ -18,7 +18,7 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY pch_pwrok_block IS
 	PORT (
-		slp_s3 : IN STD_LOGIC; -- SLP_S3#
+		slp_s3n : IN STD_LOGIC; -- SLP_S3#
 		vr_ready_vccin : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vr_ready_vccinaux : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
@@ -35,15 +35,15 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 	SIGNAL vccin_vccinaux_ok : STD_LOGIC;
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	vccin_vccinaux_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3 = '1') -- Delay trigger
+	vccin_vccinaux_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3n = '1') -- Delay trigger
 		ELSE
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output
+	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- Output
 		ELSE
 		'0';
     
-	vccst_pwrgd <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3 = '1') -- Output   
+	vccst_pwrgd <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- Output   
 		ELSE
 		'0';
 
