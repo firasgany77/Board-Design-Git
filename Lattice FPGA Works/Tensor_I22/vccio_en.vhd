@@ -9,7 +9,7 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY vccio_en_block IS
 	PORT (
-		slp_s3 : IN STD_LOGIC; -- SLP_S3#
+		slp_s3n : IN STD_LOGIC; -- SLP_S3#
 		vddq_ok : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		vccst_ok : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec   <- PROVISION, NOT IN USE	
@@ -19,7 +19,7 @@ END vccio_en_block;
 ARCHITECTURE vccio_en_block_arch OF vccio_en_block IS
 BEGIN
 
-	vccio_en <= '1' WHEN (slp_s3 = '1') AND (vddq_ok = '1') AND (vccst_ok = '1')
+	vccio_en <= '1' WHEN (slp_s3n = '1') AND (vddq_ok = '1') AND (vccst_ok = '1')
 		ELSE
 		'0';
 

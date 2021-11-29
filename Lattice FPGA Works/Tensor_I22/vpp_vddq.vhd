@@ -33,7 +33,7 @@ BEGIN
 		ELSE
 		'0';
 
-	PROCESS (clk_100Khz) -- 30 mSec delay process:  vddq_pwrgd -> delayed_vddq_pwrgd
+	PROCESS (clk_100Khz) -- 30 mSec delay process: vddq_pwrgd -> delayed_vddq_pwrgd
 	BEGIN
 		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS

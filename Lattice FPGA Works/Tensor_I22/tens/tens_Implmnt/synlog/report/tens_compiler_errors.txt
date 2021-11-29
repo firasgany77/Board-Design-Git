@@ -1,3 +1,2 @@
-@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":339:1:339:10|Port slp_s3n of entity work.vccinaux_vccin_en_block is unconnected. If a port needs to remain unconnected, use the keyword open.
-@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":396:1:396:9|Port slp_s3n of entity work.pch_pwrok_block is unconnected. If a port needs to remain unconnected, use the keyword open.
+@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":291:1:291:10|Port slp_s3 of entity work.vccio_en_block is unconnected. If a port needs to remain unconnected, use the keyword open.
 

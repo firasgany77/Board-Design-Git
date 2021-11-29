@@ -18,25 +18,20 @@ File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPG
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd changed - recompiling
 VHDL syntax check successful!
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":25:7:25:9|Synthesizing work.top.bdf_type.
+@W: CD276 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccio_en.vhd":12:2:12:7|Map for port slp_s3 of component vccio_en_block not found
+@W: CD279 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":123:3:123:9|Port slp_s3n of component vccio_en_block not found on corresponding entity
+@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":291:1:291:10|Port slp_s3 of entity work.vccio_en_block is unconnected. If a port needs to remain unconnected, use the keyword open.
 @W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":148:11:148:13|Unbound component adc mapped to black box
-@W: CD276 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\vccinaux_vccin_en.vhd":14:2:14:8|Map for port slp_s3n of component vccinaux_vccin_en_block not found
-@W: CD279 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":173:3:173:8|Port slp_s3 of component vccinaux_vccin_en_block not found on corresponding entity
-@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":339:1:339:10|Port slp_s3n of entity work.vccinaux_vccin_en_block is unconnected. If a port needs to remain unconnected, use the keyword open.
 @W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":191:11:191:25|Unbound component voltage_monitor mapped to black box
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":191:11:191:25|Synthesizing work.voltage_monitor.syn_black_box.
-@W: CD276 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":21:2:21:8|Map for port slp_s3n of component pch_pwrok_block not found
-@W: CD279 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":228:3:228:8|Port slp_s3 of component pch_pwrok_block not found on corresponding entity
-@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":396:1:396:9|Port slp_s3n of entity work.pch_pwrok_block is unconnected. If a port needs to remain unconnected, use the keyword open.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":243:8:243:26|Signal synthesized_wire_11 is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":252:8:252:26|Signal synthesized_wire_28 is undriven. Either assign the signal a value or remove the signal declaration.
 Synthesis failed
-2 errors during synthesis
+1 errors during synthesis
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Nov 29 18:56:38 2021
+# Mon Nov 29 18:58:58 2021
 
 ###########################################################]
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Nov 29 18:56:38 2021
+# Mon Nov 29 18:58:58 2021
 
 ###########################################################]
