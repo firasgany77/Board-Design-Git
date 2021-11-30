@@ -39,7 +39,7 @@ BEGIN
 		ELSE
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- tPCH08 in Sequence Timings
+	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- tPCH08 in Sequence Timings, min is 1 msec
 		ELSE
 		'0';
     
@@ -62,8 +62,8 @@ BEGIN
 					END IF;
 
 				WHEN delay => -- 	
-					IF (count = to_unsigned(3000, 16)) THEN -- 300 * 10uSec = 3 mSec (Changed to 3000: Test)
-						curr_state <= pwrgd;
+					IF (count = to_unsigned(3000, 16)) THEN -- 300 * 10uSec = 3 mSec (Changed to 3000: Test) -- min is 1 mSec
+						curr_state <= pwrgd;                -- T = 1\100Khz = 10uSec
 						count <= (OTHERS => '0');
 					ELSE
 						count <= count + 1;

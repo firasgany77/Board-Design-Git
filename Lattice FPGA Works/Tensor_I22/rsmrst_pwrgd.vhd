@@ -56,7 +56,7 @@ BEGIN
 					END IF;
 					RSMRSTn <= '0';
 
-				WHEN no_pwrgd =>
+				WHEN no_pwrgd => -- we start from this state
 					IF (rsmrst_pwrgd = '1') THEN
 						curr_state <= delay;
 						count <= (OTHERS => '0');

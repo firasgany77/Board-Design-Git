@@ -8,8 +8,8 @@ ENTITY counter IS
 	PORT (
 --      resetN:		IN STD_LOGIC;
 		CLK_10mhz : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100Khz : OUT STD_LOGIC; -- 10MHz\100 = 100Khz 
-		locked : OUT STD_LOGIC);
+		clk_100Khz : OUT STD_LOGIC -- 10MHz\100 = 100Khz 
+		);
 END counter;
 
 -- T_100Khz = 1\100Khz = 10us = 10000ns
@@ -23,7 +23,6 @@ END counter;
 ARCHITECTURE counter_arch OF counter IS
 	SIGNAL counter : INTEGER := 1;
 	SIGNAL tmp : STD_LOGIC := '0';
-    SIGNAL tmp_locked: STD_LOGIC := '1';
 BEGIN
 
 	PROCESS (CLK_10mhz)
@@ -39,7 +38,6 @@ BEGIN
 				END IF;
 			END IF;
 			clk_100Khz <= tmp;
-			locked <= tmp_locked;
 --		END IF;
 	END PROCESS;
 
