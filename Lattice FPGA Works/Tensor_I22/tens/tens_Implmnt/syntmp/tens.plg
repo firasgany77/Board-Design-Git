@@ -1,11 +1,11 @@
-@P:  Worst Slack : -17.938
-@P:  TOP|FPGA_OSC - Estimated Frequency : 8.4 MHz
-@P:  TOP|FPGA_OSC - Requested Frequency : 9.8 MHz
-@P:  TOP|FPGA_OSC - Estimated Period : 119.589
-@P:  TOP|FPGA_OSC - Requested Period : 101.651
-@P:  TOP|FPGA_OSC - Slack : -17.938
+@P:  Worst Slack : -81.863
+@P:  TOP|FPGA_OSC - Estimated Frequency : 8.6 MHz
+@P:  TOP|FPGA_OSC - Requested Frequency : 28.8 MHz
+@P:  TOP|FPGA_OSC - Estimated Period : 116.626
+@P:  TOP|FPGA_OSC - Requested Period : 34.762
+@P:  TOP|FPGA_OSC - Slack : -81.863
 @P: TOP Part : ice40lp1kqn84
 @P: TOP I/O Register bits : 0
-@P: TOP Register bits (Non I/O) : 201 (15%)
-@P: TOP Total Luts : 914 (71%)
+@P: TOP Register bits (Non I/O) : 200 (15%)
+@P: TOP Total Luts : 905 (70%)
 @P:  CPU Time : 0h:00m:08s
