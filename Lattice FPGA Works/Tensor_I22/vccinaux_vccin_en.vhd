@@ -7,7 +7,6 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY vccinaux_vccin_en_block IS
 	PORT (
-		v12s_pwrgd : IN STD_LOGIC; --iPU pulls up also if power module is not connected by ribbon
 		v5s_pwrgd : IN STD_LOGIC;
 		v33s_pwrgd : IN STD_LOGIC;
 		vccio_pwrok : IN STD_LOGIC; -- Internal weak pull-up required
@@ -23,7 +22,7 @@ ARCHITECTURE vccinaux_vccin_arch OF vccinaux_vccin_en_block IS
 BEGIN
 -- according to CFL_PDF (or All_Code.pdf page 16), we can see that VCCSA comes after VCCIO in the diagram.
 -- VCCIO, VCCSA must ramp after VccST and VDDQ have completed their ramps. (from All_Code.pdf)
-	output <= '1' WHEN (v12s_pwrgd = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (vccio_pwrok = '1') AND (slp_s3n = '1') AND (rsmrst_pwrgd = '1')
+	output <= '1' WHEN (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (vccio_pwrok = '1') AND (slp_s3n = '1') AND (rsmrst_pwrgd = '1')
 		ELSE
 		'0';
 

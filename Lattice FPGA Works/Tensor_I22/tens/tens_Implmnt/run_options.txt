@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\tens\tens_Implmnt\run_options.txt
-#--  Written on Mon Nov 29 19:02:17 2021
+#--  Written on Mon Nov 29 19:11:38 2021
 
 
 #project files

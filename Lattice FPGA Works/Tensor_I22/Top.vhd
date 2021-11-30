@@ -44,7 +44,6 @@ ENTITY TOP IS
 		SV_WD_RESET : IN STD_LOGIC;
 		TPM_GPIO : IN STD_LOGIC;
 		V105A_OK : IN STD_LOGIC;
-		V12S_OK : IN STD_LOGIC;
 		V33A_OK : IN STD_LOGIC;
 		V33DSW_OK : IN STD_LOGIC;
 		V33S_OK : IN STD_LOGIC;
@@ -72,8 +71,6 @@ ENTITY TOP IS
 		PWRBTN_LED : OUT STD_LOGIC;
 		SYS_PWROK : OUT STD_LOGIC;
 		V105A_EN : OUT STD_LOGIC;
-		V12S_EN : OUT STD_LOGIC;
-		V12S_EN_PM : OUT STD_LOGIC;
 		V5A_EN : OUT STD_LOGIC;
 		VCCIO_EN : OUT STD_LOGIC; -- DELETE?
 		VCCINAUX_EN : OUT STD_LOGIC;
@@ -166,7 +163,6 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT vccinaux_vccin_en_block
 		PORT (
-			v12s_pwrgd : IN STD_LOGIC;
 			v5s_pwrgd : IN STD_LOGIC;
 			v33s_pwrgd : IN STD_LOGIC;
 			vccio_pwrok : IN STD_LOGIC;
@@ -296,8 +292,6 @@ BEGIN
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccio_en => VCCIO_EN);
 
-	V12S_EN <= SYNTHESIZED_WIRE_48;
-
 	SYNTHESIZED_WIRE_48 <= SYNTHESIZED_WIRE_50 AND SLP_S3n;
 	b2v_inst20 : counter
 	PORT MAP(
@@ -311,7 +305,6 @@ BEGIN
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		HDA_SDO_FPGA => HDA_SDO_FPGA);
 
-	V12S_EN_PM <= SYNTHESIZED_WIRE_48;
 
 	b2v_inst28 : adc
 	PORT MAP(
@@ -338,7 +331,6 @@ BEGIN
 
 	b2v_inst31 : vccinaux_vccin_en_block
 	PORT MAP(
-		v12s_pwrgd => V12S_OK,
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
 		vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
