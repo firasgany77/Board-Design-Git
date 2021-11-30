@@ -1,5 +1,5 @@
-@W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":145:11:145:13|Unbound component adc mapped to black box
-@W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":187:11:187:25|Unbound component voltage_monitor mapped to black box
+@W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":144:11:144:13|Unbound component adc mapped to black box
+@W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\Top.vhd":186:11:186:25|Unbound component voltage_monitor mapped to black box
 @W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":50:1:50:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":65:9:65:13|Referenced variable count is not in sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\pch_pwrok.vhd":56:9:56:25|Referenced variable vccin_vccinaux_ok is not in sensitivity list.

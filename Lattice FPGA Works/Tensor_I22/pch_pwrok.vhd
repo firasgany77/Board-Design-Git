@@ -39,7 +39,7 @@ BEGIN
 		ELSE
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- Output
+	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- tPCH08 in Sequence Timings
 		ELSE
 		'0';
     

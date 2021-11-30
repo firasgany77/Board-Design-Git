@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Tue Nov 30 08:01:15 2021
+# Written on Tue Nov 30 08:43:03 2021
 
 
 ##### DESIGN INFO #######################################################
@@ -68,7 +68,6 @@ p:SLP_S3n
 p:SLP_S4n
 p:SLP_S5n
 p:SLP_SUSn
-p:SV_WD_RESET
 p:SYS_PWROK
 p:TPM_GPIO
 p:V1P8A_OK
