@@ -9,18 +9,18 @@ Part:			ICE40LP1KQN84 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     200                100 %                
+FLOPS     201                100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP:	200 (13.94 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP:	201 (14.25 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       905                100 %                
+LUTS       880                100 %                
 CARRYS     308                100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP:	1213 (84.53 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP:	1188 (84.20 % Utilization)
 
 
 IO PADS
@@ -38,18 +38,18 @@ Instance path:   TOP.counter
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     35                 17.5 %               
+FLOPS     35                 17.4 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.counter:	35 (2.44 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.counter:	35 (2.48 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       43                 4.75 %               
+LUTS       43                 4.89 %               
 CARRYS     38                 12.3 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.counter:	81 (5.64 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.counter:	81 (5.74 % Utilization)
 
 ---------------------------------------------------------------------
 ########   Utilization report for  cell:   dsw_pwrok_block   ########
@@ -59,18 +59,18 @@ Instance path:   TOP.dsw_pwrok_block
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     19                 9.5 %                
+FLOPS     19                 9.45 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.dsw_pwrok_block:	19 (1.32 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.dsw_pwrok_block:	19 (1.35 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       50                 5.52 %               
+LUTS       50                 5.68 %               
 CARRYS     15                 4.87 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.dsw_pwrok_block:	65 (4.53 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.dsw_pwrok_block:	65 (4.61 % Utilization)
 
 ---------------------------------------------------------------------
 ########   Utilization report for  cell:   hda_strap_block   ########
@@ -80,18 +80,18 @@ Instance path:   TOP.hda_strap_block
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     22                 11 %                 
+FLOPS     22                 10.9 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.hda_strap_block:	22 (1.53 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.hda_strap_block:	22 (1.56 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       62                 6.85 %               
+LUTS       61                 6.93 %               
 CARRYS     16                 5.19 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.hda_strap_block:	78 (5.44 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.hda_strap_block:	77 (5.46 % Utilization)
 
 
 IO PADS
@@ -109,18 +109,18 @@ Instance path:   TOP.pch_pwrok_block
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     19                 9.5 %                
+FLOPS     19                 9.45 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.pch_pwrok_block:	19 (1.32 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.pch_pwrok_block:	19 (1.35 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       58                 6.41 %               
+LUTS       59                 6.7 %                
 CARRYS     14                 4.55 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.pch_pwrok_block:	72 (5.02 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.pch_pwrok_block:	73 (5.17 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   powerled_block   ########
@@ -130,18 +130,18 @@ Instance path:   TOP.powerled_block
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     68                 34 %                 
+FLOPS     68                 33.8 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.powerled_block:	68 (4.74 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.powerled_block:	68 (4.82 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       583                64.4 %               
+LUTS       563                64 %                 
 CARRYS     196                63.6 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.powerled_block:	779 (54.29 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.powerled_block:	759 (53.79 % Utilization)
 
 ------------------------------------------------------------------------
 ########   Utilization report for  cell:   rsmrst_pwrgd_block   ########
@@ -151,18 +151,18 @@ Instance path:   TOP.rsmrst_pwrgd_block
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     19                 9.5 %                
+FLOPS     19                 9.45 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.rsmrst_pwrgd_block:	19 (1.32 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.rsmrst_pwrgd_block:	19 (1.35 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       59                 6.52 %               
+LUTS       54                 6.14 %               
 CARRYS     14                 4.55 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.rsmrst_pwrgd_block:	73 (5.09 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.rsmrst_pwrgd_block:	68 (4.82 % Utilization)
 
 -----------------------------------------------------------------------------
 ########   Utilization report for  cell:   vccinaux_vccin_en_block   ########
@@ -172,7 +172,7 @@ Instance path:   TOP.vccinaux_vccin_en_block
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     2                  0.2210 %             
+LUTS     2                  0.2270 %             
 =================================================
 Total COMBINATIONAL LOGIC in the block TOP.vccinaux_vccin_en_block:	2 (0.14 % Utilization)
 
@@ -184,7 +184,7 @@ Instance path:   TOP.vccio_en_block
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     1                  0.110 %              
+LUTS     1                  0.1140 %             
 =================================================
 Total COMBINATIONAL LOGIC in the block TOP.vccio_en_block:	1 (0.07 % Utilization)
 
@@ -196,18 +196,18 @@ Instance path:   TOP.vpp_vddq_block
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     18                 9 %                  
+FLOPS     19                 9.45 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.vpp_vddq_block:	18 (1.25 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TOP.vpp_vddq_block:	19 (1.35 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       45                 4.97 %               
+LUTS       47                 5.34 %               
 CARRYS     15                 4.87 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block TOP.vpp_vddq_block:	60 (4.18 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP.vpp_vddq_block:	62 (4.39 % Utilization)
 
 
 IO PADS

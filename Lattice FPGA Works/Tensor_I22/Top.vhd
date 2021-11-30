@@ -1,22 +1,3 @@
--- Copyright (C) 2020  Intel Corporation. All rights reserved.
--- Your use of Intel Corporation's design tools, logic functions 
--- and other software and tools, and any partner logic 
--- functions, and any output files from any of the foregoing 
--- (including device programming or simulation files), and any 
--- associated documentation or information are expressly subject 
--- to the terms and conditions of the Intel Program License 
--- Subscription Agreement, the Intel Quartus Prime License Agreement,
--- the Intel FPGA IP License Agreement, or other applicable license
--- agreement, including, without limitation, that your use is for
--- the sole purpose of programming logic devices manufactured by
--- Intel and sold by Intel or its authorized distributors.  Please
--- refer to the applicable agreement for further details, at
--- https://fpgasoftware.intel.com/eula.
-
--- PROGRAM		"Quartus Prime"
--- VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
--- CREATED		"Thu Nov 25 13:12:32 2021"
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
@@ -83,7 +64,7 @@ ENTITY TOP IS
 		VCCST_ENn : OUT STD_LOGIC;
 		V33A_ENn : OUT STD_LOGIC;
 		HDA_SDO_FPGA : OUT STD_LOGIC;
-		V1P8A_EN : OUT STD_LOGIC; -- V1.8A_EN in OrCAD
+		V1P8A_EN : OUT STD_LOGIC -- V1.8A_EN in OrCAD
 
 	);
 END TOP;
@@ -126,7 +107,7 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT Counter
 		PORT (
-			CLK_10mhz : IN STD_LOGIC;
+			CLK_25mhz : IN STD_LOGIC;
 			clk_100Khz : OUT STD_LOGIC
 		);
 	END COMPONENT;
@@ -187,7 +168,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	SIGNAL SYNTHESIZED_WIRE_46 : STD_LOGIC;
+	SIGNAL VCC : STD_LOGIC;
 	SIGNAL SYNTHESIZED_WIRE_47 : STD_LOGIC;
 	SIGNAL SYNTHESIZED_WIRE_48 : STD_LOGIC;
 	SIGNAL SYNTHESIZED_WIRE_49 : STD_LOGIC;
@@ -199,15 +180,25 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL SYNTHESIZED_WIRE_28 : STD_LOGIC;
 	SIGNAL SYNTHESIZED_WIRE_29 : STD_LOGIC;
 	SIGNAL SYNTHESIZED_WIRE_30 : STD_LOGIC;
-BEGIN
 
+BEGIN
 	PCH_PWROK <= SYNTHESIZED_WIRE_28;
 	DSW_PWROK <= SYNTHESIZED_WIRE_24;
 	vccst_pwrgd <= SYNTHESIZED_WIRE_11;
 	RSMRSTn <= SYNTHESIZED_WIRE_50;
-	SYNTHESIZED_WIRE_46 <= '1'; -- in .bdf, this assigment was made by connector VCC to SLP_SUSn
+	VCC <= '1'; 
+	V33A_ENn <= NOT(VCC);
+	V5A_EN <= VCC; 
+    V105A_EN <= SYNTHESIZED_WIRE_24;
+	SYS_PWROK <= SYNTHESIZED_WIRE_28; 
+	V5S_ENn <= NOT(SYNTHESIZED_WIRE_48);
+	V33S_ENn <= NOT(SYNTHESIZED_WIRE_48);
+	VCCST_ENn <= NOT(SYNTHESIZED_WIRE_49);
+	SYNTHESIZED_WIRE_4 <= NOT(GPIO_FPGA_PCH_5);
 	SYNTHESIZED_WIRE_30 <= '1';
-	V33A_ENn <= NOT(SYNTHESIZED_WIRE_46);
+	SYNTHESIZED_WIRE_48 <= SYNTHESIZED_WIRE_50 AND SLP_S3n;
+	SYNTHESIZED_WIRE_49 <= SYNTHESIZED_WIRE_50 AND SLP_S4n;
+
 
 	b2v_inst11 : powerled_block
 	GENERIC MAP(
@@ -230,6 +221,7 @@ BEGIN
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
 
+
 	b2v_inst17 : vccio_en_block
 	PORT MAP(
 		slp_s3n=> SYNTHESIZED_WIRE_48,
@@ -238,11 +230,12 @@ BEGIN
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccio_en => VCCIO_EN);
 
-	SYNTHESIZED_WIRE_48 <= SYNTHESIZED_WIRE_50 AND SLP_S3n;
+	
 	b2v_inst20 : counter
 	PORT MAP(
-		CLK_10mhz => FPGA_OSC,
+		CLK_25mhz => FPGA_OSC,
 		clk_100Khz => SYNTHESIZED_WIRE_47);
+
 	
 	b2v_inst200 : hda_strap_block
 	PORT MAP(
@@ -252,24 +245,17 @@ BEGIN
 		HDA_SDO_FPGA => HDA_SDO_FPGA);
 
 
-	V5A_EN <= SYNTHESIZED_WIRE_46; -- this connection appears as inst29 in quartus 
-                                   -- connects between SLP_SUSn, VCC, and V5A. 
-	SYNTHESIZED_WIRE_49 <= SYNTHESIZED_WIRE_50 AND SLP_S4n;
-
-	V105A_EN <= SYNTHESIZED_WIRE_24;
-
 	b2v_inst31 : vccinaux_vccin_en_block
 	PORT MAP(
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
 		vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
-		slp_s3n=> SYNTHESIZED_WIRE_48,
+		slp_s3n => SYNTHESIZED_WIRE_48,
 		rsmrst_pwrgd => SYNTHESIZED_WIRE_26,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccin_en => vccin_en,
 		vccinaux_en => VCCINAUX_EN);
 
-	SYS_PWROK <= SYNTHESIZED_WIRE_28;-- SYS_PWROK is output. SYS_PWROK is generated from PCH_PWROK.
 
 	b2v_inst36 : dsw_pwrok_block
 	PORT MAP(
@@ -279,10 +265,6 @@ BEGIN
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		DSW_PWROK => SYNTHESIZED_WIRE_24);
 
-		
-	V5S_ENn <= NOT(SYNTHESIZED_WIRE_48);
-	V33S_ENn <= NOT(SYNTHESIZED_WIRE_48);
-	VCCST_ENn <= NOT(SYNTHESIZED_WIRE_49);
 
 	b2v_inst5 : rsmrst_pwrgd_block
 	PORT MAP(
@@ -290,10 +272,12 @@ BEGIN
 		V105A_OK => V105A_OK,
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
-		SLP_SUSn => SYNTHESIZED_WIRE_46,
+		SLP_SUSn => VCC,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		RSMRSTn => SYNTHESIZED_WIRE_50,
 		rsmrst_pwrgd_out => SYNTHESIZED_WIRE_26);
+
+
 	b2v_inst6 : pch_pwrok_block
 	PORT MAP(
 		slp_s3n=> SYNTHESIZED_WIRE_48,
@@ -302,6 +286,5 @@ BEGIN
 		clk_100Khz => SYNTHESIZED_WIRE_47,
 		vccst_pwrgd => SYNTHESIZED_WIRE_11,
 		pch_pwrok => SYNTHESIZED_WIRE_28);
-	SYNTHESIZED_WIRE_4 <= NOT(GPIO_FPGA_PCH_5);
 
 END bdf_type;

@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Tue Nov 30 08:43:03 2021
+# Written on Tue Nov 30 16:19:32 2021
 
 
 ##### DESIGN INFO #######################################################
@@ -26,7 +26,6 @@ Clock Relationships
 
 Starting                      Ending                        |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                        System                        |     1000.000         |     No paths         |     No paths         |     No paths                         
 TOP|FPGA_OSC                  TOP|FPGA_OSC                  |     1000.000         |     No paths         |     No paths         |     No paths                         
 TOP|FPGA_OSC                  counter|tmp_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
 counter|tmp_derived_clock     counter|tmp_derived_clock     |     No paths         |     1000.000         |     No paths         |     500.000                          
@@ -70,7 +69,9 @@ p:SLP_S5n
 p:SLP_SUSn
 p:SYS_PWROK
 p:TPM_GPIO
+p:V1P8A_EN
 p:V1P8A_OK
+p:V1P8_OK
 p:V5A_EN
 p:V5A_OK
 p:V5S_ENn

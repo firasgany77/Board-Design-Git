@@ -5,14 +5,14 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 200 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 201 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-165 instances converted, 0 sequential instances remain driven by gated/generated clocks
+166 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================= Non-Gated/Non-Generated Clocks =============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance   
 ------------------------------------------------------------------------------------------
-@K:CKID0001       FPGA_OSC            port                   200        b2v_inst6.count[1]
+@K:CKID0001       FPGA_OSC            port                   201        b2v_inst6.count[1]
 ==========================================================================================
 
 

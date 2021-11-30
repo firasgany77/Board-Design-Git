@@ -6,20 +6,20 @@ Cell usage:
 GND             9 uses
 SB_CARRY        308 uses
 SB_DFF          38 uses
-SB_DFFE         97 uses
+SB_DFFE         98 uses
 SB_DFFER        48 uses
 SB_DFFR         14 uses
 SB_DFFS         3 uses
 SB_GB           2 uses
 VCC             9 uses
-SB_LUT4         905 uses
+SB_LUT4         880 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   200 (15%)
+Register bits not including I/Os:   201 (15%)
 
 @S |Mapping Summary:
-Total  LUTs: 905 (70%)
+Total  LUTs: 880 (68%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 905 = 905 
+Distribution of All Consumed Luts 880 = 880 
 

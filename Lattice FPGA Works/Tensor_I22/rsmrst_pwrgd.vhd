@@ -14,7 +14,7 @@ ENTITY rsmrst_pwrgd_block IS
 		--	tpm_gpio:  		   in std_logic; -- Provision
 		SLP_SUSn : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
-		RSMRSTn : OUT STD_LOGIC; --with 10ms delay on rising edge
+		RSMRSTn : OUT STD_LOGIC; -- with 10ms delay on rising edge
 		rsmrst_pwrgd_out : OUT STD_LOGIC);--without delay
 END rsmrst_pwrgd_block;
 
