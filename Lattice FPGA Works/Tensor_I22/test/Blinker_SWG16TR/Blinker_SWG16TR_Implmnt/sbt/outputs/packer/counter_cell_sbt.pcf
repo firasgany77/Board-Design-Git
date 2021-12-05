@@ -1,0 +1,241 @@
+ble_pack counter_1_1_cry_1_c_LC_1_1_0 { counter_1_1_cry_1_c }
+ble_pack counter_1_1_cry_1_THRU_LUT4_0_LC_1_1_1 { counter_1_1_cry_1_THRU_LUT4_0, counter_1_1_cry_2_c }
+ble_pack counter_1_1_cry_2_THRU_LUT4_0_LC_1_1_2 { counter_1_1_cry_2_THRU_LUT4_0, counter_1_1_cry_3_c }
+ble_pack counter_1_4_LC_1_1_3 { counter_1_RNO[4], counter_1[4], counter_1_1_cry_4_c }
+ble_pack counter_1_5_LC_1_1_4 { counter_1_RNO[5], counter_1[5], counter_1_1_cry_5_c }
+ble_pack counter_1_6_LC_1_1_5 { counter_1_RNO[6], counter_1[6], counter_1_1_cry_6_c }
+ble_pack counter_1_7_LC_1_1_6 { counter_1_RNO[7], counter_1[7], counter_1_1_cry_7_c }
+ble_pack counter_1_8_LC_1_1_7 { counter_1_RNO[8], counter_1[8], counter_1_1_cry_8_c }
+clb_pack LT_1_1 { counter_1_1_cry_1_c_LC_1_1_0, counter_1_1_cry_1_THRU_LUT4_0_LC_1_1_1, counter_1_1_cry_2_THRU_LUT4_0_LC_1_1_2, counter_1_4_LC_1_1_3, counter_1_5_LC_1_1_4, counter_1_6_LC_1_1_5, counter_1_7_LC_1_1_6, counter_1_8_LC_1_1_7 }
+set_location LT_1_1 1 1
+ble_pack counter_1_9_LC_1_2_0 { counter_1_RNO[9], counter_1[9], counter_1_1_cry_9_c }
+ble_pack counter_1_10_LC_1_2_1 { counter_1_RNO[10], counter_1[10], counter_1_1_cry_10_c }
+ble_pack counter_1_11_LC_1_2_2 { counter_1_RNO[11], counter_1[11], counter_1_1_cry_11_c }
+ble_pack counter_1_12_LC_1_2_3 { counter_1_RNO[12], counter_1[12], counter_1_1_cry_12_c }
+ble_pack counter_1_13_LC_1_2_4 { counter_1_RNO[13], counter_1[13], counter_1_1_cry_13_c }
+ble_pack counter_1_14_LC_1_2_5 { counter_1_RNO[14], counter_1[14], counter_1_1_cry_14_c }
+ble_pack counter_1_15_LC_1_2_6 { counter_1_RNO[15], counter_1[15], counter_1_1_cry_15_c }
+ble_pack counter_1_16_LC_1_2_7 { counter_1_RNO[16], counter_1[16], counter_1_1_cry_16_c }
+clb_pack LT_1_2 { counter_1_9_LC_1_2_0, counter_1_10_LC_1_2_1, counter_1_11_LC_1_2_2, counter_1_12_LC_1_2_3, counter_1_13_LC_1_2_4, counter_1_14_LC_1_2_5, counter_1_15_LC_1_2_6, counter_1_16_LC_1_2_7 }
+set_location LT_1_2 1 2
+ble_pack counter_1_17_LC_1_3_0 { counter_1_RNO[17], counter_1[17], counter_1_1_cry_17_c }
+ble_pack counter_1_18_LC_1_3_1 { counter_1_RNO[18], counter_1[18], counter_1_1_cry_18_c }
+ble_pack counter_1_19_LC_1_3_2 { counter_1_RNO[19], counter_1[19], counter_1_1_cry_19_c }
+ble_pack counter_1_20_LC_1_3_3 { counter_1_RNO[20], counter_1[20], counter_1_1_cry_20_c }
+ble_pack counter_1_21_LC_1_3_4 { counter_1_RNO[21], counter_1[21], counter_1_1_cry_21_c }
+ble_pack counter_1_22_LC_1_3_5 { counter_1_RNO[22], counter_1[22], counter_1_1_cry_22_c }
+ble_pack counter_1_23_LC_1_3_6 { counter_1_RNO[23], counter_1[23], counter_1_1_cry_23_c }
+ble_pack counter_1_24_LC_1_3_7 { counter_1_RNO[24], counter_1[24], counter_1_1_cry_24_c }
+clb_pack LT_1_3 { counter_1_17_LC_1_3_0, counter_1_18_LC_1_3_1, counter_1_19_LC_1_3_2, counter_1_20_LC_1_3_3, counter_1_21_LC_1_3_4, counter_1_22_LC_1_3_5, counter_1_23_LC_1_3_6, counter_1_24_LC_1_3_7 }
+set_location LT_1_3 1 3
+ble_pack counter_1_25_LC_1_4_0 { counter_1_RNO[25], counter_1[25], counter_1_1_cry_25_c }
+ble_pack counter_1_26_LC_1_4_1 { counter_1_RNO[26], counter_1[26], counter_1_1_cry_26_c }
+ble_pack counter_1_27_LC_1_4_2 { counter_1_RNO[27], counter_1[27], counter_1_1_cry_27_c }
+ble_pack counter_1_28_LC_1_4_3 { counter_1_RNO[28], counter_1[28], counter_1_1_cry_28_c }
+ble_pack counter_1_29_LC_1_4_4 { counter_1_RNO[29], counter_1[29], counter_1_1_cry_29_c }
+ble_pack counter_1_30_LC_1_4_5 { counter_1_RNO[30], counter_1[30], counter_1_1_cry_30_c }
+ble_pack counter_1_31_LC_1_4_6 { counter_1_RNO[31], counter_1[31] }
+ble_pack un4_counter_1_7_c_RNO_LC_1_4_7 { un4_counter_1_7_c_RNO }
+clb_pack LT_1_4 { counter_1_25_LC_1_4_0, counter_1_26_LC_1_4_1, counter_1_27_LC_1_4_2, counter_1_28_LC_1_4_3, counter_1_29_LC_1_4_4, counter_1_30_LC_1_4_5, counter_1_31_LC_1_4_6, un4_counter_1_7_c_RNO_LC_1_4_7 }
+set_location LT_1_4 1 4
+ble_pack counter_2_5_LC_1_5_3 { counter_2_RNO[5], counter_2[5] }
+clb_pack LT_1_5 { counter_2_5_LC_1_5_3 }
+set_location LT_1_5 1 5
+ble_pack un4_counter_2_0_c_RNO_LC_1_6_2 { un4_counter_2_0_c_RNO }
+ble_pack un4_counter_2_1_c_RNO_LC_1_6_6 { un4_counter_2_1_c_RNO }
+clb_pack LT_1_6 { un4_counter_2_0_c_RNO_LC_1_6_2, un4_counter_2_1_c_RNO_LC_1_6_6 }
+set_location LT_1_6 1 6
+ble_pack un4_counter_2_0_c_LC_1_7_0 { un4_counter_2_0_c }
+ble_pack un4_counter_2_1_c_LC_1_7_1 { un4_counter_2_1_c }
+ble_pack un4_counter_2_2_c_LC_1_7_2 { un4_counter_2_2_c }
+ble_pack un4_counter_2_3_c_LC_1_7_3 { un4_counter_2_3_c }
+ble_pack un4_counter_2_4_c_LC_1_7_4 { un4_counter_2_4_c }
+ble_pack un4_counter_2_5_c_LC_1_7_5 { un4_counter_2_5_c }
+ble_pack un4_counter_2_6_c_LC_1_7_6 { un4_counter_2_6_c }
+ble_pack un4_counter_2_7_c_LC_1_7_7 { un4_counter_2_7_c }
+clb_pack LT_1_7 { un4_counter_2_0_c_LC_1_7_0, un4_counter_2_1_c_LC_1_7_1, un4_counter_2_2_c_LC_1_7_2, un4_counter_2_3_c_LC_1_7_3, un4_counter_2_4_c_LC_1_7_4, un4_counter_2_5_c_LC_1_7_5, un4_counter_2_6_c_LC_1_7_6, un4_counter_2_7_c_LC_1_7_7 }
+set_location LT_1_7 1 7
+ble_pack un4_counter_2_7_THRU_LUT4_0_LC_1_8_0 { un4_counter_2_7_THRU_LUT4_0 }
+ble_pack un4_counter_2_5_c_RNO_LC_1_8_1 { un4_counter_2_5_c_RNO }
+ble_pack un4_counter_2_4_c_RNO_LC_1_8_2 { un4_counter_2_4_c_RNO }
+ble_pack un4_counter_2_2_c_RNO_LC_1_8_3 { un4_counter_2_2_c_RNO }
+ble_pack un4_counter_2_3_c_RNO_LC_1_8_4 { un4_counter_2_3_c_RNO }
+clb_pack LT_1_8 { un4_counter_2_7_THRU_LUT4_0_LC_1_8_0, un4_counter_2_5_c_RNO_LC_1_8_1, un4_counter_2_4_c_RNO_LC_1_8_2, un4_counter_2_2_c_RNO_LC_1_8_3, un4_counter_2_3_c_RNO_LC_1_8_4 }
+set_location LT_1_8 1 8
+ble_pack un4_counter_2_7_c_RNO_LC_1_9_6 { un4_counter_2_7_c_RNO }
+ble_pack un4_counter_2_6_c_RNO_LC_1_9_7 { un4_counter_2_6_c_RNO }
+clb_pack LT_1_9 { un4_counter_2_7_c_RNO_LC_1_9_6, un4_counter_2_6_c_RNO_LC_1_9_7 }
+set_location LT_1_9 1 9
+ble_pack un4_counter_1_1_c_RNO_LC_2_2_0 { un4_counter_1_1_c_RNO }
+ble_pack un4_counter_1_2_c_RNO_LC_2_2_1 { un4_counter_1_2_c_RNO }
+ble_pack un4_counter_1_3_c_RNO_LC_2_2_2 { un4_counter_1_3_c_RNO }
+clb_pack LT_2_2 { un4_counter_1_1_c_RNO_LC_2_2_0, un4_counter_1_2_c_RNO_LC_2_2_1, un4_counter_1_3_c_RNO_LC_2_2_2 }
+set_location LT_2_2 2 2
+ble_pack un4_counter_1_4_c_RNO_LC_2_3_3 { un4_counter_1_4_c_RNO }
+ble_pack un4_counter_1_5_c_RNO_LC_2_3_4 { un4_counter_1_5_c_RNO }
+clb_pack LT_2_3 { un4_counter_1_4_c_RNO_LC_2_3_3, un4_counter_1_5_c_RNO_LC_2_3_4 }
+set_location LT_2_3 2 3
+ble_pack un4_counter_1_6_c_RNO_LC_2_4_1 { un4_counter_1_6_c_RNO }
+clb_pack LT_2_4 { un4_counter_1_6_c_RNO_LC_2_4_1 }
+set_location LT_2_4 2 4
+ble_pack counter_2_6_LC_2_6_0 { counter_2_RNO[6], counter_2[6] }
+ble_pack counter_2_1_LC_2_6_1 { counter_2_RNO[1], counter_2[1] }
+ble_pack counter_2_2_LC_2_6_2 { counter_2_RNO[2], counter_2[2] }
+ble_pack counter_2_4_LC_2_6_3 { counter_2_RNO[4], counter_2[4] }
+ble_pack counter_2_7_LC_2_6_4 { counter_2_RNO[7], counter_2[7] }
+ble_pack counter_2_0_LC_2_6_5 { counter_2_RNO[0], counter_2[0] }
+ble_pack counter_2_8_LC_2_6_6 { counter_2_RNO[8], counter_2[8] }
+clb_pack LT_2_6 { counter_2_6_LC_2_6_0, counter_2_1_LC_2_6_1, counter_2_2_LC_2_6_2, counter_2_4_LC_2_6_3, counter_2_7_LC_2_6_4, counter_2_0_LC_2_6_5, counter_2_8_LC_2_6_6 }
+set_location LT_2_6 2 6
+ble_pack counter_2_1_cry_1_c_LC_2_7_0 { counter_2_1_cry_1_c }
+ble_pack counter_2_1_cry_1_THRU_LUT4_0_LC_2_7_1 { counter_2_1_cry_1_THRU_LUT4_0, counter_2_1_cry_2_c }
+ble_pack counter_2_3_LC_2_7_2 { counter_2_RNO[3], counter_2[3], counter_2_1_cry_3_c }
+ble_pack counter_2_1_cry_3_THRU_LUT4_0_LC_2_7_3 { counter_2_1_cry_3_THRU_LUT4_0, counter_2_1_cry_4_c }
+ble_pack counter_2_1_cry_4_THRU_LUT4_0_LC_2_7_4 { counter_2_1_cry_4_THRU_LUT4_0, counter_2_1_cry_5_c }
+ble_pack counter_2_1_cry_5_THRU_LUT4_0_LC_2_7_5 { counter_2_1_cry_5_THRU_LUT4_0, counter_2_1_cry_6_c }
+ble_pack counter_2_1_cry_6_THRU_LUT4_0_LC_2_7_6 { counter_2_1_cry_6_THRU_LUT4_0, counter_2_1_cry_7_c }
+ble_pack counter_2_1_cry_7_THRU_LUT4_0_LC_2_7_7 { counter_2_1_cry_7_THRU_LUT4_0, counter_2_1_cry_8_c }
+clb_pack LT_2_7 { counter_2_1_cry_1_c_LC_2_7_0, counter_2_1_cry_1_THRU_LUT4_0_LC_2_7_1, counter_2_3_LC_2_7_2, counter_2_1_cry_3_THRU_LUT4_0_LC_2_7_3, counter_2_1_cry_4_THRU_LUT4_0_LC_2_7_4, counter_2_1_cry_5_THRU_LUT4_0_LC_2_7_5, counter_2_1_cry_6_THRU_LUT4_0_LC_2_7_6, counter_2_1_cry_7_THRU_LUT4_0_LC_2_7_7 }
+set_location LT_2_7 2 7
+ble_pack counter_2_9_LC_2_8_0 { counter_2_RNO[9], counter_2[9], counter_2_1_cry_9_c }
+ble_pack counter_2_10_LC_2_8_1 { counter_2_RNO[10], counter_2[10], counter_2_1_cry_10_c }
+ble_pack counter_2_11_LC_2_8_2 { counter_2_RNO[11], counter_2[11], counter_2_1_cry_11_c }
+ble_pack counter_2_12_LC_2_8_3 { counter_2_RNO[12], counter_2[12], counter_2_1_cry_12_c }
+ble_pack counter_2_13_LC_2_8_4 { counter_2_RNO[13], counter_2[13], counter_2_1_cry_13_c }
+ble_pack counter_2_14_LC_2_8_5 { counter_2_RNO[14], counter_2[14], counter_2_1_cry_14_c }
+ble_pack counter_2_15_LC_2_8_6 { counter_2_RNO[15], counter_2[15], counter_2_1_cry_15_c }
+ble_pack counter_2_16_LC_2_8_7 { counter_2_RNO[16], counter_2[16], counter_2_1_cry_16_c }
+clb_pack LT_2_8 { counter_2_9_LC_2_8_0, counter_2_10_LC_2_8_1, counter_2_11_LC_2_8_2, counter_2_12_LC_2_8_3, counter_2_13_LC_2_8_4, counter_2_14_LC_2_8_5, counter_2_15_LC_2_8_6, counter_2_16_LC_2_8_7 }
+set_location LT_2_8 2 8
+ble_pack counter_2_17_LC_2_9_0 { counter_2_RNO[17], counter_2[17], counter_2_1_cry_17_c }
+ble_pack counter_2_18_LC_2_9_1 { counter_2_RNO[18], counter_2[18], counter_2_1_cry_18_c }
+ble_pack counter_2_19_LC_2_9_2 { counter_2_RNO[19], counter_2[19], counter_2_1_cry_19_c }
+ble_pack counter_2_20_LC_2_9_3 { counter_2_RNO[20], counter_2[20], counter_2_1_cry_20_c }
+ble_pack counter_2_21_LC_2_9_4 { counter_2_RNO[21], counter_2[21], counter_2_1_cry_21_c }
+ble_pack counter_2_22_LC_2_9_5 { counter_2_RNO[22], counter_2[22], counter_2_1_cry_22_c }
+ble_pack counter_2_23_LC_2_9_6 { counter_2_RNO[23], counter_2[23], counter_2_1_cry_23_c }
+ble_pack counter_2_24_LC_2_9_7 { counter_2_RNO[24], counter_2[24], counter_2_1_cry_24_c }
+clb_pack LT_2_9 { counter_2_17_LC_2_9_0, counter_2_18_LC_2_9_1, counter_2_19_LC_2_9_2, counter_2_20_LC_2_9_3, counter_2_21_LC_2_9_4, counter_2_22_LC_2_9_5, counter_2_23_LC_2_9_6, counter_2_24_LC_2_9_7 }
+set_location LT_2_9 2 9
+ble_pack counter_2_25_LC_2_10_0 { counter_2_RNO[25], counter_2[25], counter_2_1_cry_25_c }
+ble_pack counter_2_26_LC_2_10_1 { counter_2_RNO[26], counter_2[26], counter_2_1_cry_26_c }
+ble_pack counter_2_27_LC_2_10_2 { counter_2_RNO[27], counter_2[27], counter_2_1_cry_27_c }
+ble_pack counter_2_28_LC_2_10_3 { counter_2_RNO[28], counter_2[28], counter_2_1_cry_28_c }
+ble_pack counter_2_29_LC_2_10_4 { counter_2_RNO[29], counter_2[29], counter_2_1_cry_29_c }
+ble_pack counter_2_30_LC_2_10_5 { counter_2_RNO[30], counter_2[30], counter_2_1_cry_30_c }
+ble_pack counter_2_31_LC_2_10_6 { counter_2_RNO[31], counter_2[31] }
+clb_pack LT_2_10 { counter_2_25_LC_2_10_0, counter_2_26_LC_2_10_1, counter_2_27_LC_2_10_2, counter_2_28_LC_2_10_3, counter_2_29_LC_2_10_4, counter_2_30_LC_2_10_5, counter_2_31_LC_2_10_6 }
+set_location LT_2_10 2 10
+ble_pack counter_1_3_LC_4_5_0 { counter_1_RNO[3], counter_1[3] }
+ble_pack counter_1_2_LC_4_5_1 { counter_1_RNO[2], counter_1[2] }
+ble_pack counter_1_0_LC_4_5_3 { counter_1_RNO[0], counter_1[0] }
+ble_pack un4_counter_1_0_c_RNO_LC_4_5_6 { un4_counter_1_0_c_RNO }
+ble_pack counter_1_1_LC_4_5_7 { counter_1_RNO[1], counter_1[1] }
+clb_pack LT_4_5 { counter_1_3_LC_4_5_0, counter_1_2_LC_4_5_1, counter_1_0_LC_4_5_3, un4_counter_1_0_c_RNO_LC_4_5_6, counter_1_1_LC_4_5_7 }
+set_location LT_4_5 4 5
+ble_pack un4_counter_1_0_c_LC_5_6_0 { un4_counter_1_0_c }
+ble_pack un4_counter_1_1_c_LC_5_6_1 { un4_counter_1_1_c }
+ble_pack un4_counter_1_2_c_LC_5_6_2 { un4_counter_1_2_c }
+ble_pack un4_counter_1_3_c_LC_5_6_3 { un4_counter_1_3_c }
+ble_pack un4_counter_1_4_c_LC_5_6_4 { un4_counter_1_4_c }
+ble_pack un4_counter_1_5_c_LC_5_6_5 { un4_counter_1_5_c }
+ble_pack un4_counter_1_6_c_LC_5_6_6 { un4_counter_1_6_c }
+ble_pack un4_counter_1_7_c_LC_5_6_7 { un4_counter_1_7_c }
+clb_pack LT_5_6 { un4_counter_1_0_c_LC_5_6_0, un4_counter_1_1_c_LC_5_6_1, un4_counter_1_2_c_LC_5_6_2, un4_counter_1_3_c_LC_5_6_3, un4_counter_1_4_c_LC_5_6_4, un4_counter_1_5_c_LC_5_6_5, un4_counter_1_6_c_LC_5_6_6, un4_counter_1_7_c_LC_5_6_7 }
+set_location LT_5_6 5 6
+ble_pack un4_counter_1_7_THRU_LUT4_0_LC_5_7_0 { un4_counter_1_7_THRU_LUT4_0 }
+ble_pack clk_1MHz_RNINCP9_LC_5_7_1 { clk_1MHz_RNINCP9 }
+ble_pack clk_1MHz_LC_5_7_4 { clk_1MHz_RNO, clk_1MHz }
+clb_pack LT_5_7 { un4_counter_1_7_THRU_LUT4_0_LC_5_7_0, clk_1MHz_RNINCP9_LC_5_7_1, clk_1MHz_LC_5_7_4 }
+set_location LT_5_7 5 7
+ble_pack clk_2Hz_RNO_0_LC_5_8_2 { clk_2Hz_RNO_0 }
+ble_pack clk_1Khz_LC_5_8_4 { clk_1Khz_RNO, clk_1Khz }
+clb_pack LT_5_8 { clk_2Hz_RNO_0_LC_5_8_2, clk_1Khz_LC_5_8_4 }
+set_location LT_5_8 5 8
+ble_pack clk_2HzZ0_LC_5_9_7 { clk_2Hz_RNO, clk_2Hz }
+clb_pack LT_5_9 { clk_2HzZ0_LC_5_9_7 }
+set_location LT_5_9 5 9
+ble_pack clk_1Khz_RNIDQNN_LC_6_8_1 { clk_1Khz_RNIDQNN }
+clb_pack LT_6_8 { clk_1Khz_RNIDQNN_LC_6_8_1 }
+set_location LT_6_8 6 8
+ble_pack counter_3_0_LC_9_7_7 { counter_3_RNO[0], counter_3[0] }
+clb_pack LT_9_7 { counter_3_0_LC_9_7_7 }
+set_location LT_9_7 9 7
+ble_pack counter_3_6_LC_11_6_4 { counter_3_RNO[6], counter_3[6] }
+ble_pack counter_3_5_LC_11_6_5 { counter_3_RNO[5], counter_3[5] }
+ble_pack counter_3_1_LC_11_6_6 { counter_3_RNO[1], counter_3[1] }
+clb_pack LT_11_6 { counter_3_6_LC_11_6_4, counter_3_5_LC_11_6_5, counter_3_1_LC_11_6_6 }
+set_location LT_11_6 11 6
+ble_pack un4_counter_3_3_c_RNO_LC_11_7_2 { un4_counter_3_3_c_RNO }
+ble_pack un4_counter_3_1_c_RNO_LC_11_7_3 { un4_counter_3_1_c_RNO }
+ble_pack un4_counter_3_2_c_RNO_LC_11_7_7 { un4_counter_3_2_c_RNO }
+clb_pack LT_11_7 { un4_counter_3_3_c_RNO_LC_11_7_2, un4_counter_3_1_c_RNO_LC_11_7_3, un4_counter_3_2_c_RNO_LC_11_7_7 }
+set_location LT_11_7 11 7
+ble_pack un4_counter_3_0_c_LC_11_8_0 { un4_counter_3_0_c }
+ble_pack un4_counter_3_1_c_LC_11_8_1 { un4_counter_3_1_c }
+ble_pack un4_counter_3_2_c_LC_11_8_2 { un4_counter_3_2_c }
+ble_pack un4_counter_3_3_c_LC_11_8_3 { un4_counter_3_3_c }
+ble_pack un4_counter_3_4_c_LC_11_8_4 { un4_counter_3_4_c }
+ble_pack un4_counter_3_5_c_LC_11_8_5 { un4_counter_3_5_c }
+ble_pack un4_counter_3_6_c_LC_11_8_6 { un4_counter_3_6_c }
+ble_pack un4_counter_3_7_c_LC_11_8_7 { un4_counter_3_7_c }
+clb_pack LT_11_8 { un4_counter_3_0_c_LC_11_8_0, un4_counter_3_1_c_LC_11_8_1, un4_counter_3_2_c_LC_11_8_2, un4_counter_3_3_c_LC_11_8_3, un4_counter_3_4_c_LC_11_8_4, un4_counter_3_5_c_LC_11_8_5, un4_counter_3_6_c_LC_11_8_6, un4_counter_3_7_c_LC_11_8_7 }
+set_location LT_11_8 11 8
+ble_pack un4_counter_3_7_THRU_LUT4_0_LC_11_9_0 { un4_counter_3_7_THRU_LUT4_0 }
+ble_pack un4_counter_3_7_c_RNO_LC_11_9_3 { un4_counter_3_7_c_RNO }
+ble_pack un4_counter_3_5_c_RNO_LC_11_9_4 { un4_counter_3_5_c_RNO }
+ble_pack un4_counter_3_4_c_RNO_LC_11_9_5 { un4_counter_3_4_c_RNO }
+ble_pack un4_counter_3_0_c_RNO_LC_11_9_6 { un4_counter_3_0_c_RNO }
+ble_pack un4_counter_3_6_c_RNO_LC_11_9_7 { un4_counter_3_6_c_RNO }
+clb_pack LT_11_9 { un4_counter_3_7_THRU_LUT4_0_LC_11_9_0, un4_counter_3_7_c_RNO_LC_11_9_3, un4_counter_3_5_c_RNO_LC_11_9_4, un4_counter_3_4_c_RNO_LC_11_9_5, un4_counter_3_0_c_RNO_LC_11_9_6, un4_counter_3_6_c_RNO_LC_11_9_7 }
+set_location LT_11_9 11 9
+ble_pack counter_3_4_LC_11_10_0 { counter_3_RNO[4], counter_3[4] }
+ble_pack counter_3_7_LC_11_10_2 { counter_3_RNO[7], counter_3[7] }
+clb_pack LT_11_10 { counter_3_4_LC_11_10_0, counter_3_7_LC_11_10_2 }
+set_location LT_11_10 11 10
+ble_pack counter_3_1_cry_1_c_LC_12_7_0 { counter_3_1_cry_1_c }
+ble_pack counter_3_2_LC_12_7_1 { counter_3_RNO[2], counter_3[2], counter_3_1_cry_2_c }
+ble_pack counter_3_1_cry_2_THRU_LUT4_0_LC_12_7_2 { counter_3_1_cry_2_THRU_LUT4_0, counter_3_1_cry_3_c }
+ble_pack counter_3_1_cry_3_THRU_LUT4_0_LC_12_7_3 { counter_3_1_cry_3_THRU_LUT4_0, counter_3_1_cry_4_c }
+ble_pack counter_3_1_cry_4_THRU_LUT4_0_LC_12_7_4 { counter_3_1_cry_4_THRU_LUT4_0, counter_3_1_cry_5_c }
+ble_pack counter_3_1_cry_5_THRU_LUT4_0_LC_12_7_5 { counter_3_1_cry_5_THRU_LUT4_0, counter_3_1_cry_6_c }
+ble_pack counter_3_1_cry_6_THRU_LUT4_0_LC_12_7_6 { counter_3_1_cry_6_THRU_LUT4_0, counter_3_1_cry_7_c }
+ble_pack counter_3_8_LC_12_7_7 { counter_3_RNO[8], counter_3[8], counter_3_1_cry_8_c }
+clb_pack LT_12_7 { counter_3_1_cry_1_c_LC_12_7_0, counter_3_2_LC_12_7_1, counter_3_1_cry_2_THRU_LUT4_0_LC_12_7_2, counter_3_1_cry_3_THRU_LUT4_0_LC_12_7_3, counter_3_1_cry_4_THRU_LUT4_0_LC_12_7_4, counter_3_1_cry_5_THRU_LUT4_0_LC_12_7_5, counter_3_1_cry_6_THRU_LUT4_0_LC_12_7_6, counter_3_8_LC_12_7_7 }
+set_location LT_12_7 12 7
+ble_pack counter_3_9_LC_12_8_0 { counter_3_RNO[9], counter_3[9], counter_3_1_cry_9_c }
+ble_pack counter_3_10_LC_12_8_1 { counter_3_RNO[10], counter_3[10], counter_3_1_cry_10_c }
+ble_pack counter_3_11_LC_12_8_2 { counter_3_RNO[11], counter_3[11], counter_3_1_cry_11_c }
+ble_pack counter_3_12_LC_12_8_3 { counter_3_RNO[12], counter_3[12], counter_3_1_cry_12_c }
+ble_pack counter_3_13_LC_12_8_4 { counter_3_RNO[13], counter_3[13], counter_3_1_cry_13_c }
+ble_pack counter_3_14_LC_12_8_5 { counter_3_RNO[14], counter_3[14], counter_3_1_cry_14_c }
+ble_pack counter_3_15_LC_12_8_6 { counter_3_RNO[15], counter_3[15], counter_3_1_cry_15_c }
+ble_pack counter_3_16_LC_12_8_7 { counter_3_RNO[16], counter_3[16], counter_3_1_cry_16_c }
+clb_pack LT_12_8 { counter_3_9_LC_12_8_0, counter_3_10_LC_12_8_1, counter_3_11_LC_12_8_2, counter_3_12_LC_12_8_3, counter_3_13_LC_12_8_4, counter_3_14_LC_12_8_5, counter_3_15_LC_12_8_6, counter_3_16_LC_12_8_7 }
+set_location LT_12_8 12 8
+ble_pack counter_3_17_LC_12_9_0 { counter_3_RNO[17], counter_3[17], counter_3_1_cry_17_c }
+ble_pack counter_3_18_LC_12_9_1 { counter_3_RNO[18], counter_3[18], counter_3_1_cry_18_c }
+ble_pack counter_3_19_LC_12_9_2 { counter_3_RNO[19], counter_3[19], counter_3_1_cry_19_c }
+ble_pack counter_3_20_LC_12_9_3 { counter_3_RNO[20], counter_3[20], counter_3_1_cry_20_c }
+ble_pack counter_3_21_LC_12_9_4 { counter_3_RNO[21], counter_3[21], counter_3_1_cry_21_c }
+ble_pack counter_3_22_LC_12_9_5 { counter_3_RNO[22], counter_3[22], counter_3_1_cry_22_c }
+ble_pack counter_3_23_LC_12_9_6 { counter_3_RNO[23], counter_3[23], counter_3_1_cry_23_c }
+ble_pack counter_3_24_LC_12_9_7 { counter_3_RNO[24], counter_3[24], counter_3_1_cry_24_c }
+clb_pack LT_12_9 { counter_3_17_LC_12_9_0, counter_3_18_LC_12_9_1, counter_3_19_LC_12_9_2, counter_3_20_LC_12_9_3, counter_3_21_LC_12_9_4, counter_3_22_LC_12_9_5, counter_3_23_LC_12_9_6, counter_3_24_LC_12_9_7 }
+set_location LT_12_9 12 9
+ble_pack counter_3_25_LC_12_10_0 { counter_3_RNO[25], counter_3[25], counter_3_1_cry_25_c }
+ble_pack counter_3_26_LC_12_10_1 { counter_3_RNO[26], counter_3[26], counter_3_1_cry_26_c }
+ble_pack counter_3_27_LC_12_10_2 { counter_3_RNO[27], counter_3[27], counter_3_1_cry_27_c }
+ble_pack counter_3_28_LC_12_10_3 { counter_3_RNO[28], counter_3[28], counter_3_1_cry_28_c }
+ble_pack counter_3_29_LC_12_10_4 { counter_3_RNO[29], counter_3[29], counter_3_1_cry_29_c }
+ble_pack counter_3_30_LC_12_10_5 { counter_3_RNO[30], counter_3[30], counter_3_1_cry_30_c }
+ble_pack counter_3_31_LC_12_10_6 { counter_3_RNO[31], counter_3[31] }
+clb_pack LT_12_10 { counter_3_25_LC_12_10_0, counter_3_26_LC_12_10_1, counter_3_27_LC_12_10_2, counter_3_28_LC_12_10_3, counter_3_29_LC_12_10_4, counter_3_30_LC_12_10_5, counter_3_31_LC_12_10_6 }
+set_location LT_12_10 12 10
+ble_pack counter_3_3_LC_12_11_3 { counter_3_RNO[3], counter_3[3] }
+clb_pack LT_12_11 { counter_3_3_LC_12_11_3 }
+set_location LT_12_11 12 11
+set_location clk_1MHz_RNINCP9_0 0 9
+set_location clk_1Khz_RNIDQNN_0 13 8
+set_io clk_2Hz A2
+set_io CLK_27mhz B2

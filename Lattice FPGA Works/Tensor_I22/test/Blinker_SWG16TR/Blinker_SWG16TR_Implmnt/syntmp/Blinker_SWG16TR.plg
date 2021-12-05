@@ -1,0 +1,12 @@
+@P:  Worst Slack : -1.548
+@P:  counter|CLK_27mhz - Estimated Frequency : 96.9 MHz
+@P:  counter|CLK_27mhz - Requested Frequency : 114.0 MHz
+@P:  counter|CLK_27mhz - Estimated Period : 10.323
+@P:  counter|CLK_27mhz - Requested Period : 8.774
+@P:  counter|CLK_27mhz - Slack : -1.548
+@P: counter Part : ice40lp1kswg16tr
+@P: counter I/O primitives : 2
+@P: counter I/O Register bits : 0
+@P: counter Register bits (Non I/O) : 99 (7%)
+@P: counter Total Luts : 126 (9%)
+@P:  CPU Time : 0h:00m:00s

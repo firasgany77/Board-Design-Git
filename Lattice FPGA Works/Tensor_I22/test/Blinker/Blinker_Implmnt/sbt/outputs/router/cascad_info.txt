@@ -1,0 +1,3 @@
+[VIC]
+clk_2Hz_cnv_m3_e_1_cascade_=ltout:in1
+un4_counter_1_7_THRU_CO_cascade_=ltout:in3

@@ -1,0 +1,18 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2020.12.27943
+
+# File Generated:     Dec 5 2021 16:06:51
+
+# Family & Device:    iCE40LP1K
+
+# Package:            SWG16TR
+
+# ##############################################################################
+
+###IOSet List 2
+set_io CLK_27mhz B2 -io_std SB_LVCMOS -pullup no
+set_io clk_2Hz A2 -io_std SB_LVCMOS -pullup no
+

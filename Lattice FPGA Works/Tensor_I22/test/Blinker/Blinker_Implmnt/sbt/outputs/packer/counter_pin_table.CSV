@@ -1,0 +1,106 @@
+* ******************************************************************************
+
+* iCEcube Pin Table
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Dec 5 2021 15:33:46
+
+* Purpose:            Detailed IO and package pin info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Device, iCE40LP1K
+Package, QN84
+
+Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, Pull Up, IO Function, IO Bank, 
+---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, 
+A1, PIO, not used, , , , , , leftBank
+A2, PIO, not used, , , , , , leftBank
+A3, PIO, not used, , , , , , leftBank
+A4, PIO, not used, , , , , , leftBank
+A5, PIO, not used, , , , , , leftBank
+A6, GND, not used, , , , , , UnknownBank
+A7, VCC, not used, , , , , , UnknownBank
+A8, PIO_GBIN, CLK_27mhz, Input, glb Buff, SB_LVCMOS, No Pull Up, Simple Input, leftBank
+A9, PIO_GBIN, not used, , , , , , leftBank
+A10, PIO, not used, , , , , , leftBank
+A11, PIO, not used, , , , , , leftBank
+A12, PIO, clk_2Hz, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
+A13, PIO, not used, , , , , , bottomBank
+A14, PIO_GBIN, not used, , , , , , bottomBank
+A15, VCC, not used, , , , , , UnknownBank
+A16, PIO, not used, , , , , , bottomBank
+A17, VCCIO_2, not used, , , , , , bottomBank
+A18, GND, not used, , , , , , UnknownBank
+A19, PIO, not used, , , , , , bottomBank
+A20, PIO, not used, , , , , , bottomBank
+A21, CRESET_B, not used, , , , , , bottomBank
+A22, SPI_SI, not used, , , , , , bottomBank
+A23, SPI_SCK, not used, , , , , , bottomBank
+A24, VDDIO_SPI, not used, , , , , , bottomBank
+A25, PIO, not used, , , , , , rightBank
+A26, PIO, not used, , , , , , rightBank
+A27, PIO, not used, , , , , , rightBank
+A28, VCC, not used, , , , , , UnknownBank
+A29, PIO_GBIN, not used, , , , , , rightBank
+A30, GND, not used, , , , , , UnknownBank
+A31, PIO, not used, , , , , , rightBank
+A32, PIO, not used, , , , , , rightBank
+A33, PIO, not used, , , , , , rightBank
+A34, PIO, not used, , , , , , rightBank
+A35, PIO, not used, , , , , , rightBank
+A36, VPP_PUMP, not used, , , , , , UnknownBank
+A37, VPP_DIRECT, not used, , , , , , UnknownBank
+A38, PIO, not used, , , , , , topBank
+A39, PIO, not used, , , , , , topBank
+A40, PIO, not used, , , , , , topBank
+A41, PIO, not used, , , , , , topBank
+A42, VCCIO_0, not used, , , , , , topBank
+A43, PIO_GBIN, not used, , , , , , topBank
+A44, PIO, not used, , , , , , topBank
+A45, PIO, not used, , , , , , topBank
+A46, PIO, not used, , , , , , topBank
+A47, PIO, not used, , , , , , topBank
+A48, PIO, not used, , , , , , topBank
+B1, PIO, not used, , , , , , leftBank
+B2, PIO, not used, , , , , , leftBank
+B3, PIO, not used, , , , , , leftBank
+B4, PIO, not used, , , , , , leftBank
+B5, PIO, not used, , , , , , leftBank
+B6, VCCIO_3, not used, , , , , , leftBank
+B7, PIO, not used, , , , , , leftBank
+B8, PIO, not used, , , , , , leftBank
+B9, PIO, not used, , , , , , leftBank
+B10, PIO, not used, , , , , , bottomBank
+B11, PIO, not used, , , , , , bottomBank
+B12, PIO_GBIN, not used, , , , , , bottomBank
+B13, PIO, not used, , , , , , bottomBank
+B14, PIO, not used, , , , , , bottomBank
+B15, PIO, not used, , , , , , bottomBank
+B16, CDONE, not used, , , , , , bottomBank
+B17, SPI_SO, not used, , , , , , bottomBank
+B18, SPI_SS_B, not used, , , , , , bottomBank
+B19, PIO, not used, , , , , , rightBank
+B20, PIO, not used, , , , , , rightBank
+B21, PIO, not used, , , , , , rightBank
+B22, PIO_GBIN, not used, , , , , , rightBank
+B23, PIO, not used, , , , , , rightBank
+B24, PIO, not used, , , , , , rightBank
+B25, VCCIO_1, not used, , , , , , rightBank
+B26, PIO, not used, , , , , , rightBank
+B27, PIO, not used, , , , , , rightBank
+B28, VCC, not used, , , , , , UnknownBank
+B29, PIO, not used, , , , , , topBank
+B30, PIO, not used, , , , , , topBank
+B31, PIO, not used, , , , , , topBank
+B32, PIO_GBIN, not used, , , , , , topBank
+B33, GND, not used, , , , , , UnknownBank
+B34, PIO, not used, , , , , , topBank
+B35, PIO, not used, , , , , , topBank
+B36, PIO, not used, , , , , , topBank
+Total Number of Used Pins, 2
