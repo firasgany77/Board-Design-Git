@@ -1,0 +1,1 @@
+@W: MT529 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\test\blinker.vhd":28:3:28:4|Found inferred clock counter|CLK_27mhz which controls 33 sequential elements including counter_1[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

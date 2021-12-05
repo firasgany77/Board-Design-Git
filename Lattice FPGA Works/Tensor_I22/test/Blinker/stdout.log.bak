@@ -1,0 +1,46 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\iCEcube2.2020.12\synpbase
+Hostname:    DESKTOP-M2TPG58
+Date:        Sun Dec 05 14:21:05 2021
+Version:     L-2016.09L+ice40
+
+Arguments:   -product synplify_pro -batch Blinker_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\test\Blinker\Blinker_Implmnt\Blinker.srr"
+Running: Blinker_Implmnt in foreground
+
+Running Blinker_syn|Blinker_Implmnt
+
+Running: compile (Compile) on Blinker_syn|Blinker_Implmnt
+# Sun Dec 05 14:21:05 2021
+
+Running: compile_flow (Compile Process) on Blinker_syn|Blinker_Implmnt
+# Sun Dec 05 14:21:05 2021
+
+Running: compiler (Compile Input) on Blinker_syn|Blinker_Implmnt
+# Sun Dec 05 14:21:05 2021
+compiler exited with errors
+Job failed on: Blinker_syn|Blinker_Implmnt
+
+Job: "compiler" terminated with error status: 2
+See log file: "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\test\Blinker\Blinker_Implmnt\synlog\Blinker_compiler.srr"
+# Sun Dec 05 14:21:06 2021
+
+Return Code: 2
+Run Time:00h:00m:01s
+Complete: Compile Process on Blinker_syn|Blinker_Implmnt
+Complete: Compile on Blinker_syn|Blinker_Implmnt
+Complete: Logic Synthesis on Blinker_syn|Blinker_Implmnt
+
+exit status=2
+
+exit status=2
+
