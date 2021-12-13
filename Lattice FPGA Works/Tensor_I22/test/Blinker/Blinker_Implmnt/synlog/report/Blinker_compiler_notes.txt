@@ -1,9 +1,0 @@
-@N|Running in 64-bit mode
-@N|Running in 64-bit mode
-@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\test\Blinker.vhd":7:7:7:13|Top entity is set to counter.
-@N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\test\Blinker.vhd":7:7:7:13|Synthesizing work.counter.counter_arch.
-@N|Running in 64-bit mode
-@N: NF107 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\test\Blinker.vhd":7:7:7:13|Selected library: work cell: counter view counter_arch as top level
-@N: NF107 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\Tensor_I22\test\Blinker.vhd":7:7:7:13|Selected library: work cell: counter view counter_arch as top level
-

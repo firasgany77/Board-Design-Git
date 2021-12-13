@@ -1,6 +1,0 @@
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\test\blinker.vhd":54:3:54:4|User-specified initial value defined for instance counter_3[31:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\test\blinker.vhd":41:3:41:4|User-specified initial value defined for instance counter_2[31:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\test\blinker.vhd":28:3:28:4|User-specified initial value defined for instance counter_1[31:0] is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\test\blinker.vhd":41:3:41:4|User-specified initial value defined for instance clk_1Khz is being ignored. 
-@W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensor_i22\test\blinker.vhd":28:3:28:4|User-specified initial value defined for instance clk_1MHz is being ignored. 
-@W: MT420 |Found inferred clock counter|CLK_27mhz with period 8.77ns. Please declare a user-defined clock on object "p:CLK_27mhz"
