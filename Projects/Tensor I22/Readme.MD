@@ -1,8 +1,8 @@
 Tensor I22 is an Industrial PC composed of SBC (Single Board Computer) and Extension Board.
 
-Features:
+Interfaces:
 
-- 2 HDMI 2.0b Ports
+- 2 HDMI 2.0b PortsCancel changes
 - 2 Mini DP 1.4a
 - 2 USB3.2 Gen 2 Ports
 - 2 USB2.0 Ports
@@ -10,7 +10,7 @@ Features:
 
 
 
-
+Tiger Lake CPU:
 
 SOC: TGL UP3 CPU (4+2)
      PCH – LP
