@@ -7,8 +7,10 @@ Interfaces:
 - 2 USB3.2 Gen 2 Ports
 - 2 USB2.0 Ports
 - 2 RJ45 2.5Gbe Ports (I219 PHY, I210 Ethernet Controller)
-
-
+- DDR4-3200 SODIMM UP to 32GB (2 Channels)
+- M.2 Key M (SSD - NVMe Gen4)
+- N.2 Key-B (WWAN)
+- M.2 Key-E (Wifi/BT)
 
 Tiger Lake CPU:
 - SOC: TGL UP3 CPU (4+2)
@@ -25,6 +27,9 @@ Tiger Lake CPU:
 - Wireless: Quasar CNVi w/Harrison Peak (Wi-Fi/BT) module WWAN – XMM 7560
 - Clocking: 38.4MHz Platform Xtal
 - Wired COMMs: Integrated GbE w/ discrete Gbit LAN PHY
+
+![image](https://user-images.githubusercontent.com/13163663/148607120-ce2caf78-8e41-4ccd-8d04-0ff33b107f03.png)
+
 
 ![image](https://user-images.githubusercontent.com/13163663/148600980-852e8595-822f-44c0-af1b-0c5d6daa5ff2.png)
 ![image](https://user-images.githubusercontent.com/13163663/148600996-31ccb4c9-1d49-42d4-b275-ecda9ad71896.png)
