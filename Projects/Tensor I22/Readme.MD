@@ -7,7 +7,7 @@ Interfaces:
 - 2 USB3.2 Gen 2 Ports
 - 2 USB2.0 Ports
 - 2 RJ45 2.5Gbe Ports (I219 PHY, I210 Ethernet Controller)
-- DDR4-3200 SODIMM UP to 32GB (2 Channels)
+- DDR4 - 3200MT/s SODIMM UP to 32GB (2 Channels)
 - M.2 Key M (SSD - NVMe Gen4)
 - N.2 Key-B (WWAN)
 - M.2 Key-E (Wifi/BT)
