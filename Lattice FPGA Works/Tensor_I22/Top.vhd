@@ -30,7 +30,7 @@ ENTITY TOP IS
 		V33S_OK : IN STD_LOGIC;
 		V5A_OK : IN STD_LOGIC;
 		V5S_OK : IN STD_LOGIC;
-		VCCIO_OK : IN STD_LOGIC;
+		-- VCCIO_OK : IN STD_LOGIC;  vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
 		VR_READY_VCCINAUX : IN STD_LOGIC; --replaced VCCSA_READY
 		VCCST_OK : IN STD_LOGIC;
 		VDDQ_OK : IN STD_LOGIC;
@@ -249,7 +249,7 @@ BEGIN
 	PORT MAP(
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
-		vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
+		--vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
 		slp_s3n => SYNTHESIZED_WIRE_48,
 		rsmrst_pwrgd => SYNTHESIZED_WIRE_26,
 		clk_100Khz => SYNTHESIZED_WIRE_47,
