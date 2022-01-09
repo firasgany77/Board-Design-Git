@@ -30,7 +30,8 @@ ENTITY TOP IS
 		V33S_OK : IN STD_LOGIC;
 		V5A_OK : IN STD_LOGIC;
 		V5S_OK : IN STD_LOGIC;
-		-- VCCIO_OK : IN STD_LOGIC;  vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
+		12V_MAIN_MON: IN STD_LOGIC; -- this replaces the FPGA_ADC input in SBC-CLH.
+		-- VCCIO_OK : IN STD_LOGIC;  vccio was a CPU PWR rail in SBC-CLH - not needed in SBC-TI22
 		VR_READY_VCCINAUX : IN STD_LOGIC; --replaced VCCSA_READY
 		VCCST_OK : IN STD_LOGIC;
 		VDDQ_OK : IN STD_LOGIC;
