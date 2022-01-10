@@ -13,8 +13,11 @@ Interfaces:
 - M.2 Key-E (Wifi/BT)
 
 ![image](https://user-images.githubusercontent.com/13163663/148610315-3d409028-a051-4718-8f88-9b5f930ad4f0.png)
-![image](https://user-images.githubusercontent.com/13163663/148734851-915e59e3-ba65-4e6e-95b4-acde016fe4f0.png)
 
+Extension Board (EB-TI22A):
+![EB_TI22A_1](https://user-images.githubusercontent.com/13163663/148734918-84d3b046-a819-4802-9d9e-009e9d09ffab.png)
+
+Motherboard (SBC-TI22A)
 ![image](https://user-images.githubusercontent.com/13163663/148600980-852e8595-822f-44c0-af1b-0c5d6daa5ff2.png)
 ![image](https://user-images.githubusercontent.com/13163663/148600996-31ccb4c9-1d49-42d4-b275-ecda9ad71896.png)
 ![image](https://user-images.githubusercontent.com/13163663/148600936-e441aa87-6a56-4540-bbee-e9fceaf63776.png)
