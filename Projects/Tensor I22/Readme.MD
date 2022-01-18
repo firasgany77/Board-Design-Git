@@ -20,8 +20,13 @@ Extension Board (EB-TI22A):
 
 SBC (Motherboard):
 ![TOP_VIEW-removebg](https://user-images.githubusercontent.com/13163663/149961775-7c68e91f-6002-43af-8681-bc39f7dc6ac2.png)
-![TOP_VIEW_WO_HEATPLATE-removebg](https://user-images.githubusercontent.com/13163663/149961714-f5dd591c-bae7-42ab-94aa-982f8d79b271.png)
-![TOP_VIEW2-removebg](https://user-images.githubusercontent.com/13163663/149961727-42a781e7-74ab-41d9-9d53-cf749092ad99.png)
+
+![TOP_VIEW2-removebg (1)](https://user-images.githubusercontent.com/13163663/149966285-4276acc3-1e55-44c4-bfeb-4a7763a99794.png)
+
+![TOP_VIEW_WO_HEATPLATE-removebg (1)](https://user-images.githubusercontent.com/13163663/149966511-aa1ebb86-e47a-404a-8224-92b0268a18ad.png)
+
+
+
 ![Front_Panel-removebg](https://user-images.githubusercontent.com/13163663/149961968-bb62265c-c2ed-4586-93f2-4ee77c3ff65a.png)
 ![SIDE_VIEW-removebg](https://user-images.githubusercontent.com/13163663/149961973-880eac78-df8c-4bab-8567-eb04155c6a68.png)
 ![BOTTOM_VIEW-removebg](https://user-images.githubusercontent.com/13163663/149961978-4aa4ef4d-ef60-4d7a-ad73-2432dd916e47.png)
