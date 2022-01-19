@@ -23,12 +23,8 @@ SBC (Motherboard):
 
 ![TOP_VIEW_WO_HEATPLATE](https://user-images.githubusercontent.com/13163663/150081893-d45118e1-14da-47c5-95bc-3213bcb6c247.png)
 
+![TOP_VIEW2_3-removebg](https://user-images.githubusercontent.com/13163663/150082035-ca819082-746a-4e2f-903e-b44e0bef0494.png)
 
-![TOP_VIEW_WO_HEATPLATE-removebg_2](https://user-images.githubusercontent.com/13163663/150081759-4d28e80e-07c2-4573-b038-0bb93fc50c10.png)
-
-
-
-![TOP_VIEW_WO_HEATPLATE-removebg (1)](https://user-images.githubusercontent.com/13163663/149966511-aa1ebb86-e47a-404a-8224-92b0268a18ad.png)
 
 
 ![Front_Panel-removebg](https://user-images.githubusercontent.com/13163663/149961968-bb62265c-c2ed-4586-93f2-4ee77c3ff65a.png)
