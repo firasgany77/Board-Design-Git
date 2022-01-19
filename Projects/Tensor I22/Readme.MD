@@ -12,7 +12,7 @@ Interfaces:
 - N.2 Key-B (WWAN)
 - M.2 Key-E (Wifi/BT)
 
-![SBC_TI22-removebg (3)](https://user-images.githubusercontent.com/13163663/150082856-63a4f36e-2f55-4a1a-b9bd-c3f1c3e6161e.png)
+![SBC_TI22-removebg (3)](https://user-images.githubusercontent.com/13163663/150083178-f630356c-0e73-41a7-8b0b-2373228486df.png)
 
 Extension Board (EB-TI22A):
 
