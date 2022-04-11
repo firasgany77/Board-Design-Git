@@ -1,0 +1,90 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|osyn|-autotop|-prodtype|synplify_pro|-useclone|-ui|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_vhdl.exe":1639048950
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\location.map":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\std.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\std1164.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\numeric.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\arith.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\unsigned.vhd":1639048953
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\hyperents.vhd":1639048953
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\Counter.vhd":1637852077
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\Test_VHDL.vhd":1637851789
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\Top.vhd":1637921877
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\dsw_pwrok.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\hda_strap_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\pch_pwrok_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\powerled_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\pwrbtn.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\rsmrst_pwrgd_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\vccio_en_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\vccsa_vr_en_vh.vhd":1637847909
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\FPGA\\Lattice\\Projects\\Tensor_I22\\Source\\vpp_vddq_vh.vhd":1637847909
+0 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Counter.vhd" vhdl
+1 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Test_VHDL.vhd" vhdl
+2 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd" vhdl
+3 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\dsw_pwrok.vhd" vhdl
+4 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\hda_strap_vh.vhd" vhdl
+5 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pch_pwrok_vh.vhd" vhdl
+6 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\powerled_vh.vhd" vhdl
+7 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd" vhdl
+8 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\rsmrst_pwrgd_vh.vhd" vhdl
+9 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccio_en_vh.vhd" vhdl
+10 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vccsa_vr_en_vh.vhd" vhdl
+11 "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\vpp_vddq_vh.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 6 11 9 0 4 10 3 8 5 
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+
+# Dependency Lists (Users Of)
+0 2 
+1 -1
+2 -1
+3 2 
+4 2 
+5 2 
+6 2 
+7 -1
+8 2 
+9 2 
+10 2 
+11 2 
+
+# Design Unit to File Association
+arch work counter counter_arch 0
+module work counter 0
+arch work clock_divider bhv 1
+module work clock_divider 1
+arch work top bdf_type 2
+module work top 2
+arch work dsw_pwrok_block dsw_pwrok_arch 3
+module work dsw_pwrok_block 3
+arch work hda_strap_block hda_strap_block_arch 4
+module work hda_strap_block 4
+arch work pch_pwrok_block pch_pwrok_block_arch 5
+module work pch_pwrok_block 5
+arch work powerled_block powerled_arch 6
+module work powerled_block 6
+arch work pwrbtn_block pwrbtn_arch 7
+module work pwrbtn_block 7
+arch work rsmrst_pwrgd_block rsmrst_arch 8
+module work rsmrst_pwrgd_block 8
+arch work vccio_en_block vccio_en_block_arch 9
+module work vccio_en_block 9
+arch work vccsa_vr_en_block vccsa_vr_arch 10
+module work vccsa_vr_en_block 10
+arch work vpp_vddq_block vpp_vddq_arch 11
+module work vpp_vddq_block 11

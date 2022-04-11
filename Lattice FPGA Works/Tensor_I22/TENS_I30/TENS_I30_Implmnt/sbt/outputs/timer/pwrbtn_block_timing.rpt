@@ -1,0 +1,857 @@
+# ******************************************************************************
+
+# iCEcube Static Timer
+
+# Version:            2020.12.27943
+
+# Build Date:         Dec  9 2020 17:33:20
+
+# File Generated:     Mar 9 2022 14:41:16
+
+# Purpose:            Timing Report with critical paths info
+
+# Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+# ******************************************************************************
+
+Device: iCE40LP1K
+Derating factors (Best:Typical:Worst) :-  ( 0.654293 : 0.85 : 1.03369 )
+Derating factor used to generate this timing report:  Typical
+Based on the following operating conditions 
+Junction Temperature(degree Celsius): 25
+Core Voltage(V): 1.2
+Process Corner:  Typical
+NOTE:
+Please check both worst-case and best-case scenarios for "Setup Times" 
+and "Hold Times" checks
+ #####################################################################
+                    Table of Contents
+ =====================================================================
+	1::Clock Frequency Summary
+	2::Clock Relationship Summary
+	3::Datasheet Report
+		3.1::Setup Times
+		3.2::Clock to Out
+		3.3::Pad to Pad
+		3.4::Hold Times
+		3.5::Minimum Clock to Out
+		3.6::Minimum Pad To Pad
+	4::Path Details for Clock Frequency Summary
+	5::Path Details for Clock Relationship Summary
+	6::Path Details for DataSheet
+		6.1::Setup Times Path Details
+		6.2::Clock to Out Path Details
+			6.2.1::Path details for port: pwrbtn
+		6.3::PI to PO Path Details
+			6.3.1::Path details for port: pwrbtn
+		6.4::Hold Times Path Details
+		6.5::Minimum Clock to Out Path Details
+			6.5.1::Path details for port: pwrbtn
+		6.6::Minimum Pad To Pad Path Details
+			6.6.1::Path details for port: pwrbtn
+ =====================================================================
+                    End of Table of Contents
+ #####################################################################
+
+ #####################################################################
+                    1::Clock Frequency Summary
+ =====================================================================
+Number of clocks: 1
+Clock: pwrbtn_block|clk_100k  | N/A  | Target: 143.68 MHz  | 
+
+ =====================================================================
+                    End of Clock Frequency Summary
+ #####################################################################
+
+
+ #####################################################################
+                    2::Clock Relationship Summary
+ =====================================================================
+
+Launch Clock  Capture Clock  Constraint(R-R)  Slack(R-R)  Constraint(R-F)  Slack(R-F)  Constraint(F-F)  Slack(F-F)  Constraint(F-R)  Slack(F-R)  
+
+ =====================================================================
+                    End of Clock Relationship Summary
+ #####################################################################
+
+
+ #####################################################################
+                    3::Datasheet Report
+
+All values are in Picoseconds
+ =====================================================================
+
+                        3.1::Setup Times
+                        ----------------
+
+Data Port  Clock Port  Setup Times  Clock Reference:Phase  
+---------  ----------  -----------  ---------------------  
+
+
+                       3.2::Clock to Out
+                       -----------------
+
+Data Port  Clock Port  Clock to Out  Clock Reference:Phase    
+---------  ----------  ------------  -----------------------  
+pwrbtn     clk_100k    20173         pwrbtn_block|clk_100k:R  
+pwrbtn     clk_100k    19621         pwrbtn_block|clk_100k:F  
+
+
+                         3.3::Pad to Pad
+                         ---------------
+
+Port Name (Input)  Port Name (Output)  Pad to Pad  
+-----------------  ------------------  ----------  
+rsmrst_n           pwrbtn              18252       
+
+
+                         3.4::Hold Times
+                         ---------------
+
+Data Port  Clock Port  Hold Times  Clock Reference:Phase  
+---------  ----------  ----------  ---------------------  
+
+
+               3.5::Minimum Clock to Out
+               -------------------------
+
+Data Port  Clock Port  Minimum Clock to Out  Clock Reference:Phase    
+---------  ----------  --------------------  -----------------------  
+pwrbtn     clk_100k    9776                  pwrbtn_block|clk_100k:F  
+pwrbtn     clk_100k    10022                 pwrbtn_block|clk_100k:R  
+
+
+                 3.6::Minimum Pad To Pad
+                 -----------------------
+
+Port Name (Input)  Port Name (Output)  Minimum Pad To Pad  
+-----------------  ------------------  ------------------  
+rsmrst_n           pwrbtn              11935               
+
+ =====================================================================
+                    End of Datasheet Report
+ #####################################################################
+ #####################################################################
+                    4::Path Details for Clock Frequency Summary
+
+ =====================================================================
+                    End of Path Details for Clock Frequency Summary
+ #####################################################################
+
+
+ #####################################################################
+                    5::Path Details for Clock Relationship Summary
+ =====================================================================
+
+
+ =====================================================================
+                    End of Path Details for Clock Relationship Summary
+ #####################################################################
+
+
+ #####################################################################
+                    6::Path Details for DataSheet
+ =====================================================================
+
+
+6.2::Clock to Out Path Details          
+--------------------------------------------------
+
+6.2.1::Path details for port: pwrbtn    
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : pwrbtn
+Clock Port         : clk_100k
+Clock Reference    : pwrbtn_block|clk_100k:R
+Clock to Out Delay : 20173
+
+
+Launch Clock Path Delay           0
++ Clock To Q Delay                0
++ Data Path Delay             20173
+---------------------------- ------
+Clock To Out Delay            20173
+
+Launch Clock Path
+pin name  model name  delay  cummulative delay  edge  Fanout  
+--------  ----------  -----  -----------------  ----  ------  
+
+Data Path
+pin name                                model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------  -------------------------  -----  -----------------  ----  ------  
+clk_100k                                pwrbtn_block               0      0                  RISE  1       
+clk_100k_ibuf_iopad/PACKAGEPIN:in       IO_PAD                     0      0                  RISE  1       
+clk_100k_ibuf_iopad/DOUT                IO_PAD                     590    590                RISE  1       
+clk_100k_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001     0      590                RISE  1       
+clk_100k_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001     748    1338               RISE  1       
+I__231/I                                LocalMux                   0      1338               RISE  1       
+I__231/O                                LocalMux                   400    1738               RISE  1       
+I__234/I                                InMux                      0      1738               RISE  1       
+I__234/O                                InMux                      315    2052               RISE  1       
+clk_100k_ibuf_RNI67K31_LC_1_8_3/in3     LogicCell40_SEQ_MODE_0000  0      2052               RISE  1       
+clk_100k_ibuf_RNI67K31_LC_1_8_3/lcout   LogicCell40_SEQ_MODE_0000  383    2435               RISE  3       
+I__129/I                                Odrv4                      0      2435               RISE  1       
+I__129/O                                Odrv4                      425    2860               RISE  1       
+I__132/I                                LocalMux                   0      2860               RISE  1       
+I__132/O                                LocalMux                   400    3259               RISE  1       
+I__134/I                                InMux                      0      3259               RISE  1       
+I__134/O                                InMux                      315    3574               RISE  1       
+clk_100k_ibuf_RNI_4_LC_1_6_5/in0        LogicCell40_SEQ_MODE_0000  0      3574               RISE  1       
+clk_100k_ibuf_RNI_4_LC_1_6_5/lcout      LogicCell40_SEQ_MODE_0000  544    4118               RISE  1       
+I__95/I                                 LocalMux                   0      4118               RISE  1       
+I__95/O                                 LocalMux                   400    4517               RISE  1       
+I__96/I                                 InMux                      0      4517               RISE  1       
+I__96/O                                 InMux                      315    4832               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/in0        LogicCell40_SEQ_MODE_0000  0      4832               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/ltout      LogicCell40_SEQ_MODE_0000  468    5299               FALL  1       
+I__93/I                                 CascadeMux                 0      5299               FALL  1       
+I__93/O                                 CascadeMux                 0      5299               FALL  1       
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/in2      LogicCell40_SEQ_MODE_0000  0      5299               FALL  1       
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/ltout    LogicCell40_SEQ_MODE_0000  417    5716               FALL  1       
+I__92/I                                 CascadeMux                 0      5716               FALL  1       
+I__92/O                                 CascadeMux                 0      5716               FALL  1       
+clk_100k_ibuf_RNI31H31_LC_1_7_3/in2     LogicCell40_SEQ_MODE_0000  0      5716               FALL  1       
+clk_100k_ibuf_RNI31H31_LC_1_7_3/ltout   LogicCell40_SEQ_MODE_0000  417    6132               FALL  1       
+I__91/I                                 CascadeMux                 0      6132               FALL  1       
+I__91/O                                 CascadeMux                 0      6132               FALL  1       
+clk_100k_ibuf_RNI_2_LC_1_7_4/in2        LogicCell40_SEQ_MODE_0000  0      6132               FALL  1       
+clk_100k_ibuf_RNI_2_LC_1_7_4/lcout      LogicCell40_SEQ_MODE_0000  459    6591               RISE  1       
+I__89/I                                 LocalMux                   0      6591               RISE  1       
+I__89/O                                 LocalMux                   400    6991               RISE  1       
+I__90/I                                 InMux                      0      6991               RISE  1       
+I__90/O                                 InMux                      315    7305               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/in1        LogicCell40_SEQ_MODE_0000  0      7305               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/lcout      LogicCell40_SEQ_MODE_0000  485    7790               RISE  17      
+I__334/I                                Odrv4                      0      7790               RISE  1       
+I__334/O                                Odrv4                      425    8215               RISE  1       
+I__344/I                                LocalMux                   0      8215               RISE  1       
+I__344/O                                LocalMux                   400    8614               RISE  1       
+I__351/I                                InMux                      0      8614               RISE  1       
+I__351/O                                InMux                      315    8929               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in1    LogicCell40_SEQ_MODE_0000  0      8929               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/lcout  LogicCell40_SEQ_MODE_0000  485    9413               RISE  19      
+I__357/I                                LocalMux                   0      9413               RISE  1       
+I__357/O                                LocalMux                   400    9813               RISE  1       
+I__365/I                                InMux                      0      9813               RISE  1       
+I__365/O                                InMux                      315    10127              RISE  1       
+I__377/I                                CascadeMux                 0      10127              RISE  1       
+I__377/O                                CascadeMux                 0      10127              RISE  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/in2     LogicCell40_SEQ_MODE_0000  0      10127              RISE  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/lcout   LogicCell40_SEQ_MODE_0000  459    10586              RISE  1       
+I__81/I                                 LocalMux                   0      10586              RISE  1       
+I__81/O                                 LocalMux                   400    10986              RISE  1       
+I__82/I                                 InMux                      0      10986              RISE  1       
+I__82/O                                 InMux                      315    11300              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in1      LogicCell40_SEQ_MODE_0000  0      11300              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/lcout    LogicCell40_SEQ_MODE_0000  485    11785              RISE  3       
+I__83/I                                 LocalMux                   0      11785              RISE  1       
+I__83/O                                 LocalMux                   400    12184              RISE  1       
+I__84/I                                 InMux                      0      12184              RISE  1       
+I__84/O                                 InMux                      315    12499              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in3      LogicCell40_SEQ_MODE_0000  0      12499              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/ltout    LogicCell40_SEQ_MODE_0000  332    12830              FALL  1       
+I__74/I                                 CascadeMux                 0      12830              FALL  1       
+I__74/O                                 CascadeMux                 0      12830              FALL  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in2    LogicCell40_SEQ_MODE_0000  0      12830              FALL  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/ltout  LogicCell40_SEQ_MODE_0000  374    13204              RISE  1       
+I__73/I                                 CascadeMux                 0      13204              RISE  1       
+I__73/O                                 CascadeMux                 0      13204              RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in2    LogicCell40_SEQ_MODE_0000  0      13204              RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000  425    13629              FALL  2       
+I__68/I                                 Odrv4                      0      13629              FALL  1       
+I__68/O                                 Odrv4                      451    14080              FALL  1       
+I__70/I                                 IoSpan4Mux                 0      14080              FALL  1       
+I__70/O                                 IoSpan4Mux                 391    14471              FALL  1       
+I__71/I                                 LocalMux                   0      14471              FALL  1       
+I__71/O                                 LocalMux                   374    14845              FALL  1       
+I__72/I                                 IoInMux                    0      14845              FALL  1       
+I__72/O                                 IoInMux                    264    15108              FALL  1       
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001     0      15108              FALL  1       
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001     2712   17820              FALL  1       
+pwrbtn_obuf_iopad/DIN                   IO_PAD                     0      17820              FALL  1       
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                     2353   20173              FALL  1       
+pwrbtn                                  pwrbtn_block               0      20173              FALL  1       
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : pwrbtn
+Clock Port         : clk_100k
+Clock Reference    : pwrbtn_block|clk_100k:F
+Clock to Out Delay : 19621
+
+
+Launch Clock Path Delay           0
++ Clock To Q Delay                0
++ Data Path Delay             19621
+---------------------------- ------
+Clock To Out Delay            19621
+
+Launch Clock Path
+pin name  model name  delay  cummulative delay  edge  Fanout  
+--------  ----------  -----  -----------------  ----  ------  
+
+Data Path
+pin name                                model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------  -------------------------  -----  -----------------  ----  ------  
+clk_100k                                pwrbtn_block               0      0                  FALL  1       
+clk_100k_ibuf_iopad/PACKAGEPIN:in       IO_PAD                     0      0                  FALL  1       
+clk_100k_ibuf_iopad/DOUT                IO_PAD                     540    540                FALL  1       
+clk_100k_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001     0      540                FALL  1       
+clk_100k_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001     561    1101               FALL  1       
+I__231/I                                LocalMux                   0      1101               FALL  1       
+I__231/O                                LocalMux                   374    1475               FALL  1       
+I__234/I                                InMux                      0      1475               FALL  1       
+I__234/O                                InMux                      264    1739               FALL  1       
+clk_100k_ibuf_RNI67K31_LC_1_8_3/in3     LogicCell40_SEQ_MODE_0000  0      1739               FALL  1       
+clk_100k_ibuf_RNI67K31_LC_1_8_3/lcout   LogicCell40_SEQ_MODE_0000  349    2087               FALL  3       
+I__129/I                                Odrv4                      0      2087               FALL  1       
+I__129/O                                Odrv4                      451    2538               FALL  1       
+I__132/I                                LocalMux                   0      2538               FALL  1       
+I__132/O                                LocalMux                   374    2912               FALL  1       
+I__134/I                                InMux                      0      2912               FALL  1       
+I__134/O                                InMux                      264    3175               FALL  1       
+clk_100k_ibuf_RNI_4_LC_1_6_5/in0        LogicCell40_SEQ_MODE_0000  0      3175               FALL  1       
+clk_100k_ibuf_RNI_4_LC_1_6_5/lcout      LogicCell40_SEQ_MODE_0000  468    3643               FALL  1       
+I__95/I                                 LocalMux                   0      3643               FALL  1       
+I__95/O                                 LocalMux                   374    4017               FALL  1       
+I__96/I                                 InMux                      0      4017               FALL  1       
+I__96/O                                 InMux                      264    4280               FALL  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/in0        LogicCell40_SEQ_MODE_0000  0      4280               FALL  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/ltout      LogicCell40_SEQ_MODE_0000  468    4748               FALL  1       
+I__93/I                                 CascadeMux                 0      4748               FALL  1       
+I__93/O                                 CascadeMux                 0      4748               FALL  1       
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/in2      LogicCell40_SEQ_MODE_0000  0      4748               FALL  1       
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/ltout    LogicCell40_SEQ_MODE_0000  417    5164               FALL  1       
+I__92/I                                 CascadeMux                 0      5164               FALL  1       
+I__92/O                                 CascadeMux                 0      5164               FALL  1       
+clk_100k_ibuf_RNI31H31_LC_1_7_3/in2     LogicCell40_SEQ_MODE_0000  0      5164               FALL  1       
+clk_100k_ibuf_RNI31H31_LC_1_7_3/ltout   LogicCell40_SEQ_MODE_0000  417    5581               FALL  1       
+I__91/I                                 CascadeMux                 0      5581               FALL  1       
+I__91/O                                 CascadeMux                 0      5581               FALL  1       
+clk_100k_ibuf_RNI_2_LC_1_7_4/in2        LogicCell40_SEQ_MODE_0000  0      5581               FALL  1       
+clk_100k_ibuf_RNI_2_LC_1_7_4/lcout      LogicCell40_SEQ_MODE_0000  459    6040               RISE  1       
+I__89/I                                 LocalMux                   0      6040               RISE  1       
+I__89/O                                 LocalMux                   400    6439               RISE  1       
+I__90/I                                 InMux                      0      6439               RISE  1       
+I__90/O                                 InMux                      315    6754               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/in1        LogicCell40_SEQ_MODE_0000  0      6754               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/lcout      LogicCell40_SEQ_MODE_0000  485    7238               RISE  17      
+I__334/I                                Odrv4                      0      7238               RISE  1       
+I__334/O                                Odrv4                      425    7663               RISE  1       
+I__344/I                                LocalMux                   0      7663               RISE  1       
+I__344/O                                LocalMux                   400    8063               RISE  1       
+I__351/I                                InMux                      0      8063               RISE  1       
+I__351/O                                InMux                      315    8377               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in1    LogicCell40_SEQ_MODE_0000  0      8377               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/lcout  LogicCell40_SEQ_MODE_0000  485    8862               RISE  19      
+I__357/I                                LocalMux                   0      8862               RISE  1       
+I__357/O                                LocalMux                   400    9261               RISE  1       
+I__365/I                                InMux                      0      9261               RISE  1       
+I__365/O                                InMux                      315    9576               RISE  1       
+I__377/I                                CascadeMux                 0      9576               RISE  1       
+I__377/O                                CascadeMux                 0      9576               RISE  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/in2     LogicCell40_SEQ_MODE_0000  0      9576               RISE  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/lcout   LogicCell40_SEQ_MODE_0000  459    10035              RISE  1       
+I__81/I                                 LocalMux                   0      10035              RISE  1       
+I__81/O                                 LocalMux                   400    10434              RISE  1       
+I__82/I                                 InMux                      0      10434              RISE  1       
+I__82/O                                 InMux                      315    10749              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in1      LogicCell40_SEQ_MODE_0000  0      10749              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/lcout    LogicCell40_SEQ_MODE_0000  485    11233              RISE  3       
+I__83/I                                 LocalMux                   0      11233              RISE  1       
+I__83/O                                 LocalMux                   400    11633              RISE  1       
+I__84/I                                 InMux                      0      11633              RISE  1       
+I__84/O                                 InMux                      315    11947              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in3      LogicCell40_SEQ_MODE_0000  0      11947              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/ltout    LogicCell40_SEQ_MODE_0000  332    12279              FALL  1       
+I__74/I                                 CascadeMux                 0      12279              FALL  1       
+I__74/O                                 CascadeMux                 0      12279              FALL  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in2    LogicCell40_SEQ_MODE_0000  0      12279              FALL  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/ltout  LogicCell40_SEQ_MODE_0000  374    12653              RISE  1       
+I__73/I                                 CascadeMux                 0      12653              RISE  1       
+I__73/O                                 CascadeMux                 0      12653              RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in2    LogicCell40_SEQ_MODE_0000  0      12653              RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000  425    13078              FALL  2       
+I__68/I                                 Odrv4                      0      13078              FALL  1       
+I__68/O                                 Odrv4                      451    13528              FALL  1       
+I__70/I                                 IoSpan4Mux                 0      13528              FALL  1       
+I__70/O                                 IoSpan4Mux                 391    13919              FALL  1       
+I__71/I                                 LocalMux                   0      13919              FALL  1       
+I__71/O                                 LocalMux                   374    14293              FALL  1       
+I__72/I                                 IoInMux                    0      14293              FALL  1       
+I__72/O                                 IoInMux                    264    14557              FALL  1       
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001     0      14557              FALL  1       
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001     2712   17268              FALL  1       
+pwrbtn_obuf_iopad/DIN                   IO_PAD                     0      17268              FALL  1       
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                     2353   19621              FALL  1       
+pwrbtn                                  pwrbtn_block               0      19621              FALL  1       
+
+6.3::PI to PO Path Details              
+--------------------------------------------------
+
+6.3.1::Path details for port: pwrbtn    
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : pwrbtn
+Input Port       : rsmrst_n
+Pad to Pad Delay : 18252
+
+Pad to Pad Path
+pin name                                model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------  -------------------------  -----  -----------------  ----  ------  
+rsmrst_n                                pwrbtn_block               0      0                  RISE  1       
+rsmrst_n_ibuf_iopad/PACKAGEPIN:in       IO_PAD                     0      0                  RISE  1       
+rsmrst_n_ibuf_iopad/DOUT                IO_PAD                     590    590                RISE  1       
+rsmrst_n_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001     0      590                RISE  1       
+rsmrst_n_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001     748    1338               RISE  1       
+I__290/I                                Odrv4                      0      1338               RISE  1       
+I__290/O                                Odrv4                      425    1763               RISE  1       
+I__292/I                                Span4Mux_v                 0      1763               RISE  1       
+I__292/O                                Span4Mux_v                 425    2188               RISE  1       
+I__294/I                                Span4Mux_v                 0      2188               RISE  1       
+I__294/O                                Span4Mux_v                 425    2613               RISE  1       
+I__299/I                                LocalMux                   0      2613               RISE  1       
+I__299/O                                LocalMux                   400    3013               RISE  1       
+I__310/I                                InMux                      0      3013               RISE  1       
+I__310/O                                InMux                      315    3327               RISE  1       
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/in0      LogicCell40_SEQ_MODE_0000  0      3327               RISE  1       
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/ltout    LogicCell40_SEQ_MODE_0000  468    3795               FALL  1       
+I__92/I                                 CascadeMux                 0      3795               FALL  1       
+I__92/O                                 CascadeMux                 0      3795               FALL  1       
+clk_100k_ibuf_RNI31H31_LC_1_7_3/in2     LogicCell40_SEQ_MODE_0000  0      3795               FALL  1       
+clk_100k_ibuf_RNI31H31_LC_1_7_3/ltout   LogicCell40_SEQ_MODE_0000  417    4211               FALL  1       
+I__91/I                                 CascadeMux                 0      4211               FALL  1       
+I__91/O                                 CascadeMux                 0      4211               FALL  1       
+clk_100k_ibuf_RNI_2_LC_1_7_4/in2        LogicCell40_SEQ_MODE_0000  0      4211               FALL  1       
+clk_100k_ibuf_RNI_2_LC_1_7_4/lcout      LogicCell40_SEQ_MODE_0000  459    4670               RISE  1       
+I__89/I                                 LocalMux                   0      4670               RISE  1       
+I__89/O                                 LocalMux                   400    5070               RISE  1       
+I__90/I                                 InMux                      0      5070               RISE  1       
+I__90/O                                 InMux                      315    5384               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/in1        LogicCell40_SEQ_MODE_0000  0      5384               RISE  1       
+clk_100k_ibuf_RNI_5_LC_1_7_1/lcout      LogicCell40_SEQ_MODE_0000  485    5869               RISE  17      
+I__334/I                                Odrv4                      0      5869               RISE  1       
+I__334/O                                Odrv4                      425    6294               RISE  1       
+I__344/I                                LocalMux                   0      6294               RISE  1       
+I__344/O                                LocalMux                   400    6693               RISE  1       
+I__351/I                                InMux                      0      6693               RISE  1       
+I__351/O                                InMux                      315    7008               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in1    LogicCell40_SEQ_MODE_0000  0      7008               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/lcout  LogicCell40_SEQ_MODE_0000  485    7492               RISE  19      
+I__357/I                                LocalMux                   0      7492               RISE  1       
+I__357/O                                LocalMux                   400    7892               RISE  1       
+I__365/I                                InMux                      0      7892               RISE  1       
+I__365/O                                InMux                      315    8206               RISE  1       
+I__377/I                                CascadeMux                 0      8206               RISE  1       
+I__377/O                                CascadeMux                 0      8206               RISE  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/in2     LogicCell40_SEQ_MODE_0000  0      8206               RISE  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/lcout   LogicCell40_SEQ_MODE_0000  459    8665               RISE  1       
+I__81/I                                 LocalMux                   0      8665               RISE  1       
+I__81/O                                 LocalMux                   400    9065               RISE  1       
+I__82/I                                 InMux                      0      9065               RISE  1       
+I__82/O                                 InMux                      315    9379               RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in1      LogicCell40_SEQ_MODE_0000  0      9379               RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/lcout    LogicCell40_SEQ_MODE_0000  485    9864               RISE  3       
+I__83/I                                 LocalMux                   0      9864               RISE  1       
+I__83/O                                 LocalMux                   400    10263              RISE  1       
+I__84/I                                 InMux                      0      10263              RISE  1       
+I__84/O                                 InMux                      315    10578              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in3      LogicCell40_SEQ_MODE_0000  0      10578              RISE  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/ltout    LogicCell40_SEQ_MODE_0000  332    10909              FALL  1       
+I__74/I                                 CascadeMux                 0      10909              FALL  1       
+I__74/O                                 CascadeMux                 0      10909              FALL  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in2    LogicCell40_SEQ_MODE_0000  0      10909              FALL  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/ltout  LogicCell40_SEQ_MODE_0000  374    11283              RISE  1       
+I__73/I                                 CascadeMux                 0      11283              RISE  1       
+I__73/O                                 CascadeMux                 0      11283              RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in2    LogicCell40_SEQ_MODE_0000  0      11283              RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000  425    11708              FALL  2       
+I__68/I                                 Odrv4                      0      11708              FALL  1       
+I__68/O                                 Odrv4                      451    12159              FALL  1       
+I__70/I                                 IoSpan4Mux                 0      12159              FALL  1       
+I__70/O                                 IoSpan4Mux                 391    12550              FALL  1       
+I__71/I                                 LocalMux                   0      12550              FALL  1       
+I__71/O                                 LocalMux                   374    12924              FALL  1       
+I__72/I                                 IoInMux                    0      12924              FALL  1       
+I__72/O                                 IoInMux                    264    13187              FALL  1       
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001     0      13187              FALL  1       
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001     2712   15899              FALL  1       
+pwrbtn_obuf_iopad/DIN                   IO_PAD                     0      15899              FALL  1       
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                     2353   18252              FALL  1       
+pwrbtn                                  pwrbtn_block               0      18252              FALL  1       
+
+6.5::Min Clock to Out Path Details      
+--------------------------------------------------
+
+6.5.1::Path details for port: pwrbtn    
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : pwrbtn
+Clock Port         : clk_100k
+Clock Reference    : pwrbtn_block|clk_100k:F
+Clock to Out Delay : 9776
+
+
+Launch Clock Path Delay           0
++ Clock To Q Delay                0
++ Data Path Delay              9776
+---------------------------- ------
+Clock To Out Delay             9776
+
+Launch Clock Path
+pin name  model name  delay  cummulative delay  edge  Fanout  
+--------  ----------  -----  -----------------  ----  ------  
+
+Data Path
+pin name                                model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------  -------------------------  -----  -----------------  ----  ------  
+clk_100k                                pwrbtn_block               0      0                  FALL  1       
+clk_100k_ibuf_iopad/PACKAGEPIN:in       IO_PAD                     0      0                  FALL  1       
+clk_100k_ibuf_iopad/DOUT                IO_PAD                     540    540                FALL  1       
+clk_100k_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001     0      540                FALL  1       
+clk_100k_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001     561    1101               FALL  1       
+I__232/I                                Odrv4                      0      1101               FALL  1       
+I__232/O                                Odrv4                      451    1552               FALL  1       
+I__237/I                                Span4Mux_v                 0      1552               FALL  1       
+I__237/O                                Span4Mux_v                 451    2002               FALL  1       
+I__241/I                                Span4Mux_h                 0      2002               FALL  1       
+I__241/O                                Span4Mux_h                 383    2385               FALL  1       
+I__248/I                                LocalMux                   0      2385               FALL  1       
+I__248/O                                LocalMux                   374    2759               FALL  1       
+I__257/I                                InMux                      0      2759               FALL  1       
+I__257/O                                InMux                      264    3022               FALL  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in0    LogicCell40_SEQ_MODE_0000  0      3022               FALL  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000  544    3566               RISE  2       
+I__68/I                                 Odrv4                      0      3566               RISE  1       
+I__68/O                                 Odrv4                      425    3991               RISE  1       
+I__70/I                                 IoSpan4Mux                 0      3991               RISE  1       
+I__70/O                                 IoSpan4Mux                 349    4340               RISE  1       
+I__71/I                                 LocalMux                   0      4340               RISE  1       
+I__71/O                                 LocalMux                   400    4739               RISE  1       
+I__72/I                                 IoInMux                    0      4739               RISE  1       
+I__72/O                                 IoInMux                    315    5054               RISE  1       
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001     0      5054               RISE  1       
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001     2431   7485               RISE  1       
+pwrbtn_obuf_iopad/DIN                   IO_PAD                     0      7485               RISE  1       
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                     2292   9776               RISE  1       
+pwrbtn                                  pwrbtn_block               0      9776               RISE  1       
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Data Port          : pwrbtn
+Clock Port         : clk_100k
+Clock Reference    : pwrbtn_block|clk_100k:R
+Clock to Out Delay : 10022
+
+
+Launch Clock Path Delay           0
++ Clock To Q Delay                0
++ Data Path Delay             10022
+---------------------------- ------
+Clock To Out Delay            10022
+
+Launch Clock Path
+pin name  model name  delay  cummulative delay  edge  Fanout  
+--------  ----------  -----  -----------------  ----  ------  
+
+Data Path
+pin name                                model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------  -------------------------  -----  -----------------  ----  ------  
+clk_100k                                pwrbtn_block               0      0                  RISE  1       
+clk_100k_ibuf_iopad/PACKAGEPIN:in       IO_PAD                     0      0                  RISE  1       
+clk_100k_ibuf_iopad/DOUT                IO_PAD                     590    590                RISE  1       
+clk_100k_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001     0      590                RISE  1       
+clk_100k_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001     748    1338               RISE  1       
+I__232/I                                Odrv4                      0      1338               RISE  1       
+I__232/O                                Odrv4                      425    1763               RISE  1       
+I__237/I                                Span4Mux_v                 0      1763               RISE  1       
+I__237/O                                Span4Mux_v                 425    2188               RISE  1       
+I__241/I                                Span4Mux_h                 0      2188               RISE  1       
+I__241/O                                Span4Mux_h                 366    2554               RISE  1       
+I__248/I                                LocalMux                   0      2554               RISE  1       
+I__248/O                                LocalMux                   400    2953               RISE  1       
+I__257/I                                InMux                      0      2953               RISE  1       
+I__257/O                                InMux                      315    3268               RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in0    LogicCell40_SEQ_MODE_0000  0      3268               RISE  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000  544    3812               RISE  2       
+I__68/I                                 Odrv4                      0      3812               RISE  1       
+I__68/O                                 Odrv4                      425    4237               RISE  1       
+I__70/I                                 IoSpan4Mux                 0      4237               RISE  1       
+I__70/O                                 IoSpan4Mux                 349    4585               RISE  1       
+I__71/I                                 LocalMux                   0      4585               RISE  1       
+I__71/O                                 LocalMux                   400    4985               RISE  1       
+I__72/I                                 IoInMux                    0      4985               RISE  1       
+I__72/O                                 IoInMux                    315    5299               RISE  1       
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001     0      5299               RISE  1       
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001     2431   7730               RISE  1       
+pwrbtn_obuf_iopad/DIN                   IO_PAD                     0      7730               RISE  1       
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                     2292   10022              RISE  1       
+pwrbtn                                  pwrbtn_block               0      10022              RISE  1       
+
+6.6::Min PI to PO Path Details          
+--------------------------------------------------
+
+6.6.1::Path details for port: pwrbtn    
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : pwrbtn
+Input Port       : rsmrst_n
+Pad to Pad Delay : 11935
+
+Pad to Pad Path
+pin name                                model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------  -------------------------  -----  -----------------  ----  ------  
+rsmrst_n                                pwrbtn_block               0      0                  FALL  1       
+rsmrst_n_ibuf_iopad/PACKAGEPIN:in       IO_PAD                     0      0                  FALL  1       
+rsmrst_n_ibuf_iopad/DOUT                IO_PAD                     540    540                FALL  1       
+rsmrst_n_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001     0      540                FALL  1       
+rsmrst_n_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001     561    1101               FALL  1       
+I__290/I                                Odrv4                      0      1101               FALL  1       
+I__290/O                                Odrv4                      451    1552               FALL  1       
+I__292/I                                Span4Mux_v                 0      1552               FALL  1       
+I__292/O                                Span4Mux_v                 451    2002               FALL  1       
+I__295/I                                Span4Mux_v                 0      2002               FALL  1       
+I__295/O                                Span4Mux_v                 451    2453               FALL  1       
+I__302/I                                Span4Mux_h                 0      2453               FALL  1       
+I__302/O                                Span4Mux_h                 383    2835               FALL  1       
+I__315/I                                LocalMux                   0      2835               FALL  1       
+I__315/O                                LocalMux                   374    3209               FALL  1       
+I__321/I                                InMux                      0      3209               FALL  1       
+I__321/O                                InMux                      264    3473               FALL  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/in3     LogicCell40_SEQ_MODE_0000  0      3473               FALL  1       
+curr_state_8_1_0__m4_0_LC_1_5_7/lcout   LogicCell40_SEQ_MODE_0000  349    3821               FALL  1       
+I__81/I                                 LocalMux                   0      3821               FALL  1       
+I__81/O                                 LocalMux                   374    4195               FALL  1       
+I__82/I                                 InMux                      0      4195               FALL  1       
+I__82/O                                 InMux                      264    4459               FALL  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/in1      LogicCell40_SEQ_MODE_0000  0      4459               FALL  1       
+clk_100k_ibuf_RNIQGTD_LC_1_5_0/ltout    LogicCell40_SEQ_MODE_0000  391    4850               RISE  1       
+I__74/I                                 CascadeMux                 0      4850               RISE  1       
+I__74/O                                 CascadeMux                 0      4850               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in2    LogicCell40_SEQ_MODE_0000  0      4850               RISE  1       
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/ltout  LogicCell40_SEQ_MODE_0000  417    5266               FALL  1       
+I__73/I                                 CascadeMux                 0      5266               FALL  1       
+I__73/O                                 CascadeMux                 0      5266               FALL  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in2    LogicCell40_SEQ_MODE_0000  0      5266               FALL  1       
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000  459    5725               RISE  2       
+I__68/I                                 Odrv4                      0      5725               RISE  1       
+I__68/O                                 Odrv4                      425    6150               RISE  1       
+I__70/I                                 IoSpan4Mux                 0      6150               RISE  1       
+I__70/O                                 IoSpan4Mux                 349    6499               RISE  1       
+I__71/I                                 LocalMux                   0      6499               RISE  1       
+I__71/O                                 LocalMux                   400    6898               RISE  1       
+I__72/I                                 IoInMux                    0      6898               RISE  1       
+I__72/O                                 IoInMux                    315    7213               RISE  1       
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001     0      7213               RISE  1       
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001     2431   9644               RISE  1       
+pwrbtn_obuf_iopad/DIN                   IO_PAD                     0      9644               RISE  1       
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                     2292   11935              RISE  1       
+pwrbtn                                  pwrbtn_block               0      11935              RISE  1       
+
+
+ =====================================================================
+                    End of Path Details for Datasheet
+ #####################################################################
+
+##################################################################### 
+                    Detailed Setup Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_100k
+Path End         : pwrbtn
+Setup Constraint : +INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (pwrbtn_block|clk_100k:R#1)       0
++ Launch Clock Source Latency                               0
++ Data Path Delay                                       15870
+-----------------------------------------------------   ----- 
+End-of-path arrival time (ps)                           15870
+ 
+Data path
+pin name                                model name                 delay  cumulative delay  slack  edge  Fanout
+--------------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+clk_100k                                pwrbtn_block                   0                 0   COMP  RISE       1
+clk_100k_ibuf_iopad/PACKAGEPIN:in       IO_PAD                         0                 0   +INF  RISE       1
+clk_100k_ibuf_iopad/DOUT                IO_PAD                       590               590   +INF  RISE       1
+clk_100k_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001         0               590   +INF  RISE       1
+clk_100k_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001       748              1338   +INF  RISE       1
+I__231/I                                LocalMux                       0              1338   +INF  RISE       1
+I__231/O                                LocalMux                     400              1738   +INF  RISE       1
+I__234/I                                InMux                          0              1738   +INF  RISE       1
+I__234/O                                InMux                        315              2052   +INF  RISE       1
+clk_100k_ibuf_RNI67K31_LC_1_8_3/in3     LogicCell40_SEQ_MODE_0000      0              2052   +INF  RISE       1
+clk_100k_ibuf_RNI67K31_LC_1_8_3/lcout   LogicCell40_SEQ_MODE_0000    383              2435   +INF  RISE       3
+I__129/I                                Odrv4                          0              2435   +INF  RISE       1
+I__129/O                                Odrv4                        425              2860   +INF  RISE       1
+I__132/I                                LocalMux                       0              2860   +INF  RISE       1
+I__132/O                                LocalMux                     400              3259   +INF  RISE       1
+I__134/I                                InMux                          0              3259   +INF  RISE       1
+I__134/O                                InMux                        315              3574   +INF  RISE       1
+clk_100k_ibuf_RNI_4_LC_1_6_5/in0        LogicCell40_SEQ_MODE_0000      0              3574   +INF  RISE       1
+clk_100k_ibuf_RNI_4_LC_1_6_5/lcout      LogicCell40_SEQ_MODE_0000    544              4118   +INF  RISE       1
+I__95/I                                 LocalMux                       0              4118   +INF  RISE       1
+I__95/O                                 LocalMux                     400              4517   +INF  RISE       1
+I__96/I                                 InMux                          0              4517   +INF  RISE       1
+I__96/O                                 InMux                        315              4832   +INF  RISE       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/in0        LogicCell40_SEQ_MODE_0000      0              4832   +INF  RISE       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/ltout      LogicCell40_SEQ_MODE_0000    468              5299   +INF  FALL       1
+I__93/I                                 CascadeMux                     0              5299   +INF  FALL       1
+I__93/O                                 CascadeMux                     0              5299   +INF  FALL       1
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/in2      LogicCell40_SEQ_MODE_0000      0              5299   +INF  FALL       1
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/ltout    LogicCell40_SEQ_MODE_0000    417              5716   +INF  FALL       1
+I__92/I                                 CascadeMux                     0              5716   +INF  FALL       1
+I__92/O                                 CascadeMux                     0              5716   +INF  FALL       1
+clk_100k_ibuf_RNI31H31_LC_1_7_3/in2     LogicCell40_SEQ_MODE_0000      0              5716   +INF  FALL       1
+clk_100k_ibuf_RNI31H31_LC_1_7_3/ltout   LogicCell40_SEQ_MODE_0000    417              6132   +INF  FALL       1
+I__91/I                                 CascadeMux                     0              6132   +INF  FALL       1
+I__91/O                                 CascadeMux                     0              6132   +INF  FALL       1
+clk_100k_ibuf_RNI_2_LC_1_7_4/in2        LogicCell40_SEQ_MODE_0000      0              6132   +INF  FALL       1
+clk_100k_ibuf_RNI_2_LC_1_7_4/lcout      LogicCell40_SEQ_MODE_0000    425              6557   +INF  FALL       1
+I__89/I                                 LocalMux                       0              6557   +INF  FALL       1
+I__89/O                                 LocalMux                     374              6931   +INF  FALL       1
+I__90/I                                 InMux                          0              6931   +INF  FALL       1
+I__90/O                                 InMux                        264              7195   +INF  FALL       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/in1        LogicCell40_SEQ_MODE_0000      0              7195   +INF  FALL       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/lcout      LogicCell40_SEQ_MODE_0000    459              7654   +INF  FALL      17
+I__334/I                                Odrv4                          0              7654   +INF  FALL       1
+I__334/O                                Odrv4                        451              8104   +INF  FALL       1
+I__344/I                                LocalMux                       0              8104   +INF  FALL       1
+I__344/O                                LocalMux                     374              8478   +INF  FALL       1
+I__351/I                                InMux                          0              8478   +INF  FALL       1
+I__351/O                                InMux                        264              8742   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in1    LogicCell40_SEQ_MODE_0000      0              8742   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/ltout  LogicCell40_SEQ_MODE_0000    459              9201   +INF  FALL       1
+I__73/I                                 CascadeMux                     0              9201   +INF  FALL       1
+I__73/O                                 CascadeMux                     0              9201   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in2    LogicCell40_SEQ_MODE_0000      0              9201   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000    459              9660   +INF  RISE       2
+I__68/I                                 Odrv4                          0              9660   +INF  RISE       1
+I__68/O                                 Odrv4                        425             10085   +INF  RISE       1
+I__70/I                                 IoSpan4Mux                     0             10085   +INF  RISE       1
+I__70/O                                 IoSpan4Mux                   349             10433   +INF  RISE       1
+I__71/I                                 LocalMux                       0             10433   +INF  RISE       1
+I__71/O                                 LocalMux                     400             10833   +INF  RISE       1
+I__72/I                                 IoInMux                        0             10833   +INF  RISE       1
+I__72/O                                 IoInMux                      315             11147   +INF  RISE       1
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001         0             11147   +INF  RISE       1
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001      2431             13578   +INF  RISE       1
+pwrbtn_obuf_iopad/DIN                   IO_PAD                         0             13578   +INF  RISE       1
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                      2292             15870   +INF  RISE       1
+pwrbtn                                  pwrbtn_block                   0             15870   +INF  RISE       1
+
+===================================================================== 
+                    End of Detailed Setup Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    Detailed Hold Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_100k
+Path End         : pwrbtn
+Hold Constraint  : -INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (pwrbtn_block|clk_100k:R#1)       0
++ Launch Clock Source Latency                               0
++ Data Path Delay                                       15870
+-----------------------------------------------------   ----- 
+End-of-path arrival time (ps)                           15870
+ 
+Data path
+pin name                                model name                 delay  cumulative delay  slack  edge  Fanout
+--------------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+clk_100k                                pwrbtn_block                   0                 0   COMP  RISE       1
+clk_100k_ibuf_iopad/PACKAGEPIN:in       IO_PAD                         0                 0   +INF  RISE       1
+clk_100k_ibuf_iopad/DOUT                IO_PAD                       590               590   +INF  RISE       1
+clk_100k_ibuf_preio/PADIN               PRE_IO_PIN_TYPE_000001         0               590   +INF  RISE       1
+clk_100k_ibuf_preio/DIN0                PRE_IO_PIN_TYPE_000001       748              1338   +INF  RISE       1
+I__231/I                                LocalMux                       0              1338   +INF  RISE       1
+I__231/O                                LocalMux                     400              1738   +INF  RISE       1
+I__234/I                                InMux                          0              1738   +INF  RISE       1
+I__234/O                                InMux                        315              2052   +INF  RISE       1
+clk_100k_ibuf_RNI67K31_LC_1_8_3/in3     LogicCell40_SEQ_MODE_0000      0              2052   +INF  RISE       1
+clk_100k_ibuf_RNI67K31_LC_1_8_3/lcout   LogicCell40_SEQ_MODE_0000    383              2435   +INF  RISE       3
+I__129/I                                Odrv4                          0              2435   +INF  RISE       1
+I__129/O                                Odrv4                        425              2860   +INF  RISE       1
+I__132/I                                LocalMux                       0              2860   +INF  RISE       1
+I__132/O                                LocalMux                     400              3259   +INF  RISE       1
+I__134/I                                InMux                          0              3259   +INF  RISE       1
+I__134/O                                InMux                        315              3574   +INF  RISE       1
+clk_100k_ibuf_RNI_4_LC_1_6_5/in0        LogicCell40_SEQ_MODE_0000      0              3574   +INF  RISE       1
+clk_100k_ibuf_RNI_4_LC_1_6_5/lcout      LogicCell40_SEQ_MODE_0000    544              4118   +INF  RISE       1
+I__95/I                                 LocalMux                       0              4118   +INF  RISE       1
+I__95/O                                 LocalMux                     400              4517   +INF  RISE       1
+I__96/I                                 InMux                          0              4517   +INF  RISE       1
+I__96/O                                 InMux                        315              4832   +INF  RISE       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/in0        LogicCell40_SEQ_MODE_0000      0              4832   +INF  RISE       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/ltout      LogicCell40_SEQ_MODE_0000    468              5299   +INF  FALL       1
+I__93/I                                 CascadeMux                     0              5299   +INF  FALL       1
+I__93/O                                 CascadeMux                     0              5299   +INF  FALL       1
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/in2      LogicCell40_SEQ_MODE_0000      0              5299   +INF  FALL       1
+rsmrst_n_ibuf_RNI9GJL_LC_1_7_2/ltout    LogicCell40_SEQ_MODE_0000    417              5716   +INF  FALL       1
+I__92/I                                 CascadeMux                     0              5716   +INF  FALL       1
+I__92/O                                 CascadeMux                     0              5716   +INF  FALL       1
+clk_100k_ibuf_RNI31H31_LC_1_7_3/in2     LogicCell40_SEQ_MODE_0000      0              5716   +INF  FALL       1
+clk_100k_ibuf_RNI31H31_LC_1_7_3/ltout   LogicCell40_SEQ_MODE_0000    417              6132   +INF  FALL       1
+I__91/I                                 CascadeMux                     0              6132   +INF  FALL       1
+I__91/O                                 CascadeMux                     0              6132   +INF  FALL       1
+clk_100k_ibuf_RNI_2_LC_1_7_4/in2        LogicCell40_SEQ_MODE_0000      0              6132   +INF  FALL       1
+clk_100k_ibuf_RNI_2_LC_1_7_4/lcout      LogicCell40_SEQ_MODE_0000    425              6557   +INF  FALL       1
+I__89/I                                 LocalMux                       0              6557   +INF  FALL       1
+I__89/O                                 LocalMux                     374              6931   +INF  FALL       1
+I__90/I                                 InMux                          0              6931   +INF  FALL       1
+I__90/O                                 InMux                        264              7195   +INF  FALL       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/in1        LogicCell40_SEQ_MODE_0000      0              7195   +INF  FALL       1
+clk_100k_ibuf_RNI_5_LC_1_7_1/lcout      LogicCell40_SEQ_MODE_0000    459              7654   +INF  FALL      17
+I__334/I                                Odrv4                          0              7654   +INF  FALL       1
+I__334/O                                Odrv4                        451              8104   +INF  FALL       1
+I__344/I                                LocalMux                       0              8104   +INF  FALL       1
+I__344/O                                LocalMux                     374              8478   +INF  FALL       1
+I__351/I                                InMux                          0              8478   +INF  FALL       1
+I__351/O                                InMux                        264              8742   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/in1    LogicCell40_SEQ_MODE_0000      0              8742   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_0_LC_1_5_1/ltout  LogicCell40_SEQ_MODE_0000    459              9201   +INF  FALL       1
+I__73/I                                 CascadeMux                     0              9201   +INF  FALL       1
+I__73/O                                 CascadeMux                     0              9201   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/in2    LogicCell40_SEQ_MODE_0000      0              9201   +INF  FALL       1
+clk_100k_ibuf_RNIQGTD_1_LC_1_5_2/lcout  LogicCell40_SEQ_MODE_0000    459              9660   +INF  RISE       2
+I__68/I                                 Odrv4                          0              9660   +INF  RISE       1
+I__68/O                                 Odrv4                        425             10085   +INF  RISE       1
+I__70/I                                 IoSpan4Mux                     0             10085   +INF  RISE       1
+I__70/O                                 IoSpan4Mux                   349             10433   +INF  RISE       1
+I__71/I                                 LocalMux                       0             10433   +INF  RISE       1
+I__71/O                                 LocalMux                     400             10833   +INF  RISE       1
+I__72/I                                 IoInMux                        0             10833   +INF  RISE       1
+I__72/O                                 IoInMux                      315             11147   +INF  RISE       1
+pwrbtn_obuf_preio/DOUT0                 PRE_IO_PIN_TYPE_011001         0             11147   +INF  RISE       1
+pwrbtn_obuf_preio/PADOUT                PRE_IO_PIN_TYPE_011001      2431             13578   +INF  RISE       1
+pwrbtn_obuf_iopad/DIN                   IO_PAD                         0             13578   +INF  RISE       1
+pwrbtn_obuf_iopad/PACKAGEPIN:out        IO_PAD                      2292             15870   +INF  RISE       1
+pwrbtn                                  pwrbtn_block                   0             15870   +INF  RISE       1
+
+===================================================================== 
+                    End of Detailed Hold Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    End of Timing Report 
+##################################################################### 
+

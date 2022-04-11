@@ -1,0 +1,4 @@
+
+: 0 work.clock_Divider "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Test_VHDL.vhd" 6 7 
+: 0 work.TOP "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\Top.vhd" 25 7 work.pch_pwrok_block work.rsmrst_pwrgd_block work.voltage_monitor work.dsw_pwrok_block work.vccsa_vr_en_block work.adc work.hda_strap_block work.counter work.vccio_en_block work.vpp_vddq_block work.powerled_block 
+: 0 work.pwrbtn_block "C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd" 9 7 

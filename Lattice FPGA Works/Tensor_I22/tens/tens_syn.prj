@@ -5,20 +5,21 @@
 
 
 #project files
-add_file -vhdl -lib work "../Counter.vhd"
-add_file -vhdl -lib work "../dsw_pwrok.vhd"
-add_file -vhdl -lib work "../pwrbtn.vhd"
-add_file -vhdl -lib work "../Top.vhd"
-add_file -vhdl -lib work "../hda_strap.vhd"
-add_file -vhdl -lib work "../pch_pwrok.vhd"
-add_file -vhdl -lib work "../powerled.vhd"
-add_file -vhdl -lib work "../rsmrst_pwrgd.vhd"
-add_file -vhdl -lib work "../vccio_en.vhd"
-add_file -vhdl -lib work "../vpp_vddq.vhd"
-add_file -vhdl -lib work "../vccinaux_vccin_en.vhd"
 
 
 
+add_file -vhdl -lib work "../Counter.vhd" 
+add_file -vhdl -lib work "../dsw_pwrok.vhd" 
+add_file -vhdl -lib work "../pwrbtn.vhd" 
+add_file -vhdl -lib work "../Top.vhd" 
+add_file -vhdl -lib work "../counter.vhd" 
+add_file -vhdl -lib work "../hda_strap.vhd" 
+add_file -vhdl -lib work "../pch_pwrok.vhd" 
+add_file -vhdl -lib work "../powerled.vhd" 
+add_file -vhdl -lib work "../rsmrst_pwrgd.vhd" 
+add_file -vhdl -lib work "../vccinaux_vccin_en.vhd" 
+add_file -vhdl -lib work "../vccio_en.vhd" 
+add_file -vhdl -lib work "../vpp_vddq.vhd" 
 #implementation: "tens_Implmnt"
 impl -add tens_Implmnt -type fpga
 
@@ -32,7 +33,7 @@ set_option -project_relative_includes 1
 set_option -technology SBTiCE40
 set_option -part iCE40LP1K
 set_option -package QN84
-set_option -speed_grade ""
+set_option -speed_grade 
 set_option -part_companion ""
 
 #compilation/mapping options
@@ -76,4 +77,5 @@ set_option -write_apr_constraint 1
 
 #set result format/file last
 project -result_file "tens_Implmnt/tens.edf"
-impl -active "tens_Implmnt"
+impl -active tens_Implmnt
+project -run synthesis -clean

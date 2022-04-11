@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=tens
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../Counter.vhd=work,../dsw_pwrok.vhd=work,../pwrbtn.vhd=work,../Test_VHDL.vhd=work,../Top.vhd=work
+ProjectVFiles=../Counter.vhd=work,../dsw_pwrok.vhd=work,../pwrbtn.vhd=work,../Top.vhd=work,../counter.vhd=work,../hda_strap.vhd=work,../pch_pwrok.vhd=work,../powerled.vhd=work,../rsmrst_pwrgd.vhd=work,../vccinaux_vccin_en.vhd=work,../vccio_en.vhd=work,../vpp_vddq.vhd=work
 ProjectCFiles=
 CurImplementation=tens_Implmnt
 Implementations=tens_Implmnt

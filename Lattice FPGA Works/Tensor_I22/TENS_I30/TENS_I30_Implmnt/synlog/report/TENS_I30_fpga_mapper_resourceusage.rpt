@@ -1,0 +1,21 @@
+---------------------------------------
+Resource Usage Report for pwrbtn_block 
+
+Mapping to part: ice40lp1kqn84
+Cell usage:
+SB_CARRY        14 uses
+SB_LUT4         57 uses
+
+I/O ports: 3
+I/O primitives: 3
+SB_IO          3 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+
+@S |Mapping Summary:
+Total  LUTs: 57 (4%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 57 = 57 
+

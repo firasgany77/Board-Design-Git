@@ -1,0 +1,12 @@
+@P:  Worst Slack : NA
+@P:  pwrbtn_block|clk_100k - Estimated Frequency : NA
+@P:  pwrbtn_block|clk_100k - Requested Frequency : 143.7 MHz
+@P:  pwrbtn_block|clk_100k - Estimated Period : NA
+@P:  pwrbtn_block|clk_100k - Requested Period : 6.958
+@P:  pwrbtn_block|clk_100k - Slack : NA
+@P: pwrbtn_block Part : ice40lp1kqn84
+@P: pwrbtn_block I/O primitives : 3
+@P: pwrbtn_block I/O Register bits : 0
+@P: pwrbtn_block Register bits (Non I/O) : 0 (0%)
+@P: pwrbtn_block Total Luts : 57 (4%)
+@P:  CPU Time : 0h:00m:00s
