@@ -1,8 +1,0 @@
-@N|Running in 64-bit mode
-@N|Running in 64-bit mode
-@N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd":9:7:9:18|Top entity is set to pwrbtn_block.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd":9:7:9:18|Synthesizing work.pwrbtn_block.pwrbtn_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\FPGA\Lattice\Projects\Tensor_I22\Source\pwrbtn.vhd":17:17:17:18|Using user defined encoding for type state_type.
-@N|Running in 64-bit mode
-

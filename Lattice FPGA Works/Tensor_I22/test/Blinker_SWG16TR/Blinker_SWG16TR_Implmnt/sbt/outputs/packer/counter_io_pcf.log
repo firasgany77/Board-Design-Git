@@ -1,2 +1,0 @@
-OUTPUT clk_2Hz 	 location (6, 17, 1) 	 A2 	 SB_LVCMOS
-INPUT  CLK_27mhz 	 location (0, 8, 1) 	 B2 	 SB_LVCMOS
