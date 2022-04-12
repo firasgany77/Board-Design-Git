@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 4 12 9 34 18)
+      (timeStamp 2022 4 12 12 9 50)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L+ice40, mapper maplat, Build 1612R"))
      )
@@ -13598,7 +13598,6 @@
            (port GPIO_FPGA_SV_3 (direction INPUT))
            (port GPIO_FPGA_SV_4 (direction INPUT))
            (port FPGA_GPIO_WD (direction INPUT))
-           (port V1P8_OK (direction INPUT))
            (port TPM_GPIO (direction INPUT))
            (port V105A_OK (direction INPUT))
            (port V33A_OK (direction INPUT))
@@ -13934,9 +13933,6 @@
           ))
           (net (rename fpga_gpio_wd "FPGA_GPIO_WD") (joined
            (portRef FPGA_GPIO_WD)
-          ))
-          (net (rename v1p8_ok "V1P8_OK") (joined
-           (portRef V1P8_OK)
           ))
           (net (rename tpm_gpio "TPM_GPIO") (joined
            (portRef TPM_GPIO)

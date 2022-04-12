@@ -1,0 +1,3 @@
+@E: CD184 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":193:9:193:10|target v1p8_ok of assignment is not writeable
+@E: Parse errors encountered - exiting
+

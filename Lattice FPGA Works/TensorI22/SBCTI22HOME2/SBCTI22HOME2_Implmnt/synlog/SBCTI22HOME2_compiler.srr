@@ -8,7 +8,14 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Top entity is set to TOP.
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccio_en.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 VHDL syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Synthesizing work.top.bdf_type.
 @W: CD638 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":182:8:182:26|Signal synthesized_wire_29 is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":19:7:19:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
@@ -115,7 +122,6 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":22:2:22:15|Input GPIO_FPGA_SV_3 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":23:2:23:15|Input GPIO_FPGA_SV_4 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":24:2:24:13|Input FPGA_GPIO_WD is unused.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":25:2:25:8|Input V1P8_OK is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":26:2:26:9|Input TPM_GPIO is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:8:33:19|Input MAIN_12V_MON is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":40:2:40:8|Input FP_RSTn is unused.
@@ -125,12 +131,12 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":47:2:47:9|Input SLP_SUSn is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":48:2:48:9|Input PM_PWROK is unused.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 09:34:07 2022
+# Tue Apr 12 12:09:39 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -143,7 +149,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 09:34:07 2022
+# Tue Apr 12 12:09:39 2022
 
 ###########################################################]
 @END
@@ -153,6 +159,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 09:34:07 2022
+# Tue Apr 12 12:09:39 2022
 
 ###########################################################]

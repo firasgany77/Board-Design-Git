@@ -104,7 +104,6 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":22:2:22:15|Input GPIO_FPGA_SV_3 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":23:2:23:15|Input GPIO_FPGA_SV_4 is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":24:2:24:13|Input FPGA_GPIO_WD is unused.
-@N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":25:2:25:8|Input V1P8_OK is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":26:2:26:9|Input TPM_GPIO is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:8:33:19|Input MAIN_12V_MON is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":40:2:40:8|Input FP_RSTn is unused.

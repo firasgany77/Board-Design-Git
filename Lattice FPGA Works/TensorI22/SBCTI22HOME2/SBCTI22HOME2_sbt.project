@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=SBCTI22HOME2
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../counter.vhd,../dsw_pwrok.vhd,../hda_strap.vhd,../pch_pwrok.vhd,../powerled.vhd,../pwrbtn.vhd,../rsmrst_pwrgd.vhd,../Top.vhd,../vccinaux_vccin_en.vhd,../vccio_en.vhd,../vpp_vddq.vhd
+ProjectVFiles=../counter.vhd=work,../dsw_pwrok.vhd=work,../hda_strap.vhd=work,../pch_pwrok.vhd=work,../powerled.vhd=work,../pwrbtn.vhd=work,../rsmrst_pwrgd.vhd=work,../Top.vhd=work,../vccinaux_vccin_en.vhd=work,../vccio_en.vhd=work,../vpp_vddq.vhd=work
 ProjectCFiles=
 CurImplementation=SBCTI22HOME2_Implmnt
 Implementations=SBCTI22HOME2_Implmnt
@@ -20,7 +20,7 @@ NetlistFile=SBCTI22HOME2_Implmnt/SBCTI22HOME2.edf
 AdditionalEDIFFile=
 IPEDIFFile=
 DesignLib=SBCTI22HOME2_Implmnt/sbt/netlist/oadb-TOP
-DesignView=_pl
+DesignView=_ep
 DesignCell=TOP
 SynthesisSDCFile=SBCTI22HOME2_Implmnt/SBCTI22HOME2.scf
 UserPinConstraintFile=
@@ -84,5 +84,5 @@ BitmapSetSecurity=no
 BitmapSetNoUsedIONoPullup=no
 FloorPlannerShowFanInNets=yes
 FloorPlannerShowFanOutNets=yes
-HookTo3rdPartyTextEditor=
+HookTo3rdPartyTextEditor=no
 
