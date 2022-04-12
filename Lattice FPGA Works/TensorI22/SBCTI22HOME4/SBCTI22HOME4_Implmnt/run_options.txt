@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\run_options.txt
-#--  Written on Tue Apr 12 15:01:20 2022
+#--  Written on Tue Apr 12 15:03:58 2022
 
 
 #project files
@@ -10,10 +10,10 @@ add_file -vhdl -lib work "../vccio_en.vhd"
 add_file -vhdl -lib work "../vccinaux_vccin_en.vhd"
 add_file -vhdl -lib work "../rsmrst_pwrgd.vhd"
 add_file -vhdl -lib work "../pwrbtn.vhd"
-add_file -vhdl -lib work "../pch_pwrok.vhd"
 add_file -vhdl -lib work "../powerled.vhd"
-add_file -vhdl -lib work "../hda_strap.vhd"
+add_file -vhdl -lib work "../pch_pwrok.vhd"
 add_file -vhdl -lib work "../dsw_pwrok.vhd"
+add_file -vhdl -lib work "../hda_strap.vhd"
 add_file -vhdl -lib work "../counter.vhd"
 add_file -vhdl -lib work "../Top.vhd"
 

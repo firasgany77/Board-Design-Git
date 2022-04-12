@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-M2TPG58
 
-# Tue Apr 12 15:01:20 2022
+# Tue Apr 12 15:03:58 2022
 
 #Implementation: SBCTI22HOME4_Implmnt
 
@@ -17,13 +17,15 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Top entity is set to TOP.
-
-File Dependency file is up to date.  It will not be rewritten.
-
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
 VHDL syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd changed - recompiling
+File C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Synthesizing work.top.bdf_type.
 @W: CD638 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":182:8:182:26|Signal synthesized_wire_29 is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":19:7:19:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
@@ -49,9 +51,9 @@ Post processing for work.rsmrst_pwrgd_block.rsmrst_arch
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":8:7:8:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":18:17:18:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":31:1:31:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":46:9:46:13|Referenced variable count is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":37:9:37:13|Referenced variable pwrok is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":34:8:34:17|Referenced variable curr_state is not in sensitivity list.
+@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":46:9:46:13|Referenced variable count is not in sensitivity list.
 Post processing for work.dsw_pwrok_block.dsw_pwrok_arch
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":33:2:33:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":33:2:33:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
@@ -86,12 +88,12 @@ Post processing for work.vpp_vddq_block.vpp_vddq_arch
 @N: CD630 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":5:7:5:20|Synthesizing work.powerled_block.powerled_arch.
 @N: CD234 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":16:17:16:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":32:1:32:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":90:8:90:16|Referenced variable mem_alert is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":35:28:35:34|Referenced variable slp_s4n is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":35:8:35:14|Referenced variable slp_s3n is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":38:10:38:18|Referenced variable dutycycle is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":42:11:42:19|Referenced variable count_clk is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":36:9:36:18|Referenced variable func_state is not in sensitivity list.
+@W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":90:8:90:16|Referenced variable mem_alert is not in sensitivity list.
 @W: CG296 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":134:1:134:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":150:30:150:37|Referenced variable onclocks is not in sensitivity list.
 @W: CG290 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":139:9:139:13|Referenced variable count is not in sensitivity list.
@@ -139,12 +141,12 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":46:2:46:9|Input SLP_SUSn is unused.
 @N: CL159 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":47:2:47:9|Input PM_PWROK is unused.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 15:01:20 2022
+# Tue Apr 12 15:03:59 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -157,7 +159,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 15:01:20 2022
+# Tue Apr 12 15:03:59 2022
 
 ###########################################################]
 @END
@@ -167,7 +169,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 15:01:20 2022
+# Tue Apr 12 15:03:59 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -181,12 +183,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Apr 12 15:01:22 2022
+# Tue Apr 12 15:04:00 2022
 
 ###########################################################]
 Pre-mapping Report
 
-# Tue Apr 12 15:01:22 2022
+# Tue Apr 12 15:04:00 2022
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -247,12 +249,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Apr 12 15:01:22 2022
+# Tue Apr 12 15:04:01 2022
 
 ###########################################################]
 Map & Optimize Report
 
-# Tue Apr 12 15:01:22 2022
+# Tue Apr 12 15:04:01 2022
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -320,7 +322,7 @@ Available hyper_sources - for debug and ip models
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":52:2:52:3|User-specified initial value defined for instance b2v_inst6.curr_state[1:0] is being ignored. 
 @W: FX1039 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":52:2:52:3|User-specified initial value defined for instance b2v_inst6.delayed_vccin_vccinaux_ok is being ignored. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 134MB peak: 135MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 134MB peak: 135MB)
 
 @W: MO129 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":136:2:136:3|Sequential instance b2v_inst11.curr_state[1] is reduced to a combinational gate by constant propagation.
 
@@ -7219,12 +7221,12 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 145MB peak: 146MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 166MB peak: 169MB)
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 166MB peak: 169MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:04s		   -13.59ns		1008 /       199
-   2		0h:00m:04s		   -13.59ns		 998 /       199
+   1		0h:00m:05s		   -13.59ns		1008 /       199
+   2		0h:00m:05s		   -13.59ns		 998 /       199
    3		0h:00m:05s		   -13.42ns		 998 /       199
 @N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":46:3:46:4|Replicating instance b2v_inst20.tmp_1 (in view: work.TOP(bdf_type)) with 50 loads 2 times to improve timing.
 @N: FX271 :"c:\users\firas\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":136:2:136:3|Replicating instance b2v_inst11.g0_2 (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
@@ -7249,10 +7251,10 @@ Timing driven replication report
 Added 2 Registers via timing driven replication
 Added 20 LUTs via timing driven replication
 
-   4		0h:00m:05s		   -11.77ns		1029 /       201
-   5		0h:00m:05s		   -11.35ns		1030 /       201
-   6		0h:00m:05s		   -10.98ns		1031 /       201
-   7		0h:00m:05s		    -9.58ns		1034 /       201
+   4		0h:00m:06s		   -11.77ns		1029 /       201
+   5		0h:00m:06s		   -11.35ns		1030 /       201
+   6		0h:00m:06s		   -10.98ns		1031 /       201
+   7		0h:00m:06s		    -9.58ns		1034 /       201
    8		0h:00m:06s		    -9.30ns		1037 /       201
 
 
@@ -9651,10 +9653,10 @@ Added 20 LUTs via timing driven replication
 @N: FX1017 :|SB_GB inserted on the net b2v_inst16.delayed_vddq_pwrgd_en.
 @N: FX1017 :|SB_GB inserted on the net b2v_inst200.count_en.
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 175MB peak: 177MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 175MB peak: 177MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 175MB peak: 177MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 175MB peak: 177MB)
 
 @N: MT611 :|Automatically generated clock counter|tmp_derived_clock is not used and is being removed
 
@@ -9678,7 +9680,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 147MB peak: 177MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 146MB peak: 177MB)
 
 Writing Analyst data base C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_m.srm
 
@@ -13439,7 +13441,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Apr 12 15:01:30 2022
+# Timing Report written on Tue Apr 12 15:04:09 2022
 #
 
 
@@ -16023,10 +16025,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 173MB peak: 178MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 173MB peak: 178MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 173MB peak: 178MB)
+Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 173MB peak: 178MB)
 
 ---------------------------------------
 Resource Usage Report for TOP 
@@ -16057,9 +16059,9 @@ Distribution of All Consumed Luts 904 = 904
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 31MB peak: 178MB)
+At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 31MB peak: 178MB)
 
-Process took 0h:00m:07s realtime, 0h:00m:07s cputime
-# Tue Apr 12 15:01:30 2022
+Process took 0h:00m:08s realtime, 0h:00m:08s cputime
+# Tue Apr 12 15:04:09 2022
 
 ###########################################################]

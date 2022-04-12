@@ -14,10 +14,10 @@
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\vccinaux_vccin_en.vhd":1649690173
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\rsmrst_pwrgd.vhd":1649762268
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\pwrbtn.vhd":1638031123
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\pch_pwrok.vhd":1638281950
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\powerled.vhd":1638031123
-#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\hda_strap.vhd":1638281949
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\pch_pwrok.vhd":1638281950
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\dsw_pwrok.vhd":1638031123
+#CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\hda_strap.vhd":1638281949
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\counter.vhd":1649741675
 #CUR:"C:\\Users\\firas\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1649761850
 0			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd" vhdl
@@ -25,10 +25,10 @@
 2			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd" vhdl
 3			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd" vhdl
 4			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pwrbtn.vhd" vhdl
-5			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd" vhdl
-6			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd" vhdl
-7			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd" vhdl
-8			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd" vhdl
+5			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd" vhdl
+6			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd" vhdl
+7			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd" vhdl
+8			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd" vhdl
 9			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd" vhdl
 10			"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd" vhdl
 #Dependency Lists(Uses List)
@@ -42,7 +42,7 @@
 7 -1
 8 -1
 9 -1
-10 5 3 8 2 7 9 1 0 6
+10 6 3 7 2 8 9 1 0 5
 #Dependency Lists(Users Of)
 0 10
 1 10
@@ -60,14 +60,14 @@ module work top 10
 arch work top bdf_type 10
 module work counter 9
 arch work counter counter_arch 9
-module work dsw_pwrok_block 8
-arch work dsw_pwrok_block dsw_pwrok_arch 8
-module work hda_strap_block 7
-arch work hda_strap_block hda_strap_block_arch 7
-module work powerled_block 6
-arch work powerled_block powerled_arch 6
-module work pch_pwrok_block 5
-arch work pch_pwrok_block pch_pwrok_block_arch 5
+module work hda_strap_block 8
+arch work hda_strap_block hda_strap_block_arch 8
+module work dsw_pwrok_block 7
+arch work dsw_pwrok_block dsw_pwrok_arch 7
+module work pch_pwrok_block 6
+arch work pch_pwrok_block pch_pwrok_block_arch 6
+module work powerled_block 5
+arch work powerled_block powerled_arch 5
 module work pwrbtn_block 4
 arch work pwrbtn_block pwrbtn_arch 4
 module work rsmrst_pwrgd_block 3
