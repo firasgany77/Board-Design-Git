@@ -190,6 +190,7 @@ BEGIN
 	VCC <= '1'; 
 	V33A_ENn <= NOT(VCC);
 	V5A_EN <= VCC; 
+	V1P8_OK <= VCC;-- just for Pin Constraints Check
     V105A_EN <= SYNTHESIZED_WIRE_24;
 	SYS_PWROK <= SYNTHESIZED_WIRE_28; 
 	V5S_ENn <= NOT(SYNTHESIZED_WIRE_48);
