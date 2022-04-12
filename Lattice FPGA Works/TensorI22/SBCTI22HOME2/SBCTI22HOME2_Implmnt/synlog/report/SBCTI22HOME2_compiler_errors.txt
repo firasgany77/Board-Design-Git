@@ -1,3 +1,2 @@
-@E: CD184 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":193:9:193:10|target v1p8_ok of assignment is not writeable
-@E: Parse errors encountered - exiting
+@E: CD326 :"C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":271:1:271:9|Port gpio_fpga_hdr_1 of entity work.rsmrst_pwrgd_block is unconnected. If a port needs to remain unconnected, use the keyword open.
 
