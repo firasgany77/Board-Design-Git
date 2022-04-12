@@ -1,7 +1,7 @@
 C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_comp.srs"  -osyn  "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_mult.srs"  -log  "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synlog\SBCTI22HOME4_multi_srs_gen.srr" 
 rc:0 success:1 runtime:0
-file:C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_comp.srs|io:i|time:1649765039|size:34416|exec:0
-file:C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_mult.srs|io:o|time:1649765040|size:7195|exec:0
-file:C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synlog\SBCTI22HOME4_multi_srs_gen.srr|io:o|time:1649765040|size:927|exec:0
+file:C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_comp.srs|io:i|time:1649776835|size:34405|exec:0
+file:C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synwork\SBCTI22HOME4_mult.srs|io:o|time:1649776836|size:7193|exec:0
+file:C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22HOME4\SBCTI22HOME4_Implmnt\synlog\SBCTI22HOME4_multi_srs_gen.srr|io:o|time:1649776836|size:927|exec:0
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1649764289|size:3128320|exec:1
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1649764290|size:3947520|exec:1

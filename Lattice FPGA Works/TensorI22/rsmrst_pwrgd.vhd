@@ -10,8 +10,8 @@ ENTITY rsmrst_pwrgd_block IS
 		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		V105A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		V5A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		--V1P8A_OK : IN STD_LOGIC; -- NEW
-		GPIO_1 : IN STD_LOGIC; -- for Pin Constraints Check
+		V1P8A_OK : IN STD_LOGIC; -- NEW
+		--GPIO_1 : IN STD_LOGIC; -- for Pin Constraints Check
 		--	tpm_gpio:  		   in std_logic; -- Provision
 		SLP_SUSn : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
