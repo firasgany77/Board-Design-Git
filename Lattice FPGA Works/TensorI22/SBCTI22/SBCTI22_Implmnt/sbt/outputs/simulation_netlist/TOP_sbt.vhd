@@ -76,7 +76,7 @@ port (
     DSW_PWROK : out std_logic;
     PM_PWROK : in std_logic;
     GPIO_FPGA_SV_2 : in std_logic;
-    GPIO_FPGA_PCH_5 : in std_logic;
+    GPIO_FPGA_SoC_4 : in std_logic;
     V5A_EN : out std_logic;
     FPGA_GPIO_WD : in std_logic;
     VPP_OK : in std_logic;
@@ -8382,7 +8382,7 @@ signal \b2v_inst11.dutycycleZ0Z_8\ : std_logic;
 signal \N_19_i\ : std_logic;
 signal \b2v_inst11.g0_8_0_0\ : std_logic;
 signal \SLP_S4n_c\ : std_logic;
-signal \GPIO_FPGA_PCH_5_c\ : std_logic;
+signal \GPIO_FPGA_SoC_4_c\ : std_logic;
 signal \b2v_inst11.func_state\ : std_logic;
 signal \SLP_S3n_c\ : std_logic;
 signal \b2v_inst11.count_clk_RNIZ0Z_3\ : std_logic;
@@ -8789,7 +8789,7 @@ signal \VCCST_ENn_wire\ : std_logic;
 signal \VCCST_CPU_OK_wire\ : std_logic;
 signal \DSW_PWROK_wire\ : std_logic;
 signal \SYS_PWROK_wire\ : std_logic;
-signal \GPIO_FPGA_PCH_5_wire\ : std_logic;
+signal \GPIO_FPGA_SoC_4_wire\ : std_logic;
 signal \V33DSW_OK_wire\ : std_logic;
 signal \V105A_OK_wire\ : std_logic;
 signal \VR_READY_VCCIN_wire\ : std_logic;
@@ -8828,7 +8828,7 @@ begin
     \VCCST_CPU_OK_wire\ <= VCCST_CPU_OK;
     DSW_PWROK <= \DSW_PWROK_wire\;
     SYS_PWROK <= \SYS_PWROK_wire\;
-    \GPIO_FPGA_PCH_5_wire\ <= GPIO_FPGA_PCH_5;
+    \GPIO_FPGA_SoC_4_wire\ <= GPIO_FPGA_SoC_4;
     \V33DSW_OK_wire\ <= V33DSW_OK;
     \V105A_OK_wire\ <= V105A_OK;
     \VR_READY_VCCIN_wire\ <= VR_READY_VCCIN;
@@ -9740,7 +9740,7 @@ begin
             OUTPUTCLK => '0'
         );
 
-    \GPIO_FPGA_PCH_5_ibuf_iopad\ : IO_PAD
+    \GPIO_FPGA_SoC_4_ibuf_iopad\ : IO_PAD
     generic map (
             IO_STANDARD => "SB_LVCMOS",
             PULLUP => '0'
@@ -9749,10 +9749,10 @@ begin
             OE => \N__35399\,
             DIN => \N__35398\,
             DOUT => \N__35397\,
-            PACKAGEPIN => \GPIO_FPGA_PCH_5_wire\
+            PACKAGEPIN => \GPIO_FPGA_SoC_4_wire\
         );
 
-    \GPIO_FPGA_PCH_5_ibuf_preio\ : PRE_IO
+    \GPIO_FPGA_SoC_4_ibuf_preio\ : PRE_IO
     generic map (
             NEG_TRIGGER => '0',
             PIN_TYPE => "000001"
@@ -9764,7 +9764,7 @@ begin
             CLOCKENABLE => 'H',
             DOUT1 => '0',
             OUTPUTENABLE => '0',
-            DIN0 => \GPIO_FPGA_PCH_5_c\,
+            DIN0 => \GPIO_FPGA_SoC_4_c\,
             DOUT0 => '0',
             INPUTCLK => '0',
             LATCHINPUTVALUE => '0',
@@ -23693,31 +23693,31 @@ begin
     \I__5895\ : Odrv12
     port map (
             O => \N__28485\,
-            I => \GPIO_FPGA_PCH_5_c\
+            I => \GPIO_FPGA_SoC_4_c\
         );
 
     \I__5894\ : Odrv4
     port map (
             O => \N__28482\,
-            I => \GPIO_FPGA_PCH_5_c\
+            I => \GPIO_FPGA_SoC_4_c\
         );
 
     \I__5893\ : Odrv4
     port map (
             O => \N__28479\,
-            I => \GPIO_FPGA_PCH_5_c\
+            I => \GPIO_FPGA_SoC_4_c\
         );
 
     \I__5892\ : Odrv4
     port map (
             O => \N__28476\,
-            I => \GPIO_FPGA_PCH_5_c\
+            I => \GPIO_FPGA_SoC_4_c\
         );
 
     \I__5891\ : LocalMux
     port map (
             O => \N__28473\,
-            I => \GPIO_FPGA_PCH_5_c\
+            I => \GPIO_FPGA_SoC_4_c\
         );
 
     \I__5890\ : InMux

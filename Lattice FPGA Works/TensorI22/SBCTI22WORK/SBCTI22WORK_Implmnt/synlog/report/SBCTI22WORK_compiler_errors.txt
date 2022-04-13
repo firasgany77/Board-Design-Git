@@ -1,7 +1,4 @@
-@E: CD541 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":58:2:58:11|Expecting ;
-@E: CG234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":63:2:63:10|Duplicate definition of sys_pwrok
-@E: CD213 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":189:1:189:11|Undefined identifier
-@E: CD213 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":190:1:190:7|Undefined identifier
-@E: CD184 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":195:11:195:12|target sys_pwrok of assignment is not writeable
+@E: CD126 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":71:1:71:1|Expecting identifier
+@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":198:42:198:42|No identifier "gpio_fpga_pch_5" in scope
 @E: Parse errors encountered - exiting
 

@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: FIRAS-AIRTOP
 
-# Wed Apr 13 13:17:05 2022
+# Wed Apr 13 15:02:07 2022
 
 #Implementation: SBCTI22WORK_Implmnt
 
@@ -17,19 +17,16 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Top entity is set to TOP.
-@E: CD541 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":58:2:58:11|Expecting ;
-@E: CG234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":63:2:63:10|Duplicate definition of sys_pwrok
-@E: CD213 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":189:1:189:11|Undefined identifier
-@E: CD213 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":190:1:190:7|Undefined identifier
-@E: CD184 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":195:11:195:12|target sys_pwrok of assignment is not writeable
-5 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd
+@E: CD126 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":71:1:71:1|Expecting identifier
+@E: CD255 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":198:42:198:42|No identifier "gpio_fpga_pch_5" in scope
+2 errors parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd
 @E: Parse errors encountered - exiting
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr 13 13:17:05 2022
+# Wed Apr 13 15:02:08 2022
 
 ###########################################################]
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr 13 13:17:05 2022
+# Wed Apr 13 15:02:08 2022
 
 ###########################################################]
