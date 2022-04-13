@@ -29,7 +29,7 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 BEGIN
 
 	rsmrst_pwrgd_out <= rsmrst_pwrgd;
-	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (V105A_OK = '1') AND (SLP_SUSn = '1') --AND (V1P8A_OK = '1') -- SLP_SUSn was added
+	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (V105A_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') -- SLP_SUSn was added
 		ELSE
 		'0';
 

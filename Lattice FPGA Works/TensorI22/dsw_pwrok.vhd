@@ -9,7 +9,6 @@ ENTITY dsw_pwrok_block IS
 	PORT (
 		V33DSW_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		mainpwr_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		PM_PWROK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		DSW_PWROK : OUT STD_LOGIC);
 END dsw_pwrok_block;
@@ -24,7 +23,7 @@ ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 BEGIN
 
 	--DSW_PWROK <= pwrok;
-	pwrok <= '1' WHEN (V33DSW_OK = '1') AND (PM_PWROK = '1') AND (V33DSW_OK = '1')
+	pwrok <= '1' WHEN (V33DSW_OK = '1') AND (V33DSW_OK = '1')
 		ELSE
 		'0';
 
