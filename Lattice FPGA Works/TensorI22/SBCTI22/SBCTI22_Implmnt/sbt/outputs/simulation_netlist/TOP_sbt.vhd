@@ -31,7 +31,7 @@ port (
     GPIO_FPGA_PM_3 : in std_logic;
     GPIO_FPGA_PCH_2 : in std_logic;
     VR_READY_VCCINAUX : in std_logic;
-    VCCST_OK : in std_logic;
+    VCCST_CPU_OK : in std_logic;
     VCCIO_EN : out std_logic;
     V33A_ENn : out std_logic;
     V1P8A_EN : out std_logic;
@@ -7853,7 +7853,7 @@ signal \b2v_inst11.dutycycle_RNI_4Z0Z_4\ : std_logic;
 signal \b2v_inst11.un1_dutycycle_53_50_a4_0_cascade_\ : std_logic;
 signal \b2v_inst11.dutycycle_RNI_3Z0Z_10\ : std_logic;
 signal \b2v_inst11.dutycycle_RNI_1Z0Z_7\ : std_logic;
-signal \VCCST_OK_c\ : std_logic;
+signal \VCCST_CPU_OK_c\ : std_logic;
 signal \VDDQ_OK_c\ : std_logic;
 signal \VCCIO_EN_c\ : std_logic;
 signal \b2v_inst11.dutycycle_RNIZ0Z_3\ : std_logic;
@@ -8786,7 +8786,7 @@ signal \V105A_EN_wire\ : std_logic;
 signal \V1P8A_EN_wire\ : std_logic;
 signal \VDDQ_OK_wire\ : std_logic;
 signal \VCCST_ENn_wire\ : std_logic;
-signal \VCCST_OK_wire\ : std_logic;
+signal \VCCST_CPU_OK_wire\ : std_logic;
 signal \DSW_PWROK_wire\ : std_logic;
 signal \SYS_PWROK_wire\ : std_logic;
 signal \GPIO_FPGA_PCH_5_wire\ : std_logic;
@@ -8825,7 +8825,7 @@ begin
     V1P8A_EN <= \V1P8A_EN_wire\;
     \VDDQ_OK_wire\ <= VDDQ_OK;
     VCCST_ENn <= \VCCST_ENn_wire\;
-    \VCCST_OK_wire\ <= VCCST_OK;
+    \VCCST_CPU_OK_wire\ <= VCCST_CPU_OK;
     DSW_PWROK <= \DSW_PWROK_wire\;
     SYS_PWROK <= \SYS_PWROK_wire\;
     \GPIO_FPGA_PCH_5_wire\ <= GPIO_FPGA_PCH_5;
@@ -9644,7 +9644,7 @@ begin
             OUTPUTCLK => '0'
         );
 
-    \VCCST_OK_ibuf_iopad\ : IO_PAD
+    \VCCST_CPU_OK_ibuf_iopad\ : IO_PAD
     generic map (
             IO_STANDARD => "SB_LVCMOS",
             PULLUP => '0'
@@ -9653,10 +9653,10 @@ begin
             OE => \N__35426\,
             DIN => \N__35425\,
             DOUT => \N__35424\,
-            PACKAGEPIN => \VCCST_OK_wire\
+            PACKAGEPIN => \VCCST_CPU_OK_wire\
         );
 
-    \VCCST_OK_ibuf_preio\ : PRE_IO
+    \VCCST_CPU_OK_ibuf_preio\ : PRE_IO
     generic map (
             NEG_TRIGGER => '0',
             PIN_TYPE => "000001"
@@ -9668,7 +9668,7 @@ begin
             CLOCKENABLE => 'H',
             DOUT1 => '0',
             OUTPUTENABLE => '0',
-            DIN0 => \VCCST_OK_c\,
+            DIN0 => \VCCST_CPU_OK_c\,
             DOUT0 => '0',
             INPUTCLK => '0',
             LATCHINPUTVALUE => '0',
@@ -39383,7 +39383,7 @@ begin
     \I__3280\ : Odrv12
     port map (
             O => \N__20632\,
-            I => \VCCST_OK_c\
+            I => \VCCST_CPU_OK_c\
         );
 
     \I__3279\ : InMux
