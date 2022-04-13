@@ -8205,7 +8205,7 @@ signal \b2v_inst11.dutycycle_eena_0\ : std_logic;
 signal \b2v_inst11.N_169\ : std_logic;
 signal \b2v_inst11.N_375\ : std_logic;
 signal \b2v_inst11.un1_clk_100khz_52_and_i_a2_1_sxZ0_cascade_\ : std_logic;
-signal \SYNTHESIZED_WIRE_47keep_fast\ : std_logic;
+signal \SYNTHESIZED_WIRE_1keep_fast\ : std_logic;
 signal \b2v_inst11.un1_count_off_1_sqmuxa_8_ns_1_1\ : std_logic;
 signal \b2v_inst11.un1_clk_100khz_26_and_i_o2_1\ : std_logic;
 signal \b2v_inst11.dutycycle_RNINJ641_0Z0Z_5\ : std_logic;
@@ -8222,7 +8222,7 @@ signal \b2v_inst11.func_state_RNIDINH9Z0Z_0\ : std_logic;
 signal \b2v_inst11.func_stateZ0Z_1\ : std_logic;
 signal \b2v_inst6.curr_state_RNI8OKQ2Z0Z_0\ : std_logic;
 signal \b2v_inst6.delayed_vccin_vccinaux_ok_0\ : std_logic;
-signal \SYNTHESIZED_WIRE_49_i_0_o3_0\ : std_logic;
+signal \SYNTHESIZED_WIRE_3_i_0_o3_0\ : std_logic;
 signal \VPP_OK_c\ : std_logic;
 signal \VDDQ_EN_c\ : std_logic;
 signal \VCCIO_OK_c\ : std_logic;
@@ -8349,7 +8349,7 @@ signal \curr_state_RNI5VS71_0_1\ : std_logic;
 signal \RSMRSTn_0\ : std_logic;
 signal \b2v_inst11.N_234_cascade_\ : std_logic;
 signal \b2v_inst11.un1_clk_100khz_52_and_i_0_0_cascade_\ : std_logic;
-signal \SYNTHESIZED_WIRE_47keep_rep1\ : std_logic;
+signal \SYNTHESIZED_WIRE_1keep_rep1\ : std_logic;
 signal \b2v_inst20_un4_counter_7_THRU_CO\ : std_logic;
 signal \dutycycle_RNIIOE3D_0_5\ : std_logic;
 signal b2v_inst11_count_off_1_sqmuxa_0_0_0 : std_logic;
@@ -8401,7 +8401,7 @@ signal \b2v_inst6.curr_stateZ0Z_0_cascade_\ : std_logic;
 signal \b2v_inst6.curr_state_2_0\ : std_logic;
 signal \VR_READY_VCCIN_c\ : std_logic;
 signal \VR_READY_VCCINAUX_c\ : std_logic;
-signal \SYNTHESIZED_WIRE_48_i_0_o3_2\ : std_logic;
+signal \SYNTHESIZED_WIRE_2_i_0_o3_2\ : std_logic;
 signal \b2v_inst6.N_413_cascade_\ : std_logic;
 signal \b2v_inst6.curr_state_7_1_cascade_\ : std_logic;
 signal \b2v_inst6.curr_stateZ0Z_1\ : std_logic;
@@ -8701,7 +8701,7 @@ signal \b2v_inst200.N_202\ : std_logic;
 signal \G_2788\ : std_logic;
 signal \b2v_inst200.curr_state_0_2\ : std_logic;
 signal \G_2788_cascade_\ : std_logic;
-signal \SYNTHESIZED_WIRE_47keep\ : std_logic;
+signal \SYNTHESIZED_WIRE_1keep\ : std_logic;
 signal \b2v_inst200.curr_stateZ0Z_2\ : std_logic;
 signal \b2v_inst200.curr_stateZ0Z_2_cascade_\ : std_logic;
 signal \b2v_inst200.HDA_SDO_ATP_0\ : std_logic;
@@ -8739,7 +8739,7 @@ signal \V5A_OK_c\ : std_logic;
 signal \V33A_OK_c\ : std_logic;
 signal \V1P8A_OK_c\ : std_logic;
 signal \V105A_OK_c\ : std_logic;
-signal \SYNTHESIZED_WIRE_26\ : std_logic;
+signal \SYNTHESIZED_WIRE_8\ : std_logic;
 signal \b2v_inst6.count_rst_cascade_\ : std_logic;
 signal \b2v_inst6.countZ0Z_0_cascade_\ : std_logic;
 signal \b2v_inst6.count_3_0\ : std_logic;
@@ -11183,7 +11183,7 @@ begin
     \I__7980\ : Odrv12
     port map (
             O => \N__34732\,
-            I => \SYNTHESIZED_WIRE_26\
+            I => \SYNTHESIZED_WIRE_8\
         );
 
     \I__7979\ : CascadeMux
@@ -12911,37 +12911,37 @@ begin
     \I__7692\ : LocalMux
     port map (
             O => \N__33888\,
-            I => \SYNTHESIZED_WIRE_47keep\
+            I => \SYNTHESIZED_WIRE_1keep\
         );
 
     \I__7691\ : Odrv12
     port map (
             O => \N__33885\,
-            I => \SYNTHESIZED_WIRE_47keep\
+            I => \SYNTHESIZED_WIRE_1keep\
         );
 
     \I__7690\ : Odrv12
     port map (
             O => \N__33880\,
-            I => \SYNTHESIZED_WIRE_47keep\
+            I => \SYNTHESIZED_WIRE_1keep\
         );
 
     \I__7689\ : Odrv12
     port map (
             O => \N__33877\,
-            I => \SYNTHESIZED_WIRE_47keep\
+            I => \SYNTHESIZED_WIRE_1keep\
         );
 
     \I__7688\ : LocalMux
     port map (
             O => \N__33870\,
-            I => \SYNTHESIZED_WIRE_47keep\
+            I => \SYNTHESIZED_WIRE_1keep\
         );
 
     \I__7687\ : Odrv4
     port map (
             O => \N__33863\,
-            I => \SYNTHESIZED_WIRE_47keep\
+            I => \SYNTHESIZED_WIRE_1keep\
         );
 
     \I__7686\ : InMux
@@ -21533,31 +21533,31 @@ begin
     \I__6255\ : Odrv12
     port map (
             O => \N__29577\,
-            I => \SYNTHESIZED_WIRE_48_i_0_o3_2\
+            I => \SYNTHESIZED_WIRE_2_i_0_o3_2\
         );
 
     \I__6254\ : LocalMux
     port map (
             O => \N__29574\,
-            I => \SYNTHESIZED_WIRE_48_i_0_o3_2\
+            I => \SYNTHESIZED_WIRE_2_i_0_o3_2\
         );
 
     \I__6253\ : Odrv12
     port map (
             O => \N__29571\,
-            I => \SYNTHESIZED_WIRE_48_i_0_o3_2\
+            I => \SYNTHESIZED_WIRE_2_i_0_o3_2\
         );
 
     \I__6252\ : Odrv4
     port map (
             O => \N__29566\,
-            I => \SYNTHESIZED_WIRE_48_i_0_o3_2\
+            I => \SYNTHESIZED_WIRE_2_i_0_o3_2\
         );
 
     \I__6251\ : Odrv4
     port map (
             O => \N__29553\,
-            I => \SYNTHESIZED_WIRE_48_i_0_o3_2\
+            I => \SYNTHESIZED_WIRE_2_i_0_o3_2\
         );
 
     \I__6250\ : CascadeMux
@@ -26843,43 +26843,43 @@ begin
     \I__5370\ : LocalMux
     port map (
             O => \N__26920\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5369\ : Odrv12
     port map (
             O => \N__26917\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5368\ : Odrv4
     port map (
             O => \N__26912\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5367\ : Odrv4
     port map (
             O => \N__26909\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5366\ : LocalMux
     port map (
             O => \N__26906\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5365\ : LocalMux
     port map (
             O => \N__26899\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5364\ : LocalMux
     port map (
             O => \N__26896\,
-            I => \SYNTHESIZED_WIRE_47keep_rep1\
+            I => \SYNTHESIZED_WIRE_1keep_rep1\
         );
 
     \I__5363\ : CascadeMux
@@ -30617,19 +30617,19 @@ begin
     \I__4741\ : Odrv4
     port map (
             O => \N__25019\,
-            I => \SYNTHESIZED_WIRE_49_i_0_o3_0\
+            I => \SYNTHESIZED_WIRE_3_i_0_o3_0\
         );
 
     \I__4740\ : Odrv4
     port map (
             O => \N__25016\,
-            I => \SYNTHESIZED_WIRE_49_i_0_o3_0\
+            I => \SYNTHESIZED_WIRE_3_i_0_o3_0\
         );
 
     \I__4739\ : Odrv4
     port map (
             O => \N__25013\,
-            I => \SYNTHESIZED_WIRE_49_i_0_o3_0\
+            I => \SYNTHESIZED_WIRE_3_i_0_o3_0\
         );
 
     \I__4738\ : InMux
@@ -31769,25 +31769,25 @@ begin
     \I__4549\ : Odrv4
     port map (
             O => \N__24449\,
-            I => \SYNTHESIZED_WIRE_47keep_fast\
+            I => \SYNTHESIZED_WIRE_1keep_fast\
         );
 
     \I__4548\ : LocalMux
     port map (
             O => \N__24446\,
-            I => \SYNTHESIZED_WIRE_47keep_fast\
+            I => \SYNTHESIZED_WIRE_1keep_fast\
         );
 
     \I__4547\ : Odrv12
     port map (
             O => \N__24441\,
-            I => \SYNTHESIZED_WIRE_47keep_fast\
+            I => \SYNTHESIZED_WIRE_1keep_fast\
         );
 
     \I__4546\ : LocalMux
     port map (
             O => \N__24436\,
-            I => \SYNTHESIZED_WIRE_47keep_fast\
+            I => \SYNTHESIZED_WIRE_1keep_fast\
         );
 
     \I__4545\ : InMux
@@ -67297,7 +67297,7 @@ begin
             in1 => \N__24455\,
             in2 => \_gnd_net_\,
             in3 => \N__26866\,
-            lcout => \SYNTHESIZED_WIRE_47keep_fast\,
+            lcout => \SYNTHESIZED_WIRE_1keep_fast\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -67646,7 +67646,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst11.SYNTHESIZED_WIRE_49_i_0_o3_0_LC_8_12_4\ : LogicCell40
+    \b2v_inst11.SYNTHESIZED_WIRE_3_i_0_o3_0_LC_8_12_4\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "0000",
@@ -67657,7 +67657,7 @@ begin
             in1 => \N__26927\,
             in2 => \N__28752\,
             in3 => \N__27028\,
-            lcout => \SYNTHESIZED_WIRE_49_i_0_o3_0\,
+            lcout => \SYNTHESIZED_WIRE_3_i_0_o3_0\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -68137,7 +68137,7 @@ begin
             in1 => \N__33929\,
             in2 => \_gnd_net_\,
             in3 => \N__26877\,
-            lcout => \SYNTHESIZED_WIRE_47keep\,
+            lcout => \SYNTHESIZED_WIRE_1keep\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -69706,7 +69706,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst11.SYNTHESIZED_WIRE_48_i_0_o3_2_LC_9_10_5\ : LogicCell40
+    \b2v_inst11.SYNTHESIZED_WIRE_2_i_0_o3_2_LC_9_10_5\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "0000",
@@ -69717,7 +69717,7 @@ begin
             in1 => \N__27087\,
             in2 => \N__27025\,
             in3 => \N__26923\,
-            lcout => \SYNTHESIZED_WIRE_48_i_0_o3_2\,
+            lcout => \SYNTHESIZED_WIRE_2_i_0_o3_2\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -69837,7 +69837,7 @@ begin
             in1 => \N__26851\,
             in2 => \_gnd_net_\,
             in3 => \N__26942\,
-            lcout => \SYNTHESIZED_WIRE_47keep_rep1\,
+            lcout => \SYNTHESIZED_WIRE_1keep_rep1\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -74477,7 +74477,7 @@ begin
             in1 => \N__34783\,
             in2 => \N__34777\,
             in3 => \N__34768\,
-            lcout => \SYNTHESIZED_WIRE_26\,
+            lcout => \SYNTHESIZED_WIRE_8\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,

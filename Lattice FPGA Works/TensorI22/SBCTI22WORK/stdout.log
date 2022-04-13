@@ -1,0 +1,40 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synplify.exe
+Install:     C:\lscc\iCEcube2.2020.12\synpbase
+Hostname:    FIRAS-AIRTOP
+Date:        Wed Apr 13 13:17:04 2022
+Version:     L-2016.09L+ice40
+
+Arguments:   -product synplify_pro SBCTI22WORK_syn.prj
+ProductType: synplify_pro
+
+
+
+
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\SBCTI22WORK.srr to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\backup\SBCTI22WORK.srr
+log file: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\SBCTI22WORK.srr"
+Running: SBCTI22WORK_Implmnt in foreground
+
+Running SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+
+Running: compile (Compile) on SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+# Wed Apr 13 13:17:05 2022
+
+Running: compile_flow (Compile Process) on SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+# Wed Apr 13 13:17:05 2022
+
+Running: compiler (Compile Input) on SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+# Wed Apr 13 13:17:05 2022
+compiler exited with errors
+Job failed on: SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+
+Job: "compiler" terminated with error status: 2
+See log file: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\synlog\SBCTI22WORK_compiler.srr"
+# Wed Apr 13 13:17:05 2022
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+Complete: Compile on SBCTI22WORK_syn|SBCTI22WORK_Implmnt
+Complete: Logic Synthesis on SBCTI22WORK_syn|SBCTI22WORK_Implmnt
