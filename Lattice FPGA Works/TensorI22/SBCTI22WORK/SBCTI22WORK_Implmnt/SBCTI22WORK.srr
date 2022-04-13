@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: FIRAS-AIRTOP
 
-# Wed Apr 13 16:10:42 2022
+# Wed Apr 13 16:29:03 2022
 
 #Implementation: SBCTI22WORK_Implmnt
 
@@ -17,9 +17,27 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Top entity is set to TOP.
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pwrbtn.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 VHDL syntax check successful!
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pwrbtn.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Synthesizing work.top.bdf_type.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":182:8:182:26|Signal synthesized_wire_10 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":178:8:178:26|Signal synthesized_wire_10 is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":19:7:19:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":30:17:30:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":50:1:50:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
@@ -55,10 +73,10 @@ Post processing for work.vccinaux_vccin_en_block.vccinaux_vccin_arch
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":6:7:6:21|Synthesizing work.hda_strap_block.hda_strap_block_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":15:17:15:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":22:1:22:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":36:9:36:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":25:8:25:17|Referenced variable curr_state is not in sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":45:9:45:16|Referenced variable gpio_pch is not in sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":28:9:28:17|Referenced variable pch_pwrok is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":36:9:36:13|Referenced variable count is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":25:8:25:17|Referenced variable curr_state is not in sensitivity list.
 Post processing for work.hda_strap_block.hda_strap_block_arch
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":24:2:24:3|Latch generated from process for signal count(17 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":24:2:24:3|Latch generated from process for signal curr_state(2 downto 0); possible missing assignment in an if or case statement.
@@ -101,9 +119,9 @@ Post processing for work.powerled_block.powerled_arch
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal func_state(1 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
 Post processing for work.top.bdf_type
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":182:8:182:26|Signal SYNTHESIZED_WIRE_10 is floating; a simulation mismatch is possible.
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":59:2:59:9|Signal V1P8A_EN is floating; a simulation mismatch is possible.
-@W: CL167 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":246:1:246:10|Input mainpwr_ok of instance b2v_inst36 is floating
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":178:8:178:26|Signal SYNTHESIZED_WIRE_10 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":57:2:57:9|Signal V1P8A_EN is floating; a simulation mismatch is possible.
+@W: CL167 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":242:1:242:10|Input mainpwr_ok of instance b2v_inst36 is floating
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd":15:2:15:11|Input clk_100Khz is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":11:2:11:11|Input mainpwr_OK is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":8:2:8:16|Input SATAXPCIE0_FPGA is unused.
@@ -121,24 +139,24 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":30:2:30:16|Input GPIO_FPGA_EXP_1 is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":31:2:31:16|Input GPIO_FPGA_EXP_2 is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":32:2:32:9|Input TPM_GPIO is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":43:2:43:13|Input V12_MAIN_MON is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":49:2:49:9|Input SOC_SPKR is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":50:2:50:9|Input SUSACK_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":51:2:51:10|Input SUSWARN_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":52:2:52:8|Input SLP_S0n is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":55:2:55:8|Input SLP_S5n is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":56:2:56:9|Input SLP_SUSn is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":60:2:60:11|Input SPI_FP_IO3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":61:2:61:11|Input SPI_FP_IO2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":65:2:65:8|Input PWRBTNn is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":69:2:69:8|Input PLTRSTn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":42:2:42:13|Input V12_MAIN_MON is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":47:2:47:9|Input SOC_SPKR is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":48:2:48:9|Input SUSACK_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":49:2:49:10|Input SUSWARN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":50:2:50:8|Input SLP_S0n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":53:2:53:8|Input SLP_S5n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":54:2:54:9|Input SLP_SUSn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":58:2:58:11|Input SPI_FP_IO3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":59:2:59:11|Input SPI_FP_IO2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":63:2:63:8|Input PWRBTNn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":65:2:65:8|Input PLTRSTn is unused.
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:10:43 2022
+# Wed Apr 13 16:29:04 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -151,7 +169,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:10:43 2022
+# Wed Apr 13 16:29:04 2022
 
 ###########################################################]
 @END
@@ -161,11 +179,12 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:10:43 2022
+# Wed Apr 13 16:29:04 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\synwork\SBCTI22WORK_comp.srs changed - recompiling
 @N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Selected library: work cell: TOP view bdf_type as top level
 @N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Selected library: work cell: TOP view bdf_type as top level
 
@@ -174,12 +193,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:10:44 2022
+# Wed Apr 13 16:29:05 2022
 
 ###########################################################]
-Pre-mapping Report
-
-# Wed Apr 13 16:10:44 2022
+# Wed Apr 13 16:29:05 2022
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -240,12 +257,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr 13 16:10:45 2022
+# Wed Apr 13 16:29:06 2022
 
 ###########################################################]
-Map & Optimize Report
-
-# Wed Apr 13 16:10:45 2022
+# Wed Apr 13 16:29:06 2022
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -3932,7 +3947,7 @@ Warning: Found 205 combinational loops!
     instance   b2v_inst11.dutycycle_latmux (cell mux)
     output pin b2v_inst11.dutycycle_latmux/OUT[0]
     net        b2v_inst11.dutycycle[0]
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_239
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_239
 86) instance b2v_inst11.un1_clk_100khz_25_and_i_o3 (in view: work.TOP(bdf_type)), output net N_239 (in view: work.TOP(bdf_type))
     net        N_239
     input  pin b2v_inst11.un1_clk_100khz_24_and_i_0/I[1]
@@ -4293,7 +4308,7 @@ Warning: Found 205 combinational loops!
     instance   b2v_inst11.dutycycle_latmux_13 (cell mux)
     output pin b2v_inst11.dutycycle_latmux_13/OUT[0]
     net        b2v_inst11.dutycycle[6]
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_220
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_220
 89) instance b2v_inst11.un1_clk_100khz_42_and_i_o2_1 (in view: work.TOP(bdf_type)), output net N_220 (in view: work.TOP(bdf_type))
     net        N_220
     input  pin b2v_inst11.un1_clk_100khz_51_and_i_m3_0/B[0]
@@ -4762,7 +4777,7 @@ Warning: Found 205 combinational loops!
     instance   b2v_inst11.dutycycle_0_sqmuxa_i_i_a2 (cell and)
     output pin b2v_inst11.dutycycle_0_sqmuxa_i_i_a2/OUT
     net        N_426
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_186_i_1
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_186_i_1
 92) instance b2v_inst11.N_186_i (in view: work.TOP(bdf_type)), output net N_186_i_1 (in view: work.TOP(bdf_type))
     net        N_186_i_1
     input  pin b2v_inst11.un1_clk_100khz_26_and_i_0/I[1]
@@ -5112,7 +5127,7 @@ Warning: Found 205 combinational loops!
     instance   b2v_inst11.dutycycle_latmux_1 (cell mux)
     output pin b2v_inst11.dutycycle_latmux_1/OUT[0]
     net        b2v_inst11.dutycycle[2]
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_140_N
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_140_N
 94) instance b2v_inst11.un1_clk_100khz_42_and_i_o2_4 (in view: work.TOP(bdf_type)), output net N_140_N (in view: work.TOP(bdf_type))
     net        N_140_N
     input  pin b2v_inst11.un1_clk_100khz_43_and_i_a2_0/I[0]
@@ -6689,7 +6704,7 @@ Warning: Found 205 combinational loops!
 101) instance b2v_inst11.un2_count_clk_17_0_a2_0 (in view: work.TOP(bdf_type)), output net N_370 (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.dutycycle[4]
 102) instance b2v_inst11.dutycycle_latmux_6 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[4] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_425
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_425
 103) instance b2v_inst11.un1_clk_100khz_48_and_i_a3 (in view: work.TOP(bdf_type)), output net N_425 (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.dutycycle[7]
 104) instance b2v_inst11.dutycycle_latmux_5 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[7] (in view: work.TOP(bdf_type))
@@ -6737,7 +6752,7 @@ Warning: Found 205 combinational loops!
 125) instance b2v_inst11.count_clk_latmux_10 (in view: work.TOP(bdf_type)), output net b2v_inst11.count_clk[14] (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.count_clk[15]
 126) instance b2v_inst11.count_clk_latmux_9 (in view: work.TOP(bdf_type)), output net b2v_inst11.count_clk[15] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_360
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_360
 127) instance b2v_inst11.un1_clk_100khz_42_and_i_a2_1 (in view: work.TOP(bdf_type)), output net N_360 (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.dutycycle[8]
 128) instance b2v_inst11.dutycycle_latmux_3 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[8] (in view: work.TOP(bdf_type))
@@ -6749,7 +6764,7 @@ Warning: Found 205 combinational loops!
 131) instance b2v_inst11.dutycycle_latmux_4 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[10] (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.dutycycle[11]
 132) instance b2v_inst11.dutycycle_latmux_7 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[11] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net N_234_N
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net N_234_N
 133) instance b2v_inst11.un1_clk_100khz_42_and_i_o3_0 (in view: work.TOP(bdf_type)), output net N_234_N (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.dutycycle[12]
 134) instance b2v_inst11.dutycycle_latmux_9 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[12] (in view: work.TOP(bdf_type))
@@ -6757,7 +6772,7 @@ Warning: Found 205 combinational loops!
 135) instance b2v_inst11.dutycycle_latmux_11 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[14] (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Found combinational loop during mapping at net b2v_inst11.dutycycle[15]
 136) instance b2v_inst11.dutycycle_latmux_12 (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle[15] (in view: work.TOP(bdf_type))
-@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":201:1:201:10|Found combinational loop during mapping at net b2v_inst11.dutycycle_i_2[11]
+@W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":197:1:197:10|Found combinational loop during mapping at net b2v_inst11.dutycycle_i_2[11]
 137) instance b2v_inst11.dutycycle_i[11] (in view: work.TOP(bdf_type)), output net b2v_inst11.dutycycle_i_2[11] (in view: work.TOP(bdf_type))
 @W: BN137 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":52:2:52:3|Found combinational loop during mapping at net N_422
 138) instance b2v_inst6.un1_curr_state10_i_a2_1 (in view: work.TOP(bdf_type)), output net N_422 (in view: work.TOP(bdf_type))
@@ -6946,7 +6961,7 @@ Added 19 LUTs via timing driven replication
    6		0h:00m:05s		    -7.90ns		1081 /       201
    7		0h:00m:05s		    -7.88ns		1074 /       201
    8		0h:00m:05s		    -7.40ns		1075 /       201
-   9		0h:00m:05s		    -7.34ns		1079 /       201
+   9		0h:00m:06s		    -7.34ns		1079 /       201
   10		0h:00m:06s		    -7.34ns		1079 /       201
 @N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":38:2:38:3|Replicating instance b2v_inst5.RSMRSTn (in view: work.TOP(bdf_type)) with 8 loads 1 time to improve timing.
 Timing driven replication report
@@ -6956,14 +6971,14 @@ Added 0 LUTs via timing driven replication
 
   11		0h:00m:06s		    -5.94ns		1072 /       202
   12		0h:00m:06s		    -5.94ns		1073 /       202
-@N: FX1016 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":57:2:57:9|SB_GB_IO inserted on the port FPGA_OSC.
+@N: FX1016 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":55:2:55:9|SB_GB_IO inserted on the port FPGA_OSC.
 @N: FX1017 :|SB_GB inserted on the net N_606.
 @N: FX1017 :|SB_GB inserted on the net b2v_inst200.count_en.
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 170MB peak: 171MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 170MB peak: 171MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 170MB peak: 171MB)
 
 @N: MT611 :|Automatically generated clock counter|tmp_derived_clock is not used and is being removed
 
@@ -6987,11 +7002,11 @@ Clock Tree ID     Driving Element         Drive Element Type     Fanout     Samp
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 141MB peak: 171MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 141MB peak: 171MB)
 
 Writing Analyst data base C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\synwork\SBCTI22WORK_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 168MB peak: 171MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 168MB peak: 171MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -6999,10 +7014,10 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\SBCTI22WORK.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 169MB peak: 172MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 169MB peak: 172MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 166MB peak: 172MB)
+Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 166MB peak: 172MB)
 
 Warning: Found 197 combinational loops!
          Loop details will only be printed for 100 loops.
@@ -10500,7 +10515,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Apr 13 16:10:53 2022
+# Timing Report written on Wed Apr 13 16:29:14 2022
 #
 
 
@@ -13198,9 +13213,9 @@ Distribution of All Consumed Luts 938 = 938
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 31MB peak: 172MB)
+At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 32MB peak: 172MB)
 
-Process took 0h:00m:08s realtime, 0h:00m:07s cputime
-# Wed Apr 13 16:10:53 2022
+Process took 0h:00m:08s realtime, 0h:00m:08s cputime
+# Wed Apr 13 16:29:14 2022
 
 ###########################################################]
