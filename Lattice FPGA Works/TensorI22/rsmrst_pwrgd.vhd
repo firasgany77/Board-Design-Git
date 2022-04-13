@@ -8,7 +8,7 @@ USE IEEE.numeric_std.ALL;
 ENTITY rsmrst_pwrgd_block IS
 	PORT (
 		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		V105A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		VCCST_CPU_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		V5A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		V1P8A_OK : IN STD_LOGIC; -- NEW
 		--GPIO_1 : IN STD_LOGIC; -- for Pin Constraints Check
@@ -29,7 +29,7 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 BEGIN
 
 	rsmrst_pwrgd_out <= rsmrst_pwrgd;
-	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (V105A_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') -- SLP_SUSn was added
+	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (VCCST_CPU_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') -- SLP_SUSn was added
 		ELSE
 		'0';
 

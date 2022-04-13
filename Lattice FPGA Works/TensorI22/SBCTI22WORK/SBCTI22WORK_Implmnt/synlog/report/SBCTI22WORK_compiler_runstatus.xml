@@ -10,19 +10,19 @@ The file contains the job information from compiler to be displayed as part of t
     <title>Synopsys HDL Compiler</title>
   </report_link> 
   <job_status>
-    <data>Failed    </data>
+    <data>Completed    </data>
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>4</data>
+  <data>50</data>
   <report_link name="more"><data>C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\synlog\report\SBCTI22WORK_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>0</data>
+  <data>60</data>
   <report_link name="more"><data>C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\synlog\report\SBCTI22WORK_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
-  <data>3</data>
+  <data>0</data>
   <report_link name="more"><data>C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK\SBCTI22WORK_Implmnt\synlog\report\SBCTI22WORK_compiler_errors.txt</data></report_link>
   </info>
 			<info name="CPU Time">
@@ -35,7 +35,7 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1649851328</data>
+  <data type="timestamp">1649855443</data>
   </info>
 			</job_info>
 </job_run_status>

@@ -21,7 +21,7 @@ ENTITY TOP IS
 		VCCST_OVERRIDE_3V3 : IN STD_LOGIC; --OK
 		VCCST_PWRGD : OUT STD_LOGIC; -- OK (VCCST_PWRGD_1P05 after voltage divider, VCCST_PWRGD should be 3.3V)
 		VCCST_EN : OUT STD_LOGIC; -- OK (before it was VCCST_EN#, change logic to make it work)
-		VCCST_CPU_OK : IN STD_LOGIC; --OK
+		VCCST_CPU_OK : IN STD_LOGIC; --OK (replaced V105A_OK)
 		FPGA_SLP_WLAN_N : IN STD_LOGIC; --OK (not used in TensorI20? Check!)
 		GPIO_FPGA_SoC_1 : IN STD_LOGIC; -- OK
 		GPIO_FPGA_SoC_2 : IN STD_LOGIC; -- OK
@@ -30,7 +30,6 @@ ENTITY TOP IS
 		GPIO_FPGA_EXP_1 : IN STD_LOGIC; --OK
 		GPIO_FPGA_EXP_2 : IN STD_LOGIC; --OK
 		TPM_GPIO : IN STD_LOGIC; --OK
-		--V105A_OK : IN STD_LOGIC;
 		V33A_OK : IN STD_LOGIC; --OK
 		V33A_ENn : OUT STD_LOGIC; -- OK
 		V33DSW_OK : IN STD_LOGIC; --OK
@@ -41,7 +40,6 @@ ENTITY TOP IS
 		V5S_ENn : OUT STD_LOGIC; --OK (V5S_EN# in OrCAD)
 		V5S_OK : IN STD_LOGIC; -- OK
 		V12_MAIN_MON : IN STD_LOGIC; -- this replaces the FPGA_ADC input in SBC-CLH.
-		--VCCIO_OK : IN STD_LOGIC; --vccio was a CPU PWR rail in SBC-CLH - not needed in SBC-TI22
 		VDDQ_OK : IN STD_LOGIC; --OK
 		VDDQ_EN : OUT STD_LOGIC; --OK
 		VPP_OK : IN STD_LOGIC; --OK
@@ -63,11 +61,9 @@ ENTITY TOP IS
 		DSW_PWROK : OUT STD_LOGIC; -- OK 
 		PWRBTN_LED : OUT STD_LOGIC; --OK
 		PWRBTNn : IN STD_LOGIC; --OK
-		--V105A_EN : OUT STD_LOGIC; -- OK
-		--VCCIO_EN : OUT STD_LOGIC; -- DELETED
 		RSMRSTn : OUT STD_LOGIC; --OK
 		PLTRSTn : IN STD_LOGIC; --OK (PLTRST# in OrCAD)
-		HDA_SDO_ATP : OUT STD_LOGIC; --OK
+		HDA_SDO_ATP : OUT STD_LOGIC --OK
 	);
 END TOP;
 
@@ -97,15 +93,15 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT vccio_en_block
-		PORT (
-			slp_s3n : IN STD_LOGIC;
-			vddq_ok : IN STD_LOGIC;
-			VCCST_CPU_OK : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			vccio_en : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT vccio_en_block
+		--PORT (
+			--slp_s3n : IN STD_LOGIC;
+			--vddq_ok : IN STD_LOGIC;
+			--VCCST_CPU_OK : IN STD_LOGIC;
+			-- : IN STD_LOGIC;
+            --vccio_en : OUT STD_LOGIC 
+	--	);
+	--END COMPONENT;
 
 	COMPONENT Counter
 		PORT (
@@ -148,7 +144,7 @@ ARCHITECTURE bdf_type OF TOP IS
 	COMPONENT rsmrst_pwrgd_block
 		PORT (
 			V33A_OK : IN STD_LOGIC;
-			V105A_OK : IN STD_LOGIC;
+			VCCST_CPU_OK : IN STD_LOGIC;
 			V5A_OK : IN STD_LOGIC;
 			V1P8A_OK : IN STD_LOGIC;
 			SLP_SUSn : IN STD_LOGIC;
@@ -216,13 +212,13 @@ BEGIN
 		clk_100Khz => SYNTHESIZED_WIRE_1,
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
-	b2v_inst17 : vccio_en_block
-	PORT MAP(
-		slp_s3n => SYNTHESIZED_WIRE_2,
-		vddq_ok => VDDQ_OK,
-		VCCST_CPU_OK => VCCST_CPU_OK,
-		clk_100Khz => SYNTHESIZED_WIRE_1,
-		vccio_en => VCCIO_EN);
+	--b2v_inst17 : vccio_en_block
+	--PORT MAP(
+		--slp_s3n => SYNTHESIZED_WIRE_2,
+		--vddq_ok => VDDQ_OK,
+		--VCCST_CPU_OK => VCCST_CPU_OK,
+		--clk_100Khz => SYNTHESIZED_WIRE_1,
+		--vccio_en => VCCIO_EN);
 	b2v_inst20 : counter
 	PORT MAP(
 		CLK_25mhz => FPGA_OSC,
@@ -230,7 +226,7 @@ BEGIN
 	b2v_inst200 : hda_strap_block
 	PORT MAP(
 		pch_pwrok => SYNTHESIZED_WIRE_6,
-		GPIO_PCH => GPIO_FPGA_PCH_1,
+		GPIO_PCH => GPIO_FPGA_SoC_1,
 		clk_100Khz => SYNTHESIZED_WIRE_1,
 		HDA_SDO_ATP => HDA_SDO_ATP);
 	b2v_inst31 : vccinaux_vccin_en_block
@@ -252,7 +248,7 @@ BEGIN
 	b2v_inst5 : rsmrst_pwrgd_block
 	PORT MAP(
 		V33A_OK => V33A_OK,
-		V105A_OK => V105A_OK,
+		VCCST_CPU_OK => VCCST_CPU_OK,
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
 		SLP_SUSn => VCC,

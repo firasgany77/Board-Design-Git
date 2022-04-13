@@ -81,7 +81,7 @@ port (
     FPGA_GPIO_WD : in std_logic;
     VPP_OK : in std_logic;
     VCCIN_EN : out std_logic;
-    V105A_OK : in std_logic;
+    VCCST_CPU_OK : in std_logic;
     SLP_S5n : in std_logic;
     GPIO_FPGA_HDR_2 : in std_logic;
     FP_RSTn : in std_logic;
@@ -8738,7 +8738,7 @@ signal \b2v_inst6.countZ0Z_15\ : std_logic;
 signal \V5A_OK_c\ : std_logic;
 signal \V33A_OK_c\ : std_logic;
 signal \V1P8A_OK_c\ : std_logic;
-signal \V105A_OK_c\ : std_logic;
+signal \VCCST_CPU_OK_c\ : std_logic;
 signal \SYNTHESIZED_WIRE_8\ : std_logic;
 signal \b2v_inst6.count_rst_cascade_\ : std_logic;
 signal \b2v_inst6.countZ0Z_0_cascade_\ : std_logic;
@@ -8791,7 +8791,7 @@ signal \DSW_PWROK_wire\ : std_logic;
 signal \SYS_PWROK_wire\ : std_logic;
 signal \GPIO_FPGA_SoC_4_wire\ : std_logic;
 signal \V33DSW_OK_wire\ : std_logic;
-signal \V105A_OK_wire\ : std_logic;
+signal \VCCST_CPU_OK_wire\ : std_logic;
 signal \VR_READY_VCCIN_wire\ : std_logic;
 signal \VDDQ_EN_wire\ : std_logic;
 signal \GPIO_FPGA_PCH_1_wire\ : std_logic;
@@ -8830,7 +8830,7 @@ begin
     SYS_PWROK <= \SYS_PWROK_wire\;
     \GPIO_FPGA_SoC_4_wire\ <= GPIO_FPGA_SoC_4;
     \V33DSW_OK_wire\ <= V33DSW_OK;
-    \V105A_OK_wire\ <= V105A_OK;
+    \VCCST_CPU_OK_wire\ <= VCCST_CPU_OK;
     \VR_READY_VCCIN_wire\ <= VR_READY_VCCIN;
     VDDQ_EN <= \VDDQ_EN_wire\;
     \GPIO_FPGA_PCH_1_wire\ <= GPIO_FPGA_PCH_1;
@@ -9804,7 +9804,7 @@ begin
             OUTPUTCLK => '0'
         );
 
-    \V105A_OK_ibuf_iopad\ : IO_PAD
+    \VCCST_CPU_OK_ibuf_iopad\ : IO_PAD
     generic map (
             IO_STANDARD => "SB_LVCMOS",
             PULLUP => '0'
@@ -9813,10 +9813,10 @@ begin
             OE => \N__35381\,
             DIN => \N__35380\,
             DOUT => \N__35379\,
-            PACKAGEPIN => \V105A_OK_wire\
+            PACKAGEPIN => \VCCST_CPU_OK_wire\
         );
 
-    \V105A_OK_ibuf_preio\ : PRE_IO
+    \VCCST_CPU_OK_ibuf_preio\ : PRE_IO
     generic map (
             NEG_TRIGGER => '0',
             PIN_TYPE => "000001"
@@ -9828,7 +9828,7 @@ begin
             CLOCKENABLE => 'H',
             DOUT1 => '0',
             OUTPUTENABLE => '0',
-            DIN0 => \V105A_OK_c\,
+            DIN0 => \VCCST_CPU_OK_c\,
             DOUT0 => '0',
             INPUTCLK => '0',
             LATCHINPUTVALUE => '0',
@@ -11129,7 +11129,7 @@ begin
     \I__7989\ : Odrv4
     port map (
             O => \N__34759\,
-            I => \V105A_OK_c\
+            I => \VCCST_CPU_OK_c\
         );
 
     \I__7988\ : InMux
