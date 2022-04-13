@@ -1,0 +1,127 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Apr 13 2022 16:56:42
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 0 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40LP1K
+    Package:       QN84
+
+Design statistics:
+------------------
+    FFs:                  202
+    LUTs:                 1104
+    RAMs:                 0
+    IOBs:                 33
+    GBs:                  3
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 1141/1280
+        Combinational Logic Cells: 939      out of   1280      73.3594%
+        Sequential Logic Cells:    202      out of   1280      15.7813%
+        Logic Tiles:               156      out of   160       97.5%
+    Registers: 
+        Logic Registers:           202      out of   1280      15.7813%
+        IO Registers:              0        out of   560       0
+    Block RAMs:                    0        out of   16        0%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                16       out of   67        23.8806%
+        Output Pins:               17       out of   67        25.3731%
+        InOut Pins:                0        out of   67        0%
+    Global Buffers:                3        out of   8         37.5%
+    PLLs:                          0        out of   0       
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 12       out of   18        66.6667%
+    Bank 1: 10       out of   17        58.8235%
+    Bank 0: 11       out of   17        64.7059%
+    Bank 2: 0        out of   15        0%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name        
+    ----------  ---------  -----------  -------  -------  -----------    -----------        
+    A8          Input      SB_LVCMOS    No       3        Simple Input   FPGA_OSC           
+    A27         Input      SB_LVCMOS    No       1        Simple Input   VCCST_CPU_OK       
+    A31         Input      SB_LVCMOS    No       1        Simple Input   V33A_OK            
+    A32         Input      SB_LVCMOS    No       1        Simple Input   V1P8A_OK           
+    A33         Input      SB_LVCMOS    No       1        Simple Input   V33DSW_OK          
+    A34         Input      SB_LVCMOS    No       1        Simple Input   VDDQ_OK            
+    A38         Input      SB_LVCMOS    No       0        Simple Input   V5S_OK             
+    A39         Input      SB_LVCMOS    No       0        Simple Input   V33S_OK            
+    A40         Input      SB_LVCMOS    No       0        Simple Input   GPIO_FPGA_SoC_1    
+    A41         Input      SB_LVCMOS    No       0        Simple Input   VPP_OK             
+    A44         Input      SB_LVCMOS    No       0        Simple Input   SLP_S3n            
+    A45         Input      SB_LVCMOS    No       0        Simple Input   GPIO_FPGA_SoC_4    
+    A46         Input      SB_LVCMOS    No       0        Simple Input   SLP_S4n            
+    B22         Input      SB_LVCMOS    No       1        Simple Input   V5A_OK             
+    B26         Input      SB_LVCMOS    No       1        Simple Input   VR_READY_VCCIN     
+    B27         Input      SB_LVCMOS    No       1        Simple Input   VR_READY_VCCINAUX  
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name        
+    ----------  ---------  -----------  -------  -------  -----------    -----------        
+    A1          Output     SB_LVCMOS    No       3        Simple Output  VDDQ_EN            
+    A9          Output     SB_LVCMOS    No       3        Simple Output  VCCINAUX_EN        
+    A11         Output     SB_LVCMOS    No       3        Simple Output  HDA_SDO_ATP        
+    A12         Output     SB_LVCMOS    No       3        Simple Output  VCCIN_EN           
+    A25         Output     SB_LVCMOS    No       1        Simple Output  V33A_ENn           
+    A48         Output     SB_LVCMOS    No       0        Simple Output  PCH_PWROK          
+    B1          Output     SB_LVCMOS    No       3        Simple Output  VCCST_PWRGD        
+    B2          Output     SB_LVCMOS    No       3        Simple Output  VPP_EN             
+    B3          Output     SB_LVCMOS    No       3        Simple Output  V33S_ENn           
+    B4          Output     SB_LVCMOS    No       3        Simple Output  V5S_ENn            
+    B5          Output     SB_LVCMOS    No       3        Simple Output  VCCST_EN           
+    B7          Output     SB_LVCMOS    No       3        Simple Output  DSW_PWROK          
+    B8          Output     SB_LVCMOS    No       3        Simple Output  RSMRSTn            
+    B20         Output     SB_LVCMOS    No       1        Simple Output  V1P8A_EN           
+    B32         Output     SB_LVCMOS    No       0        Simple Output  PWRBTN_LED         
+    B35         Output     SB_LVCMOS    No       0        Simple Output  V5A_EN             
+    B36         Output     SB_LVCMOS    No       0        Simple Output  SYS_PWROK          
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name             
+    -------------  -------  ---------  ------  -----------             
+    4              3        IO         202     FPGA_OSC_0_c_g          
+    3              3                   36      b2v_inst200.count_en_g  
+    1              0                   42      N_606_g                 
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 5 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile     7497 out of  28666      26.1529%
+                          Span 4     1274 out of   6944      18.3468%
+                         Span 12      149 out of   1440      10.3472%
+                  Global network        3 out of      8      37.5%
+      Vertical Inter-LUT Connect      231 out of   1120      20.625%
+

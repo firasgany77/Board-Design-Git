@@ -1,0 +1,34 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":30:25:30:55|Generating a type div divider 
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":46:3:46:4|Removing sequential instance b2v_inst20.tmp (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":46:3:46:4|Removing sequential instance b2v_inst20.tmp_0 (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":46:3:46:4|Replicating instance b2v_inst20.tmp_1 (in view: work.TOP(bdf_type)) with 56 loads 2 times to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":137:3:137:6|Replicating instance b2v_inst11.curr_state_3_i_m2[0] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[4] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[1] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[5] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[2] (in view: work.TOP(bdf_type)) with 3 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[7] (in view: work.TOP(bdf_type)) with 3 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[10] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[13] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[12] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[14] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[6] (in view: work.TOP(bdf_type)) with 3 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[3] (in view: work.TOP(bdf_type)) with 3 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[11] (in view: work.TOP(bdf_type)) with 3 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[9] (in view: work.TOP(bdf_type)) with 3 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[8] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[0] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Replicating instance b2v_inst11.count_off_1[15] (in view: work.TOP(bdf_type)) with 2 loads 1 time(s) to improve timing.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":38:2:38:3|Replicating instance b2v_inst5.RSMRSTn (in view: work.TOP(bdf_type)) with 8 loads 1 time to improve timing.
+@N: FX1016 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":55:2:55:9|SB_GB_IO inserted on the port FPGA_OSC.
+@N: FX1017 :|SB_GB inserted on the net N_606.
+@N: FX1017 :|SB_GB inserted on the net b2v_inst200.count_en.
+@N: MT611 :|Automatically generated clock counter|tmp_derived_clock is not used and is being removed
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK2\SBCTI22WORK2_Implmnt\SBCTI22WORK2.edf
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
