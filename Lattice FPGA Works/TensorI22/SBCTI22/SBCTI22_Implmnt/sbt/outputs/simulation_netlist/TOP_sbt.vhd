@@ -64,7 +64,7 @@ port (
     SYS_PWROK : out std_logic;
     GPIO_FPGA_PM_2 : in std_logic;
     GPIO_FPGA_PCH_1 : in std_logic;
-    HDA_SDO_FPGA : out std_logic;
+    HDA_SDO_ATP : out std_logic;
     VPP_EN : out std_logic;
     VDDQ_OK : in std_logic;
     SLP_S4n : in std_logic;
@@ -8690,7 +8690,7 @@ signal \b2v_inst200.N_55\ : std_logic;
 signal \N_406\ : std_logic;
 signal \b2v_inst200.curr_state_0_1\ : std_logic;
 signal \b2v_inst200.N_202_cascade_\ : std_logic;
-signal \HDA_SDO_FPGA_c\ : std_logic;
+signal \HDA_SDO_ATP_c\ : std_logic;
 signal \b2v_inst20.counterZ0Z_29\ : std_logic;
 signal \b2v_inst20.counterZ0Z_28\ : std_logic;
 signal \b2v_inst20.counterZ0Z_31\ : std_logic;
@@ -8704,7 +8704,7 @@ signal \G_2788_cascade_\ : std_logic;
 signal \SYNTHESIZED_WIRE_47keep\ : std_logic;
 signal \b2v_inst200.curr_stateZ0Z_2\ : std_logic;
 signal \b2v_inst200.curr_stateZ0Z_2_cascade_\ : std_logic;
-signal \b2v_inst200.HDA_SDO_FPGA_0\ : std_logic;
+signal \b2v_inst200.HDA_SDO_ATP_0\ : std_logic;
 signal \b2v_inst200.curr_stateZ0Z_0\ : std_logic;
 signal \b2v_inst200.curr_stateZ0Z_1\ : std_logic;
 signal \N_219\ : std_logic;
@@ -8769,7 +8769,7 @@ signal \VCCIN_EN_wire\ : std_logic;
 signal \V33S_OK_wire\ : std_logic;
 signal \V5S_ENn_wire\ : std_logic;
 signal \SLP_S4n_wire\ : std_logic;
-signal \HDA_SDO_FPGA_wire\ : std_logic;
+signal \HDA_SDO_ATP_wire\ : std_logic;
 signal \VR_READY_VCCINAUX_wire\ : std_logic;
 signal \SLP_S3n_wire\ : std_logic;
 signal \VCCST_PWRGD_wire\ : std_logic;
@@ -8808,7 +8808,7 @@ begin
     \V33S_OK_wire\ <= V33S_OK;
     V5S_ENn <= \V5S_ENn_wire\;
     \SLP_S4n_wire\ <= SLP_S4n;
-    HDA_SDO_FPGA <= \HDA_SDO_FPGA_wire\;
+    HDA_SDO_ATP <= \HDA_SDO_ATP_wire\;
     \VR_READY_VCCINAUX_wire\ <= VR_READY_VCCINAUX;
     \SLP_S3n_wire\ <= SLP_S3n;
     VCCST_PWRGD <= \VCCST_PWRGD_wire\;
@@ -9100,7 +9100,7 @@ begin
             OUTPUTCLK => '0'
         );
 
-    \HDA_SDO_FPGA_obuf_iopad\ : IO_PAD
+    \HDA_SDO_ATP_obuf_iopad\ : IO_PAD
     generic map (
             IO_STANDARD => "SB_LVCMOS",
             PULLUP => '0'
@@ -9109,10 +9109,10 @@ begin
             OE => \N__35579\,
             DIN => \N__35578\,
             DOUT => \N__35577\,
-            PACKAGEPIN => \HDA_SDO_FPGA_wire\
+            PACKAGEPIN => \HDA_SDO_ATP_wire\
         );
 
-    \HDA_SDO_FPGA_obuf_preio\ : PRE_IO
+    \HDA_SDO_ATP_obuf_preio\ : PRE_IO
     generic map (
             NEG_TRIGGER => '0',
             PIN_TYPE => "011001"
@@ -12977,7 +12977,7 @@ begin
     \I__7681\ : LocalMux
     port map (
             O => \N__33835\,
-            I => \b2v_inst200.HDA_SDO_FPGA_0\
+            I => \b2v_inst200.HDA_SDO_ATP_0\
         );
 
     \I__7680\ : InMux
@@ -13673,7 +13673,7 @@ begin
     \I__7565\ : Odrv4
     port map (
             O => \N__33487\,
-            I => \HDA_SDO_FPGA_c\
+            I => \HDA_SDO_ATP_c\
         );
 
     \I__7564\ : InMux
@@ -74026,7 +74026,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst200.HDA_SDO_FPGA_RNIJCSM_LC_12_12_1\ : LogicCell40
+    \b2v_inst200.HDA_SDO_ATP_RNIJCSM_LC_12_12_1\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "0000",
@@ -74037,7 +74037,7 @@ begin
             in1 => \N__33838\,
             in2 => \N__33508\,
             in3 => \N__33850\,
-            lcout => \HDA_SDO_FPGA_c\,
+            lcout => \HDA_SDO_ATP_c\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -74106,7 +74106,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst200.HDA_SDO_FPGA_LC_12_12_5\ : LogicCell40
+    \b2v_inst200.HDA_SDO_ATP_LC_12_12_5\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "1000",
@@ -74117,7 +74117,7 @@ begin
             in1 => \N__33808\,
             in2 => \N__33841\,
             in3 => \_gnd_net_\,
-            lcout => \b2v_inst200.HDA_SDO_FPGA_0\,
+            lcout => \b2v_inst200.HDA_SDO_ATP_0\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,

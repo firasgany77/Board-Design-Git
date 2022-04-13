@@ -8,7 +8,7 @@ ENTITY hda_strap_block IS
 		pch_pwrok : IN STD_LOGIC; -- SLP_S3# + 3 msec delay (comes from vccst_pwrgd)
 		GPIO_PCH : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
-		HDA_SDO_FPGA : OUT STD_LOGIC);
+		HDA_SDO_ATP : OUT STD_LOGIC);
 END hda_strap_block;
 
 ARCHITECTURE hda_strap_block_arch OF hda_strap_block IS
@@ -30,7 +30,7 @@ BEGIN
 					ELSE
 						curr_state <= start;
 					END IF;
-					HDA_SDO_FPGA <= '0';
+					HDA_SDO_ATP <= '0';
 
 				WHEN startok => -- 	After PCH_PWROK = 1, waiting for 2 seconds
 					IF (count = to_unsigned(200000, 18)) THEN -- 200000 * 10uSec = 2 Sec
@@ -40,21 +40,21 @@ BEGIN
 						count <= count + 1;
 						curr_state <= startok;
 					END IF;
-					HDA_SDO_FPGA <= '0';
+					HDA_SDO_ATP <= '0';
 				WHEN idle => -- 	After PCH_PWROK = 1 and 2 seconds, normal operation. Waiting for GPIO = 0
 					IF (GPIO_PCH = '0') THEN
 						curr_state <= b4reset;
 					ELSE
 						curr_state <= idle;
 					END IF;
-					HDA_SDO_FPGA <= '0';
+					HDA_SDO_ATP <= '0';
 				WHEN b4reset => -- 	After GPIO=0. Waiting for PCH_PWROK = 0 (reset). HDA_SDO goes to 1.
 					IF (pch_pwrok = '0') THEN
 						curr_state <= reset;
 					ELSE
 						curr_state <= b4reset;
 					END IF;
-					HDA_SDO_FPGA <= '1';
+					HDA_SDO_ATP <= '1';
 
 				WHEN reset => -- 	During cold reset (PCH_PWROK=0). Waiting for PCH_PWROK = 0 (reset)
 					IF (pch_pwrok = '1') THEN
@@ -62,7 +62,7 @@ BEGIN
 					ELSE
 						curr_state <= reset;
 					END IF;
-					HDA_SDO_FPGA <= '1';
+					HDA_SDO_ATP <= '1';
 
 				WHEN afterreset => -- 	After PCH_PWROK = 1, waiting for 2 seconds
 					IF (count = to_unsigned(200000, 18)) THEN -- 200000 * 10uSec = 2 Sec
@@ -72,7 +72,7 @@ BEGIN
 						count <= count + 1;
 						curr_state <= afterreset;
 					END IF;
-					HDA_SDO_FPGA <= '1';
+					HDA_SDO_ATP <= '1';
 
 			END CASE;
 		END IF;
