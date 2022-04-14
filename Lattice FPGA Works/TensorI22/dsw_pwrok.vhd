@@ -23,7 +23,7 @@ ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 BEGIN
 
 	--DSW_PWROK <= pwrok;
-	pwrok <= '1' WHEN (V33DSW_OK = '1') AND (V33DSW_OK = '1')
+	pwrok <= '1' WHEN (V33DSW_OK = '1')
 		ELSE
 		'0';
 
