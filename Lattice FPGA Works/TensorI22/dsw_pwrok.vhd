@@ -2,8 +2,8 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
--- 
--- DSW_PWROK up >=10ms after v33DSW is up
+
+-- DSW_PWROK up >=10ms after v33DSW is up (tPCH02 min:10 ms, max: 2000 ms)
 
 ENTITY dsw_pwrok_block IS
 	PORT (
@@ -22,7 +22,7 @@ ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
-	--DSW_PWROK <= pwrok;
+
 	pwrok <= '1' WHEN (V33DSW_OK = '1')
 		ELSE
 		'0';
@@ -51,7 +51,7 @@ BEGIN
 					END IF;
 					DSW_PWROK <= '0';
 
-				WHEN no_pwrgd =>
+				WHEN no_pwrgd => -- we start from this state.
 					IF (pwrok = '1') THEN
 						curr_state <= delay;
 						count <= (OTHERS => '0');

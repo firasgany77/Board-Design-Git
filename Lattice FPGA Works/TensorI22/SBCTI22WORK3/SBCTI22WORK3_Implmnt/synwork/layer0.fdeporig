@@ -17,9 +17,9 @@
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\powerled.vhd":1638031123
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\pch_pwrok.vhd":1638281950
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\hda_strap.vhd":1649833573
-#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\dsw_pwrok.vhd":1649835358
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\dsw_pwrok.vhd":1650033948
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\counter.vhd":1649741675
-#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1649857713
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1649913991
 0 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd" vhdl
 1 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd" vhdl
 2 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd" vhdl

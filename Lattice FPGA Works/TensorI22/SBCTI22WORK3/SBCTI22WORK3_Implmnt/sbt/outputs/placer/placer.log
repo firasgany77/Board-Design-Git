@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Apr 13 2022 17:50:42
+* File Generated:     Apr 24 2022 17:46:55
 
 * Purpose:            
 
@@ -70,7 +70,7 @@ I2088: Phase 1, elapsed time : 0.0 (sec)
 
 
 Phase 2
-I2088: Phase 2, elapsed time : 0.0 (sec)
+I2088: Phase 2, elapsed time : 0.1 (sec)
 
 Phase 3
 Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI[0]_LC_22/in1" to pin "b2v_inst11.count_RNI[0]_LC_22/lcout" to break the combinatorial loop
@@ -417,10 +417,10 @@ Phase 4
 I2088: Phase 4, elapsed time : 0.2 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 3.7 (sec)
+I2088: Phase 5, elapsed time : 3.6 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 47.6 (sec)
+I2088: Phase 6, elapsed time : 46.0 (sec)
 
 Final Design Statistics
     Number of LUTs      	:	1089
@@ -464,5 +464,5 @@ Clock: TOP|FPGA_OSC | Frequency: 4.16 MHz | Target: 48.69 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 53.5 sec.
+I2076: Placer run-time: 51.9 sec.
 

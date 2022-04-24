@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: FIRAS-AIRTOP
 
-# Wed Apr 13 16:59:32 2022
+# Sun Apr 24 17:46:22 2022
 
 #Implementation: SBCTI22WORK3_Implmnt
 
@@ -17,7 +17,11 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Top entity is set to TOP.
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 VHDL syntax check successful!
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Synthesizing work.top.bdf_type.
 @W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":178:8:178:26|Signal synthesized_wire_10 is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":19:7:19:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
@@ -138,7 +142,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:59:32 2022
+# Sun Apr 24 17:46:23 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -151,7 +155,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:59:32 2022
+# Sun Apr 24 17:46:23 2022
 
 ###########################################################]
 @END
@@ -161,11 +165,12 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:59:32 2022
+# Sun Apr 24 17:46:23 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_comp.srs changed - recompiling
 @N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Selected library: work cell: TOP view bdf_type as top level
 @N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Selected library: work cell: TOP view bdf_type as top level
 
@@ -174,12 +179,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 13 16:59:34 2022
+# Sun Apr 24 17:46:24 2022
 
 ###########################################################]
 Pre-mapping Report
 
-# Wed Apr 13 16:59:34 2022
+# Sun Apr 24 17:46:24 2022
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -240,12 +245,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Apr 13 16:59:34 2022
+# Sun Apr 24 17:46:25 2022
 
 ###########################################################]
 Map & Optimize Report
 
-# Wed Apr 13 16:59:34 2022
+# Sun Apr 24 17:46:25 2022
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -320,12 +325,12 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00
 Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 138MB peak: 139MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 144MB)
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 @N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":46:3:46:4|Removing sequential instance b2v_inst20.tmp (in view: work.TOP(bdf_type)) because it does not drive other instances.
 @N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":46:3:46:4|Removing sequential instance b2v_inst20.tmp_0 (in view: work.TOP(bdf_type)) because it does not drive other instances.
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 145MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 145MB)
 
 Warning: Found 205 combinational loops!
          Loop details will only be printed for 100 loops.
@@ -6903,13 +6908,13 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 146MB peak: 146MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 146MB peak: 146MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 145MB peak: 147MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 145MB peak: 147MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 145MB peak: 147MB)
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 145MB peak: 147MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 162MB peak: 165MB)
@@ -9070,10 +9075,10 @@ Added 4 LUTs via timing driven replication
 @N: FX1017 :|SB_GB inserted on the net N_606.
 @N: FX1017 :|SB_GB inserted on the net b2v_inst200.count_en.
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 179MB peak: 180MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 179MB peak: 180MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 179MB peak: 180MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 179MB peak: 180MB)
 
 @N: MT611 :|Automatically generated clock counter|tmp_derived_clock is not used and is being removed
 
@@ -9097,11 +9102,11 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 150MB peak: 180MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 150MB peak: 180MB)
 
 Writing Analyst data base C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 177MB peak: 180MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 177MB peak: 180MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -9109,10 +9114,10 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 178MB peak: 181MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 178MB peak: 181MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 181MB)
+Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 181MB)
 
 Warning: Found 198 combinational loops!
          Loop details will only be printed for 100 loops.
@@ -12564,7 +12569,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Apr 13 16:59:42 2022
+# Timing Report written on Sun Apr 24 17:46:33 2022
 #
 
 
@@ -15163,10 +15168,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 181MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 181MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 181MB)
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 176MB peak: 181MB)
 
 ---------------------------------------
 Resource Usage Report for TOP 
@@ -15197,9 +15202,9 @@ Distribution of All Consumed Luts 900 = 900
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 31MB peak: 181MB)
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 31MB peak: 181MB)
 
-Process took 0h:00m:08s realtime, 0h:00m:07s cputime
-# Wed Apr 13 16:59:42 2022
+Process took 0h:00m:07s realtime, 0h:00m:07s cputime
+# Sun Apr 24 17:46:33 2022
 
 ###########################################################]

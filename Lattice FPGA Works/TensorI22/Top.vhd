@@ -3,6 +3,37 @@ USE ieee.std_logic_1164.ALL; --
 
 LIBRARY work;
 
+--Warning: dangling IO ipInertedIOPad_FPGA_SLP_WLAN_N
+--Warning: dangling IO ipInertedIOPad_SATAXPCIE0_FPGA
+--Warning: dangling IO ipInertedIOPad_SPI_FP_IO3 (Connected to HOLD# Pin)
+--Warning: dangling IO ipInertedIOPad_V12_MAIN_MON
+--Warning: dangling IO ipInertedIOPad_SLP_S5n
+--Warning: dangling IO ipInertedIOPad_SOC_SPKR
+--Warning: dangling IO ipInertedIOPad_VCCIN_VR_PE
+--Warning: dangling IO ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N (A signal from FPGA that could assert PROCHOT# other than VCCIN_VR_PROCHOT# and VCCINAUX_VR_PROCHOT#)
+--Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_3 
+--Warning: dangling IO ipInertedIOPad_SUSACK_N
+--Warning: dangling IO ipInertedIOPad_GPIO_FPGA_EXP_2
+--Warning: dangling IO ipInertedIOPad_VCCINAUX_VR_PE (EN OFF, PE ON -> Can Configure IMVP9 VR System through PMBUS)
+--Warning: dangling IO ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA
+--Warning: dangling IO ipInertedIOPad_GPIO_FPGA_EXP_1
+--Warning: dangling IO ipInertedIOPad_SATAXPCIE1_FPGA
+--Warning: dangling IO ipInertedIOPad_SPI_FP_IO2
+--Warning: dangling IO ipInertedIOPad_PLTRSTn
+--Warning: dangling IO ipInertedIOPad_SUSWARN_N
+--Warning: dangling IO ipInertedIOPad_TPM_GPIO
+--Warning: dangling IO ipInertedIOPad_CPU_C10_GATE_N
+
+--Warning: dangling IO ipInertedIOPad_SLP_SUSn (when SLP_SUS#=0: PCH is in DEEP Sx State where internal primary power is shut off)
+-- In TensorI20: SLP_SUSn input in FPGA was not connected to anything. but there was SLP_SUSn input in rsmrst_pwrgd_block that was connected to VCC. 
+
+--Warning: dangling IO ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA
+--Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_2
+--Warning: dangling IO ipInertedIOPad_PWRBTNn
+--Warning: dangling IO ipInertedIOPad_SLP_S0n
+--Warning: dangling IO ipInertedIOPad_VCCST_OVERRIDE_3V3
+
+
 ENTITY TOP IS
 	PORT (
 		SATAXPCIE0_FPGA : IN STD_LOGIC; --OK

@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=SBCTI22WORK3
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../vpp_vddq.vhd,../vccinaux_vccin_en.vhd,../rsmrst_pwrgd.vhd,../pwrbtn.vhd,../powerled.vhd,../pch_pwrok.vhd,../hda_strap.vhd,../dsw_pwrok.vhd,../counter.vhd,../Top.vhd
+ProjectVFiles=../vpp_vddq.vhd=work,../vccinaux_vccin_en.vhd=work,../rsmrst_pwrgd.vhd=work,../pwrbtn.vhd=work,../powerled.vhd=work,../pch_pwrok.vhd=work,../hda_strap.vhd=work,../dsw_pwrok.vhd=work,../counter.vhd=work,../Top.vhd=work
 ProjectCFiles=
 CurImplementation=SBCTI22WORK3_Implmnt
 Implementations=SBCTI22WORK3_Implmnt
@@ -20,7 +20,7 @@ NetlistFile=SBCTI22WORK3_Implmnt/SBCTI22WORK3.edf
 AdditionalEDIFFile=
 IPEDIFFile=
 DesignLib=SBCTI22WORK3_Implmnt/sbt/netlist/oadb-TOP
-DesignView=_rt
+DesignView=_pl
 DesignCell=TOP
 SynthesisSDCFile=SBCTI22WORK3_Implmnt/SBCTI22WORK3.scf
 UserPinConstraintFile=
