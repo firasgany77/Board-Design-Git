@@ -82,7 +82,7 @@ ENTITY TOP IS
 		SLP_S3n : IN STD_LOGIC; --OK 
 		SLP_S4n : IN STD_LOGIC; --OK
 		SLP_S5n : IN STD_LOGIC; --OK
-		SLP_SUSn : IN STD_LOGIC; --OK
+		SLP_SUSn : IN STD_LOGIC; --OK -- Why Dangling IO ? 
 		FPGA_OSC : IN STD_LOGIC; --OK
 		V1P8A_OK : IN STD_LOGIC; -- OK (V1.8A_OK in Orcad)
 		V1P8A_EN : OUT STD_LOGIC; --OK (V1.8A_EN in OrCAD)
@@ -282,7 +282,7 @@ BEGIN
 		VCCST_CPU_OK => VCCST_CPU_OK,
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
-		SLP_SUSn => VCC,
+		SLP_SUSn => VCC, -- Exit from Deep Sx 
 		clk_100Khz => SYNTHESIZED_WIRE_1,
 		RSMRSTn => SYNTHESIZED_WIRE_5,
 		rsmrst_pwrgd_out => SYNTHESIZED_WIRE_8);

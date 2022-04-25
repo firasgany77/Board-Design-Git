@@ -15820,3 +15820,927 @@ Design Rule Checking Succeeded
 
 DRC Checker run-time: 0 (sec)
 packer succeed.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\packer.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev" "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP" --package QN84 --outdir "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\packer" --translator "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\placer\TOP_pl.sdc" --dst_sdc_file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc" --devicename iCE40LP1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Warning: dangling IO ipInertedIOPad_FPGA_SLP_WLAN_N
+Warning: dangling IO ipInertedIOPad_SATAXPCIE0_FPGA
+Warning: dangling IO ipInertedIOPad_SPI_FP_IO3
+Warning: dangling IO ipInertedIOPad_V12_MAIN_MON
+Warning: dangling IO ipInertedIOPad_SLP_S5n
+Warning: dangling IO ipInertedIOPad_SOC_SPKR
+Warning: dangling IO ipInertedIOPad_VCCIN_VR_PE
+Warning: dangling IO ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N
+Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_3
+Warning: dangling IO ipInertedIOPad_SUSACK_N
+Warning: dangling IO ipInertedIOPad_GPIO_FPGA_EXP_2
+Warning: dangling IO ipInertedIOPad_VCCINAUX_VR_PE
+Warning: dangling IO ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA
+Warning: dangling IO ipInertedIOPad_GPIO_FPGA_EXP_1
+Warning: dangling IO ipInertedIOPad_SATAXPCIE1_FPGA
+Warning: dangling IO ipInertedIOPad_SPI_FP_IO2
+Warning: dangling IO ipInertedIOPad_PLTRSTn
+Warning: dangling IO ipInertedIOPad_SUSWARN_N
+Warning: dangling IO ipInertedIOPad_TPM_GPIO
+Warning: dangling IO ipInertedIOPad_CPU_C10_GATE_N
+Warning: dangling IO ipInertedIOPad_SLP_SUSn
+Warning: dangling IO ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA
+Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_2
+Warning: dangling IO ipInertedIOPad_PWRBTNn
+Warning: dangling IO ipInertedIOPad_SLP_S0n
+Warning: dangling IO ipInertedIOPad_VCCST_OVERRIDE_3V3
+Total HPWL cost is 2880
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SPI_FP_IO3 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SPI_FP_IO2 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SUSACK_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_CPU_C10_GATE_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_FPGA_SLP_WLAN_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCIN_VR_PE (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_PWRBTNn (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SLP_SUSn (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SLP_S5n (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_V12_MAIN_MON (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_EXP_1 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_EXP_2 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SLP_S0n (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SOC_SPKR (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SUSWARN_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCST_OVERRIDE_3V3 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_PLTRSTn (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_SoC_3 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_SoC_2 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCINAUX_VR_PE (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SATAXPCIE0_FPGA (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_TPM_GPIO (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SATAXPCIE1_FPGA (ICE_IO)
+used logic cells: 1128
+Translating sdc file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\placer\TOP_pl.sdc...
+Translated sdc file is C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SPI_FP_IO3 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SPI_FP_IO2 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SUSACK_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_CPU_C10_GATE_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_FPGA_SLP_WLAN_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCIN_VR_PE (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_PWRBTNn (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SLP_SUSn (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SLP_S5n (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_V12_MAIN_MON (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_EXP_1 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_EXP_2 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SLP_S0n (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SOC_SPKR (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SUSWARN_N (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCST_OVERRIDE_3V3 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_PLTRSTn (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_SoC_3 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_GPIO_FPGA_SoC_2 (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCINAUX_VR_PE (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SATAXPCIE0_FPGA (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_TPM_GPIO (ICE_IO)
+Warning: cannot find the IO pin Input/Output direction for ipInertedIOPad_SATAXPCIE1_FPGA (ICE_IO)
+Packer succeeded
+
+Packer run-time: 1 (sec)
+packer succeed.
+
+
+"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev" "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib" "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc" --outdir "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\router" --sdf_file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc --outdir C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\router --sdf_file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design TOP
+Read design time: 0
+I1202: Reading Architecture of device iCE40LP1K
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/in0" to pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/in2" to pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/in3" to pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNILCEN3_15_LC_9_6_3/in2" to pin "b2v_inst5.count_RNILCEN3_15_LC_9_6_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIRFDH3_9_LC_9_5_5/in1" to pin "b2v_inst5.count_RNIRFDH3_9_LC_9_5_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI7BCA2_10_LC_9_5_2/in2" to pin "b2v_inst5.count_RNI7BCA2_10_LC_9_5_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI7BCA2_0_10_LC_9_5_0/in3" to pin "b2v_inst5.count_RNI7BCA2_0_10_LC_9_5_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_13_c_RNI9AQ2_LC_7_6_6/in1" to pin "b2v_inst5.un2_count_1_cry_13_c_RNI9AQ2_LC_7_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/in2" to pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_12_c_RNI7OVC1_LC_8_7_7/in0" to pin "b2v_inst5.un2_count_1_cry_12_c_RNI7OVC1_LC_8_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_11_c_RNI76O2_LC_7_6_4/in1" to pin "b2v_inst5.un2_count_1_cry_11_c_RNI76O2_LC_7_6_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_10_c_RNI5KTC1_LC_7_6_3/in1" to pin "b2v_inst5.un2_count_1_cry_10_c_RNI5KTC1_LC_7_6_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI7BCA2_0_10_LC_9_5_0/in2" to pin "b2v_inst5.count_RNI7BCA2_0_10_LC_9_5_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/in1" to pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_7_c_RNIPCCH3_LC_8_7_1/in0" to pin "b2v_inst5.un2_count_1_cry_7_c_RNIPCCH3_LC_8_7_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/in0" to pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_6_c_RNIQ86K1_LC_7_5_7/in1" to pin "b2v_inst5.un2_count_1_cry_6_c_RNIQ86K1_LC_7_5_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_5_c_RNIP65K1_LC_7_5_6/in1" to pin "b2v_inst5.un2_count_1_cry_5_c_RNIP65K1_LC_7_5_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIJ39H3_5_LC_9_4_7/in2" to pin "b2v_inst5.count_RNIJ39H3_5_LC_9_4_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_3_c_RNIN23K1_LC_8_7_4/in0" to pin "b2v_inst5.un2_count_1_cry_3_c_RNIN23K1_LC_8_7_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIFT6H3_3_LC_9_4_5/in2" to pin "b2v_inst5.count_RNIFT6H3_3_LC_9_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIDQ5H3_2_LC_9_4_3/in2" to pin "b2v_inst5.count_RNIDQ5H3_2_LC_9_4_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIBN4H3_1_LC_9_4_1/in2" to pin "b2v_inst5.count_RNIBN4H3_1_LC_9_4_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIMP4T1_0_LC_8_6_3/in2" to pin "b2v_inst5.count_RNIMP4T1_0_LC_8_6_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_RNIVF6A1_0_LC_9_7_7/in0" to pin "b2v_inst5.curr_state_RNIVF6A1_0_LC_9_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/in3" to pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.curr_state_RNIUCAD1_0_0_LC_9_10_3/in1" to pin "b2v_inst16.curr_state_RNIUCAD1_0_0_LC_9_10_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.curr_state_RNIUCAD1_1_0_LC_4_2_4/in1" to pin "b2v_inst16.curr_state_RNIUCAD1_1_0_LC_4_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_14_c_RNIU1P3_LC_2_4_6/in0" to pin "b2v_inst16.un4_count_1_cry_14_c_RNIU1P3_LC_2_4_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/in2" to pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/in0" to pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_13_c_RNITVN3_LC_2_4_5/in1" to pin "b2v_inst16.un4_count_1_cry_13_c_RNITVN3_LC_2_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/in3" to pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_12_c_RNIHM041_LC_2_4_4/in1" to pin "b2v_inst16.un4_count_1_cry_12_c_RNIHM041_LC_2_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/in2" to pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_11_c_RNIRRL3_LC_2_4_3/in1" to pin "b2v_inst16.un4_count_1_cry_11_c_RNIRRL3_LC_2_4_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/in1" to pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_10_c_RNIQPK3_LC_1_2_4/in0" to pin "b2v_inst16.un4_count_1_cry_10_c_RNIQPK3_LC_1_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI4M8F1_10_LC_5_10_7/in2" to pin "b2v_inst16.count_RNI4M8F1_10_LC_5_10_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNIF7UJ1_3_LC_4_4_7/in1" to pin "b2v_inst16.count_RNIF7UJ1_3_LC_4_4_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_8_c_RNIHUTE_LC_1_1_4/in0" to pin "b2v_inst16.un4_count_1_cry_8_c_RNIHUTE_LC_1_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_7_c_RNIGSSE_LC_1_1_2/in0" to pin "b2v_inst16.un4_count_1_cry_7_c_RNIGSSE_LC_1_1_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/in0" to pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_6_c_RNIFQRE_LC_1_1_0/in0" to pin "b2v_inst16.un4_count_1_cry_6_c_RNIFQRE_LC_1_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_5_c_RNIEOQE_LC_2_3_5/in1" to pin "b2v_inst16.un4_count_1_cry_5_c_RNIEOQE_LC_2_3_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_4_c_RNIDMPE_LC_2_1_4/in0" to pin "b2v_inst16.un4_count_1_cry_4_c_RNIDMPE_LC_2_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_3_c_RNICKOE_LC_2_1_0/in0" to pin "b2v_inst16.un4_count_1_cry_3_c_RNICKOE_LC_2_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/in1" to pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNID4TJ1_0_2_LC_2_2_7/in1" to pin "b2v_inst16.count_RNID4TJ1_0_2_LC_2_2_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI_0_LC_1_3_5/in1" to pin "b2v_inst16.count_RNI_0_LC_1_3_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI1I651_0_LC_2_2_5/in2" to pin "b2v_inst16.count_RNI1I651_0_LC_2_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI_1_LC_1_2_1/in0" to pin "b2v_inst16.count_RNI_1_LC_1_2_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/in0" to pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIUE8EF_1_LC_9_13_3/in2" to pin "b2v_inst11.func_state_RNIUE8EF_1_LC_9_13_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_5_LC_12_10_4/in0" to pin "b2v_inst11.dutycycle_RNI_2_5_LC_12_10_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/in0" to pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNINTLA9_0_LC_12_10_6/in2" to pin "b2v_inst11.dutycycle_RNINTLA9_0_LC_12_10_6/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/in3" to pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/in0" to pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_5_LC_12_10_4/in2" to pin "b2v_inst11.dutycycle_RNI_2_5_LC_12_10_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_0_c_inv_LC_4_11_0/in1" to pin "b2v_inst11.un85_clk_100khz_cry_0_c_inv_LC_4_11_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_0_LC_2_13_4/in1" to pin "b2v_inst11.count_RNI_0_LC_2_13_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_15_c_inv_LC_4_12_7/in1" to pin "b2v_inst11.un85_clk_100khz_cry_15_c_inv_LC_4_12_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.curr_state_RNIOCA3_0_LC_2_13_3/in1" to pin "b2v_inst11.curr_state_RNIOCA3_0_LC_2_13_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/in2" to pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_14_c_inv_LC_4_12_6/in1" to pin "b2v_inst11.un85_clk_100khz_cry_14_c_inv_LC_4_12_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_15_LC_2_15_4/in0" to pin "b2v_inst11.count_RNI_15_LC_2_15_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/in1" to pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/in1" to pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_13_c_inv_LC_4_12_5/in1" to pin "b2v_inst11.un85_clk_100khz_cry_13_c_inv_LC_4_12_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_15_LC_2_15_4/in2" to pin "b2v_inst11.count_RNI_15_LC_2_15_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/in1" to pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/in1" to pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_12_c_inv_LC_4_12_4/in1" to pin "b2v_inst11.un85_clk_100khz_cry_12_c_inv_LC_4_12_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/in1" to pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/in1" to pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_11_c_inv_LC_4_12_3/in1" to pin "b2v_inst11.un85_clk_100khz_cry_11_c_inv_LC_4_12_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/in1" to pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/in1" to pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_10_c_inv_LC_4_12_2/in1" to pin "b2v_inst11.un85_clk_100khz_cry_10_c_inv_LC_4_12_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/in1" to pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/in1" to pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_9_c_inv_LC_4_12_1/in1" to pin "b2v_inst11.un85_clk_100khz_cry_9_c_inv_LC_4_12_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_8_LC_2_15_5/in1" to pin "b2v_inst11.count_RNI_8_LC_2_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/in1" to pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/in1" to pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_8_c_inv_LC_4_12_0/in1" to pin "b2v_inst11.un85_clk_100khz_cry_8_c_inv_LC_4_12_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_8_LC_2_15_5/in0" to pin "b2v_inst11.count_RNI_8_LC_2_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/in1" to pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/in1" to pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_7_c_inv_LC_4_11_7/in1" to pin "b2v_inst11.un85_clk_100khz_cry_7_c_inv_LC_4_11_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_8_LC_2_15_5/in2" to pin "b2v_inst11.count_RNI_8_LC_2_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/in1" to pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/in1" to pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_6_c_inv_LC_4_11_6/in1" to pin "b2v_inst11.un85_clk_100khz_cry_6_c_inv_LC_4_11_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/in1" to pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/in1" to pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_5_c_inv_LC_4_11_5/in1" to pin "b2v_inst11.un85_clk_100khz_cry_5_c_inv_LC_4_11_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/in1" to pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/in1" to pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_4_c_inv_LC_4_11_4/in1" to pin "b2v_inst11.un85_clk_100khz_cry_4_c_inv_LC_4_11_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/in1" to pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/in1" to pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_3_c_inv_LC_4_11_3/in1" to pin "b2v_inst11.un85_clk_100khz_cry_3_c_inv_LC_4_11_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/in1" to pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/in1" to pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_2_c_inv_LC_4_11_2/in1" to pin "b2v_inst11.un85_clk_100khz_cry_2_c_inv_LC_4_11_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/in1" to pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/in1" to pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_1_c_inv_LC_4_11_1/in1" to pin "b2v_inst11.un85_clk_100khz_cry_1_c_inv_LC_4_11_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_1_c_LC_1_15_0/in1" to pin "b2v_inst11.un1_count_cry_1_c_LC_1_15_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_1_LC_1_14_0/in0" to pin "b2v_inst11.count_RNI_1_LC_1_14_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/in1" to pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/in0" to pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/in0" to pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_2_LC_12_10_1/in2" to pin "b2v_inst11.dutycycle_RNI_0_2_LC_12_10_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/in1" to pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/in2" to pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_14_c_RNI7DT63_LC_11_14_6/in0" to pin "b2v_inst11.un3_count_off_1_cry_14_c_RNI7DT63_LC_11_14_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_13_c_RNI6BS63_LC_11_14_5/in1" to pin "b2v_inst11.un3_count_off_1_cry_13_c_RNI6BS63_LC_11_14_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_12_c_RNI59R63_LC_11_14_4/in1" to pin "b2v_inst11.un3_count_off_1_cry_12_c_RNI59R63_LC_11_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNIA74EB_12_LC_12_13_7/in1" to pin "b2v_inst11.count_off_RNIA74EB_12_LC_12_13_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/in2" to pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_10_c_RNI35P63_LC_11_14_2/in1" to pin "b2v_inst11.un3_count_off_1_cry_10_c_RNI35P63_LC_11_14_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/in1" to pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_9_c_RNIRNH33_LC_11_14_1/in1" to pin "b2v_inst11.un3_count_off_1_cry_9_c_RNIRNH33_LC_11_14_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/in0" to pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_8_c_RNIQLG33_LC_11_14_0/in1" to pin "b2v_inst11.un3_count_off_1_cry_8_c_RNIQLG33_LC_11_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/in0" to pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_7_c_RNIPJF33_LC_11_13_7/in1" to pin "b2v_inst11.un3_count_off_1_cry_7_c_RNIPJF33_LC_11_13_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_6_c_RNIOHE33_LC_11_13_6/in1" to pin "b2v_inst11.un3_count_off_1_cry_6_c_RNIOHE33_LC_11_13_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_5_c_RNINFD33_LC_11_13_5/in1" to pin "b2v_inst11.un3_count_off_1_cry_5_c_RNINFD33_LC_11_13_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_4_c_RNIMDC33_LC_11_13_4/in1" to pin "b2v_inst11.un3_count_off_1_cry_4_c_RNIMDC33_LC_11_13_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_3_c_RNILBB33_LC_11_13_3/in1" to pin "b2v_inst11.un3_count_off_1_cry_3_c_RNILBB33_LC_11_13_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_2_c_RNIK9A33_LC_11_13_2/in1" to pin "b2v_inst11.un3_count_off_1_cry_2_c_RNIK9A33_LC_11_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_1_c_RNIJ7933_LC_11_13_1/in1" to pin "b2v_inst11.un3_count_off_1_cry_1_c_RNIJ7933_LC_11_13_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNIL5413_1_LC_11_12_6/in0" to pin "b2v_inst11.count_off_RNIL5413_1_LC_11_12_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNIL5413_0_LC_11_12_0/in1" to pin "b2v_inst11.count_off_RNIL5413_0_LC_11_12_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/in1" to pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/in1" to pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/in0" to pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/in2" to pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/in2" to pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/in2" to pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_13_c_RNIF7DA_LC_8_16_5/in1" to pin "b2v_inst11.un1_count_clk_2_cry_13_c_RNIF7DA_LC_8_16_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_13_c_RNIF7DA_LC_8_16_5/in1" to pin "b2v_inst11.un1_count_clk_2_cry_13_c_RNIF7DA_LC_8_16_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/in0" to pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/in3" to pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_12_c_RNIE5CA_LC_8_16_4/in1" to pin "b2v_inst11.un1_count_clk_2_cry_12_c_RNIE5CA_LC_8_16_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_12_c_RNIE5CA_LC_8_16_4/in1" to pin "b2v_inst11.un1_count_clk_2_cry_12_c_RNIE5CA_LC_8_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_11_c_RNID3BA_LC_8_16_3/in1" to pin "b2v_inst11.un1_count_clk_2_cry_11_c_RNID3BA_LC_8_16_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_11_c_RNID3BA_LC_8_16_3/in1" to pin "b2v_inst11.un1_count_clk_2_cry_11_c_RNID3BA_LC_8_16_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_10_c_RNIC1AA_LC_8_16_2/in1" to pin "b2v_inst11.un1_count_clk_2_cry_10_c_RNIC1AA_LC_8_16_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_10_c_RNIC1AA_LC_8_16_2/in1" to pin "b2v_inst11.un1_count_clk_2_cry_10_c_RNIC1AA_LC_8_16_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_9_c_RNI4MU5_LC_8_16_1/in1" to pin "b2v_inst11.un1_count_clk_2_cry_9_c_RNI4MU5_LC_8_16_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_9_c_RNI4MU5_LC_8_16_1/in1" to pin "b2v_inst11.un1_count_clk_2_cry_9_c_RNI4MU5_LC_8_16_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/in1" to pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIN1E71_2_LC_9_9_6/in1" to pin "b2v_inst11.dutycycle_RNIN1E71_2_LC_9_9_6/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIAA6Q3_1_LC_11_11_6/in2" to pin "b2v_inst11.dutycycle_RNIAA6Q3_1_LC_11_11_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/in1" to pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/in1" to pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/in3" to pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIICTM5_0_LC_8_13_1/in3" to pin "b2v_inst11.func_state_RNIICTM5_0_LC_8_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_6_c_RNI1GR5_LC_8_15_6/in1" to pin "b2v_inst11.un1_count_clk_2_cry_6_c_RNI1GR5_LC_8_15_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI111J_7_LC_9_16_0/in3" to pin "b2v_inst11.count_clk_RNI111J_7_LC_9_16_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/in2" to pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/in2" to pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNINIV94_0_LC_9_12_1/in3" to pin "b2v_inst11.func_state_RNINIV94_0_LC_9_12_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_5_c_RNI0EQ5_LC_8_15_5/in1" to pin "b2v_inst11.un1_count_clk_2_cry_5_c_RNI0EQ5_LC_8_15_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIVTVI_6_LC_8_14_6/in3" to pin "b2v_inst11.count_clk_RNIVTVI_6_LC_8_14_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/in0" to pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/in1" to pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_3_c_RNIU9O5_LC_8_15_3/in1" to pin "b2v_inst11.un1_count_clk_2_cry_3_c_RNIU9O5_LC_8_15_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIRNTI_4_LC_8_14_4/in3" to pin "b2v_inst11.count_clk_RNIRNTI_4_LC_8_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/in3" to pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_2_c_RNIT7N5_LC_8_15_2/in1" to pin "b2v_inst11.un1_count_clk_2_cry_2_c_RNIT7N5_LC_8_15_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIPKSI_3_LC_8_14_2/in3" to pin "b2v_inst11.count_clk_RNIPKSI_3_LC_8_14_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_1_c_RNIS5M5_LC_8_15_1/in1" to pin "b2v_inst11.un1_count_clk_2_cry_1_c_RNIS5M5_LC_8_15_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNINHRI_2_LC_8_14_0/in3" to pin "b2v_inst11.count_clk_RNINHRI_2_LC_8_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIVFGI_15_LC_7_16_3/in1" to pin "b2v_inst11.count_clk_RNIVFGI_15_LC_7_16_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/in0" to pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIQA5D_1_LC_7_15_6/in1" to pin "b2v_inst11.count_clk_RNIQA5D_1_LC_7_15_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/in1" to pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_4_c_RNIVBP5_LC_8_15_4/in1" to pin "b2v_inst11.un1_count_clk_2_cry_4_c_RNIVBP5_LC_8_15_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNITQUI_5_LC_7_15_4/in3" to pin "b2v_inst11.count_clk_RNITQUI_5_LC_7_15_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_1_LC_7_15_2/in2" to pin "b2v_inst11.count_clk_RNI_1_LC_7_15_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI573J_9_LC_7_15_1/in1" to pin "b2v_inst11.count_clk_RNI573J_9_LC_7_15_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/in1" to pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/in1" to pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/in2" to pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_7_c_RNI2IS5_LC_8_15_7/in1" to pin "b2v_inst11.un1_count_clk_2_cry_7_c_RNI2IS5_LC_8_15_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI342J_8_LC_7_14_2/in3" to pin "b2v_inst11.count_clk_RNI342J_8_LC_7_14_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIT35D7_4_LC_7_9_6/in2" to pin "b2v_inst11.dutycycle_RNIT35D7_4_LC_7_9_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIKLI69_15_LC_7_10_0/in2" to pin "b2v_inst11.dutycycle_RNIKLI69_15_LC_7_10_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_14_c_RNIVVT5_LC_7_8_7/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_14_c_RNIVVT5_LC_7_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/in3" to pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/in2" to pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_13_c_RNIUTS5_LC_7_8_6/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_13_c_RNIUTS5_LC_7_8_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIIIH69_14_LC_7_10_6/in2" to pin "b2v_inst11.dutycycle_RNIIIH69_14_LC_7_10_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIGFG69_13_LC_6_7_0/in2" to pin "b2v_inst11.dutycycle_RNIGFG69_13_LC_6_7_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_12_c_RNITRR5_LC_7_8_5/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_12_c_RNITRR5_LC_7_8_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIHFVH5_12_LC_8_8_4/in3" to pin "b2v_inst11.dutycycle_RNIHFVH5_12_LC_8_8_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/in0" to pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIFCUH5_11_LC_8_8_7/in2" to pin "b2v_inst11.dutycycle_RNIFCUH5_11_LC_8_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/in1" to pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_10_c_RNI8IUF1_LC_7_8_3/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_10_c_RNI8IUF1_LC_7_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_9_c_RNI0OBJ1_LC_7_8_2/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_9_c_RNI0OBJ1_LC_7_8_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI3ER99_10_LC_5_6_2/in3" to pin "b2v_inst11.dutycycle_RNI3ER99_10_LC_5_6_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIQ9K59_9_LC_5_6_4/in3" to pin "b2v_inst11.dutycycle_RNIQ9K59_9_LC_5_6_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_8_c_RNIVLAJ1_LC_7_8_1/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_8_c_RNIVLAJ1_LC_7_8_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIO6J59_8_LC_6_6_1/in2" to pin "b2v_inst11.dutycycle_RNIO6J59_8_LC_6_6_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_7_c_RNIUJ9J1_LC_7_8_0/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_7_c_RNIUJ9J1_LC_7_8_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIRH7VD_7_LC_4_5_1/in2" to pin "b2v_inst11.dutycycle_RNIRH7VD_7_LC_4_5_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_6_c_RNIGN39_LC_7_7_7/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_6_c_RNIGN39_LC_7_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIBGDMD_6_LC_7_11_3/in3" to pin "b2v_inst11.dutycycle_RNIBGDMD_6_LC_7_11_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIFNB2O_5_LC_7_11_7/in3" to pin "b2v_inst11.dutycycle_RNIFNB2O_5_LC_7_11_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIGQE59_4_LC_6_7_3/in3" to pin "b2v_inst11.dutycycle_RNIGQE59_4_LC_6_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIANKU4_3_LC_7_9_0/in3" to pin "b2v_inst11.dutycycle_RNIANKU4_3_LC_7_9_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI61IA9_3_LC_7_9_1/in2" to pin "b2v_inst11.dutycycle_RNI61IA9_3_LC_7_9_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/in0" to pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIDQ4A1_6_LC_9_9_3/in2" to pin "b2v_inst11.count_clk_RNIDQ4A1_6_LC_9_9_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/in2" to pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNII5M67_2_LC_11_9_3/in2" to pin "b2v_inst11.dutycycle_RNII5M67_2_LC_11_9_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIB6O76_1_LC_11_11_1/in2" to pin "b2v_inst11.dutycycle_RNIB6O76_1_LC_11_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI0QQU5_0_LC_11_11_4/in2" to pin "b2v_inst11.dutycycle_RNI0QQU5_0_LC_11_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIAA6Q3_0_LC_11_11_3/in2" to pin "b2v_inst11.dutycycle_RNIAA6Q3_0_LC_11_11_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/in2" to pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/in3" to pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/in1" to pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI8H551_1_LC_8_12_7/in2" to pin "b2v_inst11.func_state_RNI8H551_1_LC_8_12_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/in2" to pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIANKU4_12_LC_8_8_2/in2" to pin "b2v_inst11.dutycycle_RNIANKU4_12_LC_8_8_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/in3" to pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIP95D_0_LC_8_13_2/in3" to pin "b2v_inst11.count_clk_RNIP95D_0_LC_8_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/in3" to pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIHVOG4_1_LC_9_13_5/in1" to pin "b2v_inst11.func_state_RNIHVOG4_1_LC_9_13_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIDQ4A1_0_0_LC_9_11_2/in2" to pin "b2v_inst11.func_state_RNIDQ4A1_0_0_LC_9_11_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_6_5_LC_8_11_5/in1" to pin "b2v_inst11.dutycycle_RNI_6_5_LC_8_11_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIHVOG4_1_LC_9_13_5/in3" to pin "b2v_inst11.func_state_RNIHVOG4_1_LC_9_13_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNICO933_12_LC_8_8_3/in3" to pin "b2v_inst11.dutycycle_RNICO933_12_LC_8_8_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/in2" to pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/in0" to pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI3NQD_1_LC_8_11_6/in1" to pin "b2v_inst11.func_state_RNI3NQD_1_LC_8_11_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIDQ4A1_0_0_LC_9_11_2/in3" to pin "b2v_inst11.func_state_RNIDQ4A1_0_0_LC_9_11_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/in1" to pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m11_0_LC_5_2_2/in3" to pin "b2v_inst200.curr_state_13_2_0__m11_0_LC_5_2_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/in1" to pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/in0" to pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m11_0_a2_0_LC_5_1_2/in0" to pin "b2v_inst200.curr_state_13_2_0__m11_0_a2_0_LC_5_1_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/in2" to pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m8_i_LC_5_1_5/in2" to pin "b2v_inst200.curr_state_13_2_0__m8_i_LC_5_1_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI_0_LC_1_8_2/in1" to pin "b2v_inst200.count_RNI_0_LC_1_8_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_16_c_RNI9M89_LC_1_8_0/in0" to pin "b2v_inst200.un2_count_1_cry_16_c_RNI9M89_LC_1_8_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/in2" to pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_15_c_RNI8K79_LC_1_7_7/in1" to pin "b2v_inst200.un2_count_1_cry_15_c_RNI8K79_LC_1_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/in0" to pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_14_c_RNI96R71_LC_1_7_6/in1" to pin "b2v_inst200.un2_count_1_cry_14_c_RNI96R71_LC_1_7_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/in3" to pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_13_c_RNI6G59_LC_1_7_5/in1" to pin "b2v_inst200.un2_count_1_cry_13_c_RNI6G59_LC_1_7_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_12_c_RNI5E49_LC_1_7_4/in1" to pin "b2v_inst200.un2_count_1_cry_12_c_RNI5E49_LC_1_7_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/in2" to pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_11_c_RNI4C39_LC_1_7_3/in1" to pin "b2v_inst200.un2_count_1_cry_11_c_RNI4C39_LC_1_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_10_c_RNI3A29_LC_1_7_2/in1" to pin "b2v_inst200.un2_count_1_cry_10_c_RNI3A29_LC_1_7_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/in1" to pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_9_c_RNIR75E_LC_1_7_1/in1" to pin "b2v_inst200.un2_count_1_cry_9_c_RNIR75E_LC_1_7_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_8_c_RNIQ54E_LC_1_7_0/in1" to pin "b2v_inst200.un2_count_1_cry_8_c_RNIQ54E_LC_1_7_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_7_c_RNIP33E_LC_1_6_7/in1" to pin "b2v_inst200.un2_count_1_cry_7_c_RNIP33E_LC_1_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/in2" to pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_6_c_RNIO12E_LC_1_6_6/in1" to pin "b2v_inst200.un2_count_1_cry_6_c_RNIO12E_LC_1_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_5_c_RNINV0E_LC_1_6_5/in1" to pin "b2v_inst200.un2_count_1_cry_5_c_RNINV0E_LC_1_6_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/in1" to pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_4_c_RNIMTVD_LC_1_6_4/in1" to pin "b2v_inst200.un2_count_1_cry_4_c_RNIMTVD_LC_1_6_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/in0" to pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_3_c_RNILRUD_LC_1_6_3/in1" to pin "b2v_inst200.un2_count_1_cry_3_c_RNILRUD_LC_1_6_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_2_c_RNIKPTD_LC_1_6_2/in1" to pin "b2v_inst200.un2_count_1_cry_2_c_RNIKPTD_LC_1_6_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_1_c_RNIJNSD_LC_1_6_1/in1" to pin "b2v_inst200.un2_count_1_cry_1_c_RNIJNSD_LC_1_6_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI_1_LC_1_4_5/in1" to pin "b2v_inst200.count_RNI_1_LC_1_4_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/in3" to pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/in1" to pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/in0" to pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/in0" to pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/in1" to pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_14_c_RNI18TP1_LC_11_2_6/in0" to pin "b2v_inst6.un2_count_1_cry_14_c_RNI18TP1_LC_11_2_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/in0" to pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_13_c_RNI06SP1_LC_11_2_5/in1" to pin "b2v_inst6.un2_count_1_cry_13_c_RNI06SP1_LC_11_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_12_c_RNIV3RP1_LC_11_2_4/in1" to pin "b2v_inst6.un2_count_1_cry_12_c_RNIV3RP1_LC_11_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_11_c_RNIU1QP1_LC_11_2_3/in1" to pin "b2v_inst6.un2_count_1_cry_11_c_RNIU1QP1_LC_11_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/in2" to pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNITDBO3_0_1_LC_12_4_2/in1" to pin "b2v_inst6.count_RNITDBO3_0_1_LC_12_4_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_10_c_RNITVOP1_LC_12_3_5/in0" to pin "b2v_inst6.un2_count_1_cry_10_c_RNITVOP1_LC_12_3_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_9_c_RNILPGI1_LC_11_2_1/in1" to pin "b2v_inst6.un2_count_1_cry_9_c_RNILPGI1_LC_11_2_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_8_c_RNIKNFI1_LC_11_5_2/in0" to pin "b2v_inst6.un2_count_1_cry_8_c_RNIKNFI1_LC_11_5_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIOD8DF_1_LC_12_4_3/in1" to pin "b2v_inst6.count_RNIOD8DF_1_LC_12_4_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_7_c_RNIJLEI1_LC_11_5_5/in0" to pin "b2v_inst6.un2_count_1_cry_7_c_RNIJLEI1_LC_11_5_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIOD8DF_1_LC_12_4_3/in2" to pin "b2v_inst6.count_RNIOD8DF_1_LC_12_4_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_6_c_RNIIJDI1_LC_11_3_6/in0" to pin "b2v_inst6.un2_count_1_cry_6_c_RNIIJDI1_LC_11_3_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_5_c_RNIRAT3_LC_11_1_5/in1" to pin "b2v_inst6.un2_count_1_cry_5_c_RNIRAT3_LC_11_1_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_4_c_RNIGFBI1_LC_12_3_2/in0" to pin "b2v_inst6.un2_count_1_cry_4_c_RNIGFBI1_LC_12_3_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_3_c_RNIFDAI1_LC_12_1_0/in0" to pin "b2v_inst6.un2_count_1_cry_3_c_RNIFDAI1_LC_12_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIOD8DF_1_LC_12_4_3/in3" to pin "b2v_inst6.count_RNIOD8DF_1_LC_12_4_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_2_c_RNIEB9I1_LC_12_1_4/in0" to pin "b2v_inst6.un2_count_1_cry_2_c_RNIEB9I1_LC_12_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_1_c_RNID98I1_LC_11_1_1/in1" to pin "b2v_inst6.un2_count_1_cry_1_c_RNID98I1_LC_11_1_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIM6FE1_0_LC_12_3_7/in1" to pin "b2v_inst6.count_RNIM6FE1_0_LC_12_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/in1" to pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/in1" to pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/in3" to pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_RNIM6FE1_1_LC_11_6_7/in1" to pin "b2v_inst6.curr_state_RNIM6FE1_1_LC_11_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/in0" to pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/in2" to pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/in2" to pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/in0" to pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m6_i_LC_9_7_1/in0" to pin "b2v_inst5.curr_state_7_1_0__m6_i_LC_9_7_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m4_0_a2_LC_9_6_5/in1" to pin "b2v_inst5.curr_state_7_1_0__m4_0_a2_LC_9_6_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_RNIVF6A1_0_LC_9_7_7/in1" to pin "b2v_inst5.curr_state_RNIVF6A1_0_LC_9_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/in1" to pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in0" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in3" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in3" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in3" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_14_c_RNIP64C_LC_8_4_7/in0" to pin "b2v_inst36.un2_count_1_cry_14_c_RNIP64C_LC_8_4_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in2" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in2" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_13_c_RNIO43C_LC_8_4_6/in1" to pin "b2v_inst36.un2_count_1_cry_13_c_RNIO43C_LC_8_4_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_12_c_RNIN22C_LC_8_4_5/in1" to pin "b2v_inst36.un2_count_1_cry_12_c_RNIN22C_LC_8_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNIPRQ41_0_12_LC_9_3_7/in3" to pin "b2v_inst36.count_RNIPRQ41_0_12_LC_9_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_11_c_RNIFSRG1_LC_8_4_4/in1" to pin "b2v_inst36.un2_count_1_cry_11_c_RNIFSRG1_LC_8_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNIR03I1_9_LC_11_4_5/in2" to pin "b2v_inst36.count_RNIR03I1_9_LC_11_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in0" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in0" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_10_c_RNILUVB_LC_7_1_2/in0" to pin "b2v_inst36.un2_count_1_cry_10_c_RNILUVB_LC_7_1_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/in3" to pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in1" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in1" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/in1" to pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_7_c_RNIB1UI_LC_8_2_6/in0" to pin "b2v_inst36.un2_count_1_cry_7_c_RNIB1UI_LC_8_2_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_6_c_RNIAVSI_LC_8_2_1/in0" to pin "b2v_inst36.un2_count_1_cry_6_c_RNIAVSI_LC_8_2_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/in1" to pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_5_c_RNILNVH1_LC_8_3_6/in1" to pin "b2v_inst36.un2_count_1_cry_5_c_RNILNVH1_LC_8_3_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_4_c_RNI8RQI_LC_8_2_3/in0" to pin "b2v_inst36.un2_count_1_cry_4_c_RNI8RQI_LC_8_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_3_c_RNI7PPI_LC_8_3_4/in1" to pin "b2v_inst36.un2_count_1_cry_3_c_RNI7PPI_LC_8_3_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/in0" to pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_2_c_RNI6NOI_LC_8_1_1/in0" to pin "b2v_inst36.un2_count_1_cry_2_c_RNI6NOI_LC_8_1_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_1_c_RNI5LNI_LC_8_1_4/in0" to pin "b2v_inst36.un2_count_1_cry_1_c_RNI5LNI_LC_8_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_0_c_RNI4JMI_LC_8_3_1/in1" to pin "b2v_inst36.un2_count_1_cry_0_c_RNI4JMI_LC_8_3_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI1FG91_0_LC_7_1_7/in1" to pin "b2v_inst36.count_RNI1FG91_0_LC_7_1_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNIR03I1_9_LC_11_4_5/in1" to pin "b2v_inst36.count_RNIR03I1_9_LC_11_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNIPRQ41_0_12_LC_9_3_7/in2" to pin "b2v_inst36.count_RNIPRQ41_0_12_LC_9_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI4VQN1_10_LC_9_2_6/in1" to pin "b2v_inst36.count_RNI4VQN1_10_LC_9_2_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/in2" to pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/in1" to pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/in0" to pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.curr_state_7_1_0__m4_LC_9_1_0/in0" to pin "b2v_inst36.curr_state_7_1_0__m4_LC_9_1_0/ltout" to break the combinatorial loop
+Read device time: 2
+I1209: Started routing
+I1223: Total Nets : 1537 
+I1212: Iteration  1 :   462 unrouted : 1 seconds
+I1212: Iteration  2 :   163 unrouted : 1 seconds
+I1212: Iteration  3 :   120 unrouted : 0 seconds
+I1212: Iteration  4 :   115 unrouted : 1 seconds
+I1212: Iteration  5 :    72 unrouted : 0 seconds
+I1212: Iteration  6 :    62 unrouted : 0 seconds
+I1212: Iteration  7 :    49 unrouted : 0 seconds
+I1212: Iteration  8 :    28 unrouted : 0 seconds
+I1212: Iteration  9 :    23 unrouted : 0 seconds
+I1212: Iteration 10 :    19 unrouted : 0 seconds
+I1212: Iteration 11 :    19 unrouted : 1 seconds
+I1212: Iteration 12 :    17 unrouted : 0 seconds
+I1212: Iteration 13 :    17 unrouted : 0 seconds
+I1212: Iteration 14 :    11 unrouted : 0 seconds
+I1212: Iteration 15 :    10 unrouted : 0 seconds
+I1212: Iteration 16 :     7 unrouted : 0 seconds
+I1212: Iteration 17 :     6 unrouted : 0 seconds
+I1212: Iteration 18 :     5 unrouted : 0 seconds
+I1212: Iteration 19 :     4 unrouted : 0 seconds
+I1212: Iteration 20 :     3 unrouted : 0 seconds
+I1212: Iteration 21 :     2 unrouted : 0 seconds
+I1212: Iteration 22 :     2 unrouted : 0 seconds
+I1212: Iteration 23 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 4
+I1206: Completed routing
+I1204: Writing Design TOP
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 7 seconds
+router succeed.
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\netlister.exe" --verilog "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.v" --vhdl "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt/sbt/outputs/simulation_netlist\TOP_sbt.vhd" --lib "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP" --view rt --device "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc" --out-sdc-file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\netlister\TOP_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.v
+Writing C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt/sbt/outputs/simulation_netlist\TOP_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 7 (sec)
+netlist succeed.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP" --lib-file "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib" --sdc-file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\netlister\TOP_sbt.sdc" --sdf-file "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf" --report-file "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\timer\TOP_timing.rpt" --device-file "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib --sdc-file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\netlister\TOP_sbt.sdc --sdf-file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf --report-file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\timer\TOP_timing.rpt --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Warning-1034: Found non-unate timing arc, from pin "PADIN" to pin "DIN0" of instance "ipInertedIOPad_FPGA_OSC_preio", in the clock network. Converting the timing arc to positive-unate
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNILCEN3_15_LC_9_6_3/in0" to pin "b2v_inst5.count_RNILCEN3_15_LC_9_6_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_RNIRH7S1_0_LC_9_6_2/in2" to pin "b2v_inst5.curr_state_RNIRH7S1_0_LC_9_6_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIMP4T1_0_0_LC_8_6_7/in2" to pin "b2v_inst5.count_RNIMP4T1_0_0_LC_8_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_13_c_RNI9AQ2_LC_7_6_6/in1" to pin "b2v_inst5.un2_count_1_cry_13_c_RNI9AQ2_LC_7_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_12_c_RNI7OVC1_LC_8_7_7/in3" to pin "b2v_inst5.un2_count_1_cry_12_c_RNI7OVC1_LC_8_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/in0" to pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_11_c_RNI76O2_LC_7_6_4/in1" to pin "b2v_inst5.un2_count_1_cry_11_c_RNI76O2_LC_7_6_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIMP4T1_0_0_LC_8_6_7/in3" to pin "b2v_inst5.count_RNIMP4T1_0_0_LC_8_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_10_c_RNI5KTC1_LC_7_6_3/in1" to pin "b2v_inst5.un2_count_1_cry_10_c_RNI5KTC1_LC_7_6_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI3QEK5_11_LC_9_5_4/in0" to pin "b2v_inst5.count_RNI3QEK5_11_LC_9_5_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_9_c_RNI4QLU3_LC_9_5_7/in3" to pin "b2v_inst5.un2_count_1_cry_9_c_RNI4QLU3_LC_9_5_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/in2" to pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/in0" to pin "b2v_inst5.un2_count_1_cry_8_c_RNISC8K1_LC_9_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_7_c_RNIPCCH3_LC_8_7_1/in2" to pin "b2v_inst5.un2_count_1_cry_7_c_RNIPCCH3_LC_8_7_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/in1" to pin "b2v_inst5.count_RNI870S9_8_LC_9_5_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_6_c_RNIQ86K1_LC_7_5_7/in1" to pin "b2v_inst5.un2_count_1_cry_6_c_RNIQ86K1_LC_7_5_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_5_c_RNIP65K1_LC_7_5_6/in1" to pin "b2v_inst5.un2_count_1_cry_5_c_RNIP65K1_LC_7_5_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI3QEK5_11_LC_9_5_4/in3" to pin "b2v_inst5.count_RNI3QEK5_11_LC_9_5_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_4_c_RNIO44K1_LC_7_5_5/in1" to pin "b2v_inst5.un2_count_1_cry_4_c_RNIO44K1_LC_7_5_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNI3QEK5_11_LC_9_5_4/in1" to pin "b2v_inst5.count_RNI3QEK5_11_LC_9_5_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_3_c_RNIN23K1_LC_8_7_4/in1" to pin "b2v_inst5.un2_count_1_cry_3_c_RNIN23K1_LC_8_7_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_2_c_RNIM02K1_LC_7_5_3/in2" to pin "b2v_inst5.un2_count_1_cry_2_c_RNIM02K1_LC_7_5_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.un2_count_1_cry_1_c_RNILU0K1_LC_7_5_2/in1" to pin "b2v_inst5.un2_count_1_cry_1_c_RNILU0K1_LC_7_5_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIBN4H3_1_LC_9_4_1/in1" to pin "b2v_inst5.count_RNIBN4H3_1_LC_9_4_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIMP4T1_0_LC_8_6_3/in0" to pin "b2v_inst5.count_RNIMP4T1_0_LC_8_6_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.count_RNIMP4T1_0_0_LC_8_6_7/in1" to pin "b2v_inst5.count_RNIMP4T1_0_0_LC_8_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.curr_state_RNIOCA3_0_LC_2_13_3/in3" to pin "b2v_inst11.curr_state_RNIOCA3_0_LC_2_13_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_8_LC_2_15_5/in3" to pin "b2v_inst11.count_RNI_8_LC_2_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/in1" to pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/in1" to pin "b2v_inst11.un1_count_cry_3_c_RNIKMSD_LC_1_15_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_4_c_inv_LC_4_11_4/in2" to pin "b2v_inst11.un85_clk_100khz_cry_4_c_inv_LC_4_11_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/in1" to pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/in1" to pin "b2v_inst11.un1_count_cry_5_c_RNIMQUD_LC_1_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_6_c_inv_LC_4_11_6/in1" to pin "b2v_inst11.un85_clk_100khz_cry_6_c_inv_LC_4_11_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_8_LC_2_15_5/in1" to pin "b2v_inst11.count_RNI_8_LC_2_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/in1" to pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/in1" to pin "b2v_inst11.un1_count_cry_7_c_RNIOU0E_LC_1_15_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_8_c_inv_LC_4_12_0/in2" to pin "b2v_inst11.un85_clk_100khz_cry_8_c_inv_LC_4_12_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/in2" to pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/in2" to pin "b2v_inst11.un1_count_cry_1_c_RNIIIQD_LC_1_15_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_2_c_inv_LC_4_11_2/in2" to pin "b2v_inst11.un85_clk_100khz_cry_2_c_inv_LC_4_11_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_8_LC_2_15_5/in0" to pin "b2v_inst11.count_RNI_8_LC_2_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/in1" to pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/in1" to pin "b2v_inst11.un1_count_cry_8_c_RNIP02E_LC_1_16_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_9_c_inv_LC_4_12_1/in2" to pin "b2v_inst11.un85_clk_100khz_cry_9_c_inv_LC_4_12_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/in1" to pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/in1" to pin "b2v_inst11.un1_count_cry_10_c_RNI24R6_LC_1_16_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_11_c_inv_LC_4_12_3/in2" to pin "b2v_inst11.un85_clk_100khz_cry_11_c_inv_LC_4_12_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_15_LC_2_15_4/in2" to pin "b2v_inst11.count_RNI_15_LC_2_15_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/in1" to pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/in1" to pin "b2v_inst11.un1_count_cry_12_c_RNI48T6_LC_1_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_13_c_inv_LC_4_12_5/in2" to pin "b2v_inst11.un85_clk_100khz_cry_13_c_inv_LC_4_12_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/in0" to pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/in1" to pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/in1" to pin "b2v_inst11.un1_count_cry_11_c_RNI36S6_LC_1_16_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_12_c_inv_LC_4_12_4/in2" to pin "b2v_inst11.un85_clk_100khz_cry_12_c_inv_LC_4_12_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/in1" to pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/in1" to pin "b2v_inst11.un1_count_cry_9_c_RNIQ23E_LC_1_16_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_10_c_inv_LC_4_12_2/in2" to pin "b2v_inst11.un85_clk_100khz_cry_10_c_inv_LC_4_12_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_15_LC_2_15_4/in0" to pin "b2v_inst11.count_RNI_15_LC_2_15_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/in1" to pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/in1" to pin "b2v_inst11.un1_count_cry_13_c_RNI5AU6_LC_1_16_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_14_c_inv_LC_4_12_6/in2" to pin "b2v_inst11.un85_clk_100khz_cry_14_c_inv_LC_4_12_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/in1" to pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/in1" to pin "b2v_inst11.un1_count_cry_2_c_RNIJKRD_LC_1_15_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_3_c_inv_LC_4_11_3/in2" to pin "b2v_inst11.un85_clk_100khz_cry_3_c_inv_LC_4_11_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/in1" to pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/in1" to pin "b2v_inst11.un1_count_cry_4_c_RNILOTD_LC_1_15_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_5_c_inv_LC_4_11_5/in2" to pin "b2v_inst11.un85_clk_100khz_cry_5_c_inv_LC_4_11_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/in1" to pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/in1" to pin "b2v_inst11.un1_count_cry_6_c_RNINSVD_LC_1_15_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_7_c_inv_LC_4_11_7/in1" to pin "b2v_inst11.un85_clk_100khz_cry_7_c_inv_LC_4_11_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_1_LC_1_14_0/in0" to pin "b2v_inst11.count_RNI_1_LC_1_14_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_1_c_LC_1_15_0/in2" to pin "b2v_inst11.un1_count_cry_1_c_LC_1_15_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_1_c_inv_LC_4_11_1/in1" to pin "b2v_inst11.un85_clk_100khz_cry_1_c_inv_LC_4_11_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/in3" to pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/in1" to pin "b2v_inst11.un1_count_cry_14_c_RNI6CV6_LC_1_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_15_c_inv_LC_4_12_7/in2" to pin "b2v_inst11.un85_clk_100khz_cry_15_c_inv_LC_4_12_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_RNI_0_LC_2_13_4/in0" to pin "b2v_inst11.count_RNI_0_LC_2_13_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_0_c_inv_LC_4_11_0/in1" to pin "b2v_inst11.un85_clk_100khz_cry_0_c_inv_LC_4_11_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/in1" to pin "b2v_inst11.un85_clk_100khz_cry_15_c_RNI_LC_2_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIKLI69_15_LC_7_10_0/in2" to pin "b2v_inst11.dutycycle_RNIKLI69_15_LC_7_10_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_14_c_RNIVVT5_LC_7_8_7/in0" to pin "b2v_inst11.un1_dutycycle_94_cry_14_c_RNIVVT5_LC_7_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/in1" to pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/in3" to pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIDHTPG_0_LC_9_11_6/in3" to pin "b2v_inst11.func_state_RNIDHTPG_0_LC_9_11_6/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIICTM5_0_LC_8_13_1/in3" to pin "b2v_inst11.func_state_RNIICTM5_0_LC_8_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/in2" to pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/in0" to pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/in2" to pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_14_c_RNI7DT63_LC_11_14_6/in1" to pin "b2v_inst11.un3_count_off_1_cry_14_c_RNI7DT63_LC_11_14_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/in0" to pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_13_c_RNI6BS63_LC_11_14_5/in1" to pin "b2v_inst11.un3_count_off_1_cry_13_c_RNI6BS63_LC_11_14_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_12_c_RNI59R63_LC_11_14_4/in1" to pin "b2v_inst11.un3_count_off_1_cry_12_c_RNI59R63_LC_11_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNIA74EB_12_LC_12_13_7/in0" to pin "b2v_inst11.count_off_RNIA74EB_12_LC_12_13_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_10_c_RNI35P63_LC_11_14_2/in1" to pin "b2v_inst11.un3_count_off_1_cry_10_c_RNI35P63_LC_11_14_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/in0" to pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_9_c_RNIRNH33_LC_11_14_1/in2" to pin "b2v_inst11.un3_count_off_1_cry_9_c_RNIRNH33_LC_11_14_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/in1" to pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/in2" to pin "b2v_inst11.count_off_RNI_9_LC_12_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_8_c_RNIQLG33_LC_11_14_0/in1" to pin "b2v_inst11.un3_count_off_1_cry_8_c_RNIQLG33_LC_11_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_7_c_RNIPJF33_LC_11_13_7/in1" to pin "b2v_inst11.un3_count_off_1_cry_7_c_RNIPJF33_LC_11_13_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/in1" to pin "b2v_inst11.count_off_RNI_0_1_LC_12_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_6_c_RNIOHE33_LC_11_13_6/in1" to pin "b2v_inst11.un3_count_off_1_cry_6_c_RNIOHE33_LC_11_13_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_5_c_RNINFD33_LC_11_13_5/in1" to pin "b2v_inst11.un3_count_off_1_cry_5_c_RNINFD33_LC_11_13_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_4_c_RNIMDC33_LC_11_13_4/in1" to pin "b2v_inst11.un3_count_off_1_cry_4_c_RNIMDC33_LC_11_13_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_3_c_RNILBB33_LC_11_13_3/in1" to pin "b2v_inst11.un3_count_off_1_cry_3_c_RNILBB33_LC_11_13_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_2_c_RNIK9A33_LC_11_13_2/in1" to pin "b2v_inst11.un3_count_off_1_cry_2_c_RNIK9A33_LC_11_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un3_count_off_1_cry_1_c_RNIJ7933_LC_11_13_1/in1" to pin "b2v_inst11.un3_count_off_1_cry_1_c_RNIJ7933_LC_11_13_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNIL5413_1_LC_11_12_6/in1" to pin "b2v_inst11.count_off_RNIL5413_1_LC_11_12_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_off_RNIL5413_0_LC_11_12_0/in1" to pin "b2v_inst11.count_off_RNIL5413_0_LC_11_12_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNINIV94_0_LC_9_12_1/in2" to pin "b2v_inst11.func_state_RNINIV94_0_LC_9_12_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_2_c_RNIT7N5_LC_8_15_2/in1" to pin "b2v_inst11.un1_count_clk_2_cry_2_c_RNIT7N5_LC_8_15_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIPKSI_3_LC_8_14_2/in0" to pin "b2v_inst11.count_clk_RNIPKSI_3_LC_8_14_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/in2" to pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/in0" to pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_5_c_RNI0EQ5_LC_8_15_5/in2" to pin "b2v_inst11.un1_count_clk_2_cry_5_c_RNI0EQ5_LC_8_15_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIVTVI_6_LC_8_14_6/in2" to pin "b2v_inst11.count_clk_RNIVTVI_6_LC_8_14_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_1_c_RNIS5M5_LC_8_15_1/in1" to pin "b2v_inst11.un1_count_clk_2_cry_1_c_RNIS5M5_LC_8_15_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNINHRI_2_LC_8_14_0/in2" to pin "b2v_inst11.count_clk_RNINHRI_2_LC_8_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_3_c_RNIU9O5_LC_8_15_3/in2" to pin "b2v_inst11.un1_count_clk_2_cry_3_c_RNIU9O5_LC_8_15_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIRNTI_4_LC_8_14_4/in2" to pin "b2v_inst11.count_clk_RNIRNTI_4_LC_8_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_7_c_RNI2IS5_LC_8_15_7/in1" to pin "b2v_inst11.un1_count_clk_2_cry_7_c_RNI2IS5_LC_8_15_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI342J_8_LC_7_14_2/in2" to pin "b2v_inst11.count_clk_RNI342J_8_LC_7_14_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/in1" to pin "b2v_inst11.count_clk_RNI_0_1_LC_7_14_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/in1" to pin "b2v_inst11.count_clk_RNI_6_LC_7_14_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_6_c_RNI1GR5_LC_8_15_6/in1" to pin "b2v_inst11.un1_count_clk_2_cry_6_c_RNI1GR5_LC_8_15_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI111J_7_LC_9_16_0/in2" to pin "b2v_inst11.count_clk_RNI111J_7_LC_9_16_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/in1" to pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_9_c_RNI4MU5_LC_8_16_1/in1" to pin "b2v_inst11.un1_count_clk_2_cry_9_c_RNI4MU5_LC_8_16_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIEN0E_10_LC_9_16_2/in2" to pin "b2v_inst11.count_clk_RNIEN0E_10_LC_9_16_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_11_c_RNID3BA_LC_8_16_3/in1" to pin "b2v_inst11.un1_count_clk_2_cry_11_c_RNID3BA_LC_8_16_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIP6DI_12_LC_9_16_5/in0" to pin "b2v_inst11.count_clk_RNIP6DI_12_LC_9_16_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_12_c_RNIE5CA_LC_8_16_4/in1" to pin "b2v_inst11.un1_count_clk_2_cry_12_c_RNIE5CA_LC_8_16_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIR9EI_13_LC_9_16_3/in0" to pin "b2v_inst11.count_clk_RNIR9EI_13_LC_9_16_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_10_c_RNIC1AA_LC_8_16_2/in1" to pin "b2v_inst11.un1_count_clk_2_cry_10_c_RNIC1AA_LC_8_16_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIN3CI_11_LC_8_16_7/in1" to pin "b2v_inst11.count_clk_RNIN3CI_11_LC_8_16_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/in2" to pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_4_c_RNIVBP5_LC_8_15_4/in1" to pin "b2v_inst11.un1_count_clk_2_cry_4_c_RNIVBP5_LC_8_15_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNITQUI_5_LC_7_15_4/in2" to pin "b2v_inst11.count_clk_RNITQUI_5_LC_7_15_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_1_LC_7_15_2/in1" to pin "b2v_inst11.count_clk_RNI_1_LC_7_15_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIQA5D_1_LC_7_15_6/in0" to pin "b2v_inst11.count_clk_RNIQA5D_1_LC_7_15_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI573J_9_LC_7_15_1/in1" to pin "b2v_inst11.count_clk_RNI573J_9_LC_7_15_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/in0" to pin "b2v_inst11.count_clk_RNI_5_LC_7_15_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/in1" to pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/in1" to pin "b2v_inst11.un1_count_clk_2_cry_8_c_RNI3KT5_LC_8_16_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/in0" to pin "b2v_inst11.count_clk_RNI_15_LC_7_16_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_13_c_RNIF7DA_LC_8_16_5/in1" to pin "b2v_inst11.un1_count_clk_2_cry_13_c_RNIF7DA_LC_8_16_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNITCFI_14_LC_7_16_5/in0" to pin "b2v_inst11.count_clk_RNITCFI_14_LC_7_16_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIVFGI_15_LC_7_16_3/in0" to pin "b2v_inst11.count_clk_RNIVFGI_15_LC_7_16_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/in0" to pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/in2" to pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIDQ4A1_0_LC_11_11_5/in2" to pin "b2v_inst11.func_state_RNIDQ4A1_0_LC_11_11_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/in2" to pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIANKU4_3_LC_7_9_0/in2" to pin "b2v_inst11.dutycycle_RNIANKU4_3_LC_7_9_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_7_c_RNIUJ9J1_LC_7_8_0/carryin" to pin "b2v_inst11.un1_dutycycle_94_cry_7_c_RNIUJ9J1_LC_7_8_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIO6J59_8_LC_6_6_1/in2" to pin "b2v_inst11.dutycycle_RNIO6J59_8_LC_6_6_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIRH7VD_7_LC_4_5_1/in3" to pin "b2v_inst11.dutycycle_RNIRH7VD_7_LC_4_5_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_6_c_RNIGN39_LC_7_7_7/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_6_c_RNIGN39_LC_7_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_15_LC_4_6_7/in2" to pin "b2v_inst11.dutycycle_RNI_0_15_LC_4_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/in2" to pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIBGDMD_6_LC_7_11_3/in0" to pin "b2v_inst11.dutycycle_RNIBGDMD_6_LC_7_11_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIFNB2O_5_LC_7_11_7/in2" to pin "b2v_inst11.dutycycle_RNIFNB2O_5_LC_7_11_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_3_c_RNIDH09_LC_7_7_4/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_3_c_RNIDH09_LC_7_7_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIKAJP_6_LC_11_8_2/in2" to pin "b2v_inst11.dutycycle_RNIKAJP_6_LC_11_8_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIGQE59_4_LC_6_7_3/in3" to pin "b2v_inst11.dutycycle_RNIGQE59_4_LC_6_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/in3" to pin "b2v_inst11.dutycycle_RNIBNRBI_5_LC_12_10_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI61IA9_3_LC_7_9_1/in1" to pin "b2v_inst11.dutycycle_RNI61IA9_3_LC_7_9_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9LPN6_8_LC_7_12_3/in1" to pin "b2v_inst11.dutycycle_RNI9LPN6_8_LC_7_12_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9LPN6_8_LC_7_12_3/in3" to pin "b2v_inst11.dutycycle_RNI9LPN6_8_LC_7_12_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9LPN6_9_LC_5_6_6/in2" to pin "b2v_inst11.dutycycle_RNI9LPN6_9_LC_5_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_8_c_RNIVLAJ1_LC_7_8_1/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_8_c_RNIVLAJ1_LC_7_8_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIQ9K59_9_LC_5_6_4/in3" to pin "b2v_inst11.dutycycle_RNIQ9K59_9_LC_5_6_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_15_LC_4_6_7/in0" to pin "b2v_inst11.dutycycle_RNI_0_15_LC_4_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_9_c_RNI0OBJ1_LC_7_8_2/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_9_c_RNI0OBJ1_LC_7_8_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI3ER99_10_LC_5_6_2/in3" to pin "b2v_inst11.dutycycle_RNI3ER99_10_LC_5_6_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_15_LC_4_6_7/in1" to pin "b2v_inst11.dutycycle_RNI_0_15_LC_4_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9LPN6_10_LC_5_6_1/in2" to pin "b2v_inst11.dutycycle_RNI9LPN6_10_LC_5_6_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_13_c_RNIUTS5_LC_7_8_6/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_13_c_RNIUTS5_LC_7_8_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIIIH69_14_LC_7_10_6/in3" to pin "b2v_inst11.dutycycle_RNIIIH69_14_LC_7_10_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIT35D7_14_LC_7_10_1/in2" to pin "b2v_inst11.dutycycle_RNIT35D7_14_LC_7_10_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIICTM5_0_LC_8_13_1/in0" to pin "b2v_inst11.func_state_RNIICTM5_0_LC_8_13_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_12_c_RNITRR5_LC_7_8_5/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_12_c_RNITRR5_LC_7_8_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIGFG69_13_LC_6_7_0/in3" to pin "b2v_inst11.dutycycle_RNIGFG69_13_LC_6_7_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIT35D7_13_LC_8_9_0/in2" to pin "b2v_inst11.dutycycle_RNIT35D7_13_LC_8_9_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/in0" to pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/in1" to pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIN1E71_2_LC_9_9_6/in2" to pin "b2v_inst11.dutycycle_RNIN1E71_2_LC_9_9_6/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI0QQU5_0_LC_11_11_4/in2" to pin "b2v_inst11.dutycycle_RNI0QQU5_0_LC_11_11_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/in1" to pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/in1" to pin "b2v_inst11.dutycycle_RNI_0_LC_9_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/in2" to pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNII5M67_2_LC_11_9_3/in2" to pin "b2v_inst11.dutycycle_RNII5M67_2_LC_11_9_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIB6O76_1_LC_11_11_1/in2" to pin "b2v_inst11.dutycycle_RNIB6O76_1_LC_11_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_6_LC_9_10_2/in2" to pin "b2v_inst11.dutycycle_RNI_0_6_LC_9_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIAA6Q3_1_LC_11_11_6/in3" to pin "b2v_inst11.dutycycle_RNIAA6Q3_1_LC_11_11_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/in2" to pin "b2v_inst11.dutycycle_RNIHJNV7_0_LC_9_13_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/in1" to pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIANKU4_12_LC_8_8_2/in1" to pin "b2v_inst11.dutycycle_RNIANKU4_12_LC_8_8_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_10_c_RNI8IUF1_LC_7_8_3/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_10_c_RNI8IUF1_LC_7_8_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIFCUH5_11_LC_8_8_7/in3" to pin "b2v_inst11.dutycycle_RNIFCUH5_11_LC_8_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/in2" to pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/in2" to pin "b2v_inst11.dutycycle_RNI_0_12_LC_8_9_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNICO933_11_LC_8_8_6/in3" to pin "b2v_inst11.dutycycle_RNICO933_11_LC_8_8_6/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/in0" to pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIDQ4A1_0_0_LC_9_11_2/in3" to pin "b2v_inst11.func_state_RNIDQ4A1_0_0_LC_9_11_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/in3" to pin "b2v_inst11.func_state_RNIPBBTD_0_LC_9_12_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/in1" to pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_2_LC_12_10_1/in0" to pin "b2v_inst11.dutycycle_RNI_0_2_LC_12_10_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI34G9_1_LC_8_12_6/in1" to pin "b2v_inst11.func_state_RNI34G9_1_LC_8_12_6/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/in0" to pin "b2v_inst11.func_state_RNI98MHC_1_LC_9_13_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI3NQD_1_LC_8_11_6/in3" to pin "b2v_inst11.func_state_RNI3NQD_1_LC_8_11_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/in0" to pin "b2v_inst11.dutycycle_RNI9MT83_6_LC_8_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/in1" to pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNICO933_12_LC_8_8_3/in3" to pin "b2v_inst11.dutycycle_RNICO933_12_LC_8_8_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIDQ4A1_3_1_LC_7_12_2/in0" to pin "b2v_inst11.func_state_RNIDQ4A1_3_1_LC_7_12_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIHFVH5_12_LC_8_8_4/in0" to pin "b2v_inst11.dutycycle_RNIHFVH5_12_LC_8_8_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIKLI69_15_LC_7_10_0/in1" to pin "b2v_inst11.dutycycle_RNIKLI69_15_LC_7_10_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/in1" to pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_func_state25_6_0_o_b2v_inst11_un1_func_state25_6_0_a3_1_1_LC_8_9_6/in3" to pin "b2v_inst11.un1_func_state25_6_0_o_b2v_inst11_un1_func_state25_6_0_a3_1_1_LC_8_9_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_7_c_RNIUJ9J1_LC_7_8_0/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_7_c_RNIUJ9J1_LC_7_8_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_9_c_RNI0OBJ1_LC_7_8_2/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_9_c_RNI0OBJ1_LC_7_8_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_13_c_RNIUTS5_LC_7_8_6/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_13_c_RNIUTS5_LC_7_8_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_8_c_RNIVLAJ1_LC_7_8_1/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_8_c_RNIVLAJ1_LC_7_8_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_10_c_RNI8IUF1_LC_7_8_3/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_10_c_RNI8IUF1_LC_7_8_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_11_c_RNI9KVF1_LC_7_8_4/in2" to pin "b2v_inst11.un1_dutycycle_94_cry_11_c_RNI9KVF1_LC_7_8_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_12_c_RNITRR5_LC_7_8_5/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_12_c_RNITRR5_LC_7_8_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_dutycycle_94_cry_14_c_RNIVVT5_LC_7_8_7/in1" to pin "b2v_inst11.un1_dutycycle_94_cry_14_c_RNIVVT5_LC_7_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/in0" to pin "b2v_inst11.dutycycle_RNI5DSV7_6_LC_7_12_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIKAJP_6_LC_11_8_2/in1" to pin "b2v_inst11.dutycycle_RNIKAJP_6_LC_11_8_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI_0_1_LC_8_13_5/in1" to pin "b2v_inst11.func_state_RNI_0_1_LC_8_13_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI8H551_1_LC_8_12_7/in3" to pin "b2v_inst11.func_state_RNI8H551_1_LC_8_12_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNIVT4P1_1_LC_9_11_3/in3" to pin "b2v_inst11.func_state_RNIVT4P1_1_LC_9_11_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/in0" to pin "b2v_inst11.dutycycle_RNI_4_5_LC_8_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_6_LC_9_10_2/in3" to pin "b2v_inst11.dutycycle_RNI_0_6_LC_9_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/in1" to pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.func_state_RNI8H551_1_LC_8_12_7/in0" to pin "b2v_inst11.func_state_RNI8H551_1_LC_8_12_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/in2" to pin "b2v_inst11.dutycycle_RNI_2_LC_8_10_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/in1" to pin "b2v_inst11.un1_count_clk_2_cry_14_c_RNIG9EA_LC_8_16_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/in0" to pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNIP95D_0_LC_8_13_2/in0" to pin "b2v_inst11.count_clk_RNIP95D_0_LC_8_13_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/in1" to pin "b2v_inst11.count_clk_RNI_0_LC_9_14_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNICO933_12_LC_8_8_3/in0" to pin "b2v_inst11.dutycycle_RNICO933_12_LC_8_8_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/in2" to pin "b2v_inst11.dutycycle_RNIDQ4A1_12_LC_8_8_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst11.dutycycle_RNI_0_2_LC_12_10_1/in1" to pin "b2v_inst11.dutycycle_RNI_0_2_LC_12_10_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/in1" to pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_16_c_RNI9M89_LC_1_8_0/in0" to pin "b2v_inst200.un2_count_1_cry_16_c_RNI9M89_LC_1_8_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_15_c_RNI8K79_LC_1_7_7/in2" to pin "b2v_inst200.un2_count_1_cry_15_c_RNI8K79_LC_1_7_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_14_c_RNI96R71_LC_1_7_6/in1" to pin "b2v_inst200.un2_count_1_cry_14_c_RNI96R71_LC_1_7_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/in2" to pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_13_c_RNI6G59_LC_1_7_5/in1" to pin "b2v_inst200.un2_count_1_cry_13_c_RNI6G59_LC_1_7_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/in2" to pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_12_c_RNI5E49_LC_1_7_4/in1" to pin "b2v_inst200.un2_count_1_cry_12_c_RNI5E49_LC_1_7_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/in0" to pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_11_c_RNI4C39_LC_1_7_3/in1" to pin "b2v_inst200.un2_count_1_cry_11_c_RNI4C39_LC_1_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_10_c_RNI3A29_LC_1_7_2/in1" to pin "b2v_inst200.un2_count_1_cry_10_c_RNI3A29_LC_1_7_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_9_c_RNIR75E_LC_1_7_1/in2" to pin "b2v_inst200.un2_count_1_cry_9_c_RNIR75E_LC_1_7_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/in0" to pin "b2v_inst200.count_RNI5RUP8_8_LC_2_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_8_c_RNIQ54E_LC_1_7_0/in1" to pin "b2v_inst200.un2_count_1_cry_8_c_RNIQ54E_LC_1_7_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_7_c_RNIP33E_LC_1_6_7/in1" to pin "b2v_inst200.un2_count_1_cry_7_c_RNIP33E_LC_1_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_6_c_RNIO12E_LC_1_6_6/in2" to pin "b2v_inst200.un2_count_1_cry_6_c_RNIO12E_LC_1_6_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/in2" to pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_5_c_RNINV0E_LC_1_6_5/in2" to pin "b2v_inst200.un2_count_1_cry_5_c_RNINV0E_LC_1_6_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_4_c_RNIMTVD_LC_1_6_4/in1" to pin "b2v_inst200.un2_count_1_cry_4_c_RNIMTVD_LC_1_6_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/in0" to pin "b2v_inst200.count_RNI73351_0_5_LC_2_8_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_3_c_RNILRUD_LC_1_6_3/in1" to pin "b2v_inst200.un2_count_1_cry_3_c_RNILRUD_LC_1_6_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/in1" to pin "b2v_inst200.count_RNIUF4N4_3_LC_2_8_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_2_c_RNIKPTD_LC_1_6_2/in1" to pin "b2v_inst200.un2_count_1_cry_2_c_RNIKPTD_LC_1_6_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.un2_count_1_cry_1_c_RNIJNSD_LC_1_6_1/in1" to pin "b2v_inst200.un2_count_1_cry_1_c_RNIJNSD_LC_1_6_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI_1_LC_1_4_5/in3" to pin "b2v_inst200.count_RNI_1_LC_1_4_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.count_RNI_0_LC_1_8_2/in1" to pin "b2v_inst200.count_RNI_0_LC_1_8_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/in1" to pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m11_0_LC_5_2_2/in0" to pin "b2v_inst200.curr_state_13_2_0__m11_0_LC_5_2_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m11_0_a2_0_LC_5_1_2/in3" to pin "b2v_inst200.curr_state_13_2_0__m11_0_a2_0_LC_5_1_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/in1" to pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m8_i_LC_5_1_5/in3" to pin "b2v_inst200.curr_state_13_2_0__m8_i_LC_5_1_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/in0" to pin "b2v_inst200.curr_state_13_2_0__m6_i_LC_5_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/in0" to pin "b2v_inst200.curr_state_13_2_0__m6_i_0_LC_5_1_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/in2" to pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/in3" to pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_14_c_RNI18TP1_LC_11_2_6/in1" to pin "b2v_inst6.un2_count_1_cry_14_c_RNI18TP1_LC_11_2_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/in1" to pin "b2v_inst6.count_RNI9EPHV_2_LC_12_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_13_c_RNI06SP1_LC_11_2_5/in1" to pin "b2v_inst6.un2_count_1_cry_13_c_RNI06SP1_LC_11_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_12_c_RNIV3RP1_LC_11_2_4/in1" to pin "b2v_inst6.un2_count_1_cry_12_c_RNIV3RP1_LC_11_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_11_c_RNIU1QP1_LC_11_2_3/in1" to pin "b2v_inst6.un2_count_1_cry_11_c_RNIU1QP1_LC_11_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNI3F438_12_LC_11_4_3/in0" to pin "b2v_inst6.count_RNI3F438_12_LC_11_4_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_10_c_RNITVOP1_LC_12_3_5/in2" to pin "b2v_inst6.un2_count_1_cry_10_c_RNITVOP1_LC_12_3_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_9_c_RNILPGI1_LC_11_2_1/in1" to pin "b2v_inst6.un2_count_1_cry_9_c_RNILPGI1_LC_11_2_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNICITT3_0_10_LC_11_4_2/in1" to pin "b2v_inst6.count_RNICITT3_0_10_LC_11_4_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_8_c_RNIKNFI1_LC_11_5_2/in2" to pin "b2v_inst6.un2_count_1_cry_8_c_RNIKNFI1_LC_11_5_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_7_c_RNIJLEI1_LC_11_5_5/in0" to pin "b2v_inst6.un2_count_1_cry_7_c_RNIJLEI1_LC_11_5_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_6_c_RNIIJDI1_LC_11_3_6/in2" to pin "b2v_inst6.un2_count_1_cry_6_c_RNIIJDI1_LC_11_3_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNITT8S3_6_LC_11_4_1/in3" to pin "b2v_inst6.count_RNITT8S3_6_LC_11_4_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_5_c_RNIRAT3_LC_11_1_5/in1" to pin "b2v_inst6.un2_count_1_cry_5_c_RNIRAT3_LC_11_1_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_4_c_RNIGFBI1_LC_12_3_2/in3" to pin "b2v_inst6.un2_count_1_cry_4_c_RNIGFBI1_LC_12_3_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_3_c_RNIFDAI1_LC_12_1_0/in2" to pin "b2v_inst6.un2_count_1_cry_3_c_RNIFDAI1_LC_12_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_2_c_RNIEB9I1_LC_12_1_4/in2" to pin "b2v_inst6.un2_count_1_cry_2_c_RNIEB9I1_LC_12_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.un2_count_1_cry_1_c_RNID98I1_LC_11_1_1/in1" to pin "b2v_inst6.un2_count_1_cry_1_c_RNID98I1_LC_11_1_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/in1" to pin "b2v_inst6.count_RNIM6FE1_1_LC_12_4_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/in0" to pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_RNIM6FE1_1_LC_11_6_7/in0" to pin "b2v_inst6.curr_state_RNIM6FE1_1_LC_11_6_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/in2" to pin "b2v_inst6.curr_state_7_1_0__m4_0_LC_11_6_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/in0" to pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/in1" to pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.count_RNIM6FE1_0_LC_12_3_7/in1" to pin "b2v_inst6.count_RNIM6FE1_0_LC_12_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/in1" to pin "b2v_inst6.curr_state_7_1_0__m6_i_o3_0_LC_11_7_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/in0" to pin "b2v_inst6.curr_state_7_1_0__m6_i_LC_11_6_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/in2" to pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_14_c_RNIU1P3_LC_2_4_6/in0" to pin "b2v_inst16.un4_count_1_cry_14_c_RNIU1P3_LC_2_4_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_13_c_RNITVN3_LC_2_4_5/in1" to pin "b2v_inst16.un4_count_1_cry_13_c_RNITVN3_LC_2_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/in1" to pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_12_c_RNIHM041_LC_2_4_4/in1" to pin "b2v_inst16.un4_count_1_cry_12_c_RNIHM041_LC_2_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/in2" to pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_11_c_RNIRRL3_LC_2_4_3/in1" to pin "b2v_inst16.un4_count_1_cry_11_c_RNIRRL3_LC_2_4_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/in0" to pin "b2v_inst16.count_RNILO901_0_13_LC_4_4_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/in1" to pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_10_c_RNIQPK3_LC_1_2_4/in3" to pin "b2v_inst16.un4_count_1_cry_10_c_RNIQPK3_LC_1_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_9_c_RNII0VE_LC_2_4_1/in1" to pin "b2v_inst16.un4_count_1_cry_9_c_RNII0VE_LC_2_4_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_8_c_RNIHUTE_LC_1_1_4/in0" to pin "b2v_inst16.un4_count_1_cry_8_c_RNIHUTE_LC_1_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_7_c_RNIGSSE_LC_1_1_2/in2" to pin "b2v_inst16.un4_count_1_cry_7_c_RNIGSSE_LC_1_1_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_6_c_RNIFQRE_LC_1_1_0/in2" to pin "b2v_inst16.un4_count_1_cry_6_c_RNIFQRE_LC_1_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/in0" to pin "b2v_inst16.count_RNI2T6K2_13_LC_2_2_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_5_c_RNIEOQE_LC_2_3_5/in1" to pin "b2v_inst16.un4_count_1_cry_5_c_RNIEOQE_LC_2_3_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_4_c_RNIDMPE_LC_2_1_4/in0" to pin "b2v_inst16.un4_count_1_cry_4_c_RNIDMPE_LC_2_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_3_c_RNICKOE_LC_2_1_0/in2" to pin "b2v_inst16.un4_count_1_cry_3_c_RNICKOE_LC_2_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/in1" to pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_1_c_RNIAGME_LC_2_3_1/in2" to pin "b2v_inst16.un4_count_1_cry_1_c_RNIAGME_LC_2_3_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI_1_LC_1_2_1/in0" to pin "b2v_inst16.count_RNI_1_LC_1_2_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI1I651_0_LC_2_2_5/in0" to pin "b2v_inst16.count_RNI1I651_0_LC_2_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNI_0_LC_1_3_5/in3" to pin "b2v_inst16.count_RNI_0_LC_1_3_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.count_RNIF7UJ1_3_LC_4_4_7/in1" to pin "b2v_inst16.count_RNIF7UJ1_3_LC_4_4_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.curr_state_RNIUCAD1_1_0_LC_4_2_4/in0" to pin "b2v_inst16.curr_state_RNIUCAD1_1_0_LC_4_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.curr_state_RNIUCAD1_0_0_LC_9_10_3/in3" to pin "b2v_inst16.curr_state_RNIUCAD1_0_0_LC_9_10_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/in0" to pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/in3" to pin "b2v_inst16.un4_count_1_cry_2_c_RNIBINE_LC_4_3_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/in1" to pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m6_i_LC_9_7_1/in1" to pin "b2v_inst5.curr_state_7_1_0__m6_i_LC_9_7_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m4_0_a2_LC_9_6_5/in0" to pin "b2v_inst5.curr_state_7_1_0__m4_0_a2_LC_9_6_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_RNIRH7S1_0_LC_9_6_2/in1" to pin "b2v_inst5.curr_state_RNIRH7S1_0_LC_9_6_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/in0" to pin "b2v_inst5.curr_state_7_1_0__m4_0_LC_9_7_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in1" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in2" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_0_c_RNO_LC_8_2_7/in3" to pin "b2v_inst36.un2_count_1_cry_0_c_RNO_LC_8_2_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI1FG91_0_LC_7_1_7/in0" to pin "b2v_inst36.count_RNI1FG91_0_LC_7_1_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI6K3V_0_0_LC_7_2_0/in2" to pin "b2v_inst36.count_RNI6K3V_0_0_LC_7_2_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_10_THRU_LUT4_0_LC_8_4_3/in1" to pin "b2v_inst36.un2_count_1_cry_10_THRU_LUT4_0_LC_8_4_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/in3" to pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_10_c_RNILUVB_LC_7_1_2/in1" to pin "b2v_inst36.un2_count_1_cry_10_c_RNILUVB_LC_7_1_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_0_c_RNI4JMI_LC_8_3_1/in1" to pin "b2v_inst36.un2_count_1_cry_0_c_RNI4JMI_LC_8_3_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_0_c_RNI4JMI_LC_8_3_1/in1" to pin "b2v_inst36.un2_count_1_cry_0_c_RNI4JMI_LC_8_3_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in1" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in1" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_3_c_RNI7PPI_LC_8_3_4/in1" to pin "b2v_inst36.un2_count_1_cry_3_c_RNI7PPI_LC_8_3_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_3_c_RNI7PPI_LC_8_3_4/in1" to pin "b2v_inst36.un2_count_1_cry_3_c_RNI7PPI_LC_8_3_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_5_c_RNILNVH1_LC_8_3_6/in1" to pin "b2v_inst36.un2_count_1_cry_5_c_RNILNVH1_LC_8_3_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_5_c_RNILNVH1_LC_8_3_6/in1" to pin "b2v_inst36.un2_count_1_cry_5_c_RNILNVH1_LC_8_3_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_11_c_RNIFSRG1_LC_8_4_4/in1" to pin "b2v_inst36.un2_count_1_cry_11_c_RNIFSRG1_LC_8_4_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_11_c_RNIFSRG1_LC_8_4_4/in1" to pin "b2v_inst36.un2_count_1_cry_11_c_RNIFSRG1_LC_8_4_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in3" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/in3" to pin "b2v_inst36.count_RNI0RKG9_6_LC_9_2_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_13_c_RNIO43C_LC_8_4_6/in1" to pin "b2v_inst36.un2_count_1_cry_13_c_RNIO43C_LC_8_4_6/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_13_c_RNIO43C_LC_8_4_6/in1" to pin "b2v_inst36.un2_count_1_cry_13_c_RNIO43C_LC_8_4_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI6K3V_0_0_LC_7_2_0/in3" to pin "b2v_inst36.count_RNI6K3V_0_0_LC_7_2_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_1_THRU_LUT4_0_LC_8_3_2/in1" to pin "b2v_inst36.un2_count_1_cry_1_THRU_LUT4_0_LC_8_3_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/in1" to pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_1_c_RNI5LNI_LC_8_1_4/in3" to pin "b2v_inst36.un2_count_1_cry_1_c_RNI5LNI_LC_8_1_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_2_c_RNI6NOI_LC_8_1_1/in2" to pin "b2v_inst36.un2_count_1_cry_2_c_RNI6NOI_LC_8_1_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_2_THRU_LUT4_0_LC_8_3_3/in1" to pin "b2v_inst36.un2_count_1_cry_2_THRU_LUT4_0_LC_8_3_3/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/in0" to pin "b2v_inst36.count_RNILGID6_1_LC_9_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_4_THRU_LUT4_0_LC_8_3_5/in1" to pin "b2v_inst36.un2_count_1_cry_4_THRU_LUT4_0_LC_8_3_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_4_c_RNI8RQI_LC_8_2_3/in2" to pin "b2v_inst36.un2_count_1_cry_4_c_RNI8RQI_LC_8_2_3/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_6_THRU_LUT4_0_LC_8_3_7/in1" to pin "b2v_inst36.un2_count_1_cry_6_THRU_LUT4_0_LC_8_3_7/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_6_c_RNIAVSI_LC_8_2_1/in1" to pin "b2v_inst36.un2_count_1_cry_6_c_RNIAVSI_LC_8_2_1/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/in2" to pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_7_THRU_LUT4_0_LC_8_4_0/in2" to pin "b2v_inst36.un2_count_1_cry_7_THRU_LUT4_0_LC_8_4_0/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_7_c_RNIB1UI_LC_8_2_6/in2" to pin "b2v_inst36.un2_count_1_cry_7_c_RNIB1UI_LC_8_2_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_12_c_RNIN22C_LC_8_4_5/in1" to pin "b2v_inst36.un2_count_1_cry_12_c_RNIN22C_LC_8_4_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_12_c_RNIN22C_LC_8_4_5/in1" to pin "b2v_inst36.un2_count_1_cry_12_c_RNIN22C_LC_8_4_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI6K3V_0_0_LC_7_2_0/in0" to pin "b2v_inst36.count_RNI6K3V_0_0_LC_7_2_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_8_c_RNIC3VI_LC_8_4_1/in1" to pin "b2v_inst36.un2_count_1_cry_8_c_RNIC3VI_LC_8_4_1/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_8_c_RNIC3VI_LC_8_4_1/in1" to pin "b2v_inst36.un2_count_1_cry_8_c_RNIC3VI_LC_8_4_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_14_c_RNIP64C_LC_8_4_7/in0" to pin "b2v_inst36.un2_count_1_cry_14_c_RNIP64C_LC_8_4_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in0" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/in0" to pin "b2v_inst36.un2_count_1_cry_9_c_RNID50J_LC_9_2_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/in2" to pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_0_c_RNO_LC_8_2_7/in1" to pin "b2v_inst36.un2_count_1_cry_0_c_RNO_LC_8_2_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/in0" to pin "b2v_inst36.count_RNI4VQN1_0_10_LC_9_2_2/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNI4VQN1_10_LC_9_2_6/in3" to pin "b2v_inst36.count_RNI4VQN1_10_LC_9_2_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.count_RNIL5VG1_15_LC_7_2_1/in1" to pin "b2v_inst36.count_RNIL5VG1_15_LC_7_2_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.curr_state_7_1_0__m4_LC_9_1_0/in2" to pin "b2v_inst36.curr_state_7_1_0__m4_LC_9_1_0/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/in3" to pin "b2v_inst36.curr_state_7_1_0__m6_LC_9_1_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_9_THRU_LUT4_0_LC_8_4_2/in1" to pin "b2v_inst36.un2_count_1_cry_9_THRU_LUT4_0_LC_8_4_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "b2v_inst36.un2_count_1_cry_14_c_RNIP64C_LC_8_4_7/in1" to pin "b2v_inst36.un2_count_1_cry_14_c_RNIP64C_LC_8_4_7/lcout" to break the combinatorial loop
+Timer run-time: 17 seconds
+timer succeed.
+timer succeeded.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\bitmap.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev" --design "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP" --device_name iCE40LP1K --package QN84 --outdir "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 2 (sec)
+bitmap succeed.
