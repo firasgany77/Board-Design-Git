@@ -3,7 +3,7 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
 
--- DSW_PWROK up >=10ms after v33DSW is up (tPCH02 min:10 ms, max: 2000 ms)
+-- DSW_PWROK up >=10ms after V33DSW is up (tPCH02 min:10 ms, max: 2000 ms)
 
 ENTITY dsw_pwrok_block IS
 	PORT (
@@ -42,7 +42,7 @@ BEGIN
 					END IF;
 
 				WHEN delay =>
-					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
+					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec (Length of Vector: 16bits)
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');
 					ELSE

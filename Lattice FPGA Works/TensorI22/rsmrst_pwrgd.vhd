@@ -2,20 +2,18 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
--- RSMRSTn is an active-high power good signal for main S5 rails: +3V3A, +1V05A, +5VA. 
--- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn
+-- RSMRSTn is an active-high power good signal for main S5 rails: +3V3A, +1.8VA,VCCIN_AUX, +5VA(USB_VBUS), . 
+-- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn (tPCH03)
 -- There should be a 10msec delay between the PG of the rails to RSMRSTn assertion. NOW 50 msec.
 ENTITY rsmrst_pwrgd_block IS
 	PORT (
 		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		VCCST_CPU_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		V5A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		V5A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required 
 		V1P8A_OK : IN STD_LOGIC; -- NEW
-		--GPIO_1 : IN STD_LOGIC; -- for Pin Constraints Check
-		--	tpm_gpio:  		   in std_logic; -- Provision
 		SLP_SUSn : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
-		RSMRSTn : OUT STD_LOGIC; -- with 10ms delay on rising edge
+		RSMRSTn : OUT STD_LOGIC; -- with 10ms delay on rising edge ()
 		rsmrst_pwrgd_out : OUT STD_LOGIC);--without delay
 END rsmrst_pwrgd_block;
 
@@ -29,9 +27,13 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 BEGIN
 
 	rsmrst_pwrgd_out <= rsmrst_pwrgd;
-	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (VCCST_CPU_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') -- SLP_SUSn was added
+	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (VCCST_CPU_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') -- SLP_SUSn, V1P8A_OK were added
 		ELSE
 		'0';
+
+	-- after all these voltages are ready (check p.461/507)
+	-- V5A_OK -> USB_VBUS OK
+	-- VCCST_CPU_OK should not be here. 
 
 	PROCESS (clk_100Khz)
 	BEGIN
@@ -47,7 +49,7 @@ BEGIN
 						RSMRSTn <= '0'; -- The RSMRSTn signal will not assert at pwrok glitches of less then 1T
 					END IF;
 
-				WHEN delay =>
+				WHEN delay => --tPCH03 in  CFL PDG (p.528/685) 
 					IF (count = to_unsigned(10000, 16)) THEN -- 10000 * 50uSec = 100 mSec (was 100msec at ATSKL)
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');
@@ -69,5 +71,8 @@ BEGIN
 			END CASE;
 		END IF;
 	END PROCESS;
+
+
+
 
 END rsmrst_arch;
