@@ -223,20 +223,23 @@ ARCHITECTURE bdf_type OF TOP IS
 
 BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
-	DSW_PWROK <= DSW_PWROK_signal;
-	vccst_pwrgd <= vccst_pwrgd_signal;
+	SYS_PWROK <= pch_pwrok_signal;
+	DSW_PWROK <= DSW_PWROK_signal; -- connecting the signal to DSW_PWROK TOP's output. 
+	VCCINAUX_EN <= DSW_PWROK_signal; -- New
+   --V105A_EN <= DSW_PWROK_signal;
+	VCCST_PWRGD <= vccst_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
 	VCC <= '1';
 	V33A_ENn <= NOT(VCC);
 	V5A_EN <= VCC;
-	--V105A_EN <= DSW_PWROK_signal;
-	SYS_PWROK <= pch_pwrok_signal;
 	V5S_ENn <= NOT(slp_s3n_signal);
 	V33S_ENn <= NOT(slp_s3n_signal);
 	VCCST_EN <= VCCST_EN_signal; -- Changed from VCCST_EN# and NOT(VCCST_EN_signal) 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
 	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n;
+
+
     -- here we assign input/output signals for each instance (from outside):
 	b2v_inst11 : powerled_block
 	GENERIC MAP(
@@ -286,10 +289,10 @@ BEGIN
 		vccinaux_en => VCCINAUX_EN);
 	b2v_inst36 : dsw_pwrok_block
 	PORT MAP(
-		V33DSW_OK => V33DSW_OK,
+		V33DSW_OK => V33DSW_OK, --assigning signal to component input. 
 		mainpwr_OK => mainpwr_OK_signal,
 		clk_100Khz => clk_100Khz_signal,
-		DSW_PWROK => DSW_PWROK_signal);
+		DSW_PWROK => DSW_PWROK_signal); --assigning signal to component output
 	b2v_inst5 : rsmrst_pwrgd_block
 	PORT MAP(
 		V33A_OK => V33A_OK,
