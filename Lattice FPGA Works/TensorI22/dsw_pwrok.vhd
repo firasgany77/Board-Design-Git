@@ -3,7 +3,7 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
 
--- DSW_PWROK up >=10ms after V33DSW is up (tPCH02 min:10 ms, max: 2000 ms)
+-- DSW_PWROK up >=10ms after v33DSW is up (tPCH02 min:10 ms, max: 2000 ms)
 
 ENTITY dsw_pwrok_block IS
 	PORT (
@@ -12,6 +12,9 @@ ENTITY dsw_pwrok_block IS
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		DSW_PWROK : OUT STD_LOGIC);
 END dsw_pwrok_block;
+
+-- The next step is to define the functionality of the entity;
+-- this block of VHDL is called the architecture.
 
 ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 	TYPE state_type IS (pwrgd, no_pwrgd, delay);
@@ -32,7 +35,7 @@ BEGIN
 		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
-				WHEN pwrgd =>
+				WHEN pwrgd => -- we stay at this state as long as (V33DSW_OK = '1'). 
 					IF (pwrok = '1') THEN
 						curr_state <= pwrgd;
 						DSW_PWROK <= '1';
@@ -41,8 +44,9 @@ BEGIN
 						DSW_PWROK <= '0'; -- The DSW_PWROK signal will not assert at pwrok glitches of less then 1T
 					END IF;
 
-				WHEN delay =>
-					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec (Length of Vector: 16bits)
+				WHEN delay => -- After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
+					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
+					                                        -- tPCH02 in TL-PDG. 
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');
 					ELSE
