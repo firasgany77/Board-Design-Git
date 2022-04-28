@@ -4,14 +4,14 @@ USE IEEE.numeric_std.ALL;
 
 -- DSW_PWROK up >=10ms after v33DSW is up
 
-ENTITY counter IS
+ENTITY counter_block IS
 	PORT (
 --      resetN:		IN STD_LOGIC;
 		--CLK_10mhz : IN STD_LOGIC; -- Open-drain, internal weak pull-up required// changeed to 25 Mhz
 		CLK_25mhz : IN STD_LOGIC;
 		clk_100Khz : OUT STD_LOGIC -- 10MHz\100 = 100Khz 
 		);
-END counter;
+END counter_block;
 
 -- OLD:
 -- T_100Khz = 1\100Khz = 10us = 10000ns

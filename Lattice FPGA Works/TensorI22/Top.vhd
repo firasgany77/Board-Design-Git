@@ -61,7 +61,7 @@ ENTITY TOP IS
 		GPIO_FPGA_EXP_1 : IN STD_LOGIC; --OK
 		GPIO_FPGA_EXP_2 : IN STD_LOGIC; --OK
 		TPM_GPIO : IN STD_LOGIC; --OK
-		V33A_OK : IN STD_LOGIC; --OK
+		V33A_OK : IN STD_LOGIC; --OK (comes from OPAMP that measures +3V3A)
 		V33A_ENn : OUT STD_LOGIC; -- OK
 		V33DSW_OK : IN STD_LOGIC; --OK
 		V33S_OK : IN STD_LOGIC; --OK
@@ -136,17 +136,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	--COMPONENT vccio_en_block
-		--PORT (
-			--slp_s3n : IN STD_LOGIC;
-			--vddq_ok : IN STD_LOGIC;
-			--VCCST_CPU_OK : IN STD_LOGIC;
-			-- : IN STD_LOGIC;
-            --vccio_en : OUT STD_LOGIC 
-	--	);
-	--END COMPONENT;
-
-	COMPONENT Counter
+	COMPONENT counter_block
 		PORT (
 			CLK_25mhz : IN STD_LOGIC;
 			clk_100Khz : OUT STD_LOGIC
@@ -208,6 +198,14 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
+	COMPONENT vccinaux_1p8a_en_block
+	         Port(
+				 clk_100Khz : IN STD_LOGIC;
+				 V33A_OK: IN STD_LOGIC; -- 1p8a ramp up starts after 3V3A ramp up. 
+				 vccinaux_en : OUT STD_LOGIC; 
+				 V1P8A_EN: OUT STD_LOGIC
+			 );
+
 	SIGNAL VCC : STD_LOGIC;
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
@@ -219,18 +217,21 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
 	SIGNAL mainpwr_OK_signal: STD_LOGIC;
-
+    
 
 BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal;
 	DSW_PWROK <= DSW_PWROK_signal; -- connecting the signal to DSW_PWROK TOP's output. 
-	VCCINAUX_EN <= DSW_PWROK_signal; -- New
+	VCCINAUX_EN <= DSW_PWROK_signal; -- NEW: 
    --V105A_EN <= DSW_PWROK_signal;
-	VCCST_PWRGD <= vccst_pwrgd_signal;
+	VCCST_PWRGD <= vccst_pwrgd_signal; 
 	RSMRSTn <= RSMRSTn_signal;
 	VCC <= '1';
-	V33A_ENn <= NOT(VCC);
+	--V33A_ENn <= NOT(VCC); -- VCC is the FPGA +3V3DSW PWR Rail // Change: V33A Ramps Before 1P8A.
+	                        -- V33A rail ramp Before VCCIAN_AUX
+							-- 1P8A Primary rail ramp in advance of the VCCIN_AUX. VCCIN_AUX can ramp with 1P8A for fixed 1.8V VCCIN_AUX design.
+	
 	V5A_EN <= VCC;
 	V5S_ENn <= NOT(slp_s3n_signal);
 	V33S_ENn <= NOT(slp_s3n_signal);
@@ -241,17 +242,17 @@ BEGIN
 
 
     -- here we assign input/output signals for each instance (from outside):
-	b2v_inst11 : powerled_block
+	POWERLED : powerled_block 
 	GENERIC MAP(
-		periodclocks => 100
-	)
+		periodclocks => 100)
 	PORT MAP(
 		clk_100Khz => clk_100Khz_signal,
 		SLP_S3n => slp_s3n_signal,
 		SLP_S4n => VCCST_EN_signal,
 		mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
 		pwm_out => PWRBTN_LED);
-	b2v_inst16 : vpp_vddq_block
+
+	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
 		slp_s4n => VCCST_EN_signal,
 		vddq_pwrgd => VDDQ_OK,
@@ -259,25 +260,27 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
-	--b2v_inst17 : vccio_en_block
-	--PORT MAP(
-		--slp_s3n => slp_s3n_signal,
-		--vddq_ok => VDDQ_OK,
-		--VCCST_CPU_OK => VCCST_CPU_OK,
-		--clk_100Khz => clk_100Khz_signal,
-		--vccio_en => VCCIO_EN);
-	b2v_inst20 : counter
+
+	VCCINAUX_1P8A_EN : vccinaux_1p8a_en_block
+	PORT MAP(
+		clk_100Khz => clk_100Khz_signal,
+		V33A_OK => V33A_OK,
+		VCCINAUX_EN => VCCINAUX_EN,		
+		V1P8A_EN => V1P8A_EN);
+
+	COUNTER : counter_block
 	PORT MAP(
 		CLK_25mhz => FPGA_OSC,
 		clk_100Khz => clk_100Khz_signal);
 
-	b2v_inst200 : hda_strap_block
+	HDA_STRAP : hda_strap_block
 	PORT MAP(
 		pch_pwrok => vccst_pwrgd_signal,
 		GPIO_PCH => GPIO_FPGA_SoC_1,
 		clk_100Khz => clk_100Khz_signal,
 		HDA_SDO_ATP => HDA_SDO_ATP);
-	b2v_inst31 : vccinaux_vccin_en_block
+
+	VCCINAUX_VCCIN_EN : vccinaux_vccin_en_block
 	PORT MAP(
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
@@ -287,13 +290,15 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		vccin_en => vccin_en,
 		vccinaux_en => VCCINAUX_EN);
-	b2v_inst36 : dsw_pwrok_block
+
+	DSW_PWROK : dsw_pwrok_block
 	PORT MAP(
 		V33DSW_OK => V33DSW_OK, --assigning signal to component input. 
 		mainpwr_OK => mainpwr_OK_signal,
 		clk_100Khz => clk_100Khz_signal,
 		DSW_PWROK => DSW_PWROK_signal); --assigning signal to component output
-	b2v_inst5 : rsmrst_pwrgd_block
+
+	RSMRST_PWRGD : rsmrst_pwrgd_block
 	PORT MAP(
 		V33A_OK => V33A_OK,
 		VCCST_CPU_OK => VCCST_CPU_OK,
@@ -303,7 +308,8 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		RSMRSTn => RSMRSTn_signal,
 		rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
-	b2v_inst6 : pch_pwrok_block
+
+	PCH_PWROK : pch_pwrok_block
 	PORT MAP(
 		slp_s3n => slp_s3n_signal,
 		vr_ready_vccin => VR_READY_VCCIN,
