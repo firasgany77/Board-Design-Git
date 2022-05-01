@@ -1,314 +1,175 @@
-
-Show 
-Quartus II Help v13.0 > Implementing Counters (VHDL)
-
- 
-
- 
-
- 
+-- TESTBENCH
+-- Testbench for OR rsmrst_pwrgd_block
+library IEEE;
+use IEEE.std_logic_1164.all;
+LIBRARY ieee;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
 
 
-Implementing Counters (VHDL)
- 
-Counters use sequential logic to count clock pulses. A counter can be implemented implicitly with a Register Inference. The Quartus II software can infer a counter from an If Statement that specifies a clock edge together with logic that adds or subtracts a value from the signal or variable. The If Statement and additional logic should be inside a Process Statement.
+entity testbench is
+end entity testbench;
 
-The following example shows a VHDL Design File (.vhd) that includes a variety of 8-bit counters, controlled by the clk, clear, ld, d, enable, and up_down signals, that are implemented with If Statements.
+architecture test of testbench is
 
-ENTITY counters IS
-   PORT
-   (
-      d         : IN    INTEGER RANGE 0 TO 255;
-      clk       : IN  STD_LOGIC;
-      clear     : IN  STD_LOGIC;
-      ld        : IN  STD_LOGIC;
-      enable    : IN  STD_LOGIC;
-      up_down   : IN  STD_LOGIC;
-      qa        : OUT INTEGER RANGE 0 TO 255;
-      qb        : OUT INTEGER RANGE 0 TO 255;
-      qc        : OUT INTEGER RANGE 0 TO 255;
-      qd        : OUT INTEGER RANGE 0 TO 255;
-      qe        : OUT INTEGER RANGE 0 TO 255;
-      qf        : OUT INTEGER RANGE 0 TO 255;
-      qg        : OUT INTEGER RANGE 0 TO 255;
-      qh        : OUT INTEGER RANGE 0 TO 255;
-      qi        : OUT INTEGER RANGE 0 TO 255;
-      qj        : OUT INTEGER RANGE 0 TO 255;
-      qk        : OUT INTEGER RANGE 0 TO 255;
-      ql        : OUT INTEGER RANGE 0 TO 255;
-      qm        : OUT INTEGER RANGE 0 TO 255;
-      qn        : OUT INTEGER RANGE 0 TO 255
-   );
-   
-END counters;
-ARCHITECTURE a OF counters IS
+component rsmrst_pwrgd_block IS -- 
+	PORT (
+		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		VCCINAUX_EN : OUT STD_LOGIC; -- with 10ms delay on rising edge ()
+		V1P8A_EN : OUT STD_LOGIC);--without delay
+end component;
+
+  signal clk_100Khz  : std_logic := '0';
+  signal reset       : std_logic := '1'; 	
+  signal v33a_ok     : std_logic := '0';
+  signal vccinaux_en     : std_logic;
+  signal v1p8a_en  : std_logic; 
+
+begin
+
+-- Reset and clock
+
+clk_100Khz <= not clk_100Khz after 5000 ns; -- F=100KHZ, T= 1000ns
+reset <= '1', '0' after 20000 ns;
+
+
+-- Instantiate the design under test
+
+dut: rsmrst_pwrgd_block
+  port map (
+    V33A_OK=> v33a_ok,
+    clk_100Khz=> clk_100Khz,
+    VCCINAUX_EN=> vccinaux_en,
+    V1P8A_EN => v1p8a_en
+    );
+-- Generate the test stimulus
+
+stimulus:
+process begin
+  wait until (reset = '0');
+  v33a_ok <= '1';
+  
+  --wait for 100 ms;
+  --std.env.stop;
+  
+end process stimulus;
+
+--stop_simulation :
+--process begin
+	 --wait for 200000 ns; --run the simulation for this duration
+	 --assert false
+	 --report "simulation ended"
+   -- severity failure;
+--end process;
+
+end architecture test;
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all;
+LIBRARY ieee;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
+
+-- RSMRSTn is an active-high power good signal for main S5 rails: +3V3A, +1.8VA,VCCIN_AUX, +5VA(USB_VBUS), . 
+-- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn (tPCH03)
+-- There should be a 10msec delay between the PG of the rails to RSMRSTn assertion. NOW 50 msec.
+ENTITY rsmrst_pwrgd_block IS -- 
+	PORT (
+		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		VCCINAUX_EN : OUT STD_LOGIC; -- with 10ms delay on rising edge ()
+		V1P8A_EN : OUT STD_LOGIC);
+END rsmrst_pwrgd_block;
+
+ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
+	TYPE state_type IS (pwrgd, no_pwrgd, delay);
+	ATTRIBUTE enum_encoding : STRING;
+	ATTRIBUTE enum_encoding OF state_type : TYPE IS "01 00 10"; --<< no_pwrgd (00) is default after FPGA power-on
+	SIGNAL curr_state1 : state_type := no_pwrgd;
+        SIGNAL curr_state2 : state_type := no_pwrgd;
+	SIGNAL rsmrst_pwrgd : STD_LOGIC := '0';
+	SIGNAL count1 : unsigned(15 DOWNTO 0) := (OTHERS => '0');
+        SIGNAL count2 : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-   -- An enable counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF enable = '1' THEN
-            cnt := cnt + 1;
-         END IF;
-      END IF;
-      
-      qa <= cnt;
-   END PROCESS;
-   -- A synchronous load counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF ld = '0' THEN
-            cnt := d;
-         ELSE
-            cnt := cnt + 1;
-         END IF;
-      END IF;
-      qb <= cnt;
-   END PROCESS;
-   -- A synchronous clear counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF clear = '0' THEN
-            cnt := 0;
-         ELSE
-            cnt := cnt + 1;
-         END IF;
-      END IF;
-      qc <= cnt;
-   
-   END PROCESS;
-   -- An up/down counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-      VARIABLE   direction    : INTEGER;
-   BEGIN
-      IF (up_down = '1') THEN
-         direction := 1;
-      ELSE
-         direction := -1;
-      END IF;
-      
-      IF (clk'EVENT AND clk = '1') THEN
-         cnt := cnt + direction;
-      END IF;
-      qd <= cnt;
-   
-   END PROCESS;
-   -- A synchronous load enable counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF ld = '0' THEN
-            cnt := d;
-         ELSE
-            IF enable = '1' THEN
-               cnt := cnt + 1;
-            END IF;
-         END IF;
-      END IF;
-      qe <= cnt;
-   
-   END PROCESS;
-   -- An enable up/down counter
-   PROCESS (clk)
-      VARIABLE   cnt                                  : INTEGER RANGE 0 TO 255;
-      VARIABLE   direction    : INTEGER;
-   BEGIN
-      IF (up_down = '1') THEN
-         direction := 1;
-      ELSE
-         direction := -1;
-      END IF;
-      
-      IF (clk'EVENT AND clk = '1') THEN
-         IF enable = '1' THEN
-            cnt := cnt + direction;
-         END IF;
-      END IF;
-      qf <= cnt;
-   
-   END PROCESS;
-   -- A synchronous clear enable counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF clear = '0' THEN
-            cnt := 0;
-         ELSE
-            IF enable = '1' THEN
-               cnt := cnt + 1;
-            END IF;
-         END IF;
-      END IF;
-      qg <= cnt;
-   
-   END PROCESS;
-   -- A synchronous load clear counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF clear = '0' THEN
-            cnt := 0;
-         ELSE
-            IF ld = '0' THEN
-               cnt := d;
-            ELSE
-               cnt := cnt + 1;
-            END IF;
-         END IF;
-      END IF;
-      qh <= cnt;
-   
-   END PROCESS;
-   -- A synchronous load up/down counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-      VARIABLE   direction    : INTEGER;
-   BEGIN
-      IF (up_down = '1') THEN
-         direction := 1;
-      ELSE
-         direction := -1;
-      END IF;
-      
-      IF (clk'EVENT AND clk = '1') THEN
-         IF ld = '0' THEN
-            cnt := d;
-         ELSE
-            cnt := cnt + direction;
-         END IF;
-      END IF;
-      qi <= cnt;
-   
-   END PROCESS;
-   -- A synchronous load enable up/down counter
-   PROCESS (clk)
-      VARIABLE   cnt          : INTEGER RANGE 0 TO 255;
-      VARIABLE   direction    : INTEGER;
-   BEGIN
-      IF (up_down = '1') THEN
-         direction := 1;
-      ELSE
-         direction := -1;
-      END IF;
-      
-      IF (clk'EVENT AND clk = '1') THEN
-         IF ld = '0' THEN
-            cnt := d;
-         ELSE
-            IF enable = '1' THEN
-               cnt := cnt + direction;
-            END IF;
-         END IF;
-      END IF;
-      qj <= cnt;
-   END PROCESS;
-   -- A synchronous clear load enable counter
-   PROCESS (clk)
-      VARIABLE   cnt         : INTEGER RANGE 0 TO 255;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF clear = '0' THEN
-            cnt := 0;
-         ELSE
-            IF ld = '0' THEN
-               cnt := d;
-            ELSE
-               IF enable = '1' THEN
-                  cnt := cnt + 1;
-               END IF;
-            END IF;
-         END IF;
-      END IF;
-      
-      qk <= cnt;
-   
-   END PROCESS;
-   -- A synchronous clear up/down counter
-   PROCESS (clk)
-      VARIABLE   cnt          : INTEGER RANGE 0 TO 255;
-      VARIABLE   direction    : INTEGER;
-   BEGIN
-      IF (up_down = '1') THEN
-         direction := 1;
-      ELSE
-         direction := -1;
-      END IF;
-      
-      IF (clk'EVENT AND clk = '1') THEN
-         IF clear = '0' THEN
-            cnt := 0;
-         ELSE
-            cnt := cnt + direction;
-         END IF;
-      END IF;
-      ql <= cnt;
-   
-   END PROCESS;
-   -- A synchronous clear enable up/down counter
-   PROCESS (clk)
-      VARIABLE   cnt          : INTEGER RANGE 0 TO 255;
-      VARIABLE   direction    : INTEGER;
-   BEGIN
-      IF (up_down = '1') THEN
-         direction := 1;
-      ELSE
-         direction := -1;
-      END IF;
-      
-      IF (clk'EVENT AND clk = '1') THEN
-         IF clear = '0' THEN
-            cnt := 0;
-         ELSE
-            IF enable = '1' THEN
-               cnt := cnt + direction;
-            END IF;
-         END IF;
-      END IF;
-      qm <= cnt;
-   
-   END PROCESS;
-   -- A modulus 200 up counter
-   PROCESS (clk)
-      VARIABLE   cnt        : INTEGER RANGE 0 TO 255;
-      CONSTANT modulus      : INTEGER := 200;
-   BEGIN
-      IF (clk'EVENT AND clk = '1') THEN
-         IF cnt = modulus - 1 THEN
-            cnt := 0;
-         ELSE
-            cnt := cnt + 1;
-         END IF;
-      END IF;
-      qn <= cnt;
-   
-   END PROCESS;
-END a;
---In this example, all 14 processes are sensitive only to changes on the clk signal. All other control signals are synchronous.
 
---The first Process Statement describes an enabled counter. An If Statement describes the clock edge, and an additional embedded If Statement uses the enable signal to control counter operation. At each rising clock edge, the cnt variable is incremented by 1 and assigned to itself if the enable signal is '1'.
 
- 
---Note: Refer to Implementing Registers for information on how to infer registers by specifying clock edges with If Statements.
+	PROCESS (clk_100Khz)
+	BEGIN
+		IF (clk_100Khz'event AND clk_100Khz = '1') THEN
+			CASE curr_state1 IS
 
---The next 12 counters are described in the same manner. An If Statement describes the clock edge, and one or more embedded If Statement(s) use the enable, ld, d, clear, and up_down signals to control counter operation. The last counter uses the constant modulus declared in the process to control when the counter is reset to zero. At each clock edge, the counter variable is cleared; loaded with the value d; or incremented or decremented by 1, then assigned to itself based on the value of the control signal(s).
+				WHEN pwrgd =>
+					IF (V33A_OK = '1') THEN
+                                        curr_state1 <= pwrgd;
+					V1P8A_EN <= '1';
+					ELSE
+                                        curr_state1 <= no_pwrgd; 
+					V1P8A_EN <= '0'; 
+					END IF;
 
---For more information, see the following sections of the IEEE Std 1076-1993 IEEE Standard VHDL Language Reference Manual:
+				WHEN delay =>
+					IF (count1 = to_unsigned(4, 16)) THEN -- 4 * 10uSec = 4 Periods
+                                        curr_state1 <= pwrgd;
+					count1 <= (OTHERS => '0');
+					ELSE
+					count1 <= count1 + 1;
+					curr_state1 <= delay;
+					END IF;
+					V1P8A_EN <= '0';
 
---Section 8.6: If Statement
+				WHEN no_pwrgd => 
+					IF (V33A_OK = '1') THEN
+                                        curr_state1 <= delay;
+					count1 <= (OTHERS => '0');
+					ELSE
+                                        curr_state1 <= no_pwrgd;
+					END IF;
+					V1P8A_EN <= '0';
 
---Section 9.2: Process Statement
- 
---Rate This Page
+			END CASE;
+		END IF;
+	END PROCESS;
 
---Contact Altera|Legal Notice
 
---Copyright© 2005-2013 Altera Corporation. All rights reserved. ALTERA, ARRIA, CYCLONE, HARDCOPY, MAX, MEGACORE, NIOS, QUARTUS, STRATIX, and all other brands, unless noted otherwise, and/or trademarks of Altera Corporation in the U.S. and other countries.
+	PROCESS (clk_100Khz)
+	BEGIN
+		IF (clk_100Khz'event AND clk_100Khz = '1') THEN
+			CASE curr_state2 IS
+
+				WHEN pwrgd =>
+					IF (V33A_OK = '1') THEN
+                                        curr_state2 <= pwrgd;
+					VCCINAUX_EN <= '1';
+					ELSE
+                                        curr_state2 <= no_pwrgd; 
+					VCCINAUX_EN <= '0'; 
+					END IF;
+
+				WHEN delay =>
+					IF (count2 = to_unsigned(6, 16)) THEN -- 4 * 10uSec = 4 Periods
+                                        curr_state2 <= pwrgd;
+					count2 <= (OTHERS => '0');
+					ELSE
+					count2 <= count2 + 1;
+					curr_state2 <= delay;
+					END IF;
+					VCCINAUX_EN <= '0';
+
+				WHEN no_pwrgd => 
+					IF (V33A_OK = '1') THEN
+                                        curr_state2 <= delay;
+					count2 <= (OTHERS => '0');
+					ELSE
+                                        curr_state2 <= no_pwrgd;
+					END IF;
+					VCCINAUX_EN <= '0';
+
+			END CASE;
+		END IF;
+	END PROCESS;
+
+END rsmrst_arch;
