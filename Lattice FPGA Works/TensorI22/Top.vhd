@@ -205,6 +205,7 @@ ARCHITECTURE bdf_type OF TOP IS
 				 vccinaux_en : OUT STD_LOGIC; 
 				 V1P8A_EN: OUT STD_LOGIC
 			 );
+	END COMPONENT;
 
 	SIGNAL VCC : STD_LOGIC;
 	SIGNAL clk_100Khz_signal : STD_LOGIC;

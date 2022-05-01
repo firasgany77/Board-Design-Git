@@ -21,7 +21,7 @@ ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 	SIGNAL curr_state                     : state_type            := no_pwrgd;
 	SIGNAL pwrok                          : STD_LOGIC             := '0';
 	SIGNAL count                          : unsigned(15 DOWNTO 0) := (OTHERS => '0');
-
+    
 BEGIN
 	pwrok <= '1' WHEN (V33DSW_OK = '1')
 		ELSE
