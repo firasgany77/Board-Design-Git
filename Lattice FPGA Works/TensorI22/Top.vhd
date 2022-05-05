@@ -207,6 +207,16 @@ ARCHITECTURE bdf_type OF TOP IS
 			 );
 	END COMPONENT;
 
+	COMPONENT primary_voltages_enabler
+	        Port(
+		        V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		        clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+		        V5A_EN : OUT STD_LOGIC; 
+		        VCCINAUX_EN : OUT STD_LOGIC; 
+		        V1P8A_EN : OUT STD_LOGIC
+			);
+    END COMPONENT;
+
 	SIGNAL VCC : STD_LOGIC;
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
@@ -215,6 +225,8 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
+	SIGNAL vccinaux_en_signal : STD_LOGIC;
+	SIGNAL v1p8a_en_signal : STD_LOGIC; 
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
 	SIGNAL mainpwr_OK_signal: STD_LOGIC;
@@ -224,7 +236,7 @@ BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal;
 	DSW_PWROK <= DSW_PWROK_signal; -- connecting the signal to DSW_PWROK TOP's output. 
-	VCCINAUX_EN <= DSW_PWROK_signal; -- NEW: 
+	VCCINAUX_EN <= vccinaux_en_signal; -- NEW: 
    --V105A_EN <= DSW_PWROK_signal;
 	VCCST_PWRGD <= vccst_pwrgd_signal; 
 	RSMRSTn <= RSMRSTn_signal;
@@ -232,9 +244,9 @@ BEGIN
 	--V33A_ENn <= NOT(VCC); -- VCC is the FPGA +3V3DSW PWR Rail // Change: V33A Ramps Before 1P8A.
 	                        -- V33A rail ramp Before VCCIAN_AUX
 							-- 1P8A Primary rail ramp in advance of the VCCIN_AUX. VCCIN_AUX can ramp with 1P8A for fixed 1.8V VCCIN_AUX design.
-	
-	V5A_EN <= VCC;
-	V5S_ENn <= NOT(slp_s3n_signal);
+	V1P8A_EN <= v1p8a_en_signal; 
+	V5A_EN <= v5a_en_signal;
+	V5S_ENn <= NOT(slp_s3n_signal); -- what is V5S_ENn?
 	V33S_ENn <= NOT(slp_s3n_signal);
 	VCCST_EN <= VCCST_EN_signal; -- Changed from VCCST_EN# and NOT(VCCST_EN_signal) 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
@@ -268,6 +280,14 @@ BEGIN
 		V33A_OK => V33A_OK,
 		VCCINAUX_EN => VCCINAUX_EN,		
 		V1P8A_EN => V1P8A_EN);
+
+	PRIMARY_VOLTAGES_EN : primary_voltages_enabler
+	PORT MAP(
+	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
+		clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
+		V5A_EN => v5a_en_signal,
+		VCCINAUX_EN => vccinaux_en_signal,
+		V1P8A_EN => v1p8a_en_signal);
 
 	COUNTER : counter_block
 	PORT MAP(
