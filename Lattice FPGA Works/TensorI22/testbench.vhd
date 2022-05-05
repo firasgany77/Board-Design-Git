@@ -48,11 +48,11 @@ dut: rsmrst_pwrgd_block_test
 stimulus:
 process begin
 
-  IF (reset = '0')
+  IF (reset = '0') THEN
   v33a_ok <= '1';
   END IF;
 
-  IF (reset = '1');
+  IF (reset = '1') THEN
   v33a_ok <= '0';
   END IF; 
   
