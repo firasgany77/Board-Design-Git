@@ -47,7 +47,7 @@ dut: rsmrst_pwrgd_block_test
 
 stimulus:
 process begin
-  --wait until (reset = '0');
+
   IF (reset = '0')
   v33a_ok <= '1';
   END IF;
