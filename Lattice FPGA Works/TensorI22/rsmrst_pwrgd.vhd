@@ -17,6 +17,7 @@ ENTITY rsmrst_pwrgd_block IS
 		rsmrst_pwrgd_out : OUT STD_LOGIC);--without delay
 END rsmrst_pwrgd_block;
 
+
 ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 	TYPE state_type IS (pwrgd, no_pwrgd, delay);
 	ATTRIBUTE enum_encoding : STRING;
@@ -50,7 +51,7 @@ BEGIN
 					END IF;
 
 				WHEN delay => --tPCH03 in  CFL PDG (p.528/685) 
-					IF (count = to_unsigned(10000, 16)) THEN -- 10000 * 50uSec = 100 mSec (was 100msec at ATSKL)
+					IF (count = to_unsigned(10000, 16)) THEN -- 10000 * 10uSec = 100 mSec (was 100msec at ATSKL)
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');
 					ELSE

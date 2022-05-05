@@ -49,7 +49,7 @@ BEGIN
 
 	PROCESS (clk_100Khz) -- 5 mSec delay process, delay at pwrok rising edge:  vccin_vccinaux_ok -> delayed_vccin_vccinaux_ok
 	BEGIN
-		IF (clk_100Khz = '1') THEN
+		IF ( clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>
@@ -80,6 +80,8 @@ BEGIN
 					END IF;
 			END CASE;
 		END IF;
+
+		
 	END PROCESS;
 
 END pch_pwrok_block_arch;

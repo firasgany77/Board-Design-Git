@@ -33,7 +33,7 @@ END counter_block;
 -- the counetr should count untill 125!
 	
 
-ARCHITECTURE counter_arch OF counter IS
+ARCHITECTURE counter_arch OF counter_block IS
 	SIGNAL counter : INTEGER := 1;
 	SIGNAL tmp : STD_LOGIC := '0';
 BEGIN
