@@ -19,22 +19,22 @@ END primary_voltages_enabler;
 ARCHITECTURE rsmrst_arch OF primary_voltages_enabler IS
 	TYPE state_type IS (pwrgd, no_pwrgd, delay_to_vccinaux_en, delay_to_v1p8a_en);
 	ATTRIBUTE enum_encoding : STRING;
-	SIGNAL curr_state1 : state_type := no_pwrgd;
-	SIGNAL count1 : integer range 0 to 35; -- 300us = 300,000 ns delay from V33A_OK to V1P8A_EN (min = 200) - tPCH06 p461/507
+	SIGNAL curr_state : state_type := no_pwrgd;
+	SIGNAL count : integer range 0 to 35; -- 300us = 300,000 ns delay from V33A_OK to V1P8A_EN (min = 200) - tPCH06 p461/507
 
 BEGIN
 	PROCESS (clk_100Khz)
 	BEGIN
 		IF (clk_100Khz'event AND clk_100Khz = '1') THEN
-			CASE curr_state1 IS
+			CASE curr_state IS
 
 				WHEN no_pwrgd => 
 					IF (V33A_OK = '1') THEN
 					V5A_EN <= '1'; 
-                    curr_state1 <= delay_to_v1p8a_en;
-                    count1 <= 0;
+                    curr_state <= delay_to_v1p8a_en;
+                    count <= 0;
 					ELSE
-                    curr_state1 <= no_pwrgd;
+                    curr_state <= no_pwrgd;
 					END IF;
 					V5A_EN <= '0'; 
 					V1P8A_EN <= '0';
@@ -43,14 +43,14 @@ BEGIN
 
 				WHEN delay_to_v1p8a_en =>
 				    IF (V33A_OK = '0') THEN
-					curr_state1 <= no_pwrgd; 
+					curr_state <= no_pwrgd; 
 					END IF; 
 
-				    IF (V33A_OK = '1' AND count1 = 29) THEN -- 30 * 10us = 30 Periods = 300,000 ns (tPCH06 p.461/507 TL-PDG)
-                    curr_state1 <= delay_to_vccinaux_en;
-					ELSIF (V33A_OK = '1' AND count1 /= 29) THEN
-					count1 <= count1 + 1;
-					curr_state1 <= delay_to_v1p8a_en;
+				    IF (V33A_OK = '1' AND count = 29) THEN -- 30 * 10us = 30 Periods = 300,000 ns (tPCH06 p.461/507 TL-PDG)
+                    curr_state <= delay_to_vccinaux_en;
+					ELSIF (V33A_OK = '1' AND count /= 29) THEN
+					count <= count + 1;
+					curr_state <= delay_to_v1p8a_en;
 					V5A_EN <= '1'; 
 					V1P8A_EN <= '0';
                     VCCINAUX_EN <= '0';
@@ -60,14 +60,14 @@ BEGIN
                 WHEN delay_to_vccinaux_en =>
 
 				    IF (V33A_OK = '0') THEN
-				    curr_state1 <= no_pwrgd; 
+				    curr_state <= no_pwrgd; 
 					END IF; 
 
-                    IF (V33A_OK = '1' AND count1 = 35) THEN 
-                    curr_state1 <= pwrgd;
-                    ELSIF (V33A_OK = '1' AND count1 /= 35) THEN
-                    count1 <= count1 + 1;
-                    curr_state1 <= delay_to_vccinaux_en;
+                    IF (V33A_OK = '1' AND count = 35) THEN 
+                    curr_state <= pwrgd;
+                    ELSIF (V33A_OK = '1' AND count /= 35) THEN
+                    count <= count + 1;
+                    curr_state <= delay_to_vccinaux_en;
 					V5A_EN <= '1'; 
 					V1P8A_EN <= '1';
 					VCCINAUX_EN <= '0';
@@ -76,12 +76,12 @@ BEGIN
 
 				WHEN pwrgd =>
 				    IF (V33A_OK = '1') THEN
-				    curr_state1 <= pwrgd;
+				    curr_state <= pwrgd;
 					V5A_EN <= '1'; 
 				    VCCINAUX_EN <= '1';
 				    V1P8A_EN <= '1'; -- the assignment itself happens in the next cycle. 
 				    ELSE
-				    curr_state1 <= no_pwrgd; 
+				    curr_state <= no_pwrgd; 
 					V5A_EN <= '0';
 				    V1P8A_EN <= '0';
 				    VCCINAUX_EN <= '0';  

@@ -36,58 +36,69 @@ LIBRARY work;
 
 ENTITY TOP IS
 	PORT (
-		SATAXPCIE0_FPGA : IN STD_LOGIC; --OK
-		SATAXPCIE1_FPGA : IN STD_LOGIC; --OK
-		VCCIN_VR_PROCHOT_FPGA : IN STD_LOGIC;--OK
+		SATAXPCIE0_FPGA : IN STD_LOGIC; -- OK
+		SATAXPCIE1_FPGA : IN STD_LOGIC; -- OK
+		VCCIN_VR_PROCHOT_FPGA : IN STD_LOGIC; --OK
 		VCCIN_VR_PE : IN STD_LOGIC; --OK
-		VCCIN_EN : OUT STD_LOGIC; --OK
-		VCCINAUX_VR_PROCHOT_FPGA : IN STD_LOGIC; --OK
-		VCCINAUX_EN : OUT STD_LOGIC; -- OK
-		VCCINAUX_VR_PE : IN STD_LOGIC; --OK
-		VR_PROCHOT_FPGA_OUT_N : IN STD_LOGIC; --OK
-		VR_READY_VCCINAUX : IN STD_LOGIC; --OK (replaced VCCSA_READY)
-		VR_READY_VCCIN : IN STD_LOGIC; -- OK --replaced VR_READY
-		SYS_PWROK : OUT STD_LOGIC; -- OK 
-		CPU_C10_GATE_N : IN STD_LOGIC; --OK
-		VCCST_OVERRIDE_3V3 : IN STD_LOGIC; --OK
-		VCCST_PWRGD : OUT STD_LOGIC; -- OK (VCCST_PWRGD_1P05 after voltage divider, VCCST_PWRGD should be 3.3V)
-		VCCST_EN : OUT STD_LOGIC; -- OK (before it was VCCST_EN#, change logic to make it work)
-		VCCST_CPU_OK : IN STD_LOGIC; --OK (replaced V105A_OK)
-		FPGA_SLP_WLAN_N : IN STD_LOGIC; --OK (not used in TensorI20? Check!)
+		VCCIN_EN : OUT STD_LOGIC; -- OK (from SLP_S3n = HIGH --> VCCIN_EN = HIGH - tPCH08 = min: 1ms)
+		                          -- OK (from SLP_S3n = HIGH --> PCH_PWROK       - tPCH08 = min: 1ms)
+								  -- This supply is expected to be 0V during states where SLP_S0# is asserted. It may be left on during this
+                                  -- condition, but the SoC will not achieve it is lowest power consumption. Specific power up latencies apply when 
+                                  -- exiting this state. Applicable to form factors with battery only (ie. AIO)Optional depending platform design; ON 
+                                  -- if AC is present.
+
+		VCCINAUX_VR_PROCHOT_FPGA : IN STD_LOGIC; -- OK
+		VCCINAUX_EN : OUT STD_LOGIC;   -- OK
+		VCCINAUX_VR_PE : IN STD_LOGIC; -- OK
+		VR_PROCHOT_FPGA_OUT_N : IN STD_LOGIC; -- OK
+		VR_READY_VCCINAUX : IN STD_LOGIC;  -- OK (replaced VCCSA_READY)
+		VR_READY_VCCIN : IN STD_LOGIC;     -- OK --replaced VR_READY
+		SYS_PWROK : OUT STD_LOGIC;         -- OK 
+		CPU_C10_GATE_N : IN STD_LOGIC;     -- OK
+		VCCST_OVERRIDE_3V3 : IN STD_LOGIC; -- OK
+		VCCST_PWRGD : OUT STD_LOGIC;    -- OK (VCCST_PWRGD_1P05 after voltage divider, VCCST_PWRGD should be 3.3V)
+		VCCST_EN : OUT STD_LOGIC;       -- OK (before it was VCCST_EN#, change logic to make it work)
+
+		VCCST_CPU_OK : IN STD_LOGIC;    -- OK (replaced V105A_OK)
+		FPGA_SLP_WLAN_N : IN STD_LOGIC; -- OK (not used in TensorI20? Check!)
 		GPIO_FPGA_SoC_1 : IN STD_LOGIC; -- OK
 		GPIO_FPGA_SoC_2 : IN STD_LOGIC; -- OK
 		GPIO_FPGA_SoC_3 : IN STD_LOGIC; -- OK
 		GPIO_FPGA_SoC_4 : IN STD_LOGIC; -- OK (replaced GPIO_FPGA_PCH_5)
-		GPIO_FPGA_EXP_1 : IN STD_LOGIC; --OK
-		GPIO_FPGA_EXP_2 : IN STD_LOGIC; --OK
-		TPM_GPIO : IN STD_LOGIC; --OK
-		V33A_OK : IN STD_LOGIC; --OK (comes from OPAMP that measures +3V3A)
+		GPIO_FPGA_EXP_1 : IN STD_LOGIC; -- OK
+		GPIO_FPGA_EXP_2 : IN STD_LOGIC; -- OK
+		TPM_GPIO : IN STD_LOGIC;  -- OK
+		V33A_OK : IN STD_LOGIC;   -- OK (comes from OPAMP that measures +3V3A)
 		V33A_ENn : OUT STD_LOGIC; -- OK
-		V33DSW_OK : IN STD_LOGIC; --OK
-		V33S_OK : IN STD_LOGIC; --OK
-		V33S_ENn : OUT STD_LOGIC; --OK (V33S_EN# in OrCAD)
-		V1P8A_OK : IN STD_LOGIC; -- OK (V1.8A_OK in Orcad)
-		V1P8A_EN : OUT STD_LOGIC; --OK (V1.8A_EN in OrCAD)
-		V5A_OK : IN STD_LOGIC; -- OK
-		V5A_EN : OUT STD_LOGIC; --OK
+		V33DSW_OK : IN STD_LOGIC; -- OK
+		V33S_OK : IN STD_LOGIC;   -- OK
+		V33S_ENn : OUT STD_LOGIC; -- OK (V33S_EN# in OrCAD)
+		V1P8A_OK : IN STD_LOGIC;  -- OK (V1.8A_OK in Orcad)
+		V1P8A_EN : OUT STD_LOGIC; -- OK (V1.8A_EN in OrCAD)
+		V5A_OK : IN STD_LOGIC;    -- OK
+		V5A_EN : OUT STD_LOGIC;   -- OK
+
 		    -- V5A_OK (USB_VBUS)
             -- Powering USB_VBUS before VCCDSW_3P3 (+3V3DSW) is not recommended.  
 			-- Powering USB_VBUS with VCCPRIM_3P3 (3V3A) unpowered, or during VCCPRIM_3P3 (3V3A) ramp up\down, may result in leakage.
-		V5S_ENn : OUT STD_LOGIC; --OK (V5S_EN# in OrCAD)
-		V5S_OK : IN STD_LOGIC; -- OK
+		
+		V5S_ENn : OUT STD_LOGIC; -- OK (V5S_EN# in OrCAD)
+		V5S_OK : IN STD_LOGIC;   -- OK
 		V12_MAIN_MON : IN STD_LOGIC; -- this replaces the FPGA_ADC input in SBC-CLH.
-		VDDQ_OK : IN STD_LOGIC; --OK
-		VDDQ_EN : OUT STD_LOGIC; --OK
-		VPP_OK : IN STD_LOGIC; --OK
-		VPP_EN : OUT STD_LOGIC; --OK
-		SOC_SPKR : IN STD_LOGIC; --OK(NEW)
-		SUSACK_N : IN STD_LOGIC; --OK(NEW) -- TensorI20: removed due to 2.8V requirement 
-		SUSWARN_N: IN STD_LOGIC; --OK(New) -- TensorI20: removed due to 2.8V requirement 
-		SLP_S0n : IN STD_LOGIC;  --OK(NEW)
-		SLP_S3n : IN STD_LOGIC; --OK 
-		SLP_S4n : IN STD_LOGIC; --OK
-		SLP_S5n : IN STD_LOGIC; --OK
-		SLP_SUSn : IN STD_LOGIC; --OK -- Why Dangling IO ? -- it hasn't been used in SBC-CLH because it was for Deep-Sx Mode.
+		VDDQ_OK : IN STD_LOGIC;  -- OK
+		VDDQ_EN : OUT STD_LOGIC; -- OK (VDDQ must ramp after VPP on DDR4 and LPDDR4 based systems, thus VDDQ may
+                                        --ramp up after SLP_S3# de-assertion due to VR ramp timing and configuration)
+
+		VPP_OK : IN STD_LOGIC;   -- OK
+		VPP_EN : OUT STD_LOGIC;  -- OK
+		SOC_SPKR : IN STD_LOGIC; -- OK(NEW)
+		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement 
+		SUSWARN_N: IN STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement 
+		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
+		SLP_S3n : IN STD_LOGIC;  -- OK 
+		SLP_S4n : IN STD_LOGIC;  -- OK
+		SLP_S5n : IN STD_LOGIC;  -- OK
+		SLP_SUSn : IN STD_LOGIC; -- OK -- Why Dangling IO ? -- it hasn't been used in SBC-CLH because it was for Deep-Sx Mode.
 
             -- SLP_SUS#: 
 		    -- Deep Sx Indication: When asserted (driven low), this signal indicates PCH is in
@@ -100,8 +111,10 @@ ENTITY TOP IS
 		FPGA_OSC : IN STD_LOGIC; --OK
 		SPI_FP_IO3 : IN STD_LOGIC; --OK (NEW)
 		SPI_FP_IO2 : IN STD_LOGIC; --OK (NEW)
-		PCH_PWROK : OUT STD_LOGIC; --OK
-		DSW_PWROK : OUT STD_LOGIC; -- OK 
+		PCH_PWROK : OUT STD_LOGIC; --OK (from SLP_S3n     = HIGH --> PCH_PWROK - tPCH08 = min: 1ms)
+                                        (from VCCST_PWRGD = HIGH --> PCH_PWROK   tCPU16 = min: 0ns)
+
+		DSW_PWROK : OUT STD_LOGIC; -- OK                                
 		PWRBTN_LED : OUT STD_LOGIC; --OK
 		PWRBTNn : IN STD_LOGIC; --OK
 		RSMRSTn : OUT STD_LOGIC; --OK
@@ -177,9 +190,9 @@ ARCHITECTURE bdf_type OF TOP IS
 	COMPONENT rsmrst_pwrgd_block
 		PORT (
 			V33A_OK : IN STD_LOGIC;
-			VCCST_CPU_OK : IN STD_LOGIC;
 			V5A_OK : IN STD_LOGIC;
 			V1P8A_OK : IN STD_LOGIC;
+			VR_READY_VCCINAUX : IN STD_LOGIC;
 			SLP_SUSn : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			RSMRSTn : OUT STD_LOGIC;
@@ -198,14 +211,14 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT vccinaux_1p8a_en_block
-	         Port(
-				 clk_100Khz : IN STD_LOGIC;
-				 V33A_OK: IN STD_LOGIC; -- 1p8a ramp up starts after 3V3A ramp up. 
-				 vccinaux_en : OUT STD_LOGIC; 
-				 V1P8A_EN: OUT STD_LOGIC
-			 );
-	END COMPONENT;
+	--COMPONENT vccinaux_1p8a_en_block
+	      ---   Port(
+		  --	 clk_100Khz : IN STD_LOGIC;
+		 --		 V33A_OK: IN STD_LOGIC; -- 1p8a ramp up starts after 3V3A ramp up. 
+				 -- vccinaux_en : OUT STD_LOGIC; 
+				-- V1P8A_EN: OUT STD_LOGIC
+			 --);
+	-- END COMPONENT;
 
 	COMPONENT primary_voltages_enabler
 	        Port(
@@ -230,6 +243,7 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
 	SIGNAL mainpwr_OK_signal: STD_LOGIC;
+	SIGNAL vr_ready_vccinaux: STD_LOGIC; 
     
 
 BEGIN
@@ -237,7 +251,6 @@ BEGIN
 	SYS_PWROK <= pch_pwrok_signal;
 	DSW_PWROK <= DSW_PWROK_signal; -- connecting the signal to DSW_PWROK TOP's output. 
 	VCCINAUX_EN <= vccinaux_en_signal; -- NEW: 
-   --V105A_EN <= DSW_PWROK_signal;
 	VCCST_PWRGD <= vccst_pwrgd_signal; 
 	RSMRSTn <= RSMRSTn_signal;
 	VCC <= '1';
@@ -247,6 +260,7 @@ BEGIN
 	V1P8A_EN <= v1p8a_en_signal; 
 	V5A_EN <= v5a_en_signal;
 	V5S_ENn <= NOT(slp_s3n_signal); -- what is V5S_ENn?
+	VR_READY_VCCINAUX <= vr_ready_vccinaux; 
 	V33S_ENn <= NOT(slp_s3n_signal);
 	VCCST_EN <= VCCST_EN_signal; -- Changed from VCCST_EN# and NOT(VCCST_EN_signal) 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
@@ -274,14 +288,14 @@ BEGIN
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
 
-	VCCINAUX_1P8A_EN : vccinaux_1p8a_en_block
-	PORT MAP(
-		clk_100Khz => clk_100Khz_signal,
-		V33A_OK => V33A_OK,
-		VCCINAUX_EN => VCCINAUX_EN,		
-		V1P8A_EN => V1P8A_EN);
+	--VCCINAUX_1P8A_EN : vccinaux_1p8a_en_block
+	--PORT MAP(
+	--	clk_100Khz => clk_100Khz_signal,
+		--V33A_OK => V33A_OK,
+		--VCCINAUX_EN => VCCINAUX_EN,		
+		--V1P8A_EN => V1P8A_EN);
 
-	PRIMARY_VOLTAGES_EN : primary_voltages_enabler
+	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
 	PORT MAP(
 	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
 		clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
@@ -305,12 +319,11 @@ BEGIN
 	PORT MAP(
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
-		--vccio_pwrok => VCCIO_OK,-- vccio was a CPU PWR rail in Tensor I20 - not needed in Tensor I22. 
 		slp_s3n => slp_s3n_signal,
 		rsmrst_pwrgd => rsmrst_pwrgd_signal,
 		clk_100Khz => clk_100Khz_signal,
-		vccin_en => vccin_en,
-		vccinaux_en => VCCINAUX_EN);
+		--vccin_en => vccin_en,
+		--vccinaux_en => VCCINAUX_EN);
 
 	DSW_PWROK : dsw_pwrok_block
 	PORT MAP(
@@ -322,9 +335,9 @@ BEGIN
 	RSMRST_PWRGD : rsmrst_pwrgd_block
 	PORT MAP(
 		V33A_OK => V33A_OK,
-		VCCST_CPU_OK => VCCST_CPU_OK,
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
+		VR_READY_VCCINAUX => vr_ready_vccinaux,
 		SLP_SUSn => VCC, -- Exit from Deep Sx 
 		clk_100Khz => clk_100Khz_signal,
 		RSMRSTn => RSMRSTn_signal,
@@ -334,7 +347,7 @@ BEGIN
 	PORT MAP(
 		slp_s3n => slp_s3n_signal,
 		vr_ready_vccin => VR_READY_VCCIN,
-		vr_ready_vccinaux => VR_READY_VCCINAUX,
+		--vr_ready_vccinaux => VR_READY_VCCINAUX,
 		clk_100Khz => clk_100Khz_signal,
 		vccst_pwrgd => vccst_pwrgd_signal,
 		pch_pwrok => pch_pwrok_signal);
