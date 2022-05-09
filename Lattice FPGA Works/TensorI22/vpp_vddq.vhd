@@ -43,11 +43,12 @@ BEGIN
 						curr_state <= pwrgd;
 						delayed_vddq_pwrgd <= '1';
 					ELSE
-						curr_state <= delay; -- Delay at vddq_pwrgd transition from 1 to 0
+						curr_state <= delay; 
 						count <= (OTHERS => '0');
 					END IF;
 
-				WHEN delay => -- According to Skylake / Kabylake PDG and JEDEC DDR4: 30 mSec between VDDQ off to VPP off		
+				WHEN delay => -- we enter this delay only when we have vddq_pwrgd 1-> 0 transition, or slp_s4n '1' to low transition. 
+				              -- tPLT16: 30 mSec between VDDQ off to VPP off		
 					IF (count = to_unsigned(3000, 16)) THEN -- 3000 * 10uSec = 30 mSec
 						curr_state <= no_pwrgd;
 						count <= (OTHERS => '0');
