@@ -43,7 +43,7 @@ BEGIN
 
 				WHEN delay =>                           -- After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
 					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
-						-- tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK)
+						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK)
 						curr_state <= pwrgd;
 						count      <= (OTHERS => '0');
 					ELSE

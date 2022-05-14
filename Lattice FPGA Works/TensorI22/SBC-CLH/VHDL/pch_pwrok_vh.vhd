@@ -13,7 +13,7 @@ port (
 	slp_s3:            in std_logic; -- SLP_S3#
 	vr_ready:          in std_logic; -- Open-drain, internal weak pull-up required
 	vccsa_pwrok:       in std_logic; -- Open-drain, internal weak pull-up required
-   clk_100k:          in std_logic; -- 100KHz clock, T = 10uSec		
+    clk_100k:          in std_logic; -- 100KHz clock, T = 10uSec		
 	vccst_pwrgd_3v3:   out std_logic;
 	pch_pwrok:         out std_logic); 
 end pch_pwrok_block;
@@ -37,6 +37,7 @@ pch_pwrok       <=  '1' when (delayed_vr_vccsa_ok = '1') and (slp_s3 = '1')     
 					
 vccst_pwrgd_3v3 <= '1' when (delayed_vr_vccsa_ok = '1') and (slp_s3 = '1')          -- Output   
 					else '0';
+					-- Firas Question: WHY? shouldn't VCCSA must ramp after VCCST have completed it's ramp. p513/685 or tCPU06?
 					
 process (clk_100k) -- 5 mSec delay process, delay at pwrok rising edge:  vr_vccsa_ok -> delayed_vr_vccsa_ok
 begin	
@@ -49,7 +50,8 @@ begin
 					delayed_vr_vccsa_ok <= '1'; 
 				else	
 					curr_state <= no_pwrgd;   -- short delay at vr_vccsa_ok transition from 1 to 0
-					delayed_vr_vccsa_ok <= '0';  -- delayed_vr_vccsa_ok signal will not assert at vr_vccsa_ok glitches of 1T
+					delayed_vr_vccsa_ok <= '0';  -- delayed_vr_vccsa_ok signal will not assert at vr_vccsa_ok glitches of 1T 
+					                             -- Firas Question: Why? because the value gets updated in the next CLK cycle?
 				end if;
 			
 			when delay =>  -- 	

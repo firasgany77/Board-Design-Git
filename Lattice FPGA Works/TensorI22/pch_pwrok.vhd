@@ -2,12 +2,18 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
 -- SLP_S3# asserted with or before PCH_PWROK
 -- PCH_PWROK is derived from PG of the CPU's VR, with a delay at rising edge after SLP_S3# deassertion of minimum 1 msec (actual 3 msec).
 -- vccst_pwrgd is tied to PCH_PWROK, and should have a hardware resistive divider, to be at 1V domain (CPU input).
 -- SLP_S3# assertion to vccst_pwrgd de-assertion: maximum of 1 usec.
 
---added:
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+-- Added:
 -- vccst_pwrgd can assert before or equal to PCH_PWROK, but must never lag it. 
 -- vccst_pwrgd and pch_pwrok are the same signal. why?
 -- vr_ready_vccinaux relpaced vccsa_pwrok
@@ -15,6 +21,15 @@ USE IEEE.numeric_std.ALL;
 -- PCH_PWROK output is connected to SYS_PWROK.
 -- vccst_pwrgd must go low during Sx (System state S3, S4 or S5), regardless of voltage level of VCCST. 
 
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+
+-- TL-PDG:
+-- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
+-- however, VCCST_PWRGD may lag completing its ramp with respect to PCH_PWROK by up to 20us
+
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 ENTITY pch_pwrok_block IS
 	PORT (
@@ -35,12 +50,13 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 	SIGNAL vccin_vccinaux_ok : STD_LOGIC;
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
-	vccin_vccinaux_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3n = '1') -- Delay trigger
+	vccin_vccinaux_ok <= '1' WHEN (vr_ready_vccin = '1') AND (vr_ready_vccinaux = '1') AND (slp_s3n = '1') -- Delay trigger (ALL_SUYS)
 		ELSE
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- tPCH08 in Sequence Timings, min is 1 msec
-		ELSE
+	pch_pwrok <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- tPCH08: SLP_S3# de-assertion(0-->1) to PCH_PWROK assertion. (min: 1 ms)
+	                                                                            -- tPLT04: ALL_SYS_PWRGD = HIGH --> PCH_PWROK = HIGH (min: 1ms)
+		ELSE              
 		'0';
     
 	vccst_pwrgd <= '1' WHEN (delayed_vccin_vccinaux_ok = '1') AND (slp_s3n = '1') -- Output   
@@ -49,7 +65,7 @@ BEGIN
 
 	PROCESS (clk_100Khz) -- 5 mSec delay process, delay at pwrok rising edge:  vccin_vccinaux_ok -> delayed_vccin_vccinaux_ok
 	BEGIN
-		IF ( clk_100Khz = '1') THEN
+		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>
@@ -57,20 +73,21 @@ BEGIN
 						curr_state <= pwrgd;
 						delayed_vccin_vccinaux_ok <= '1';
 					ELSE
-						curr_state <= no_pwrgd; -- short delay at vccin_vccinaux_ok transition from 1 to 0
+						curr_state <= no_pwrgd;           -- short delay at vccin_vccinaux_ok transition from 1 to 0
 						delayed_vccin_vccinaux_ok <= '0'; -- delayed_vccin_vccinaux_ok signal will not assert at vccin_vccinaux_ok glitches of 1T
 					END IF;
 
 				WHEN delay => -- 	
-					IF (count = to_unsigned(3000, 16)) THEN -- 300 * 10uSec = 3 mSec (Changed to 3000: Test) -- min is 1 mSec
+					IF (count = to_unsigned(3000, 16)) THEN -- 3000 * us = 30 ms (min: 1 ms)
 						curr_state <= pwrgd;                -- T = 1\100Khz = 10uSec
 						count <= (OTHERS => '0');
 					ELSE
 						count <= count + 1;
 						curr_state <= delay;
 					END IF;
-					delayed_vccin_vccinaux_ok <= '0';
-				WHEN no_pwrgd =>
+					    delayed_vccin_vccinaux_ok <= '0';
+
+				WHEN no_pwrgd => -- we start from this state
 					IF (vccin_vccinaux_ok = '1') THEN
 						curr_state <= delay; -- transition to high can be done without a delay (SLP_S4# is already high)
 						count <= (OTHERS => '0');
@@ -81,7 +98,6 @@ BEGIN
 			END CASE;
 		END IF;
 
-		
 	END PROCESS;
 
 END pch_pwrok_block_arch;

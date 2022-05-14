@@ -9,7 +9,6 @@ ENTITY vccinaux_vccin_en_block IS
 	PORT (
 		v5s_pwrgd : IN STD_LOGIC;
 		v33s_pwrgd : IN STD_LOGIC;
-		--vccio_pwrok : IN STD_LOGIC; -- Internal weak pull-up required
 		slp_s3n: IN STD_LOGIC;
 		rsmrst_pwrgd : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec	<- PROVISION, NOT IN USE	

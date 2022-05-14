@@ -7,10 +7,11 @@ USE IEEE.numeric_std.ALL;
 -- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn (tPCH03)
 -- There should be a 10msec delay between the PG of the rails to RSMRSTn assertion. NOW 50 msec.
 
-ENTITY primary_voltages_enabler IS -- 
+ENTITY primary_voltages_enabler IS 
 	PORT (
 		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+		SLP_SUSn: IN STD_LOGIC;
 		V5A_EN : OUT STD_LOGIC; 
 		VCCINAUX_EN : OUT STD_LOGIC; 
 		V1P8A_EN : OUT STD_LOGIC);
@@ -21,6 +22,7 @@ ARCHITECTURE rsmrst_arch OF primary_voltages_enabler IS
 	ATTRIBUTE enum_encoding : STRING;
 	SIGNAL curr_state : state_type := no_pwrgd;
 	SIGNAL count : integer range 0 to 35; -- 300us = 300,000 ns delay from V33A_OK to V1P8A_EN (min = 200) - tPCH06 p461/507
+	SIGNAL v1p8a_en_signal : std_logic;
 
 BEGIN
 	PROCESS (clk_100Khz)
