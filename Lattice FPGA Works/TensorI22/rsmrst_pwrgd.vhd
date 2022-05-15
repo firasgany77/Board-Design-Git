@@ -29,9 +29,9 @@ BEGIN
 		ELSE
 		'0';
 
-	-- after all these voltages are ready (check p.461/507)
-	-- V5A_OK -> USB_VBUS OK
-	-- VCCST_CPU_OK should not be here. 
+	-- DSW_PWROK = '0' -> RSMRST = '0' (Power-Loss Early De-Assertion)
+    -- +3V3DSW = '0' -> V33A_OK = '1' -> rsmrst_pwrgd = '0' -> RSMRSTn = '0'
+ 	-- after all these voltages are ready (check p.461/507)
 
 	PROCESS (clk_100Khz)
 	BEGIN

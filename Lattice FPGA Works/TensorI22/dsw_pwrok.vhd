@@ -6,7 +6,7 @@ USE IEEE.numeric_std.ALL;
 ENTITY dsw_pwrok_block IS
 	PORT (
 		V33DSW_OK  : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		mainpwr_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		--mainpwr_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		DSW_PWROK  : OUT STD_LOGIC);
 END dsw_pwrok_block;
@@ -37,13 +37,14 @@ BEGIN
 						curr_state <= pwrgd;
 						DSW_PWROK  <= '1';
 					ELSE
-						curr_state <= no_pwrgd; -- Delay at RSMRST_PWROK transition from 0 to 1
+						curr_state <= no_pwrgd; -- Delay at DSW_PWROK transition from 0 to 1
 						DSW_PWROK  <= '0';      -- The DSW_PWROK signal will not assert at pwrok glitches of less then 1T
 					END IF;
 
-				WHEN delay =>                           -- After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
+				WHEN delay =>                               -- After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
 					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
-						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK)
+					                                        --  TL-PDG: P.434 in Non-Dsx is connected to 3V3A.
+						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK).
 						curr_state <= pwrgd;
 						count      <= (OTHERS => '0');
 					ELSE

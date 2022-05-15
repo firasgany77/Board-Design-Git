@@ -3,94 +3,58 @@ use IEEE.std_logic_1164.all;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
+
+
 -- RSMRSTn is an active-high power good signal for main S5 rails: +3V3A, +1.8VA, VCCIN_AUX, +5VA(USB_VBUS), . 
 -- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn (tPCH03)
 -- There should be a 10msec delay between the PG of the rails to RSMRSTn assertion. NOW 50 msec.
 
-ENTITY primary_voltages_enabler IS 
+ENTITY primary_voltages_enabler IS -- 
 	PORT (
-		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
-		SLP_SUSn: IN STD_LOGIC;
-		V5A_EN : OUT STD_LOGIC; 
-		VCCINAUX_EN : OUT STD_LOGIC; 
-		V1P8A_EN : OUT STD_LOGIC);
+	clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+        SLP_SUSn: IN STD_LOGIC;  
+        V33A_OK: IN STD_LOGIC; 
+        V33DSW_OK: IN STD_LOGIc; 
+        V1P8A_OK: IN STD_LOGIC; 
+        V33A_ENn: OUT STD_LOGIC; 
+	V5A_EN : OUT STD_LOGIC; 
+	VCCINAUX_EN : OUT STD_LOGIC; 
+	V1P8A_EN : OUT STD_LOGIC);
 END primary_voltages_enabler;
 
 ARCHITECTURE rsmrst_arch OF primary_voltages_enabler IS
-	TYPE state_type IS (pwrgd, no_pwrgd, delay_to_vccinaux_en, delay_to_v1p8a_en);
-	ATTRIBUTE enum_encoding : STRING;
-	SIGNAL curr_state : state_type := no_pwrgd;
-	SIGNAL count : integer range 0 to 35; -- 300us = 300,000 ns delay from V33A_OK to V1P8A_EN (min = 200) - tPCH06 p461/507
-	SIGNAL v1p8a_en_signal : std_logic;
+    SIGNAL v1p8a_en_signal: std_logic; 
+    SIGNAL v1p8a_ok_signal: std_logic;
+    SIGNAL vccinaux_en_signal: std_logic;
+    SIGNAL v5a_en_signal: std_logic;
+    SIGNAL v33a_ENn_signal: std_logic;
 
 BEGIN
-	PROCESS (clk_100Khz)
-	BEGIN
-		IF (clk_100Khz'event AND clk_100Khz = '1') THEN
-			CASE curr_state IS
-
-				WHEN no_pwrgd => 
-					IF (V33A_OK = '1') THEN
-					V5A_EN <= '1'; 
-                    curr_state <= delay_to_v1p8a_en;
-                    count <= 0;
-					ELSE
-                    curr_state <= no_pwrgd;
-					END IF;
-					V5A_EN <= '0'; 
-					V1P8A_EN <= '0';
-					VCCINAUX_EN <= '0';
 
 
-				WHEN delay_to_v1p8a_en =>
-				    IF (V33A_OK = '0') THEN
-					curr_state <= no_pwrgd; 
-					END IF; 
-
-				    IF (V33A_OK = '1' AND count = 29) THEN -- 30 * 10us = 30 Periods = 300,000 ns (tPCH06 p.461/507 TL-PDG)
-                    curr_state <= delay_to_vccinaux_en;
-					ELSIF (V33A_OK = '1' AND count /= 29) THEN
-					count <= count + 1;
-					curr_state <= delay_to_v1p8a_en;
-					V5A_EN <= '1'; 
-					V1P8A_EN <= '0';
-                    VCCINAUX_EN <= '0';
-					END IF;
-
- 
-                WHEN delay_to_vccinaux_en =>
-
-				    IF (V33A_OK = '0') THEN
-				    curr_state <= no_pwrgd; 
-					END IF; 
-
-                    IF (V33A_OK = '1' AND count = 35) THEN 
-                    curr_state <= pwrgd;
-                    ELSIF (V33A_OK = '1' AND count /= 35) THEN
-                    count <= count + 1;
-                    curr_state <= delay_to_vccinaux_en;
-					V5A_EN <= '1'; 
-					V1P8A_EN <= '1';
-					VCCINAUX_EN <= '0';
-                    END IF;
+v33a_ENn <= '0' WHEN (V33DSW_OK = '1')  
+                                       -- V33A_EN# = LOW --> 3V3A High
+ELSE
+'Z'; -- V33A_ENn has pull-up to +3V3DSW (V33A_EN# = High--> 3V3A LOW)
 
 
-				WHEN pwrgd =>
-				    IF (V33A_OK = '1') THEN
-				    curr_state <= pwrgd;
-					V5A_EN <= '1'; 
-				    VCCINAUX_EN <= '1';
-				    V1P8A_EN <= '1'; -- the assignment itself happens in the next cycle. 
-				    ELSE
-				    curr_state <= no_pwrgd; 
-					V5A_EN <= '0';
-				    V1P8A_EN <= '0';
-				    VCCINAUX_EN <= '0';  
-				    END IF;
+v1p8a_en_signal <= '1' WHEN (SLP_SUSn = '1') AND (V33A_OK = '1') -- VCC_PRIM_3.3 ramps before VCC_PRIM_1.8 (p.460)
+ELSE
+'0';
 
-			END CASE;
-		END IF;
-	END PROCESS;
+vccinaux_en_signal <= '1' WHEN (V1P8A_OK = '1') -- when VR at regulation, V1P8A_OK is at Hi-Z, and the FPGA's PU asserts the logic '1' 
+                                                -- 1.8 V Primary rail ramp in advance of the VCCIN_AUX. VCCIN_AUX can ramp with V1.8A for fixed 1.8V VCCIN_AUX design.
+                                                -- 3.3 V Primary rail ramp in advance of the VCCIN_AUX 
+ELSE
+'0'; 
+
+v5a_en <= '1' WHEN (V33A_OK = '1') -- Vbus Vbus ramp after VCC_PRIM 3.3V ( reached 95% of their final value (p.460)
+ELSE
+'0'; 
+
+V33A_ENn <= v33a_ENn_signal; 
+V1P8A_EN <= v1p8a_en_signal;
+VCCINAUX_EN <= vccinaux_en_signal;
+V5A_EN <= v5a_en_signal; 
 
 END rsmrst_arch;

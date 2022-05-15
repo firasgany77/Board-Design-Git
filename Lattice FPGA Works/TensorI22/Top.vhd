@@ -74,6 +74,7 @@ ENTITY TOP IS
 										
 										-- CLH:  VCCIO, VCCSA must ramp after VCCST and VDDQ have completed their ramps. p513/685.	
 										-- CLH:  tCPU06: VCCST HIGH --> VCCSA/VCCSIO HIGH (min 100ns)
+										  
 										-- CLH:  SLP_S3# assertion to VCC, VCCGT, VCCIO and VCCSA <100mV --> max 500 ms (tPLT11)
 										
 		VCCST_EN : OUT STD_LOGIC;       -- OK (before it was VCCST_EN#, change logic to make it work)
@@ -93,7 +94,7 @@ ENTITY TOP IS
 		TPM_GPIO : IN STD_LOGIC;        -- OK
 		V33A_OK : IN STD_LOGIC;         -- OK (comes from OPAMP that measures +3V3A)
 		V33A_ENn : OUT STD_LOGIC;       -- OK
-		V33DSW_OK : IN STD_LOGIC;       -- OK
+		V33DSW_OK : IN STD_LOGIC;       -- OK 
 
 
 		                          -- PU to +3V3DSW (FPGA PWR Rail). TL:p433 / DSx Design.
@@ -152,10 +153,10 @@ ENTITY TOP IS
 		SLP_S4n : IN STD_LOGIC;  -- OK
 		SLP_S5n : IN STD_LOGIC;  -- OK
 		SLP_SUSn : IN STD_LOGIC; -- OK 
-		
-		    -- tPCH35: SLP_SUS# low to PCH PRIMARY rails reaching 200mV or less.
-			-- tPCH34: Time from start of ramp of the first prim rail after SLP_SUS# de-assertion to completion of primary and bypass rail ramp.   
-			
+
+			-- tPCH34: Time from start of ramp of the first prim rail after SLP_SUS# de-assertion to completion of primary and bypass rail ramp.   		
+		    -- tPCH35: SLP_SUS# low to PCH PRIMARY rails reaching 200mV or less. (power down)
+
 			-- TL: 
 			-- Unlike previous generation platforms, in TGL SLP_SUS# is used in both DSx and Non-DSx platforms. 
 			-- Refer DSW/PRIM Rail Architecture in DSx and Non-DSx Designs on page 432 for details.
@@ -198,7 +199,15 @@ ENTITY TOP IS
                                         --  rails ready a minimum of 0ms before PCH_PWROK assertion.
 										--  tPLT04: ALL_SYS_PWRGD = HIGH --> PCH_PWROK = HIGH (min: 1ms)
 		RSMRSTn : OUT STD_LOGIC;   -- OK
-		DSW_PWROK : OUT STD_LOGIC; -- OK  
+                                      -- for Non-DSx : DSW_PWROK: LOW --> RSMRSTn: LOW
+
+		                              -- This signal is used for resetting the Primary power plane logic. This signal must be asserted for at least 10 ms after the Primary power wells are valid. 
+									  -- When de-asserted RSMRSTn='1', this signal is an indication that the power wells are stable.
+
+                                      -- Note: there are special requirements around RSMRST# assertion when NOT entering DSx power states. 
+									  -- Refer RSMRST#/ DSW_PWROK Special Requirements on page 461 for details.
+
+        DSW_PWROK : OUT STD_LOGIC; -- OK  
 		                              -- 10 ms required between V33DSW_OK to DSW_PWROK [Done: 30 ms applied] in dsw_pwrok.vhd
 
 		                              -- Indication to the PCH that VCCDSW_3p3V rail is stable.
@@ -216,6 +225,7 @@ ENTITY TOP IS
 									  -- DSx and Non-DSx platforms are required to take RSMRST# and DSW_PWROK low at the same time when not entering a DSx state. 
 									  -- Taking RSMRST low without taking DSW_PWROK low is not permitted when not entering DSx states.
 									  -- If the platform is designed to take DSW_PWROK low on emergency power loss, it must also take RSMRST# low at the same time. p463
+									  -- at system where DSx is not enabled we must pull RSMRST# and DPWROK when going to G3. 
 
 
 									  -- 1. When the system is powered off (G3), DSW_PWROK and RSMRST# must not
@@ -293,7 +303,7 @@ ARCHITECTURE bdf_type OF TOP IS
 	COMPONENT dsw_pwrok_block
 		PORT (
 			V33DSW_OK : IN STD_LOGIC;
-			mainpwr_OK : IN STD_LOGIC;
+			--mainpwr_OK : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			DSW_PWROK : OUT STD_LOGIC
 		);
@@ -322,14 +332,18 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
+
 	COMPONENT primary_voltages_enabler
 	        Port(
-		        V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		        clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
-				SLP_SUSn: IN STD_LOGIC;
-		        V5A_EN : OUT STD_LOGIC; 
-		        VCCINAUX_EN : OUT STD_LOGIC; 
-		        V1P8A_EN : OUT STD_LOGIC
+	    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+        SLP_SUSn: IN STD_LOGIC;  
+        V33A_OK: IN STD_LOGIC; 
+        V33DSW_OK: IN STD_LOGIc; 
+        V1P8A_OK: IN STD_LOGIC; 
+        V33A_ENn: OUT STD_LOGIC; 
+	    V5A_EN : OUT STD_LOGIC; 
+	    VCCINAUX_EN : OUT STD_LOGIC; 
+	    V1P8A_EN : OUT STD_LOGIC
 			);
     END COMPONENT;
 
@@ -345,9 +359,11 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL v1p8a_en_signal : STD_LOGIC; 
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
-	SIGNAL mainpwr_OK_signal : STD_LOGIC;
+	--SIGNAL mainpwr_OK_signal : STD_LOGIC;
 	SIGNAL vr_ready_vccinaux : STD_LOGIC; 
 	SIGNAL slp_susn_signal : STD_LOGIC;
+	SIGNAL v33dsw_ok_signal: STD_LOGIC; 
+	SIGNAL v33a_ENn_signal: STD_LOGIC; 
 
     
 
@@ -358,10 +374,11 @@ BEGIN
 	VCCINAUX_EN <= vccinaux_en_signal; -- NEW: 
 	VCCST_PWRGD <= vccst_pwrgd_signal; 
 	RSMRSTn <= RSMRSTn_signal;
-	VCC <= '1';
-	--V33A_ENn <= NOT(VCC); -- VCC is the FPGA +3V3DSW PWR Rail // Change: V33A Ramps Before 1P8A.
+
+	VCC <= '1'; -- gets updated when FPGA is UP (V33DSW_OK)
+	V33A_ENn <= NOT(VCC);   
+	            
 	                        -- V33A rail ramp Before VCCIAN_AUX
-							-- 1P8A Primary rail ramp in advance of the VCCIN_AUX. VCCIN_AUX can ramp with 1P8A for fixed 1.8V VCCIN_AUX design.
 	V1P8A_EN <= v1p8a_en_signal; 
 	V5A_EN <= v5a_en_signal;
 	V5S_ENn <= NOT(slp_s3n_signal); -- what is V5S_ENn?
@@ -394,13 +411,31 @@ BEGIN
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
 
+
+		/*clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+        SLP_SUSn: IN STD_LOGIC;  
+        V33A_OK: IN STD_LOGIC; 
+        V33DSW_OK: IN STD_LOGIc; 
+        V1P8A_OK: IN STD_LOGIC; 
+        V33A_ENn: OUT STD_LOGIC; 
+	    V5A_EN : OUT STD_LOGIC; 
+	    VCCINAUX_EN : OUT STD_LOGIC; 
+	    V1P8A_EN : OUT STD_LOGIC);*/
+
+
+
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
 	PORT MAP(
 	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
 		clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
 		V5A_EN => v5a_en_signal,
 		VCCINAUX_EN => vccinaux_en_signal,
-		V1P8A_EN => v1p8a_en_signal);
+		V1P8A_EN => v1p8a_en_signal,
+		SLP_SUSn => slp_susn_signal,
+		V33DSW_OK => v33dsw_ok_signal,
+		V33A_ENn => v33a_ENn_signal,
+		
+		);
 
 	COUNTER : counter_block
 	PORT MAP(
@@ -427,7 +462,7 @@ BEGIN
 	DSW_PWROK : dsw_pwrok_block
 	PORT MAP(
 		V33DSW_OK => V33DSW_OK, --assigning signal to component input. 
-		mainpwr_OK => mainpwr_OK_signal,
+		--mainpwr_OK => mainpwr_OK_signal,
 		clk_100Khz => clk_100Khz_signal,
 		DSW_PWROK => DSW_PWROK_signal); --assigning signal to component output
 
