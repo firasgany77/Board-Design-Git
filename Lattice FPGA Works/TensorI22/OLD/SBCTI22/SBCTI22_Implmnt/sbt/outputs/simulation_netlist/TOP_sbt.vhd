@@ -7562,7 +7562,7 @@ signal \b2v_inst11.N_108_f0\ : std_logic;
 signal \b2v_inst11.dutycycle_e_1_8_cascade_\ : std_logic;
 signal \b2v_inst11.dutycycleZ0Z_1_cascade_\ : std_logic;
 signal \b2v_inst11.dutycycle_RNIJU083_0Z0Z_8\ : std_logic;
-signal \delayed_vccin_vccinaux_ok_RNIM6F44_0\ : std_logic;
+signal \delayed_vccin_ok_RNIM6F44_0\ : std_logic;
 signal \b2v_inst11.N_289_cascade_\ : std_logic;
 signal \b2v_inst11.dutycycle_1_0_iv_i_0_2_cascade_\ : std_logic;
 signal \b2v_inst11.N_302_cascade_\ : std_logic;
@@ -8221,7 +8221,7 @@ signal \b2v_inst11.un1_clk_100khz_52_and_i_a2Z0Z_1\ : std_logic;
 signal \b2v_inst11.func_state_RNIDINH9Z0Z_0\ : std_logic;
 signal \b2v_inst11.func_stateZ0Z_1\ : std_logic;
 signal \b2v_inst6.curr_state_RNI8OKQ2Z0Z_0\ : std_logic;
-signal \b2v_inst6.delayed_vccin_vccinaux_ok_0\ : std_logic;
+signal \b2v_inst6.delayed_vccin_ok_0\ : std_logic;
 signal \SYNTHESIZED_WIRE_3_i_0_o3_0\ : std_logic;
 signal \VPP_OK_c\ : std_logic;
 signal \VDDQ_EN_c\ : std_logic;
@@ -8376,7 +8376,7 @@ signal \b2v_inst11.g3_0\ : std_logic;
 signal \b2v_inst11.g2_0_cascade_\ : std_logic;
 signal \RSMRSTn_RNI8DFE\ : std_logic;
 signal \b2v_inst11.N_228_N_0\ : std_logic;
-signal \b2v_inst6.delayed_vccin_vccinaux_okZ0\ : std_logic;
+signal \b2v_inst6.delayed_vccin_okZ0\ : std_logic;
 signal \b2v_inst11.g1_4_2_0\ : std_logic;
 signal \b2v_inst11.dutycycleZ0Z_8\ : std_logic;
 signal \N_19_i\ : std_logic;
@@ -22637,7 +22637,7 @@ begin
     \I__6071\ : Odrv4
     port map (
             O => \N__29005\,
-            I => \b2v_inst6.delayed_vccin_vccinaux_okZ0\
+            I => \b2v_inst6.delayed_vccin_okZ0\
         );
 
     \I__6070\ : InMux
@@ -31457,7 +31457,7 @@ begin
     \I__4601\ : LocalMux
     port map (
             O => \N__24595\,
-            I => \b2v_inst6.delayed_vccin_vccinaux_ok_0\
+            I => \b2v_inst6.delayed_vccin_ok_0\
         );
 
     \I__4600\ : CascadeMux
@@ -45419,7 +45419,7 @@ begin
     \I__2274\ : Odrv12
     port map (
             O => \N__17614\,
-            I => \delayed_vccin_vccinaux_ok_RNIM6F44_0\
+            I => \delayed_vccin_ok_RNIM6F44_0\
         );
 
     \I__2273\ : CascadeMux
@@ -58466,7 +58466,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst6.delayed_vccin_vccinaux_ok_RNIM6F44_0_LC_4_12_0\ : LogicCell40
+    \b2v_inst6.delayed_vccin_ok_RNIM6F44_0_LC_4_12_0\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "0000",
@@ -58477,7 +58477,7 @@ begin
             in1 => \_gnd_net_\,
             in2 => \_gnd_net_\,
             in3 => \N__33778\,
-            lcout => \delayed_vccin_vccinaux_ok_RNIM6F44_0\,
+            lcout => \delayed_vccin_ok_RNIM6F44_0\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -68066,7 +68066,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst6.delayed_vccin_vccinaux_ok_RNITH2G3_LC_8_15_3\ : LogicCell40
+    \b2v_inst6.delayed_vccin_ok_RNITH2G3_LC_8_15_3\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "0000",
@@ -68077,7 +68077,7 @@ begin
             in1 => \N__29511\,
             in2 => \N__24697\,
             in3 => \N__29475\,
-            lcout => \b2v_inst6.delayed_vccin_vccinaux_okZ0\,
+            lcout => \b2v_inst6.delayed_vccin_okZ0\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -68106,7 +68106,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst6.delayed_vccin_vccinaux_ok_LC_8_15_5\ : LogicCell40
+    \b2v_inst6.delayed_vccin_ok_LC_8_15_5\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "1000",
@@ -68117,7 +68117,7 @@ begin
             in1 => \N__29513\,
             in2 => \N__24604\,
             in3 => \N__29476\,
-            lcout => \b2v_inst6.delayed_vccin_vccinaux_ok_0\,
+            lcout => \b2v_inst6.delayed_vccin_ok_0\,
             ltout => OPEN,
             carryin => \_gnd_net_\,
             carryout => OPEN,
@@ -70086,7 +70086,7 @@ begin
             sr => \_gnd_net_\
         );
 
-    \b2v_inst6.delayed_vccin_vccinaux_ok_RNIM6F44_LC_9_13_4\ : LogicCell40
+    \b2v_inst6.delayed_vccin_ok_RNIM6F44_LC_9_13_4\ : LogicCell40
     generic map (
             C_ON => '0',
             SEQ_MODE => "0000",

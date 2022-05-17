@@ -24,13 +24,15 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 	SIGNAL rsmrst_pwrgd : STD_LOGIC := '0';
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0'); 
 BEGIN
-	rsmrst_pwrgd_out <= rsmrst_pwrgd;
+	
 	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1')  AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') 
 		ELSE
 		'0';
 
+	rsmrst_pwrgd_out <= rsmrst_pwrgd;
+		
 	-- DSW_PWROK = '0' -> RSMRST = '0' (Power-Loss Early De-Assertion)
-    -- +3V3DSW = '0' -> V33A_OK = '1' -> rsmrst_pwrgd = '0' -> RSMRSTn = '0'
+    -- +3V3DSW = '0' -> V33A_OK = '0' -> rsmrst_pwrgd = '0' -> RSMRSTn = '0'
  	-- after all these voltages are ready (check p.461/507)
 
 	PROCESS (clk_100Khz)

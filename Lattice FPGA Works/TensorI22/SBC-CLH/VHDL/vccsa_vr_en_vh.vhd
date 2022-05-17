@@ -4,7 +4,8 @@ use IEEE.numeric_std.all;
 
 -- CPU VR must ramp up after +12VS, +5VS, +3V3S and VCCIO are OK.
 -- VCCSA can ramp up after VCCIO. (Firas Question: this is the oppsoite of tCPU07)
-
+-- 5VS connected to +5V_VC which is connected to ISL99227 PVCC VCC LGCTRL Pins
+-- 5VA_OK ramps up before 5VS_OK!
 
 entity vccsa_vr_en_block is
 port (
@@ -24,7 +25,7 @@ signal output: std_logic;
 begin
 
 output <= '1' when (v12s_pwrgd = '1') and (v5s_pwrgd = '1') and (v33s_pwrgd = '1') and (vccio_pwrok = '1') and (slp_s3 = '1') and (rsmrst_pwrgd = '1') 
-            else '0';
+            else '0'; -- v12s_pwrgd from PWR module
 
 vr_en <= output;
 vccsa_en <= output;

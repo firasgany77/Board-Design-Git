@@ -55,9 +55,15 @@ ENTITY TOP IS
 		VR_READY_VCCINAUX : IN STD_LOGIC;  -- OK (replaced VCCSA_READY)
 		VR_READY_VCCIN : IN STD_LOGIC;     -- OK --replaced VR_READY
 		SYS_PWROK : OUT STD_LOGIC;         -- OK 
+		                                   -- SYS_PWROK is expected to be asserted by the platform to indicate that the system and all of its non-CPU components are ready for 
+										   --PLTRST# de-assertion. During power state transition to S0, the SYS_PWROK signal is the final platform controlled hardware gate before 
+										   --PLTRST# de-assertion. Platform designers may optimize when the SYS_PWROK signal is asserted with respect to the PCH_PWROK signal to help 
+										   --optimize overall boot latency, depending on system and component timing requirements.
+
 		CPU_C10_GATE_N : IN STD_LOGIC;     -- OK
 		VCCST_OVERRIDE_3V3 : IN STD_LOGIC; -- OK
 		VCCST_PWRGD : OUT STD_LOGIC;    -- OK (VCCST_PWRGD_1P05 after voltage divider, VCCST_PWRGD should be 3.3V)
+		                                -- 
 										-- When PCH_PWROK de-asserts during S0 --> Sx transitions, then VCCST_PWRGD must also de-assert.
 
 										-- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
@@ -138,7 +144,20 @@ ENTITY TOP IS
 		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
 		SUSWARN_N: IN STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
 		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
+
+		                         -- S0 Sleep Control. When PCH is idle and processor is in C10 state, this
+                                 -- pin will assert indicate VR controller can go into a light load mode. 
+								 -- This signal can also be connected to EC for other power management 
+                                 -- related optimizations.
+		SLP_S5n : IN STD_LOGIC;  
+		                         -- This signal is for power plane control. When asserted (low), 
+								 -- it will shutoff power to all non-critical systems in S5 (Soft Off) states.
+
+
 		SLP_S3n : IN STD_LOGIC;  -- OK 
+
+                                 -- S3 Sleep Control. This signal is for power plane control.
+								 -- When asserted (low), it will shut-off power to all non-critical systems in S3 (Suspend to RAM) and lower (S4, S5).
 
 
 		                         -- tPCH08: SLP_S3# de-assertion(0-->1) to PCH_PWROK assertion. (min: 1 ms)
@@ -151,7 +170,13 @@ ENTITY TOP IS
 								 
 		                         
 		SLP_S4n : IN STD_LOGIC;  -- OK
-		SLP_S5n : IN STD_LOGIC;  -- OK
+
+								 -- S4 Sleep Control. This signal is for power plane control. 
+								 -- When asserted (low), it will shut-off power to all non-critical systems in S4 (Suspend to Disk) and lower (S5).
+								 -- 
+
+
+
 		SLP_SUSn : IN STD_LOGIC; -- OK 
 
 			-- tPCH34: Time from start of ramp of the first prim rail after SLP_SUS# de-assertion to completion of primary and bypass rail ramp.   		
@@ -288,7 +313,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT vccinaux_vccin_en_block
+	COMPONENT vccin_en_block
 		PORT (
 			v5s_pwrgd : IN STD_LOGIC;
 			v33s_pwrgd : IN STD_LOGIC;
@@ -303,7 +328,6 @@ ARCHITECTURE bdf_type OF TOP IS
 	COMPONENT dsw_pwrok_block
 		PORT (
 			V33DSW_OK : IN STD_LOGIC;
-			--mainpwr_OK : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			DSW_PWROK : OUT STD_LOGIC
 		);
@@ -324,8 +348,7 @@ ARCHITECTURE bdf_type OF TOP IS
 	COMPONENT pch_pwrok_block
 		PORT (
 			slp_s3n : IN STD_LOGIC;
-			vr_ready_vccin : IN STD_LOGIC;
-			vr_ready_vccinaux : IN STD_LOGIC;
+			vccin_ready : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			vccst_pwrgd : OUT STD_LOGIC;
 			pch_pwrok : OUT STD_LOGIC
@@ -346,7 +369,8 @@ ARCHITECTURE bdf_type OF TOP IS
 	    V1P8A_EN : OUT STD_LOGIC
 			);
     END COMPONENT;
-
+    
+	--Note: Unless we have a branching foe the input output signal, no need to make a signal to drive it to other destination.
 	SIGNAL VCC : STD_LOGIC;
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
@@ -355,34 +379,23 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
-	SIGNAL vccinaux_en_signal : STD_LOGIC;
-	SIGNAL v1p8a_en_signal : STD_LOGIC; 
+	
+
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
-	--SIGNAL mainpwr_OK_signal : STD_LOGIC;
-	SIGNAL vr_ready_vccinaux : STD_LOGIC; 
+	--SIGNAL vr_ready_vccinaux : STD_LOGIC; 
 	SIGNAL slp_susn_signal : STD_LOGIC;
-	SIGNAL v33dsw_ok_signal: STD_LOGIC; 
-	SIGNAL v33a_ENn_signal: STD_LOGIC; 
 
     
 
 BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
-	SYS_PWROK <= pch_pwrok_signal;
-	DSW_PWROK <= DSW_PWROK_signal; -- connecting the signal to DSW_PWROK TOP's output. 
-	VCCINAUX_EN <= vccinaux_en_signal; -- NEW: 
+	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
+	DSW_PWROK <= DSW_PWROK_signal; -- Connecting the signal to DSW_PWROK TOP's output. 
 	VCCST_PWRGD <= vccst_pwrgd_signal; 
 	RSMRSTn <= RSMRSTn_signal;
-
-	VCC <= '1'; -- gets updated when FPGA is UP (V33DSW_OK)
-	V33A_ENn <= NOT(VCC);   
-	            
-	                        -- V33A rail ramp Before VCCIAN_AUX
-	V1P8A_EN <= v1p8a_en_signal; 
-	V5A_EN <= v5a_en_signal;
 	V5S_ENn <= NOT(slp_s3n_signal); -- what is V5S_ENn?
-	VR_READY_VCCINAUX <= vr_ready_vccinaux; 
+	--VR_READY_VCCINAUX <= vr_ready_vccinaux; 
 	V33S_ENn <= NOT(slp_s3n_signal);
 	VCCST_EN <= VCCST_EN_signal; -- Changed from VCCST_EN# and NOT(VCCST_EN_signal) 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
@@ -412,29 +425,16 @@ BEGIN
 		vddq_en => VDDQ_EN);
 
 
-		/*clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
-        SLP_SUSn: IN STD_LOGIC;  
-        V33A_OK: IN STD_LOGIC; 
-        V33DSW_OK: IN STD_LOGIc; 
-        V1P8A_OK: IN STD_LOGIC; 
-        V33A_ENn: OUT STD_LOGIC; 
-	    V5A_EN : OUT STD_LOGIC; 
-	    VCCINAUX_EN : OUT STD_LOGIC; 
-	    V1P8A_EN : OUT STD_LOGIC);*/
-
-
-
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
 	PORT MAP(
 	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
 		clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
-		V5A_EN => v5a_en_signal,
-		VCCINAUX_EN => vccinaux_en_signal,
-		V1P8A_EN => v1p8a_en_signal,
+		V5A_EN => V5A_EN,
+		VCCINAUX_EN => VCCINAUX_EN,
+		V1P8A_EN => V1P8A_EN,
 		SLP_SUSn => slp_susn_signal,
-		V33DSW_OK => v33dsw_ok_signal,
-		V33A_ENn => v33a_ENn_signal,
-		
+		V33DSW_OK => V33DSW_OK,
+		V33A_ENn => V33A_ENn
 		);
 
 	COUNTER : counter_block
@@ -449,22 +449,22 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		HDA_SDO_ATP => HDA_SDO_ATP);
 
-	VCCINAUX_VCCIN_EN : vccinaux_vccin_en_block
+	VCCIN_EN : vccin_en_block
 	PORT MAP(
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
 		slp_s3n => slp_s3n_signal,
+		dsw_pwrgd => DSW_PWROK_signal,
 		rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		clk_100Khz => clk_100Khz_signal);
-		--vccin_en => vccin_en,
-		--vccinaux_en => VCCINAUX_EN);
+		clk_100Khz => clk_100Khz_signal,
+		vccin_en => VCCIN_EN);
+		
 
 	DSW_PWROK : dsw_pwrok_block
 	PORT MAP(
-		V33DSW_OK => V33DSW_OK, --assigning signal to component input. 
-		--mainpwr_OK => mainpwr_OK_signal,
+		V33DSW_OK => V33DSW_OK, -- assigning signal to component input. 
 		clk_100Khz => clk_100Khz_signal,
-		DSW_PWROK => DSW_PWROK_signal); --assigning signal to component output
+		DSW_PWROK => DSW_PWROK_signal); -- assigning signal to component output
 
 	RSMRST_PWRGD : rsmrst_pwrgd_block
 	PORT MAP(
@@ -480,7 +480,6 @@ BEGIN
 	PORT MAP(
 		slp_s3n => slp_s3n_signal,
 		vr_ready_vccin => VR_READY_VCCIN,
-		VR_READY_VCCINAUX => vr_ready_vccinaux,
 		clk_100Khz => clk_100Khz_signal,
 		vccst_pwrgd => vccst_pwrgd_signal,
 		pch_pwrok => pch_pwrok_signal);

@@ -13,11 +13,13 @@ architecture test of testbench is
 
 component primary_voltages_enabler IS -- 
 	PORT (
-		V33A_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec	
-                SLP_SUSn: IN STD_LOGIC; 
-		V5A_EN : OUT STD_LOGIC;
-                V1P8A_OK: IN STD_LOGIC;  
+		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+        SLP_SUSn: IN STD_LOGIC;  
+        V33A_OK: IN STD_LOGIC; 
+        V33DSW_OK: IN STD_LOGIc; 
+        V1P8A_OK: IN STD_LOGIC; 
+        V33A_ENn: OUT STD_LOGIC; 
+		V5A_EN : OUT STD_LOGIC; 
 		VCCINAUX_EN : OUT STD_LOGIC; 
 		V1P8A_EN : OUT STD_LOGIC);
 end component;
@@ -37,7 +39,6 @@ begin
 --slp_susn <=  '1' after 4000 ns; 
 clk_100Khz <= not clk_100Khz after 5000 ns; -- F=100KHZ, T= 1000ns
 v33a_ok <= '1', '0' after 20000 ns, '1' after 140000 ns, '0' after 550000 ns ; 
-
 
 
 dut: primary_voltages_enabler

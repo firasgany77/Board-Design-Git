@@ -25,11 +25,14 @@ ARCHITECTURE vpp_vddq_arch OF vpp_vddq_block IS
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
-	vpp_en <= '1' WHEN (slp_s4n = '1') OR (delayed_vddq_pwrgd = '1')
+	vpp_en <= '1' WHEN (slp_s4n = '1') OR (delayed_vddq_pwrgd = '1') -- VPP: High --> VDDQ: High -- tPLT16: VDDQ ramp down to start of VPP ramp down when entering S4 and lower.
 		ELSE
 		'0';
 
-	vddq_en <= '1' WHEN (slp_s4n= '1') AND (vpp_pwrgd = '1')
+	vddq_en <= '1' WHEN (slp_s4n= '1') AND (vpp_pwrgd = '1') -- Notice we have AND condition for VDDQ_EN assignment and OR for VPP_EN, to ensure VDDQ ramp down to VPP ramp  down.
+	                                                         -- tPLT15: SLP_S4# assertion to VDDQ VR Enable Low [VDDQ VR disabled]. MAX: 200 us. 
+														     -- tPLT20: VPP ramped to VDDQ start of ramp when entering S0. MIN: 2.5 ms. (NOT IMPELEMTED)
+
 		ELSE
 		'0';
 
@@ -37,8 +40,10 @@ BEGIN
 	BEGIN
 		IF (clk_100Khz = '1') THEN
 			CASE curr_state IS
+            
+			    -- this state machine wait for slp_s4n and vddq_pwrgd to be high, then goes to pwrgd state and wait for slp_s4n assertion (1 -> 0) or vddq
 
-				WHEN pwrgd =>
+				WHEN pwrgd => 
 					IF ((vddq_pwrgd = '1') AND (slp_s4n = '1')) THEN
 						curr_state <= pwrgd;
 						delayed_vddq_pwrgd <= '1';
@@ -57,6 +62,7 @@ BEGIN
 						curr_state <= delay;
 					END IF;
 					delayed_vddq_pwrgd <= '1';
+
 				WHEN no_pwrgd =>
 					IF ((vddq_pwrgd = '1') AND (slp_s4n = '1')) THEN
 						curr_state <= pwrgd; -- transition to high can be done without a delay (SLP_S4# is already high)

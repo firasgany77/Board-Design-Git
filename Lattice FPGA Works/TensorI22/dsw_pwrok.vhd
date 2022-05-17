@@ -1,18 +1,14 @@
 LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
--- DSW_PWROK up >=10ms after v33DSW is up (tPCH02 min:10 ms, max: 2000 ms)
+-- tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK), min: 10 ms, max: 2000 ms.
 
 ENTITY dsw_pwrok_block IS
 	PORT (
 		V33DSW_OK  : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
-		--mainpwr_OK : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		DSW_PWROK  : OUT STD_LOGIC);
 END dsw_pwrok_block;
-
--- The next step is to define the functionality of the entity;
--- this block of VHDL is called the architecture.
 
 ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 	TYPE state_type IS (pwrgd, no_pwrgd, delay);
@@ -41,17 +37,17 @@ BEGIN
 						DSW_PWROK  <= '0';      -- The DSW_PWROK signal will not assert at pwrok glitches of less then 1T
 					END IF;
 
-				WHEN delay =>                               -- After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
+				WHEN delay =>                               --  After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
 					IF (count = to_unsigned(3500, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
 					                                        --  TL-PDG: P.434 in Non-Dsx is connected to 3V3A.
-						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK).
+						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK), min: 10 ms, max: 2000 ms.
 						curr_state <= pwrgd;
 						count      <= (OTHERS => '0');
 					ELSE
 						count      <= count + 1;
 						curr_state <= delay;
 					END IF;
-					DSW_PWROK <= '0';
+					   DSW_PWROK <= '0';
 
 				WHEN no_pwrgd => -- we start from this state.
 					IF (pwrok = '1') THEN
@@ -60,7 +56,7 @@ BEGIN
 					ELSE
 						curr_state <= no_pwrgd;
 					END IF;
-					DSW_PWROK <= '0';
+					  DSW_PWROK <= '0';
 
 			END CASE;
 		END IF;
