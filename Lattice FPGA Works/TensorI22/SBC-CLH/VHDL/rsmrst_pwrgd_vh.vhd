@@ -35,14 +35,14 @@ process (clk_100k)
 begin	
 	if (clk_100k = '1') then
 		case curr_state is
-		
+
 			when pwrgd =>		
 				if (rsmrst_pwrgd = '1') then
 					curr_state <= pwrgd;
 					RSMRSTn <= '1';   
 				else	
 					curr_state <= no_pwrgd;   -- Delay at RSMRST_PWROK transition from 0 to 1
-					RSMRSTn <= '0';  -- The RSMRSTn signal will not assert at pwrok glitches of less then 1T
+					RSMRSTn <= '0';           -- The RSMRSTn signal will not assert at pwrok glitches of less then 1T
 				end if;
 			
 			when delay =>  

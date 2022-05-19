@@ -2,11 +2,12 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
--- CPU VR must ramp up after +12VS, +5VS, +3V3S and VCCIO are OK.
--- S0 VRs are controlled by SLP_S3# and are on in S0, C10, and S0ix.
+-- CPU VR must ramp up after +5VS, +3V3S are OK.
+-- S0 VRs are controlled by SLP_S3# and are on in S0, C10, and S0ix. (+5VS, +3V3S are controlled by SLP_S3#)
 -- S4 VRs are controlled by SLP_S4 and are on S3 and higher. 
 -- vccin_en = all_sys_pwrok
 -- the assertion of vccin_en should be generated from S4 VR's, VCCST_VR_PWRGD, S0 VR's, RSMRST_PWRGD, DPWROK (DSW_PWROK)
+-- Check: adding THRMTRIP# to FPGA Pinout and set de-assert vccin_en when THRMTRIP# is asserted (=0) - TEMP above 130 Deg. 
 
 ENTITY vccin_en_block IS
 	PORT (

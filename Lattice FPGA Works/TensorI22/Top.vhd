@@ -170,6 +170,10 @@ ENTITY TOP IS
 								 
 		                         
 		SLP_S4n : IN STD_LOGIC;  -- OK
+		                         -- 
+								 -- Notes: 
+	                             -- USB_VBUS Should be ON on S3 (when slp_s3#=0) and OFF On S4 (when slp_s4#="0").
+	                             -- slp_s4#="0" is connected to the EN of VBUS Switch on Extension Board (EB-TI22A)
 
 								 -- S4 Sleep Control. This signal is for power plane control. 
 								 -- When asserted (low), it will shut-off power to all non-critical systems in S4 (Suspend to Disk) and lower (S5).
@@ -224,7 +228,12 @@ ENTITY TOP IS
                                         --  rails ready a minimum of 0ms before PCH_PWROK assertion.
 										--  tPLT04: ALL_SYS_PWRGD = HIGH --> PCH_PWROK = HIGH (min: 1ms)
 		RSMRSTn : OUT STD_LOGIC;   -- OK
-                                      -- for Non-DSx : DSW_PWROK: LOW --> RSMRSTn: LOW
+		                              -- This signal is used for resetting the Primary power plane logic. 
+									  -- This signal must be asserted for at least 10 ms after the Primary power wells are valid. 
+									  -- When de-asserted, this signal is an indication that the power wells are stable.
+
+                                      -- at S0-S5 at Non-DSx: DSW_PWROK: LOW --> RSMRSTn: LOW [0 ms delay]
+									  -- When a system is in S0-S5 state and not entering a Deep Sx, the RSMRST# may only be driven low if the DSW_PWROK is also driven low at the same time.
 
 		                              -- This signal is used for resetting the Primary power plane logic. This signal must be asserted for at least 10 ms after the Primary power wells are valid. 
 									  -- When de-asserted RSMRSTn='1', this signal is an indication that the power wells are stable.
@@ -379,11 +388,8 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
-	
-
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
-	--SIGNAL vr_ready_vccinaux : STD_LOGIC; 
 	SIGNAL slp_susn_signal : STD_LOGIC;
 
     
@@ -391,15 +397,17 @@ ARCHITECTURE bdf_type OF TOP IS
 BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
-	DSW_PWROK <= DSW_PWROK_signal; -- Connecting the signal to DSW_PWROK TOP's output. 
+	DSW_PWROK <= DSW_PWROK_signal;
 	VCCST_PWRGD <= vccst_pwrgd_signal; 
 	RSMRSTn <= RSMRSTn_signal;
-	V5S_ENn <= NOT(slp_s3n_signal); -- what is V5S_ENn?
-	--VR_READY_VCCINAUX <= vr_ready_vccinaux; 
-	V33S_ENn <= NOT(slp_s3n_signal);
-	VCCST_EN <= VCCST_EN_signal; -- Changed from VCCST_EN# and NOT(VCCST_EN_signal) 
-	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
+
+	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
+	V5S_ENn <= NOT(slp_s3n_signal); 
+	V33S_ENn <= NOT(slp_s3n_signal);
+	   
+	VCCST_EN <= VCCST_EN_signal; 
+	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n;
 	SLP_SUSn <= slp_susn_signal; 
 
@@ -458,7 +466,7 @@ BEGIN
 		rsmrst_pwrgd => rsmrst_pwrgd_signal,
 		clk_100Khz => clk_100Khz_signal,
 		vccin_en => VCCIN_EN);
-		
+
 
 	DSW_PWROK : dsw_pwrok_block
 	PORT MAP(

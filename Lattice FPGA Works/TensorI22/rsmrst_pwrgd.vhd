@@ -5,6 +5,7 @@ USE IEEE.numeric_std.ALL;
 -- RSMRSTn is an active-high power good signal for main S5 rails: +3V3A, +1.8VA,VCCIN_AUX, +5VA(USB_VBUS), . 
 -- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn (tPCH03)
 -- There should be a 10msec delay between the PG of the rails to RSMRSTn assertion. NOW 50 msec.
+
 ENTITY rsmrst_pwrgd_block IS
 	PORT (
 		V33A_OK : IN STD_LOGIC;  -- Open-drain, internal weak pull-up required
@@ -26,9 +27,8 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 BEGIN
 	
 	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1')  AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') 
-		ELSE
+		ELSE       -- 100 msec after all primary rails are ready
 		'0';
-
 	rsmrst_pwrgd_out <= rsmrst_pwrgd;
 		
 	-- DSW_PWROK = '0' -> RSMRST = '0' (Power-Loss Early De-Assertion)
@@ -71,8 +71,5 @@ BEGIN
 			END CASE;
 		END IF;
 	END PROCESS;
-
-
-
 
 END rsmrst_arch;

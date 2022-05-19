@@ -32,6 +32,7 @@ ELSE
 
 
 V1P8A_EN <= '1' WHEN (SLP_SUSn = '1') AND (V33A_OK = '1') -- VCC_PRIM_3.3 ramps before VCC_PRIM_1.8 (p.460)
+                                                          -- tPCH06: V33DSW_OK to V1P8A_EN [min 200 us] - Check if condition holds.
 ELSE
 '0';
 

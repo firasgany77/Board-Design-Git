@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
--- VPP must always be on when VDDQ is on. (VPP >= VDDQ)
+-- VPP must always be on when VDDQ is on. (VPP >= VDDQ) - According to JEDIC, for POWER-UP and POWERDOWN.
 -- VPP_EN = (SLP_S4#) OR (30msec_Delayed(VDDQ_PWRGD))  <- The dalay is a must only at falling edge.
 -- VDDQ_EN = (VPP_PWRGD) AND (SLP_S4#)
 

@@ -3,6 +3,18 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 -- tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK), min: 10 ms, max: 2000 ms.
 
+-- For the dead RTC coin cell and coin cell-less with depleted main battery RTC cases where the 3.3DSW ramps and powers the RTC well, 
+-- the board designer should set the 3.3DSW rail stable to DSW_PWROK assertion delay (tPCH02) for = 30ms. 
+-- This is required to ensure that SRTCRST# and RTCRST# de-assert after VCCRTC is stable, but before DSW_PWROK assertion. Failure to meet this requirement may result in DSW_PWROK
+-- asserting with, or before, SRTCRST# and RTCRST# reach VIH, which is a sequencing violation and can result in a non-booting system scenario.
+
+-- The SRTCRST# signal is used to reset the RTC registers used for the Intel® 
+-- Management Engine (Intel® ME) when the on board battery is changed. 
+-- The external capacitor and the external resistor between SRTCRST# and VccRTC were selected to create an RC time delay, 
+-- such that RTCRST# will go high some time after the battery voltage is valid. The RC time delay should be in the range of 18–25 ms. 
+-- There must not be a jumper for SRTCRST# pin. 
+-- The SRTCRST# does not impact the implementation of CMOS clearing. Refer to Figure 63 on page 126 for external circuit for PCH RTC.
+
 ENTITY dsw_pwrok_block IS
 	PORT (
 		V33DSW_OK  : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
