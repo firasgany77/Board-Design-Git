@@ -15,6 +15,9 @@ USE IEEE.numeric_std.ALL;
 -- There must not be a jumper for SRTCRST# pin. 
 -- The SRTCRST# does not impact the implementation of CMOS clearing. Refer to Figure 63 on page 126 for external circuit for PCH RTC.
 
+-- Complementary metal-oxide-semiconductor (CMOS) is a small amount of memory on a computer motherboard that stores the Basic Input/Output System (BIOS) settings. 
+-- For no boot or no display issues, clearing CMOS may help recover the boards because that restores the BIOS default settings.
+
 ENTITY dsw_pwrok_block IS
 	PORT (
 		V33DSW_OK  : IN STD_LOGIC; -- Open-drain, internal weak pull-up required

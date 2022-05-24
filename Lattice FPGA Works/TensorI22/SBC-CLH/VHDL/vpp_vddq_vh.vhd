@@ -11,7 +11,7 @@ port (
 	slp_s4:       in std_logic; -- SLP_S4#
 	vddq_pwrgd:   in std_logic; -- Open-drain, internal weak pull-up required
 	vpp_pwrgd:    in std_logic; -- Open-drain, internal weak pull-up required
-   clk_100k:     in std_logic; -- 100KHz clock, T = 10uSec		
+    clk_100k:     in std_logic; -- 100KHz clock, T = 10uSec		
 	vpp_en:       out std_logic;
 	vddq_en:      out std_logic); 
 end vpp_vddq_block;
@@ -28,7 +28,7 @@ begin
 vpp_en <=  '1' when (slp_s4 = '1') or (delayed_vddq_pwrgd = '1')
 			   	else '0';
 				
-vddq_en <= '1' when  (slp_s4 = '1') and (vpp_pwrgd = '1')
+vddq_en <= '1' when  (slp_s4 = '1') and (vpp_pwrgd = '1') -- tPLT14 (
 			   	else '0';
 
 process (clk_100k) -- 30 mSec delay process:  vddq_pwrgd -> delayed_vddq_pwrgd

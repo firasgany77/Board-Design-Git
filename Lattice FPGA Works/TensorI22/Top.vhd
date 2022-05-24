@@ -56,14 +56,17 @@ ENTITY TOP IS
 		VR_READY_VCCIN : IN STD_LOGIC;     -- OK --replaced VR_READY
 		SYS_PWROK : OUT STD_LOGIC;         -- OK 
 		                                   -- SYS_PWROK is expected to be asserted by the platform to indicate that the system and all of its non-CPU components are ready for 
-										   --PLTRST# de-assertion. During power state transition to S0, the SYS_PWROK signal is the final platform controlled hardware gate before 
-										   --PLTRST# de-assertion. Platform designers may optimize when the SYS_PWROK signal is asserted with respect to the PCH_PWROK signal to help 
-										   --optimize overall boot latency, depending on system and component timing requirements.
+										   -- PLTRST# de-assertion. During power state transition to S0, the SYS_PWROK signal is the final platform controlled hardware gate before 
+										   -- PLTRST# de-assertion. Platform designers may optimize when the SYS_PWROK signal is asserted with respect to the PCH_PWROK signal to help 
+										   -- Optimize overall boot latency, depending on system and component timing requirements.
 
 		CPU_C10_GATE_N : IN STD_LOGIC;     -- OK
 		VCCST_OVERRIDE_3V3 : IN STD_LOGIC; -- OK
-		VCCST_PWRGD : OUT STD_LOGIC;    -- OK (VCCST_PWRGD_1P05 after voltage divider, VCCST_PWRGD should be 3.3V)
+		VCCST_PWRGD : OUT STD_LOGIC;    
+		                                -- OK (VCCST_PWRGD_1P05 after voltage divider, VCCST_PWRGD should be 3.3V)
+									    -- Indication that the VCCSTG\VCCST\VDDQ power supplies are stable and within specification.
 		                                -- 
+
 										-- When PCH_PWROK de-asserts during S0 --> Sx transitions, then VCCST_PWRGD must also de-assert.
 
 										-- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
@@ -84,11 +87,13 @@ ENTITY TOP IS
 										-- CLH:  SLP_S3# assertion to VCC, VCCGT, VCCIO and VCCSA <100mV --> max 500 ms (tPLT11)
 										
 		VCCST_EN : OUT STD_LOGIC;       -- OK (before it was VCCST_EN#, change logic to make it work)
+		                                -- 
 
 		VCCST_CPU_OK : IN STD_LOGIC;    
-		                                -- CLH: VCCST_OK was OPAMP output that is High when VCCST is High. (VCCST is a continuation for V105A_EN that was 
-									    -- enabled by VCCST_EN#)
-										-- TL: VCCST_CPU_OK is OPAMP output that is High when VCCST_CPU is High (VCCST_CPU enabled by VCCST_EN and it's a continuation for +VCC1P05_OUT_FET output from CPU )
+		                                -- VCCST_CPU_OK is OPAMP output that is HIGH when VCCST_CPU is HIGH. 
+										-- VCCST_CPU is derived from VCC1P05_OUT_FET output from CPU, and it is enabled by VCCST_EN#
+										-- VCCST_CPU_OK doesn't need PU because it's not OPEN DRAIN. 
+				
 
 		FPGA_SLP_WLAN_N : IN STD_LOGIC; -- OK (not used in TensorI20? Check!)
 		GPIO_FPGA_SoC_1 : IN STD_LOGIC; -- OK
@@ -133,6 +138,7 @@ ENTITY TOP IS
 		V5S_OK : IN STD_LOGIC;   -- OK
 		V12_MAIN_MON : IN STD_LOGIC; -- this replaces the FPGA_ADC input in SBC-CLH.
 		VDDQ_OK : IN STD_LOGIC;  -- OK
+
 		VDDQ_EN : OUT STD_LOGIC; -- OK (VDDQ must ramp after VPP on DDR4 and LPDDR4 based systems, thus VDDQ may
                                         --ramp up after SLP_S3# de-assertion due to VR ramp timing and configuration)
 
@@ -379,7 +385,6 @@ ARCHITECTURE bdf_type OF TOP IS
 			);
     END COMPONENT;
     
-	--Note: Unless we have a branching foe the input output signal, no need to make a signal to drive it to other destination.
 	SIGNAL VCC : STD_LOGIC;
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
@@ -391,6 +396,7 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
 	SIGNAL slp_susn_signal : STD_LOGIC;
+	SIGNAL delayed_vddq_ok_signal: STD_LOGIC;
 
     
 
@@ -398,17 +404,31 @@ BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
 	DSW_PWROK <= DSW_PWROK_signal;
-	VCCST_PWRGD <= vccst_pwrgd_signal; 
+	VCCST_PWRGD <= vccst_pwrgd_signal AND delayed_vddq_ok_signal; -- (to ensure tCPU01 is met)
 	RSMRSTn <= RSMRSTn_signal;
-	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
 
 	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
 	V5S_ENn <= NOT(slp_s3n_signal); 
 	V33S_ENn <= NOT(slp_s3n_signal);
-	   
+
+	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
+																			
+    -- RSMRSTn AND VCCST_CPU_OK AND SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < vccst_pwrgd 
+    -- RSMRSTn AND SLP_S4# < VCCST_EN < VCCST_CPU_OK
+
+	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n; 
 	VCCST_EN <= VCCST_EN_signal; 
+
+	--> VCCST: Sustain Voltage for Processor Standby Modes. 
+	--> VCCST_EN = '1' -> +VCCST_CPU is generated from +VCC1P05_OUT_FET. +VCCST_CPU is delivered to SoC. 
+
+	--> WHEN (V33A_OK = '1') AND (V5A_OK = '1')  AND (SLP_SUSn = '1')  AND (V1P8A_OK = '1') ->  100 ms delay -> RSMRSTn = '1' -> VCCST_EN -> VCCST_CPU = 1.05V -> VCCST_CPU_OK -> '1
+	--> (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (DSW_PWROK = '1') --> (vccin_en = '1') 
+	--> (vccin_ready) AND (slp_s3n = '1') -> VCCST_PWRGD = '1' 
+    --> rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') [100 msec after all primary rails are ready]
+
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
-	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n;
+	
 	SLP_SUSn <= slp_susn_signal; 
 
 
@@ -429,8 +449,10 @@ BEGIN
 		vddq_pwrgd => VDDQ_OK,
 		vpp_pwrgd => VPP_OK,
 		clk_100Khz => clk_100Khz_signal,
+		delayed_vddq_ok => delayed_vddq_ok_signal,
 		vpp_en => VPP_EN,
 		vddq_en => VDDQ_EN);
+
 
 
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
@@ -463,6 +485,7 @@ BEGIN
 		v33s_pwrgd => V33S_OK,
 		slp_s3n => slp_s3n_signal,
 		dsw_pwrgd => DSW_PWROK_signal,
+		VCCST_CPU_OK => VCCST_CPU_OK, 
 		rsmrst_pwrgd => rsmrst_pwrgd_signal,
 		clk_100Khz => clk_100Khz_signal,
 		vccin_en => VCCIN_EN);

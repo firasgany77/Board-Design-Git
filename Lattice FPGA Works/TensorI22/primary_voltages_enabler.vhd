@@ -9,7 +9,7 @@ USE IEEE.numeric_std.ALL;
 -- RSMRSTn is 10 ms delayed (on rising edge only) RSMRSTn (tPCH03)
 -- There should be a 10msec delay between the PG of the rails to RSMRSTn assertion. NOW 50 msec.
 
-ENTITY primary_voltages_enabler IS -- 
+ENTITY primary_voltages_enabler IS  
 	PORT (
 	clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
         SLP_SUSn: IN STD_LOGIC;  

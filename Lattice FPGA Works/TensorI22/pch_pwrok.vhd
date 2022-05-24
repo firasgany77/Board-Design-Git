@@ -16,6 +16,7 @@ USE IEEE.numeric_std.ALL;
 
 -- Firas Added:
 -- VCCST_PWRGD can assert before or equal to PCH_PWROK, but must never lag it. 
+
 -- It is recommended that both VCCST_PWRGD and PCH_PWROK include ALL_SYS_PWRGD and / or SLP_S3# in their generation. 
 -- This ensures during failure events, both signals de-assert at the same time
 -- VCCST_PWRGD signal must deassert in all Sx / DSx states, regardless of the status of the VCCST rail
@@ -36,6 +37,13 @@ USE IEEE.numeric_std.ALL;
 -- Note: PCH_PWROK and SYS_PWROK both needs to be high to exit reset, but either signal can come up first. 
 -- PCH does not monitor SYS_PWROK until after PCH_PWROK is asserted. 
 -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
+
+
+-- DDR_VTT_CTL: 
+-- System Memory Power Gate Control: When signal is high – platform memory VTT regulator is enable, output high.
+-- When signal is low - Disables the platform memory VTT regulator in C8 and deeper and S3.
+-- will start to go high on VDDQ ramp with VCCT_PWRGD low for Sx to S0 power state transitions. 
+-- VccST_PWRGD assertion to DDR_VTT_CNTL asserted (Controlled by CPU, MAX: 100ns)
 -------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -44,7 +52,7 @@ ENTITY pch_pwrok_block IS
 		slp_s3n : IN STD_LOGIC; -- SLP_S3#
 		vccin_ready : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
-		vccst_pwrgd : OUT STD_LOGIC; -- is this 3V3 Signal?
+		vccst_pwrgd : OUT STD_LOGIC; -- Indication that the VCCSTG\VCCST\VDDQ power supplies are stable and within specification. (FPGA -> vccst_pwrgd_1p05 -> SoC)
 		pch_pwrok : OUT STD_LOGIC); -- Signal #7 Premium PWROK Generation Flow Diagram
 END pch_pwrok_block;
 
@@ -56,21 +64,31 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 	SIGNAL delayed_vccin_ok : STD_LOGIC := '0';
 	SIGNAL vccin_ok : STD_LOGIC;
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
+
 BEGIN
-	vccin_ok <= '1' WHEN (vccin_ready = '1')  AND (slp_s3n = '1') -- Delay trigger
-		ELSE                                                      -- tPCH08: SLP_S3# de-assertion(0-->1) to PCH_PWROK assertion. (min: 1 ms)
-		                                                          -- tPLT04: ALL_SYS_PWRGD = HIGH --> PCH_PWROK = HIGH (min: 1ms)
-																  -- we can choose either ALL_SYS_PWRGD or SLP_S3# in the generation of PCH_PWROK.
+
+
+	vccin_ok <= '1' WHEN (vccin_ready = '1') AND (slp_s3n = '1')         
+		ELSE                                                             -- tPCH08: SLP_S3# de-assertion [0 --> 1] to PCH_PWROK assertion. (min: 1 ms) - actual: 3 ms
+		                                                                 -- tPLT04: ALL_SYS_PWRGD (vccin_en) = HIGH --> PCH_PWROK = HIGH (min: 1ms) - surely will be more than 1 ms.
+																         -- we can choose either ALL_SYS_PWRGD or SLP_S3# in the generation of PCH_PWROK.
+
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1') 
+	pch_pwrok <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1')   -- tPCH08 [SLP_S3# de-assertion to PCH_PWROK] is met (vccin_ok -> delayed_vccin_ok takes 30)
+	                                                                     -- SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < pch_pwrok
+																		 
 	                                                                   															
 		ELSE              
 		'0';
     
 	vccst_pwrgd <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1') -- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
 	                                                                     -- however, VCCST_PWRGD may lag completing its ramp with respect to PCH_PWROK by up to 20us   
-																		 -- here we asset VCCST_PWRGD and PCH_PWROK at the same time.
+																		 -- here we asset VCCST_PWRGD and PCH_PWROK at the same time. 
+
+																		 -- TCPU00 [VCCST, VCCSTG ramped and stable to VccST_PWRGD assertion] is met (vccin_ok -> delayed_vccin_ok takes 30 ms):
+																		 -- RSMRSTn AND VCCST_CPU_OK AND SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < vccst_pwrgd 
+																		 -- RSMRSTn AND SLP_S4# < VCCST_EN < VCCST_CPU_OK
 		ELSE
 		'0';
 
@@ -88,7 +106,7 @@ BEGIN
 						delayed_vccin_ok <= '0'; -- delayed_vccin_ok signal will not assert at vccin_ok glitches of 1T
 					END IF;
 
-				WHEN delay => -- 	
+				WHEN delay =>  	
 					IF (count = to_unsigned(3000, 16)) THEN -- 3000 * us = 30 ms (min: 1 ms)
 						curr_state <= pwrgd;                -- T = 1\100Khz = 10uSec
 						count <= (OTHERS => '0');

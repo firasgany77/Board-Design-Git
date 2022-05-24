@@ -6,6 +6,10 @@ use IEEE.numeric_std.all;
 -- VCCSA can ramp up after VCCIO. (Firas Question: this is the oppsoite of tCPU07)
 -- 5VS connected to +5V_VC which is connected to ISL99227 PVCC VCC LGCTRL Pins
 -- 5VA_OK ramps up before 5VS_OK!
+-- S0 VR's are controlled by 
+
+-- in p506, VCCST_EN was controlled by SLP_S4 
+ 
 
 entity vccsa_vr_en_block is
 port (
@@ -24,8 +28,15 @@ architecture vccsa_vr_arch of vccsa_vr_en_block is
 signal output: std_logic;
 begin
 
+
+-- (slp_s3 = '1') and (vddq_ok = '1') and (vccst_ok = '1') --> vccio_en -> vccio_pwrok
+
 output <= '1' when (v12s_pwrgd = '1') and (v5s_pwrgd = '1') and (v33s_pwrgd = '1') and (vccio_pwrok = '1') and (slp_s3 = '1') and (rsmrst_pwrgd = '1') 
-            else '0'; -- v12s_pwrgd from PWR module
+                           
+            else '0';
+            -- p.506/685 
+			-- v12s_pwrgd from PWR module
+			-- S4 VR's: 5VS, 
 
 vr_en <= output;
 vccsa_en <= output;

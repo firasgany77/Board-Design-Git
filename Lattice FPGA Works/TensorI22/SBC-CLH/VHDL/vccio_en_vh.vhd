@@ -10,15 +10,21 @@ use IEEE.numeric_std.all;
 entity vccio_en_block is
 port (
 	slp_s3:            in std_logic; -- SLP_S3#
-	vddq_ok:          in std_logic; -- Open-drain, internal weak pull-up required
-	vccst_ok:         in std_logic; -- Open-drain, internal weak pull-up required
-   clk_100k:          in std_logic; -- 100KHz clock, T = 10uSec   <- PROVISION, NOT IN USE	
+	vddq_ok:          in std_logic;  -- Open-drain, internal weak pull-up required
+	vccst_ok:         in std_logic;  -- Open-drain, internal weak pull-up required
+    clk_100k:          in std_logic  -- 100KHz clock, T = 10uSec   <- PROVISION, NOT IN USE	
 	vccio_en:         out std_logic); 
 end vccio_en_block;
  
 architecture vccio_en_block_arch of vccio_en_block is
 begin
 
+
+-- VDDQ ramped and stable before VCCSA/ VCCIO ramps [Min: 100ns] 
+-- If VCCSTG and VCCIO supplies are merged together as a single supply, then the timing requirement is between VCCST/
+-- If VCCSTG and VCCIO supplies are merged together as a single supply, then the timing requirement is between VCCST/VCCSTG/VCCIO and VCCSA
+
+-- VCCIO, VCCSA must ramp after VccST and VDDQ have completed their ramps.
 vccio_en <= '1' when (slp_s3 = '1') and (vddq_ok = '1') and (vccst_ok = '1')
 			   	else '0';
 

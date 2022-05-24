@@ -16,6 +16,7 @@ ENTITY vccin_en_block IS
 		slp_s3n: IN STD_LOGIC;
 		rsmrst_pwrgd : IN STD_LOGIC;
 		DSW_PWROK: IN STD_LOGIC; 
+		VCCST_CPU_OK: IN STD_LOGIC; 
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec	<- PROVISION, NOT IN USE	
 		vccin_en : OUT STD_LOGIC);
 END vccin_en_block;
@@ -23,9 +24,10 @@ END vccin_en_block;
 ARCHITECTURE vccin_arch OF vccin_en_block IS
 	SIGNAL output : STD_LOGIC;
 BEGIN
-    -- 
+     
     -- v5s_pwrgd and v33s_pwrgd are opamp outputs that detect the ramp up of +3V3S & +3V3A 
-	output <= '1' WHEN (v5s_pwrgd = '1') AND (v33s_pwrgd = '1')  AND (slp_s3n = '1') AND (rsmrst_pwrgd = '1') AND (DSW_PWROK = '1')
+	-- V33DSW_OK -> 35 ms -> DSW_PWROK = '1'
+	output <= '1' WHEN  (DSW_PWROK = '1') AND (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (VCCST_CPU_OK = '1')
 		ELSE
 		'0';
 

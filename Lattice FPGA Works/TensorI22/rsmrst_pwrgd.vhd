@@ -24,9 +24,9 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 	SIGNAL curr_state : state_type := no_pwrgd;
 	SIGNAL rsmrst_pwrgd : STD_LOGIC := '0';
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0'); 
+
 BEGIN
-	
-	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1')  AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') 
+	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (V1P8A_OK = '1') AND (SLP_SUSn = '1')
 		ELSE       -- 100 msec after all primary rails are ready
 		'0';
 	rsmrst_pwrgd_out <= rsmrst_pwrgd;
