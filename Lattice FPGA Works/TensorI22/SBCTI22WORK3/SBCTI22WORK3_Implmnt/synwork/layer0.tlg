@@ -1,114 +1,98 @@
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Synthesizing work.top.bdf_type.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":209:8:209:26|Signal synthesized_wire_10 is undriven. Either assign the signal a value or remove the signal declaration.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":19:7:19:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":30:17:30:18|Using user defined encoding for type state_type.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":50:1:50:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":65:9:65:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":56:9:56:25|Referenced variable vccin_vccinaux_ok is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":53:8:53:17|Referenced variable curr_state is not in sensitivity list.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Synthesizing work.top.bdf_type.
+@W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":287:11:287:24|Unbound component powerled_block mapped to black box
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":287:11:287:24|Synthesizing work.powerled_block.syn_black_box.
+Post processing for work.powerled_block.syn_black_box
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":50:7:50:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":60:17:60:18|Using user defined encoding for type state_type.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":95:1:95:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":110:9:110:13|Referenced variable count is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":101:9:101:16|Referenced variable vccin_ok is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":98:8:98:17|Referenced variable curr_state is not in sensitivity list.
 Post processing for work.pch_pwrok_block.pch_pwrok_block_arch
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":52:2:52:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":52:2:52:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":52:2:52:3|Latch generated from process for signal delayed_vccin_vccinaux_ok; possible missing assignment in an if or case statement.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":8:7:8:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":23:17:23:18|Using user defined encoding for type state_type.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":36:1:36:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":51:9:51:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":42:9:42:20|Referenced variable rsmrst_pwrgd is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":39:8:39:17|Referenced variable curr_state is not in sensitivity list.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Latch generated from process for signal delayed_vccin_ok; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":9:7:9:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":21:17:21:18|Using user defined encoding for type state_type.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":38:1:38:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":53:9:53:13|Referenced variable count is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":44:9:44:20|Referenced variable rsmrst_pwrgd is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":41:8:41:17|Referenced variable curr_state is not in sensitivity list.
 Post processing for work.rsmrst_pwrgd_block.rsmrst_arch
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":38:2:38:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":38:2:38:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":38:2:38:3|Latch generated from process for signal RSMRSTn; possible missing assignment in an if or case statement.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":8:7:8:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":17:17:17:18|Using user defined encoding for type state_type.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":30:1:30:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":45:9:45:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":36:9:36:13|Referenced variable pwrok is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":33:8:33:17|Referenced variable curr_state is not in sensitivity list.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":40:2:40:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":40:2:40:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":40:2:40:3|Latch generated from process for signal RSMRSTn; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":21:7:21:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":29:17:29:18|Using user defined encoding for type state_type.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":41:1:41:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":56:9:56:13|Referenced variable count is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":47:9:47:13|Referenced variable pwrok is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":44:8:44:17|Referenced variable curr_state is not in sensitivity list.
 Post processing for work.dsw_pwrok_block.dsw_pwrok_arch
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":32:2:32:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":32:2:32:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":32:2:32:3|Latch generated from process for signal DSW_PWROK; possible missing assignment in an if or case statement.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd":8:7:8:29|Synthesizing work.vccinaux_vccin_en_block.vccinaux_vccin_arch.
-Post processing for work.vccinaux_vccin_en_block.vccinaux_vccin_arch
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":43:2:43:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":43:2:43:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":43:2:43:3|Latch generated from process for signal DSW_PWROK; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd":12:7:12:20|Synthesizing work.vccin_en_block.vccin_arch.
+Post processing for work.vccin_en_block.vccin_arch
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":6:7:6:21|Synthesizing work.hda_strap_block.hda_strap_block_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":15:17:15:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":22:1:22:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":36:9:36:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":25:8:25:17|Referenced variable curr_state is not in sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":45:9:45:16|Referenced variable gpio_pch is not in sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":28:9:28:17|Referenced variable pch_pwrok is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":36:9:36:13|Referenced variable count is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":25:8:25:17|Referenced variable curr_state is not in sensitivity list.
 Post processing for work.hda_strap_block.hda_strap_block_arch
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":24:2:24:3|Latch generated from process for signal count(17 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":24:2:24:3|Latch generated from process for signal curr_state(2 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":24:2:24:3|Latch generated from process for signal HDA_SDO_ATP; possible missing assignment in an if or case statement.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd":7:7:7:13|Synthesizing work.counter.counter_arch.
-Post processing for work.counter.counter_arch
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":9:7:9:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":20:17:20:18|Using user defined encoding for type state_type.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":36:1:36:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":42:10:42:19|Referenced variable vddq_pwrgd is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":42:33:42:39|Referenced variable slp_s4n is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":39:8:39:17|Referenced variable curr_state is not in sensitivity list.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd":7:7:7:19|Synthesizing work.counter_block.counter_arch.
+Post processing for work.counter_block.counter_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":12:7:12:30|Synthesizing work.primary_voltages_enabler.rsmrst_arch.
+Post processing for work.primary_voltages_enabler.rsmrst_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":16:7:16:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":29:17:29:18|Using user defined encoding for type state_type.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":53:1:53:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":64:10:64:19|Referenced variable vddq_pwrgd is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":64:33:64:39|Referenced variable slp_s4n is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":56:8:56:17|Referenced variable curr_state is not in sensitivity list.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":96:1:96:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":102:9:102:18|Referenced variable vddq_pwrgd is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":111:9:111:15|Referenced variable count_2 is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":99:8:99:19|Referenced variable curr_state_2 is not in sensitivity list.
 Post processing for work.vpp_vddq_block.vpp_vddq_arch
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":38:2:38:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":38:2:38:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":38:2:38:3|Latch generated from process for signal delayed_vddq_pwrgd; possible missing assignment in an if or case statement.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":5:7:5:20|Synthesizing work.powerled_block.powerled_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":16:17:16:18|Using user defined encoding for type state_type.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":32:1:32:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":90:8:90:16|Referenced variable mem_alert is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":35:28:35:34|Referenced variable slp_s4n is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":35:8:35:14|Referenced variable slp_s3n is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":38:10:38:18|Referenced variable dutycycle is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":42:11:42:19|Referenced variable count_clk is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":36:9:36:18|Referenced variable func_state is not in sensitivity list.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":134:1:134:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":150:30:150:37|Referenced variable onclocks is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":139:9:139:13|Referenced variable count is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":137:8:137:17|Referenced variable curr_state is not in sensitivity list.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":21:8:21:16|Signal clk_state is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":22:8:22:15|Signal clk_slow is undriven. Either assign the signal a value or remove the signal declaration.
-Post processing for work.powerled_block.powerled_arch
-@A: CL109 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Too many clocks (> 8) for set/reset analysis of count_off, try moving enabling expressions outside process
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal count_off(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal pwm_out; possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal dutycycle(15 downto 0); possible missing assignment in an if or case statement.
-@A: CL109 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Too many clocks (> 8) for set/reset analysis of count_clk, try moving enabling expressions outside process
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal count_clk(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal func_state(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal count_2(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":55:2:55:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal curr_state_2(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":55:2:55:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal delayed_vddq_ok; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":55:2:55:3|Latch generated from process for signal delayed_vddq_pwrgd; possible missing assignment in an if or case statement.
 Post processing for work.top.bdf_type
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":209:8:209:26|Signal SYNTHESIZED_WIRE_10 is floating; a simulation mismatch is possible.
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":88:2:88:9|Signal V1P8A_EN is floating; a simulation mismatch is possible.
-@W: CL167 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":273:1:273:10|Input mainpwr_ok of instance b2v_inst36 is floating
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd":15:2:15:11|Input clk_100Khz is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":11:2:11:11|Input mainpwr_OK is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":39:2:39:16|Input SATAXPCIE0_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":40:2:40:16|Input SATAXPCIE1_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":41:2:41:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":42:2:42:12|Input VCCIN_VR_PE is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":44:2:44:25|Input VCCINAUX_VR_PROCHOT_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":46:2:46:15|Input VCCINAUX_VR_PE is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":47:2:47:22|Input VR_PROCHOT_FPGA_OUT_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":51:2:51:15|Input CPU_C10_GATE_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":52:2:52:19|Input VCCST_OVERRIDE_3V3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":56:2:56:16|Input FPGA_SLP_WLAN_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":58:2:58:16|Input GPIO_FPGA_SoC_2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":59:2:59:16|Input GPIO_FPGA_SoC_3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":61:2:61:16|Input GPIO_FPGA_EXP_1 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":62:2:62:16|Input GPIO_FPGA_EXP_2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":63:2:63:9|Input TPM_GPIO is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":73:2:73:13|Input V12_MAIN_MON is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":78:2:78:9|Input SOC_SPKR is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":79:2:79:9|Input SUSACK_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":80:2:80:10|Input SUSWARN_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":81:2:81:8|Input SLP_S0n is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":84:2:84:8|Input SLP_S5n is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":85:2:85:9|Input SLP_SUSn is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":89:2:89:11|Input SPI_FP_IO3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":90:2:90:11|Input SPI_FP_IO2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":94:2:94:8|Input PWRBTNn is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":96:2:96:8|Input PLTRSTn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":14:1:14:10|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":17:8:17:16|Input V33DSW_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd":20:2:20:11|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":35:2:35:16|Input SATAXPCIE0_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":36:2:36:16|Input SATAXPCIE1_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:2:37:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:2:38:12|Input VCCIN_VR_PE is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":46:2:46:25|Input VCCINAUX_VR_PROCHOT_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":49:2:49:15|Input VCCINAUX_VR_PE is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":50:2:50:22|Input VR_PROCHOT_FPGA_OUT_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":51:2:51:18|Input VR_READY_VCCINAUX is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":59:2:59:15|Input CPU_C10_GATE_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":60:2:60:19|Input VCCST_OVERRIDE_3V3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":94:2:94:16|Input FPGA_SLP_WLAN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":96:2:96:16|Input GPIO_FPGA_SoC_2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":97:2:97:16|Input GPIO_FPGA_SoC_3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":99:2:99:16|Input GPIO_FPGA_EXP_1 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":100:2:100:16|Input GPIO_FPGA_EXP_2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":101:2:101:9|Input TPM_GPIO is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":135:2:135:13|Input V12_MAIN_MON is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":145:2:145:9|Input SOC_SPKR is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":146:2:146:9|Input SUSACK_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":147:2:147:10|Input SUSWARN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":148:2:148:8|Input SLP_S0n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":154:2:154:8|Input SLP_S5n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":224:2:224:11|Input SPI_FP_IO3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":225:2:225:11|Input SPI_FP_IO2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":279:2:279:8|Input PWRBTNn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":280:2:280:8|Input PLTRSTn is unused.

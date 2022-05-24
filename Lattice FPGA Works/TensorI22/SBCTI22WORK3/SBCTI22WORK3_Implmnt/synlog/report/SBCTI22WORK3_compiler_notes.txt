@@ -1,51 +1,52 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
-@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Top entity is set to TOP.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Synthesizing work.top.bdf_type.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":19:7:19:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":30:17:30:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":8:7:8:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":23:17:23:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":8:7:8:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":17:17:17:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd":8:7:8:29|Synthesizing work.vccinaux_vccin_en_block.vccinaux_vccin_arch.
+@N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Top entity is set to TOP.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Synthesizing work.top.bdf_type.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":287:11:287:24|Synthesizing work.powerled_block.syn_black_box.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":50:7:50:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":60:17:60:18|Using user defined encoding for type state_type.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":9:7:9:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":21:17:21:18|Using user defined encoding for type state_type.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":21:7:21:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":29:17:29:18|Using user defined encoding for type state_type.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd":12:7:12:20|Synthesizing work.vccin_en_block.vccin_arch.
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":6:7:6:21|Synthesizing work.hda_strap_block.hda_strap_block_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap.vhd":15:17:15:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd":7:7:7:13|Synthesizing work.counter.counter_arch.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":9:7:9:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":20:17:20:18|Using user defined encoding for type state_type.
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":5:7:5:20|Synthesizing work.powerled_block.powerled_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":16:17:16:18|Using user defined encoding for type state_type.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccinaux_vccin_en.vhd":15:2:15:11|Input clk_100Khz is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":11:2:11:11|Input mainpwr_OK is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":39:2:39:16|Input SATAXPCIE0_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":40:2:40:16|Input SATAXPCIE1_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":41:2:41:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":42:2:42:12|Input VCCIN_VR_PE is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":44:2:44:25|Input VCCINAUX_VR_PROCHOT_FPGA is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":46:2:46:15|Input VCCINAUX_VR_PE is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":47:2:47:22|Input VR_PROCHOT_FPGA_OUT_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":51:2:51:15|Input CPU_C10_GATE_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":52:2:52:19|Input VCCST_OVERRIDE_3V3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":56:2:56:16|Input FPGA_SLP_WLAN_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":58:2:58:16|Input GPIO_FPGA_SoC_2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":59:2:59:16|Input GPIO_FPGA_SoC_3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":61:2:61:16|Input GPIO_FPGA_EXP_1 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":62:2:62:16|Input GPIO_FPGA_EXP_2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":63:2:63:9|Input TPM_GPIO is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":73:2:73:13|Input V12_MAIN_MON is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":78:2:78:9|Input SOC_SPKR is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":79:2:79:9|Input SUSACK_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":80:2:80:10|Input SUSWARN_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":81:2:81:8|Input SLP_S0n is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":84:2:84:8|Input SLP_S5n is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":85:2:85:9|Input SLP_SUSn is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":89:2:89:11|Input SPI_FP_IO3 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":90:2:90:11|Input SPI_FP_IO2 is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":94:2:94:8|Input PWRBTNn is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":96:2:96:8|Input PLTRSTn is unused.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd":7:7:7:19|Synthesizing work.counter_block.counter_arch.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":12:7:12:30|Synthesizing work.primary_voltages_enabler.rsmrst_arch.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":16:7:16:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":29:17:29:18|Using user defined encoding for type state_type.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":14:1:14:10|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":17:8:17:16|Input V33DSW_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd":20:2:20:11|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":35:2:35:16|Input SATAXPCIE0_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":36:2:36:16|Input SATAXPCIE1_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:2:37:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:2:38:12|Input VCCIN_VR_PE is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":46:2:46:25|Input VCCINAUX_VR_PROCHOT_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":49:2:49:15|Input VCCINAUX_VR_PE is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":50:2:50:22|Input VR_PROCHOT_FPGA_OUT_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":51:2:51:18|Input VR_READY_VCCINAUX is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":59:2:59:15|Input CPU_C10_GATE_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":60:2:60:19|Input VCCST_OVERRIDE_3V3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":94:2:94:16|Input FPGA_SLP_WLAN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":96:2:96:16|Input GPIO_FPGA_SoC_2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":97:2:97:16|Input GPIO_FPGA_SoC_3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":99:2:99:16|Input GPIO_FPGA_EXP_1 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":100:2:100:16|Input GPIO_FPGA_EXP_2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":101:2:101:9|Input TPM_GPIO is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":135:2:135:13|Input V12_MAIN_MON is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":145:2:145:9|Input SOC_SPKR is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":146:2:146:9|Input SUSACK_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":147:2:147:10|Input SUSWARN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":148:2:148:8|Input SLP_S0n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":154:2:154:8|Input SLP_S5n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":224:2:224:11|Input SPI_FP_IO3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":225:2:225:11|Input SPI_FP_IO2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":279:2:279:8|Input PWRBTNn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":280:2:280:8|Input PLTRSTn is unused.
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Selected library: work cell: TOP view bdf_type as top level
-@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Selected library: work cell: TOP view bdf_type as top level
+@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Selected library: work cell: TOP view bdf_type as top level
+@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Selected library: work cell: TOP view bdf_type as top level
 

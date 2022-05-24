@@ -1,14 +1,14 @@
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_comp.srs changed - recompiling
-@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Selected library: work cell: TOP view bdf_type as top level
-@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":37:7:37:9|Selected library: work cell: TOP view bdf_type as top level
+@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Selected library: work cell: TOP view bdf_type as top level
+@N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Selected library: work cell: TOP view bdf_type as top level
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Apr 25 12:30:08 2022
+# Tue May 24 16:20:24 2022
 
 ###########################################################]

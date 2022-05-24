@@ -32,7 +32,7 @@ ARCHITECTURE vpp_vddq_arch OF vpp_vddq_block IS
 	SIGNAL curr_state  : state_type := no_pwrgd;
 	SIGNAL curr_state_2 : state_type := no_pwrgd;
 	SIGNAL delayed_vddq_pwrgd : STD_LOGIC := '0'; -- used to disable vpp_en delay after vddq_en is disabled
-	SIGNAL delayed_vddq_ok    : STD_LOGIC := '0'; 
+	--SIGNAL delayed_vddq_ok    : STD_LOGIC := '0'; 
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 	SIGNAL count_2 : unsigned(15 DOWNTO 0) := (OTHERS => '0');
 BEGIN

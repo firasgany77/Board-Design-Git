@@ -23,10 +23,6 @@ LIBRARY work;
 --Warning: dangling IO ipInertedIOPad_SUSWARN_N
 --Warning: dangling IO ipInertedIOPad_TPM_GPIO
 --Warning: dangling IO ipInertedIOPad_CPU_C10_GATE_N
-
---Warning: dangling IO ipInertedIOPad_SLP_SUSn (when SLP_SUS#=0: PCH is in DEEP Sx State where internal primary power is shut off)
--- In TensorI20: SLP_SUSn input in FPGA was not connected to anything. but there was SLP_SUSn input in rsmrst_pwrgd_block that was connected to VCC. 
-
 --Warning: dangling IO ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA
 --Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_2
 --Warning: dangling IO ipInertedIOPad_PWRBTNn
@@ -307,6 +303,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			vddq_pwrgd : IN STD_LOGIC;
 			vpp_pwrgd : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
+			delayed_vddq_ok: OUT STD_LOGIC;
 			vpp_en : OUT STD_LOGIC;
 			vddq_en : OUT STD_LOGIC
 		);
@@ -334,9 +331,10 @@ ARCHITECTURE bdf_type OF TOP IS
 			v33s_pwrgd : IN STD_LOGIC;
 			slp_s3n : IN STD_LOGIC;
 			rsmrst_pwrgd : IN STD_LOGIC;
+			DSW_PWROK: IN STD_LOGIC;
+			VCCST_CPU_OK: IN STD_LOGIC; 
 			clk_100Khz : IN STD_LOGIC;
-			vccin_en : OUT STD_LOGIC;
-			vccinaux_en : OUT STD_LOGIC
+			vccin_en : OUT STD_LOGIC
 		);
 	END COMPONENT;
 
@@ -371,6 +369,8 @@ ARCHITECTURE bdf_type OF TOP IS
 	END COMPONENT;
 
 
+
+
 	COMPONENT primary_voltages_enabler
 	        Port(
 	    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
@@ -385,7 +385,6 @@ ARCHITECTURE bdf_type OF TOP IS
 			);
     END COMPONENT;
     
-	SIGNAL VCC : STD_LOGIC;
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
 	SIGNAL VCCST_EN_signal : STD_LOGIC;
@@ -426,10 +425,12 @@ BEGIN
 	--> (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (DSW_PWROK = '1') --> (vccin_en = '1') 
 	--> (vccin_ready) AND (slp_s3n = '1') -> VCCST_PWRGD = '1' 
     --> rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') [100 msec after all primary rails are ready]
+	
+	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 	
-	SLP_SUSn <= slp_susn_signal; 
+	
 
 
     -- here we assign input/output signals for each instance (from outside):
@@ -454,18 +455,18 @@ BEGIN
 		vddq_en => VDDQ_EN);
 
 
-
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
 	PORT MAP(
-	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
 		clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
+		SLP_SUSn => slp_susn_signal,
+	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
+		V33DSW_OK => V33DSW_OK,
+		V1P8A_OK => V1P8A_OK,
+		V33A_ENn => V33A_ENn,
 		V5A_EN => V5A_EN,
 		VCCINAUX_EN => VCCINAUX_EN,
-		V1P8A_EN => V1P8A_EN,
-		SLP_SUSn => slp_susn_signal,
-		V33DSW_OK => V33DSW_OK,
-		V33A_ENn => V33A_ENn
-		);
+		V1P8A_EN => V1P8A_EN);
+
 
 	COUNTER : counter_block
 	PORT MAP(
@@ -479,19 +480,19 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		HDA_SDO_ATP => HDA_SDO_ATP);
 
-	VCCIN_EN : vccin_en_block
+	VCCIN_PWRGD: vccin_en_block
 	PORT MAP(
 		v5s_pwrgd => V5S_OK,
 		v33s_pwrgd => V33S_OK,
 		slp_s3n => slp_s3n_signal,
-		dsw_pwrgd => DSW_PWROK_signal,
-		VCCST_CPU_OK => VCCST_CPU_OK, 
 		rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		DSW_PWROK => DSW_PWROK_signal,
+		VCCST_CPU_OK => VCCST_CPU_OK, 
 		clk_100Khz => clk_100Khz_signal,
 		vccin_en => VCCIN_EN);
 
 
-	DSW_PWROK : dsw_pwrok_block
+	DSW_PWRGD : dsw_pwrok_block
 	PORT MAP(
 		V33DSW_OK => V33DSW_OK, -- assigning signal to component input. 
 		clk_100Khz => clk_100Khz_signal,
@@ -507,10 +508,10 @@ BEGIN
 		RSMRSTn => RSMRSTn_signal,
 		rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
 
-	PCH_PWROK : pch_pwrok_block
+	PCH_PWRGD: pch_pwrok_block
 	PORT MAP(
 		slp_s3n => slp_s3n_signal,
-		vr_ready_vccin => VR_READY_VCCIN,
+		vccin_ready => VR_READY_VCCIN,
 		clk_100Khz => clk_100Khz_signal,
 		vccst_pwrgd => vccst_pwrgd_signal,
 		pch_pwrok => pch_pwrok_signal);
