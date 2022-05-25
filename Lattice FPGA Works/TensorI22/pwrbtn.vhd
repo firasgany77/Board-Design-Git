@@ -3,7 +3,7 @@ USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
 -- The purpose of this block is to perform auto-on.
--- PWRBTN# can be presset befor or after RSMRST. Here, RSMRST rising edge will trigger PWRBTN#.
+-- PWRBTN# can be presset before or after RSMRST. Here, RSMRST rising edge will trigger PWRBTN#.
 -- Minimum period of PWRBTN# toggle is 16ms (de-bounce in PCH). Here, PWRBTN# is asserted for 30ms.
 
 ENTITY pwrbtn_block IS

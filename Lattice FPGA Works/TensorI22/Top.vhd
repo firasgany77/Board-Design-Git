@@ -3,31 +3,36 @@ USE ieee.std_logic_1164.ALL; --
 
 LIBRARY work;
 
---Warning: dangling IO ipInertedIOPad_FPGA_SLP_WLAN_N
---Warning: dangling IO ipInertedIOPad_SATAXPCIE0_FPGA
---Warning: dangling IO ipInertedIOPad_SPI_FP_IO3 (Connected to HOLD# Pin)
---Warning: dangling IO ipInertedIOPad_V12_MAIN_MON
---Warning: dangling IO ipInertedIOPad_SLP_S5n
---Warning: dangling IO ipInertedIOPad_SOC_SPKR
---Warning: dangling IO ipInertedIOPad_VCCIN_VR_PE
---Warning: dangling IO ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N (A signal from FPGA that could assert PROCHOT# other than VCCIN_VR_PROCHOT# and VCCINAUX_VR_PROCHOT#)
---Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_3 
---Warning: dangling IO ipInertedIOPad_SUSACK_N
---Warning: dangling IO ipInertedIOPad_GPIO_FPGA_EXP_2
---Warning: dangling IO ipInertedIOPad_VCCINAUX_VR_PE (EN OFF, PE ON -> Can Configure IMVP9 VR System through PMBUS)
---Warning: dangling IO ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA
---Warning: dangling IO ipInertedIOPad_GPIO_FPGA_EXP_1
---Warning: dangling IO ipInertedIOPad_SATAXPCIE1_FPGA
---Warning: dangling IO ipInertedIOPad_SPI_FP_IO2
---Warning: dangling IO ipInertedIOPad_PLTRSTn
---Warning: dangling IO ipInertedIOPad_SUSWARN_N
---Warning: dangling IO ipInertedIOPad_TPM_GPIO
---Warning: dangling IO ipInertedIOPad_CPU_C10_GATE_N
---Warning: dangling IO ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA
---Warning: dangling IO ipInertedIOPad_GPIO_FPGA_SoC_2
---Warning: dangling IO ipInertedIOPad_PWRBTNn
---Warning: dangling IO ipInertedIOPad_SLP_S0n
---Warning: dangling IO ipInertedIOPad_VCCST_OVERRIDE_3V3
+
+--Warning: Removing the net 'FPGA_SLP_WLAN_N' becasue it is not driving any logic
+--Warning: Removing the net 'SLP_S0n' becasue it is not driving any logic
+--Warning: Removing the net 'SATAXPCIE0_FPGA' becasue it is not driving any logic
+--Warning: Removing the net 'V12_MAIN_MON' becasue it is not driving any logic
+--Warning: Removing the net 'TPM_GPIO' becasue it is not driving any logic
+--Warning: Removing the net 'VCCINAUX_VR_PROCHOT_FPGA' becasue it is not driving any logic
+--Warning: Removing the net 'VR_READY_VCCINAUX' becasue it is not driving any logic
+--Warning: Removing the net 'GPIO_FPGA_EXP_1' becasue it is not driving any logic
+--Warning: Removing the net 'VCCIN_VR_PROCHOT_FPGA' becasue it is not driving any logic
+--Warning: Removing the net 'PLTRSTn' becasue it is not driving any logic
+--Warning: Removing the net 'GPIO_FPGA_SoC_2' becasue it is not driving any logic
+--Warning: Removing the net 'VCCIN_VR_PE' becasue it is not driving any logic
+--Warning: Removing the net 'SATAXPCIE1_FPGA' becasue it is not driving any logic
+--Warning: Removing the net 'SLP_S5n' becasue it is not driving any logic
+--Warning: Removing the net 'SPI_FP_IO3' becasue it is not driving any logic
+--Warning: Removing the net 'VCCST_OVERRIDE_3V3' becasue it is not driving any logic
+--Warning: Removing the net 'SOC_SPKR' becasue it is not driving any logic
+--Warning: Removing the net 'VR_PROCHOT_FPGA_OUT_N' becasue it is not driving any logic
+--Warning: Removing the net 'GPIO_FPGA_EXP_2' becasue it is not driving any logic
+--Warning: Removing the net 'GPIO_FPGA_SoC_3' becasue it is not driving any logic
+--Warning: Removing the net 'VCCINAUX_VR_PE' becasue it is not driving any logic
+--Warning: Removing the net 'CPU_C10_GATE_N' becasue it is not driving any logic
+--Warning: Removing the net 'SUSACK_N' becasue it is not driving any logic
+--Warning: Removing the net 'SPI_FP_IO2' becasue it is not driving any logic
+--Warning: Removing the net 'SUSWARN_N' becasue it is not driving any logic
+--Warning: Removing the net 'PWRBTNn' becasue it is not driving any logic
+
+
+
 
 
 ENTITY TOP IS
@@ -275,8 +280,11 @@ ENTITY TOP IS
                                       -- 3. RSMRST# must always be driven low before any of the PRIMARY rails fall below the lower end of their tolerance band. This is true for all power states transitions
                                       -- including emergency power loss.
 
-		PWRBTN_LED : OUT STD_LOGIC; --OK
-		PWRBTNn : IN STD_LOGIC; --OK
+		PWRBTN_LED : OUT STD_LOGIC; -- OK
+		PWRBTNn : IN STD_LOGIC; -- OK
+		                              -- Signal driven from EC to PCH indicating a system request to go into
+                                      -- Sleep State OR if the system is already in the Sleep State then it will cause a wake event.
+
 		PLTRSTn : IN STD_LOGIC; --OK (PLTRST# in OrCAD)
 		HDA_SDO_ATP : OUT STD_LOGIC --OK
 	);
@@ -400,6 +408,7 @@ ARCHITECTURE bdf_type OF TOP IS
     
 
 BEGIN
+
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
 	DSW_PWROK <= DSW_PWROK_signal;
@@ -470,7 +479,7 @@ BEGIN
 
 	COUNTER : counter_block
 	PORT MAP(
-		CLK_25mhz => FPGA_OSC,
+		CLK_25mhz => FPGA_OSC, -- CLK_25Mhz which we want to divide in onrder to get the 100Khz
 		clk_100Khz => clk_100Khz_signal);
 
 	HDA_STRAP : hda_strap_block

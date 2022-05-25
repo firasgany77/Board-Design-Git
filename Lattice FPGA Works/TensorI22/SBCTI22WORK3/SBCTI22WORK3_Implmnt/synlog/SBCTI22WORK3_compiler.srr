@@ -8,15 +8,10 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Top entity is set to TOP.
-File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd changed - recompiling
-File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd changed - recompiling
-File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
+Options changed - recompiling
 VHDL syntax check successful!
-File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd changed - recompiling
+Options changed - recompiling
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Synthesizing work.top.bdf_type.
-@W: CD280 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":287:11:287:24|Unbound component powerled_block mapped to black box
-@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":287:11:287:24|Synthesizing work.powerled_block.syn_black_box.
-Post processing for work.powerled_block.syn_black_box
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":50:7:50:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":60:17:60:18|Using user defined encoding for type state_type.
 @W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":95:1:95:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
@@ -81,6 +76,31 @@ Post processing for work.vpp_vddq_block.vpp_vddq_arch
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":55:2:55:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal delayed_vddq_ok; possible missing assignment in an if or case statement.
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":55:2:55:3|Latch generated from process for signal delayed_vddq_pwrgd; possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":5:7:5:20|Synthesizing work.powerled_block.powerled_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":16:17:16:18|Using user defined encoding for type state_type.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":32:1:32:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":90:8:90:16|Referenced variable mem_alert is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":35:28:35:34|Referenced variable slp_s4n is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":35:8:35:14|Referenced variable slp_s3n is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":38:10:38:18|Referenced variable dutycycle is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":42:11:42:19|Referenced variable count_clk is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":36:9:36:18|Referenced variable func_state is not in sensitivity list.
+@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":134:1:134:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":137:8:137:17|Referenced variable curr_state is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":150:30:150:37|Referenced variable onclocks is not in sensitivity list.
+@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":139:9:139:13|Referenced variable count is not in sensitivity list.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":21:8:21:16|Signal clk_state is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":22:8:22:15|Signal clk_slow is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for work.powerled_block.powerled_arch
+@A: CL109 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Too many clocks (> 8) for set/reset analysis of count_off, try moving enabling expressions outside process
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal count_off(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal pwm_out; possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal curr_state(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal dutycycle(15 downto 0); possible missing assignment in an if or case statement.
+@A: CL109 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Too many clocks (> 8) for set/reset analysis of count_clk, try moving enabling expressions outside process
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal count_clk(15 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":34:2:34:3|Latch generated from process for signal func_state(1 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd":136:2:136:3|Latch generated from process for signal count(15 downto 0); possible missing assignment in an if or case statement.
 Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":14:1:14:10|Input clk_100Khz is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":17:8:17:16|Input V33DSW_OK is unused.
@@ -112,12 +132,12 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":279:2:279:8|Input PWRBTNn is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":280:2:280:8|Input PLTRSTn is unused.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue May 24 16:20:23 2022
+# Tue May 24 16:32:11 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -125,12 +145,12 @@ Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Selected library: work cell: TOP view bdf_type as top level
 @N: NF107 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":33:7:33:9|Selected library: work cell: TOP view bdf_type as top level
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue May 24 16:20:23 2022
+# Tue May 24 16:32:11 2022
 
 ###########################################################]
 @END
@@ -140,6 +160,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue May 24 16:20:23 2022
+# Tue May 24 16:32:11 2022
 
 ###########################################################]

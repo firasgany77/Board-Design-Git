@@ -1,5 +1,5 @@
 #defaultlanguage:vhdl
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\SBCTI22WORK3\\SBCTI22WORK3_Implmnt\\synwork\\SBCTI22WORK3_comp.srs|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\SBCTI22WORK3\\SBCTI22WORK3_Implmnt\\synwork\\SBCTI22WORK3_comp.srs|-autotop|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_vhdl.exe":1649857832
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\location.map":1649857835
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vhd\\std.vhd":1649857835
@@ -18,6 +18,7 @@
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\counter.vhd":1651753296
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\primary_voltages_enabler.vhd":1653398415
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\vccin_en.vhd":1653281494
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\powerled.vhd":1638031123
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1653394640
 0 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd" vhdl
 1 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd" vhdl
@@ -28,6 +29,7 @@
 6 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd" vhdl
 7 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd" vhdl
 8 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd" vhdl
+9 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd" vhdl
 
 # Dependency Lists (Uses list)
 0 -1
@@ -36,9 +38,10 @@
 3 -1
 4 -1
 5 -1
-6 0 7 5 3 8 4 1 2 
+6 9 0 7 5 3 8 4 1 2 
 7 -1
 8 -1
+9 -1
 
 # Dependency Lists (Users Of)
 0 6 
@@ -50,6 +53,7 @@
 6 -1
 7 6 
 8 6 
+9 6 
 
 # Design Unit to File Association
 arch work vpp_vddq_block vpp_vddq_arch 0
@@ -70,6 +74,8 @@ arch work primary_voltages_enabler rsmrst_arch 7
 module work primary_voltages_enabler 7
 arch work vccin_en_block vccin_arch 8
 module work vccin_en_block 8
+arch work powerled_block powerled_arch 9
+module work powerled_block 9
 
 
 # Configuration files used
