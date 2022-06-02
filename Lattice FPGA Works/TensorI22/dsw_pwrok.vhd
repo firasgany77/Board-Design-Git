@@ -37,10 +37,10 @@ BEGIN
 	pwrok <= '1' WHEN (V33DSW_OK = '1')
 		ELSE
 		'0';
-
+		
 	PROCESS (clk_100Khz)
 	BEGIN
-		IF (clk_100Khz = '1') THEN
+		IF rising_edge(clk_100Khz) THEN
 			CASE curr_state IS
 
 				WHEN pwrgd => -- we stay at this state as long as (V33DSW_OK = '1'). 

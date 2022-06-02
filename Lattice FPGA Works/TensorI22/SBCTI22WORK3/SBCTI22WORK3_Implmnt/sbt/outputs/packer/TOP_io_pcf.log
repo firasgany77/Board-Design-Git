@@ -17,7 +17,7 @@ INPUT  CPU_C10_GATE_N 	 location (4, 0, 0) 	 A13
 OUTPUT VCCST_EN 	 location (0, 11, 0) 	 A4 	 
 INPUT  V33DSW_OK 	 location (0, 13, 0) 	 A2 	 
 INPUT  TPM_GPIO 	 location (9, 17, 1) 	 B30 	 
-INPUT  SUSWARN_N 	 location (0, 3, 0) 	 B9 	 
+OUTPUT SUSWARN_N 	 location (0, 3, 0) 	 B9 	 
 INPUT  PLTRSTn 	 location (5, 0, 1) 	 B11 	 
 INPUT  GPIO_FPGA_SoC_4 	 location (13, 4, 0) 	 A25 	 
 INPUT  VR_READY_VCCIN 	 location (0, 9, 1) 	 B5 	 

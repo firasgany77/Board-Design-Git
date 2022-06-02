@@ -149,7 +149,7 @@ ENTITY TOP IS
 		VPP_EN : OUT STD_LOGIC;  -- OK
 		SOC_SPKR : IN STD_LOGIC; -- OK(NEW)
 		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
-		SUSWARN_N: IN STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
+		SUSWARN_N: OUT STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
 		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
 
 		                         -- S0 Sleep Control. When PCH is idle and processor is in C10 state, this
@@ -377,8 +377,6 @@ ARCHITECTURE bdf_type OF TOP IS
 	END COMPONENT;
 
 
-
-
 	COMPONENT primary_voltages_enabler
 	        Port(
 	    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
@@ -412,6 +410,7 @@ BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
 	DSW_PWROK <= DSW_PWROK_signal;
+	SUSWARN_N <= clk_100Khz_signal; 
 	VCCST_PWRGD <= vccst_pwrgd_signal AND delayed_vddq_ok_signal; -- (to ensure tCPU01 is met)
 	RSMRSTn <= RSMRSTn_signal;
 
@@ -438,6 +437,11 @@ BEGIN
 	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
+
+ 
+    -- while VR_READY_VCCINAUX = LOW 
+	VCCIN_EN <= '0'; 
+	VCCIN_VR_PE <= '0'; 
 	
 	
 

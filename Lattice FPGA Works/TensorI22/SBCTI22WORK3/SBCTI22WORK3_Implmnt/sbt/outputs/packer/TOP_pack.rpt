@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     May 24 2022 18:35:18
+* File Generated:     Jun 1 2022 18:01:21
 
 * Purpose:            General info of design implementation
 
@@ -28,19 +28,19 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  221
-    LUTs:                 1160
+    LUTs:                 1123
     RAMs:                 0
-    IOBs:                 33
+    IOBs:                 34
     GBs:                  2
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1200/1280
-        Combinational Logic Cells: 979      out of   1280      76.4844%
+    Total Logic Cells: 1162/1280
+        Combinational Logic Cells: 941      out of   1280      73.5156%
         Sequential Logic Cells:    221      out of   1280      17.2656%
-        Logic Tiles:               160      out of   160       100%
+        Logic Tiles:               157      out of   160       98.125%
     Registers: 
         Logic Registers:           221      out of   1280      17.2656%
         IO Registers:              0        out of   560       0
@@ -48,7 +48,7 @@ Logic Resource Utilization:
     Warm Boots:                    0        out of   1         0%
     Pins:
         Input Pins:                16       out of   67        23.8806%
-        Output Pins:               17       out of   67        25.3731%
+        Output Pins:               18       out of   67        26.8657%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                2        out of   8         25%
     PLLs:                          0        out of   0       
@@ -98,6 +98,7 @@ Detailed I/O Info:
     B3          Output     SB_LVCMOS    No       3        Simple Output  V5S_ENn                   
     B4          Output     SB_LVCMOS    No       3        Simple Output  DSW_PWROK                 
     B7          Output     SB_LVCMOS    No       3        Simple Output  HDA_SDO_ATP               
+    B9          Output     SB_LVCMOS    No       3        Simple Output  SUSWARN_N                 
     B27         Output     SB_LVCMOS    No       1        Simple Output  SYS_PWROK                 
     B29         Output     SB_LVCMOS    No       0        Simple Output  VCCIN_EN                  
     B35         Output     SB_LVCMOS    No       0        Simple Output  RSMRSTn                   
@@ -108,4 +109,4 @@ Detailed Global Buffer Info:
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name                       
     -------------  -------  ---------  ------  -----------                       
     1              0                   44      HDA_STRAP.count_en_g              
-    3              3                   49      VPP_VDDQ_delayed_vddq_pwrgd_en_g  
+    3              3                   44      VPP_VDDQ_delayed_vddq_pwrgd_en_g  

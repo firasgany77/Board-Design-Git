@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Tue May 24 16:32:13 2022
+# Written on Wed Jun 01 17:57:34 2022
 
 
 ##### DESIGN INFO #######################################################
@@ -28,7 +28,7 @@ Starting                            Ending                              |     ri
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TOP|FPGA_OSC                        TOP|FPGA_OSC                        |     1000.000         |     No paths         |     No paths         |     No paths                         
 TOP|FPGA_OSC                        counter_block|tmp_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
-counter_block|tmp_derived_clock     counter_block|tmp_derived_clock     |     No paths         |     1000.000         |     No paths         |     500.000                          
+counter_block|tmp_derived_clock     counter_block|tmp_derived_clock     |     1000.000         |     1000.000         |     No paths         |     500.000                          
 ===================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -63,7 +63,6 @@ p:SOC_SPKR
 p:SPI_FP_IO2
 p:SPI_FP_IO3
 p:SUSACK_N
-p:SUSWARN_N
 p:SYS_PWROK
 p:TPM_GPIO
 p:V1P8A_EN
