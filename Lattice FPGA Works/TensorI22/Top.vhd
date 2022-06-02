@@ -40,7 +40,7 @@ ENTITY TOP IS
 		SATAXPCIE0_FPGA : IN STD_LOGIC; -- OK
 		SATAXPCIE1_FPGA : IN STD_LOGIC; -- OK
 		VCCIN_VR_PROCHOT_FPGA : IN STD_LOGIC; --OK
-		VCCIN_VR_PE : IN STD_LOGIC; --OK
+		VCCIN_VR_PE : OUT STD_LOGIC; --OK
 		VCCIN_EN : OUT STD_LOGIC; -- OK (from SLP_S3n = HIGH --> VCCIN_EN = HIGH - tPCH08 = min: 1ms)
 		                          -- OK (from SLP_S3n = HIGH --> PCH_PWROK       - tPCH08 = min: 1ms)
 								  -- This supply is expected to be 0V during states where SLP_S0# is asserted. It may be left on during this
@@ -51,7 +51,7 @@ ENTITY TOP IS
 		VCCINAUX_VR_PROCHOT_FPGA : IN STD_LOGIC; -- OK
 		                                         -- 
 		VCCINAUX_EN : OUT STD_LOGIC;   -- OK
-		VCCINAUX_VR_PE : IN STD_LOGIC; -- OK
+		VCCINAUX_VR_PE : OUT STD_LOGIC; -- OK
 		VR_PROCHOT_FPGA_OUT_N : IN STD_LOGIC; -- OK
 		VR_READY_VCCINAUX : IN STD_LOGIC;  -- OK (replaced VCCSA_READY)
 		VR_READY_VCCIN : IN STD_LOGIC;     -- OK --replaced VR_READY
@@ -439,8 +439,7 @@ BEGIN
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
  
-    -- while VR_READY_VCCINAUX = LOW 
-	VCCIN_EN <= '0'; 
+    -- disable PMBUS for VCCIN Controller:
 	VCCIN_VR_PE <= '0'; 
 	
 	
