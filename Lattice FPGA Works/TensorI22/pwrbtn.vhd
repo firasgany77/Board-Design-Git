@@ -23,7 +23,7 @@ ARCHITECTURE pwrbtn_arch OF pwrbtn_block IS
 BEGIN
 	PROCESS (clk_100Khz) -- 30 mSec delay process:  asserted -> not_asserted
 	BEGIN
-		IF (clk_100Khz = '1') THEN
+		IF rising_edge(clk_100Khz) THEN
 			CASE curr_state IS
 				WHEN not_asserted => -- Before assertion	
 					IF (count = to_unsigned(3000, 16)) THEN -- 3000 * 10uSec = 30 mSec
@@ -49,6 +49,7 @@ BEGIN
 						curr_state <= asserted;
 					END IF;
 					pwrbtn <= '0';
+					
 				WHEN idle => -- After assertion				
 					IF (rsmrst_n = '0') THEN
 						curr_state <= not_asserted; -- RSMRST# loss (relevant for major power failure while FPGA still has power)

@@ -1,0 +1,18 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40LP1KQN84 (Lattice)
+
+------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   vccin_en_block   ########
+==============================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block vccin_en_block:	2 (50.00 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

@@ -52,7 +52,7 @@ BEGIN
 
 	PROCESS (clk_100Khz) -- 30 mSec delay process: vddq_pwrgd -> delayed_vddq_pwrgd
 	BEGIN
-		IF (clk_100Khz = '1') THEN
+		IF rising_edge(clk_100Khz) THEN
 			CASE curr_state IS
             
 			    -- this state machine starts at no_pwrgd state and waits for slp_s4n AND vddq_pwrgd to be high, 

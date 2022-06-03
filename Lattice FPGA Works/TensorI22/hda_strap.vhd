@@ -21,7 +21,7 @@ BEGIN
 
 	PROCESS (clk_100Khz) -- 
 	BEGIN
-		IF (clk_100Khz = '1') THEN
+		IF rising_edge(clk_100Khz) THEN
 			CASE curr_state IS
 
 				WHEN start => -- 	After FPGA power on, waiting for PCH_PWROK = 1

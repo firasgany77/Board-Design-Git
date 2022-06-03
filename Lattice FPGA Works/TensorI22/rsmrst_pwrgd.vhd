@@ -10,7 +10,8 @@ ENTITY rsmrst_pwrgd_block IS
 	PORT (
 		V33A_OK : IN STD_LOGIC;  -- Open-drain, internal weak pull-up required
 		V5A_OK : IN STD_LOGIC;   -- Open-drain, internal weak pull-up required 
-		V1P8A_OK : IN STD_LOGIC; -- NEW
+		V1P8A_OK : IN STD_LOGIC;
+		VR_READY_VCCINAUX: IN STD_LOGIC; -- Open-drain, internal weak pull-up required. 
 		SLP_SUSn : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		RSMRSTn : OUT STD_LOGIC; -- with 10ms delay on rising edge ()
@@ -26,7 +27,7 @@ ARCHITECTURE rsmrst_arch OF rsmrst_pwrgd_block IS
 	SIGNAL count : unsigned(15 DOWNTO 0) := (OTHERS => '0'); 
 
 BEGIN
-	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (V1P8A_OK = '1') AND (SLP_SUSn = '1')
+	rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (V1P8A_OK = '1') AND (SLP_SUSn = '1') AND (VR_READY_VCCINAUX = '1')
 		ELSE       -- 100 msec after all primary rails are ready
 		'0';
 	rsmrst_pwrgd_out <= rsmrst_pwrgd;
@@ -37,7 +38,7 @@ BEGIN
 
 	PROCESS (clk_100Khz)
 	BEGIN
-		IF (clk_100Khz = '1') THEN
+		IF rising_edge(clk_100Khz) THEN
 			CASE curr_state IS
 
 				WHEN pwrgd =>

@@ -1,0 +1,698 @@
+# ******************************************************************************
+
+# iCEcube Static Timer
+
+# Version:            2020.12.27943
+
+# Build Date:         Dec  9 2020 17:33:20
+
+# File Generated:     Jun 2 2022 11:50:53
+
+# Purpose:            Timing Report with critical paths info
+
+# Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+# ******************************************************************************
+
+Device: iCE40LP1K
+Derating factors (Best:Typical:Worst) :-  ( 0.657424 : 0.85 : 1.03182 )
+Derating factor used to generate this timing report:  Worst
+Based on the following operating conditions 
+Junction Temperature(degree Celsius): 100
+Core Voltage(V): 1.14
+Process Corner:  Worst
+NOTE:
+Please check both worst-case and best-case scenarios for "Setup Times" 
+and "Hold Times" checks
+Maximum Operating Frequency is: N/A
+
+
+ #####################################################################
+                    3::Datasheet Report
+
+All values are in Picoseconds
+ =====================================================================
+
+                        3.1::Setup Times
+                        ----------------
+
+Data Port  Clock Port  Setup Times  Clock Reference:Phase  
+---------  ----------  -----------  ---------------------  
+
+
+                       3.2::Clock to Out
+                       -----------------
+
+Data Port  Clock Port  Clock to Out  Clock Reference:Phase  
+---------  ----------  ------------  ---------------------  
+
+
+                         3.3::Pad to Pad
+                         ---------------
+
+Port Name (Input)  Port Name (Output)  Pad to Pad  
+-----------------  ------------------  ----------  
+VCCST_CPU_OK       vccin_en            12462       
+DSW_PWROK          vccin_en            11977       
+rsmrst_pwrgd       vccin_en            10873       
+v33s_pwrgd         vccin_en            10584       
+v5s_pwrgd          vccin_en            10533       
+slp_s3n            vccin_en            10130       
+
+
+                         3.4::Hold Times
+                         ---------------
+
+Data Port  Clock Port  Hold Times  Clock Reference:Phase  
+---------  ----------  ----------  ---------------------  
+
+
+               3.5::Minimum Clock to Out
+               -------------------------
+
+Data Port  Clock Port  Minimum Clock to Out  Clock Reference:Phase  
+---------  ----------  --------------------  ---------------------  
+
+
+                 3.6::Minimum Pad To Pad
+                 -----------------------
+
+Port Name (Input)  Port Name (Output)  Minimum Pad To Pad  
+-----------------  ------------------  ------------------  
+slp_s3n            vccin_en            9143                
+v5s_pwrgd          vccin_en            9545                
+v33s_pwrgd         vccin_en            9566                
+rsmrst_pwrgd       vccin_en            10020               
+DSW_PWROK          vccin_en            11124               
+VCCST_CPU_OK       vccin_en            11629               
+
+ =====================================================================
+                    End of Datasheet Report
+ #####################################################################
+
+ #####################################################################
+                    6::Path Details for DataSheet
+ =====================================================================
+
+
+6.3::PI to PO Path Details              
+--------------------------------------------------
+
+6.3.1::Path details for port: vccin_en  
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : VCCST_CPU_OK
+Pad to Pad Delay : 12462
+
+Pad to Pad Path
+pin name                                         model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+VCCST_CPU_OK                                     vccin_en_block             0      0                  RISE  1       
+ipInertedIOPad_VCCST_CPU_OK_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+ipInertedIOPad_VCCST_CPU_OK_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+ipInertedIOPad_VCCST_CPU_OK_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+ipInertedIOPad_VCCST_CPU_OK_preio/DIN0           PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
+I__34/I                                          Odrv12                     0      1418               RISE  1       
+I__34/O                                          Odrv12                     722    2140               RISE  1       
+I__35/I                                          Sp12to4                    0      2140               RISE  1       
+I__35/O                                          Sp12to4                    629    2770               RISE  1       
+I__36/I                                          Span4Mux_v                 0      2770               RISE  1       
+I__36/O                                          Span4Mux_v                 516    3286               RISE  1       
+I__37/I                                          LocalMux                   0      3286               RISE  1       
+I__37/O                                          LocalMux                   485    3771               RISE  1       
+I__38/I                                          InMux                      0      3771               RISE  1       
+I__38/O                                          InMux                      382    4152               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in0                  LogicCell40_SEQ_MODE_0000  0      4152               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout                LogicCell40_SEQ_MODE_0000  567    4720               FALL  1       
+I__21/I                                          CascadeMux                 0      4720               FALL  1       
+I__21/O                                          CascadeMux                 0      4720               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2               LogicCell40_SEQ_MODE_0000  0      4720               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout             LogicCell40_SEQ_MODE_0000  557    5277               RISE  1       
+I__13/I                                          Odrv4                      0      5277               RISE  1       
+I__13/O                                          Odrv4                      516    5793               RISE  1       
+I__14/I                                          IoSpan4Mux                 0      5793               RISE  1       
+I__14/O                                          IoSpan4Mux                 423    6216               RISE  1       
+I__15/I                                          LocalMux                   0      6216               RISE  1       
+I__15/O                                          LocalMux                   485    6701               RISE  1       
+I__16/I                                          IoInMux                    0      6701               RISE  1       
+I__16/O                                          IoInMux                    382    7083               RISE  1       
+ipInertedIOPad_vccin_en_preio/DOUT0              PRE_IO_PIN_TYPE_011001     0      7083               RISE  1       
+ipInertedIOPad_vccin_en_preio/PADOUT             PRE_IO_PIN_TYPE_011001     3291   10374              FALL  1       
+ipInertedIOPad_vccin_en_iopad/DIN                IO_PAD                     0      10374              FALL  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out     IO_PAD                     2088   12462              FALL  1       
+vccin_en                                         vccin_en_block             0      12462              FALL  1       
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : DSW_PWROK
+Pad to Pad Delay : 11977
+
+Pad to Pad Path
+pin name                                      model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+DSW_PWROK                                     vccin_en_block             0      0                  RISE  1       
+ipInertedIOPad_DSW_PWROK_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+ipInertedIOPad_DSW_PWROK_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+ipInertedIOPad_DSW_PWROK_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+ipInertedIOPad_DSW_PWROK_preio/DIN0           PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
+I__24/I                                       Odrv4                      0      1418               RISE  1       
+I__24/O                                       Odrv4                      516    1934               RISE  1       
+I__25/I                                       Span4Mux_v                 0      1934               RISE  1       
+I__25/O                                       Span4Mux_v                 516    2450               RISE  1       
+I__26/I                                       Span4Mux_v                 0      2450               RISE  1       
+I__26/O                                       Span4Mux_v                 516    2966               RISE  1       
+I__27/I                                       LocalMux                   0      2966               RISE  1       
+I__27/O                                       LocalMux                   485    3451               RISE  1       
+I__28/I                                       InMux                      0      3451               RISE  1       
+I__28/O                                       InMux                      382    3832               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in3               LogicCell40_SEQ_MODE_0000  0      3832               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout             LogicCell40_SEQ_MODE_0000  402    4235               FALL  1       
+I__21/I                                       CascadeMux                 0      4235               FALL  1       
+I__21/O                                       CascadeMux                 0      4235               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2            LogicCell40_SEQ_MODE_0000  0      4235               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000  557    4792               RISE  1       
+I__13/I                                       Odrv4                      0      4792               RISE  1       
+I__13/O                                       Odrv4                      516    5308               RISE  1       
+I__14/I                                       IoSpan4Mux                 0      5308               RISE  1       
+I__14/O                                       IoSpan4Mux                 423    5731               RISE  1       
+I__15/I                                       LocalMux                   0      5731               RISE  1       
+I__15/O                                       LocalMux                   485    6216               RISE  1       
+I__16/I                                       IoInMux                    0      6216               RISE  1       
+I__16/O                                       IoInMux                    382    6598               RISE  1       
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6598               RISE  1       
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001     3291   9889               FALL  1       
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                     0      9889               FALL  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                     2088   11977              FALL  1       
+vccin_en                                      vccin_en_block             0      11977              FALL  1       
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : rsmrst_pwrgd
+Pad to Pad Delay : 10873
+
+Pad to Pad Path
+pin name                                         model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+rsmrst_pwrgd                                     vccin_en_block             0      0                  RISE  1       
+ipInertedIOPad_rsmrst_pwrgd_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+ipInertedIOPad_rsmrst_pwrgd_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+ipInertedIOPad_rsmrst_pwrgd_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+ipInertedIOPad_rsmrst_pwrgd_preio/DIN0           PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
+I__17/I                                          Odrv4                      0      1418               RISE  1       
+I__17/O                                          Odrv4                      516    1934               RISE  1       
+I__18/I                                          IoSpan4Mux                 0      1934               RISE  1       
+I__18/O                                          IoSpan4Mux                 423    2357               RISE  1       
+I__19/I                                          LocalMux                   0      2357               RISE  1       
+I__19/O                                          LocalMux                   485    2842               RISE  1       
+I__20/I                                          InMux                      0      2842               RISE  1       
+I__20/O                                          InMux                      382    3224               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in3               LogicCell40_SEQ_MODE_0000  0      3224               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout             LogicCell40_SEQ_MODE_0000  464    3688               RISE  1       
+I__13/I                                          Odrv4                      0      3688               RISE  1       
+I__13/O                                          Odrv4                      516    4204               RISE  1       
+I__14/I                                          IoSpan4Mux                 0      4204               RISE  1       
+I__14/O                                          IoSpan4Mux                 423    4627               RISE  1       
+I__15/I                                          LocalMux                   0      4627               RISE  1       
+I__15/O                                          LocalMux                   485    5112               RISE  1       
+I__16/I                                          IoInMux                    0      5112               RISE  1       
+I__16/O                                          IoInMux                    382    5494               RISE  1       
+ipInertedIOPad_vccin_en_preio/DOUT0              PRE_IO_PIN_TYPE_011001     0      5494               RISE  1       
+ipInertedIOPad_vccin_en_preio/PADOUT             PRE_IO_PIN_TYPE_011001     3291   8785               FALL  1       
+ipInertedIOPad_vccin_en_iopad/DIN                IO_PAD                     0      8785               FALL  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out     IO_PAD                     2088   10873              FALL  1       
+vccin_en                                         vccin_en_block             0      10873              FALL  1       
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : v33s_pwrgd
+Pad to Pad Delay : 10584
+
+Pad to Pad Path
+pin name                                       model name                 delay  cummulative delay  edge  Fanout  
+---------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+v33s_pwrgd                                     vccin_en_block             0      0                  RISE  1       
+ipInertedIOPad_v33s_pwrgd_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+ipInertedIOPad_v33s_pwrgd_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+ipInertedIOPad_v33s_pwrgd_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+ipInertedIOPad_v33s_pwrgd_preio/DIN0           PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
+I__32/I                                        LocalMux                   0      1418               RISE  1       
+I__32/O                                        LocalMux                   485    1903               RISE  1       
+I__33/I                                        InMux                      0      1903               RISE  1       
+I__33/O                                        InMux                      382    2285               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in1                LogicCell40_SEQ_MODE_0000  0      2285               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout              LogicCell40_SEQ_MODE_0000  557    2842               FALL  1       
+I__21/I                                        CascadeMux                 0      2842               FALL  1       
+I__21/O                                        CascadeMux                 0      2842               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2             LogicCell40_SEQ_MODE_0000  0      2842               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout           LogicCell40_SEQ_MODE_0000  557    3399               RISE  1       
+I__13/I                                        Odrv4                      0      3399               RISE  1       
+I__13/O                                        Odrv4                      516    3915               RISE  1       
+I__14/I                                        IoSpan4Mux                 0      3915               RISE  1       
+I__14/O                                        IoSpan4Mux                 423    4338               RISE  1       
+I__15/I                                        LocalMux                   0      4338               RISE  1       
+I__15/O                                        LocalMux                   485    4823               RISE  1       
+I__16/I                                        IoInMux                    0      4823               RISE  1       
+I__16/O                                        IoInMux                    382    5205               RISE  1       
+ipInertedIOPad_vccin_en_preio/DOUT0            PRE_IO_PIN_TYPE_011001     0      5205               RISE  1       
+ipInertedIOPad_vccin_en_preio/PADOUT           PRE_IO_PIN_TYPE_011001     3291   8496               FALL  1       
+ipInertedIOPad_vccin_en_iopad/DIN              IO_PAD                     0      8496               FALL  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out   IO_PAD                     2088   10584              FALL  1       
+vccin_en                                       vccin_en_block             0      10584              FALL  1       
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : v5s_pwrgd
+Pad to Pad Delay : 10533
+
+Pad to Pad Path
+pin name                                      model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+v5s_pwrgd                                     vccin_en_block             0      0                  RISE  1       
+ipInertedIOPad_v5s_pwrgd_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+ipInertedIOPad_v5s_pwrgd_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+ipInertedIOPad_v5s_pwrgd_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+ipInertedIOPad_v5s_pwrgd_preio/DIN0           PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
+I__29/I                                       LocalMux                   0      1418               RISE  1       
+I__29/O                                       LocalMux                   485    1903               RISE  1       
+I__30/I                                       InMux                      0      1903               RISE  1       
+I__30/O                                       InMux                      382    2285               RISE  1       
+I__31/I                                       CascadeMux                 0      2285               RISE  1       
+I__31/O                                       CascadeMux                 0      2285               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in2               LogicCell40_SEQ_MODE_0000  0      2285               RISE  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout             LogicCell40_SEQ_MODE_0000  506    2790               FALL  1       
+I__21/I                                       CascadeMux                 0      2790               FALL  1       
+I__21/O                                       CascadeMux                 0      2790               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2            LogicCell40_SEQ_MODE_0000  0      2790               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000  557    3347               RISE  1       
+I__13/I                                       Odrv4                      0      3347               RISE  1       
+I__13/O                                       Odrv4                      516    3863               RISE  1       
+I__14/I                                       IoSpan4Mux                 0      3863               RISE  1       
+I__14/O                                       IoSpan4Mux                 423    4286               RISE  1       
+I__15/I                                       LocalMux                   0      4286               RISE  1       
+I__15/O                                       LocalMux                   485    4771               RISE  1       
+I__16/I                                       IoInMux                    0      4771               RISE  1       
+I__16/O                                       IoInMux                    382    5153               RISE  1       
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      5153               RISE  1       
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001     3291   8445               FALL  1       
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                     0      8445               FALL  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                     2088   10533              FALL  1       
+vccin_en                                      vccin_en_block             0      10533              FALL  1       
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : slp_s3n
+Pad to Pad Delay : 10130
+
+Pad to Pad Path
+pin name                                      model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+slp_s3n                                       vccin_en_block             0      0                  RISE  1       
+ipInertedIOPad_slp_s3n_iopad/PACKAGEPIN:in    IO_PAD                     0      0                  RISE  1       
+ipInertedIOPad_slp_s3n_iopad/DOUT             IO_PAD                     510    510                RISE  1       
+ipInertedIOPad_slp_s3n_preio/PADIN            PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+ipInertedIOPad_slp_s3n_preio/DIN0             PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
+I__22/I                                       LocalMux                   0      1418               RISE  1       
+I__22/O                                       LocalMux                   485    1903               RISE  1       
+I__23/I                                       InMux                      0      1903               RISE  1       
+I__23/O                                       InMux                      382    2285               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in0            LogicCell40_SEQ_MODE_0000  0      2285               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000  660    2945               RISE  1       
+I__13/I                                       Odrv4                      0      2945               RISE  1       
+I__13/O                                       Odrv4                      516    3461               RISE  1       
+I__14/I                                       IoSpan4Mux                 0      3461               RISE  1       
+I__14/O                                       IoSpan4Mux                 423    3884               RISE  1       
+I__15/I                                       LocalMux                   0      3884               RISE  1       
+I__15/O                                       LocalMux                   485    4369               RISE  1       
+I__16/I                                       IoInMux                    0      4369               RISE  1       
+I__16/O                                       IoInMux                    382    4751               RISE  1       
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      4751               RISE  1       
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001     3291   8042               FALL  1       
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                     0      8042               FALL  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                     2088   10130              FALL  1       
+vccin_en                                      vccin_en_block             0      10130              FALL  1       
+
+6.6::Min PI to PO Path Details          
+--------------------------------------------------
+
+6.6.1::Path details for port: vccin_en  
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : slp_s3n
+Pad to Pad Delay : 9143
+
+Pad to Pad Path
+pin name                                      model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+slp_s3n                                       vccin_en_block             0      0                  FALL  1       
+ipInertedIOPad_slp_s3n_iopad/PACKAGEPIN:in    IO_PAD                     0      0                  FALL  1       
+ipInertedIOPad_slp_s3n_iopad/DOUT             IO_PAD                     460    460                FALL  1       
+ipInertedIOPad_slp_s3n_preio/PADIN            PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+ipInertedIOPad_slp_s3n_preio/DIN0             PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
+I__22/I                                       LocalMux                   0      1141               FALL  1       
+I__22/O                                       LocalMux                   454    1595               FALL  1       
+I__23/I                                       InMux                      0      1595               FALL  1       
+I__23/O                                       InMux                      320    1915               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in0            LogicCell40_SEQ_MODE_0000  0      1915               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000  567    2482               FALL  1       
+I__13/I                                       Odrv4                      0      2482               FALL  1       
+I__13/O                                       Odrv4                      547    3029               FALL  1       
+I__14/I                                       IoSpan4Mux                 0      3029               FALL  1       
+I__14/O                                       IoSpan4Mux                 475    3504               FALL  1       
+I__15/I                                       LocalMux                   0      3504               FALL  1       
+I__15/O                                       LocalMux                   454    3958               FALL  1       
+I__16/I                                       IoInMux                    0      3958               FALL  1       
+I__16/O                                       IoInMux                    320    4278               FALL  1       
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      4278               FALL  1       
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2951   7229               RISE  1       
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                     0      7229               RISE  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                     1914   9143               RISE  1       
+vccin_en                                      vccin_en_block             0      9143               RISE  1       
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : v5s_pwrgd
+Pad to Pad Delay : 9545
+
+Pad to Pad Path
+pin name                                      model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+v5s_pwrgd                                     vccin_en_block             0      0                  FALL  1       
+ipInertedIOPad_v5s_pwrgd_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+ipInertedIOPad_v5s_pwrgd_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+ipInertedIOPad_v5s_pwrgd_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+ipInertedIOPad_v5s_pwrgd_preio/DIN0           PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
+I__29/I                                       LocalMux                   0      1141               FALL  1       
+I__29/O                                       LocalMux                   454    1595               FALL  1       
+I__30/I                                       InMux                      0      1595               FALL  1       
+I__30/O                                       InMux                      320    1915               FALL  1       
+I__31/I                                       CascadeMux                 0      1915               FALL  1       
+I__31/O                                       CascadeMux                 0      1915               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in2               LogicCell40_SEQ_MODE_0000  0      1915               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout             LogicCell40_SEQ_MODE_0000  454    2369               RISE  1       
+I__21/I                                       CascadeMux                 0      2369               RISE  1       
+I__21/O                                       CascadeMux                 0      2369               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2            LogicCell40_SEQ_MODE_0000  0      2369               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000  516    2885               FALL  1       
+I__13/I                                       Odrv4                      0      2885               FALL  1       
+I__13/O                                       Odrv4                      547    3432               FALL  1       
+I__14/I                                       IoSpan4Mux                 0      3432               FALL  1       
+I__14/O                                       IoSpan4Mux                 475    3906               FALL  1       
+I__15/I                                       LocalMux                   0      3906               FALL  1       
+I__15/O                                       LocalMux                   454    4360               FALL  1       
+I__16/I                                       IoInMux                    0      4360               FALL  1       
+I__16/O                                       IoInMux                    320    4680               FALL  1       
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      4680               FALL  1       
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2951   7631               RISE  1       
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                     0      7631               RISE  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                     1914   9545               RISE  1       
+vccin_en                                      vccin_en_block             0      9545               RISE  1       
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : v33s_pwrgd
+Pad to Pad Delay : 9566
+
+Pad to Pad Path
+pin name                                       model name                 delay  cummulative delay  edge  Fanout  
+---------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+v33s_pwrgd                                     vccin_en_block             0      0                  FALL  1       
+ipInertedIOPad_v33s_pwrgd_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+ipInertedIOPad_v33s_pwrgd_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+ipInertedIOPad_v33s_pwrgd_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+ipInertedIOPad_v33s_pwrgd_preio/DIN0           PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
+I__32/I                                        LocalMux                   0      1141               FALL  1       
+I__32/O                                        LocalMux                   454    1595               FALL  1       
+I__33/I                                        InMux                      0      1595               FALL  1       
+I__33/O                                        InMux                      320    1915               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in1                LogicCell40_SEQ_MODE_0000  0      1915               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout              LogicCell40_SEQ_MODE_0000  475    2389               RISE  1       
+I__21/I                                        CascadeMux                 0      2389               RISE  1       
+I__21/O                                        CascadeMux                 0      2389               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2             LogicCell40_SEQ_MODE_0000  0      2389               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout           LogicCell40_SEQ_MODE_0000  516    2905               FALL  1       
+I__13/I                                        Odrv4                      0      2905               FALL  1       
+I__13/O                                        Odrv4                      547    3452               FALL  1       
+I__14/I                                        IoSpan4Mux                 0      3452               FALL  1       
+I__14/O                                        IoSpan4Mux                 475    3927               FALL  1       
+I__15/I                                        LocalMux                   0      3927               FALL  1       
+I__15/O                                        LocalMux                   454    4381               FALL  1       
+I__16/I                                        IoInMux                    0      4381               FALL  1       
+I__16/O                                        IoInMux                    320    4701               FALL  1       
+ipInertedIOPad_vccin_en_preio/DOUT0            PRE_IO_PIN_TYPE_011001     0      4701               FALL  1       
+ipInertedIOPad_vccin_en_preio/PADOUT           PRE_IO_PIN_TYPE_011001     2951   7652               RISE  1       
+ipInertedIOPad_vccin_en_iopad/DIN              IO_PAD                     0      7652               RISE  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out   IO_PAD                     1914   9566               RISE  1       
+vccin_en                                       vccin_en_block             0      9566               RISE  1       
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : rsmrst_pwrgd
+Pad to Pad Delay : 10020
+
+Pad to Pad Path
+pin name                                         model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+rsmrst_pwrgd                                     vccin_en_block             0      0                  FALL  1       
+ipInertedIOPad_rsmrst_pwrgd_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+ipInertedIOPad_rsmrst_pwrgd_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+ipInertedIOPad_rsmrst_pwrgd_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+ipInertedIOPad_rsmrst_pwrgd_preio/DIN0           PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
+I__17/I                                          Odrv4                      0      1141               FALL  1       
+I__17/O                                          Odrv4                      547    1688               FALL  1       
+I__18/I                                          IoSpan4Mux                 0      1688               FALL  1       
+I__18/O                                          IoSpan4Mux                 475    2162               FALL  1       
+I__19/I                                          LocalMux                   0      2162               FALL  1       
+I__19/O                                          LocalMux                   454    2616               FALL  1       
+I__20/I                                          InMux                      0      2616               FALL  1       
+I__20/O                                          InMux                      320    2936               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in3               LogicCell40_SEQ_MODE_0000  0      2936               FALL  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout             LogicCell40_SEQ_MODE_0000  423    3359               FALL  1       
+I__13/I                                          Odrv4                      0      3359               FALL  1       
+I__13/O                                          Odrv4                      547    3906               FALL  1       
+I__14/I                                          IoSpan4Mux                 0      3906               FALL  1       
+I__14/O                                          IoSpan4Mux                 475    4381               FALL  1       
+I__15/I                                          LocalMux                   0      4381               FALL  1       
+I__15/O                                          LocalMux                   454    4835               FALL  1       
+I__16/I                                          IoInMux                    0      4835               FALL  1       
+I__16/O                                          IoInMux                    320    5155               FALL  1       
+ipInertedIOPad_vccin_en_preio/DOUT0              PRE_IO_PIN_TYPE_011001     0      5155               FALL  1       
+ipInertedIOPad_vccin_en_preio/PADOUT             PRE_IO_PIN_TYPE_011001     2951   8106               RISE  1       
+ipInertedIOPad_vccin_en_iopad/DIN                IO_PAD                     0      8106               RISE  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out     IO_PAD                     1914   10020              RISE  1       
+vccin_en                                         vccin_en_block             0      10020              RISE  1       
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : DSW_PWROK
+Pad to Pad Delay : 11124
+
+Pad to Pad Path
+pin name                                      model name                 delay  cummulative delay  edge  Fanout  
+--------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+DSW_PWROK                                     vccin_en_block             0      0                  FALL  1       
+ipInertedIOPad_DSW_PWROK_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+ipInertedIOPad_DSW_PWROK_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+ipInertedIOPad_DSW_PWROK_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+ipInertedIOPad_DSW_PWROK_preio/DIN0           PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
+I__24/I                                       Odrv4                      0      1141               FALL  1       
+I__24/O                                       Odrv4                      547    1688               FALL  1       
+I__25/I                                       Span4Mux_v                 0      1688               FALL  1       
+I__25/O                                       Span4Mux_v                 547    2235               FALL  1       
+I__26/I                                       Span4Mux_v                 0      2235               FALL  1       
+I__26/O                                       Span4Mux_v                 547    2782               FALL  1       
+I__27/I                                       LocalMux                   0      2782               FALL  1       
+I__27/O                                       LocalMux                   454    3236               FALL  1       
+I__28/I                                       InMux                      0      3236               FALL  1       
+I__28/O                                       InMux                      320    3555               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in3               LogicCell40_SEQ_MODE_0000  0      3555               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout             LogicCell40_SEQ_MODE_0000  392    3948               RISE  1       
+I__21/I                                       CascadeMux                 0      3948               RISE  1       
+I__21/O                                       CascadeMux                 0      3948               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2            LogicCell40_SEQ_MODE_0000  0      3948               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000  516    4463               FALL  1       
+I__13/I                                       Odrv4                      0      4463               FALL  1       
+I__13/O                                       Odrv4                      547    5010               FALL  1       
+I__14/I                                       IoSpan4Mux                 0      5010               FALL  1       
+I__14/O                                       IoSpan4Mux                 475    5485               FALL  1       
+I__15/I                                       LocalMux                   0      5485               FALL  1       
+I__15/O                                       LocalMux                   454    5939               FALL  1       
+I__16/I                                       IoInMux                    0      5939               FALL  1       
+I__16/O                                       IoInMux                    320    6259               FALL  1       
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6259               FALL  1       
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2951   9210               RISE  1       
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                     0      9210               RISE  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                     1914   11124              RISE  1       
+vccin_en                                      vccin_en_block             0      11124              RISE  1       
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : vccin_en
+Input Port       : VCCST_CPU_OK
+Pad to Pad Delay : 11629
+
+Pad to Pad Path
+pin name                                         model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------------------  -------------------------  -----  -----------------  ----  ------  
+VCCST_CPU_OK                                     vccin_en_block             0      0                  FALL  1       
+ipInertedIOPad_VCCST_CPU_OK_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+ipInertedIOPad_VCCST_CPU_OK_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+ipInertedIOPad_VCCST_CPU_OK_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+ipInertedIOPad_VCCST_CPU_OK_preio/DIN0           PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
+I__34/I                                          Odrv12                     0      1141               FALL  1       
+I__34/O                                          Odrv12                     794    1935               FALL  1       
+I__35/I                                          Sp12to4                    0      1935               FALL  1       
+I__35/O                                          Sp12to4                    660    2596               FALL  1       
+I__36/I                                          Span4Mux_v                 0      2596               FALL  1       
+I__36/O                                          Span4Mux_v                 547    3143               FALL  1       
+I__37/I                                          LocalMux                   0      3143               FALL  1       
+I__37/O                                          LocalMux                   454    3597               FALL  1       
+I__38/I                                          InMux                      0      3597               FALL  1       
+I__38/O                                          InMux                      320    3917               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/in0                  LogicCell40_SEQ_MODE_0000  0      3917               FALL  1       
+v33s_pwrgd_RNIMMRM_LC_1_4_0/ltout                LogicCell40_SEQ_MODE_0000  537    4453               RISE  1       
+I__21/I                                          CascadeMux                 0      4453               RISE  1       
+I__21/O                                          CascadeMux                 0      4453               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in2               LogicCell40_SEQ_MODE_0000  0      4453               RISE  1       
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout             LogicCell40_SEQ_MODE_0000  516    4969               FALL  1       
+I__13/I                                          Odrv4                      0      4969               FALL  1       
+I__13/O                                          Odrv4                      547    5516               FALL  1       
+I__14/I                                          IoSpan4Mux                 0      5516               FALL  1       
+I__14/O                                          IoSpan4Mux                 475    5991               FALL  1       
+I__15/I                                          LocalMux                   0      5991               FALL  1       
+I__15/O                                          LocalMux                   454    6445               FALL  1       
+I__16/I                                          IoInMux                    0      6445               FALL  1       
+I__16/O                                          IoInMux                    320    6764               FALL  1       
+ipInertedIOPad_vccin_en_preio/DOUT0              PRE_IO_PIN_TYPE_011001     0      6764               FALL  1       
+ipInertedIOPad_vccin_en_preio/PADOUT             PRE_IO_PIN_TYPE_011001     2951   9715               RISE  1       
+ipInertedIOPad_vccin_en_iopad/DIN                IO_PAD                     0      9715               RISE  1       
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out     IO_PAD                     1914   11629              RISE  1       
+vccin_en                                         vccin_en_block             0      11629              RISE  1       
+
+
+ =====================================================================
+                    End of Path Details for Datasheet
+ #####################################################################
+
+##################################################################### 
+                    Detailed Setup Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : slp_s3n
+Path End         : vccin_en
+Setup Constraint : +INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)      0
++ Launch Clock Source Latency                0
++ Input Delay                                0
++ Data Path Delay                         9707
+---------------------------------------   ---- 
+End-of-path arrival time (ps)             9707
+ 
+Data path
+pin name                                      model name                 delay  cumulative delay  slack  edge  Fanout
+--------------------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+slp_s3n                                       vccin_en_block                 0                 0   +INF  RISE       1
+ipInertedIOPad_slp_s3n_iopad/PACKAGEPIN:in    IO_PAD                         0                 0   +INF  RISE       1
+ipInertedIOPad_slp_s3n_iopad/DOUT             IO_PAD                       510               510   +INF  RISE       1
+ipInertedIOPad_slp_s3n_preio/PADIN            PRE_IO_PIN_TYPE_000001         0               510   +INF  RISE       1
+ipInertedIOPad_slp_s3n_preio/DIN0             PRE_IO_PIN_TYPE_000001       681              1191   +INF  FALL       1
+I__22/I                                       LocalMux                       0              1191   +INF  FALL       1
+I__22/O                                       LocalMux                     454              1645   +INF  FALL       1
+I__23/I                                       InMux                          0              1645   +INF  FALL       1
+I__23/O                                       InMux                        320              1965   +INF  FALL       1
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in0            LogicCell40_SEQ_MODE_0000      0              1965   +INF  FALL       1
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000    567              2532   +INF  FALL       1
+I__13/I                                       Odrv4                          0              2532   +INF  FALL       1
+I__13/O                                       Odrv4                        547              3079   +INF  FALL       1
+I__14/I                                       IoSpan4Mux                     0              3079   +INF  FALL       1
+I__14/O                                       IoSpan4Mux                   475              3554   +INF  FALL       1
+I__15/I                                       LocalMux                       0              3554   +INF  FALL       1
+I__15/O                                       LocalMux                     454              4008   +INF  FALL       1
+I__16/I                                       IoInMux                        0              4008   +INF  FALL       1
+I__16/O                                       IoInMux                      320              4328   +INF  FALL       1
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001         0              4328   +INF  FALL       1
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001      3291              7619   +INF  FALL       1
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                         0              7619   +INF  FALL       1
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                      2088              9707   +INF  FALL       1
+vccin_en                                      vccin_en_block                 0              9707   +INF  FALL       1
+
+===================================================================== 
+                    End of Detailed Setup Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    Detailed Hold Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : slp_s3n
+Path End         : vccin_en
+Hold Constraint  : -INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)      0
++ Launch Clock Source Latency                0
++ Input Delay                                0
++ Data Path Delay                         9707
+---------------------------------------   ---- 
+End-of-path arrival time (ps)             9707
+ 
+Data path
+pin name                                      model name                 delay  cumulative delay  slack  edge  Fanout
+--------------------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+slp_s3n                                       vccin_en_block                 0                 0   +INF  RISE       1
+ipInertedIOPad_slp_s3n_iopad/PACKAGEPIN:in    IO_PAD                         0                 0   +INF  RISE       1
+ipInertedIOPad_slp_s3n_iopad/DOUT             IO_PAD                       510               510   +INF  RISE       1
+ipInertedIOPad_slp_s3n_preio/PADIN            PRE_IO_PIN_TYPE_000001         0               510   +INF  RISE       1
+ipInertedIOPad_slp_s3n_preio/DIN0             PRE_IO_PIN_TYPE_000001       681              1191   +INF  FALL       1
+I__22/I                                       LocalMux                       0              1191   +INF  FALL       1
+I__22/O                                       LocalMux                     454              1645   +INF  FALL       1
+I__23/I                                       InMux                          0              1645   +INF  FALL       1
+I__23/O                                       InMux                        320              1965   +INF  FALL       1
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/in0            LogicCell40_SEQ_MODE_0000      0              1965   +INF  FALL       1
+rsmrst_pwrgd_RNI6BPF1_LC_1_4_1/lcout          LogicCell40_SEQ_MODE_0000    567              2532   +INF  FALL       1
+I__13/I                                       Odrv4                          0              2532   +INF  FALL       1
+I__13/O                                       Odrv4                        547              3079   +INF  FALL       1
+I__14/I                                       IoSpan4Mux                     0              3079   +INF  FALL       1
+I__14/O                                       IoSpan4Mux                   475              3554   +INF  FALL       1
+I__15/I                                       LocalMux                       0              3554   +INF  FALL       1
+I__15/O                                       LocalMux                     454              4008   +INF  FALL       1
+I__16/I                                       IoInMux                        0              4008   +INF  FALL       1
+I__16/O                                       IoInMux                      320              4328   +INF  FALL       1
+ipInertedIOPad_vccin_en_preio/DOUT0           PRE_IO_PIN_TYPE_011001         0              4328   +INF  FALL       1
+ipInertedIOPad_vccin_en_preio/PADOUT          PRE_IO_PIN_TYPE_011001      3291              7619   +INF  FALL       1
+ipInertedIOPad_vccin_en_iopad/DIN             IO_PAD                         0              7619   +INF  FALL       1
+ipInertedIOPad_vccin_en_iopad/PACKAGEPIN:out  IO_PAD                      2088              9707   +INF  FALL       1
+vccin_en                                      vccin_en_block                 0              9707   +INF  FALL       1
+
+===================================================================== 
+                    End of Detailed Hold Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    End of Timing Report 
+##################################################################### 
+

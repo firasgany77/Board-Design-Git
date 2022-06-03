@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Apr 13 2022 17:49:52
+# File Generated:     Jun 3 2022 09:41:43
 
 # Family & Device:    iCE40LP1K
 
@@ -23,7 +23,7 @@ set_io SLP_S5n A41
 set_io SOC_SPKR A47
 set_io VCCIN_EN B29
 set_io VCCIN_VR_PE A27
-set_io VPP_OK B1
+set_io VPP_OK B1 -pullup yes
 set_io VR_PROCHOT_FPGA_OUT_N A32
 set_io GPIO_FPGA_SoC_3 B13
 set_io V5A_EN A10
@@ -35,7 +35,7 @@ set_io VCCINAUX_EN A26
 set_io VCCST_CPU_OK B19
 set_io SLP_S4n B34
 set_io SUSACK_N A11
-set_io VDDQ_OK B26
+set_io VDDQ_OK B26 -pullup yes
 set_io VPP_EN A33
 set_io GPIO_FPGA_EXP_2 A45
 set_io HDA_SDO_ATP B7
@@ -48,13 +48,13 @@ set_io SYS_PWROK B27
 set_io VCCST_PWRGD A14
 set_io FPGA_OSC B12
 set_io RSMRSTn B35
-set_io V5A_OK B8
+set_io V5A_OK B8 -pullup yes
 set_io VR_READY_VCCIN B5
 set_io GPIO_FPGA_SoC_4 A25
 set_io PLTRSTn B11
 set_io SUSWARN_N B9
 set_io TPM_GPIO B30
-set_io V33DSW_OK A2
+set_io V33DSW_OK A2 -pullup yes
 set_io VCCST_EN A4
 set_io CPU_C10_GATE_N A13
 set_io SLP_SUSn A40
@@ -62,7 +62,7 @@ set_io VCCIN_VR_PROCHOT_FPGA A31
 set_io GPIO_FPGA_SoC_2 B14
 set_io PWRBTN_LED B36
 set_io PWRBTNn A39
-set_io V1P8A_OK B2
+set_io V1P8A_OK B2 -pullup yes
 set_io V5S_ENn B3
 set_io SLP_S0n A46
 set_io SLP_S3n A38
@@ -71,5 +71,5 @@ set_io VCCST_OVERRIDE_3V3 B10
 set_io VDDQ_EN A48
 set_io V1P8A_EN A1
 set_io V33A_ENn A5
-set_io VR_READY_VCCINAUX B21
+set_io VR_READY_VCCINAUX B21 -pullup yes
 

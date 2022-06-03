@@ -337,7 +337,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		PORT (
 			v5s_pwrgd : IN STD_LOGIC;
 			v33s_pwrgd : IN STD_LOGIC;
-			slp_s3n : IN STD_LOGIC;
+            slp_s3n : IN STD_LOGIC;
 			rsmrst_pwrgd : IN STD_LOGIC;
 			DSW_PWROK: IN STD_LOGIC;
 			VCCST_CPU_OK: IN STD_LOGIC; 
@@ -359,6 +359,7 @@ ARCHITECTURE bdf_type OF TOP IS
 			V33A_OK : IN STD_LOGIC;
 			V5A_OK : IN STD_LOGIC;
 			V1P8A_OK : IN STD_LOGIC;
+			VR_READY_VCCINAUX: IN STD_LOGIC; 
 			SLP_SUSn : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			RSMRSTn : OUT STD_LOGIC;
@@ -440,7 +441,11 @@ BEGIN
 
  
     -- disable PMBUS for VCCIN Controller:
-	VCCIN_VR_PE <= '0'; 
+	VCCIN_VR_PE <= '0';  -- makes the 0x20 VCCIN disappear in the IMVP9 programming software. 
+	--vccin_en <= '1'; 
+	VCCINAUX_VR_PE <= '1'; 
+
+
 	
 	
 
@@ -515,6 +520,7 @@ BEGIN
 		V33A_OK => V33A_OK,
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
+		VR_READY_VCCINAUX => VR_READY_VCCINAUX, 
 		SLP_SUSn => slp_susn_signal, 
 		clk_100Khz => clk_100Khz_signal,
 		RSMRSTn => RSMRSTn_signal,
