@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 3 2022 09:52:12
+* File Generated:     Jun 7 2022 10:06:07
 
 * Purpose:            General info of design implementation
 
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  222
-    LUTs:                 991
+    LUTs:                 1021
     RAMs:                 0
     IOBs:                 37
     GBs:                  2
@@ -37,18 +37,18 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1029/1280
-        Combinational Logic Cells: 807      out of   1280      63.0469%
+    Total Logic Cells: 1059/1280
+        Combinational Logic Cells: 837      out of   1280      65.3906%
         Sequential Logic Cells:    222      out of   1280      17.3438%
-        Logic Tiles:               149      out of   160       93.125%
+        Logic Tiles:               153      out of   160       95.625%
     Registers: 
         Logic Registers:           222      out of   1280      17.3438%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                17       out of   67        25.3731%
-        Output Pins:               20       out of   67        29.8507%
+        Input Pins:                16       out of   67        23.8806%
+        Output Pins:               21       out of   67        31.3433%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                2        out of   8         25%
     PLLs:                          0        out of   0       
@@ -79,7 +79,6 @@ Detailed I/O Info:
     B12         Input      SB_LVCMOS    No       2        Simple Input   FPGA_OSC                  
     B19         Input      SB_LVCMOS    No       1        Simple Input   VCCST_CPU_OK              
     B20         Input      SB_LVCMOS    No       1        Simple Input   V5S_OK                    
-    B21         Input      SB_LVCMOS    Yes      1        Simple Input   VR_READY_VCCINAUX         
     B26         Input      SB_LVCMOS    Yes      1        Simple Input   VDDQ_OK                   
     B34         Input      SB_LVCMOS    No       0        Simple Input   SLP_S4n                   
 
@@ -96,6 +95,7 @@ Detailed I/O Info:
     A26         Output     SB_LVCMOS    No       1        Simple Output  VCCINAUX_EN               
     A27         Output     SB_LVCMOS    No       1        Simple Output  VCCIN_VR_PE               
     A33         Output     SB_LVCMOS    No       1        Simple Output  VPP_EN                    
+    A46         Output     SB_LVCMOS    No       0        Simple Output  SLP_S0n                   
     A48         Output     SB_LVCMOS    No       0        Simple Output  VDDQ_EN                   
     B3          Output     SB_LVCMOS    No       3        Simple Output  V5S_ENn                   
     B4          Output     SB_LVCMOS    No       3        Simple Output  DSW_PWROK                 
@@ -111,5 +111,5 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name
     -------------  -------  ---------  ------  -----------
-    3              3                   28      N_587_g  
-    1              0                   85      N_42_g   
+    1              0                   85      N_29_g   
+    3              3                   27      N_570_g  

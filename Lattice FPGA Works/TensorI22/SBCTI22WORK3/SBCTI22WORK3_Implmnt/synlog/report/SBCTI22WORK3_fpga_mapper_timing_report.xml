@@ -16,8 +16,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>TOP|FPGA_OSC</data>
-<data>42.8 MHz</data>
+<data>34.6 MHz</data>
 <data>8.6 MHz</data>
-<data>-93.234</data>
+<data>-87.987</data>
 </row>
 </report_table>

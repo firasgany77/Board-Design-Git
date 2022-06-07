@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 3 2022 09:52:11
+* File Generated:     Jun 7 2022 10:06:06
 
 * Purpose:            Detailed IO and package pin info
 
@@ -64,7 +64,7 @@ A42, VCCIO_0, not used, , , , , , topBank
 A43, PIO_GBIN, V12_MAIN_MON,  , , SB_LVCMOS, No Pull Up, , topBank
 A44, PIO, GPIO_FPGA_EXP_1,  , , SB_LVCMOS, No Pull Up, , topBank
 A45, PIO, GPIO_FPGA_EXP_2,  , , SB_LVCMOS, No Pull Up, , topBank
-A46, PIO, SLP_S0n,  , , SB_LVCMOS, No Pull Up, , topBank
+A46, PIO, SLP_S0n, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
 A47, PIO, SOC_SPKR,  , , SB_LVCMOS, No Pull Up, , topBank
 A48, PIO, VDDQ_EN, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
 B1, PIO, VPP_OK, Input, , SB_LVCMOS, Pull Up, Simple Input, leftBank
@@ -87,7 +87,7 @@ B17, SPI_SO, not used, , , , , , bottomBank
 B18, SPI_SS_B, not used, , , , , , bottomBank
 B19, PIO, VCCST_CPU_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
 B20, PIO, V5S_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
-B21, PIO, VR_READY_VCCINAUX, Input, , SB_LVCMOS, Pull Up, Simple Input, rightBank
+B21, PIO, VR_READY_VCCINAUX,  , , SB_LVCMOS, Pull Up, , rightBank
 B22, PIO_GBIN, VCCINAUX_VR_PE, Output, , SB_LVCMOS, No Pull Up, Simple Output, rightBank
 B23, PIO, SATAXPCIE0_FPGA,  , , SB_LVCMOS, No Pull Up, , rightBank
 B24, PIO, VCCINAUX_VR_PROCHOT_FPGA,  , , SB_LVCMOS, No Pull Up, , rightBank

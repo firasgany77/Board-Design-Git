@@ -5,7 +5,7 @@ OUTPUT VDDQ_EN 	 location (1, 17, 1) 	 A48
 INPUT  VCCST_OVERRIDE_3V3 	 location (5, 0, 0) 	 B10 	 
 INPUT  V5S_OK 	 location (13, 6, 1) 	 B20 	 
 INPUT  SLP_S3n 	 location (11, 17, 0) 	 A38 	 
-INPUT  SLP_S0n 	 location (4, 17, 0) 	 A46 	 
+OUTPUT SLP_S0n 	 location (4, 17, 0) 	 A46 	 
 OUTPUT V5S_ENn 	 location (0, 11, 1) 	 B3 	 
 INPUT  V1P8A_OK 	 location (0, 12, 1) 	 B2 	 
 INPUT  PWRBTNn 	 location (10, 17, 0) 	 A39 	 

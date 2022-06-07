@@ -150,7 +150,7 @@ ENTITY TOP IS
 		SOC_SPKR : IN STD_LOGIC; -- OK(NEW)
 		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
 		SUSWARN_N: OUT STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
-		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
+		SLP_S0n : OUT STD_LOGIC;  -- OK(NEW)
 
 		                         -- S0 Sleep Control. When PCH is idle and processor is in C10 state, this
                                  -- pin will assert indicate VR controller can go into a light load mode. 
@@ -359,7 +359,6 @@ ARCHITECTURE bdf_type OF TOP IS
 			V33A_OK : IN STD_LOGIC;
 			V5A_OK : IN STD_LOGIC;
 			V1P8A_OK : IN STD_LOGIC;
-			VR_READY_VCCINAUX: IN STD_LOGIC; 
 			SLP_SUSn : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			RSMRSTn : OUT STD_LOGIC;
@@ -444,11 +443,10 @@ BEGIN
 	VCCIN_VR_PE <= '0';  -- makes the 0x20 VCCIN disappear in the IMVP9 programming software. 
 	--vccin_en <= '1'; 
 	VCCINAUX_VR_PE <= '1'; 
+	SLP_S0n <= '0';
 
 
 	
-	
-
 
     -- here we assign input/output signals for each instance (from outside):
 	POWERLED : powerled_block 
@@ -520,7 +518,6 @@ BEGIN
 		V33A_OK => V33A_OK,
 		V5A_OK => V5A_OK,
 		V1P8A_OK => V1P8A_OK,
-		VR_READY_VCCINAUX => VR_READY_VCCINAUX, 
 		SLP_SUSn => slp_susn_signal, 
 		clk_100Khz => clk_100Khz_signal,
 		RSMRSTn => RSMRSTn_signal,

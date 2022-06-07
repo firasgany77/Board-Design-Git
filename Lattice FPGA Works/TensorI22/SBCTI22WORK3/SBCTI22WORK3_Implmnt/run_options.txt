@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\run_options.txt
-#--  Written on Fri Jun 03 09:47:52 2022
+#--  Written on Tue Jun 07 10:02:06 2022
 
 
 #project files
