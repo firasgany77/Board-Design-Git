@@ -53,7 +53,7 @@ BEGIN
 					END IF;
 
 				WHEN delay =>                               --  After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
-					IF (count = to_unsigned(900, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
+					IF (count = to_unsigned(300, 16)) THEN --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
 					                                        --  TL-PDG: P.434 in Non-Dsx is connected to 3V3A.
 						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK), min: 10 ms, max: 2000 ms.
 						curr_state <= pwrgd;
