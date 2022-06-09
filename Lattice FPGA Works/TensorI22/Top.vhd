@@ -442,8 +442,8 @@ BEGIN
     -- disable PMBUS for VCCIN Controller:
 	VCCIN_VR_PE <= '0';  -- makes the 0x20 VCCIN disappear in the IMVP9 programming software. 
 	--vccin_en <= '1'; 
-	VCCINAUX_VR_PE <= '1'; 
-	SLP_S0n <= '0';
+	VCCINAUX_VR_PE <= '0'; 
+	--SLP_S0n <= '0';
 
 
 	

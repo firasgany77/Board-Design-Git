@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Jun 3 2022 09:41:43
+# File Generated:     Jun 8 2022 18:31:45
 
 # Family & Device:    iCE40LP1K
 
@@ -27,7 +27,7 @@ set_io VPP_OK B1 -pullup yes
 set_io VR_PROCHOT_FPGA_OUT_N A32
 set_io GPIO_FPGA_SoC_3 B13
 set_io V5A_EN A10
-set_io DSW_PWROK B4
+set_io DSW_PWROK B4 -pullup no
 set_io GPIO_FPGA_SoC_1 A19
 set_io V33S_ENn A3
 set_io V33S_OK A34
@@ -57,7 +57,7 @@ set_io TPM_GPIO B30
 set_io V33DSW_OK A2 -pullup yes
 set_io VCCST_EN A4
 set_io CPU_C10_GATE_N A13
-set_io SLP_SUSn A40
+set_io SLP_SUSn A40 -pullup no
 set_io VCCIN_VR_PROCHOT_FPGA A31
 set_io GPIO_FPGA_SoC_2 B14
 set_io PWRBTN_LED B36

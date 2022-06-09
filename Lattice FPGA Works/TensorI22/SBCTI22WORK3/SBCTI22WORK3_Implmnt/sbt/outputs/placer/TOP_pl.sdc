@@ -1,1 +1,1 @@
-create_clock -period 25.27 -name {TOP|FPGA_OSC} -waveform [list 0.00 12.63] [get_ports FPGA_OSC]
+create_clock -period 99.80 -name {TOP|FPGA_OSC} -waveform [list 0.00 49.90] [get_ports FPGA_OSC]

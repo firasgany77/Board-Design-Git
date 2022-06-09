@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 7 2022 11:04:10
+* File Generated:     Jun 9 2022 11:23:20
 
 * Purpose:            General info of design implementation
 
@@ -27,27 +27,27 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  221
-    LUTs:                 987
+    FFs:                  204
+    LUTs:                 1029
     RAMs:                 0
-    IOBs:                 37
+    IOBs:                 36
     GBs:                  2
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 1026/1280
-        Combinational Logic Cells: 805      out of   1280      62.8906%
-        Sequential Logic Cells:    221      out of   1280      17.2656%
-        Logic Tiles:               146      out of   160       91.25%
+    Total Logic Cells: 1067/1280
+        Combinational Logic Cells: 863      out of   1280      67.4219%
+        Sequential Logic Cells:    204      out of   1280      15.9375%
+        Logic Tiles:               155      out of   160       96.875%
     Registers: 
-        Logic Registers:           221      out of   1280      17.2656%
+        Logic Registers:           204      out of   1280      15.9375%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                16       out of   67        23.8806%
+        Input Pins:                15       out of   67        22.3881%
         Output Pins:               21       out of   67        31.3433%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                2        out of   8         25%
@@ -65,7 +65,6 @@ Detailed I/O Info:
     Input Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name               
     ----------  ---------  -----------  -------  -------  -----------    -----------               
-    A2          Input      SB_LVCMOS    Yes      3        Simple Input   V33DSW_OK                 
     A19         Input      SB_LVCMOS    No       2        Simple Input   GPIO_FPGA_SoC_1           
     A25         Input      SB_LVCMOS    No       1        Simple Input   GPIO_FPGA_SoC_4           
     A34         Input      SB_LVCMOS    No       1        Simple Input   V33S_OK                   
@@ -111,5 +110,5 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name
     -------------  -------  ---------  ------  -----------
-    3              3                   28      N_579_g  
-    1              0                   84      N_27_g   
+    3              3                   65      N_92_g   
+    1              0                   27      N_557_g  

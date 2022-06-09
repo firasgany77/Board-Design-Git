@@ -50,7 +50,8 @@ BEGIN
 					END IF;
 
 				WHEN delay => --tPCH03 in  CFL PDG (p.528/685) 
-					IF (count = to_unsigned(10000, 16)) THEN -- 10000 * 10uSec = 100 mSec (was 100msec at ATSKL)
+					IF (count = to_unsigned(65000, 16)) THEN -- 10000 * 10uSec = 100 mSec (was 100msec at ATSKL)
+					                                         -- changed to: 65000 MS
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');
 					ELSE
