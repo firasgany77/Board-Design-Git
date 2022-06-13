@@ -68,7 +68,7 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 BEGIN
 
 
-	vccin_ok <= '1' WHEN (vccin_ready = '1') AND (slp_s3n = '1')         
+	vccin_ok <= '1' WHEN  (slp_s3n = '1')  and  (vccin_ready = '1')       
 		ELSE                                                             -- tPCH08: SLP_S3# de-assertion [0 --> 1] to PCH_PWROK assertion. (min: 1 ms) - actual: 3 ms
 		                                                                 -- tPLT04: ALL_SYS_PWRGD (vccin_en) = HIGH --> PCH_PWROK = HIGH (min: 1ms) - surely will be more than 1 ms.
 																         -- we can choose either ALL_SYS_PWRGD or SLP_S3# in the generation of PCH_PWROK.

@@ -1,27 +1,16 @@
 ---------------------------------------
-Resource Usage Report for TOP 
+Resource Usage Report for vccin_en_block 
 
 Mapping to part: ice40lp1kqn84
 Cell usage:
-GND             7 uses
-SB_CARRY        310 uses
-SB_DFF          39 uses
-SB_DFFE         99 uses
-SB_DFFER        16 uses
-SB_DFFESR       2 uses
-SB_DFFR         15 uses
-SB_DFFS         3 uses
-SB_DFFSR        30 uses
-SB_GB           2 uses
-VCC             7 uses
-SB_LUT4         907 uses
+SB_LUT4         2 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   204 (15%)
+Register bits not including I/Os:   0 (0%)
 
 @S |Mapping Summary:
-Total  LUTs: 907 (70%)
+Total  LUTs: 2 (0%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 907 = 907 
+Distribution of All Consumed Luts 2 = 2 
 

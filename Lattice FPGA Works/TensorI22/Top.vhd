@@ -149,8 +149,8 @@ ENTITY TOP IS
 		VPP_EN : OUT STD_LOGIC;  -- OK
 		SOC_SPKR : IN STD_LOGIC; -- OK(NEW)
 		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
-		SUSWARN_N: OUT STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
-		SLP_S0n : OUT STD_LOGIC;  -- OK(NEW)
+		SUSWARN_N: IN STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
+		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
 
 		                         -- S0 Sleep Control. When PCH is idle and processor is in C10 state, this
                                  -- pin will assert indicate VR controller can go into a light load mode. 
@@ -333,18 +333,18 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT vccin_en_block
-		PORT (
-			v5s_pwrgd : IN STD_LOGIC;
-			v33s_pwrgd : IN STD_LOGIC;
-            slp_s3n : IN STD_LOGIC;
-			rsmrst_pwrgd : IN STD_LOGIC;
-			DSW_PWROK: IN STD_LOGIC;
-			VCCST_CPU_OK: IN STD_LOGIC; 
-			clk_100Khz : IN STD_LOGIC;
-			vccin_en : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT vccin_en_block
+		--PORT (
+		--	v5s_pwrgd : IN STD_LOGIC;
+			--v33s_pwrgd : IN STD_LOGIC;
+           -- slp_s3n : IN STD_LOGIC;
+			--rsmrst_pwrgd : IN STD_LOGIC;
+		--	DSW_PWROK: IN STD_LOGIC;
+			--VCCST_CPU_OK: IN STD_LOGIC; 
+			--clk_100Khz : IN STD_LOGIC;
+		--	vccin_en : OUT STD_LOGIC
+	--	);
+	--END COMPONENT;
 
 	COMPONENT dsw_pwrok_block
 		PORT (
@@ -354,27 +354,27 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT rsmrst_pwrgd_block
-		PORT (
-			V33A_OK : IN STD_LOGIC;
-			V5A_OK : IN STD_LOGIC;
-			V1P8A_OK : IN STD_LOGIC;
-			SLP_SUSn : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			RSMRSTn : OUT STD_LOGIC;
-			rsmrst_pwrgd_out : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT rsmrst_pwrgd_block
+		--PORT (
+			--V33A_OK : IN STD_LOGIC;
+			--V5A_OK : IN STD_LOGIC;
+			--V1P8A_OK : IN STD_LOGIC;
+			--SLP_SUSn : IN STD_LOGIC;
+		--	clk_100Khz : IN STD_LOGIC;
+			--RSMRSTn : OUT STD_LOGIC;
+		--	rsmrst_pwrgd_out : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
-	COMPONENT pch_pwrok_block
-		PORT (
-			slp_s3n : IN STD_LOGIC;
-			vccin_ready : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			vccst_pwrgd : OUT STD_LOGIC;
-			pch_pwrok : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT pch_pwrok_block
+		--PORT (
+			--slp_s3n : IN STD_LOGIC;
+			--vccin_ready : IN STD_LOGIC;
+			--clk_100Khz : IN STD_LOGIC;
+			--vccst_pwrgd : OUT STD_LOGIC;
+			--pch_pwrok : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
 
 	COMPONENT primary_voltages_enabler
@@ -410,7 +410,7 @@ BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
 	DSW_PWROK <= DSW_PWROK_signal;
-	SUSWARN_N <= clk_100Khz_signal; 
+	--SUSWARN_N <= clk_100Khz_signal; 
 	VCCST_PWRGD <= vccst_pwrgd_signal AND delayed_vddq_ok_signal; -- (to ensure tCPU01 is met)
 	RSMRSTn <= RSMRSTn_signal;
 
@@ -440,13 +440,10 @@ BEGIN
 
  
     -- disable PMBUS for VCCIN Controller:
-	VCCIN_VR_PE <= '0';  -- makes the 0x20 VCCIN disappear in the IMVP9 programming software. 
-	--vccin_en <= '1'; 
-	VCCINAUX_VR_PE <= '0'; 
-	--SLP_S0n <= '0';
-
-
-	
+	VCCIN_VR_PE <= '1'; -- makes the 0x20 VCCIN disappear in the IMVP9 programming software.
+	VCCIN_EN <= '1';
+    VCCINAUX_EN <= '0'; 
+    VCCINAUX_VR_PE <= '0';
 
     -- here we assign input/output signals for each instance (from outside):
 	POWERLED : powerled_block 
@@ -495,16 +492,16 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		HDA_SDO_ATP => HDA_SDO_ATP);
 
-	VCCIN_PWRGD: vccin_en_block
-	PORT MAP(
-		v5s_pwrgd => V5S_OK,
-		v33s_pwrgd => V33S_OK,
-		slp_s3n => slp_s3n_signal,
-		rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		DSW_PWROK => DSW_PWROK_signal,
-		VCCST_CPU_OK => VCCST_CPU_OK, 
-		clk_100Khz => clk_100Khz_signal,
-		vccin_en => VCCIN_EN);
+	--VCCIN_PWRGD: vccin_en_block
+	--PORT MAP(
+		--v5s_pwrgd => V5S_OK,
+		--v33s_pwrgd => V33S_OK,
+		--slp_s3n => slp_s3n_signal,
+		--rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		--DSW_PWROK => DSW_PWROK_signal,
+		--VCCST_CPU_OK => VCCST_CPU_OK, 
+		--clk_100Khz => clk_100Khz_signal,
+		--vccin_en => VCCIN_EN);
 
 
 	DSW_PWRGD : dsw_pwrok_block
@@ -513,22 +510,22 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		DSW_PWROK => DSW_PWROK_signal); -- assigning signal to component output
 
-	RSMRST_PWRGD : rsmrst_pwrgd_block
-	PORT MAP(
-		V33A_OK => V33A_OK,
-		V5A_OK => V5A_OK,
-		V1P8A_OK => V1P8A_OK,
-		SLP_SUSn => slp_susn_signal, 
-		clk_100Khz => clk_100Khz_signal,
-		RSMRSTn => RSMRSTn_signal,
-		rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
+	--RSMRST_PWRGD : rsmrst_pwrgd_block
+	--PORT MAP(
+		--V33A_OK => V33A_OK,
+		--V5A_OK => V5A_OK,
+		--V1P8A_OK => V1P8A_OK,
+		--SLP_SUSn => slp_susn_signal, 
+		--clk_100Khz => clk_100Khz_signal,
+		--RSMRSTn => RSMRSTn_signal,
+		--rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
 
-	PCH_PWRGD: pch_pwrok_block
-	PORT MAP(
-		slp_s3n => slp_s3n_signal,
-		vccin_ready => VR_READY_VCCIN,
-		clk_100Khz => clk_100Khz_signal,
-		vccst_pwrgd => vccst_pwrgd_signal,
-		pch_pwrok => pch_pwrok_signal);
+	--PCH_PWRGD: pch_pwrok_block
+	--PORT MAP(
+		--slp_s3n => slp_s3n_signal,
+		--vccin_ready => VR_READY_VCCIN,
+		--clk_100Khz => clk_100Khz_signal,
+		--vccst_pwrgd => vccst_pwrgd_signal,
+		--pch_pwrok => pch_pwrok_signal);
 
 END bdf_type;

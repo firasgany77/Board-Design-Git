@@ -5,15 +5,10 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 204 clock pin(s) of sequential element(s)
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-169 instances converted, 0 sequential instances remain driven by gated/generated clocks
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-================================= Non-Gated/Non-Generated Clocks =================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance           
---------------------------------------------------------------------------------------------------
-@K:CKID0001       FPGA_OSC            port                   204        PCH_PWRGD.delayed_vccin_ok
-==================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
