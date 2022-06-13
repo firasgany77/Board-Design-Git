@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 13 2022 13:27:19
+* File Generated:     Jun 13 2022 13:58:28
 
 * Purpose:            General info of design implementation
 
@@ -101,7 +101,7 @@ Router Summary:
 Routing Resource Utilization:
 -----------------------------
               Local line of tile       22 out of  28666      0.076746%
-                          Span 4       21 out of   6944      0.302419%
-                         Span 12        3 out of   1440      0.208333%
+                          Span 4       17 out of   6944      0.244816%
+                         Span 12        5 out of   1440      0.347222%
       Vertical Inter-LUT Connect        0 out of   1120      0%
 

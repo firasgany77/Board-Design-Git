@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Jun 13 2022 13:27:16
+* File Generated:     Jun 13 2022 13:58:24
 
 * Purpose:            
 
@@ -130,5 +130,5 @@ Device Utilization Summary
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 0.6 sec.
+I2076: Placer run-time: 0.5 sec.
 

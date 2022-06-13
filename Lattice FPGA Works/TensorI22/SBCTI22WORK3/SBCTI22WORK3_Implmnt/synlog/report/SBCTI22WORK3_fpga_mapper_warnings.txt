@@ -4,10 +4,10 @@
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|User-specified initial value defined for instance DSW_PWRGD.curr_state[1:0] is being ignored. 
 @W: MO161 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|Register bit curr_state[0] (in view view:work.dsw_pwrok_block(dsw_pwrok_arch)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
 @W: MO129 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|Sequential instance DSW_PWRGD.DSW_PWROK is reduced to a combinational gate by constant propagation.
-@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
-@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
@@ -22,10 +22,10 @@
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
-@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
-@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 

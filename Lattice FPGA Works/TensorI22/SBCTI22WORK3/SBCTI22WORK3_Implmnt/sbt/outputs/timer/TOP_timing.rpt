@@ -6,7 +6,7 @@
 
 # Build Date:         Dec  9 2020 17:33:20
 
-# File Generated:     Jun 13 2022 13:27:29
+# File Generated:     Jun 13 2022 13:58:38
 
 # Purpose:            Timing Report with critical paths info
 
@@ -211,28 +211,28 @@ ipInertedIOPad_SLP_SUSn_iopad/PACKAGEPIN:in   IO_PAD                     0      
 ipInertedIOPad_SLP_SUSn_iopad/DOUT            IO_PAD                     510    510                RISE  1       
 ipInertedIOPad_SLP_SUSn_preio/PADIN           PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
 ipInertedIOPad_SLP_SUSn_preio/DIN0            PRE_IO_PIN_TYPE_000001     908    1418               RISE  1       
-I__101/I                                      Odrv4                      0      1418               RISE  1       
-I__101/O                                      Odrv4                      516    1934               RISE  1       
-I__102/I                                      Span4Mux_v                 0      1934               RISE  1       
-I__102/O                                      Span4Mux_v                 516    2450               RISE  1       
-I__103/I                                      Span4Mux_h                 0      2450               RISE  1       
-I__103/O                                      Span4Mux_h                 444    2893               RISE  1       
-I__104/I                                      LocalMux                   0      2893               RISE  1       
-I__104/O                                      LocalMux                   485    3378               RISE  1       
-I__105/I                                      InMux                      0      3378               RISE  1       
-I__105/O                                      InMux                      382    3760               RISE  1       
+I__99/I                                       Odrv4                      0      1418               RISE  1       
+I__99/O                                       Odrv4                      516    1934               RISE  1       
+I__100/I                                      Span4Mux_v                 0      1934               RISE  1       
+I__100/O                                      Span4Mux_v                 516    2450               RISE  1       
+I__101/I                                      Span4Mux_h                 0      2450               RISE  1       
+I__101/O                                      Span4Mux_h                 444    2893               RISE  1       
+I__102/I                                      LocalMux                   0      2893               RISE  1       
+I__102/O                                      LocalMux                   485    3378               RISE  1       
+I__103/I                                      InMux                      0      3378               RISE  1       
+I__103/O                                      InMux                      382    3760               RISE  1       
 SLP_SUSn_RNIN4K9_LC_5_12_0/in3                LogicCell40_SEQ_MODE_0000  0      3760               RISE  1       
 SLP_SUSn_RNIN4K9_LC_5_12_0/lcout              LogicCell40_SEQ_MODE_0000  464    4225               RISE  1       
-I__96/I                                       Odrv4                      0      4225               RISE  1       
-I__96/O                                       Odrv4                      516    4740               RISE  1       
-I__97/I                                       Span4Mux_s3_h              0      4740               RISE  1       
-I__97/O                                       Span4Mux_s3_h              340    5081               RISE  1       
-I__98/I                                       IoSpan4Mux                 0      5081               RISE  1       
-I__98/O                                       IoSpan4Mux                 423    5504               RISE  1       
-I__99/I                                       LocalMux                   0      5504               RISE  1       
-I__99/O                                       LocalMux                   485    5989               RISE  1       
-I__100/I                                      IoInMux                    0      5989               RISE  1       
-I__100/O                                      IoInMux                    382    6371               RISE  1       
+I__94/I                                       Odrv4                      0      4225               RISE  1       
+I__94/O                                       Odrv4                      516    4740               RISE  1       
+I__95/I                                       Span4Mux_s3_h              0      4740               RISE  1       
+I__95/O                                       Span4Mux_s3_h              340    5081               RISE  1       
+I__96/I                                       IoSpan4Mux                 0      5081               RISE  1       
+I__96/O                                       IoSpan4Mux                 423    5504               RISE  1       
+I__97/I                                       LocalMux                   0      5504               RISE  1       
+I__97/O                                       LocalMux                   485    5989               RISE  1       
+I__98/I                                       IoInMux                    0      5989               RISE  1       
+I__98/O                                       IoInMux                    382    6371               RISE  1       
 ipInertedIOPad_V33A_ENn_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6371               RISE  1       
 ipInertedIOPad_V33A_ENn_preio/PADOUT          PRE_IO_PIN_TYPE_011001     3291   9662               FALL  1       
 ipInertedIOPad_V33A_ENn_iopad/DIN             IO_PAD                     0      9662               FALL  1       
@@ -329,28 +329,28 @@ ipInertedIOPad_SLP_SUSn_iopad/PACKAGEPIN:in   IO_PAD                     0      
 ipInertedIOPad_SLP_SUSn_iopad/DOUT            IO_PAD                     460    460                FALL  1       
 ipInertedIOPad_SLP_SUSn_preio/PADIN           PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
 ipInertedIOPad_SLP_SUSn_preio/DIN0            PRE_IO_PIN_TYPE_000001     681    1141               FALL  1       
-I__101/I                                      Odrv4                      0      1141               FALL  1       
-I__101/O                                      Odrv4                      547    1688               FALL  1       
-I__102/I                                      Span4Mux_v                 0      1688               FALL  1       
-I__102/O                                      Span4Mux_v                 547    2235               FALL  1       
-I__103/I                                      Span4Mux_h                 0      2235               FALL  1       
-I__103/O                                      Span4Mux_h                 464    2699               FALL  1       
-I__104/I                                      LocalMux                   0      2699               FALL  1       
-I__104/O                                      LocalMux                   454    3153               FALL  1       
-I__105/I                                      InMux                      0      3153               FALL  1       
-I__105/O                                      InMux                      320    3473               FALL  1       
+I__99/I                                       Odrv4                      0      1141               FALL  1       
+I__99/O                                       Odrv4                      547    1688               FALL  1       
+I__100/I                                      Span4Mux_v                 0      1688               FALL  1       
+I__100/O                                      Span4Mux_v                 547    2235               FALL  1       
+I__101/I                                      Span4Mux_h                 0      2235               FALL  1       
+I__101/O                                      Span4Mux_h                 464    2699               FALL  1       
+I__102/I                                      LocalMux                   0      2699               FALL  1       
+I__102/O                                      LocalMux                   454    3153               FALL  1       
+I__103/I                                      InMux                      0      3153               FALL  1       
+I__103/O                                      InMux                      320    3473               FALL  1       
 SLP_SUSn_RNIN4K9_LC_5_12_0/in3                LogicCell40_SEQ_MODE_0000  0      3473               FALL  1       
 SLP_SUSn_RNIN4K9_LC_5_12_0/lcout              LogicCell40_SEQ_MODE_0000  423    3896               FALL  1       
-I__96/I                                       Odrv4                      0      3896               FALL  1       
-I__96/O                                       Odrv4                      547    4443               FALL  1       
-I__97/I                                       Span4Mux_s3_h              0      4443               FALL  1       
-I__97/O                                       Span4Mux_s3_h              340    4783               FALL  1       
-I__98/I                                       IoSpan4Mux                 0      4783               FALL  1       
-I__98/O                                       IoSpan4Mux                 475    5258               FALL  1       
-I__99/I                                       LocalMux                   0      5258               FALL  1       
-I__99/O                                       LocalMux                   454    5712               FALL  1       
-I__100/I                                      IoInMux                    0      5712               FALL  1       
-I__100/O                                      IoInMux                    320    6032               FALL  1       
+I__94/I                                       Odrv4                      0      3896               FALL  1       
+I__94/O                                       Odrv4                      547    4443               FALL  1       
+I__95/I                                       Span4Mux_s3_h              0      4443               FALL  1       
+I__95/O                                       Span4Mux_s3_h              340    4783               FALL  1       
+I__96/I                                       IoSpan4Mux                 0      4783               FALL  1       
+I__96/O                                       IoSpan4Mux                 475    5258               FALL  1       
+I__97/I                                       LocalMux                   0      5258               FALL  1       
+I__97/O                                       LocalMux                   454    5712               FALL  1       
+I__98/I                                       IoInMux                    0      5712               FALL  1       
+I__98/O                                       IoInMux                    320    6032               FALL  1       
 ipInertedIOPad_V33A_ENn_preio/DOUT0           PRE_IO_PIN_TYPE_011001     0      6032               FALL  1       
 ipInertedIOPad_V33A_ENn_preio/PADOUT          PRE_IO_PIN_TYPE_011001     2951   8983               RISE  1       
 ipInertedIOPad_V33A_ENn_iopad/DIN             IO_PAD                     0      8983               RISE  1       
@@ -511,28 +511,28 @@ ipInertedIOPad_SLP_SUSn_iopad/PACKAGEPIN:in   IO_PAD                         0  
 ipInertedIOPad_SLP_SUSn_iopad/DOUT            IO_PAD                       510               510   +INF  RISE       1
 ipInertedIOPad_SLP_SUSn_preio/PADIN           PRE_IO_PIN_TYPE_000001         0               510   +INF  RISE       1
 ipInertedIOPad_SLP_SUSn_preio/DIN0            PRE_IO_PIN_TYPE_000001       681              1191   +INF  FALL       1
-I__101/I                                      Odrv4                          0              1191   +INF  FALL       1
-I__101/O                                      Odrv4                        547              1738   +INF  FALL       1
-I__102/I                                      Span4Mux_v                     0              1738   +INF  FALL       1
-I__102/O                                      Span4Mux_v                   547              2285   +INF  FALL       1
-I__103/I                                      Span4Mux_h                     0              2285   +INF  FALL       1
-I__103/O                                      Span4Mux_h                   464              2749   +INF  FALL       1
-I__104/I                                      LocalMux                       0              2749   +INF  FALL       1
-I__104/O                                      LocalMux                     454              3203   +INF  FALL       1
-I__105/I                                      InMux                          0              3203   +INF  FALL       1
-I__105/O                                      InMux                        320              3523   +INF  FALL       1
+I__99/I                                       Odrv4                          0              1191   +INF  FALL       1
+I__99/O                                       Odrv4                        547              1738   +INF  FALL       1
+I__100/I                                      Span4Mux_v                     0              1738   +INF  FALL       1
+I__100/O                                      Span4Mux_v                   547              2285   +INF  FALL       1
+I__101/I                                      Span4Mux_h                     0              2285   +INF  FALL       1
+I__101/O                                      Span4Mux_h                   464              2749   +INF  FALL       1
+I__102/I                                      LocalMux                       0              2749   +INF  FALL       1
+I__102/O                                      LocalMux                     454              3203   +INF  FALL       1
+I__103/I                                      InMux                          0              3203   +INF  FALL       1
+I__103/O                                      InMux                        320              3523   +INF  FALL       1
 SLP_SUSn_RNIN4K9_LC_5_12_0/in3                LogicCell40_SEQ_MODE_0000      0              3523   +INF  FALL       1
 SLP_SUSn_RNIN4K9_LC_5_12_0/lcout              LogicCell40_SEQ_MODE_0000    423              3946   +INF  FALL       1
-I__96/I                                       Odrv4                          0              3946   +INF  FALL       1
-I__96/O                                       Odrv4                        547              4493   +INF  FALL       1
-I__97/I                                       Span4Mux_s3_h                  0              4493   +INF  FALL       1
-I__97/O                                       Span4Mux_s3_h                340              4833   +INF  FALL       1
-I__98/I                                       IoSpan4Mux                     0              4833   +INF  FALL       1
-I__98/O                                       IoSpan4Mux                   475              5308   +INF  FALL       1
-I__99/I                                       LocalMux                       0              5308   +INF  FALL       1
-I__99/O                                       LocalMux                     454              5762   +INF  FALL       1
-I__100/I                                      IoInMux                        0              5762   +INF  FALL       1
-I__100/O                                      IoInMux                      320              6082   +INF  FALL       1
+I__94/I                                       Odrv4                          0              3946   +INF  FALL       1
+I__94/O                                       Odrv4                        547              4493   +INF  FALL       1
+I__95/I                                       Span4Mux_s3_h                  0              4493   +INF  FALL       1
+I__95/O                                       Span4Mux_s3_h                340              4833   +INF  FALL       1
+I__96/I                                       IoSpan4Mux                     0              4833   +INF  FALL       1
+I__96/O                                       IoSpan4Mux                   475              5308   +INF  FALL       1
+I__97/I                                       LocalMux                       0              5308   +INF  FALL       1
+I__97/O                                       LocalMux                     454              5762   +INF  FALL       1
+I__98/I                                       IoInMux                        0              5762   +INF  FALL       1
+I__98/O                                       IoInMux                      320              6082   +INF  FALL       1
 ipInertedIOPad_V33A_ENn_preio/DOUT0           PRE_IO_PIN_TYPE_011001         0              6082   +INF  FALL       1
 ipInertedIOPad_V33A_ENn_preio/PADOUT          PRE_IO_PIN_TYPE_011001      3291              9373   +INF  FALL       1
 ipInertedIOPad_V33A_ENn_iopad/DIN             IO_PAD                         0              9373   +INF  FALL       1
@@ -657,28 +657,28 @@ ipInertedIOPad_SLP_SUSn_iopad/PACKAGEPIN:in   IO_PAD                         0  
 ipInertedIOPad_SLP_SUSn_iopad/DOUT            IO_PAD                       510               510   +INF  RISE       1
 ipInertedIOPad_SLP_SUSn_preio/PADIN           PRE_IO_PIN_TYPE_000001         0               510   +INF  RISE       1
 ipInertedIOPad_SLP_SUSn_preio/DIN0            PRE_IO_PIN_TYPE_000001       681              1191   +INF  FALL       1
-I__101/I                                      Odrv4                          0              1191   +INF  FALL       1
-I__101/O                                      Odrv4                        547              1738   +INF  FALL       1
-I__102/I                                      Span4Mux_v                     0              1738   +INF  FALL       1
-I__102/O                                      Span4Mux_v                   547              2285   +INF  FALL       1
-I__103/I                                      Span4Mux_h                     0              2285   +INF  FALL       1
-I__103/O                                      Span4Mux_h                   464              2749   +INF  FALL       1
-I__104/I                                      LocalMux                       0              2749   +INF  FALL       1
-I__104/O                                      LocalMux                     454              3203   +INF  FALL       1
-I__105/I                                      InMux                          0              3203   +INF  FALL       1
-I__105/O                                      InMux                        320              3523   +INF  FALL       1
+I__99/I                                       Odrv4                          0              1191   +INF  FALL       1
+I__99/O                                       Odrv4                        547              1738   +INF  FALL       1
+I__100/I                                      Span4Mux_v                     0              1738   +INF  FALL       1
+I__100/O                                      Span4Mux_v                   547              2285   +INF  FALL       1
+I__101/I                                      Span4Mux_h                     0              2285   +INF  FALL       1
+I__101/O                                      Span4Mux_h                   464              2749   +INF  FALL       1
+I__102/I                                      LocalMux                       0              2749   +INF  FALL       1
+I__102/O                                      LocalMux                     454              3203   +INF  FALL       1
+I__103/I                                      InMux                          0              3203   +INF  FALL       1
+I__103/O                                      InMux                        320              3523   +INF  FALL       1
 SLP_SUSn_RNIN4K9_LC_5_12_0/in3                LogicCell40_SEQ_MODE_0000      0              3523   +INF  FALL       1
 SLP_SUSn_RNIN4K9_LC_5_12_0/lcout              LogicCell40_SEQ_MODE_0000    423              3946   +INF  FALL       1
-I__96/I                                       Odrv4                          0              3946   +INF  FALL       1
-I__96/O                                       Odrv4                        547              4493   +INF  FALL       1
-I__97/I                                       Span4Mux_s3_h                  0              4493   +INF  FALL       1
-I__97/O                                       Span4Mux_s3_h                340              4833   +INF  FALL       1
-I__98/I                                       IoSpan4Mux                     0              4833   +INF  FALL       1
-I__98/O                                       IoSpan4Mux                   475              5308   +INF  FALL       1
-I__99/I                                       LocalMux                       0              5308   +INF  FALL       1
-I__99/O                                       LocalMux                     454              5762   +INF  FALL       1
-I__100/I                                      IoInMux                        0              5762   +INF  FALL       1
-I__100/O                                      IoInMux                      320              6082   +INF  FALL       1
+I__94/I                                       Odrv4                          0              3946   +INF  FALL       1
+I__94/O                                       Odrv4                        547              4493   +INF  FALL       1
+I__95/I                                       Span4Mux_s3_h                  0              4493   +INF  FALL       1
+I__95/O                                       Span4Mux_s3_h                340              4833   +INF  FALL       1
+I__96/I                                       IoSpan4Mux                     0              4833   +INF  FALL       1
+I__96/O                                       IoSpan4Mux                   475              5308   +INF  FALL       1
+I__97/I                                       LocalMux                       0              5308   +INF  FALL       1
+I__97/O                                       LocalMux                     454              5762   +INF  FALL       1
+I__98/I                                       IoInMux                        0              5762   +INF  FALL       1
+I__98/O                                       IoInMux                      320              6082   +INF  FALL       1
 ipInertedIOPad_V33A_ENn_preio/DOUT0           PRE_IO_PIN_TYPE_011001         0              6082   +INF  FALL       1
 ipInertedIOPad_V33A_ENn_preio/PADOUT          PRE_IO_PIN_TYPE_011001      3291              9373   +INF  FALL       1
 ipInertedIOPad_V33A_ENn_iopad/DIN             IO_PAD                         0              9373   +INF  FALL       1

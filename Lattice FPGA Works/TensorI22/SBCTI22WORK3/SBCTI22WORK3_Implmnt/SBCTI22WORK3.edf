@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 6 13 13 27 2)
+      (timeStamp 2022 6 13 13 57 43)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L+ice40, mapper maplat, Build 1612R"))
      )
@@ -249,8 +249,8 @@
            (portRef DSW_PWROK)
            (portRef V5S_ENn)
            (portRef V33S_ENn)
-           (portRef VCCIN_EN)
-           (portRef VCCIN_VR_PE)
+           (portRef VCCINAUX_VR_PE)
+           (portRef VCCINAUX_EN)
           ))
           (net (rename hda_sdo_atp "HDA_SDO_ATP") (joined
            (portRef Y (instanceRef GND))
@@ -263,8 +263,8 @@
            (portRef VCCST_EN)
            (portRef VCCST_PWRGD)
            (portRef SYS_PWROK)
-           (portRef VCCINAUX_VR_PE)
-           (portRef VCCINAUX_EN)
+           (portRef VCCIN_EN)
+           (portRef VCCIN_VR_PE)
           ))
          )
         (property orig_inst_of (string "TOP"))
