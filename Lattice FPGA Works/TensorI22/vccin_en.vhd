@@ -34,3 +34,6 @@ BEGIN
 	vccin_en <= output; -- (Enable the VCCIN in Tensor I22)
 
 END vccin_arch;
+
+-- VCCST_CPU_OK : OK
+-- v5s_pwrgd: OK

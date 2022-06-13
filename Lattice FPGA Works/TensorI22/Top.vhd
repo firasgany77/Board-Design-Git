@@ -440,12 +440,11 @@ BEGIN
 
  
     -- disable PMBUS for VCCIN Controller:
-	VCCIN_VR_PE <= '0'; -- makes the 0x20 VCCIN disappear in the IMVP9 programming software.
+	--VCCIN_VR_PE <= '1'; -- makes the 0x20 VCCIN disappear in the IMVP9 programming software.
 	--VCCIN_EN <= '0';
     --VCCINAUX_EN <= '1'; 
-    VCCINAUX_VR_PE <= '0';
+    --VCCINAUX_VR_PE <= '1';
 
-    -- here we assign input/output signals for each instance (from outside):
 	--POWERLED : powerled_block 
 	--GENERIC MAP(
 		--periodclocks => 100)
