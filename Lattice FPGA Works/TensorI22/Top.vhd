@@ -485,12 +485,12 @@ BEGIN
 		CLK_25mhz => FPGA_OSC, -- CLK_25Mhz which we want to divide in onrder to get the 100Khz
 		clk_100Khz => clk_100Khz_signal);
 
-	HDA_STRAP : hda_strap_block
-	PORT MAP(
-		pch_pwrok => vccst_pwrgd_signal,
-		GPIO_PCH => GPIO_FPGA_SoC_1,
-		clk_100Khz => clk_100Khz_signal,
-		HDA_SDO_ATP => HDA_SDO_ATP);
+	--HDA_STRAP : hda_strap_block
+	--PORT MAP(
+		--pch_pwrok => vccst_pwrgd_signal,
+		--GPIO_PCH => GPIO_FPGA_SoC_1,
+		--clk_100Khz => clk_100Khz_signal,
+		--HDA_SDO_ATP => HDA_SDO_ATP);
 
 	--VCCIN_PWRGD: vccin_en_block
 	--PORT MAP(

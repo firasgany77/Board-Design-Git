@@ -19,7 +19,7 @@
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\primary_voltages_enabler.vhd":1655113289
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\vccin_en.vhd":1654343705
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\powerled.vhd":1638031123
-#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1655114465
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1655115962
 0 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd" vhdl
 1 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd" vhdl
 2 "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd" vhdl
@@ -38,22 +38,22 @@
 3 -1
 4 -1
 5 -1
-6 9 0 7 5 3 4 
+6 7 5 4 
 7 -1
 8 -1
 9 -1
 
 # Dependency Lists (Users Of)
-0 6 
+0 -1
 1 -1
 2 -1
-3 6 
+3 -1
 4 6 
 5 6 
 6 -1
 7 6 
 8 -1
-9 6 
+9 -1
 
 # Design Unit to File Association
 arch work vpp_vddq_block vpp_vddq_arch 0

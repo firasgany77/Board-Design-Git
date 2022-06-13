@@ -1,0 +1,107 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Jun 13 2022 13:27:19
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 0 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40LP1K
+    Package:       QN84
+
+Design statistics:
+------------------
+    FFs:                  0
+    LUTs:                 2
+    RAMs:                 0
+    IOBs:                 21
+    GBs:                  0
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 2/1280
+        Combinational Logic Cells: 2        out of   1280      0.15625%
+        Sequential Logic Cells:    0        out of   1280      0%
+        Logic Tiles:               1        out of   160       0.625%
+    Registers: 
+        Logic Registers:           0        out of   1280      0%
+        IO Registers:              0        out of   560       0
+    Block RAMs:                    0        out of   16        0%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                2        out of   67        2.98507%
+        Output Pins:               19       out of   67        28.3582%
+        InOut Pins:                0        out of   67        0%
+    Global Buffers:                0        out of   8         0%
+    PLLs:                          0        out of   0       
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 18       out of   18        100%
+    Bank 1: 16       out of   17        94.1176%
+    Bank 0: 16       out of   17        94.1176%
+    Bank 2: 9        out of   15        60%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name               
+    ----------  ---------  -----------  -------  -------  -----------    -----------               
+    A35         Input      SB_LVCMOS    No       1        Simple Input   V33A_OK                   
+    A40         Input      SB_LVCMOS    No       0        Simple Input   SLP_SUSn                  
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name               
+    ----------  ---------  -----------  -------  -------  -----------    -----------               
+    A1          Output     SB_LVCMOS    No       3        Simple Output  V1P8A_EN                  
+    A3          Output     SB_LVCMOS    No       3        Simple Output  V33S_ENn                  
+    A4          Output     SB_LVCMOS    No       3        Simple Output  VCCST_EN                  
+    A5          Output     SB_LVCMOS    No       3        Simple Output  V33A_ENn                  
+    A10         Output     SB_LVCMOS    No       3        Simple Output  V5A_EN                    
+    A12         Output     SB_LVCMOS    No       3        Simple Output  PCH_PWROK                 
+    A14         Output     SB_LVCMOS    No       2        Simple Output  VCCST_PWRGD               
+    A26         Output     SB_LVCMOS    No       1        Simple Output  VCCINAUX_EN               
+    A27         Output     SB_LVCMOS    No       1        Simple Output  VCCIN_VR_PE               
+    A33         Output     SB_LVCMOS    No       1        Simple Output  VPP_EN                    
+    A48         Output     SB_LVCMOS    No       0        Simple Output  VDDQ_EN                   
+    B3          Output     SB_LVCMOS    No       3        Simple Output  V5S_ENn                   
+    B4          Output     SB_LVCMOS    No       3        Simple Output  DSW_PWROK                 
+    B7          Output     SB_LVCMOS    No       3        Simple Output  HDA_SDO_ATP               
+    B22         Output     SB_LVCMOS    No       1        Simple Output  VCCINAUX_VR_PE            
+    B27         Output     SB_LVCMOS    No       1        Simple Output  SYS_PWROK                 
+    B29         Output     SB_LVCMOS    No       0        Simple Output  VCCIN_EN                  
+    B35         Output     SB_LVCMOS    No       0        Simple Output  RSMRSTn                   
+    B36         Output     SB_LVCMOS    No       0        Simple Output  PWRBTN_LED                
+
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 2 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile       22 out of  28666      0.076746%
+                          Span 4       21 out of   6944      0.302419%
+                         Span 12        3 out of   1440      0.208333%
+      Vertical Inter-LUT Connect        0 out of   1120      0%
+

@@ -16,7 +16,7 @@
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\hda_strap.vhd":1654238724
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\dsw_pwrok.vhd":1654701604
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\counter.vhd":1655114462
-#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1655115735
+#CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\Top.vhd":1655115962
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\primary_voltages_enabler.vhd":1655113289
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\vccin_en.vhd":1654343705
 #CUR:"C:\\Users\\firas.abdelghani\\Dropbox\\Board-Design\\Board-Design-Git\\Lattice FPGA Works\\TensorI22\\powerled.vhd":1638031123
@@ -38,7 +38,7 @@
 3 -1
 4 -1
 5 -1
-6 7 5 3 4 
+6 7 5 4 
 7 -1
 8 -1
 9 -1
@@ -47,7 +47,7 @@
 0 -1
 1 -1
 2 -1
-3 6 
+3 -1
 4 6 
 5 6 
 6 -1

@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: FIRAS-AIRTOP
 
-# Mon Jun 13 13:23:15 2022
+# Mon Jun 13 13:26:59 2022
 
 #Implementation: SBCTI22WORK3_Implmnt
 
@@ -21,15 +21,444 @@ File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPG
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd changed - recompiling
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd changed - recompiling
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
-@E: CD879 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":489:1:489:4|Illegal concurrent statement. Possible missing component declaration for hda_strap_block
-1 error parsing file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd
-@E: Parse errors encountered - exiting
+VHDL syntax check successful!
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:7:38:9|Synthesizing work.top.bdf_type.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":398:8:398:21|Signal rsmrstn_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":399:8:399:25|Signal vccst_pwrgd_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":401:8:401:26|Signal rsmrst_pwrgd_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":402:8:402:23|Signal pch_pwrok_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":404:8:404:29|Signal delayed_vddq_ok_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":21:7:21:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":29:17:29:18|Using user defined encoding for type state_type.
+Post processing for work.dsw_pwrok_block.dsw_pwrok_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\counter.vhd":7:7:7:19|Synthesizing work.counter_block.counter_arch.
+Post processing for work.counter_block.counter_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":12:7:12:30|Synthesizing work.primary_voltages_enabler.rsmrst_arch.
+Post processing for work.primary_voltages_enabler.rsmrst_arch
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":21:1:21:11|Signal VCCINAUX_EN is floating; a simulation mismatch is possible.
+Post processing for work.top.bdf_type
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":404:8:404:29|Signal delayed_vddq_ok_signal is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":402:8:402:23|Signal pch_pwrok_signal is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":399:8:399:25|Signal vccst_pwrgd_signal is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":398:8:398:21|Signal RSMRSTn_signal is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":289:2:289:12|Signal HDA_SDO_ATP is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":283:2:283:11|Signal PWRBTN_LED is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":149:2:149:7|Signal VPP_EN is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":143:2:143:8|Signal VDDQ_EN is floating; a simulation mismatch is possible.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":14:1:14:10|Input clk_100Khz is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":17:8:17:16|Input V33DSW_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":18:8:18:15|Input V1P8A_OK is unused.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":45:2:45:3|Trying to extract state machine for register curr_state.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":23:2:23:10|Input V33DSW_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":40:2:40:16|Input SATAXPCIE0_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":41:2:41:16|Input SATAXPCIE1_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":42:2:42:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":51:2:51:25|Input VCCINAUX_VR_PROCHOT_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":55:2:55:22|Input VR_PROCHOT_FPGA_OUT_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":56:2:56:18|Input VR_READY_VCCINAUX is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":57:2:57:15|Input VR_READY_VCCIN is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":64:2:64:15|Input CPU_C10_GATE_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":65:2:65:19|Input VCCST_OVERRIDE_3V3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":93:2:93:13|Input VCCST_CPU_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":99:2:99:16|Input FPGA_SLP_WLAN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":100:2:100:16|Input GPIO_FPGA_SoC_1 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":101:2:101:16|Input GPIO_FPGA_SoC_2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":102:2:102:16|Input GPIO_FPGA_SoC_3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":103:2:103:16|Input GPIO_FPGA_SoC_4 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":104:2:104:16|Input GPIO_FPGA_EXP_1 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":105:2:105:16|Input GPIO_FPGA_EXP_2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":106:2:106:9|Input TPM_GPIO is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":123:2:123:8|Input V33S_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":131:2:131:7|Input V5A_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":139:2:139:7|Input V5S_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":140:2:140:13|Input V12_MAIN_MON is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":141:2:141:8|Input VDDQ_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":146:2:146:7|Input VPP_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":150:2:150:9|Input SOC_SPKR is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":151:2:151:9|Input SUSACK_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":152:2:152:10|Input SUSWARN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":153:2:153:8|Input SLP_S0n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":159:2:159:8|Input SLP_S5n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":164:2:164:8|Input SLP_S3n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":179:2:179:8|Input SLP_S4n is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":229:2:229:11|Input SPI_FP_IO3 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":230:2:230:11|Input SPI_FP_IO2 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":284:2:284:8|Input PWRBTNn is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":288:2:288:8|Input PLTRSTn is unused.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jun 13 13:23:15 2022
+
+Process completed successfully.
+# Mon Jun 13 13:27:00 2022
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Jun 13 13:27:00 2022
 
 ###########################################################]
 @END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jun 13 13:23:15 2022
+
+Process completed successfully.
+# Mon Jun 13 13:27:00 2022
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Jun 13 13:27:01 2022
+
+###########################################################]
+# Mon Jun 13 13:27:01 2022
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3_scck.rpt 
+Printing clock  summary report in "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist TOP
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start                               Requested     Requested     Clock                           Clock                     Clock
+Clock                               Frequency     Period        Type                            Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------
+TOP|FPGA_OSC                        1.0 MHz       1000.000      inferred                        Autoconstr_clkgroup_0     33   
+counter_block|tmp_derived_clock     1.0 MHz       1000.000      derived (from TOP|FPGA_OSC)     Autoconstr_clkgroup_0     19   
+===============================================================================================================================
+
+@W: MT529 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Found inferred clock TOP|FPGA_OSC which controls 33 sequential elements including COUNTER.counter[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 13 13:27:01 2022
+
+###########################################################]
+# Mon Jun 13 13:27:01 2022
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|User-specified initial value defined for instance COUNTER.counter[31:0] is being ignored. 
+@W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|User-specified initial value defined for instance COUNTER.tmp is being ignored. 
+@W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|User-specified initial value defined for instance DSW_PWRGD.count[15:0] is being ignored. 
+@W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|User-specified initial value defined for instance DSW_PWRGD.curr_state[1:0] is being ignored. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@W: MO161 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|Register bit curr_state[0] (in view view:work.dsw_pwrok_block(dsw_pwrok_arch)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO129 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|Sequential instance DSW_PWRGD.DSW_PWROK is reduced to a combinational gate by constant propagation.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[6] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[5] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[4] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[3] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[2] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[1] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[11] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[10] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[9] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[8] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[7] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[0] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[26] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[25] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[24] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[23] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[22] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[21] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[20] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[19] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[18] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[17] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[16] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[15] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[14] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[13] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[12] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[31] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[30] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[29] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[28] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.counter[27] (in view: work.TOP(bdf_type)) because it does not drive other instances.
+@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Removing sequential instance COUNTER.tmp (in view: work.TOP(bdf_type)) because it does not drive other instances.
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		100000.00ns		   1 /         0
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :|Unbuffered I/O SLP_SUSn_i which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :|Unbuffered I/O SLP_SUSn_i which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :|Unbuffered I/O SLP_SUSn_i which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :|Unbuffered I/O SLP_SUSn_i which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@N: MT611 :|Automatically generated clock counter_block|tmp_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 134MB)
+
+Writing Analyst data base C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3.edf
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+@W: MT420 |Found inferred clock TOP|FPGA_OSC with period 3.41ns. Please declare a user-defined clock on object "p:FPGA_OSC"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jun 13 13:27:02 2022
+#
+
+
+Top view:               TOP
+Requested Frequency:    293.5 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group                
+-----------------------------------------------------------------------------------------------------------------------
+TOP|FPGA_OSC       293.5 MHz     NA            3.407         NA            NA        inferred     Autoconstr_clkgroup_0
+=======================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
+
+---------------------------------------
+Resource Usage Report for TOP 
+
+Mapping to part: ice40lp1kqn84
+Cell usage:
+SB_LUT4         1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+@S |Mapping Summary:
+Total  LUTs: 1 (0%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 1 = 1 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jun 13 13:27:02 2022
 
 ###########################################################]

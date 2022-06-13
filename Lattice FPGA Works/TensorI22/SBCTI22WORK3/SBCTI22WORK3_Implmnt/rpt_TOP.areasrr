@@ -6,83 +6,12 @@ Part:			ICE40LP1KQN84 (Lattice)
 ########   Utilization report for  Top level view:   TOP   ########
 ===================================================================
 
-SEQUENTIAL ELEMENTS
-Name      Total elements     Utilization     Notes
---------------------------------------------------
-FLOPS     55                 100 %                
-==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP:	55 (27.64 % Utilization)
-
-
-COMBINATIONAL LOGIC
-Name       Total elements     Utilization     Notes
----------------------------------------------------
-LUTS       80                 100 %                
-CARRYS     55                 100 %                
-===================================================
-Total COMBINATIONAL LOGIC in the block TOP:	135 (67.84 % Utilization)
-
-
-IO PADS
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-PADS     1                  100 %                
-=================================================
-Total IO PADS in the block TOP:	1 (0.50 % Utilization)
-
--------------------------------------------------------------------
-########   Utilization report for  cell:   counter_block   ########
-Instance path:   TOP.counter_block                                 
-===================================================================
-
-SEQUENTIAL ELEMENTS
-Name      Total elements     Utilization     Notes
---------------------------------------------------
-FLOPS     33                 60 %                 
-==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.counter_block:	33 (16.58 % Utilization)
-
-
-COMBINATIONAL LOGIC
-Name       Total elements     Utilization     Notes
----------------------------------------------------
-LUTS       41                 51.3 %               
-CARRYS     38                 69.1 %               
-===================================================
-Total COMBINATIONAL LOGIC in the block TOP.counter_block:	79 (39.70 % Utilization)
-
----------------------------------------------------------------------
-########   Utilization report for  cell:   hda_strap_block   ########
-Instance path:   TOP.hda_strap_block                                 
-=====================================================================
-
-SEQUENTIAL ELEMENTS
-Name      Total elements     Utilization     Notes
---------------------------------------------------
-FLOPS     22                 40 %                 
-==================================================
-Total SEQUENTIAL ELEMENTS in the block TOP.hda_strap_block:	22 (11.06 % Utilization)
-
-
-COMBINATIONAL LOGIC
-Name       Total elements     Utilization     Notes
----------------------------------------------------
-LUTS       37                 46.3 %               
-CARRYS     17                 30.9 %               
-===================================================
-Total COMBINATIONAL LOGIC in the block TOP.hda_strap_block:	54 (27.14 % Utilization)
-
---------------------------------------------------------------------
-########   Utilization report for  cell:   powerled_block   ########
-Instance path:   TOP.powerled_block                                 
-====================================================================
-
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     1                  1.25 %               
+LUTS     1                  100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block TOP.powerled_block:	1 (0.50 % Utilization)
+Total COMBINATIONAL LOGIC in the block TOP:	1 (33.33 % Utilization)
 
 
 ##### END OF AREA REPORT #####]
