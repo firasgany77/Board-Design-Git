@@ -1,5 +1,0 @@
-
-: 0 work.rsmrst_pwrgd_block "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd" 9 7 
-: 0 work.pch_pwrok_block "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd" 50 7 
-: 0 work.TOP "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd" 38 7 work.dsw_pwrok_block work.hda_strap_block work.counter_block work.primary_voltages_enabler work.vpp_vddq_block work.powerled_block 
-: 0 work.vccin_en_block "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd" 12 7 

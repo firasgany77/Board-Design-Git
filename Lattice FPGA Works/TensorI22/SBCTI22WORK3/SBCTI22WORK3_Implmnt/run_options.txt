@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\run_options.txt
-#--  Written on Mon Jun 13 13:03:46 2022
+#--  Written on Mon Jun 13 13:19:45 2022
 
 
 #project files
@@ -35,6 +35,7 @@ set_option -speed_grade ""
 set_option -part_companion ""
 
 #compilation/mapping options
+set_option -top_module "TOP"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

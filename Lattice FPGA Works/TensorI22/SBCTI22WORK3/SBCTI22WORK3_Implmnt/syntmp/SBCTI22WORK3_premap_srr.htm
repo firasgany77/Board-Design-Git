@@ -1,16 +1,18 @@
+<html><body><samp><pre>
+<!@TC:1655115551>
 # Mon Jun 13 13:19:11 2022
 
-Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+<a name=mapperReport5></a>Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 Product Version L-2016.09L+ice40
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-@A: MF827 |No constraint file specified.
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1655115551> | No constraint file specified. 
 @L: C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3_scck.rpt 
 Printing clock  summary report in "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3_scck.rpt" file 
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1655115551> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1655115551> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
 
@@ -23,18 +25,18 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
 
-@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":98:2:98:3|Removing sequential instance delayed_vddq_ok (in view: work.vpp_vddq_block(vpp_vddq_arch)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd:98:2:98:4:@N:BN362:@XP_MSG">vpp_vddq.vhd(98)</a><!@TM:1655115551> | Removing sequential instance delayed_vddq_ok (in view: work.vpp_vddq_block(vpp_vddq_arch)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
-@N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd":34:2:34:3|Removing sequential instance count_off[15:0] (in view: work.powerled_block(powerled_arch)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\powerled.vhd:34:2:34:4:@N:BN362:@XP_MSG">powerled.vhd(34)</a><!@TM:1655115551> | Removing sequential instance count_off[15:0] (in view: work.powerled_block(powerled_arch)) of type view:PrimLib.lat(prim) because it does not drive other instances.
 syn_allowed_resources : blockrams=16  set on top level netlist TOP
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
 
 
 
-Clock Summary
+<a name=mapperReport6></a>Clock Summary</a>
 *****************
 
 Start                               Requested     Requested     Clock                           Clock                     Clock
@@ -44,10 +46,10 @@ TOP|FPGA_OSC                        1.0 MHz       1000.000      inferred        
 counter_block|tmp_derived_clock     1.0 MHz       1000.000      derived (from TOP|FPGA_OSC)     Autoconstr_clkgroup_0     387  
 ===============================================================================================================================
 
-@W: MT529 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Found inferred clock TOP|FPGA_OSC which controls 33 sequential elements including COUNTER.counter[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd:47:3:47:5:@W:MT529:@XP_MSG">counter.vhd(47)</a><!@TM:1655115551> | Found inferred clock TOP|FPGA_OSC which controls 33 sequential elements including COUNTER.counter[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3.sap.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1655115551> | Writing default property annotation file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3.sap. 
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 135MB)
 
@@ -64,3 +66,5 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 # Mon Jun 13 13:19:11 2022
 
 ###########################################################]
+
+</pre></samp></body></html>

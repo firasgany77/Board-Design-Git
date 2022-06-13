@@ -3,14 +3,14 @@
   Synopsys, Inc.
   Version L-2016.09L+ice40
   Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\syntmp\run_option.xml
-  Written on Mon Jun 13 13:03:46 2022
+  Written on Mon Jun 13 13:19:45 2022
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
      <option name="project_name" display_name="Project Name">SBCTI22WORK3_syn</option>
      <option name="impl_name" display_name="Implementation Name">SBCTI22WORK3_Implmnt</option>
-     <option name="top_module" display_name="Top Module"></option>
+     <option name="top_module" display_name="Top Module">TOP</option>
      <option name="pipe" display_name="Pipelining">1</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>

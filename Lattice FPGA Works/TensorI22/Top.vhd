@@ -292,30 +292,30 @@ END TOP;
 
 ARCHITECTURE bdf_type OF TOP IS
 
-	COMPONENT powerled_block
-		GENERIC (
-			periodclocks : INTEGER
-		);
-		PORT (
-			clk_100Khz : IN STD_LOGIC;
-			SLP_S3n : IN STD_LOGIC;
-			SLP_S4n : IN STD_LOGIC;
-			mem_alert : IN STD_LOGIC;
-			pwm_out : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT powerled_block
+		--GENERIC (
+		--	periodclocks : INTEGER
+		--);
+		--PORT (
+			--clk_100Khz : IN STD_LOGIC;
+			--SLP_S3n : IN STD_LOGIC;
+			--SLP_S4n : IN STD_LOGIC;
+			--mem_alert : IN STD_LOGIC;
+			--pwm_out : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
-	COMPONENT vpp_vddq_block
-		PORT (
-			slp_s4n : IN STD_LOGIC;
-			vddq_pwrgd : IN STD_LOGIC;
-			vpp_pwrgd : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			delayed_vddq_ok: OUT STD_LOGIC;
-			vpp_en : OUT STD_LOGIC;
-			vddq_en : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT vpp_vddq_block
+		--PORT (
+			--slp_s4n : IN STD_LOGIC;
+			--vddq_pwrgd : IN STD_LOGIC;
+			--vpp_pwrgd : IN STD_LOGIC;
+			--clk_100Khz : IN STD_LOGIC;
+			--delayed_vddq_ok: OUT STD_LOGIC;
+			--vpp_en : OUT STD_LOGIC;
+			--vddq_en : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
 	COMPONENT counter_block
 		PORT (
@@ -324,14 +324,14 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT hda_strap_block
-		PORT (
-			pch_pwrok : IN STD_LOGIC;
-			GPIO_PCH : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			HDA_SDO_ATP : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	--COMPONENT hda_strap_block
+		--PORT (
+		--	pch_pwrok : IN STD_LOGIC;
+			--GPIO_PCH : IN STD_LOGIC;
+			--clk_100Khz : IN STD_LOGIC;
+		--	HDA_SDO_ATP : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
 	--COMPONENT vccin_en_block
 		--PORT (
@@ -446,25 +446,25 @@ BEGIN
     VCCINAUX_VR_PE <= '0';
 
     -- here we assign input/output signals for each instance (from outside):
-	POWERLED : powerled_block 
-	GENERIC MAP(
-		periodclocks => 100)
-	PORT MAP(
-		clk_100Khz => clk_100Khz_signal,
-		SLP_S3n => slp_s3n_signal,
-		SLP_S4n => VCCST_EN_signal,
-		mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
-		pwm_out => PWRBTN_LED);
+	--POWERLED : powerled_block 
+	--GENERIC MAP(
+		--periodclocks => 100)
+	--PORT MAP(
+		--clk_100Khz => clk_100Khz_signal,
+		--SLP_S3n => slp_s3n_signal,
+		--SLP_S4n => VCCST_EN_signal,
+		--mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
+		--pwm_out => PWRBTN_LED);
 
-	VPP_VDDQ : vpp_vddq_block
-	PORT MAP(
-		slp_s4n => VCCST_EN_signal,
-		vddq_pwrgd => VDDQ_OK,
-		vpp_pwrgd => VPP_OK,
-		clk_100Khz => clk_100Khz_signal,
-		delayed_vddq_ok => delayed_vddq_ok_signal,
-		vpp_en => VPP_EN,
-		vddq_en => VDDQ_EN);
+	--VPP_VDDQ : vpp_vddq_block
+	--PORT MAP(
+		--slp_s4n => VCCST_EN_signal,
+		--vddq_pwrgd => VDDQ_OK,
+		--vpp_pwrgd => VPP_OK,
+		--clk_100Khz => clk_100Khz_signal,
+		--delayed_vddq_ok => delayed_vddq_ok_signal,
+		--vpp_en => VPP_EN,
+		--vddq_en => VDDQ_EN);
 
 
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW

@@ -34,6 +34,7 @@ set_option -speed_grade ""
 set_option -part_companion ""
 
 #compilation/mapping options
+set_option -top_module "TOP"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

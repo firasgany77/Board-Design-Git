@@ -1,3 +1,2 @@
-@E: CD184 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":413:11:413:12|target suswarn_n of assignment is not writeable
-@E: Parse errors encountered - exiting
+@E: No entity with name vhd to synthesize
 

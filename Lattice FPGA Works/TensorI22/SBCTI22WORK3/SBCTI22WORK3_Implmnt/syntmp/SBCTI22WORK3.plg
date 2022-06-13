@@ -1,6 +1,11 @@
-@P:  Worst Slack : NA
-@P: vccin_en_block Part : ice40lp1kqn84
-@P: vccin_en_block I/O Register bits : 0
-@P: vccin_en_block Register bits (Non I/O) : 0 (0%)
-@P: vccin_en_block Total Luts : 2 (0%)
-@P:  CPU Time : 0h:00m:00s
+@P:  Worst Slack : -1.754
+@P:  TOP|FPGA_OSC - Estimated Frequency : 85.5 MHz
+@P:  TOP|FPGA_OSC - Requested Frequency : 100.6 MHz
+@P:  TOP|FPGA_OSC - Estimated Period : 11.697
+@P:  TOP|FPGA_OSC - Requested Period : 9.942
+@P:  TOP|FPGA_OSC - Slack : -1.754
+@P: TOP Part : ice40lp1kqn84
+@P: TOP I/O Register bits : 0
+@P: TOP Register bits (Non I/O) : 55 (4%)
+@P: TOP Total Luts : 80 (6%)
+@P:  CPU Time : 0h:00m:02s
