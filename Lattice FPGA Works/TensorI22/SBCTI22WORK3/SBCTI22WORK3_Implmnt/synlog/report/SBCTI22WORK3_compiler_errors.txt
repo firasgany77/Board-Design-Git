@@ -1,2 +1,3 @@
-@E: No entity with name vhd to synthesize
+@E: CD879 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":489:1:489:4|Illegal concurrent statement. Possible missing component declaration for hda_strap_block
+@E: Parse errors encountered - exiting
 
