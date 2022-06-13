@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 13 2022 13:58:28
+* File Generated:     Jun 13 2022 14:16:18
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -27,27 +27,27 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  0
-    LUTs:                 2
+    FFs:                  111
+    LUTs:                 299
     RAMs:                 0
-    IOBs:                 21
+    IOBs:                 32
     GBs:                  0
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 2/1280
-        Combinational Logic Cells: 2        out of   1280      0.15625%
-        Sequential Logic Cells:    0        out of   1280      0%
-        Logic Tiles:               1        out of   160       0.625%
+    Total Logic Cells: 312/1280
+        Combinational Logic Cells: 201      out of   1280      15.7031%
+        Sequential Logic Cells:    111      out of   1280      8.67188%
+        Logic Tiles:               59       out of   160       36.875%
     Registers: 
-        Logic Registers:           0        out of   1280      0%
+        Logic Registers:           111      out of   1280      8.67188%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                2        out of   67        2.98507%
+        Input Pins:                13       out of   67        19.403%
         Output Pins:               19       out of   67        28.3582%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                0        out of   8         0%
@@ -65,8 +65,19 @@ Detailed I/O Info:
     Input Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name               
     ----------  ---------  -----------  -------  -------  -----------    -----------               
+    A34         Input      SB_LVCMOS    No       1        Simple Input   V33S_OK                   
     A35         Input      SB_LVCMOS    No       1        Simple Input   V33A_OK                   
+    A38         Input      SB_LVCMOS    No       0        Simple Input   SLP_S3n                   
     A40         Input      SB_LVCMOS    No       0        Simple Input   SLP_SUSn                  
+    B1          Input      SB_LVCMOS    Yes      3        Simple Input   VPP_OK                    
+    B2          Input      SB_LVCMOS    Yes      3        Simple Input   V1P8A_OK                  
+    B5          Input      SB_LVCMOS    No       3        Simple Input   VR_READY_VCCIN            
+    B8          Input      SB_LVCMOS    Yes      3        Simple Input   V5A_OK                    
+    B12         Input      SB_LVCMOS    No       2        Simple Input   FPGA_OSC                  
+    B19         Input      SB_LVCMOS    No       1        Simple Input   VCCST_CPU_OK              
+    B20         Input      SB_LVCMOS    No       1        Simple Input   V5S_OK                    
+    B26         Input      SB_LVCMOS    Yes      1        Simple Input   VDDQ_OK                   
+    B34         Input      SB_LVCMOS    No       0        Simple Input   SLP_S4n                   
 
     Output Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name               

@@ -1,8 +1,8 @@
-# Written by Synplify Pro version maplat, Build 1612R. Synopsys Run ID: sid1655117862 
+# Written by Synplify Pro version maplat, Build 1612R. Synopsys Run ID: sid1655118878 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 3.407 -waveform {0.000 1.704} -name {TOP|FPGA_OSC} [get_ports {FPGA_OSC}] 
+create_clock -period 24.366 -waveform {0.000 12.183} -name {TOP|FPGA_OSC} [get_ports {FPGA_OSC}] 
 
 # Virtual Clocks 
 

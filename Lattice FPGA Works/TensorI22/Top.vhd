@@ -305,17 +305,17 @@ ARCHITECTURE bdf_type OF TOP IS
 		--);
 	--END COMPONENT;
 
-	--COMPONENT vpp_vddq_block
-		--PORT (
-			--slp_s4n : IN STD_LOGIC;
-			--vddq_pwrgd : IN STD_LOGIC;
-			--vpp_pwrgd : IN STD_LOGIC;
-			--clk_100Khz : IN STD_LOGIC;
-			--delayed_vddq_ok: OUT STD_LOGIC;
-			--vpp_en : OUT STD_LOGIC;
-			--vddq_en : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+	COMPONENT vpp_vddq_block
+		PORT (
+			slp_s4n : IN STD_LOGIC;
+			vddq_pwrgd : IN STD_LOGIC;
+			vpp_pwrgd : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
+			delayed_vddq_ok: OUT STD_LOGIC;
+			vpp_en : OUT STD_LOGIC;
+			vddq_en : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
 	COMPONENT counter_block
 		PORT (
@@ -325,26 +325,26 @@ ARCHITECTURE bdf_type OF TOP IS
 	END COMPONENT;
 
 	--COMPONENT hda_strap_block
-		--PORT (
-		--	pch_pwrok : IN STD_LOGIC;
+		 --PORT (
+			--pch_pwrok : IN STD_LOGIC;
 			--GPIO_PCH : IN STD_LOGIC;
 			--clk_100Khz : IN STD_LOGIC;
-		--	HDA_SDO_ATP : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+		 	--HDA_SDO_ATP : OUT STD_LOGIC
+		 --);
+	-- END COMPONENT;
 
-	--COMPONENT vccin_en_block
-		--PORT (
-		--	v5s_pwrgd : IN STD_LOGIC;
-			--v33s_pwrgd : IN STD_LOGIC;
-           -- slp_s3n : IN STD_LOGIC;
-			--rsmrst_pwrgd : IN STD_LOGIC;
-		--	DSW_PWROK: IN STD_LOGIC;
-			--VCCST_CPU_OK: IN STD_LOGIC; 
-			--clk_100Khz : IN STD_LOGIC;
-		--	vccin_en : OUT STD_LOGIC
-	--	);
-	--END COMPONENT;
+	 COMPONENT vccin_en_block
+		 PORT (
+		    v5s_pwrgd : IN STD_LOGIC;
+			v33s_pwrgd : IN STD_LOGIC;
+            slp_s3n : IN STD_LOGIC;
+			rsmrst_pwrgd : IN STD_LOGIC;
+			DSW_PWROK: IN STD_LOGIC;
+			VCCST_CPU_OK: IN STD_LOGIC; 
+			clk_100Khz : IN STD_LOGIC;
+			vccin_en : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
 	COMPONENT dsw_pwrok_block
 		PORT (
@@ -354,27 +354,27 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	--COMPONENT rsmrst_pwrgd_block
-		--PORT (
-			--V33A_OK : IN STD_LOGIC;
-			--V5A_OK : IN STD_LOGIC;
-			--V1P8A_OK : IN STD_LOGIC;
-			--SLP_SUSn : IN STD_LOGIC;
-		--	clk_100Khz : IN STD_LOGIC;
-			--RSMRSTn : OUT STD_LOGIC;
-		--	rsmrst_pwrgd_out : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+	COMPONENT rsmrst_pwrgd_block
+		PORT (
+			V33A_OK : IN STD_LOGIC;
+			V5A_OK : IN STD_LOGIC;
+			V1P8A_OK : IN STD_LOGIC;
+			SLP_SUSn : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
+			RSMRSTn : OUT STD_LOGIC;
+			rsmrst_pwrgd_out : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
-	--COMPONENT pch_pwrok_block
-		--PORT (
-			--slp_s3n : IN STD_LOGIC;
-			--vccin_ready : IN STD_LOGIC;
-			--clk_100Khz : IN STD_LOGIC;
-			--vccst_pwrgd : OUT STD_LOGIC;
-			--pch_pwrok : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+	COMPONENT pch_pwrok_block
+		PORT (
+			slp_s3n : IN STD_LOGIC;
+			vccin_ready : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
+			vccst_pwrgd : OUT STD_LOGIC;
+			pch_pwrok : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
 
 	COMPONENT primary_voltages_enabler
@@ -441,9 +441,9 @@ BEGIN
  
     -- disable PMBUS for VCCIN Controller:
 	VCCIN_VR_PE <= '0'; -- makes the 0x20 VCCIN disappear in the IMVP9 programming software.
-	VCCIN_EN <= '0';
-    VCCINAUX_EN <= '1'; 
-    VCCINAUX_VR_PE <= '1';
+	--VCCIN_EN <= '0';
+    --VCCINAUX_EN <= '1'; 
+    VCCINAUX_VR_PE <= '0';
 
     -- here we assign input/output signals for each instance (from outside):
 	--POWERLED : powerled_block 
@@ -456,15 +456,15 @@ BEGIN
 		--mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
 		--pwm_out => PWRBTN_LED);
 
-	--VPP_VDDQ : vpp_vddq_block
-	--PORT MAP(
-		--slp_s4n => VCCST_EN_signal,
-		--vddq_pwrgd => VDDQ_OK,
-		--vpp_pwrgd => VPP_OK,
-		--clk_100Khz => clk_100Khz_signal,
-		--delayed_vddq_ok => delayed_vddq_ok_signal,
-		--vpp_en => VPP_EN,
-		--vddq_en => VDDQ_EN);
+	VPP_VDDQ : vpp_vddq_block
+	PORT MAP(
+		  slp_s4n => VCCST_EN_signal,
+		  vddq_pwrgd => VDDQ_OK,
+		  vpp_pwrgd => VPP_OK,
+		  clk_100Khz => clk_100Khz_signal,
+		  delayed_vddq_ok => delayed_vddq_ok_signal,
+		  vpp_en => VPP_EN,
+		  vddq_en => VDDQ_EN);
 
 
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
@@ -492,16 +492,16 @@ BEGIN
 		--clk_100Khz => clk_100Khz_signal,
 		--HDA_SDO_ATP => HDA_SDO_ATP);
 
-	--VCCIN_PWRGD: vccin_en_block
-	--PORT MAP(
-		--v5s_pwrgd => V5S_OK,
-		--v33s_pwrgd => V33S_OK,
-		--slp_s3n => slp_s3n_signal,
-		--rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		--DSW_PWROK => DSW_PWROK_signal,
-		--VCCST_CPU_OK => VCCST_CPU_OK, 
-		--clk_100Khz => clk_100Khz_signal,
-		--vccin_en => VCCIN_EN);
+	  VCCIN_PWRGD: vccin_en_block
+	  PORT MAP(
+		  v5s_pwrgd => V5S_OK,
+		  v33s_pwrgd => V33S_OK,
+		  slp_s3n => slp_s3n_signal,
+		  rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		  DSW_PWROK => DSW_PWROK_signal,
+		  VCCST_CPU_OK => VCCST_CPU_OK, 
+		  clk_100Khz => clk_100Khz_signal,
+		  vccin_en => VCCIN_EN);
 
 
 	DSW_PWRGD : dsw_pwrok_block
@@ -510,22 +510,22 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal,
 		DSW_PWROK => DSW_PWROK_signal); -- assigning signal to component output
 
-	--RSMRST_PWRGD : rsmrst_pwrgd_block
-	--PORT MAP(
-		--V33A_OK => V33A_OK,
-		--V5A_OK => V5A_OK,
-		--V1P8A_OK => V1P8A_OK,
-		--SLP_SUSn => slp_susn_signal, 
-		-- clk_100Khz => clk_100Khz_signal,
-		--RSMRSTn => RSMRSTn_signal,
-		--rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
+	RSMRST_PWRGD : rsmrst_pwrgd_block
+	PORT MAP(
+		  V33A_OK => V33A_OK,
+		  V5A_OK => V5A_OK,
+		  V1P8A_OK => V1P8A_OK,
+		  SLP_SUSn => slp_susn_signal, 
+		  clk_100Khz => clk_100Khz_signal,
+		  RSMRSTn => RSMRSTn_signal,
+		  rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
 
-	--PCH_PWRGD: pch_pwrok_block
-	--PORT MAP(
-		--slp_s3n => slp_s3n_signal,
-		--vccin_ready => VR_READY_VCCIN,
-		--clk_100Khz => clk_100Khz_signal,
-		--vccst_pwrgd => vccst_pwrgd_signal,
-		--pch_pwrok => pch_pwrok_signal);
+	PCH_PWRGD: pch_pwrok_block
+	PORT MAP(
+		  slp_s3n => slp_s3n_signal,
+		  vccin_ready => VR_READY_VCCIN,
+		  clk_100Khz => clk_100Khz_signal,
+		  vccst_pwrgd => vccst_pwrgd_signal,
+		  pch_pwrok => pch_pwrok_signal);
 
 END bdf_type;

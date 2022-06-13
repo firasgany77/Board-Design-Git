@@ -1,7 +1,7 @@
 C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -top  TOP  -multisrs  "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_comp.srs"  -osyn  "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_mult.srs"  -log  "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synlog\SBCTI22WORK3_multi_srs_gen.srr" 
 rc:0 success:1 runtime:0
-file:C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_comp.srs|io:i|time:1655117861|size:8386|exec:0
-file:C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_mult.srs|io:o|time:1655117862|size:5270|exec:0
-file:C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synlog\SBCTI22WORK3_multi_srs_gen.srr|io:o|time:1655117862|size:594|exec:0
+file:C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_comp.srs|io:i|time:1655118876|size:17377|exec:0
+file:C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_mult.srs|io:o|time:1655118877|size:6837|exec:0
+file:C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synlog\SBCTI22WORK3_multi_srs_gen.srr|io:o|time:1655118877|size:594|exec:0
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1649857832|size:3128320|exec:1
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1649857833|size:3947520|exec:1
