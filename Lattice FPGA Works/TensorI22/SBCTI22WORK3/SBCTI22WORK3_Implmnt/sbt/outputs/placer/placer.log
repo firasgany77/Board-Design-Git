@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Jun 13 2022 17:22:11
+* File Generated:     Jun 13 2022 17:58:10
 
 * Purpose:            
 
@@ -171,16 +171,16 @@ Device Utilization Summary after Packing
     PLLs                        :	0/0
 
 
-I2088: Phase 3, elapsed time : 0.6 (sec)
+I2088: Phase 3, elapsed time : 0.8 (sec)
 
 Phase 4
 I2088: Phase 4, elapsed time : 0.2 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.8 (sec)
+I2088: Phase 5, elapsed time : 1.0 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 20.3 (sec)
+I2088: Phase 6, elapsed time : 23.3 (sec)
 
 Final Design Statistics
     Number of LUTs      	:	303
@@ -197,7 +197,7 @@ Final Design Statistics
 
 Device Utilization Summary
     LogicCells                  :	316/1280
-    PLBs                        :	66/160
+    PLBs                        :	63/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
     PLLs                        :	0/0
@@ -216,7 +216,7 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 1
-Clock: TOP|FPGA_OSC | Frequency: 13.99 MHz | Target: 45.50 MHz
+Clock: TOP|FPGA_OSC | Frequency: 14.09 MHz | Target: 45.50 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -224,5 +224,5 @@ Clock: TOP|FPGA_OSC | Frequency: 13.99 MHz | Target: 45.50 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 22.3 sec.
+I2076: Placer run-time: 26.0 sec.
 

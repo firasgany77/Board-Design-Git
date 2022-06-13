@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 13 2022 17:22:37
+* File Generated:     Jun 13 2022 17:58:40
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -40,7 +40,7 @@ Logic Resource Utilization:
     Total Logic Cells: 316/1280
         Combinational Logic Cells: 206      out of   1280      16.0938%
         Sequential Logic Cells:    110      out of   1280      8.59375%
-        Logic Tiles:               66       out of   160       41.25%
+        Logic Tiles:               63       out of   160       39.375%
     Registers: 
         Logic Registers:           110      out of   1280      8.59375%
         IO Registers:              0        out of   560       0

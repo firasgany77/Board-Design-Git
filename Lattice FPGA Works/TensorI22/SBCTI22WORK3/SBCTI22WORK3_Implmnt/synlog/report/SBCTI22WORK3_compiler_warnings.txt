@@ -14,5 +14,4 @@
 @W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal delayed_vddq_ok; possible missing assignment in an if or case statement.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":289:2:289:12|Signal HDA_SDO_ATP is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":283:2:283:11|Signal PWRBTN_LED is floating; a simulation mismatch is possible.
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":54:2:54:15|Signal VCCINAUX_VR_PE is floating; a simulation mismatch is possible.
 
