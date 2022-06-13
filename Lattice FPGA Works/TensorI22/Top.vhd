@@ -333,18 +333,18 @@ ARCHITECTURE bdf_type OF TOP IS
 		 --);
 	-- END COMPONENT;
 
-	 --COMPONENT vccin_en_block
-		 --PORT (
-		  --  v5s_pwrgd : IN STD_LOGIC;
-			--v33s_pwrgd : IN STD_LOGIC;
-           -- slp_s3n : IN STD_LOGIC;
-		--	rsmrst_pwrgd : IN STD_LOGIC;
-			--DSW_PWROK: IN STD_LOGIC;
-			--VCCST_CPU_OK: IN STD_LOGIC; 
-		--	clk_100Khz : IN STD_LOGIC;
-		--	vccin_en : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+	 COMPONENT vccin_en_block
+		 PORT (
+		    v5s_pwrgd : IN STD_LOGIC;
+			v33s_pwrgd : IN STD_LOGIC;
+            slp_s3n : IN STD_LOGIC;
+			rsmrst_pwrgd : IN STD_LOGIC;
+			DSW_PWROK: IN STD_LOGIC;
+			VCCST_CPU_OK: IN STD_LOGIC; 
+			clk_100Khz : IN STD_LOGIC;
+			vccin_en : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
 	COMPONENT dsw_pwrok_block
 		PORT (
@@ -489,16 +489,16 @@ BEGIN
 		--clk_100Khz => clk_100Khz_signal,
 		--HDA_SDO_ATP => HDA_SDO_ATP);
 
-	  --VCCIN_PWRGD: vccin_en_block
-	  --PORT MAP(
-		--  v5s_pwrgd => V5S_OK,
-		 -- v33s_pwrgd => V33S_OK,
-		 -- slp_s3n => slp_s3n_signal,
-		 -- rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		 -- DSW_PWROK => DSW_PWROK_signal,
-		 -- VCCST_CPU_OK => VCCST_CPU_OK, 
-		 -- clk_100Khz => clk_100Khz_signal,
-		--  vccin_en => VCCIN_EN);
+	  VCCIN_PWRGD: vccin_en_block
+	  PORT MAP(
+		  v5s_pwrgd => V5S_OK,
+		  v33s_pwrgd => V33S_OK,
+		  slp_s3n => slp_s3n_signal,
+		  rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		  DSW_PWROK => DSW_PWROK_signal,
+		  VCCST_CPU_OK => VCCST_CPU_OK, 
+		  clk_100Khz => clk_100Khz_signal,
+		  vccin_en => VCCIN_EN);
 
 
 	DSW_PWRGD : dsw_pwrok_block
