@@ -440,8 +440,8 @@ BEGIN
 
  
 	VCCIN_VR_PE <= '1'; 
-	VCCIN_EN <= '1';
-    VCCINAUX_VR_PE <= '0';
+	--VCCIN_EN <= '1';
+    VCCINAUX_VR_PE <= '1';
 
 	--POWERLED : powerled_block 
 	--GENERIC MAP(
