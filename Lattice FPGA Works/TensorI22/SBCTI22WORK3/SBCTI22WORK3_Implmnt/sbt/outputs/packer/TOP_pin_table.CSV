@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 13 2022 21:24:27
+* File Generated:     Jun 13 2022 22:25:42
 
 * Purpose:            Detailed IO and package pin info
 
@@ -52,7 +52,7 @@ A30, GND, not used, , , , , , UnknownBank
 A31, PIO, VCCIN_VR_PROCHOT_FPGA,  , , SB_LVCMOS, No Pull Up, , rightBank
 A32, PIO, VR_PROCHOT_FPGA_OUT_N,  , , SB_LVCMOS, No Pull Up, , rightBank
 A33, PIO, VPP_EN, Output, , SB_LVCMOS, No Pull Up, Simple Output, rightBank
-A34, PIO, V33S_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
+A34, PIO, V33S_OK,  , , SB_LVCMOS, No Pull Up, , rightBank
 A35, PIO, V33A_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
 A36, VPP_PUMP, not used, , , , , , UnknownBank
 A37, VPP_DIRECT, not used, , , , , , UnknownBank
@@ -85,8 +85,8 @@ B15, PIO, not used, , , , , , bottomBank
 B16, CDONE, not used, , , , , , bottomBank
 B17, SPI_SO, not used, , , , , , bottomBank
 B18, SPI_SS_B, not used, , , , , , bottomBank
-B19, PIO, VCCST_CPU_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
-B20, PIO, V5S_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
+B19, PIO, VCCST_CPU_OK,  , , SB_LVCMOS, No Pull Up, , rightBank
+B20, PIO, V5S_OK,  , , SB_LVCMOS, No Pull Up, , rightBank
 B21, PIO, VR_READY_VCCINAUX,  , , SB_LVCMOS, Pull Up, , rightBank
 B22, PIO_GBIN, VCCINAUX_VR_PE, Output, , SB_LVCMOS, No Pull Up, Simple Output, rightBank
 B23, PIO, SATAXPCIE0_FPGA,  , , SB_LVCMOS, No Pull Up, , rightBank
