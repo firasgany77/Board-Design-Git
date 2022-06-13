@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Jun 13 2022 17:02:22
+* File Generated:     Jun 13 2022 17:22:11
 
 * Purpose:            
 
@@ -35,10 +35,10 @@ I2053: Starting placement of the design
 =============================================================
 
 Input Design Statistics
-    Number of LUTs      	:	271
-    Number of DFFs      	:	111
+    Number of LUTs      	:	265
+    Number of DFFs      	:	110
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	97
+    Number of Carrys    	:	96
     Number of RAMs      	:	0
     Number of ROMs      	:	0
     Number of IOs       	:	59
@@ -54,14 +54,14 @@ I2077: Start design legalization
 Design Legalization Statistics
     Number of feedthru LUTs inserted to legalize input of DFFs     	:	0
     Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
-    Number of LUTs replicated for LUTs driving multiple DFFs       	:	21
-    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	6
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	20
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	17
     Number of feedthru LUTs inserted to legalize global signals    	:	0
     Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
-    Total LUTs inserted                                            	:	27
+    Total LUTs inserted                                            	:	37
     Total CARRYs inserted                                          	:	0
 
 
@@ -70,105 +70,123 @@ I2088: Phase 1, elapsed time : 0.0 (sec)
 
 
 Phase 2
-I2088: Phase 2, elapsed time : 0.0 (sec)
+I2088: Phase 2, elapsed time : 0.1 (sec)
 
 Phase 3
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIUBK91[0]_LC_71/in2" to pin "PCH_PWRGD.count_RNIUBK91[0]_LC_71/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI5NV6S1[1]_LC_50/in0" to pin "PCH_PWRGD.count_RNI5NV6S1[1]_LC_50/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_0_c_RNINARC_LC_109/in1" to pin "PCH_PWRGD.un2_count_1_cry_0_c_RNINARC_LC_109/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_1_c_RNIOCSC_LC_120/in1" to pin "PCH_PWRGD.un2_count_1_cry_1_c_RNIOCSC_LC_120/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIUGH9Q[3]_LC_72/in0" to pin "PCH_PWRGD.count_RNIUGH9Q[3]_LC_72/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_2_c_RNIPETC_LC_121/in1" to pin "PCH_PWRGD.un2_count_1_cry_2_c_RNIPETC_LC_121/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIUGH9Q[3]_LC_72/in1" to pin "PCH_PWRGD.count_RNIUGH9Q[3]_LC_72/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_3_c_RNIQGUC_LC_122/in1" to pin "PCH_PWRGD.un2_count_1_cry_3_c_RNIQGUC_LC_122/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI0LCI6_0[5]_LC_45/in1" to pin "PCH_PWRGD.count_RNI0LCI6_0[5]_LC_45/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_4_c_RNIRIVC_LC_123/in1" to pin "PCH_PWRGD.un2_count_1_cry_4_c_RNIRIVC_LC_123/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_5_c_RNISK0D_LC_124/in1" to pin "PCH_PWRGD.un2_count_1_cry_5_c_RNISK0D_LC_124/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIUGH9Q[3]_LC_72/in3" to pin "PCH_PWRGD.count_RNIUGH9Q[3]_LC_72/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_6_c_RNITM1D_LC_125/in1" to pin "PCH_PWRGD.un2_count_1_cry_6_c_RNITM1D_LC_125/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_7_c_RNIUO2D_LC_127/in1" to pin "PCH_PWRGD.un2_count_1_cry_7_c_RNIUO2D_LC_127/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_8_c_RNIVQ3D_LC_128/in1" to pin "PCH_PWRGD.un2_count_1_cry_8_c_RNIVQ3D_LC_128/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_9_c_RNI0T4D_LC_129/in1" to pin "PCH_PWRGD.un2_count_1_cry_9_c_RNI0T4D_LC_129/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI5NV6S1[1]_LC_50/in3" to pin "PCH_PWRGD.count_RNI5NV6S1[1]_LC_50/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_10_c_RNI84N7_LC_113/in1" to pin "PCH_PWRGD.un2_count_1_cry_10_c_RNI84N7_LC_113/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_11_c_RNI96O7_LC_114/in1" to pin "PCH_PWRGD.un2_count_1_cry_11_c_RNI96O7_LC_114/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_12_c_RNIA8P7_LC_116/in1" to pin "PCH_PWRGD.un2_count_1_cry_12_c_RNIA8P7_LC_116/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_13_c_RNIBAQ7_LC_117/in1" to pin "PCH_PWRGD.un2_count_1_cry_13_c_RNIBAQ7_LC_117/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_14_c_RNICCR7_LC_118/in0" to pin "PCH_PWRGD.un2_count_1_cry_14_c_RNICCR7_LC_118/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI5NV6S1[1]_LC_50/in1" to pin "PCH_PWRGD.count_RNI5NV6S1[1]_LC_50/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_RNIKBRH1[0]_LC_97/in1" to pin "PCH_PWRGD.curr_state_RNIKBRH1[0]_LC_97/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_7_1_0_.m3_LC_92/in0" to pin "PCH_PWRGD.curr_state_7_1_0_.m3_LC_92/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI0LCI6_0[5]_LC_45/in2" to pin "PCH_PWRGD.count_RNI0LCI6_0[5]_LC_45/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_RNIO5913[1]_LC_101/in2" to pin "PCH_PWRGD.curr_state_RNIO5913[1]_LC_101/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_RNILCRH1[1]_LC_98/in2" to pin "PCH_PWRGD.curr_state_RNILCRH1[1]_LC_98/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_RNIO5913[1]_LC_101/in3" to pin "PCH_PWRGD.curr_state_RNIO5913[1]_LC_101/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIMS4R2[1]_LC_184/in1" to pin "VPP_VDDQ.count_2_RNIMS4R2[1]_LC_184/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI[0]_LC_194/in3" to pin "VPP_VDDQ.count_2_RNI[0]_LC_194/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI[1]_LC_195/in1" to pin "VPP_VDDQ.count_2_RNI[1]_LC_195/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIMS4R2[1]_LC_184/in2" to pin "VPP_VDDQ.count_2_RNIMS4R2[1]_LC_184/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_251/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_251/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_2_c_RNIF297_LC_253/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_2_c_RNIF297_LC_253/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIMS4R2[1]_LC_184/in0" to pin "VPP_VDDQ.count_2_RNIMS4R2[1]_LC_184/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNIG4A7_LC_255/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNIG4A7_LC_255/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_257/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_257/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_LC_259/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_LC_259/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI1JA31_0[7]_LC_173/in2" to pin "VPP_VDDQ.count_2_RNI1JA31_0[7]_LC_173/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNIJAD7_LC_261/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNIJAD7_LC_261/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_7_c_RNIKCE7_LC_263/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_7_c_RNIKCE7_LC_263/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI1JA31_0[7]_LC_173/in1" to pin "VPP_VDDQ.count_2_RNI1JA31_0[7]_LC_173/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_8_c_RNILEF7_LC_265/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_8_c_RNILEF7_LC_265/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI1JA31_1[7]_LC_174/in0" to pin "VPP_VDDQ.count_2_RNI1JA31_1[7]_LC_174/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_9_c_RNIMGG7_LC_267/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_9_c_RNIMGG7_LC_267/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI1JA31_1[7]_LC_174/in1" to pin "VPP_VDDQ.count_2_RNI1JA31_1[7]_LC_174/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_10_c_RNIUDMD_LC_241/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_10_c_RNIUDMD_LC_241/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI1JA31_1[7]_LC_174/in3" to pin "VPP_VDDQ.count_2_RNI1JA31_1[7]_LC_174/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_11_c_RNIVFND_LC_243/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_11_c_RNIVFND_LC_243/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_12_c_RNI0IOD_LC_245/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_12_c_RNI0IOD_LC_245/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_13_c_RNI1KPD_LC_247/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_13_c_RNI1KPD_LC_247/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_14_c_RNI2MQD_LC_249/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_14_c_RNI2MQD_LC_249/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_220/in0" to pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_220/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_220/in1" to pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_220/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0_.m6_LC_221/in1" to pin "VPP_VDDQ.curr_state_2_4_1_0_.m6_LC_221/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_e_0_RNIJCTQ_0[1]_LC_224/in2" to pin "VPP_VDDQ.curr_state_2_e_0_RNIJCTQ_0[1]_LC_224/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_e_0_RNIJCTQ_0[1]_LC_224/in1" to pin "VPP_VDDQ.curr_state_2_e_0_RNIJCTQ_0[1]_LC_224/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI1N1E5[9]_LC_44/in1" to pin "PCH_PWRGD.count_RNI1N1E5[9]_LC_44/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_7_1_0_.m4_LC_86/in0" to pin "PCH_PWRGD.curr_state_7_1_0_.m4_LC_86/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_7_1_0_.m4_LC_86/in2" to pin "PCH_PWRGD.curr_state_7_1_0_.m4_LC_86/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_7_1_0_.m6_LC_87/in2" to pin "PCH_PWRGD.curr_state_7_1_0_.m6_LC_87/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIATPBU[1]_LC_49/in0" to pin "PCH_PWRGD.count_RNIATPBU[1]_LC_49/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIA3IM5[10]_LC_48/in1" to pin "PCH_PWRGD.count_RNIA3IM5[10]_LC_48/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_10_c_RNI84N7_LC_105/in1" to pin "PCH_PWRGD.un2_count_1_cry_10_c_RNI84N7_LC_105/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_11_c_RNI96O7_LC_107/in1" to pin "PCH_PWRGD.un2_count_1_cry_11_c_RNI96O7_LC_107/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIATPBU[1]_LC_49/in1" to pin "PCH_PWRGD.count_RNIATPBU[1]_LC_49/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_12_c_RNIA8P7_LC_108/in1" to pin "PCH_PWRGD.un2_count_1_cry_12_c_RNIA8P7_LC_108/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_13_c_RNIBAQ7_LC_109/in1" to pin "PCH_PWRGD.un2_count_1_cry_13_c_RNIBAQ7_LC_109/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_14_c_RNICCR7_LC_110/in0" to pin "PCH_PWRGD.un2_count_1_cry_14_c_RNICCR7_LC_110/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_10_c_RNIKTA71_LC_106/in2" to pin "PCH_PWRGD.un2_count_1_cry_10_c_RNIKTA71_LC_106/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI872P6[1]_LC_46/in1" to pin "PCH_PWRGD.count_RNI872P6[1]_LC_46/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIF5D5[1]_LC_51/in0" to pin "PCH_PWRGD.count_RNIF5D5[1]_LC_51/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_1_c_RNIOCSC_LC_111/in1" to pin "PCH_PWRGD.un2_count_1_cry_1_c_RNIOCSC_LC_111/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_2_c_RNIPETC_LC_113/in1" to pin "PCH_PWRGD.un2_count_1_cry_2_c_RNIPETC_LC_113/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_3_c_RNIQGUC_LC_114/in1" to pin "PCH_PWRGD.un2_count_1_cry_3_c_RNIQGUC_LC_114/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_4_c_RNIRIVC_LC_115/in1" to pin "PCH_PWRGD.un2_count_1_cry_4_c_RNIRIVC_LC_115/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_5_c_RNISK0D_LC_116/in1" to pin "PCH_PWRGD.un2_count_1_cry_5_c_RNISK0D_LC_116/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_6_c_RNITM1D_LC_117/in1" to pin "PCH_PWRGD.un2_count_1_cry_6_c_RNITM1D_LC_117/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_7_c_RNIUO2D_LC_118/in1" to pin "PCH_PWRGD.un2_count_1_cry_7_c_RNIUO2D_LC_118/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_8_c_RNIVQ3D_LC_119/in3" to pin "PCH_PWRGD.un2_count_1_cry_8_c_RNIVQ3D_LC_119/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_10_c_RNIKTA71_LC_106/in0" to pin "PCH_PWRGD.un2_count_1_cry_10_c_RNIKTA71_LC_106/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIATPBU[1]_LC_49/in3" to pin "PCH_PWRGD.count_RNIATPBU[1]_LC_49/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNI1N1E5[9]_LC_44/in3" to pin "PCH_PWRGD.count_RNI1N1E5[9]_LC_44/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.count_RNIPIT05[0]_LC_63/in3" to pin "PCH_PWRGD.count_RNIPIT05[0]_LC_63/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.un2_count_1_cry_10_c_RNIKTA71_LC_106/in3" to pin "PCH_PWRGD.un2_count_1_cry_10_c_RNIKTA71_LC_106/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_e_0_RNIS04T1[0]_LC_100/in2" to pin "PCH_PWRGD.curr_state_e_0_RNIS04T1[0]_LC_100/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_e_0_RNIDTNO4[0]_LC_94/in2" to pin "PCH_PWRGD.curr_state_e_0_RNIDTNO4[0]_LC_94/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_e_0_RNIDTNO4[0]_LC_94/in0" to pin "PCH_PWRGD.curr_state_e_0_RNIDTNO4[0]_LC_94/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "PCH_PWRGD.curr_state_e_0_RNIS04T1[0]_LC_100/in1" to pin "PCH_PWRGD.curr_state_e_0_RNIS04T1[0]_LC_100/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI82TR[1]_LC_165/in3" to pin "VPP_VDDQ.count_2_RNI82TR[1]_LC_165/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI82TR_1[1]_LC_166/in2" to pin "VPP_VDDQ.count_2_RNI82TR_1[1]_LC_166/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI71TR[0]_LC_163/in1" to pin "VPP_VDDQ.count_2_RNI71TR[0]_LC_163/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI82TR_0[1]_LC_164/in3" to pin "VPP_VDDQ.count_2_RNI82TR_0[1]_LC_164/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNILHSU_0[1]_LC_172/in1" to pin "VPP_VDDQ.count_2_RNILHSU_0[1]_LC_172/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_215/in0" to pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_215/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_215/in1" to pin "VPP_VDDQ.curr_state_2_4_1_0_.m4_LC_215/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0_.m6_LC_217/in1" to pin "VPP_VDDQ.curr_state_2_4_1_0_.m6_LC_217/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI[5]_LC_191/in2" to pin "VPP_VDDQ.count_2_RNI[5]_LC_191/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI3MB31[8]_LC_161/in1" to pin "VPP_VDDQ.count_2_RNI3MB31[8]_LC_161/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI[5]_LC_191/in3" to pin "VPP_VDDQ.count_2_RNI[5]_LC_191/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_8_c_RNILEF7_LC_261/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_8_c_RNILEF7_LC_261/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_8_THRU_LUT4_0_LC_300/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_8_THRU_LUT4_0_LC_300/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_9_c_RNIMGG7_LC_262/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_9_c_RNIMGG7_LC_262/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_9_THRU_LUT4_0_LC_301/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_9_THRU_LUT4_0_LC_301/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_10_c_RNIUDMD_LC_243/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_10_c_RNIUDMD_LC_243/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_10_THRU_LUT4_0_LC_291/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_10_THRU_LUT4_0_LC_291/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIUPFQ6[1]_LC_181/in2" to pin "VPP_VDDQ.count_2_RNIUPFQ6[1]_LC_181/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_11_c_RNIVFND_LC_244/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_11_c_RNIVFND_LC_244/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_11_THRU_LUT4_0_LC_292/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_11_THRU_LUT4_0_LC_292/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_12_c_RNI0IOD_LC_245/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_12_c_RNI0IOD_LC_245/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_12_THRU_LUT4_0_LC_293/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_12_THRU_LUT4_0_LC_293/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_13_c_RNI1KPD_LC_246/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_13_c_RNI1KPD_LC_246/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_13_THRU_LUT4_0_LC_294/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_13_THRU_LUT4_0_LC_294/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_14_c_RNI2MQD_LC_247/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_14_c_RNI2MQD_LC_247/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI71TR[0]_LC_163/in2" to pin "VPP_VDDQ.count_2_RNI71TR[0]_LC_163/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIUPFQ6[1]_LC_181/in1" to pin "VPP_VDDQ.count_2_RNIUPFQ6[1]_LC_181/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIB5TR[4]_LC_167/in1" to pin "VPP_VDDQ.count_2_RNIB5TR[4]_LC_167/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_250/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_250/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI[5]_LC_191/in1" to pin "VPP_VDDQ.count_2_RNI[5]_LC_191/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_254/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_254/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_4_cZ0_THRU_LUT4_0_LC_298/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_4_cZ0_THRU_LUT4_0_LC_298/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_LC_256/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_LC_256/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNI1JA31_LC_258/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNI1JA31_LC_258/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_250/in3" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_250/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_250/in2" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_250/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNILHSU_0[1]_LC_172/in3" to pin "VPP_VDDQ.count_2_RNILHSU_0[1]_LC_172/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIUPFQ6[1]_LC_181/in0" to pin "VPP_VDDQ.count_2_RNIUPFQ6[1]_LC_181/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIN3531[2]_LC_174/in1" to pin "VPP_VDDQ.count_2_RNIN3531[2]_LC_174/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_2_c_RNIF297_LC_249/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_2_c_RNIF297_LC_249/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_2_cZ0_THRU_LUT4_0_LC_297/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_2_cZ0_THRU_LUT4_0_LC_297/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI82TR[1]_LC_165/in2" to pin "VPP_VDDQ.count_2_RNI82TR[1]_LC_165/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI82TR_1[1]_LC_166/in1" to pin "VPP_VDDQ.count_2_RNI82TR_1[1]_LC_166/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI[1]_LC_186/in0" to pin "VPP_VDDQ.count_2_RNI[1]_LC_186/lcout" to break the combinatorial loop
 
 Design Statistics after Packing
-    Number of LUTs      	:	299
-    Number of DFFs      	:	111
+    Number of LUTs      	:	303
+    Number of DFFs      	:	110
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	99
+    Number of Carrys    	:	98
 
 Device Utilization Summary after Packing
     Sequential LogicCells
-        LUT and DFF      	:	57
+        LUT and DFF      	:	56
         LUT, DFF and CARRY	:	54
     Combinational LogicCells
-        Only LUT         	:	156
+        Only LUT         	:	162
         CARRY Only       	:	13
-        LUT with CARRY   	:	32
-    LogicCells                  :	312/1280
+        LUT with CARRY   	:	31
+    LogicCells                  :	316/1280
     PLBs                        :	44/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
     PLLs                        :	0/0
 
 
-I2088: Phase 3, elapsed time : 0.4 (sec)
+I2088: Phase 3, elapsed time : 0.6 (sec)
 
 Phase 4
-I2088: Phase 4, elapsed time : 0.1 (sec)
+I2088: Phase 4, elapsed time : 0.2 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.7 (sec)
+I2088: Phase 5, elapsed time : 0.8 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 15.6 (sec)
+I2088: Phase 6, elapsed time : 20.3 (sec)
 
 Final Design Statistics
-    Number of LUTs      	:	299
-    Number of DFFs      	:	111
+    Number of LUTs      	:	303
+    Number of DFFs      	:	110
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	99
+    Number of Carrys    	:	98
     Number of RAMs      	:	0
     Number of ROMs      	:	0
     Number of IOs       	:	59
@@ -178,8 +196,8 @@ Final Design Statistics
     Number of PLLs      	:	0
 
 Device Utilization Summary
-    LogicCells                  :	312/1280
-    PLBs                        :	61/160
+    LogicCells                  :	316/1280
+    PLBs                        :	66/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
     PLLs                        :	0/0
@@ -198,7 +216,7 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 1
-Clock: TOP|FPGA_OSC | Frequency: 13.00 MHz | Target: 41.03 MHz
+Clock: TOP|FPGA_OSC | Frequency: 13.99 MHz | Target: 45.50 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -206,5 +224,5 @@ Clock: TOP|FPGA_OSC | Frequency: 13.00 MHz | Target: 41.03 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 17.1 sec.
+I2076: Placer run-time: 22.3 sec.
 
