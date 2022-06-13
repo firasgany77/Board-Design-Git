@@ -439,8 +439,7 @@ BEGIN
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
  
-    -- disable PMBUS for VCCIN Controller:
-	--VCCIN_VR_PE <= '1'; 
+	VCCIN_VR_PE <= '1'; 
 	--VCCIN_EN <= '0';
     --VCCINAUX_EN <= '1'; 
     --VCCINAUX_VR_PE <= '1';

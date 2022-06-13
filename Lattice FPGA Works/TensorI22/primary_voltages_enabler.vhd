@@ -37,12 +37,12 @@ V1P8A_EN <= '1' WHEN (V33A_OK = '1') -- VCC_PRIM_3.3 ramps before VCC_PRIM_1.8 (
 ELSE
 '0';
 
-VCCINAUX_EN <= '1' WHEN (V1P8A_OK = '1')        -- when VR at regulation, V1P8A_OK is at Hi-Z, and the FPGA's PU asserts the logic '1' 
+--VCCINAUX_EN <= '1' WHEN (V1P8A_OK = '1')        -- when VR at regulation, V1P8A_OK is at Hi-Z, and the FPGA's PU asserts the logic '1' 
                                                 -- 1.8 V Primary rail ramp in advance of the VCCIN_AUX. VCCIN_AUX can ramp with V1.8A for fixed 1.8V VCCIN_AUX design.
                                                 -- 3.3 V Primary rail ramp in advance of the VCCIN_AUX 
                                                 -- 382.6 us
-ELSE
-'0'; 
+--ELSE
+--'0'; 
 
 V5A_EN <= '1' WHEN (V33A_OK = '1') -- Vbus Vbus ramp after VCC_PRIM 3.3V (reached 95% of their final value (p.460)
 ELSE
