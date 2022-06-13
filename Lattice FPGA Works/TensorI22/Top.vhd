@@ -516,7 +516,7 @@ BEGIN
 		--V5A_OK => V5A_OK,
 		--V1P8A_OK => V1P8A_OK,
 		--SLP_SUSn => slp_susn_signal, 
-		--clk_100Khz => clk_100Khz_signal,
+		-- clk_100Khz => clk_100Khz_signal,
 		--RSMRSTn => RSMRSTn_signal,
 		--rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
 
