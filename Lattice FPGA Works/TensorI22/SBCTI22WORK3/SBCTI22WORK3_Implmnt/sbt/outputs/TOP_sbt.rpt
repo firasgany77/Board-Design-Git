@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 13 2022 17:58:40
+* File Generated:     Jun 13 2022 19:18:01
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -40,7 +40,7 @@ Logic Resource Utilization:
     Total Logic Cells: 316/1280
         Combinational Logic Cells: 206      out of   1280      16.0938%
         Sequential Logic Cells:    110      out of   1280      8.59375%
-        Logic Tiles:               63       out of   160       39.375%
+        Logic Tiles:               66       out of   160       41.25%
     Registers: 
         Logic Registers:           110      out of   1280      8.59375%
         IO Registers:              0        out of   560       0
@@ -111,8 +111,8 @@ Router Summary:
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     2246 out of  28666      7.83507%
-                          Span 4      395 out of   6944      5.68836%
-                         Span 12       29 out of   1440      2.01389%
-      Vertical Inter-LUT Connect       61 out of   1120      5.44643%
+              Local line of tile     2276 out of  28666      7.93972%
+                          Span 4      362 out of   6944      5.21313%
+                         Span 12       42 out of   1440      2.91667%
+      Vertical Inter-LUT Connect       57 out of   1120      5.08929%
 

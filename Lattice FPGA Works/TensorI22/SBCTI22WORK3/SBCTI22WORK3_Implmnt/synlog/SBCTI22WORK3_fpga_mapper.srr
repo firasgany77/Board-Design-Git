@@ -1,4 +1,4 @@
-# Mon Jun 13 17:58:01 2022
+# Mon Jun 13 19:17:31 2022
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -1056,12 +1056,12 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 135MB peak: 137MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -5.11ns		 270 /       109
-   2		0h:00m:00s		    -5.11ns		 269 /       109
+   1		0h:00m:01s		    -5.11ns		 270 /       109
+   2		0h:00m:01s		    -5.11ns		 269 /       109
    3		0h:00m:01s		    -2.62ns		 269 /       109
 @N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":119:4:119:19|Replicating instance PCH_PWRGD.count_0_sqmuxa_0 (in view: work.TOP(bdf_type)) with 17 loads 1 time to improve timing.
 @N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":40:2:40:3|Replicating instance RSMRST_PWRGD.RSMRSTn_1 (in view: work.TOP(bdf_type)) with 8 loads 1 time to improve timing.
@@ -1081,8 +1081,185 @@ Added 4 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vccin_en.vhd":30:22:30:151|Unbuffered I/O VCCIN_PWRGD.un10_output which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
-@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_0_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_2_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_2_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_3_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_3_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_15_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_15_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_15_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_16_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_16_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_16_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_17_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_17_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_17_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_18_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_18_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_18_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_19_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_19_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_19_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_20_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_20_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_20_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_21_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_21_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_21_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_22_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_22_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_22_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_23_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_23_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_23_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_24_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_24_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_24_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_25_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_25_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_25_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_26_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_26_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_26_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_27_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_27_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_27_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_28_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_28_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_28_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_29_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_29_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_29_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_30_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_30_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_30_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_0_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_14_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":97:2:97:3|Unbuffered I/O PCH_PWRGD_PCH_PWRGD.un1_count_1_sqmuxa_0_0_a3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":71:24:71:62|Unbuffered I/O PCH_PWRGD.un2_vccin_ok_1 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":119:4:119:19|Unbuffered I/O PCH_PWRGD.count_0_sqmuxa_0_1 which could cause problems in P&R 
@@ -1249,7 +1426,7 @@ Added 4 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":426:20:426:45|Unbuffered I/O VPP_VDDQ.VCCST_EN which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
-@W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_2_c which could cause problems in P&R 
@@ -1428,7 +1605,7 @@ Added 4 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_12_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_14_c which could cause problems in P&R 
-@W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_2_c which could cause problems in P&R 
@@ -1611,8 +1788,185 @@ Added 4 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vccin_en.vhd":30:22:30:151|Unbuffered I/O VCCIN_PWRGD.un10_output which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
-@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_0_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":58:15:58:23|Unbuffered I/O RSMRST_PWRGD.un1_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_2_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_2_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_3_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_3_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_5_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":114:15:114:23|Unbuffered I/O PCH_PWRGD.un2_count_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_8_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_9_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_10_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_11_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_12_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_13_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_14_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_15_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_15_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_15_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_16_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_16_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_16_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_17_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_17_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_17_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_18_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_18_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_18_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_19_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_19_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_19_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_20_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_20_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_20_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_21_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_21_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_21_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_22_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_22_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_22_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_23_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_23_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_23_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_24_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_24_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_24_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_25_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_25_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_25_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_26_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_26_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_26_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_27_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_27_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_27_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_28_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_28_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_28_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_29_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_29_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_29_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_30_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_30_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":48:15:48:25|Unbuffered I/O COUNTER.counter_1_cry_30_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_1_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_4_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_6_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_7_s which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":115:20:115:30|Unbuffered I/O VPP_VDDQ.un1_count_2_1_cry_14_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_0_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_1_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_2_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_3_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_4_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_5_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_6_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_7_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_8_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_9_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_10_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_11_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_12_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_13_c which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_14_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":97:2:97:3|Unbuffered I/O PCH_PWRGD_PCH_PWRGD.un1_count_1_sqmuxa_0_0_a3 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":71:24:71:62|Unbuffered I/O PCH_PWRGD.un2_vccin_ok_1 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":119:4:119:19|Unbuffered I/O PCH_PWRGD.count_0_sqmuxa_0_1 which could cause problems in P&R 
@@ -1779,7 +2133,7 @@ Added 4 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":426:20:426:45|Unbuffered I/O VPP_VDDQ.VCCST_EN which could cause problems in P&R 
 @W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O true which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
-@W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_2_c which could cause problems in P&R 
@@ -1958,7 +2312,7 @@ Added 4 LUTs via timing driven replication
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_12_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":78:15:78:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_14_c which could cause problems in P&R 
-@W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2020.12\synpbase\lib\vhd\std.vhd":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_1_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_2_c which could cause problems in P&R 
@@ -2180,7 +2534,7 @@ L-2016.09L+ice40
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 139MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 139MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 136MB peak: 139MB)
 
 Warning: Found 46 combinational loops!
 @W: BN137 :|Found combinational loop during mapping at net VPP_VDDQ.count_2[15]
@@ -3462,7 +3816,7 @@ End of loops
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Jun 13 17:58:03 2022
+# Timing Report written on Mon Jun 13 19:17:33 2022
 #
 
 
@@ -3646,10 +4000,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 139MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 136MB peak: 139MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 139MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 136MB peak: 139MB)
 
 ---------------------------------------
 Resource Usage Report for TOP 
@@ -3680,9 +4034,9 @@ Distribution of All Consumed Luts 265 = 265
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 28MB peak: 139MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 28MB peak: 139MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Jun 13 17:58:03 2022
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon Jun 13 19:17:33 2022
 
 ###########################################################]
