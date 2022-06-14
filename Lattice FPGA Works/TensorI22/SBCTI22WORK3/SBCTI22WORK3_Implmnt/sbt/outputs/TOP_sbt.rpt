@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 14 2022 09:26:12
+* File Generated:     Jun 14 2022 10:23:47
 
 * Purpose:            General info of design implementation
 
@@ -27,27 +27,27 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  109
-    LUTs:                 252
+    FFs:                  71
+    LUTs:                 124
     RAMs:                 0
-    IOBs:                 32
+    IOBs:                 31
     GBs:                  0
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 265/1280
-        Combinational Logic Cells: 156      out of   1280      12.1875%
-        Sequential Logic Cells:    109      out of   1280      8.51563%
-        Logic Tiles:               51       out of   160       31.875%
+    Total Logic Cells: 135/1280
+        Combinational Logic Cells: 64       out of   1280      5%
+        Sequential Logic Cells:    71       out of   1280      5.54688%
+        Logic Tiles:               25       out of   160       15.625%
     Registers: 
-        Logic Registers:           109      out of   1280      8.51563%
+        Logic Registers:           71       out of   1280      5.54688%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                13       out of   67        19.403%
+        Input Pins:                12       out of   67        17.9104%
         Output Pins:               19       out of   67        28.3582%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                0        out of   8         0%
@@ -71,7 +71,6 @@ Detailed I/O Info:
     A40         Input      SB_LVCMOS    No       0        Simple Input   SLP_SUSn                  
     B1          Input      SB_LVCMOS    Yes      3        Simple Input   VPP_OK                    
     B2          Input      SB_LVCMOS    Yes      3        Simple Input   V1P8A_OK                  
-    B5          Input      SB_LVCMOS    Yes      3        Simple Input   VR_READY_VCCIN            
     B8          Input      SB_LVCMOS    Yes      3        Simple Input   V5A_OK                    
     B12         Input      SB_LVCMOS    No       2        Simple Input   FPGA_OSC                  
     B19         Input      SB_LVCMOS    No       1        Simple Input   VCCST_CPU_OK              
@@ -111,8 +110,8 @@ Router Summary:
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     1855 out of  28666      6.47108%
-                          Span 4      243 out of   6944      3.49942%
+              Local line of tile      930 out of  28666      3.24426%
+                          Span 4      140 out of   6944      2.01613%
                          Span 12       27 out of   1440      1.875%
-      Vertical Inter-LUT Connect       52 out of   1120      4.64286%
+      Vertical Inter-LUT Connect       13 out of   1120      1.16071%
 

@@ -1,1 +1,1 @@
-CKID0001:@|S:FPGA_OSC@|E:PCH_PWRGD.delayed_vccin_ok@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:FPGA_OSC@|E:RSMRST_PWRGD.count[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 

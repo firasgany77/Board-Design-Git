@@ -1,3 +1,8 @@
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":56:2:56:10|Signal pch_pwrok is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":55:2:55:12|Signal vccst_pwrgd is floating; a simulation mismatch is possible.
+@W: CL169 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Pruning unused register count_6(15 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Pruning unused register delayed_vccin_ok_6. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Pruning unused register curr_state_8(1 downto 0). Make sure that there are no unused intermediate registers.
 @W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":96:1:96:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":102:9:102:18|Referenced variable vddq_pwrgd is not in sensitivity list.
 @W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":111:9:111:15|Referenced variable count_2 is not in sensitivity list.

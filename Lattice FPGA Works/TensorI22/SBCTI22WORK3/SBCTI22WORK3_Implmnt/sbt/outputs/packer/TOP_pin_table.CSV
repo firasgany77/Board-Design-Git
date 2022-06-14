@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 14 2022 09:26:12
+* File Generated:     Jun 14 2022 10:23:47
 
 * Purpose:            Detailed IO and package pin info
 
@@ -71,7 +71,7 @@ B1, PIO, VPP_OK, Input, , SB_LVCMOS, Pull Up, Simple Input, leftBank
 B2, PIO, V1P8A_OK, Input, , SB_LVCMOS, Pull Up, Simple Input, leftBank
 B3, PIO, V5S_ENn, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
 B4, PIO, DSW_PWROK, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
-B5, PIO, VR_READY_VCCIN, Input, , SB_LVCMOS, Pull Up, Simple Input, leftBank
+B5, PIO, VR_READY_VCCIN,  , , SB_LVCMOS, Pull Up, , leftBank
 B6, VCCIO_3, not used, , , , , , leftBank
 B7, PIO, HDA_SDO_ATP, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
 B8, PIO, V5A_OK, Input, , SB_LVCMOS, Pull Up, Simple Input, leftBank

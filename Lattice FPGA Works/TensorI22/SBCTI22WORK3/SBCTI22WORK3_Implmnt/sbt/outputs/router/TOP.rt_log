@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:45:10
 
-* File Generated:     Jun 14 2022 09:26:12
+* File Generated:     Jun 14 2022 10:23:47
 
 * Purpose:            Router runtime info
 
@@ -17,68 +17,13 @@
 Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc --outdir C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\router --sdf_file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf --pin_permutation 
 I1203: Reading Design TOP
 I1202: Reading Architecture of device iCE40LP1K
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0__m6_LC_9_12_4/in0" to pin "VPP_VDDQ.curr_state_2_4_1_0__m6_LC_9_12_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_e_0_RNI_1_LC_9_13_3/in0" to pin "VPP_VDDQ.curr_state_2_e_0_RNI_1_LC_9_13_3/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_11_14_6/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_11_14_6/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI_5_LC_11_13_6/in2" to pin "VPP_VDDQ.count_2_RNI_5_LC_11_13_6/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI_5_LC_11_13_6/in3" to pin "VPP_VDDQ.count_2_RNI_5_LC_11_13_6/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI71TR_0_LC_11_12_5/in3" to pin "VPP_VDDQ.count_2_RNI71TR_0_LC_11_12_5/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI_0_2_LC_9_15_4/in2" to pin "VPP_VDDQ.count_2_RNI_0_2_LC_9_15_4/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIUPFQ6_1_LC_11_13_7/in2" to pin "VPP_VDDQ.count_2_RNIUPFQ6_1_LC_11_13_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_14_c_RNI2MQD_LC_9_14_0/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_14_c_RNI2MQD_LC_9_14_0/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI_0_2_LC_9_15_4/in1" to pin "VPP_VDDQ.count_2_RNI_0_2_LC_9_15_4/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_13_c_RNI1KPD_LC_8_16_4/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_13_c_RNI1KPD_LC_8_16_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_12_c_RNI0IOD_LC_8_16_1/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_12_c_RNI0IOD_LC_8_16_1/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_11_c_RNIVFND_LC_8_16_0/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_11_c_RNIVFND_LC_8_16_0/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_10_c_RNIUDMD_LC_7_16_5/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_10_c_RNIUDMD_LC_7_16_5/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_9_c_RNIMGG7_LC_9_16_2/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_9_c_RNIMGG7_LC_9_16_2/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_8_c_RNILEF7_LC_9_16_0/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_8_c_RNILEF7_LC_9_16_0/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI_5_LC_11_13_6/in1" to pin "VPP_VDDQ.count_2_RNI_5_LC_11_13_6/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_7_c_RNIKCE7_LC_9_14_1/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_7_c_RNIKCE7_LC_9_14_1/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNILHSU_0_1_LC_8_12_1/in0" to pin "VPP_VDDQ.count_2_RNILHSU_0_1_LC_8_12_1/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_11_14_6/in3" to pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_11_14_6/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_9_13_4/in3" to pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_9_13_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_2_c_RNIF297_LC_9_13_0/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_2_c_RNIF297_LC_9_13_0/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_2_THRU_LUT4_0_LC_8_14_2/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_2_THRU_LUT4_0_LC_8_14_2/carryout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0__m6_LC_9_12_4/in2" to pin "VPP_VDDQ.curr_state_2_4_1_0__m6_LC_9_12_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNI1JA31_0_LC_8_15_7/in2" to pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNI1JA31_0_LC_8_15_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNIR9731_LC_8_14_3/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNIR9731_LC_8_14_3/carryout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNIR9731_0_LC_8_13_0/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNIR9731_0_LC_8_13_0/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_8_12_0/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_8_12_0/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIUPFQ6_1_LC_11_13_7/in1" to pin "VPP_VDDQ.count_2_RNIUPFQ6_1_LC_11_13_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_1_c_LC_8_14_0/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_1_c_LC_8_14_0/carryout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNI82TR_1_1_LC_8_12_4/in0" to pin "VPP_VDDQ.count_2_RNI82TR_1_1_LC_8_12_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_8_12_0/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_8_12_0/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_LC_8_14_5/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_LC_8_14_5/carryout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_0_LC_7_14_4/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_5_c_RNIVF931_0_LC_7_14_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_8_12_0/in2" to pin "VPP_VDDQ.un1_count_2_1_cry_3_c_RNI_LC_8_12_0/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNI1JA31_LC_8_14_6/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_6_c_RNI1JA31_LC_8_14_6/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_9_13_4/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_9_13_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_11_14_6/in1" to pin "VPP_VDDQ.un1_count_2_1_cry_1_c_RNIE087_LC_11_14_6/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNIUPFQ6_1_LC_11_13_7/in0" to pin "VPP_VDDQ.count_2_RNIUPFQ6_1_LC_11_13_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.count_2_RNITC831_5_LC_9_13_5/in2" to pin "VPP_VDDQ.count_2_RNITC831_5_LC_9_13_5/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0__m4_LC_9_12_1/in0" to pin "VPP_VDDQ.curr_state_2_4_1_0__m4_LC_9_12_1/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_9_13_4/in0" to pin "VPP_VDDQ.un1_count_2_1_cry_4_c_RNIH6B7_LC_9_13_4/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "VPP_VDDQ.curr_state_2_4_1_0__m6_LC_9_12_4/in1" to pin "VPP_VDDQ.curr_state_2_4_1_0__m6_LC_9_12_4/ltout" to break the combinatorial loop
 I1209: Started routing
-I1223: Total Nets : 376 
-I1212: Iteration  1 :    93 unrouted : 0 seconds
-I1212: Iteration  2 :    24 unrouted : 0 seconds
-I1212: Iteration  3 :    12 unrouted : 0 seconds
-I1212: Iteration  4 :     6 unrouted : 0 seconds
-I1212: Iteration  5 :     6 unrouted : 0 seconds
-I1212: Iteration  6 :     6 unrouted : 0 seconds
-I1212: Iteration  7 :     6 unrouted : 0 seconds
-I1212: Iteration  8 :     6 unrouted : 0 seconds
-I1212: Iteration  9 :     6 unrouted : 1 seconds
-I1212: Iteration 10 :     6 unrouted : 0 seconds
-I1212: Iteration 11 :     6 unrouted : 0 seconds
-I1212: Iteration 12 :     6 unrouted : 0 seconds
-I1212: Iteration 13 :     6 unrouted : 0 seconds
-I1212: Iteration 14 :     4 unrouted : 0 seconds
-I1212: Iteration 15 :     4 unrouted : 0 seconds
-I1212: Iteration 16 :     2 unrouted : 0 seconds
-I1212: Iteration 17 :     0 unrouted : 0 seconds
+I1223: Total Nets : 203 
+I1212: Iteration  1 :    64 unrouted : 0 seconds
+I1212: Iteration  2 :    25 unrouted : 0 seconds
+I1212: Iteration  3 :     8 unrouted : 0 seconds
+I1212: Iteration  4 :     5 unrouted : 0 seconds
+I1212: Iteration  5 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design TOP
