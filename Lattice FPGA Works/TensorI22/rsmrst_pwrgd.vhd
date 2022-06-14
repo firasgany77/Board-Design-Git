@@ -33,7 +33,7 @@ BEGIN
 		
 	-- DSW_PWROK = '0' -> RSMRST = '0' (Power-Loss Early De-Assertion)
     -- +3V3DSW = '0' -> V33A_OK = '0' -> rsmrst_pwrgd = '0' -> RSMRSTn = '0'
- 	-- after all these voltages are ready (check p.461/507)
+ 	-- after all these voltages are ready (check p.461/507) --
 
 	PROCESS (clk_100Khz)
 	BEGIN
