@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:45:10
 
-* File Generated:     Jun 14 2022 13:35:54
+* File Generated:     Jun 14 2022 14:32:38
 
 * Purpose:            Router runtime info
 
@@ -18,24 +18,20 @@ Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\l
 I1203: Reading Design TOP
 I1202: Reading Architecture of device iCE40LP1K
 I1209: Started routing
-I1223: Total Nets : 253 
-I1212: Iteration  1 :    74 unrouted : 0 seconds
-I1212: Iteration  2 :    30 unrouted : 0 seconds
-I1212: Iteration  3 :    14 unrouted : 0 seconds
-I1212: Iteration  4 :    13 unrouted : 0 seconds
-I1212: Iteration  5 :     2 unrouted : 0 seconds
-I1212: Iteration  6 :     2 unrouted : 0 seconds
-I1212: Iteration  7 :     2 unrouted : 0 seconds
-I1212: Iteration  8 :     2 unrouted : 0 seconds
-I1212: Iteration  9 :     2 unrouted : 0 seconds
-I1212: Iteration 10 :     2 unrouted : 0 seconds
-I1212: Iteration 11 :     2 unrouted : 0 seconds
-I1212: Iteration 12 :     2 unrouted : 0 seconds
-I1212: Iteration 13 :     2 unrouted : 0 seconds
-I1212: Iteration 14 :     2 unrouted : 0 seconds
-I1212: Iteration 15 :     2 unrouted : 0 seconds
-I1212: Iteration 16 :     2 unrouted : 0 seconds
-I1212: Iteration 17 :     0 unrouted : 0 seconds
+I1223: Total Nets : 249 
+I1212: Iteration  1 :    80 unrouted : 1 seconds
+I1212: Iteration  2 :    36 unrouted : 0 seconds
+I1212: Iteration  3 :    15 unrouted : 0 seconds
+I1212: Iteration  4 :    12 unrouted : 0 seconds
+I1212: Iteration  5 :     4 unrouted : 0 seconds
+I1212: Iteration  6 :     4 unrouted : 0 seconds
+I1212: Iteration  7 :     4 unrouted : 0 seconds
+I1212: Iteration  8 :     4 unrouted : 0 seconds
+I1212: Iteration  9 :     4 unrouted : 0 seconds
+I1212: Iteration 10 :     4 unrouted : 0 seconds
+I1212: Iteration 11 :     4 unrouted : 0 seconds
+I1212: Iteration 12 :     3 unrouted : 0 seconds
+I1212: Iteration 13 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design TOP

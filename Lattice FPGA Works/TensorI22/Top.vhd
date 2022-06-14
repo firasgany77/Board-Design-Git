@@ -439,9 +439,9 @@ BEGIN
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
  
-	VCCIN_VR_PE <= '1'; 
+	--VCCIN_VR_PE <= '1'; 
 	--VCCIN_EN <= '0';
-    VCCINAUX_VR_PE <= '1';
+       --VCCINAUX_VR_PE <= '1';
 
 	--POWERLED : powerled_block 
 	--GENERIC MAP(
