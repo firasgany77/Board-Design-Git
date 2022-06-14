@@ -18,7 +18,7 @@ The file contains the job information from compiler to be displayed as part of t
   <report_link name="more"><data>C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synlog\report\SBCTI22WORK3_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>16</data>
+  <data>9</data>
   <report_link name="more"><data>C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synlog\report\SBCTI22WORK3_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
@@ -35,7 +35,7 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1655148304</data>
+  <data type="timestamp">1655187949</data>
   </info>
 			</job_info>
 </job_run_status>

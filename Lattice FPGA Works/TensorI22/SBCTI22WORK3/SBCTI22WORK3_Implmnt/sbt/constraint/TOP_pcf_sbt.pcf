@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Jun 8 2022 18:31:45
+# File Generated:     Jun 14 2022 08:54:56
 
 # Family & Device:    iCE40LP1K
 
@@ -49,7 +49,7 @@ set_io VCCST_PWRGD A14
 set_io FPGA_OSC B12
 set_io RSMRSTn B35
 set_io V5A_OK B8 -pullup yes
-set_io VR_READY_VCCIN B5
+set_io VR_READY_VCCIN B5 -pullup yes
 set_io GPIO_FPGA_SoC_4 A25
 set_io PLTRSTn B11
 set_io SUSWARN_N B9
