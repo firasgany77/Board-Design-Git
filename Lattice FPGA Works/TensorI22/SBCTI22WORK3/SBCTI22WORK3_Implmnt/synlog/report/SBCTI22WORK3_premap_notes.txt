@@ -1,5 +1,4 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN115 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":520:1:520:9|Removing instance PCH_PWRGD (in view: work.TOP(bdf_type)) of type view:work.pch_pwrok_block(pch_pwrok_block_arch) because it does not drive other instances.
 @N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":98:2:98:3|Removing sequential instance delayed_vddq_ok (in view: work.vpp_vddq_block(vpp_vddq_arch)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN225 |Writing default property annotation file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\SBCTI22WORK3.sap.

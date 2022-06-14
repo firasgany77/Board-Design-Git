@@ -27,13 +27,23 @@ BEGIN
      
     -- v5s_pwrgd and v33s_pwrgd are opamp outputs that detect the ramp up of +3V3S & +3V3A 
 	-- V33DSW_OK -> 35 ms -> DSW_PWROK = '1'
-	output <= '1' WHEN  (DSW_PWROK = '1') AND (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (VCCST_CPU_OK = '1')
+
+	--output <= '1' WHEN  (DSW_PWROK = '1') AND (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (VCCST_CPU_OK = '1')
+	--	ELSE
+		--'0';
+
+		--output <= '1' WHEN   slp_s3n = '1'
+		--ELSE
+		--'0';	
+
+		--temp:
+
+	   output <= '1' WHEN   rsmrst_pwrgd = '1' 
 		ELSE
-		'0';
+		'0';	
 
 	vccin_en <= output; -- (Enable the VCCIN in Tensor I22)
 
 END vccin_arch;
 
--- VCCST_CPU_OK : OK
--- v5s_pwrgd: OK
+

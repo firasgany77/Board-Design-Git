@@ -75,12 +75,12 @@ BEGIN
 
 		'0';
 
-	--pch_pwrok <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1')   -- tPCH08 [SLP_S3# de-assertion to PCH_PWROK] is met (vccin_ok -> delayed_vccin_ok takes 30)
+	pch_pwrok <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1')   -- tPCH08 [SLP_S3# de-assertion to PCH_PWROK] is met (vccin_ok -> delayed_vccin_ok takes 30)
 	                                                                     -- SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < pch_pwrok
 																		 
 
-		--ELSE              
-		--'0';
+		ELSE              
+		'0';
     
 	--vccst_pwrgd <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1') -- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
 	                                                                     -- however, VCCST_PWRGD may lag completing its ramp with respect to PCH_PWROK by up to 20us   
@@ -89,7 +89,7 @@ BEGIN
 																		 -- TCPU00 [VCCST, VCCSTG ramped and stable to VccST_PWRGD assertion] is met (vccin_ok -> delayed_vccin_ok takes 30 ms):
 																		 -- RSMRSTn AND VCCST_CPU_OK AND SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < vccst_pwrgd 
 																		 -- RSMRSTn AND SLP_S4# < VCCST_EN < VCCST_CPU_OK
-		--ELSE
+	     --ELSE
 		--'0';
 
 	PROCESS (clk_100Khz) 

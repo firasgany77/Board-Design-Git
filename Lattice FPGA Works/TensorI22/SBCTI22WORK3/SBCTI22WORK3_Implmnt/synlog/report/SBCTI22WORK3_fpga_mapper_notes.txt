@@ -3,6 +3,7 @@
 @N: MT206 |Auto Constrain mode is enabled
 @N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":98:2:98:3|Removing sequential instance count_2[15:0] (in view: work.vpp_vddq_block(vpp_vddq_arch)) of type view:PrimLib.lat(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":98:2:98:3|Removing sequential instance curr_state_2[1:0] (in view: work.vpp_vddq_block(vpp_vddq_arch)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@N: FX271 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":40:2:40:3|Replicating instance RSMRST_PWRGD.RSMRSTn (in view: work.TOP(bdf_type)) with 9 loads 1 time to improve timing.
 @N: MT611 :|Automatically generated clock counter_block|tmp_derived_clock is not used and is being removed
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
