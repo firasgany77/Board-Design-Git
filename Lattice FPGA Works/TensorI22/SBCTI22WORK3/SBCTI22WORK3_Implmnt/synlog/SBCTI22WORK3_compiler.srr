@@ -8,17 +8,20 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:7:38:9|Top entity is set to TOP.
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd changed - recompiling
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd changed - recompiling
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd changed - recompiling
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled.vhd changed - recompiling
 File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 VHDL syntax check successful!
-File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd changed - recompiling
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:7:38:9|Synthesizing work.top.bdf_type.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":403:8:403:29|Signal delayed_vddq_ok_signal is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":50:7:50:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":60:17:60:18|Using user defined encoding for type state_type.
 Post processing for work.pch_pwrok_block.pch_pwrok_block_arch
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":55:2:55:12|Signal vccst_pwrgd is floating; a simulation mismatch is possible.
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":9:7:9:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":21:17:21:18|Using user defined encoding for type state_type.
 Post processing for work.rsmrst_pwrgd_block.rsmrst_arch
@@ -32,21 +35,14 @@ Post processing for work.counter_block.counter_arch
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":12:7:12:30|Synthesizing work.primary_voltages_enabler.rsmrst_arch.
 Post processing for work.primary_voltages_enabler.rsmrst_arch
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":16:7:16:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
-@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":29:17:29:18|Using user defined encoding for type state_type.
-@W: CG296 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":96:1:96:7|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":102:9:102:18|Referenced variable vddq_pwrgd is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":111:9:111:15|Referenced variable count_2 is not in sensitivity list.
-@W: CG290 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":99:8:99:19|Referenced variable curr_state_2 is not in sensitivity list.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":28:17:28:18|Using user defined encoding for type state_type.
 Post processing for work.vpp_vddq_block.vpp_vddq_arch
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal curr_state_2(1 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal count_2(15 downto 0); possible missing assignment in an if or case statement.
-@W: CL117 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":98:2:98:3|Latch generated from process for signal delayed_vddq_ok; possible missing assignment in an if or case statement.
 Post processing for work.top.bdf_type
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":289:2:289:12|Signal HDA_SDO_ATP is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":283:2:283:11|Signal PWRBTN_LED is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":54:2:54:15|Signal VCCINAUX_VR_PE is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":43:2:43:12|Signal VCCIN_VR_PE is floating; a simulation mismatch is possible.
-@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":55:2:55:3|Trying to extract state machine for register curr_state.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":44:2:44:3|Trying to extract state machine for register curr_state.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":14:1:14:10|Input clk_100Khz is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":17:8:17:16|Input V33DSW_OK is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd":14:2:14:10|Input v5s_pwrgd is unused.
@@ -58,7 +54,8 @@ Post processing for work.top.bdf_type
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":45:2:45:3|Trying to extract state machine for register curr_state.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":23:2:23:10|Input V33DSW_OK is unused.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":40:2:40:3|Trying to extract state machine for register curr_state.
-@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:2:97:3|Trying to extract state machine for register curr_state.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":97:3:97:4|Trying to extract state machine for register curr_state.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":53:2:53:12|Input vccin_ready is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":40:2:40:16|Input SATAXPCIE0_FPGA is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":41:2:41:16|Input SATAXPCIE1_FPGA is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":42:2:42:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
@@ -86,12 +83,12 @@ Post processing for work.top.bdf_type
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":284:2:284:8|Input PWRBTNn is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":288:2:288:8|Input PLTRSTn is unused.
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Jun 14 14:32:02 2022
+# Tue Jun 14 17:32:36 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -102,7 +99,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Jun 14 14:32:02 2022
+# Tue Jun 14 17:32:36 2022
 
 ###########################################################]
 @END
@@ -112,6 +109,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Jun 14 14:32:02 2022
+# Tue Jun 14 17:32:36 2022
 
 ###########################################################]

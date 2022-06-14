@@ -5,18 +5,18 @@ Mapping to part: ice40lp1kqn84
 Cell usage:
 GND             4 uses
 SB_CARRY        83 uses
-SB_DFF          43 uses
+SB_DFF          44 uses
 SB_DFFESR       3 uses
 SB_DFFSR        45 uses
 VCC             4 uses
-SB_LUT4         150 uses
+SB_LUT4         149 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   91 (7%)
+Register bits not including I/Os:   92 (7%)
 
 @S |Mapping Summary:
-Total  LUTs: 150 (11%)
+Total  LUTs: 149 (11%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 150 = 150 
+Distribution of All Consumed Luts 149 = 149 
 

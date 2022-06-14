@@ -311,7 +311,6 @@ ARCHITECTURE bdf_type OF TOP IS
 			vddq_pwrgd : IN STD_LOGIC;
 			vpp_pwrgd : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
-			delayed_vddq_ok: OUT STD_LOGIC;
 			vpp_en : OUT STD_LOGIC;
 			vddq_en : OUT STD_LOGIC
 		);
@@ -411,7 +410,7 @@ BEGIN
 	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
 	DSW_PWROK <= DSW_PWROK_signal;
 	--SUSWARN_N <= clk_100Khz_signal; 
-	VCCST_PWRGD <= vccst_pwrgd_signal AND delayed_vddq_ok_signal; -- (to ensure tCPU01 is met)
+	VCCST_PWRGD <= vccst_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
 
 	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
@@ -459,7 +458,6 @@ BEGIN
 		  vddq_pwrgd => VDDQ_OK,
 		  vpp_pwrgd => VPP_OK,
 		  clk_100Khz => clk_100Khz_signal,
-		  delayed_vddq_ok => delayed_vddq_ok_signal,
 		  vpp_en => VPP_EN,
 		  vddq_en => VDDQ_EN);
 
