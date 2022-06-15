@@ -49,9 +49,11 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY pch_pwrok_block IS
 	PORT (
-		slp_s3n : IN STD_LOGIC; -- SLP_S3##
+		SLP_SUSn : IN STD_LOGIC; -- SLP_S3##
 		vccin_ready : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+		VPP_OK : IN STD_LOGIC; -- already has PU next to U24
+		VDDQ_OK : IN STD_LOGIC; -- needs PU
 		vccst_pwrgd : OUT STD_LOGIC; -- Indication that the VCCSTG\VCCST\VDDQ power supplies are stable and within specification. (FPGA -> vccst_pwrgd_1p05 -> SoC)
 		pch_pwrok : OUT STD_LOGIC); -- Signal #7 Premium PWROK Generation Flow Diagram
 END pch_pwrok_block;
@@ -68,21 +70,21 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 BEGIN
 
 
-	vccin_ok <= '1' WHEN  (slp_s3n = '1')  --and  (vccin_ready = '1')       
+	vccin_ok <= '1' WHEN  (VPP_OK = '1') AND (VDDQ_OK = '1') AND (SLP_SUSn = '1')   
 		ELSE                                                             -- tPCH08: SLP_S3# de-assertion [0 --> 1] to PCH_PWROK assertion. (min: 1 ms) - actual: 3 ms
 		                                                                 -- tPLT04: ALL_SYS_PWRGD (vccin_en) = HIGH --> PCH_PWROK = HIGH (min: 1ms) - surely will be more than 1 ms.
 																         -- we can choose either ALL_SYS_PWRGD or SLP_S3# in the generation of PCH_PWROK.
 
 		'0';
 
-	pch_pwrok <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1')   -- tPCH08 [SLP_S3# de-assertion to PCH_PWROK] is met (vccin_ok -> delayed_vccin_ok takes 30)
+	pch_pwrok <= '1' WHEN (delayed_vccin_ok = '1')    -- tPCH08 [SLP_S3# de-assertion to PCH_PWROK] is met (vccin_ok -> delayed_vccin_ok takes 30)
 	                                                                     -- SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < pch_pwrok
 																		 
 
 	      ELSE              
 		  '0';
     
-	vccst_pwrgd <= '1' WHEN (delayed_vccin_ok = '1') AND (slp_s3n = '1') -- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
+	vccst_pwrgd <= '1' WHEN (delayed_vccin_ok = '1')  -- VCCST_PWRGD should start to assert no later than when PCH_PWROK asserts; 
 	                                                                     -- however, VCCST_PWRGD may lag completing its ramp with respect to PCH_PWROK by up to 20us   
 																		 -- here we asset VCCST_PWRGD and PCH_PWROK at the same time. 
 

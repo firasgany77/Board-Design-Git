@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Jun 14 2022 08:54:56
+# File Generated:     Jun 15 2022 18:54:53
 
 # Family & Device:    iCE40LP1K
 
@@ -23,7 +23,7 @@ set_io SLP_S5n A41
 set_io SOC_SPKR A47
 set_io VCCIN_EN B29
 set_io VCCIN_VR_PE A27
-set_io VPP_OK B1 -pullup yes
+set_io VPP_OK B1 -pullup no
 set_io VR_PROCHOT_FPGA_OUT_N A32
 set_io GPIO_FPGA_SoC_3 B13
 set_io V5A_EN A10

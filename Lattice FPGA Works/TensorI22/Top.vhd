@@ -365,15 +365,17 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	--COMPONENT pch_pwrok_block
-		--PORT (
-			--slp_s3n : IN STD_LOGIC;
-			--vccin_ready : IN STD_LOGIC;
-			--clk_100Khz : IN STD_LOGIC;
-			--vccst_pwrgd : OUT STD_LOGIC;
-			--pch_pwrok : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+	COMPONENT pch_pwrok_block
+		PORT (
+			SLP_SUSn : IN STD_LOGIC;
+			vccin_ready : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
+			VPP_OK : IN STD_LOGIC;
+		    VDDQ_OK : IN STD_LOGIC; 
+			vccst_pwrgd : OUT STD_LOGIC;
+			pch_pwrok : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
 
 	COMPONENT primary_voltages_enabler
@@ -515,12 +517,14 @@ BEGIN
 		  RSMRSTn => RSMRSTn_signal,
 		  rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
 
-	--PCH_PWRGD: pch_pwrok_block
-	--PORT MAP(
-		  --slp_s3n => slp_s3n_signal,
-		 -- vccin_ready => VR_READY_VCCIN,
-		 -- clk_100Khz => clk_100Khz_signal,
-		 -- vccst_pwrgd => vccst_pwrgd_signal,
-		 -- pch_pwrok => pch_pwrok_signal);
+	PCH_PWRGD: pch_pwrok_block
+	PORT MAP(
+		  SLP_SUSn => slp_susn_signal,
+		  vccin_ready => VR_READY_VCCIN,
+		  clk_100Khz => clk_100Khz_signal,
+		  VPP_OK => VPP_OK,
+		  VDDQ_OK => VDDQ_OK, --PU
+		  vccst_pwrgd => vccst_pwrgd_signal,
+		  pch_pwrok => pch_pwrok_signal);
 
 END bdf_type;

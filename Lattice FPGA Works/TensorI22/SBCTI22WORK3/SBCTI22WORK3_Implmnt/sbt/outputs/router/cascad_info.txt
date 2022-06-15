@@ -1,0 +1,17 @@
+[VIC]
+G_0_cascade_=ltout:in0
+G_1_1_0_cascade_=ltout:in0
+PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1_cascade_=ltout:in2
+PCH_PWRGD.curr_state_e_1_0_cascade_=ltout:in3
+PCH_PWRGD.delayed_vccin_ok_s_1_0_cascade_=ltout:in2
+PCH_PWRGD.un4_count_8_cascade_=ltout:in0
+RSMRST_PWRGD.RSMRSTn_0_sqmuxa_cascade_=ltout:in2
+RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_=ltout:in2
+RSMRST_PWRGD.un4_count_11_cascade_=ltout:in3
+VPP_VDDQ.delayed_vddq_pwrgd_RNOZ0Z_1_cascade_=ltout:in3
+VPP_VDDQ.g1Z0Z_0_cascade_=ltout:in3
+VPP_VDDQ.un1_vddq_pwrgdZ0_cascade_=ltout:in3
+VPP_VDDQ.un6_count_8_cascade_=ltout:in0
+m4_e_0_cascade_=ltout:in3
+un4_counter_7_c_RNIGGLR8_cascade_=ltout:in2
+vccst_en_cascade_=ltout:in0
