@@ -365,6 +365,14 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
+	COMPONENT sys_pwrok_block
+	PORT (
+		PCH_PWROK : IN STD_LOGIC;
+		clk_100Khz : IN STD_LOGIC;
+		SYS_PWROK : OUT STD_LOGIC
+	);
+    END COMPONENT;
+
 	COMPONENT pch_pwrok_block
 		PORT (
 			SLP_SUSn : IN STD_LOGIC;
@@ -498,8 +506,15 @@ BEGIN
 		  DSW_PWROK => DSW_PWROK_signal,
 		  VCCST_CPU_OK => VCCST_CPU_OK, 
 		  clk_100Khz => clk_100Khz_signal,
- vccin_en => VCCIN_EN);
+          vccin_en => VCCIN_EN);
+ 
 
+ SYS_PWRGD: sys_pwrok_block
+ PORT MAP(
+	 pch_pwrok => pch_pwrok_signal,
+	 clk_100Khz => clk_100Khz_signal,
+	 SYS_PWROK => SYS_PWROK);
+     
 
 	DSW_PWRGD : dsw_pwrok_block
 	PORT MAP(

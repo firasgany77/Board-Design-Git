@@ -1,4 +1,4 @@
-# Wed Jun 15 18:59:23 2022
+# Wed Jun 15 21:14:52 2022
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -28,6 +28,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
+@W: BN114 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":512:1:512:9|Removing instance SYS_PWRGD (in view: work.TOP(bdf_type)) of black box view:work.sys_pwrok_block(syn_black_box) because it does not drive other instances.
 @N: MT206 |Auto Constrain mode is enabled
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|User-specified initial value defined for instance VPP_VDDQ.count[15:0] is being ignored. 
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|User-specified initial value defined for instance VPP_VDDQ.curr_state[1:0] is being ignored. 
@@ -42,7 +43,7 @@ Available hyper_sources - for debug and ip models
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|User-specified initial value defined for instance PCH_PWRGD.curr_state[1:0] is being ignored. 
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|User-specified initial value defined for instance PCH_PWRGD.delayed_vccin_ok is being ignored. 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
 @W: MO161 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|Register bit curr_state[0] (in view view:work.dsw_pwrok_block(dsw_pwrok_arch)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
 @W: MO129 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\dsw_pwrok.vhd":45:2:45:3|Sequential instance DSW_PWRGD.DSW_PWROK is reduced to a combinational gate by constant propagation.
@@ -71,7 +72,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -359,7 +360,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":39:22:39:56|Unbuffered I/O VPP_VDDQ.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.un2_vpp_en_0_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -389,7 +390,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O m4_e_0 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.g1_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -496,7 +497,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VCC which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
@@ -1038,7 +1039,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":39:22:39:56|Unbuffered I/O VPP_VDDQ.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.un2_vpp_en_0_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -1068,7 +1069,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O m4_e_0 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.g1_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -1175,7 +1176,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VCC which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
@@ -1443,10 +1444,10 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":61:15:61:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_13_c which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":61:15:61:23|Unbuffered I/O VPP_VDDQ.un1_count_1_cry_14_c which could cause problems in P&R 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
 
 @N: MT611 :|Automatically generated clock counter_block|tmp_derived_clock is not used and is being removed
 
@@ -1470,7 +1471,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 136MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 136MB)
 
 Writing Analyst data base C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\synwork\SBCTI22WORK3_m.srm
 
@@ -1491,7 +1492,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Jun 15 18:59:25 2022
+# Timing Report written on Wed Jun 15 21:14:54 2022
 #
 
 
@@ -1949,6 +1950,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 136MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 15 18:59:25 2022
+# Wed Jun 15 21:14:54 2022
 
 ###########################################################]

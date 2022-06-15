@@ -1,3 +1,4 @@
+@W: BN114 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":512:1:512:9|Removing instance SYS_PWRGD (in view: work.TOP(bdf_type)) of black box view:work.sys_pwrok_block(syn_black_box) because it does not drive other instances.
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|User-specified initial value defined for instance VPP_VDDQ.count[15:0] is being ignored. 
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|User-specified initial value defined for instance VPP_VDDQ.curr_state[1:0] is being ignored. 
 @W: FX1039 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|User-specified initial value defined for instance VPP_VDDQ.delayed_vddq_pwrgd is being ignored. 
@@ -287,7 +288,7 @@
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":39:22:39:56|Unbuffered I/O VPP_VDDQ.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.un2_vpp_en_0_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -317,7 +318,7 @@
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O m4_e_0 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.g1_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -424,7 +425,7 @@
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VCC which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
@@ -966,7 +967,7 @@
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\pch_pwrok.vhd":99:3:99:4|Unbuffered I/O PCH_PWRGD.delayed_vccin_ok_s which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":39:22:39:56|Unbuffered I/O VPP_VDDQ.un1_vddq_en which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.un2_vpp_en_0_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -996,7 +997,7 @@
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O m4_e_0 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VPP_VDDQ.g1_0 which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\rsmrst_pwrgd.vhd":29:27:29:100|Unbuffered I/O RSMRST_PWRGD.un6_rsmrst_pwrgd which could cause problems in P&R 
@@ -1103,7 +1104,7 @@
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":48:10:48:45|Unbuffered I/O VPP_VDDQ.un1_vddq_pwrgd which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\vpp_vddq.vhd":44:2:44:3|Unbuffered I/O VPP_VDDQ.delayed_vddq_pwrgd_s_N_3L4 which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O slp_s3n_signal_i which could cause problems in P&R 
-@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":427:20:427:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
+@W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\top.vhd":435:20:435:45|Unbuffered I/O VCCST_EN which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O VCC which could cause problems in P&R 
 @W: FX689 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":49:8:49:20|Unbuffered I/O COUNTER.un4_counter_0_c which could cause problems in P&R 
 @W: FX689 :|Unbuffered I/O GND which could cause problems in P&R 
