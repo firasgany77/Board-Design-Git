@@ -377,20 +377,16 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT pch_pwrok_block
 		PORT (
-			SLP_SUSn : IN STD_LOGIC;
-			vccin_ready : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			VPP_OK : IN STD_LOGIC;
-		    VDDQ_OK : IN STD_LOGIC; 
-			vccst_pwrgd : OUT STD_LOGIC;
-			pch_pwrok : OUT STD_LOGIC
+			clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
+			ALL_SYS_PWRGD : IN STD_LOGIC; -- already has PU next to U24
+			pch_pwrok : OUT STD_LOGIC -- Signal #7 Premium PWROK Generation Flow Diagram
 		);
 	END COMPONENT;
 
 
+
 	COMPONENT primary_voltages_enabler
 	        Port(
-	    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
         SLP_SUSn: IN STD_LOGIC;  
         V33A_OK: IN STD_LOGIC; 
         V33DSW_OK: IN STD_LOGIc; 
@@ -401,7 +397,22 @@ ARCHITECTURE bdf_type OF TOP IS
 	    V1P8A_EN : OUT STD_LOGIC
 			);
     END COMPONENT;
-    
+	
+	COMPONENT all_sys_pwrgd_block
+	        Port(
+	    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+		DSW_PWROK :  IN STD_LOGIC;
+        VDDQ_OK : IN STD_LOGIC; 
+ 		VPP_OK : IN STD_LOGIC; 
+		SLP_SUSn : IN STD_LOGIC; 
+		SLP_S3n : IN STD_LOGIC;
+		ALL_SYS_PWRGD : OUT STD_LOGIC
+			);
+    END COMPONENT;
+	
+
+
+
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
 	SIGNAL VCCST_EN_signal : STD_LOGIC;
@@ -412,29 +423,38 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
 	SIGNAL slp_susn_signal : STD_LOGIC;
-	SIGNAL delayed_vddq_ok_signal: STD_LOGIC;
-
+    SIGNAL VDDQ_OK_signal : STD_LOGIC;
+	SIGNAL VPP_OK_signal : STD_LOGIC;
+	SIGNAL ALL_SYS_PWRGD_signal : STD_LOGIC; 
     
 
 BEGIN
 
+    -- Debug:
+	-- SUSWARN_N <= clk_100Khz_signal; 
+
+    DSW_PWROK <= DSW_PWROK_signal;
 	PCH_PWROK <= pch_pwrok_signal;
-	--SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
-	DSW_PWROK <= DSW_PWROK_signal;
-	--SUSWARN_N <= clk_100Khz_signal; 
-	VCCST_PWRGD <= vccst_pwrgd_signal;
-	RSMRSTn <= RSMRSTn_signal;
+	VCCST_PWRGD <= ALL_SYS_PWRGD_Signal;
+	VCCST_CPU <= ALL_SYS_PWRGD_Signal;
+	VCCIN_EN <= ALL_SYS_PWRGD_Signal;
+	
+	
 
 	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
 	V5S_ENn <= NOT(slp_s3n_signal); 
 	V33S_ENn <= NOT(slp_s3n_signal);
 
+	RSMRSTn <= RSMRSTn_signal;
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
-
 	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n; 
-	VCCST_EN <= VCCST_EN_signal; 
-	
+
+	VCCST_EN <= VCCST_EN_signal; -- VCCST_CPU_EN
+
+	-- inputs that go to more that one block need to be wired to a signal. 
 	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
+	VDDQ_OK_signal <= VDDQ_OK;
+	VPP_OK_signal <= VPP_OK; 
 
 	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
@@ -456,8 +476,8 @@ BEGIN
 	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
 		  slp_s4n => VCCST_EN_signal,
-		  vddq_pwrgd => VDDQ_OK,
-		  vpp_pwrgd => VPP_OK,
+		  vddq_pwrgd => VDDQ_OK_signal,
+		  vpp_pwrgd => VPP_OK_signal,
 		  clk_100Khz => clk_100Khz_signal,
 		  vpp_en => VPP_EN,
 		  vddq_en => VDDQ_EN);
@@ -465,7 +485,6 @@ BEGIN
 
 	PRIMARY_VOLTAGES_EN : primary_voltages_enabler --NEW
 	PORT MAP(
-		clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
 		SLP_SUSn => slp_susn_signal,
 	    V33A_OK => V33A_OK, -- Open-drain, internal weak pull-up required
 		V33DSW_OK => V33DSW_OK,
@@ -502,28 +521,38 @@ BEGIN
 
 	DSW_PWRGD : dsw_pwrok_block
 	PORT MAP(
-		V33DSW_OK => V33DSW_OK, -- assigning signal to component input. 
+		V33DSW_OK => V33DSW_OK, 
 		clk_100Khz => clk_100Khz_signal,
-		DSW_PWROK => DSW_PWROK_signal); -- assigning signal to component output
+		DSW_PWROK => DSW_PWROK_signal); 
 
 	RSMRST_PWRGD : rsmrst_pwrgd_block
 	PORT MAP(
 		  V33A_OK => V33A_OK,
 		  V5A_OK => V5A_OK,
 		  V1P8A_OK => V1P8A_OK,
-		  SLP_SUSn => slp_susn_signal, 
+		  SLP_SUSn => slp_susn_signal,
 		  clk_100Khz => clk_100Khz_signal,
 		  RSMRSTn => RSMRSTn_signal,
 		  rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
 
 	PCH_PWRGD: pch_pwrok_block
 	PORT MAP(
-		  SLP_SUSn => slp_susn_signal,
-		  vccin_ready => VR_READY_VCCIN,
 		  clk_100Khz => clk_100Khz_signal,
-		  VPP_OK => VPP_OK,
-		  VDDQ_OK => VDDQ_OK, --PU
-		  vccst_pwrgd => vccst_pwrgd_signal,
+		  ALL_SYS_PWRGD => ALL_SYS_PWRGD_Signal,
 		  pch_pwrok => pch_pwrok_signal);
+
+	SYS_PWRGD: all_sys_pwrgd_block
+	PORT MAP(
+	  clk_100Khz => clk_100Khz_signal,-- 100KHz clock, T = 10 us = 10,000 ns	
+	  DSW_PWROK => DSW_PWROK_signal,
+	  VDDQ_OK => VDDQ_OK_signal,
+	  VPP_OK => VPP_OK_signal, 
+	  SLP_SUSn => slp_susn_signal,
+	  SLP_S3n => slp_s3n_signal, 
+	  ALL_SYS_PWRGD  => ALL_SYS_PWRGD_signal
+		  );
+
+  
+	
 
 END bdf_type;

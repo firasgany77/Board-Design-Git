@@ -11,7 +11,6 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY primary_voltages_enabler IS  
 	PORT (
-	clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
         SLP_SUSn: IN STD_LOGIC;  
         V33A_OK: IN STD_LOGIC; 
         V33DSW_OK: IN STD_LOGIc; 

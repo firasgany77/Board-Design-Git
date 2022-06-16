@@ -1,3 +1,4 @@
-@E: CS187 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":516:2:516:10|Expecting ,
+@E: CD213 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":439:1:439:9|Undefined identifier
+@E: CD578 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":544:1:544:9|Illegal redeclaration 
 @E: Parse errors encountered - exiting
 
