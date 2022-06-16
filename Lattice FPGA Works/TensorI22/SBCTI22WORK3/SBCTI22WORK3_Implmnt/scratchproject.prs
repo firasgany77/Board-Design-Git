@@ -13,6 +13,7 @@ add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-D
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/primary_voltages_enabler.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/vccin_en.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/powerled.vhd"
+add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/sys_pwrok.vhd"
 
 
 

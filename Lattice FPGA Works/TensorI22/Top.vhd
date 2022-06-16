@@ -345,6 +345,14 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
+	COMPONENT sys_pwrok_block
+	PORT (
+		PCH_PWROK : IN STD_LOGIC;
+		clk_100Khz : IN STD_LOGIC;
+		SYS_PWROK : OUT STD_LOGIC
+	);
+    END COMPONENT;
+
 	COMPONENT dsw_pwrok_block
 		PORT (
 			V33DSW_OK : IN STD_LOGIC;
@@ -365,13 +373,7 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	COMPONENT sys_pwrok_block
-	PORT (
-		PCH_PWROK : IN STD_LOGIC;
-		clk_100Khz : IN STD_LOGIC;
-		SYS_PWROK : OUT STD_LOGIC
-	);
-    END COMPONENT;
+
 
 	COMPONENT pch_pwrok_block
 		PORT (
@@ -417,7 +419,7 @@ ARCHITECTURE bdf_type OF TOP IS
 BEGIN
 
 	PCH_PWROK <= pch_pwrok_signal;
-	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
+	--SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
 	DSW_PWROK <= DSW_PWROK_signal;
 	--SUSWARN_N <= clk_100Khz_signal; 
 	VCCST_PWRGD <= vccst_pwrgd_signal;
@@ -428,20 +430,9 @@ BEGIN
 	V33S_ENn <= NOT(slp_s3n_signal);
 
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
-																			
-    -- RSMRSTn AND VCCST_CPU_OK AND SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < vccst_pwrgd 
-    -- RSMRSTn AND SLP_S4# < VCCST_EN < VCCST_CPU_OK
 
 	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n; 
 	VCCST_EN <= VCCST_EN_signal; 
-
-	--> VCCST: Sustain Voltage for Processor Standby Modes. 
-	--> VCCST_EN = '1' -> +VCCST_CPU is generated from +VCC1P05_OUT_FET. +VCCST_CPU is delivered to SoC. 
-
-	--> WHEN (V33A_OK = '1') AND (V5A_OK = '1')  AND (SLP_SUSn = '1')  AND (V1P8A_OK = '1') ->  100 ms delay -> RSMRSTn = '1' -> VCCST_EN -> VCCST_CPU = 1.05V -> VCCST_CPU_OK -> '1
-	--> (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (DSW_PWROK = '1') --> (vccin_en = '1') 
-	--> (vccin_ready) AND (slp_s3n = '1') -> VCCST_PWRGD = '1' 
-    --> rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') [100 msec after all primary rails are ready]
 	
 	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
 
@@ -450,7 +441,7 @@ BEGIN
  
 	--VCCIN_VR_PE <= '1'; 
 	--VCCIN_EN <= '0';
-       --VCCINAUX_VR_PE <= '1';
+    --VCCINAUX_VR_PE <= '1';
 
 	--POWERLED : powerled_block 
 	--GENERIC MAP(
@@ -490,15 +481,8 @@ BEGIN
 		CLK_25mhz => FPGA_OSC, -- CLK_25Mhz which we want to divide in onrder to get the 100Khz
 		clk_100Khz => clk_100Khz_signal);
 
-	--HDA_STRAP : hda_strap_block
-	--PORT MAP(
-		--pch_pwrok => vccst_pwrgd_signal,
-		--GPIO_PCH => GPIO_FPGA_SoC_1,
-		--clk_100Khz => clk_100Khz_signal,
-		--HDA_SDO_ATP => HDA_SDO_ATP);
-
-	  VCCIN_PWRGD: vccin_en_block
-	  PORT MAP(
+	VCCIN_PWRGD: vccin_en_block
+	PORT MAP(
 		  v5s_pwrgd => V5S_OK,
 		  v33s_pwrgd => V33S_OK,
 		  slp_s3n => slp_s3n_signal,
@@ -509,7 +493,7 @@ BEGIN
           vccin_en => VCCIN_EN);
  
 
- SYS_PWRGD: sys_pwrok_block
+ SYS_PWRGD : sys_pwrok_block
  PORT MAP(
 	 pch_pwrok => pch_pwrok_signal,
 	 clk_100Khz => clk_100Khz_signal,
