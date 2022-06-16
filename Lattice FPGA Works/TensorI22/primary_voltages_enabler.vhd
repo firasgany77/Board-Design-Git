@@ -31,8 +31,6 @@ ELSE
 '1';                                      -- FPGA starts working and this value gets assigned when V33DSW_OK = '1';
                                           -- V33A_EN# = LOW --> 3V3A = High
 
---V33A_ENn <= '0'; -- just for to flash VCCIN_ONLY
-
 V1P8A_EN <= '1' WHEN (V33A_OK = '1') -- VCC_PRIM_3.3 ramps before VCC_PRIM_1.8 (p.460)
                                                           -- tPCH06: V33DSW_OK to V1P8A_EN [min 200 us] - Check if condition holds.
                                                           -- tPCH11: SLP_SUS# asserting to VccPRIM dropping 5% of nominal value. min: 100 ns p.477, p434.
