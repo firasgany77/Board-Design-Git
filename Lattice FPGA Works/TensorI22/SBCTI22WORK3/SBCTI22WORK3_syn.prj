@@ -19,6 +19,7 @@ add_file -vhdl -lib work "../primary_voltages_enabler.vhd"
 add_file -vhdl -lib work "../vccin_en.vhd" 
 add_file -vhdl -lib work "../powerled.vhd" 
 add_file -vhdl -lib work "../sys_pwrok.vhd" 
+add_file -vhdl -lib work "../all_sys_pwrgd.vhd" 
 #implementation: "SBCTI22WORK3_Implmnt"
 impl -add SBCTI22WORK3_Implmnt -type fpga
 

@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\run_options.txt
-#--  Written on Thu Jun 16 22:00:04 2022
+#--  Written on Fri Jun 17 11:57:25 2022
 
 
 #project files
@@ -16,6 +16,7 @@ add_file -vhdl -lib work "../primary_voltages_enabler.vhd"
 add_file -vhdl -lib work "../vccin_en.vhd"
 add_file -vhdl -lib work "../powerled.vhd"
 add_file -vhdl -lib work "../sys_pwrok.vhd"
+add_file -vhdl -lib work "../all_sys_pwrgd.vhd"
 
 
 

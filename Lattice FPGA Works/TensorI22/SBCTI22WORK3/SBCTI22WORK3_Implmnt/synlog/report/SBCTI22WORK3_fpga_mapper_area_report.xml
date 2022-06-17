@@ -18,6 +18,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>98</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTS used" name="LUTS">
-<data>168</data>
+<data>164</data>
 </parameter>
 </report_table>

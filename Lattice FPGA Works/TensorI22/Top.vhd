@@ -148,8 +148,8 @@ ENTITY TOP IS
 
 		VPP_EN : OUT STD_LOGIC;  -- OK
 		SOC_SPKR : IN STD_LOGIC; -- OK(NEW)
-		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
-		SUSWARN_N: IN STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
+		SUSACK_N : OUT STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
+		SUSWARN_N : OUT STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
 		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
 
 		                         -- S0 Sleep Control. When PCH is idle and processor is in C10 state, this
@@ -332,20 +332,20 @@ ARCHITECTURE bdf_type OF TOP IS
 		 --);
 	-- END COMPONENT;
 
-	  COMPONENT vccin_en_block
-		  PORT (
-		    v5s_pwrgd : IN STD_LOGIC;
-			v33s_pwrgd : IN STD_LOGIC;
-            slp_s3n : IN STD_LOGIC;
-			rsmrst_pwrgd : IN STD_LOGIC;
-			DSW_PWROK: IN STD_LOGIC;
-			VCCST_CPU_OK: IN STD_LOGIC; 
-			clk_100Khz : IN STD_LOGIC;
-			vccin_en : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	  --COMPONENT vccin_en_block
+		 -- PORT (
+		    --v5s_pwrgd : IN STD_LOGIC;
+			--v33s_pwrgd : IN STD_LOGIC;
+           -- slp_s3n : IN STD_LOGIC;
+			--rsmrst_pwrgd : IN STD_LOGIC;
+			--DSW_PWROK: IN STD_LOGIC;
+			--VCCST_CPU_OK: IN STD_LOGIC; 
+			--clk_100Khz : IN STD_LOGIC;
+			--vccin_en : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
-	COMPONENT sys_pwrok_block
+	COMPONENT all_sys_pwrgd_block
 	PORT (
 		PCH_PWROK : IN STD_LOGIC;
 		clk_100Khz : IN STD_LOGIC;
@@ -415,8 +415,9 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
-	SIGNAL VCCST_EN_signal : STD_LOGIC;
-	SIGNAL GPIO_FPGA_SoC_4_NOT_signal : STD_LOGIC;
+	SIGNAL slp_s4n_signal : STD_LOGIC; 
+	--SIGNAL VCCST_EN_signal : STD_LOGIC;
+	--SIGNAL GPIO_FPGA_SoC_4_NOT_signal : STD_LOGIC;
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
@@ -436,27 +437,29 @@ BEGIN
     DSW_PWROK <= DSW_PWROK_signal;
 	PCH_PWROK <= pch_pwrok_signal;
 	VCCST_PWRGD <= ALL_SYS_PWRGD_Signal;
-	VCCST_CPU <= ALL_SYS_PWRGD_Signal;
+	VCCST_EN <= ALL_SYS_PWRGD_Signal;
 	VCCIN_EN <= ALL_SYS_PWRGD_Signal;
+
+	-- to debug ALL SYS_PWROK;
+	SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
+	SUSACK_N <= ALL_SYS_PWRGD_Signal; 
 	
 	
 
 	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
+	RSMRSTn <= RSMRSTn_signal;
+	slp_s3n_signal <= SLP_S3n;
+	slp_s4n_signal <= SLP_S4n; 
 	V5S_ENn <= NOT(slp_s3n_signal); 
 	V33S_ENn <= NOT(slp_s3n_signal);
 
-	RSMRSTn <= RSMRSTn_signal;
-	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
-	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n; 
-
-	VCCST_EN <= VCCST_EN_signal; -- VCCST_CPU_EN
 
 	-- inputs that go to more that one block need to be wired to a signal. 
 	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
 	VDDQ_OK_signal <= VDDQ_OK;
 	VPP_OK_signal <= VPP_OK; 
 
-	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
+	--GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
  
 	--VCCIN_VR_PE <= '1'; 
@@ -469,13 +472,13 @@ BEGIN
 	--PORT MAP(
 		--clk_100Khz => clk_100Khz_signal,
 		--SLP_S3n => slp_s3n_signal,
-		--SLP_S4n => VCCST_EN_signal,
+		--SLP_S4n => slp_s4n_signal,
 		--mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
 		--pwm_out => PWRBTN_LED);
 
 	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
-		  slp_s4n => VCCST_EN_signal,
+		  slp_s4n => slp_s4n_signal,
 		  vddq_pwrgd => VDDQ_OK_signal,
 		  vpp_pwrgd => VPP_OK_signal,
 		  clk_100Khz => clk_100Khz_signal,
@@ -500,25 +503,17 @@ BEGIN
 		CLK_25mhz => FPGA_OSC, -- CLK_25Mhz which we want to divide in onrder to get the 100Khz
 		clk_100Khz => clk_100Khz_signal);
 
-	VCCIN_PWRGD: vccin_en_block
-	PORT MAP(
-		  v5s_pwrgd => V5S_OK,
-		  v33s_pwrgd => V33S_OK,
-		  slp_s3n => slp_s3n_signal,
-		  rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		  DSW_PWROK => DSW_PWROK_signal,
-		  VCCST_CPU_OK => VCCST_CPU_OK, 
-		  clk_100Khz => clk_100Khz_signal,
-          vccin_en => VCCIN_EN);
- 
-
- SYS_PWRGD : sys_pwrok_block
- PORT MAP(
-	 pch_pwrok => pch_pwrok_signal,
-	 clk_100Khz => clk_100Khz_signal,
-	 SYS_PWROK => SYS_PWROK);
-     
-
+	--VCCIN_PWRGD: vccin_en_block
+	--PORT MAP(
+		--  v5s_pwrgd => V5S_OK,
+		  --v33s_pwrgd => V33S_OK,
+		 -- slp_s3n => slp_s3n_signal,
+		  --rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		 -- DSW_PWROK => DSW_PWROK_signal,
+		 -- VCCST_CPU_OK => VCCST_CPU_OK, 
+		 -- clk_100Khz => clk_100Khz_signal,
+      --vccin_en => VCCIN_EN);
+  
 	DSW_PWRGD : dsw_pwrok_block
 	PORT MAP(
 		V33DSW_OK => V33DSW_OK, 

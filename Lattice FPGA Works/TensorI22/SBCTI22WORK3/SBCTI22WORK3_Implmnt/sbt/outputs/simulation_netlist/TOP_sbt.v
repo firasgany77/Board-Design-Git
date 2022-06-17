@@ -6,7 +6,7 @@
 
 // Build Date:         Dec  9 2020 18:18:12
 
-// File Generated:     Jun 16 2022 09:54:25
+// File Generated:     Jun 17 2022 11:58:28
 
 // Purpose:            Post-Route Verilog/VHDL netlist for timing simulation
 
@@ -96,7 +96,7 @@ module TOP (
     output VCCST_EN;
     input V33DSW_OK;
     input TPM_GPIO;
-    input SUSWARN_N;
+    output SUSWARN_N;
     input PLTRSTn;
     input GPIO_FPGA_SoC_4;
     input VR_READY_VCCIN;
@@ -114,7 +114,7 @@ module TOP (
     input GPIO_FPGA_EXP_2;
     output VPP_EN;
     input VDDQ_OK;
-    input SUSACK_N;
+    output SUSACK_N;
     input SLP_S4n;
     input VCCST_CPU_OK;
     output VCCINAUX_EN;
@@ -137,454 +137,482 @@ module TOP (
     output PCH_PWROK;
     input FPGA_SLP_WLAN_N;
 
-    wire N__7375;
+    wire N__7455;
+    wire N__7454;
+    wire N__7453;
+    wire N__7446;
+    wire N__7445;
+    wire N__7444;
+    wire N__7437;
+    wire N__7436;
+    wire N__7435;
+    wire N__7428;
+    wire N__7427;
+    wire N__7426;
+    wire N__7419;
+    wire N__7418;
+    wire N__7417;
+    wire N__7410;
+    wire N__7409;
+    wire N__7408;
+    wire N__7401;
+    wire N__7400;
+    wire N__7399;
+    wire N__7392;
+    wire N__7391;
+    wire N__7390;
+    wire N__7383;
+    wire N__7382;
+    wire N__7381;
     wire N__7374;
     wire N__7373;
-    wire N__7366;
+    wire N__7372;
     wire N__7365;
     wire N__7364;
-    wire N__7357;
+    wire N__7363;
     wire N__7356;
     wire N__7355;
-    wire N__7348;
+    wire N__7354;
     wire N__7347;
     wire N__7346;
-    wire N__7339;
+    wire N__7345;
     wire N__7338;
     wire N__7337;
-    wire N__7330;
+    wire N__7336;
     wire N__7329;
     wire N__7328;
-    wire N__7321;
+    wire N__7327;
     wire N__7320;
     wire N__7319;
-    wire N__7312;
+    wire N__7318;
     wire N__7311;
     wire N__7310;
-    wire N__7303;
+    wire N__7309;
     wire N__7302;
     wire N__7301;
-    wire N__7294;
+    wire N__7300;
     wire N__7293;
     wire N__7292;
-    wire N__7285;
+    wire N__7291;
     wire N__7284;
     wire N__7283;
-    wire N__7276;
+    wire N__7282;
     wire N__7275;
     wire N__7274;
-    wire N__7267;
+    wire N__7273;
     wire N__7266;
     wire N__7265;
-    wire N__7258;
+    wire N__7264;
     wire N__7257;
     wire N__7256;
-    wire N__7249;
+    wire N__7255;
     wire N__7248;
     wire N__7247;
-    wire N__7240;
+    wire N__7246;
     wire N__7239;
     wire N__7238;
-    wire N__7231;
+    wire N__7237;
     wire N__7230;
     wire N__7229;
-    wire N__7222;
+    wire N__7228;
     wire N__7221;
     wire N__7220;
-    wire N__7213;
+    wire N__7219;
     wire N__7212;
     wire N__7211;
-    wire N__7204;
+    wire N__7210;
     wire N__7203;
     wire N__7202;
-    wire N__7195;
+    wire N__7201;
     wire N__7194;
     wire N__7193;
-    wire N__7186;
+    wire N__7192;
     wire N__7185;
     wire N__7184;
-    wire N__7177;
+    wire N__7183;
     wire N__7176;
     wire N__7175;
-    wire N__7168;
+    wire N__7174;
     wire N__7167;
     wire N__7166;
-    wire N__7159;
+    wire N__7165;
     wire N__7158;
     wire N__7157;
-    wire N__7150;
+    wire N__7156;
     wire N__7149;
     wire N__7148;
-    wire N__7141;
+    wire N__7147;
     wire N__7140;
     wire N__7139;
-    wire N__7132;
+    wire N__7138;
     wire N__7131;
     wire N__7130;
-    wire N__7123;
+    wire N__7129;
     wire N__7122;
     wire N__7121;
-    wire N__7114;
+    wire N__7120;
     wire N__7113;
     wire N__7112;
-    wire N__7105;
+    wire N__7111;
     wire N__7104;
     wire N__7103;
-    wire N__7096;
+    wire N__7102;
     wire N__7095;
     wire N__7094;
-    wire N__7087;
+    wire N__7093;
     wire N__7086;
     wire N__7085;
-    wire N__7078;
+    wire N__7084;
     wire N__7077;
     wire N__7076;
-    wire N__7069;
+    wire N__7075;
     wire N__7068;
     wire N__7067;
-    wire N__7060;
+    wire N__7066;
     wire N__7059;
     wire N__7058;
-    wire N__7051;
+    wire N__7057;
     wire N__7050;
     wire N__7049;
-    wire N__7042;
+    wire N__7048;
     wire N__7041;
     wire N__7040;
-    wire N__7033;
+    wire N__7039;
     wire N__7032;
     wire N__7031;
-    wire N__7024;
+    wire N__7030;
     wire N__7023;
     wire N__7022;
-    wire N__7015;
+    wire N__7021;
     wire N__7014;
     wire N__7013;
-    wire N__7006;
+    wire N__7012;
     wire N__7005;
     wire N__7004;
-    wire N__6997;
+    wire N__7003;
     wire N__6996;
     wire N__6995;
-    wire N__6988;
+    wire N__6994;
     wire N__6987;
     wire N__6986;
-    wire N__6979;
+    wire N__6985;
     wire N__6978;
     wire N__6977;
-    wire N__6970;
+    wire N__6976;
     wire N__6969;
     wire N__6968;
-    wire N__6961;
+    wire N__6967;
     wire N__6960;
     wire N__6959;
-    wire N__6952;
+    wire N__6958;
     wire N__6951;
     wire N__6950;
-    wire N__6943;
+    wire N__6949;
     wire N__6942;
     wire N__6941;
-    wire N__6934;
+    wire N__6940;
     wire N__6933;
     wire N__6932;
-    wire N__6925;
-    wire N__6924;
-    wire N__6923;
-    wire N__6916;
-    wire N__6915;
+    wire N__6931;
     wire N__6914;
+    wire N__6913;
+    wire N__6910;
     wire N__6907;
-    wire N__6906;
-    wire N__6905;
-    wire N__6898;
-    wire N__6897;
+    wire N__6902;
+    wire N__6899;
     wire N__6896;
+    wire N__6895;
+    wire N__6892;
     wire N__6889;
-    wire N__6888;
-    wire N__6887;
+    wire N__6886;
+    wire N__6881;
     wire N__6880;
     wire N__6879;
     wire N__6878;
+    wire N__6877;
+    wire N__6876;
+    wire N__6875;
+    wire N__6872;
     wire N__6871;
     wire N__6870;
     wire N__6869;
-    wire N__6862;
-    wire N__6861;
+    wire N__6868;
+    wire N__6865;
     wire N__6860;
-    wire N__6853;
-    wire N__6852;
+    wire N__6857;
+    wire N__6856;
     wire N__6851;
-    wire N__6834;
-    wire N__6833;
+    wire N__6848;
+    wire N__6841;
+    wire N__6838;
+    wire N__6835;
     wire N__6830;
     wire N__6827;
-    wire N__6824;
-    wire N__6819;
-    wire N__6816;
-    wire N__6815;
-    wire N__6812;
+    wire N__6822;
     wire N__6809;
-    wire N__6804;
+    wire N__6808;
+    wire N__6805;
+    wire N__6802;
     wire N__6801;
-    wire N__6798;
+    wire N__6800;
     wire N__6797;
     wire N__6794;
     wire N__6791;
-    wire N__6786;
+    wire N__6788;
     wire N__6783;
-    wire N__6782;
-    wire N__6781;
-    wire N__6780;
-    wire N__6779;
-    wire N__6778;
+    wire N__6776;
     wire N__6775;
-    wire N__6772;
-    wire N__6769;
-    wire N__6768;
+    wire N__6774;
+    wire N__6773;
+    wire N__6770;
     wire N__6767;
-    wire N__6766;
+    wire N__6764;
     wire N__6763;
     wire N__6762;
+    wire N__6761;
+    wire N__6760;
     wire N__6759;
-    wire N__6756;
+    wire N__6758;
     wire N__6755;
     wire N__6754;
+    wire N__6753;
+    wire N__6752;
+    wire N__6751;
+    wire N__6750;
     wire N__6747;
-    wire N__6746;
-    wire N__6745;
     wire N__6742;
-    wire N__6741;
-    wire N__6740;
-    wire N__6737;
-    wire N__6734;
+    wire N__6739;
+    wire N__6736;
+    wire N__6733;
+    wire N__6732;
     wire N__6731;
-    wire N__6728;
-    wire N__6727;
+    wire N__6730;
+    wire N__6729;
     wire N__6726;
-    wire N__6721;
-    wire N__6718;
-    wire N__6715;
-    wire N__6712;
-    wire N__6711;
-    wire N__6708;
-    wire N__6705;
-    wire N__6702;
-    wire N__6699;
-    wire N__6698;
-    wire N__6697;
-    wire N__6694;
+    wire N__6723;
+    wire N__6720;
+    wire N__6719;
+    wire N__6716;
+    wire N__6713;
+    wire N__6710;
+    wire N__6707;
+    wire N__6704;
+    wire N__6701;
+    wire N__6700;
     wire N__6693;
-    wire N__6688;
-    wire N__6683;
-    wire N__6680;
+    wire N__6690;
+    wire N__6687;
+    wire N__6684;
+    wire N__6681;
+    wire N__6678;
     wire N__6677;
-    wire N__6672;
-    wire N__6669;
-    wire N__6666;
-    wire N__6663;
-    wire N__6658;
-    wire N__6653;
-    wire N__6650;
+    wire N__6674;
+    wire N__6673;
+    wire N__6668;
+    wire N__6665;
+    wire N__6662;
+    wire N__6657;
+    wire N__6654;
     wire N__6647;
     wire N__6644;
     wire N__6641;
-    wire N__6640;
-    wire N__6631;
-    wire N__6628;
-    wire N__6625;
+    wire N__6632;
+    wire N__6629;
+    wire N__6626;
+    wire N__6623;
     wire N__6620;
+    wire N__6619;
+    wire N__6612;
     wire N__6611;
-    wire N__6606;
-    wire N__6603;
+    wire N__6610;
+    wire N__6607;
     wire N__6600;
-    wire N__6591;
-    wire N__6588;
-    wire N__6585;
-    wire N__6582;
-    wire N__6579;
-    wire N__6574;
-    wire N__6571;
-    wire N__6568;
-    wire N__6565;
-    wire N__6558;
-    wire N__6557;
+    wire N__6597;
+    wire N__6590;
+    wire N__6587;
+    wire N__6584;
+    wire N__6581;
+    wire N__6578;
+    wire N__6575;
+    wire N__6572;
+    wire N__6569;
+    wire N__6566;
+    wire N__6561;
     wire N__6554;
-    wire N__6551;
-    wire N__6546;
-    wire N__6543;
-    wire N__6542;
-    wire N__6539;
+    wire N__6547;
+    wire N__6544;
+    wire N__6541;
     wire N__6536;
     wire N__6533;
-    wire N__6528;
+    wire N__6530;
     wire N__6525;
-    wire N__6524;
-    wire N__6521;
-    wire N__6518;
-    wire N__6513;
-    wire N__6510;
-    wire N__6509;
-    wire N__6506;
+    wire N__6522;
+    wire N__6515;
+    wire N__6514;
+    wire N__6511;
+    wire N__6508;
     wire N__6503;
-    wire N__6498;
-    wire N__6495;
-    wire N__6494;
-    wire N__6491;
-    wire N__6488;
-    wire N__6483;
-    wire N__6480;
-    wire N__6479;
-    wire N__6476;
-    wire N__6473;
-    wire N__6468;
-    wire N__6465;
-    wire N__6464;
-    wire N__6461;
-    wire N__6458;
+    wire N__6500;
+    wire N__6499;
+    wire N__6496;
+    wire N__6493;
+    wire N__6490;
+    wire N__6485;
+    wire N__6482;
+    wire N__6481;
+    wire N__6478;
+    wire N__6475;
+    wire N__6470;
+    wire N__6467;
+    wire N__6466;
+    wire N__6463;
+    wire N__6460;
     wire N__6455;
-    wire N__6450;
-    wire N__6447;
-    wire N__6446;
-    wire N__6443;
-    wire N__6440;
-    wire N__6435;
-    wire N__6432;
-    wire N__6431;
-    wire N__6428;
-    wire N__6425;
-    wire N__6420;
-    wire N__6417;
-    wire N__6416;
-    wire N__6413;
-    wire N__6410;
-    wire N__6405;
-    wire N__6402;
-    wire N__6401;
-    wire N__6398;
-    wire N__6395;
+    wire N__6452;
+    wire N__6451;
+    wire N__6448;
+    wire N__6445;
+    wire N__6442;
+    wire N__6437;
+    wire N__6434;
+    wire N__6433;
+    wire N__6430;
+    wire N__6427;
+    wire N__6422;
+    wire N__6419;
+    wire N__6418;
+    wire N__6415;
+    wire N__6412;
+    wire N__6407;
+    wire N__6404;
+    wire N__6403;
+    wire N__6400;
+    wire N__6397;
     wire N__6392;
-    wire N__6387;
-    wire N__6384;
-    wire N__6383;
-    wire N__6380;
+    wire N__6389;
+    wire N__6388;
+    wire N__6385;
+    wire N__6382;
     wire N__6377;
-    wire N__6372;
-    wire N__6369;
-    wire N__6368;
-    wire N__6365;
+    wire N__6374;
+    wire N__6373;
+    wire N__6370;
+    wire N__6367;
     wire N__6362;
-    wire N__6357;
-    wire N__6354;
-    wire N__6353;
-    wire N__6350;
+    wire N__6359;
+    wire N__6358;
+    wire N__6355;
+    wire N__6352;
     wire N__6347;
-    wire N__6342;
-    wire N__6339;
-    wire N__6338;
-    wire N__6335;
-    wire N__6332;
-    wire N__6327;
-    wire N__6324;
-    wire N__6323;
-    wire N__6320;
-    wire N__6317;
-    wire N__6312;
-    wire N__6309;
-    wire N__6308;
-    wire N__6305;
-    wire N__6302;
-    wire N__6299;
-    wire N__6294;
-    wire N__6291;
-    wire N__6290;
+    wire N__6344;
+    wire N__6343;
+    wire N__6340;
+    wire N__6337;
+    wire N__6334;
+    wire N__6329;
+    wire N__6326;
+    wire N__6325;
+    wire N__6322;
+    wire N__6319;
+    wire N__6314;
+    wire N__6311;
+    wire N__6310;
+    wire N__6307;
+    wire N__6304;
+    wire N__6301;
+    wire N__6296;
+    wire N__6293;
+    wire N__6292;
     wire N__6289;
     wire N__6286;
     wire N__6281;
-    wire N__6276;
-    wire N__6273;
-    wire N__6270;
-    wire N__6267;
+    wire N__6278;
+    wire N__6277;
+    wire N__6274;
+    wire N__6271;
     wire N__6266;
-    wire N__6265;
+    wire N__6263;
     wire N__6262;
-    wire N__6257;
-    wire N__6252;
-    wire N__6249;
+    wire N__6259;
+    wire N__6256;
+    wire N__6251;
+    wire N__6248;
+    wire N__6247;
     wire N__6246;
     wire N__6243;
-    wire N__6242;
-    wire N__6241;
     wire N__6238;
-    wire N__6235;
-    wire N__6232;
-    wire N__6225;
+    wire N__6233;
+    wire N__6230;
+    wire N__6227;
+    wire N__6224;
+    wire N__6223;
     wire N__6222;
     wire N__6219;
-    wire N__6216;
-    wire N__6215;
-    wire N__6212;
+    wire N__6214;
     wire N__6209;
-    wire N__6204;
-    wire N__6201;
+    wire N__6206;
+    wire N__6203;
     wire N__6200;
     wire N__6197;
-    wire N__6194;
-    wire N__6189;
-    wire N__6186;
+    wire N__6196;
+    wire N__6193;
+    wire N__6190;
     wire N__6185;
     wire N__6182;
-    wire N__6179;
-    wire N__6174;
-    wire N__6171;
+    wire N__6181;
+    wire N__6178;
+    wire N__6175;
     wire N__6170;
     wire N__6167;
     wire N__6164;
-    wire N__6159;
-    wire N__6156;
-    wire N__6155;
-    wire N__6152;
+    wire N__6163;
+    wire N__6160;
+    wire N__6157;
+    wire N__6154;
     wire N__6149;
     wire N__6146;
-    wire N__6141;
-    wire N__6138;
-    wire N__6137;
+    wire N__6145;
+    wire N__6142;
+    wire N__6139;
     wire N__6134;
     wire N__6131;
-    wire N__6128;
-    wire N__6123;
-    wire N__6120;
-    wire N__6117;
+    wire N__6130;
+    wire N__6127;
+    wire N__6124;
+    wire N__6119;
     wire N__6116;
     wire N__6113;
-    wire N__6110;
-    wire N__6105;
-    wire N__6102;
-    wire N__6101;
-    wire N__6100;
-    wire N__6099;
+    wire N__6112;
+    wire N__6109;
+    wire N__6106;
+    wire N__6103;
     wire N__6098;
-    wire N__6097;
-    wire N__6096;
     wire N__6095;
-    wire N__6094;
-    wire N__6093;
     wire N__6092;
-    wire N__6091;
-    wire N__6090;
     wire N__6089;
-    wire N__6088;
-    wire N__6087;
     wire N__6086;
     wire N__6085;
     wire N__6084;
-    wire N__6083;
-    wire N__6074;
+    wire N__6081;
+    wire N__6078;
+    wire N__6075;
+    wire N__6072;
     wire N__6065;
-    wire N__6064;
+    wire N__6062;
+    wire N__6061;
+    wire N__6060;
+    wire N__6059;
+    wire N__6058;
+    wire N__6057;
+    wire N__6056;
     wire N__6055;
-    wire N__6046;
-    wire N__6037;
-    wire N__6036;
+    wire N__6054;
+    wire N__6053;
+    wire N__6052;
+    wire N__6051;
+    wire N__6050;
+    wire N__6041;
+    wire N__6038;
     wire N__6035;
     wire N__6034;
     wire N__6033;
@@ -594,31 +622,11 @@ module TOP (
     wire N__6029;
     wire N__6028;
     wire N__6027;
-    wire N__6024;
-    wire N__6021;
+    wire N__6026;
+    wire N__6025;
     wire N__6018;
-    wire N__6017;
-    wire N__6016;
-    wire N__6015;
-    wire N__6014;
-    wire N__6013;
-    wire N__6012;
-    wire N__6011;
-    wire N__6010;
     wire N__6009;
-    wire N__6008;
-    wire N__6007;
-    wire N__6006;
-    wire N__6005;
-    wire N__6004;
-    wire N__6003;
     wire N__6002;
-    wire N__6001;
-    wire N__6000;
-    wire N__5999;
-    wire N__5998;
-    wire N__5997;
-    wire N__5996;
     wire N__5995;
     wire N__5994;
     wire N__5993;
@@ -629,964 +637,1045 @@ module TOP (
     wire N__5988;
     wire N__5987;
     wire N__5986;
+    wire N__5985;
+    wire N__5984;
+    wire N__5983;
+    wire N__5982;
+    wire N__5981;
+    wire N__5980;
     wire N__5979;
-    wire N__5978;
-    wire N__5977;
-    wire N__5976;
-    wire N__5975;
-    wire N__5968;
-    wire N__5965;
-    wire N__5962;
-    wire N__5959;
-    wire N__5958;
-    wire N__5949;
-    wire N__5942;
-    wire N__5933;
+    wire N__5972;
+    wire N__5963;
+    wire N__5954;
+    wire N__5945;
+    wire N__5940;
+    wire N__5931;
+    wire N__5928;
+    wire N__5927;
+    wire N__5926;
+    wire N__5925;
     wire N__5924;
-    wire N__5917;
-    wire N__5908;
-    wire N__5905;
-    wire N__5902;
+    wire N__5921;
+    wire N__5912;
+    wire N__5911;
+    wire N__5910;
+    wire N__5909;
+    wire N__5898;
+    wire N__5897;
+    wire N__5896;
+    wire N__5895;
+    wire N__5894;
     wire N__5893;
+    wire N__5892;
+    wire N__5891;
+    wire N__5890;
+    wire N__5889;
+    wire N__5888;
+    wire N__5887;
+    wire N__5886;
+    wire N__5885;
     wire N__5884;
+    wire N__5883;
+    wire N__5882;
+    wire N__5881;
+    wire N__5880;
+    wire N__5879;
+    wire N__5878;
+    wire N__5877;
+    wire N__5876;
     wire N__5875;
+    wire N__5872;
+    wire N__5869;
     wire N__5868;
-    wire N__5865;
-    wire N__5862;
-    wire N__5855;
-    wire N__5852;
-    wire N__5847;
-    wire N__5844;
-    wire N__5841;
-    wire N__5840;
-    wire N__5835;
-    wire N__5828;
-    wire N__5823;
-    wire N__5808;
-    wire N__5797;
-    wire N__5794;
-    wire N__5787;
-    wire N__5782;
-    wire N__5775;
-    wire N__5774;
-    wire N__5771;
-    wire N__5768;
-    wire N__5763;
-    wire N__5760;
-    wire N__5757;
-    wire N__5756;
-    wire N__5755;
+    wire N__5859;
+    wire N__5856;
+    wire N__5853;
+    wire N__5846;
+    wire N__5843;
+    wire N__5834;
+    wire N__5825;
+    wire N__5816;
+    wire N__5807;
+    wire N__5798;
+    wire N__5791;
+    wire N__5786;
+    wire N__5783;
+    wire N__5772;
+    wire N__5753;
     wire N__5752;
-    wire N__5749;
+    wire N__5751;
     wire N__5748;
     wire N__5747;
-    wire N__5744;
-    wire N__5739;
-    wire N__5736;
+    wire N__5746;
+    wire N__5741;
+    wire N__5738;
     wire N__5733;
-    wire N__5730;
-    wire N__5727;
-    wire N__5724;
+    wire N__5726;
+    wire N__5725;
+    wire N__5722;
     wire N__5721;
     wire N__5718;
-    wire N__5709;
-    wire N__5706;
-    wire N__5705;
-    wire N__5702;
+    wire N__5717;
+    wire N__5716;
+    wire N__5715;
+    wire N__5712;
+    wire N__5707;
+    wire N__5704;
     wire N__5699;
-    wire N__5694;
-    wire N__5691;
+    wire N__5696;
+    wire N__5693;
     wire N__5688;
     wire N__5685;
     wire N__5682;
-    wire N__5681;
-    wire N__5680;
-    wire N__5677;
-    wire N__5674;
-    wire N__5671;
-    wire N__5666;
+    wire N__5679;
+    wire N__5676;
+    wire N__5673;
+    wire N__5670;
     wire N__5663;
-    wire N__5658;
-    wire N__5657;
+    wire N__5662;
+    wire N__5661;
+    wire N__5660;
+    wire N__5659;
     wire N__5656;
     wire N__5655;
     wire N__5652;
-    wire N__5649;
-    wire N__5644;
-    wire N__5637;
+    wire N__5651;
+    wire N__5646;
+    wire N__5641;
     wire N__5636;
     wire N__5633;
-    wire N__5632;
-    wire N__5629;
-    wire N__5626;
+    wire N__5624;
     wire N__5621;
+    wire N__5618;
+    wire N__5617;
     wire N__5616;
-    wire N__5615;
-    wire N__5614;
-    wire N__5611;
-    wire N__5608;
+    wire N__5609;
+    wire N__5606;
     wire N__5605;
-    wire N__5602;
+    wire N__5604;
+    wire N__5601;
+    wire N__5600;
+    wire N__5599;
+    wire N__5596;
     wire N__5595;
     wire N__5592;
-    wire N__5589;
-    wire N__5586;
-    wire N__5585;
+    wire N__5587;
     wire N__5584;
     wire N__5581;
-    wire N__5576;
-    wire N__5571;
-    wire N__5568;
-    wire N__5565;
-    wire N__5562;
-    wire N__5559;
-    wire N__5558;
+    wire N__5578;
+    wire N__5577;
+    wire N__5574;
+    wire N__5569;
+    wire N__5566;
+    wire N__5563;
+    wire N__5560;
     wire N__5555;
-    wire N__5552;
+    wire N__5550;
     wire N__5547;
-    wire N__5544;
-    wire N__5543;
     wire N__5540;
     wire N__5537;
-    wire N__5532;
+    wire N__5534;
+    wire N__5531;
+    wire N__5530;
     wire N__5529;
-    wire N__5528;
-    wire N__5525;
-    wire N__5522;
+    wire N__5526;
+    wire N__5523;
+    wire N__5520;
     wire N__5517;
-    wire N__5514;
-    wire N__5513;
-    wire N__5510;
+    wire N__5512;
     wire N__5507;
     wire N__5504;
+    wire N__5503;
+    wire N__5502;
     wire N__5499;
     wire N__5496;
-    wire N__5495;
-    wire N__5492;
-    wire N__5489;
-    wire N__5484;
-    wire N__5481;
+    wire N__5493;
+    wire N__5486;
+    wire N__5483;
     wire N__5480;
     wire N__5477;
     wire N__5474;
+    wire N__5473;
+    wire N__5472;
     wire N__5469;
-    wire N__5466;
-    wire N__5465;
-    wire N__5462;
+    wire N__5464;
     wire N__5459;
     wire N__5456;
-    wire N__5451;
+    wire N__5453;
+    wire N__5450;
+    wire N__5449;
     wire N__5448;
-    wire N__5447;
-    wire N__5444;
-    wire N__5441;
-    wire N__5438;
-    wire N__5433;
-    wire N__5430;
-    wire N__5427;
-    wire N__5424;
+    wire N__5445;
+    wire N__5442;
+    wire N__5439;
+    wire N__5432;
+    wire N__5429;
+    wire N__5426;
     wire N__5423;
-    wire N__5422;
-    wire N__5419;
+    wire N__5420;
+    wire N__5417;
     wire N__5414;
-    wire N__5409;
-    wire N__5406;
-    wire N__5403;
-    wire N__5400;
-    wire N__5397;
+    wire N__5411;
+    wire N__5408;
+    wire N__5405;
+    wire N__5402;
+    wire N__5399;
     wire N__5396;
     wire N__5393;
     wire N__5390;
     wire N__5387;
     wire N__5384;
-    wire N__5379;
-    wire N__5376;
+    wire N__5381;
+    wire N__5378;
     wire N__5375;
-    wire N__5374;
-    wire N__5367;
-    wire N__5364;
-    wire N__5361;
-    wire N__5358;
-    wire N__5355;
-    wire N__5352;
-    wire N__5349;
-    wire N__5346;
+    wire N__5372;
+    wire N__5369;
+    wire N__5366;
+    wire N__5363;
+    wire N__5360;
+    wire N__5359;
+    wire N__5356;
+    wire N__5353;
+    wire N__5350;
     wire N__5345;
-    wire N__5344;
+    wire N__5342;
     wire N__5341;
     wire N__5338;
     wire N__5335;
-    wire N__5334;
-    wire N__5333;
     wire N__5332;
-    wire N__5331;
-    wire N__5330;
-    wire N__5329;
+    wire N__5327;
     wire N__5326;
     wire N__5323;
     wire N__5320;
-    wire N__5315;
-    wire N__5306;
-    wire N__5295;
+    wire N__5317;
+    wire N__5312;
+    wire N__5309;
+    wire N__5308;
+    wire N__5305;
+    wire N__5302;
+    wire N__5299;
     wire N__5294;
-    wire N__5293;
+    wire N__5291;
     wire N__5290;
     wire N__5287;
-    wire N__5286;
-    wire N__5283;
-    wire N__5278;
+    wire N__5284;
+    wire N__5281;
+    wire N__5276;
     wire N__5273;
-    wire N__5268;
+    wire N__5270;
     wire N__5267;
-    wire N__5266;
-    wire N__5265;
-    wire N__5262;
-    wire N__5261;
-    wire N__5258;
-    wire N__5253;
-    wire N__5248;
-    wire N__5241;
-    wire N__5240;
+    wire N__5264;
+    wire N__5263;
+    wire N__5260;
+    wire N__5257;
+    wire N__5254;
+    wire N__5249;
+    wire N__5246;
+    wire N__5245;
+    wire N__5242;
     wire N__5239;
-    wire N__5238;
-    wire N__5237;
     wire N__5236;
-    wire N__5235;
-    wire N__5232;
-    wire N__5229;
-    wire N__5222;
-    wire N__5217;
-    wire N__5208;
-    wire N__5205;
-    wire N__5202;
-    wire N__5201;
-    wire N__5198;
+    wire N__5231;
+    wire N__5228;
+    wire N__5227;
+    wire N__5224;
+    wire N__5221;
+    wire N__5218;
+    wire N__5213;
+    wire N__5210;
+    wire N__5209;
+    wire N__5206;
+    wire N__5203;
+    wire N__5200;
     wire N__5195;
     wire N__5192;
     wire N__5189;
-    wire N__5184;
+    wire N__5186;
     wire N__5183;
     wire N__5180;
     wire N__5177;
-    wire N__5172;
-    wire N__5171;
-    wire N__5168;
-    wire N__5165;
-    wire N__5160;
-    wire N__5157;
+    wire N__5174;
+    wire N__5173;
+    wire N__5170;
+    wire N__5167;
+    wire N__5164;
+    wire N__5159;
     wire N__5156;
-    wire N__5153;
-    wire N__5150;
-    wire N__5145;
-    wire N__5142;
+    wire N__5155;
+    wire N__5152;
+    wire N__5149;
+    wire N__5146;
     wire N__5141;
     wire N__5138;
-    wire N__5135;
-    wire N__5130;
-    wire N__5127;
-    wire N__5124;
-    wire N__5121;
+    wire N__5137;
+    wire N__5134;
+    wire N__5131;
+    wire N__5128;
+    wire N__5123;
     wire N__5120;
     wire N__5117;
     wire N__5114;
     wire N__5111;
     wire N__5108;
-    wire N__5105;
-    wire N__5100;
-    wire N__5097;
-    wire N__5094;
-    wire N__5091;
-    wire N__5088;
-    wire N__5085;
+    wire N__5107;
+    wire N__5104;
+    wire N__5101;
+    wire N__5098;
+    wire N__5095;
+    wire N__5092;
+    wire N__5087;
     wire N__5084;
     wire N__5081;
-    wire N__5078;
-    wire N__5073;
-    wire N__5072;
+    wire N__5080;
+    wire N__5077;
+    wire N__5074;
     wire N__5071;
-    wire N__5068;
-    wire N__5065;
-    wire N__5064;
-    wire N__5061;
-    wire N__5060;
-    wire N__5057;
-    wire N__5054;
-    wire N__5051;
+    wire N__5066;
+    wire N__5063;
+    wire N__5062;
+    wire N__5059;
+    wire N__5056;
+    wire N__5053;
     wire N__5048;
     wire N__5045;
-    wire N__5034;
-    wire N__5031;
+    wire N__5044;
+    wire N__5041;
+    wire N__5038;
+    wire N__5035;
     wire N__5030;
     wire N__5027;
-    wire N__5024;
-    wire N__5021;
-    wire N__5018;
+    wire N__5026;
+    wire N__5023;
+    wire N__5020;
     wire N__5017;
     wire N__5012;
-    wire N__5011;
-    wire N__5010;
     wire N__5009;
     wire N__5006;
-    wire N__5005;
-    wire N__5002;
-    wire N__5001;
-    wire N__4998;
+    wire N__5003;
+    wire N__5000;
+    wire N__4999;
+    wire N__4996;
     wire N__4995;
     wire N__4992;
     wire N__4989;
     wire N__4986;
     wire N__4983;
-    wire N__4980;
-    wire N__4977;
-    wire N__4970;
-    wire N__4967;
-    wire N__4956;
-    wire N__4953;
-    wire N__4952;
+    wire N__4978;
+    wire N__4975;
+    wire N__4972;
+    wire N__4969;
+    wire N__4966;
+    wire N__4961;
+    wire N__4958;
+    wire N__4957;
+    wire N__4954;
     wire N__4951;
-    wire N__4950;
-    wire N__4947;
-    wire N__4946;
-    wire N__4943;
+    wire N__4948;
+    wire N__4945;
     wire N__4940;
-    wire N__4937;
+    wire N__4939;
     wire N__4934;
     wire N__4931;
+    wire N__4928;
+    wire N__4925;
+    wire N__4924;
+    wire N__4923;
     wire N__4920;
     wire N__4917;
     wire N__4914;
-    wire N__4911;
-    wire N__4908;
-    wire N__4905;
-    wire N__4904;
-    wire N__4901;
-    wire N__4898;
-    wire N__4893;
-    wire N__4892;
-    wire N__4889;
-    wire N__4886;
-    wire N__4881;
-    wire N__4878;
-    wire N__4875;
-    wire N__4872;
-    wire N__4871;
-    wire N__4868;
-    wire N__4865;
-    wire N__4864;
-    wire N__4861;
+    wire N__4913;
+    wire N__4912;
+    wire N__4909;
+    wire N__4906;
+    wire N__4899;
+    wire N__4896;
+    wire N__4891;
+    wire N__4888;
+    wire N__4885;
+    wire N__4880;
+    wire N__4877;
+    wire N__4876;
+    wire N__4873;
+    wire N__4870;
+    wire N__4867;
+    wire N__4862;
+    wire N__4859;
     wire N__4858;
     wire N__4855;
     wire N__4852;
-    wire N__4845;
-    wire N__4842;
-    wire N__4839;
-    wire N__4836;
-    wire N__4833;
-    wire N__4830;
-    wire N__4827;
-    wire N__4824;
-    wire N__4821;
-    wire N__4818;
-    wire N__4815;
-    wire N__4812;
-    wire N__4809;
+    wire N__4849;
+    wire N__4844;
+    wire N__4841;
+    wire N__4840;
+    wire N__4837;
+    wire N__4834;
+    wire N__4831;
+    wire N__4826;
+    wire N__4823;
+    wire N__4822;
+    wire N__4819;
+    wire N__4816;
+    wire N__4813;
     wire N__4808;
     wire N__4805;
     wire N__4802;
     wire N__4801;
-    wire N__4800;
-    wire N__4799;
-    wire N__4796;
+    wire N__4798;
+    wire N__4795;
+    wire N__4794;
     wire N__4793;
-    wire N__4790;
-    wire N__4787;
-    wire N__4786;
-    wire N__4783;
+    wire N__4792;
+    wire N__4791;
+    wire N__4788;
+    wire N__4785;
     wire N__4780;
-    wire N__4775;
-    wire N__4770;
-    wire N__4761;
-    wire N__4760;
-    wire N__4759;
-    wire N__4756;
-    wire N__4755;
+    wire N__4777;
+    wire N__4774;
+    wire N__4769;
+    wire N__4766;
+    wire N__4757;
     wire N__4754;
-    wire N__4753;
-    wire N__4750;
-    wire N__4747;
-    wire N__4744;
+    wire N__4751;
+    wire N__4748;
+    wire N__4745;
+    wire N__4742;
     wire N__4741;
     wire N__4738;
     wire N__4735;
-    wire N__4734;
-    wire N__4733;
     wire N__4732;
-    wire N__4731;
-    wire N__4730;
-    wire N__4729;
+    wire N__4727;
     wire N__4726;
     wire N__4723;
     wire N__4720;
-    wire N__4719;
+    wire N__4717;
+    wire N__4712;
+    wire N__4709;
     wire N__4706;
-    wire N__4703;
-    wire N__4698;
-    wire N__4695;
+    wire N__4705;
+    wire N__4702;
+    wire N__4699;
+    wire N__4696;
+    wire N__4691;
     wire N__4690;
     wire N__4687;
-    wire N__4674;
-    wire N__4671;
-    wire N__4668;
-    wire N__4665;
-    wire N__4662;
-    wire N__4659;
-    wire N__4656;
-    wire N__4653;
-    wire N__4650;
-    wire N__4647;
-    wire N__4644;
-    wire N__4641;
-    wire N__4638;
-    wire N__4635;
-    wire N__4632;
-    wire N__4631;
-    wire N__4628;
+    wire N__4684;
+    wire N__4681;
+    wire N__4676;
+    wire N__4675;
+    wire N__4672;
+    wire N__4669;
+    wire N__4664;
+    wire N__4661;
+    wire N__4658;
+    wire N__4657;
+    wire N__4654;
+    wire N__4651;
+    wire N__4648;
+    wire N__4643;
+    wire N__4640;
+    wire N__4637;
+    wire N__4636;
+    wire N__4633;
+    wire N__4630;
     wire N__4627;
-    wire N__4624;
-    wire N__4623;
     wire N__4622;
-    wire N__4619;
-    wire N__4616;
-    wire N__4611;
-    wire N__4608;
+    wire N__4621;
+    wire N__4618;
+    wire N__4615;
+    wire N__4610;
+    wire N__4607;
+    wire N__4606;
     wire N__4603;
-    wire N__4596;
-    wire N__4595;
-    wire N__4594;
+    wire N__4600;
+    wire N__4597;
+    wire N__4592;
     wire N__4591;
-    wire N__4590;
-    wire N__4589;
-    wire N__4584;
-    wire N__4581;
-    wire N__4576;
-    wire N__4569;
-    wire N__4568;
-    wire N__4565;
-    wire N__4562;
+    wire N__4588;
+    wire N__4585;
+    wire N__4582;
+    wire N__4577;
+    wire N__4574;
+    wire N__4573;
+    wire N__4570;
+    wire N__4567;
+    wire N__4564;
     wire N__4559;
-    wire N__4556;
-    wire N__4553;
-    wire N__4548;
-    wire N__4545;
-    wire N__4542;
-    wire N__4539;
-    wire N__4536;
-    wire N__4533;
-    wire N__4532;
-    wire N__4529;
-    wire N__4526;
-    wire N__4523;
-    wire N__4520;
-    wire N__4517;
+    wire N__4558;
+    wire N__4555;
+    wire N__4552;
+    wire N__4547;
+    wire N__4544;
+    wire N__4541;
+    wire N__4538;
+    wire N__4537;
+    wire N__4534;
+    wire N__4531;
+    wire N__4528;
+    wire N__4525;
+    wire N__4522;
+    wire N__4519;
     wire N__4514;
-    wire N__4509;
+    wire N__4511;
     wire N__4508;
     wire N__4505;
     wire N__4502;
-    wire N__4497;
+    wire N__4499;
     wire N__4496;
-    wire N__4493;
-    wire N__4490;
-    wire N__4485;
-    wire N__4482;
-    wire N__4479;
-    wire N__4476;
-    wire N__4475;
-    wire N__4472;
-    wire N__4469;
-    wire N__4466;
+    wire N__4495;
+    wire N__4492;
+    wire N__4489;
+    wire N__4484;
+    wire N__4481;
+    wire N__4480;
+    wire N__4477;
+    wire N__4474;
+    wire N__4471;
+    wire N__4468;
     wire N__4463;
     wire N__4460;
-    wire N__4457;
-    wire N__4452;
-    wire N__4451;
-    wire N__4450;
-    wire N__4447;
-    wire N__4446;
-    wire N__4443;
-    wire N__4442;
+    wire N__4459;
+    wire N__4456;
+    wire N__4455;
+    wire N__4454;
+    wire N__4453;
+    wire N__4444;
     wire N__4441;
     wire N__4436;
-    wire N__4431;
-    wire N__4428;
-    wire N__4425;
-    wire N__4422;
-    wire N__4419;
-    wire N__4416;
-    wire N__4413;
-    wire N__4404;
-    wire N__4401;
-    wire N__4398;
-    wire N__4395;
-    wire N__4392;
-    wire N__4389;
-    wire N__4386;
-    wire N__4383;
-    wire N__4380;
+    wire N__4433;
+    wire N__4430;
+    wire N__4429;
+    wire N__4426;
+    wire N__4423;
+    wire N__4420;
+    wire N__4415;
+    wire N__4412;
+    wire N__4411;
+    wire N__4408;
+    wire N__4405;
+    wire N__4402;
+    wire N__4397;
+    wire N__4394;
+    wire N__4393;
+    wire N__4390;
+    wire N__4387;
+    wire N__4384;
     wire N__4379;
-    wire N__4374;
-    wire N__4371;
-    wire N__4370;
-    wire N__4367;
-    wire N__4364;
-    wire N__4359;
+    wire N__4376;
+    wire N__4375;
+    wire N__4372;
+    wire N__4369;
+    wire N__4366;
+    wire N__4361;
     wire N__4358;
-    wire N__4353;
-    wire N__4350;
-    wire N__4347;
+    wire N__4355;
+    wire N__4352;
+    wire N__4349;
+    wire N__4346;
+    wire N__4345;
     wire N__4344;
-    wire N__4341;
-    wire N__4340;
-    wire N__4339;
-    wire N__4338;
-    wire N__4335;
+    wire N__4337;
     wire N__4334;
     wire N__4331;
-    wire N__4326;
-    wire N__4323;
-    wire N__4320;
-    wire N__4311;
-    wire N__4308;
+    wire N__4328;
+    wire N__4327;
+    wire N__4324;
+    wire N__4321;
+    wire N__4318;
+    wire N__4313;
+    wire N__4310;
+    wire N__4307;
+    wire N__4306;
     wire N__4305;
     wire N__4304;
     wire N__4303;
-    wire N__4302;
-    wire N__4301;
-    wire N__4298;
-    wire N__4295;
-    wire N__4292;
-    wire N__4291;
-    wire N__4288;
-    wire N__4285;
-    wire N__4282;
+    wire N__4300;
+    wire N__4293;
+    wire N__4290;
+    wire N__4287;
+    wire N__4280;
     wire N__4277;
     wire N__4274;
     wire N__4271;
     wire N__4268;
+    wire N__4267;
+    wire N__4266;
     wire N__4263;
     wire N__4260;
+    wire N__4259;
+    wire N__4258;
     wire N__4255;
-    wire N__4250;
-    wire N__4245;
-    wire N__4242;
+    wire N__4252;
+    wire N__4247;
+    wire N__4244;
     wire N__4241;
-    wire N__4240;
-    wire N__4239;
-    wire N__4238;
-    wire N__4235;
     wire N__4232;
-    wire N__4227;
-    wire N__4224;
-    wire N__4221;
-    wire N__4212;
-    wire N__4209;
-    wire N__4208;
+    wire N__4229;
+    wire N__4226;
+    wire N__4223;
+    wire N__4220;
+    wire N__4219;
+    wire N__4216;
+    wire N__4213;
+    wire N__4210;
     wire N__4205;
     wire N__4202;
     wire N__4201;
     wire N__4198;
     wire N__4195;
     wire N__4192;
-    wire N__4185;
-    wire N__4182;
-    wire N__4179;
-    wire N__4176;
-    wire N__4173;
-    wire N__4170;
-    wire N__4169;
+    wire N__4187;
+    wire N__4184;
+    wire N__4181;
+    wire N__4180;
+    wire N__4177;
+    wire N__4174;
+    wire N__4171;
     wire N__4166;
     wire N__4163;
-    wire N__4160;
-    wire N__4155;
-    wire N__4152;
-    wire N__4149;
-    wire N__4146;
-    wire N__4143;
-    wire N__4140;
-    wire N__4139;
-    wire N__4136;
-    wire N__4133;
-    wire N__4128;
+    wire N__4162;
+    wire N__4159;
+    wire N__4156;
+    wire N__4153;
+    wire N__4148;
+    wire N__4145;
+    wire N__4144;
+    wire N__4141;
+    wire N__4138;
+    wire N__4135;
+    wire N__4130;
     wire N__4127;
-    wire N__4124;
-    wire N__4121;
-    wire N__4116;
-    wire N__4115;
+    wire N__4126;
+    wire N__4123;
+    wire N__4120;
+    wire N__4117;
     wire N__4112;
     wire N__4109;
-    wire N__4106;
-    wire N__4101;
-    wire N__4100;
-    wire N__4097;
+    wire N__4108;
+    wire N__4105;
+    wire N__4102;
+    wire N__4099;
     wire N__4094;
-    wire N__4089;
-    wire N__4086;
-    wire N__4083;
-    wire N__4080;
-    wire N__4079;
+    wire N__4091;
+    wire N__4090;
+    wire N__4087;
+    wire N__4084;
+    wire N__4081;
     wire N__4076;
     wire N__4073;
-    wire N__4068;
+    wire N__4070;
     wire N__4067;
-    wire N__4064;
-    wire N__4061;
-    wire N__4056;
+    wire N__4066;
+    wire N__4065;
+    wire N__4058;
     wire N__4055;
     wire N__4052;
     wire N__4049;
-    wire N__4046;
-    wire N__4041;
-    wire N__4040;
-    wire N__4037;
-    wire N__4034;
-    wire N__4029;
-    wire N__4026;
-    wire N__4023;
+    wire N__4048;
+    wire N__4045;
+    wire N__4042;
+    wire N__4039;
+    wire N__4036;
+    wire N__4033;
+    wire N__4028;
+    wire N__4025;
     wire N__4022;
     wire N__4019;
     wire N__4016;
-    wire N__4011;
+    wire N__4013;
     wire N__4010;
-    wire N__4007;
-    wire N__4004;
-    wire N__3999;
-    wire N__3998;
+    wire N__4009;
+    wire N__4006;
+    wire N__4003;
+    wire N__4000;
     wire N__3995;
-    wire N__3992;
-    wire N__3989;
-    wire N__3984;
-    wire N__3983;
+    wire N__3994;
+    wire N__3991;
+    wire N__3988;
+    wire N__3985;
     wire N__3980;
     wire N__3977;
-    wire N__3972;
-    wire N__3969;
-    wire N__3966;
-    wire N__3963;
-    wire N__3960;
-    wire N__3957;
-    wire N__3954;
-    wire N__3953;
-    wire N__3950;
+    wire N__3976;
+    wire N__3973;
+    wire N__3970;
+    wire N__3967;
+    wire N__3962;
+    wire N__3961;
+    wire N__3958;
+    wire N__3955;
+    wire N__3952;
     wire N__3947;
-    wire N__3942;
-    wire N__3939;
+    wire N__3944;
+    wire N__3943;
+    wire N__3940;
+    wire N__3937;
     wire N__3936;
-    wire N__3935;
-    wire N__3932;
-    wire N__3929;
-    wire N__3924;
-    wire N__3921;
+    wire N__3931;
+    wire N__3928;
+    wire N__3923;
     wire N__3920;
     wire N__3917;
-    wire N__3914;
-    wire N__3909;
-    wire N__3906;
-    wire N__3903;
-    wire N__3900;
+    wire N__3916;
+    wire N__3913;
+    wire N__3910;
+    wire N__3907;
+    wire N__3902;
     wire N__3899;
-    wire N__3896;
-    wire N__3893;
-    wire N__3890;
-    wire N__3885;
-    wire N__3882;
-    wire N__3879;
-    wire N__3876;
-    wire N__3873;
-    wire N__3870;
+    wire N__3898;
+    wire N__3895;
+    wire N__3892;
+    wire N__3887;
+    wire N__3884;
+    wire N__3883;
+    wire N__3880;
+    wire N__3877;
+    wire N__3872;
     wire N__3869;
     wire N__3868;
     wire N__3865;
     wire N__3862;
     wire N__3859;
-    wire N__3856;
-    wire N__3853;
+    wire N__3854;
+    wire N__3851;
     wire N__3850;
     wire N__3847;
     wire N__3844;
-    wire N__3841;
-    wire N__3834;
-    wire N__3833;
-    wire N__3830;
-    wire N__3827;
-    wire N__3824;
-    wire N__3819;
+    wire N__3839;
+    wire N__3836;
+    wire N__3835;
+    wire N__3832;
+    wire N__3829;
+    wire N__3826;
+    wire N__3821;
     wire N__3818;
-    wire N__3815;
-    wire N__3812;
-    wire N__3807;
+    wire N__3817;
+    wire N__3816;
+    wire N__3813;
+    wire N__3810;
+    wire N__3809;
     wire N__3806;
     wire N__3803;
-    wire N__3800;
-    wire N__3797;
-    wire N__3792;
-    wire N__3791;
-    wire N__3788;
-    wire N__3785;
-    wire N__3780;
-    wire N__3777;
-    wire N__3774;
+    wire N__3802;
+    wire N__3799;
+    wire N__3796;
+    wire N__3793;
+    wire N__3790;
+    wire N__3787;
+    wire N__3782;
     wire N__3773;
     wire N__3770;
-    wire N__3769;
+    wire N__3767;
     wire N__3766;
     wire N__3763;
     wire N__3760;
     wire N__3757;
-    wire N__3754;
+    wire N__3752;
     wire N__3749;
-    wire N__3744;
-    wire N__3743;
-    wire N__3740;
-    wire N__3737;
+    wire N__3746;
+    wire N__3745;
+    wire N__3742;
+    wire N__3741;
+    wire N__3738;
+    wire N__3735;
     wire N__3732;
     wire N__3729;
-    wire N__3728;
-    wire N__3725;
-    wire N__3722;
-    wire N__3717;
-    wire N__3714;
+    wire N__3726;
+    wire N__3723;
+    wire N__3720;
     wire N__3713;
-    wire N__3710;
-    wire N__3707;
-    wire N__3702;
-    wire N__3699;
+    wire N__3712;
+    wire N__3709;
+    wire N__3706;
+    wire N__3703;
     wire N__3698;
-    wire N__3695;
-    wire N__3692;
-    wire N__3687;
-    wire N__3684;
-    wire N__3683;
-    wire N__3680;
-    wire N__3677;
+    wire N__3697;
+    wire N__3694;
+    wire N__3691;
+    wire N__3686;
+    wire N__3685;
+    wire N__3682;
+    wire N__3679;
     wire N__3674;
-    wire N__3669;
-    wire N__3666;
-    wire N__3665;
-    wire N__3662;
+    wire N__3671;
+    wire N__3670;
+    wire N__3667;
+    wire N__3664;
     wire N__3659;
-    wire N__3654;
-    wire N__3651;
-    wire N__3650;
-    wire N__3647;
+    wire N__3656;
+    wire N__3655;
+    wire N__3652;
+    wire N__3649;
     wire N__3644;
-    wire N__3639;
-    wire N__3636;
-    wire N__3635;
-    wire N__3632;
+    wire N__3641;
+    wire N__3640;
+    wire N__3637;
+    wire N__3634;
     wire N__3629;
     wire N__3626;
-    wire N__3621;
-    wire N__3618;
-    wire N__3617;
+    wire N__3625;
+    wire N__3622;
+    wire N__3619;
     wire N__3614;
     wire N__3611;
-    wire N__3606;
-    wire N__3603;
-    wire N__3602;
+    wire N__3610;
+    wire N__3607;
+    wire N__3604;
     wire N__3599;
     wire N__3596;
-    wire N__3593;
-    wire N__3588;
-    wire N__3585;
-    wire N__3584;
+    wire N__3595;
+    wire N__3592;
+    wire N__3589;
+    wire N__3586;
     wire N__3581;
     wire N__3578;
-    wire N__3573;
-    wire N__3570;
-    wire N__3569;
+    wire N__3577;
+    wire N__3574;
+    wire N__3571;
     wire N__3566;
     wire N__3563;
     wire N__3560;
-    wire N__3555;
-    wire N__3552;
-    wire N__3549;
+    wire N__3557;
+    wire N__3554;
+    wire N__3551;
     wire N__3548;
     wire N__3545;
     wire N__3542;
-    wire N__3537;
-    wire N__3534;
-    wire N__3531;
+    wire N__3539;
+    wire N__3536;
+    wire N__3533;
     wire N__3530;
-    wire N__3527;
-    wire N__3524;
+    wire N__3529;
+    wire N__3526;
     wire N__3523;
     wire N__3520;
     wire N__3517;
-    wire N__3514;
+    wire N__3516;
+    wire N__3515;
+    wire N__3512;
     wire N__3511;
-    wire N__3506;
-    wire N__3501;
-    wire N__3500;
-    wire N__3497;
-    wire N__3494;
-    wire N__3491;
+    wire N__3508;
+    wire N__3505;
+    wire N__3502;
+    wire N__3499;
+    wire N__3496;
+    wire N__3489;
+    wire N__3488;
+    wire N__3487;
     wire N__3486;
-    wire N__3485;
-    wire N__3482;
-    wire N__3479;
+    wire N__3483;
+    wire N__3480;
+    wire N__3477;
     wire N__3474;
-    wire N__3471;
+    wire N__3473;
     wire N__3470;
     wire N__3467;
-    wire N__3464;
-    wire N__3459;
+    wire N__3466;
+    wire N__3461;
     wire N__3456;
-    wire N__3453;
-    wire N__3452;
     wire N__3449;
     wire N__3446;
-    wire N__3441;
-    wire N__3438;
-    wire N__3435;
+    wire N__3437;
     wire N__3434;
+    wire N__3433;
+    wire N__3432;
     wire N__3431;
-    wire N__3428;
-    wire N__3423;
+    wire N__3430;
+    wire N__3427;
     wire N__3420;
-    wire N__3419;
-    wire N__3416;
-    wire N__3413;
-    wire N__3408;
-    wire N__3405;
-    wire N__3404;
-    wire N__3401;
-    wire N__3398;
-    wire N__3395;
-    wire N__3390;
-    wire N__3387;
+    wire N__3417;
+    wire N__3410;
+    wire N__3409;
+    wire N__3406;
+    wire N__3403;
+    wire N__3400;
+    wire N__3397;
+    wire N__3394;
+    wire N__3389;
     wire N__3386;
     wire N__3383;
     wire N__3380;
-    wire N__3375;
-    wire N__3372;
+    wire N__3377;
+    wire N__3374;
     wire N__3371;
     wire N__3368;
-    wire N__3365;
+    wire N__3367;
+    wire N__3364;
+    wire N__3363;
     wire N__3362;
-    wire N__3357;
-    wire N__3354;
-    wire N__3353;
-    wire N__3350;
-    wire N__3347;
-    wire N__3342;
-    wire N__3339;
-    wire N__3338;
-    wire N__3335;
-    wire N__3332;
+    wire N__3361;
+    wire N__3352;
+    wire N__3349;
+    wire N__3344;
+    wire N__3343;
+    wire N__3340;
+    wire N__3337;
+    wire N__3336;
+    wire N__3333;
+    wire N__3330;
     wire N__3327;
-    wire N__3324;
-    wire N__3321;
-    wire N__3318;
-    wire N__3315;
-    wire N__3312;
+    wire N__3320;
+    wire N__3317;
+    wire N__3314;
     wire N__3311;
     wire N__3308;
     wire N__3305;
-    wire N__3300;
+    wire N__3302;
     wire N__3299;
-    wire N__3296;
-    wire N__3293;
-    wire N__3288;
-    wire N__3285;
-    wire N__3284;
+    wire N__3298;
+    wire N__3297;
+    wire N__3294;
+    wire N__3289;
+    wire N__3286;
     wire N__3281;
-    wire N__3278;
-    wire N__3273;
-    wire N__3270;
-    wire N__3269;
-    wire N__3266;
-    wire N__3263;
-    wire N__3258;
+    wire N__3280;
+    wire N__3277;
+    wire N__3276;
+    wire N__3275;
+    wire N__3274;
+    wire N__3265;
+    wire N__3262;
+    wire N__3257;
+    wire N__3256;
     wire N__3255;
-    wire N__3252;
-    wire N__3249;
-    wire N__3246;
-    wire N__3243;
-    wire N__3240;
-    wire N__3237;
-    wire N__3234;
-    wire N__3231;
-    wire N__3228;
-    wire N__3225;
-    wire N__3222;
-    wire N__3219;
-    wire N__3216;
-    wire N__3213;
-    wire N__3210;
-    wire N__3207;
-    wire N__3204;
-    wire N__3201;
-    wire N__3198;
-    wire N__3195;
-    wire N__3192;
-    wire N__3189;
-    wire N__3186;
-    wire N__3183;
-    wire N__3180;
-    wire N__3177;
-    wire N__3174;
+    wire N__3254;
+    wire N__3253;
+    wire N__3248;
+    wire N__3241;
+    wire N__3238;
+    wire N__3233;
+    wire N__3230;
+    wire N__3227;
+    wire N__3224;
+    wire N__3221;
+    wire N__3218;
+    wire N__3215;
+    wire N__3212;
+    wire N__3209;
+    wire N__3206;
+    wire N__3203;
+    wire N__3200;
+    wire N__3199;
+    wire N__3196;
+    wire N__3193;
+    wire N__3190;
+    wire N__3187;
+    wire N__3182;
+    wire N__3181;
+    wire N__3178;
+    wire N__3175;
+    wire N__3172;
     wire N__3171;
     wire N__3168;
     wire N__3165;
     wire N__3162;
-    wire N__3159;
-    wire N__3156;
-    wire N__3153;
-    wire N__3150;
+    wire N__3155;
+    wire N__3152;
     wire N__3149;
     wire N__3146;
     wire N__3143;
-    wire N__3138;
-    wire N__3135;
-    wire N__3132;
-    wire N__3129;
-    wire N__3126;
-    wire N__3123;
+    wire N__3140;
+    wire N__3137;
+    wire N__3134;
+    wire N__3131;
+    wire N__3128;
+    wire N__3125;
     wire N__3122;
     wire N__3119;
-    wire N__3118;
-    wire N__3115;
-    wire N__3112;
-    wire N__3109;
-    wire N__3106;
-    wire N__3103;
-    wire N__3100;
-    wire N__3097;
-    wire N__3094;
-    wire N__3091;
-    wire N__3088;
-    wire N__3085;
-    wire N__3082;
+    wire N__3116;
+    wire N__3113;
+    wire N__3110;
+    wire N__3107;
+    wire N__3104;
+    wire N__3101;
+    wire N__3098;
+    wire N__3095;
+    wire N__3092;
+    wire N__3089;
+    wire N__3086;
+    wire N__3083;
+    wire N__3080;
     wire N__3077;
     wire N__3074;
+    wire N__3071;
+    wire N__3068;
+    wire N__3065;
+    wire N__3062;
+    wire N__3059;
+    wire N__3056;
+    wire N__3053;
+    wire N__3050;
+    wire N__3047;
+    wire N__3044;
+    wire N__3041;
+    wire N__3038;
+    wire N__3035;
+    wire N__3032;
+    wire N__3029;
+    wire N__3026;
+    wire N__3023;
     wire VCCG0;
-    wire \RSMRST_PWRGD.G_1_1_cascade_ ;
-    wire \RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_ ;
-    wire \RSMRST_PWRGD.un4_count_11 ;
-    wire \RSMRST_PWRGD.un4_count_10 ;
-    wire \RSMRST_PWRGD.un4_count_8_cascade_ ;
-    wire \RSMRST_PWRGD.un4_count_9 ;
-    wire v33a_enn;
-    wire v1p8a_ok;
-    wire v5a_ok;
-    wire v33a_ok;
-    wire \SYS_PWRGD.G_0_1_cascade_ ;
-    wire \SYS_PWRGD.curr_state_RNIE72J5Z0Z_1_cascade_ ;
-    wire \SYS_PWRGD.un4_count_11 ;
-    wire \SYS_PWRGD.un4_count_10 ;
-    wire \SYS_PWRGD.un4_count_9_cascade_ ;
-    wire \SYS_PWRGD.un4_count_8 ;
+    wire bfn_1_8_0_;
+    wire \SYS_PWRGD.un1_count_1_cry_0 ;
+    wire \SYS_PWRGD.un1_count_1_cry_1 ;
+    wire \SYS_PWRGD.un1_count_1_cry_2 ;
+    wire \SYS_PWRGD.un1_count_1_cry_3 ;
+    wire \SYS_PWRGD.un1_count_1_cry_4 ;
+    wire \SYS_PWRGD.un1_count_1_cry_5 ;
+    wire \SYS_PWRGD.un1_count_1_cry_6 ;
+    wire \SYS_PWRGD.un1_count_1_cry_7 ;
+    wire bfn_1_9_0_;
+    wire \SYS_PWRGD.un1_count_1_cry_8 ;
+    wire \SYS_PWRGD.un1_count_1_cry_9 ;
+    wire \SYS_PWRGD.un1_count_1_cry_10 ;
+    wire \SYS_PWRGD.un1_count_1_cry_11 ;
+    wire \SYS_PWRGD.un1_count_1_cry_12 ;
+    wire \SYS_PWRGD.un1_count_1_cry_13 ;
+    wire \SYS_PWRGD.un1_count_1_cry_14 ;
+    wire \SYS_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ;
+    wire bfn_1_10_0_;
+    wire bfn_1_11_0_;
+    wire \VPP_VDDQ.un1_count_1_cry_0 ;
+    wire \VPP_VDDQ.un1_count_1_cry_1 ;
+    wire \VPP_VDDQ.un1_count_1_cry_2 ;
+    wire \VPP_VDDQ.un1_count_1_cry_3 ;
+    wire \VPP_VDDQ.un1_count_1_cry_4 ;
+    wire \VPP_VDDQ.un1_count_1_cry_5 ;
+    wire \VPP_VDDQ.un1_count_1_cry_6 ;
+    wire \VPP_VDDQ.un1_count_1_cry_7 ;
+    wire bfn_1_12_0_;
+    wire \VPP_VDDQ.un1_count_1_cry_8 ;
+    wire \VPP_VDDQ.un1_count_1_cry_9 ;
+    wire \VPP_VDDQ.un1_count_1_cry_10 ;
+    wire \VPP_VDDQ.un1_count_1_cry_11 ;
+    wire \VPP_VDDQ.un1_count_1_cry_12 ;
+    wire \VPP_VDDQ.un1_count_1_cry_13 ;
+    wire \VPP_VDDQ.un1_count_1_cry_14 ;
+    wire \VPP_VDDQ.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ;
     wire bfn_1_13_0_;
+    wire \RSMRST_PWRGD.un4_count_9_cascade_ ;
+    wire \RSMRST_PWRGD.un4_count_8 ;
+    wire \RSMRST_PWRGD.un4_count_10 ;
+    wire \RSMRST_PWRGD.un4_count_11 ;
+    wire \RSMRST_PWRGD.G_1_1 ;
+    wire \RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_ ;
+    wire \RSMRST_PWRGD.N_1_i ;
+    wire \RSMRST_PWRGD.curr_stateZ0Z_1 ;
+    wire \RSMRST_PWRGD.curr_stateZ0Z_0 ;
+    wire rsmrstn;
+    wire vddq_en;
+    wire pch_pwrok;
+    wire \SYS_PWRGD.un1_curr_state10_0 ;
+    wire \SYS_PWRGD.curr_state_RNIFRIJ6Z0Z_1 ;
+    wire \SYS_PWRGD.curr_state_RNIFRIJ6Z0Z_1_cascade_ ;
+    wire \SYS_PWRGD.G_0_0_3 ;
+    wire \SYS_PWRGD.curr_stateZ0Z_1 ;
+    wire un4_counter_7_c_RNIJ9569;
+    wire un4_counter_7_c_RNIJ9569_cascade_;
+    wire \VPP_VDDQ.G_0_0_0 ;
+    wire \PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1_cascade_ ;
+    wire suswarn_n;
+    wire \PCH_PWRGD.curr_stateZ0Z_1 ;
+    wire \PCH_PWRGD.un1_curr_state10_0 ;
+    wire bfn_2_11_0_;
     wire \PCH_PWRGD.un1_count_1_cry_0 ;
     wire \PCH_PWRGD.un1_count_1_cry_1 ;
     wire \PCH_PWRGD.un1_count_1_cry_2 ;
@@ -1595,7 +1684,7 @@ module TOP (
     wire \PCH_PWRGD.un1_count_1_cry_5 ;
     wire \PCH_PWRGD.un1_count_1_cry_6 ;
     wire \PCH_PWRGD.un1_count_1_cry_7 ;
-    wire bfn_1_14_0_;
+    wire bfn_2_12_0_;
     wire \PCH_PWRGD.un1_count_1_cry_8 ;
     wire \PCH_PWRGD.un1_count_1_cry_9 ;
     wire \PCH_PWRGD.un1_count_1_cry_10 ;
@@ -1604,9 +1693,12 @@ module TOP (
     wire \PCH_PWRGD.un1_count_1_cry_13 ;
     wire \PCH_PWRGD.un1_count_1_cry_14 ;
     wire \PCH_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ;
-    wire bfn_1_15_0_;
+    wire bfn_2_13_0_;
+    wire \PCH_PWRGD.G_0_0_2 ;
+    wire \PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1 ;
+    wire \RSMRST_PWRGD.un1_curr_state10_0 ;
     wire \RSMRST_PWRGD.countZ0Z_0 ;
-    wire bfn_2_8_0_;
+    wire bfn_2_14_0_;
     wire \RSMRST_PWRGD.countZ0Z_1 ;
     wire \RSMRST_PWRGD.un1_count_1_cry_0 ;
     wire \RSMRST_PWRGD.countZ0Z_2 ;
@@ -1623,7 +1715,7 @@ module TOP (
     wire \RSMRST_PWRGD.un1_count_1_cry_6 ;
     wire \RSMRST_PWRGD.un1_count_1_cry_7 ;
     wire \RSMRST_PWRGD.countZ0Z_8 ;
-    wire bfn_2_9_0_;
+    wire bfn_2_15_0_;
     wire \RSMRST_PWRGD.countZ0Z_9 ;
     wire \RSMRST_PWRGD.un1_count_1_cry_8 ;
     wire \RSMRST_PWRGD.countZ0Z_10 ;
@@ -1636,74 +1728,14 @@ module TOP (
     wire \RSMRST_PWRGD.un1_count_1_cry_12 ;
     wire \RSMRST_PWRGD.countZ0Z_14 ;
     wire \RSMRST_PWRGD.un1_count_1_cry_13 ;
+    wire CONSTANT_ONE_NET;
+    wire GNDG0;
     wire \RSMRST_PWRGD.un1_count_1_cry_14 ;
     wire \RSMRST_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ;
-    wire bfn_2_10_0_;
+    wire bfn_2_16_0_;
     wire \RSMRST_PWRGD.countZ0Z_15 ;
-    wire \RSMRST_PWRGD.G_0_3 ;
+    wire \RSMRST_PWRGD.G_0_0_1 ;
     wire \RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1 ;
-    wire \SYS_PWRGD.countZ0Z_0 ;
-    wire bfn_2_11_0_;
-    wire \SYS_PWRGD.countZ0Z_1 ;
-    wire \SYS_PWRGD.un1_count_1_cry_0 ;
-    wire \SYS_PWRGD.countZ0Z_2 ;
-    wire \SYS_PWRGD.un1_count_1_cry_1 ;
-    wire \SYS_PWRGD.countZ0Z_3 ;
-    wire \SYS_PWRGD.un1_count_1_cry_2 ;
-    wire \SYS_PWRGD.countZ0Z_4 ;
-    wire \SYS_PWRGD.un1_count_1_cry_3 ;
-    wire \SYS_PWRGD.countZ0Z_5 ;
-    wire \SYS_PWRGD.un1_count_1_cry_4 ;
-    wire \SYS_PWRGD.countZ0Z_6 ;
-    wire \SYS_PWRGD.un1_count_1_cry_5 ;
-    wire \SYS_PWRGD.countZ0Z_7 ;
-    wire \SYS_PWRGD.un1_count_1_cry_6 ;
-    wire \SYS_PWRGD.un1_count_1_cry_7 ;
-    wire \SYS_PWRGD.countZ0Z_8 ;
-    wire bfn_2_12_0_;
-    wire \SYS_PWRGD.countZ0Z_9 ;
-    wire \SYS_PWRGD.un1_count_1_cry_8 ;
-    wire \SYS_PWRGD.countZ0Z_10 ;
-    wire \SYS_PWRGD.un1_count_1_cry_9 ;
-    wire \SYS_PWRGD.countZ0Z_11 ;
-    wire \SYS_PWRGD.un1_count_1_cry_10 ;
-    wire \SYS_PWRGD.countZ0Z_12 ;
-    wire \SYS_PWRGD.un1_count_1_cry_11 ;
-    wire \SYS_PWRGD.countZ0Z_13 ;
-    wire \SYS_PWRGD.un1_count_1_cry_12 ;
-    wire \SYS_PWRGD.countZ0Z_14 ;
-    wire \SYS_PWRGD.un1_count_1_cry_13 ;
-    wire \SYS_PWRGD.un1_count_1_cry_14 ;
-    wire \SYS_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ;
-    wire bfn_2_13_0_;
-    wire \SYS_PWRGD.countZ0Z_15 ;
-    wire \SYS_PWRGD.G_0_2 ;
-    wire \SYS_PWRGD.curr_state_RNIE72J5Z0Z_1 ;
-    wire \PCH_PWRGD.countZ0Z_5 ;
-    wire \PCH_PWRGD.countZ0Z_4 ;
-    wire \PCH_PWRGD.countZ0Z_7 ;
-    wire \PCH_PWRGD.countZ0Z_3 ;
-    wire \PCH_PWRGD.un4_count_9_cascade_ ;
-    wire \PCH_PWRGD.N_1_i_cascade_ ;
-    wire \PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1 ;
-    wire \PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1_cascade_ ;
-    wire \PCH_PWRGD.G_0_4 ;
-    wire \PCH_PWRGD.countZ0Z_9 ;
-    wire \PCH_PWRGD.countZ0Z_8 ;
-    wire \PCH_PWRGD.countZ0Z_11 ;
-    wire \PCH_PWRGD.countZ0Z_0 ;
-    wire \PCH_PWRGD.un4_count_8 ;
-    wire \PCH_PWRGD.countZ0Z_1 ;
-    wire \PCH_PWRGD.countZ0Z_6 ;
-    wire \PCH_PWRGD.countZ0Z_10 ;
-    wire \PCH_PWRGD.countZ0Z_2 ;
-    wire \PCH_PWRGD.un4_count_11 ;
-    wire \PCH_PWRGD.countZ0Z_14 ;
-    wire \PCH_PWRGD.countZ0Z_13 ;
-    wire \PCH_PWRGD.countZ0Z_15 ;
-    wire \PCH_PWRGD.countZ0Z_12 ;
-    wire \PCH_PWRGD.un4_count_10 ;
-    wire vddq_en;
     wire bfn_4_9_0_;
     wire \COUNTER.un4_counter_0 ;
     wire \COUNTER.un4_counter_1 ;
@@ -1714,103 +1746,107 @@ module TOP (
     wire \COUNTER.un4_counter_6 ;
     wire COUNTER_un4_counter_7;
     wire bfn_4_10_0_;
-    wire \PCH_PWRGD.G_2_1 ;
-    wire \RSMRST_PWRGD.un1_curr_state10_0 ;
-    wire \PCH_PWRGD.delayed_vccin_ok_s_1_0 ;
-    wire \RSMRST_PWRGD.N_1_i ;
-    wire \PCH_PWRGD.N_1_i ;
-    wire \RSMRST_PWRGD.curr_stateZ0Z_1 ;
-    wire vccin_en;
-    wire \RSMRST_PWRGD.curr_stateZ0Z_0 ;
-    wire \SYS_PWRGD.N_1_i ;
-    wire \PCH_PWRGD.curr_stateZ0Z_1 ;
+    wire COUNTER_un4_counter_7_THRU_CO_cascade_;
+    wire \SYS_PWRGD.curr_stateZ0Z_0 ;
+    wire \SYS_PWRGD.G_2_1 ;
     wire \PCH_PWRGD.curr_stateZ0Z_0 ;
-    wire \PCH_PWRGD.un1_curr_state10_0 ;
-    wire slp_s3n;
-    wire v5s_enn;
-    wire slp_susn;
-    wire vpp_ok;
-    wire \PCH_PWRGD.N_3_i ;
-    wire G_1;
-    wire \COUNTER.tmp_RNIRH3PZ0Z_0 ;
-    wire tmp_RNIGGLR8_cascade_;
-    wire \VPP_VDDQ.un6_count_11 ;
+    wire \PCH_PWRGD.G_0_1 ;
+    wire \SYS_PWRGD.countZ0Z_5 ;
+    wire \SYS_PWRGD.countZ0Z_3 ;
+    wire \SYS_PWRGD.countZ0Z_11 ;
+    wire \SYS_PWRGD.countZ0Z_2 ;
+    wire \SYS_PWRGD.countZ0Z_14 ;
+    wire \SYS_PWRGD.countZ0Z_13 ;
+    wire \SYS_PWRGD.countZ0Z_15 ;
+    wire \SYS_PWRGD.countZ0Z_12 ;
+    wire \SYS_PWRGD.un4_count_10 ;
+    wire \SYS_PWRGD.un4_count_11_cascade_ ;
+    wire \SYS_PWRGD.N_1_i ;
+    wire \VPP_VDDQ.un1_curr_state13_0 ;
+    wire v33a_enn;
+    wire \VPP_VDDQ.countZ0Z_5 ;
+    wire \VPP_VDDQ.countZ0Z_4 ;
+    wire \VPP_VDDQ.countZ0Z_7 ;
+    wire \VPP_VDDQ.countZ0Z_3 ;
+    wire \VPP_VDDQ.countZ0Z_6 ;
+    wire \VPP_VDDQ.countZ0Z_2 ;
+    wire \VPP_VDDQ.countZ0Z_10 ;
+    wire \VPP_VDDQ.countZ0Z_1 ;
+    wire \PCH_PWRGD.countZ0Z_7 ;
+    wire \PCH_PWRGD.countZ0Z_10 ;
+    wire \PCH_PWRGD.countZ0Z_11 ;
+    wire \PCH_PWRGD.countZ0Z_0 ;
+    wire \PCH_PWRGD.countZ0Z_3 ;
+    wire \PCH_PWRGD.countZ0Z_2 ;
+    wire \PCH_PWRGD.countZ0Z_4 ;
+    wire \PCH_PWRGD.countZ0Z_1 ;
+    wire v1p8a_ok;
+    wire v5a_ok;
+    wire v33a_ok;
+    wire \RSMRST_PWRGD.N_3_i ;
+    wire \PCH_PWRGD.countZ0Z_8 ;
+    wire \PCH_PWRGD.countZ0Z_6 ;
+    wire \PCH_PWRGD.countZ0Z_9 ;
+    wire \PCH_PWRGD.countZ0Z_5 ;
+    wire \PCH_PWRGD.un4_count_11 ;
+    wire \PCH_PWRGD.un4_count_9_cascade_ ;
+    wire \PCH_PWRGD.un4_count_10 ;
+    wire \PCH_PWRGD.N_1_i ;
+    wire \VPP_VDDQ.countZ0Z_9 ;
+    wire \VPP_VDDQ.countZ0Z_8 ;
+    wire \VPP_VDDQ.countZ0Z_11 ;
+    wire \VPP_VDDQ.countZ0Z_0 ;
     wire \VPP_VDDQ.un6_count_10 ;
     wire \VPP_VDDQ.un6_count_8_cascade_ ;
     wire \VPP_VDDQ.un6_count_9 ;
-    wire \COUNTER.un4_counter_1_and ;
-    wire \COUNTER.un4_counter_0_and ;
+    wire v5s_enn;
+    wire \PCH_PWRGD.countZ0Z_14 ;
+    wire \PCH_PWRGD.countZ0Z_13 ;
+    wire \PCH_PWRGD.countZ0Z_15 ;
+    wire \PCH_PWRGD.countZ0Z_12 ;
+    wire \PCH_PWRGD.un4_count_8 ;
+    wire slp_susn;
+    wire vpp_ok;
+    wire slp_s3n;
+    wire \SYS_PWRGD.N_3_i ;
+    wire \VPP_VDDQ.countZ0Z_12 ;
+    wire \VPP_VDDQ.countZ0Z_14 ;
+    wire \VPP_VDDQ.countZ0Z_15 ;
+    wire \VPP_VDDQ.countZ0Z_13 ;
+    wire \VPP_VDDQ.un6_count_11 ;
+    wire COUNTER_tmp_i;
+    wire VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa_cascade_;
+    wire G_0;
+    wire \SYS_PWRGD.countZ0Z_0 ;
+    wire \SYS_PWRGD.countZ0Z_9 ;
+    wire \SYS_PWRGD.countZ0Z_10 ;
+    wire \SYS_PWRGD.countZ0Z_1 ;
+    wire \SYS_PWRGD.un4_count_9 ;
+    wire \SYS_PWRGD.countZ0Z_7 ;
+    wire \SYS_PWRGD.countZ0Z_6 ;
+    wire \SYS_PWRGD.countZ0Z_8 ;
+    wire \SYS_PWRGD.countZ0Z_4 ;
+    wire \SYS_PWRGD.un4_count_8 ;
     wire \COUNTER.un4_counter_2_and ;
+    wire \COUNTER.un4_counter_1_and ;
     wire \COUNTER.un4_counter_4_and ;
     wire \COUNTER.un4_counter_5_and ;
     wire \COUNTER.un4_counter_3_and ;
-    wire COUNTER_tmp_i;
-    wire COUNTER_un4_counter_7_THRU_CO;
-    wire \COUNTER.un4_counter_6_and ;
-    wire \SYS_PWRGD.un1_curr_state10_0 ;
+    wire \COUNTER.un4_counter_0_and ;
     wire \COUNTER.un4_counter_7_and ;
-    wire count_esr_RNIRFM64_15;
-    wire \SYS_PWRGD.curr_stateZ0Z_1 ;
-    wire pch_pwrok;
-    wire \SYS_PWRGD.curr_stateZ0Z_0 ;
-    wire sys_pwrok;
-    wire vddq_ok;
-    wire \VPP_VDDQ.un1_vddq_pwrgdZ0Z_0_cascade_ ;
-    wire VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa;
+    wire \COUNTER.un4_counter_6_and ;
+    wire VPP_VDDQ_un6_count;
     wire \VPP_VDDQ.un1_curr_state12_0_cascade_ ;
+    wire VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa;
     wire \VPP_VDDQ.delayed_vddq_pwrgd_s_1_cascade_ ;
-    wire slp_s4n;
-    wire vccst_en;
-    wire \VPP_VDDQ.delayed_vddq_pwrgdZ0 ;
-    wire vccst_en_cascade_;
-    wire vpp_en;
-    wire rsmrstn;
-    wire \VPP_VDDQ.un1_vddq_pwrgdZ0Z_0 ;
+    wire G_0_0;
     wire \VPP_VDDQ.curr_stateZ0Z_0 ;
+    wire vddq_ok;
     wire \VPP_VDDQ.curr_stateZ0Z_1 ;
     wire \VPP_VDDQ.delayed_vddq_pwrgd_0_sqmuxa ;
-    wire \VPP_VDDQ.un1_curr_state13_0 ;
-    wire \VPP_VDDQ.countZ0Z_0 ;
-    wire bfn_5_14_0_;
-    wire \VPP_VDDQ.countZ0Z_1 ;
-    wire \VPP_VDDQ.un1_count_1_cry_0 ;
-    wire \VPP_VDDQ.countZ0Z_2 ;
-    wire \VPP_VDDQ.un1_count_1_cry_1 ;
-    wire \VPP_VDDQ.countZ0Z_3 ;
-    wire \VPP_VDDQ.un1_count_1_cry_2 ;
-    wire \VPP_VDDQ.countZ0Z_4 ;
-    wire \VPP_VDDQ.un1_count_1_cry_3 ;
-    wire \VPP_VDDQ.countZ0Z_5 ;
-    wire \VPP_VDDQ.un1_count_1_cry_4 ;
-    wire \VPP_VDDQ.countZ0Z_6 ;
-    wire \VPP_VDDQ.un1_count_1_cry_5 ;
-    wire \VPP_VDDQ.countZ0Z_7 ;
-    wire \VPP_VDDQ.un1_count_1_cry_6 ;
-    wire \VPP_VDDQ.un1_count_1_cry_7 ;
-    wire \VPP_VDDQ.countZ0Z_8 ;
-    wire bfn_5_15_0_;
-    wire \VPP_VDDQ.countZ0Z_9 ;
-    wire \VPP_VDDQ.un1_count_1_cry_8 ;
-    wire \VPP_VDDQ.countZ0Z_10 ;
-    wire \VPP_VDDQ.un1_count_1_cry_9 ;
-    wire \VPP_VDDQ.countZ0Z_11 ;
-    wire \VPP_VDDQ.un1_count_1_cry_10 ;
-    wire \VPP_VDDQ.countZ0Z_12 ;
-    wire \VPP_VDDQ.un1_count_1_cry_11 ;
-    wire \VPP_VDDQ.countZ0Z_13 ;
-    wire \VPP_VDDQ.un1_count_1_cry_12 ;
-    wire G_0;
-    wire \VPP_VDDQ.countZ0Z_14 ;
-    wire \VPP_VDDQ.un1_count_1_cry_13 ;
-    wire CONSTANT_ONE_NET;
-    wire GNDG0;
-    wire \VPP_VDDQ.un1_count_1_cry_14 ;
-    wire \VPP_VDDQ.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ;
-    wire bfn_5_16_0_;
-    wire \VPP_VDDQ.countZ0Z_15 ;
-    wire \VPP_VDDQ.G_0_0 ;
-    wire tmp_RNIGGLR8;
-    wire \COUNTER.counterZ0Z_0 ;
+    wire \VPP_VDDQ.delayed_vddq_pwrgdZ0 ;
+    wire slp_s4n;
+    wire vpp_en;
     wire \COUNTER.counterZ0Z_1 ;
     wire bfn_6_9_0_;
     wire \COUNTER.counterZ0Z_2 ;
@@ -1881,20 +1917,22 @@ module TOP (
     wire \COUNTER.counter_1_cry_29 ;
     wire \COUNTER.counter_1_cry_30 ;
     wire \COUNTER.counterZ0Z_31 ;
+    wire COUNTER_un4_counter_7_THRU_CO;
+    wire \COUNTER.counterZ0Z_0 ;
     wire fpga_osc;
     wire _gnd_net_;
 
     defparam ipInertedIOPad_VR_READY_VCCINAUX_iopad.PULLUP=1'b1;
     IO_PAD ipInertedIOPad_VR_READY_VCCINAUX_iopad (
-            .OE(N__7375),
-            .DIN(N__7374),
-            .DOUT(N__7373),
+            .OE(N__7455),
+            .DIN(N__7454),
+            .DOUT(N__7453),
             .PACKAGEPIN(VR_READY_VCCINAUX));
     defparam ipInertedIOPad_VR_READY_VCCINAUX_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VR_READY_VCCINAUX_preio (
-            .PADOEN(N__7375),
-            .PADOUT(N__7374),
-            .PADIN(N__7373),
+            .PADOEN(N__7455),
+            .PADOUT(N__7454),
+            .PADIN(N__7453),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -1905,72 +1943,72 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V33A_ENn_iopad (
-            .OE(N__7366),
-            .DIN(N__7365),
-            .DOUT(N__7364),
+            .OE(N__7446),
+            .DIN(N__7445),
+            .DOUT(N__7444),
             .PACKAGEPIN(V33A_ENn));
     defparam ipInertedIOPad_V33A_ENn_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_V33A_ENn_preio (
-            .PADOEN(N__7366),
-            .PADOUT(N__7365),
-            .PADIN(N__7364),
+            .PADOEN(N__7446),
+            .PADOUT(N__7445),
+            .PADIN(N__7444),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__3168),
+            .DOUT0(N__4025),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V1P8A_EN_iopad (
-            .OE(N__7357),
-            .DIN(N__7356),
-            .DOUT(N__7355),
+            .OE(N__7437),
+            .DIN(N__7436),
+            .DOUT(N__7435),
             .PACKAGEPIN(V1P8A_EN));
     defparam ipInertedIOPad_V1P8A_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_V1P8A_EN_preio (
-            .PADOEN(N__7357),
-            .PADOUT(N__7356),
-            .PADIN(N__7355),
+            .PADOEN(N__7437),
+            .PADOUT(N__7436),
+            .PADIN(N__7435),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__3118),
+            .DOUT0(N__4495),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VDDQ_EN_iopad (
-            .OE(N__7348),
-            .DIN(N__7347),
-            .DOUT(N__7346),
+            .OE(N__7428),
+            .DIN(N__7427),
+            .DOUT(N__7426),
             .PACKAGEPIN(VDDQ_EN));
     defparam ipInertedIOPad_VDDQ_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VDDQ_EN_preio (
-            .PADOEN(N__7348),
-            .PADOUT(N__7347),
-            .PADIN(N__7346),
+            .PADOEN(N__7428),
+            .PADOUT(N__7427),
+            .PADIN(N__7426),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__3966),
+            .DOUT0(N__3221),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCST_OVERRIDE_3V3_iopad (
-            .OE(N__7339),
-            .DIN(N__7338),
-            .DOUT(N__7337),
+            .OE(N__7419),
+            .DIN(N__7418),
+            .DOUT(N__7417),
             .PACKAGEPIN(VCCST_OVERRIDE_3V3));
     defparam ipInertedIOPad_VCCST_OVERRIDE_3V3_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VCCST_OVERRIDE_3V3_preio (
-            .PADOEN(N__7339),
-            .PADOUT(N__7338),
-            .PADIN(N__7337),
+            .PADOEN(N__7419),
+            .PADOUT(N__7418),
+            .PADIN(N__7417),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -1981,15 +2019,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V5S_OK_iopad (
-            .OE(N__7330),
-            .DIN(N__7329),
-            .DOUT(N__7328),
+            .OE(N__7410),
+            .DIN(N__7409),
+            .DOUT(N__7408),
             .PACKAGEPIN(V5S_OK));
     defparam ipInertedIOPad_V5S_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V5S_OK_preio (
-            .PADOEN(N__7330),
-            .PADOUT(N__7329),
-            .PADIN(N__7328),
+            .PADOEN(N__7410),
+            .PADOUT(N__7409),
+            .PADIN(N__7408),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2000,15 +2038,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SLP_S3n_iopad (
-            .OE(N__7321),
-            .DIN(N__7320),
-            .DOUT(N__7319),
+            .OE(N__7401),
+            .DIN(N__7400),
+            .DOUT(N__7399),
             .PACKAGEPIN(SLP_S3n));
     defparam ipInertedIOPad_SLP_S3n_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SLP_S3n_preio (
-            .PADOEN(N__7321),
-            .PADOUT(N__7320),
-            .PADIN(N__7319),
+            .PADOEN(N__7401),
+            .PADOUT(N__7400),
+            .PADIN(N__7399),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2019,15 +2057,15 @@ module TOP (
             .DIN0(slp_s3n),
             .DIN1());
     IO_PAD ipInertedIOPad_SLP_S0n_iopad (
-            .OE(N__7312),
-            .DIN(N__7311),
-            .DOUT(N__7310),
+            .OE(N__7392),
+            .DIN(N__7391),
+            .DOUT(N__7390),
             .PACKAGEPIN(SLP_S0n));
     defparam ipInertedIOPad_SLP_S0n_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SLP_S0n_preio (
-            .PADOEN(N__7312),
-            .PADOUT(N__7311),
-            .PADIN(N__7310),
+            .PADOEN(N__7392),
+            .PADOUT(N__7391),
+            .PADIN(N__7390),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2038,35 +2076,35 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V5S_ENn_iopad (
-            .OE(N__7303),
-            .DIN(N__7302),
-            .DOUT(N__7301),
+            .OE(N__7383),
+            .DIN(N__7382),
+            .DOUT(N__7381),
             .PACKAGEPIN(V5S_ENn));
     defparam ipInertedIOPad_V5S_ENn_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_V5S_ENn_preio (
-            .PADOEN(N__7303),
-            .PADOUT(N__7302),
-            .PADIN(N__7301),
+            .PADOEN(N__7383),
+            .PADOUT(N__7382),
+            .PADIN(N__7381),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__4533),
+            .DOUT0(N__5107),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     defparam ipInertedIOPad_V1P8A_OK_iopad.PULLUP=1'b1;
     IO_PAD ipInertedIOPad_V1P8A_OK_iopad (
-            .OE(N__7294),
-            .DIN(N__7293),
-            .DOUT(N__7292),
+            .OE(N__7374),
+            .DIN(N__7373),
+            .DOUT(N__7372),
             .PACKAGEPIN(V1P8A_OK));
     defparam ipInertedIOPad_V1P8A_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V1P8A_OK_preio (
-            .PADOEN(N__7294),
-            .PADOUT(N__7293),
-            .PADIN(N__7292),
+            .PADOEN(N__7374),
+            .PADOUT(N__7373),
+            .PADIN(N__7372),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2077,15 +2115,15 @@ module TOP (
             .DIN0(v1p8a_ok),
             .DIN1());
     IO_PAD ipInertedIOPad_PWRBTNn_iopad (
-            .OE(N__7285),
-            .DIN(N__7284),
-            .DOUT(N__7283),
+            .OE(N__7365),
+            .DIN(N__7364),
+            .DOUT(N__7363),
             .PACKAGEPIN(PWRBTNn));
     defparam ipInertedIOPad_PWRBTNn_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_PWRBTNn_preio (
-            .PADOEN(N__7285),
-            .PADOUT(N__7284),
-            .PADIN(N__7283),
+            .PADOEN(N__7365),
+            .PADOUT(N__7364),
+            .PADIN(N__7363),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2096,15 +2134,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_PWRBTN_LED_iopad (
-            .OE(N__7276),
-            .DIN(N__7275),
-            .DOUT(N__7274),
+            .OE(N__7356),
+            .DIN(N__7355),
+            .DOUT(N__7354),
             .PACKAGEPIN(PWRBTN_LED));
     defparam ipInertedIOPad_PWRBTN_LED_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_PWRBTN_LED_preio (
-            .PADOEN(N__7276),
-            .PADOUT(N__7275),
-            .PADIN(N__7274),
+            .PADOEN(N__7356),
+            .PADOUT(N__7355),
+            .PADIN(N__7354),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2115,15 +2153,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_GPIO_FPGA_SoC_2_iopad (
-            .OE(N__7267),
-            .DIN(N__7266),
-            .DOUT(N__7265),
+            .OE(N__7347),
+            .DIN(N__7346),
+            .DOUT(N__7345),
             .PACKAGEPIN(GPIO_FPGA_SoC_2));
     defparam ipInertedIOPad_GPIO_FPGA_SoC_2_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_GPIO_FPGA_SoC_2_preio (
-            .PADOEN(N__7267),
-            .PADOUT(N__7266),
-            .PADIN(N__7265),
+            .PADOEN(N__7347),
+            .PADOUT(N__7346),
+            .PADIN(N__7345),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2134,15 +2172,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA_iopad (
-            .OE(N__7258),
-            .DIN(N__7257),
-            .DOUT(N__7256),
+            .OE(N__7338),
+            .DIN(N__7337),
+            .DOUT(N__7336),
             .PACKAGEPIN(VCCIN_VR_PROCHOT_FPGA));
     defparam ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VCCIN_VR_PROCHOT_FPGA_preio (
-            .PADOEN(N__7258),
-            .PADOUT(N__7257),
-            .PADIN(N__7256),
+            .PADOEN(N__7338),
+            .PADOUT(N__7337),
+            .PADIN(N__7336),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2154,15 +2192,15 @@ module TOP (
             .DIN1());
     defparam ipInertedIOPad_SLP_SUSn_iopad.PULLUP=1'b0;
     IO_PAD ipInertedIOPad_SLP_SUSn_iopad (
-            .OE(N__7249),
-            .DIN(N__7248),
-            .DOUT(N__7247),
+            .OE(N__7329),
+            .DIN(N__7328),
+            .DOUT(N__7327),
             .PACKAGEPIN(SLP_SUSn));
     defparam ipInertedIOPad_SLP_SUSn_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SLP_SUSn_preio (
-            .PADOEN(N__7249),
-            .PADOUT(N__7248),
-            .PADIN(N__7247),
+            .PADOEN(N__7329),
+            .PADOUT(N__7328),
+            .PADIN(N__7327),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2173,15 +2211,15 @@ module TOP (
             .DIN0(slp_susn),
             .DIN1());
     IO_PAD ipInertedIOPad_CPU_C10_GATE_N_iopad (
-            .OE(N__7240),
-            .DIN(N__7239),
-            .DOUT(N__7238),
+            .OE(N__7320),
+            .DIN(N__7319),
+            .DOUT(N__7318),
             .PACKAGEPIN(CPU_C10_GATE_N));
     defparam ipInertedIOPad_CPU_C10_GATE_N_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_CPU_C10_GATE_N_preio (
-            .PADOEN(N__7240),
-            .PADOUT(N__7239),
-            .PADIN(N__7238),
+            .PADOEN(N__7320),
+            .PADOUT(N__7319),
+            .PADIN(N__7318),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2192,35 +2230,35 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCST_EN_iopad (
-            .OE(N__7231),
-            .DIN(N__7230),
-            .DOUT(N__7229),
+            .OE(N__7311),
+            .DIN(N__7310),
+            .DOUT(N__7309),
             .PACKAGEPIN(VCCST_EN));
     defparam ipInertedIOPad_VCCST_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VCCST_EN_preio (
-            .PADOEN(N__7231),
-            .PADOUT(N__7230),
-            .PADIN(N__7229),
+            .PADOEN(N__7311),
+            .PADOUT(N__7310),
+            .PADIN(N__7309),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__5400),
+            .DOUT0(N__3511),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     defparam ipInertedIOPad_V33DSW_OK_iopad.PULLUP=1'b1;
     IO_PAD ipInertedIOPad_V33DSW_OK_iopad (
-            .OE(N__7222),
-            .DIN(N__7221),
-            .DOUT(N__7220),
+            .OE(N__7302),
+            .DIN(N__7301),
+            .DOUT(N__7300),
             .PACKAGEPIN(V33DSW_OK));
     defparam ipInertedIOPad_V33DSW_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V33DSW_OK_preio (
-            .PADOEN(N__7222),
-            .PADOUT(N__7221),
-            .PADIN(N__7220),
+            .PADOEN(N__7302),
+            .PADOUT(N__7301),
+            .PADIN(N__7300),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2231,15 +2269,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_TPM_GPIO_iopad (
-            .OE(N__7213),
-            .DIN(N__7212),
-            .DOUT(N__7211),
+            .OE(N__7293),
+            .DIN(N__7292),
+            .DOUT(N__7291),
             .PACKAGEPIN(TPM_GPIO));
     defparam ipInertedIOPad_TPM_GPIO_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_TPM_GPIO_preio (
-            .PADOEN(N__7213),
-            .PADOUT(N__7212),
-            .PADIN(N__7211),
+            .PADOEN(N__7293),
+            .PADOUT(N__7292),
+            .PADIN(N__7291),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2250,34 +2288,34 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SUSWARN_N_iopad (
-            .OE(N__7204),
-            .DIN(N__7203),
-            .DOUT(N__7202),
+            .OE(N__7284),
+            .DIN(N__7283),
+            .DOUT(N__7282),
             .PACKAGEPIN(SUSWARN_N));
-    defparam ipInertedIOPad_SUSWARN_N_preio.PIN_TYPE=6'b000001;
+    defparam ipInertedIOPad_SUSWARN_N_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_SUSWARN_N_preio (
-            .PADOEN(N__7204),
-            .PADOUT(N__7203),
-            .PADIN(N__7202),
+            .PADOEN(N__7284),
+            .PADOUT(N__7283),
+            .PADIN(N__7282),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(),
+            .DOUT0(N__3516),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_PLTRSTn_iopad (
-            .OE(N__7195),
-            .DIN(N__7194),
-            .DOUT(N__7193),
+            .OE(N__7275),
+            .DIN(N__7274),
+            .DOUT(N__7273),
             .PACKAGEPIN(PLTRSTn));
     defparam ipInertedIOPad_PLTRSTn_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_PLTRSTn_preio (
-            .PADOEN(N__7195),
-            .PADOUT(N__7194),
-            .PADIN(N__7193),
+            .PADOEN(N__7275),
+            .PADOUT(N__7274),
+            .PADIN(N__7273),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2288,15 +2326,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_GPIO_FPGA_SoC_4_iopad (
-            .OE(N__7186),
-            .DIN(N__7185),
-            .DOUT(N__7184),
+            .OE(N__7266),
+            .DIN(N__7265),
+            .DOUT(N__7264),
             .PACKAGEPIN(GPIO_FPGA_SoC_4));
     defparam ipInertedIOPad_GPIO_FPGA_SoC_4_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_GPIO_FPGA_SoC_4_preio (
-            .PADOEN(N__7186),
-            .PADOUT(N__7185),
-            .PADIN(N__7184),
+            .PADOEN(N__7266),
+            .PADOUT(N__7265),
+            .PADIN(N__7264),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2308,15 +2346,15 @@ module TOP (
             .DIN1());
     defparam ipInertedIOPad_VR_READY_VCCIN_iopad.PULLUP=1'b1;
     IO_PAD ipInertedIOPad_VR_READY_VCCIN_iopad (
-            .OE(N__7177),
-            .DIN(N__7176),
-            .DOUT(N__7175),
+            .OE(N__7257),
+            .DIN(N__7256),
+            .DOUT(N__7255),
             .PACKAGEPIN(VR_READY_VCCIN));
     defparam ipInertedIOPad_VR_READY_VCCIN_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VR_READY_VCCIN_preio (
-            .PADOEN(N__7177),
-            .PADOUT(N__7176),
-            .PADIN(N__7175),
+            .PADOEN(N__7257),
+            .PADOUT(N__7256),
+            .PADIN(N__7255),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2328,15 +2366,15 @@ module TOP (
             .DIN1());
     defparam ipInertedIOPad_V5A_OK_iopad.PULLUP=1'b1;
     IO_PAD ipInertedIOPad_V5A_OK_iopad (
-            .OE(N__7168),
-            .DIN(N__7167),
-            .DOUT(N__7166),
+            .OE(N__7248),
+            .DIN(N__7247),
+            .DOUT(N__7246),
             .PACKAGEPIN(V5A_OK));
     defparam ipInertedIOPad_V5A_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V5A_OK_preio (
-            .PADOEN(N__7168),
-            .PADOUT(N__7167),
-            .PADIN(N__7166),
+            .PADOEN(N__7248),
+            .PADOUT(N__7247),
+            .PADIN(N__7246),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2347,34 +2385,34 @@ module TOP (
             .DIN0(v5a_ok),
             .DIN1());
     IO_PAD ipInertedIOPad_RSMRSTn_iopad (
-            .OE(N__7159),
-            .DIN(N__7158),
-            .DOUT(N__7157),
+            .OE(N__7239),
+            .DIN(N__7238),
+            .DOUT(N__7237),
             .PACKAGEPIN(RSMRSTn));
     defparam ipInertedIOPad_RSMRSTn_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_RSMRSTn_preio (
-            .PADOEN(N__7159),
-            .PADOUT(N__7158),
-            .PADIN(N__7157),
+            .PADOEN(N__7239),
+            .PADOUT(N__7238),
+            .PADIN(N__7237),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__5352),
+            .DOUT0(N__3233),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_FPGA_OSC_iopad (
-            .OE(N__7150),
-            .DIN(N__7149),
-            .DOUT(N__7148),
+            .OE(N__7230),
+            .DIN(N__7229),
+            .DOUT(N__7228),
             .PACKAGEPIN(FPGA_OSC));
     defparam ipInertedIOPad_FPGA_OSC_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_FPGA_OSC_preio (
-            .PADOEN(N__7150),
-            .PADOUT(N__7149),
-            .PADIN(N__7148),
+            .PADOEN(N__7230),
+            .PADOUT(N__7229),
+            .PADIN(N__7228),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2385,53 +2423,53 @@ module TOP (
             .DIN0(fpga_osc),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCST_PWRGD_iopad (
-            .OE(N__7141),
-            .DIN(N__7140),
-            .DOUT(N__7139),
+            .OE(N__7221),
+            .DIN(N__7220),
+            .DOUT(N__7219),
             .PACKAGEPIN(VCCST_PWRGD));
     defparam ipInertedIOPad_VCCST_PWRGD_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VCCST_PWRGD_preio (
-            .PADOEN(N__7141),
-            .PADOUT(N__7140),
-            .PADIN(N__7139),
+            .PADOEN(N__7221),
+            .PADOUT(N__7220),
+            .PADIN(N__7219),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__5034),
+            .DOUT0(N__3529),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SYS_PWROK_iopad (
-            .OE(N__7132),
-            .DIN(N__7131),
-            .DOUT(N__7130),
+            .OE(N__7212),
+            .DIN(N__7211),
+            .DOUT(N__7210),
             .PACKAGEPIN(SYS_PWROK));
     defparam ipInertedIOPad_SYS_PWROK_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_SYS_PWROK_preio (
-            .PADOEN(N__7132),
-            .PADOUT(N__7131),
-            .PADIN(N__7130),
+            .PADOEN(N__7212),
+            .PADOUT(N__7211),
+            .PADIN(N__7210),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__4920),
+            .DOUT0(GNDG0),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SPI_FP_IO2_iopad (
-            .OE(N__7123),
-            .DIN(N__7122),
-            .DOUT(N__7121),
+            .OE(N__7203),
+            .DIN(N__7202),
+            .DOUT(N__7201),
             .PACKAGEPIN(SPI_FP_IO2));
     defparam ipInertedIOPad_SPI_FP_IO2_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SPI_FP_IO2_preio (
-            .PADOEN(N__7123),
-            .PADOUT(N__7122),
-            .PADIN(N__7121),
+            .PADOEN(N__7203),
+            .PADOUT(N__7202),
+            .PADIN(N__7201),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2442,15 +2480,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SATAXPCIE1_FPGA_iopad (
-            .OE(N__7114),
-            .DIN(N__7113),
-            .DOUT(N__7112),
+            .OE(N__7194),
+            .DIN(N__7193),
+            .DOUT(N__7192),
             .PACKAGEPIN(SATAXPCIE1_FPGA));
     defparam ipInertedIOPad_SATAXPCIE1_FPGA_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SATAXPCIE1_FPGA_preio (
-            .PADOEN(N__7114),
-            .PADOUT(N__7113),
-            .PADIN(N__7112),
+            .PADOEN(N__7194),
+            .PADOUT(N__7193),
+            .PADIN(N__7192),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2461,15 +2499,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_GPIO_FPGA_EXP_1_iopad (
-            .OE(N__7105),
-            .DIN(N__7104),
-            .DOUT(N__7103),
+            .OE(N__7185),
+            .DIN(N__7184),
+            .DOUT(N__7183),
             .PACKAGEPIN(GPIO_FPGA_EXP_1));
     defparam ipInertedIOPad_GPIO_FPGA_EXP_1_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_GPIO_FPGA_EXP_1_preio (
-            .PADOEN(N__7105),
-            .PADOUT(N__7104),
-            .PADIN(N__7103),
+            .PADOEN(N__7185),
+            .PADOUT(N__7184),
+            .PADIN(N__7183),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2480,15 +2518,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA_iopad (
-            .OE(N__7096),
-            .DIN(N__7095),
-            .DOUT(N__7094),
+            .OE(N__7176),
+            .DIN(N__7175),
+            .DOUT(N__7174),
             .PACKAGEPIN(VCCINAUX_VR_PROCHOT_FPGA));
     defparam ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VCCINAUX_VR_PROCHOT_FPGA_preio (
-            .PADOEN(N__7096),
-            .PADOUT(N__7095),
-            .PADIN(N__7094),
+            .PADOEN(N__7176),
+            .PADOUT(N__7175),
+            .PADIN(N__7174),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2499,15 +2537,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCINAUX_VR_PE_iopad (
-            .OE(N__7087),
-            .DIN(N__7086),
-            .DOUT(N__7085),
+            .OE(N__7167),
+            .DIN(N__7166),
+            .DOUT(N__7165),
             .PACKAGEPIN(VCCINAUX_VR_PE));
     defparam ipInertedIOPad_VCCINAUX_VR_PE_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VCCINAUX_VR_PE_preio (
-            .PADOEN(N__7087),
-            .PADOUT(N__7086),
-            .PADIN(N__7085),
+            .PADOEN(N__7167),
+            .PADOUT(N__7166),
+            .PADIN(N__7165),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2518,15 +2556,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_HDA_SDO_ATP_iopad (
-            .OE(N__7078),
-            .DIN(N__7077),
-            .DOUT(N__7076),
+            .OE(N__7158),
+            .DIN(N__7157),
+            .DOUT(N__7156),
             .PACKAGEPIN(HDA_SDO_ATP));
     defparam ipInertedIOPad_HDA_SDO_ATP_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_HDA_SDO_ATP_preio (
-            .PADOEN(N__7078),
-            .PADOUT(N__7077),
-            .PADIN(N__7076),
+            .PADOEN(N__7158),
+            .PADOUT(N__7157),
+            .PADIN(N__7156),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2537,15 +2575,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_GPIO_FPGA_EXP_2_iopad (
-            .OE(N__7069),
-            .DIN(N__7068),
-            .DOUT(N__7067),
+            .OE(N__7149),
+            .DIN(N__7148),
+            .DOUT(N__7147),
             .PACKAGEPIN(GPIO_FPGA_EXP_2));
     defparam ipInertedIOPad_GPIO_FPGA_EXP_2_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_GPIO_FPGA_EXP_2_preio (
-            .PADOEN(N__7069),
-            .PADOUT(N__7068),
-            .PADIN(N__7067),
+            .PADOEN(N__7149),
+            .PADOUT(N__7148),
+            .PADIN(N__7147),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2556,35 +2594,35 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VPP_EN_iopad (
-            .OE(N__7060),
-            .DIN(N__7059),
-            .DOUT(N__7058),
+            .OE(N__7140),
+            .DIN(N__7139),
+            .DOUT(N__7138),
             .PACKAGEPIN(VPP_EN));
     defparam ipInertedIOPad_VPP_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VPP_EN_preio (
-            .PADOEN(N__7060),
-            .PADOUT(N__7059),
-            .PADIN(N__7058),
+            .PADOEN(N__7140),
+            .PADOUT(N__7139),
+            .PADIN(N__7138),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__5361),
+            .DOUT0(N__5540),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     defparam ipInertedIOPad_VDDQ_OK_iopad.PULLUP=1'b1;
     IO_PAD ipInertedIOPad_VDDQ_OK_iopad (
-            .OE(N__7051),
-            .DIN(N__7050),
-            .DOUT(N__7049),
+            .OE(N__7131),
+            .DIN(N__7130),
+            .DOUT(N__7129),
             .PACKAGEPIN(VDDQ_OK));
     defparam ipInertedIOPad_VDDQ_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VDDQ_OK_preio (
-            .PADOEN(N__7051),
-            .PADOUT(N__7050),
-            .PADIN(N__7049),
+            .PADOEN(N__7131),
+            .PADOUT(N__7130),
+            .PADIN(N__7129),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2595,34 +2633,34 @@ module TOP (
             .DIN0(vddq_ok),
             .DIN1());
     IO_PAD ipInertedIOPad_SUSACK_N_iopad (
-            .OE(N__7042),
-            .DIN(N__7041),
-            .DOUT(N__7040),
+            .OE(N__7122),
+            .DIN(N__7121),
+            .DOUT(N__7120),
             .PACKAGEPIN(SUSACK_N));
-    defparam ipInertedIOPad_SUSACK_N_preio.PIN_TYPE=6'b000001;
+    defparam ipInertedIOPad_SUSACK_N_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_SUSACK_N_preio (
-            .PADOEN(N__7042),
-            .PADOUT(N__7041),
-            .PADIN(N__7040),
+            .PADOEN(N__7122),
+            .PADOUT(N__7121),
+            .PADIN(N__7120),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(),
+            .DOUT0(N__3515),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SLP_S4n_iopad (
-            .OE(N__7033),
-            .DIN(N__7032),
-            .DOUT(N__7031),
+            .OE(N__7113),
+            .DIN(N__7112),
+            .DOUT(N__7111),
             .PACKAGEPIN(SLP_S4n));
     defparam ipInertedIOPad_SLP_S4n_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SLP_S4n_preio (
-            .PADOEN(N__7033),
-            .PADOUT(N__7032),
-            .PADIN(N__7031),
+            .PADOEN(N__7113),
+            .PADOUT(N__7112),
+            .PADIN(N__7111),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2633,15 +2671,15 @@ module TOP (
             .DIN0(slp_s4n),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCST_CPU_OK_iopad (
-            .OE(N__7024),
-            .DIN(N__7023),
-            .DOUT(N__7022),
+            .OE(N__7104),
+            .DIN(N__7103),
+            .DOUT(N__7102),
             .PACKAGEPIN(VCCST_CPU_OK));
     defparam ipInertedIOPad_VCCST_CPU_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VCCST_CPU_OK_preio (
-            .PADOEN(N__7024),
-            .PADOUT(N__7023),
-            .PADIN(N__7022),
+            .PADOEN(N__7104),
+            .PADOUT(N__7103),
+            .PADIN(N__7102),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2652,34 +2690,34 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCINAUX_EN_iopad (
-            .OE(N__7015),
-            .DIN(N__7014),
-            .DOUT(N__7013),
+            .OE(N__7095),
+            .DIN(N__7094),
+            .DOUT(N__7093),
             .PACKAGEPIN(VCCINAUX_EN));
     defparam ipInertedIOPad_VCCINAUX_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VCCINAUX_EN_preio (
-            .PADOEN(N__7015),
-            .PADOUT(N__7014),
-            .PADIN(N__7013),
+            .PADOEN(N__7095),
+            .PADOUT(N__7094),
+            .PADIN(N__7093),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__3162),
+            .DOUT0(N__4544),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V33S_OK_iopad (
-            .OE(N__7006),
-            .DIN(N__7005),
-            .DOUT(N__7004),
+            .OE(N__7086),
+            .DIN(N__7085),
+            .DOUT(N__7084),
             .PACKAGEPIN(V33S_OK));
     defparam ipInertedIOPad_V33S_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V33S_OK_preio (
-            .PADOEN(N__7006),
-            .PADOUT(N__7005),
-            .PADIN(N__7004),
+            .PADOEN(N__7086),
+            .PADOUT(N__7085),
+            .PADIN(N__7084),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2690,34 +2728,34 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V33S_ENn_iopad (
-            .OE(N__6997),
-            .DIN(N__6996),
-            .DOUT(N__6995),
+            .OE(N__7077),
+            .DIN(N__7076),
+            .DOUT(N__7075),
             .PACKAGEPIN(V33S_ENn));
     defparam ipInertedIOPad_V33S_ENn_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_V33S_ENn_preio (
-            .PADOEN(N__6997),
-            .PADOUT(N__6996),
-            .PADIN(N__6995),
+            .PADOEN(N__7077),
+            .PADOUT(N__7076),
+            .PADIN(N__7075),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__4532),
+            .DOUT0(N__5108),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_GPIO_FPGA_SoC_1_iopad (
-            .OE(N__6988),
-            .DIN(N__6987),
-            .DOUT(N__6986),
+            .OE(N__7068),
+            .DIN(N__7067),
+            .DOUT(N__7066),
             .PACKAGEPIN(GPIO_FPGA_SoC_1));
     defparam ipInertedIOPad_GPIO_FPGA_SoC_1_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_GPIO_FPGA_SoC_1_preio (
-            .PADOEN(N__6988),
-            .PADOUT(N__6987),
-            .PADIN(N__6986),
+            .PADOEN(N__7068),
+            .PADOUT(N__7067),
+            .PADIN(N__7066),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2729,53 +2767,53 @@ module TOP (
             .DIN1());
     defparam ipInertedIOPad_DSW_PWROK_iopad.PULLUP=1'b0;
     IO_PAD ipInertedIOPad_DSW_PWROK_iopad (
-            .OE(N__6979),
-            .DIN(N__6978),
-            .DOUT(N__6977),
+            .OE(N__7059),
+            .DIN(N__7058),
+            .DOUT(N__7057),
             .PACKAGEPIN(DSW_PWROK));
     defparam ipInertedIOPad_DSW_PWROK_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_DSW_PWROK_preio (
-            .PADOEN(N__6979),
-            .PADOUT(N__6978),
-            .PADIN(N__6977),
+            .PADOEN(N__7059),
+            .PADOUT(N__7058),
+            .PADIN(N__7057),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__5747),
+            .DOUT0(N__3817),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V5A_EN_iopad (
-            .OE(N__6970),
-            .DIN(N__6969),
-            .DOUT(N__6968),
+            .OE(N__7050),
+            .DIN(N__7049),
+            .DOUT(N__7048),
             .PACKAGEPIN(V5A_EN));
     defparam ipInertedIOPad_V5A_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_V5A_EN_preio (
-            .PADOEN(N__6970),
-            .PADOUT(N__6969),
-            .PADIN(N__6968),
+            .PADOEN(N__7050),
+            .PADOUT(N__7049),
+            .PADIN(N__7048),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__3122),
+            .DOUT0(N__4502),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_GPIO_FPGA_SoC_3_iopad (
-            .OE(N__6961),
-            .DIN(N__6960),
-            .DOUT(N__6959),
+            .OE(N__7041),
+            .DIN(N__7040),
+            .DOUT(N__7039),
             .PACKAGEPIN(GPIO_FPGA_SoC_3));
     defparam ipInertedIOPad_GPIO_FPGA_SoC_3_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_GPIO_FPGA_SoC_3_preio (
-            .PADOEN(N__6961),
-            .PADOUT(N__6960),
-            .PADIN(N__6959),
+            .PADOEN(N__7041),
+            .PADOUT(N__7040),
+            .PADIN(N__7039),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2786,15 +2824,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N_iopad (
-            .OE(N__6952),
-            .DIN(N__6951),
-            .DOUT(N__6950),
+            .OE(N__7032),
+            .DIN(N__7031),
+            .DOUT(N__7030),
             .PACKAGEPIN(VR_PROCHOT_FPGA_OUT_N));
     defparam ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VR_PROCHOT_FPGA_OUT_N_preio (
-            .PADOEN(N__6952),
-            .PADOUT(N__6951),
-            .PADIN(N__6950),
+            .PADOEN(N__7032),
+            .PADOUT(N__7031),
+            .PADIN(N__7030),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2806,15 +2844,15 @@ module TOP (
             .DIN1());
     defparam ipInertedIOPad_VPP_OK_iopad.PULLUP=1'b0;
     IO_PAD ipInertedIOPad_VPP_OK_iopad (
-            .OE(N__6943),
-            .DIN(N__6942),
-            .DOUT(N__6941),
+            .OE(N__7023),
+            .DIN(N__7022),
+            .DOUT(N__7021),
             .PACKAGEPIN(VPP_OK));
     defparam ipInertedIOPad_VPP_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_VPP_OK_preio (
-            .PADOEN(N__6943),
-            .PADOUT(N__6942),
-            .PADIN(N__6941),
+            .PADOEN(N__7023),
+            .PADOUT(N__7022),
+            .PADIN(N__7021),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2825,15 +2863,15 @@ module TOP (
             .DIN0(vpp_ok),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCIN_VR_PE_iopad (
-            .OE(N__6934),
-            .DIN(N__6933),
-            .DOUT(N__6932),
+            .OE(N__7014),
+            .DIN(N__7013),
+            .DOUT(N__7012),
             .PACKAGEPIN(VCCIN_VR_PE));
     defparam ipInertedIOPad_VCCIN_VR_PE_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VCCIN_VR_PE_preio (
-            .PADOEN(N__6934),
-            .PADOUT(N__6933),
-            .PADIN(N__6932),
+            .PADOEN(N__7014),
+            .PADOUT(N__7013),
+            .PADIN(N__7012),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2844,34 +2882,34 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_VCCIN_EN_iopad (
-            .OE(N__6925),
-            .DIN(N__6924),
-            .DOUT(N__6923),
+            .OE(N__7005),
+            .DIN(N__7004),
+            .DOUT(N__7003),
             .PACKAGEPIN(VCCIN_EN));
     defparam ipInertedIOPad_VCCIN_EN_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_VCCIN_EN_preio (
-            .PADOEN(N__6925),
-            .PADOUT(N__6924),
-            .PADIN(N__6923),
+            .PADOEN(N__7005),
+            .PADOUT(N__7004),
+            .PADIN(N__7003),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__4311),
+            .DOUT0(N__3530),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SOC_SPKR_iopad (
-            .OE(N__6916),
-            .DIN(N__6915),
-            .DOUT(N__6914),
+            .OE(N__6996),
+            .DIN(N__6995),
+            .DOUT(N__6994),
             .PACKAGEPIN(SOC_SPKR));
     defparam ipInertedIOPad_SOC_SPKR_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SOC_SPKR_preio (
-            .PADOEN(N__6916),
-            .PADOUT(N__6915),
-            .PADIN(N__6914),
+            .PADOEN(N__6996),
+            .PADOUT(N__6995),
+            .PADIN(N__6994),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2882,15 +2920,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SLP_S5n_iopad (
-            .OE(N__6907),
-            .DIN(N__6906),
-            .DOUT(N__6905),
+            .OE(N__6987),
+            .DIN(N__6986),
+            .DOUT(N__6985),
             .PACKAGEPIN(SLP_S5n));
     defparam ipInertedIOPad_SLP_S5n_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SLP_S5n_preio (
-            .PADOEN(N__6907),
-            .PADOUT(N__6906),
-            .PADIN(N__6905),
+            .PADOEN(N__6987),
+            .PADOUT(N__6986),
+            .PADIN(N__6985),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2901,15 +2939,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V12_MAIN_MON_iopad (
-            .OE(N__6898),
-            .DIN(N__6897),
-            .DOUT(N__6896),
+            .OE(N__6978),
+            .DIN(N__6977),
+            .DOUT(N__6976),
             .PACKAGEPIN(V12_MAIN_MON));
     defparam ipInertedIOPad_V12_MAIN_MON_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V12_MAIN_MON_preio (
-            .PADOEN(N__6898),
-            .PADOUT(N__6897),
-            .PADIN(N__6896),
+            .PADOEN(N__6978),
+            .PADOUT(N__6977),
+            .PADIN(N__6976),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2920,15 +2958,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SPI_FP_IO3_iopad (
-            .OE(N__6889),
-            .DIN(N__6888),
-            .DOUT(N__6887),
+            .OE(N__6969),
+            .DIN(N__6968),
+            .DOUT(N__6967),
             .PACKAGEPIN(SPI_FP_IO3));
     defparam ipInertedIOPad_SPI_FP_IO3_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SPI_FP_IO3_preio (
-            .PADOEN(N__6889),
-            .PADOUT(N__6888),
-            .PADIN(N__6887),
+            .PADOEN(N__6969),
+            .PADOUT(N__6968),
+            .PADIN(N__6967),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2939,15 +2977,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_SATAXPCIE0_FPGA_iopad (
-            .OE(N__6880),
-            .DIN(N__6879),
-            .DOUT(N__6878),
+            .OE(N__6960),
+            .DIN(N__6959),
+            .DOUT(N__6958),
             .PACKAGEPIN(SATAXPCIE0_FPGA));
     defparam ipInertedIOPad_SATAXPCIE0_FPGA_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_SATAXPCIE0_FPGA_preio (
-            .PADOEN(N__6880),
-            .PADOUT(N__6879),
-            .PADIN(N__6878),
+            .PADOEN(N__6960),
+            .PADOUT(N__6959),
+            .PADIN(N__6958),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2958,15 +2996,15 @@ module TOP (
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_V33A_OK_iopad (
-            .OE(N__6871),
-            .DIN(N__6870),
-            .DOUT(N__6869),
+            .OE(N__6951),
+            .DIN(N__6950),
+            .DOUT(N__6949),
             .PACKAGEPIN(V33A_OK));
     defparam ipInertedIOPad_V33A_OK_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_V33A_OK_preio (
-            .PADOEN(N__6871),
-            .PADOUT(N__6870),
-            .PADIN(N__6869),
+            .PADOEN(N__6951),
+            .PADOUT(N__6950),
+            .PADIN(N__6949),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -2977,34 +3015,34 @@ module TOP (
             .DIN0(v33a_ok),
             .DIN1());
     IO_PAD ipInertedIOPad_PCH_PWROK_iopad (
-            .OE(N__6862),
-            .DIN(N__6861),
-            .DOUT(N__6860),
+            .OE(N__6942),
+            .DIN(N__6941),
+            .DOUT(N__6940),
             .PACKAGEPIN(PCH_PWROK));
     defparam ipInertedIOPad_PCH_PWROK_preio.PIN_TYPE=6'b011001;
     PRE_IO ipInertedIOPad_PCH_PWROK_preio (
-            .PADOEN(N__6862),
-            .PADOUT(N__6861),
-            .PADIN(N__6860),
+            .PADOEN(N__6942),
+            .PADOUT(N__6941),
+            .PADIN(N__6940),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
             .OUTPUTCLK(),
             .OUTPUTENABLE(),
-            .DOUT0(N__5030),
+            .DOUT0(N__3215),
             .DOUT1(),
             .DIN0(),
             .DIN1());
     IO_PAD ipInertedIOPad_FPGA_SLP_WLAN_N_iopad (
-            .OE(N__6853),
-            .DIN(N__6852),
-            .DOUT(N__6851),
+            .OE(N__6933),
+            .DIN(N__6932),
+            .DOUT(N__6931),
             .PACKAGEPIN(FPGA_SLP_WLAN_N));
     defparam ipInertedIOPad_FPGA_SLP_WLAN_N_preio.PIN_TYPE=6'b000001;
     PRE_IO ipInertedIOPad_FPGA_SLP_WLAN_N_preio (
-            .PADOEN(N__6853),
-            .PADOUT(N__6852),
-            .PADIN(N__6851),
+            .PADOEN(N__6933),
+            .PADOUT(N__6932),
+            .PADIN(N__6931),
             .LATCHINPUTVALUE(),
             .CLOCKENABLE(),
             .INPUTCLK(),
@@ -3014,3771 +3052,3900 @@ module TOP (
             .DOUT1(),
             .DIN0(),
             .DIN1());
-    CascadeMux I__1522 (
-            .O(N__6834),
-            .I(N__6830));
-    InMux I__1521 (
-            .O(N__6833),
-            .I(N__6827));
-    InMux I__1520 (
-            .O(N__6830),
-            .I(N__6824));
-    LocalMux I__1519 (
-            .O(N__6827),
-            .I(\COUNTER.counterZ0Z_29 ));
-    LocalMux I__1518 (
-            .O(N__6824),
-            .I(\COUNTER.counterZ0Z_29 ));
-    InMux I__1517 (
-            .O(N__6819),
-            .I(\COUNTER.counter_1_cry_28 ));
-    InMux I__1516 (
-            .O(N__6816),
-            .I(N__6812));
-    InMux I__1515 (
-            .O(N__6815),
-            .I(N__6809));
-    LocalMux I__1514 (
-            .O(N__6812),
+    InMux I__1561 (
+            .O(N__6914),
+            .I(N__6910));
+    InMux I__1560 (
+            .O(N__6913),
+            .I(N__6907));
+    LocalMux I__1559 (
+            .O(N__6910),
             .I(\COUNTER.counterZ0Z_30 ));
-    LocalMux I__1513 (
-            .O(N__6809),
+    LocalMux I__1558 (
+            .O(N__6907),
             .I(\COUNTER.counterZ0Z_30 ));
-    InMux I__1512 (
-            .O(N__6804),
+    InMux I__1557 (
+            .O(N__6902),
             .I(\COUNTER.counter_1_cry_29 ));
-    InMux I__1511 (
-            .O(N__6801),
+    InMux I__1556 (
+            .O(N__6899),
             .I(\COUNTER.counter_1_cry_30 ));
-    InMux I__1510 (
-            .O(N__6798),
+    CascadeMux I__1555 (
+            .O(N__6896),
+            .I(N__6892));
+    InMux I__1554 (
+            .O(N__6895),
+            .I(N__6889));
+    InMux I__1553 (
+            .O(N__6892),
+            .I(N__6886));
+    LocalMux I__1552 (
+            .O(N__6889),
+            .I(\COUNTER.counterZ0Z_31 ));
+    LocalMux I__1551 (
+            .O(N__6886),
+            .I(\COUNTER.counterZ0Z_31 ));
+    InMux I__1550 (
+            .O(N__6881),
+            .I(N__6872));
+    InMux I__1549 (
+            .O(N__6880),
+            .I(N__6865));
+    InMux I__1548 (
+            .O(N__6879),
+            .I(N__6860));
+    InMux I__1547 (
+            .O(N__6878),
+            .I(N__6860));
+    InMux I__1546 (
+            .O(N__6877),
+            .I(N__6857));
+    InMux I__1545 (
+            .O(N__6876),
+            .I(N__6851));
+    InMux I__1544 (
+            .O(N__6875),
+            .I(N__6851));
+    LocalMux I__1543 (
+            .O(N__6872),
+            .I(N__6848));
+    InMux I__1542 (
+            .O(N__6871),
+            .I(N__6841));
+    InMux I__1541 (
+            .O(N__6870),
+            .I(N__6841));
+    InMux I__1540 (
+            .O(N__6869),
+            .I(N__6841));
+    InMux I__1539 (
+            .O(N__6868),
+            .I(N__6838));
+    LocalMux I__1538 (
+            .O(N__6865),
+            .I(N__6835));
+    LocalMux I__1537 (
+            .O(N__6860),
+            .I(N__6830));
+    LocalMux I__1536 (
+            .O(N__6857),
+            .I(N__6830));
+    InMux I__1535 (
+            .O(N__6856),
+            .I(N__6827));
+    LocalMux I__1534 (
+            .O(N__6851),
+            .I(N__6822));
+    Span4Mux_v I__1533 (
+            .O(N__6848),
+            .I(N__6822));
+    LocalMux I__1532 (
+            .O(N__6841),
+            .I(COUNTER_un4_counter_7_THRU_CO));
+    LocalMux I__1531 (
+            .O(N__6838),
+            .I(COUNTER_un4_counter_7_THRU_CO));
+    Odrv4 I__1530 (
+            .O(N__6835),
+            .I(COUNTER_un4_counter_7_THRU_CO));
+    Odrv4 I__1529 (
+            .O(N__6830),
+            .I(COUNTER_un4_counter_7_THRU_CO));
+    LocalMux I__1528 (
+            .O(N__6827),
+            .I(COUNTER_un4_counter_7_THRU_CO));
+    Odrv4 I__1527 (
+            .O(N__6822),
+            .I(COUNTER_un4_counter_7_THRU_CO));
+    InMux I__1526 (
+            .O(N__6809),
+            .I(N__6805));
+    CascadeMux I__1525 (
+            .O(N__6808),
+            .I(N__6802));
+    LocalMux I__1524 (
+            .O(N__6805),
+            .I(N__6797));
+    InMux I__1523 (
+            .O(N__6802),
             .I(N__6794));
-    InMux I__1509 (
-            .O(N__6797),
+    InMux I__1522 (
+            .O(N__6801),
             .I(N__6791));
-    LocalMux I__1508 (
-            .O(N__6794),
-            .I(\COUNTER.counterZ0Z_31 ));
-    LocalMux I__1507 (
-            .O(N__6791),
-            .I(\COUNTER.counterZ0Z_31 ));
-    ClkMux I__1506 (
-            .O(N__6786),
+    InMux I__1521 (
+            .O(N__6800),
+            .I(N__6788));
+    Span4Mux_v I__1520 (
+            .O(N__6797),
             .I(N__6783));
-    LocalMux I__1505 (
+    LocalMux I__1519 (
+            .O(N__6794),
+            .I(N__6783));
+    LocalMux I__1518 (
+            .O(N__6791),
+            .I(\COUNTER.counterZ0Z_0 ));
+    LocalMux I__1517 (
+            .O(N__6788),
+            .I(\COUNTER.counterZ0Z_0 ));
+    Odrv4 I__1516 (
             .O(N__6783),
-            .I(N__6775));
-    ClkMux I__1504 (
-            .O(N__6782),
-            .I(N__6772));
-    ClkMux I__1503 (
-            .O(N__6781),
-            .I(N__6769));
-    ClkMux I__1502 (
-            .O(N__6780),
-            .I(N__6763));
-    ClkMux I__1501 (
-            .O(N__6779),
-            .I(N__6759));
-    ClkMux I__1500 (
-            .O(N__6778),
-            .I(N__6756));
-    Span4Mux_v I__1499 (
+            .I(\COUNTER.counterZ0Z_0 ));
+    ClkMux I__1515 (
+            .O(N__6776),
+            .I(N__6770));
+    ClkMux I__1514 (
             .O(N__6775),
+            .I(N__6767));
+    ClkMux I__1513 (
+            .O(N__6774),
+            .I(N__6764));
+    ClkMux I__1512 (
+            .O(N__6773),
+            .I(N__6755));
+    LocalMux I__1511 (
+            .O(N__6770),
             .I(N__6747));
-    LocalMux I__1498 (
-            .O(N__6772),
-            .I(N__6747));
-    LocalMux I__1497 (
-            .O(N__6769),
-            .I(N__6747));
-    ClkMux I__1496 (
-            .O(N__6768),
-            .I(N__6742));
-    ClkMux I__1495 (
+    LocalMux I__1510 (
             .O(N__6767),
-            .I(N__6737));
-    ClkMux I__1494 (
-            .O(N__6766),
-            .I(N__6734));
-    LocalMux I__1493 (
+            .I(N__6742));
+    LocalMux I__1509 (
+            .O(N__6764),
+            .I(N__6742));
+    ClkMux I__1508 (
             .O(N__6763),
-            .I(N__6731));
-    ClkMux I__1492 (
+            .I(N__6739));
+    ClkMux I__1507 (
             .O(N__6762),
-            .I(N__6728));
-    LocalMux I__1491 (
+            .I(N__6736));
+    ClkMux I__1506 (
+            .O(N__6761),
+            .I(N__6733));
+    ClkMux I__1505 (
+            .O(N__6760),
+            .I(N__6726));
+    ClkMux I__1504 (
             .O(N__6759),
-            .I(N__6721));
-    LocalMux I__1490 (
-            .O(N__6756),
-            .I(N__6721));
-    ClkMux I__1489 (
+            .I(N__6723));
+    ClkMux I__1503 (
+            .O(N__6758),
+            .I(N__6720));
+    LocalMux I__1502 (
             .O(N__6755),
-            .I(N__6718));
-    ClkMux I__1488 (
+            .I(N__6716));
+    ClkMux I__1501 (
             .O(N__6754),
-            .I(N__6715));
-    Span4Mux_v I__1487 (
+            .I(N__6713));
+    ClkMux I__1500 (
+            .O(N__6753),
+            .I(N__6710));
+    ClkMux I__1499 (
+            .O(N__6752),
+            .I(N__6707));
+    ClkMux I__1498 (
+            .O(N__6751),
+            .I(N__6704));
+    ClkMux I__1497 (
+            .O(N__6750),
+            .I(N__6701));
+    Span4Mux_v I__1496 (
             .O(N__6747),
-            .I(N__6712));
-    ClkMux I__1486 (
-            .O(N__6746),
-            .I(N__6708));
-    ClkMux I__1485 (
-            .O(N__6745),
-            .I(N__6705));
-    LocalMux I__1484 (
+            .I(N__6693));
+    Span4Mux_v I__1495 (
             .O(N__6742),
-            .I(N__6702));
-    ClkMux I__1483 (
-            .O(N__6741),
-            .I(N__6699));
-    ClkMux I__1482 (
-            .O(N__6740),
-            .I(N__6694));
-    LocalMux I__1481 (
-            .O(N__6737),
-            .I(N__6688));
-    LocalMux I__1480 (
-            .O(N__6734),
-            .I(N__6688));
-    Span4Mux_v I__1479 (
+            .I(N__6693));
+    LocalMux I__1494 (
+            .O(N__6739),
+            .I(N__6693));
+    LocalMux I__1493 (
+            .O(N__6736),
+            .I(N__6690));
+    LocalMux I__1492 (
+            .O(N__6733),
+            .I(N__6687));
+    ClkMux I__1491 (
+            .O(N__6732),
+            .I(N__6684));
+    ClkMux I__1490 (
             .O(N__6731),
-            .I(N__6683));
-    LocalMux I__1478 (
-            .O(N__6728),
-            .I(N__6683));
-    ClkMux I__1477 (
-            .O(N__6727),
-            .I(N__6680));
-    ClkMux I__1476 (
+            .I(N__6681));
+    ClkMux I__1489 (
+            .O(N__6730),
+            .I(N__6678));
+    ClkMux I__1488 (
+            .O(N__6729),
+            .I(N__6674));
+    LocalMux I__1487 (
             .O(N__6726),
-            .I(N__6677));
-    Span4Mux_v I__1475 (
-            .O(N__6721),
-            .I(N__6672));
-    LocalMux I__1474 (
-            .O(N__6718),
-            .I(N__6672));
-    LocalMux I__1473 (
-            .O(N__6715),
-            .I(N__6669));
-    Span4Mux_h I__1472 (
-            .O(N__6712),
-            .I(N__6666));
-    ClkMux I__1471 (
-            .O(N__6711),
-            .I(N__6663));
-    LocalMux I__1470 (
-            .O(N__6708),
-            .I(N__6658));
-    LocalMux I__1469 (
-            .O(N__6705),
-            .I(N__6658));
-    Span4Mux_s1_v I__1468 (
-            .O(N__6702),
-            .I(N__6653));
-    LocalMux I__1467 (
-            .O(N__6699),
-            .I(N__6653));
-    ClkMux I__1466 (
-            .O(N__6698),
-            .I(N__6650));
-    ClkMux I__1465 (
-            .O(N__6697),
+            .I(N__6668));
+    LocalMux I__1486 (
+            .O(N__6723),
+            .I(N__6668));
+    LocalMux I__1485 (
+            .O(N__6720),
+            .I(N__6665));
+    ClkMux I__1484 (
+            .O(N__6719),
+            .I(N__6662));
+    Span4Mux_s3_h I__1483 (
+            .O(N__6716),
+            .I(N__6657));
+    LocalMux I__1482 (
+            .O(N__6713),
+            .I(N__6657));
+    LocalMux I__1481 (
+            .O(N__6710),
+            .I(N__6654));
+    LocalMux I__1480 (
+            .O(N__6707),
             .I(N__6647));
-    LocalMux I__1464 (
-            .O(N__6694),
+    LocalMux I__1479 (
+            .O(N__6704),
+            .I(N__6647));
+    LocalMux I__1478 (
+            .O(N__6701),
+            .I(N__6647));
+    ClkMux I__1477 (
+            .O(N__6700),
             .I(N__6644));
-    ClkMux I__1463 (
+    Span4Mux_v I__1476 (
             .O(N__6693),
             .I(N__6641));
-    Span4Mux_v I__1462 (
-            .O(N__6688),
-            .I(N__6631));
-    Span4Mux_h I__1461 (
-            .O(N__6683),
-            .I(N__6631));
-    LocalMux I__1460 (
-            .O(N__6680),
-            .I(N__6631));
-    LocalMux I__1459 (
+    Span4Mux_s3_v I__1475 (
+            .O(N__6690),
+            .I(N__6632));
+    Span4Mux_s3_v I__1474 (
+            .O(N__6687),
+            .I(N__6632));
+    LocalMux I__1473 (
+            .O(N__6684),
+            .I(N__6632));
+    LocalMux I__1472 (
+            .O(N__6681),
+            .I(N__6632));
+    LocalMux I__1471 (
+            .O(N__6678),
+            .I(N__6629));
+    ClkMux I__1470 (
             .O(N__6677),
-            .I(N__6631));
-    Span4Mux_v I__1458 (
-            .O(N__6672),
-            .I(N__6628));
-    Span4Mux_v I__1457 (
-            .O(N__6669),
-            .I(N__6625));
-    Span4Mux_v I__1456 (
-            .O(N__6666),
+            .I(N__6626));
+    LocalMux I__1469 (
+            .O(N__6674),
+            .I(N__6623));
+    ClkMux I__1468 (
+            .O(N__6673),
             .I(N__6620));
-    LocalMux I__1455 (
-            .O(N__6663),
-            .I(N__6620));
-    Span4Mux_v I__1454 (
-            .O(N__6658),
-            .I(N__6611));
-    Span4Mux_v I__1453 (
-            .O(N__6653),
-            .I(N__6611));
-    LocalMux I__1452 (
-            .O(N__6650),
-            .I(N__6611));
-    LocalMux I__1451 (
-            .O(N__6647),
-            .I(N__6611));
-    Span4Mux_v I__1450 (
-            .O(N__6644),
-            .I(N__6606));
-    LocalMux I__1449 (
-            .O(N__6641),
-            .I(N__6606));
-    ClkMux I__1448 (
-            .O(N__6640),
-            .I(N__6603));
-    Span4Mux_v I__1447 (
-            .O(N__6631),
+    Span4Mux_v I__1467 (
+            .O(N__6668),
+            .I(N__6612));
+    Span4Mux_s2_h I__1466 (
+            .O(N__6665),
+            .I(N__6612));
+    LocalMux I__1465 (
+            .O(N__6662),
+            .I(N__6612));
+    Span4Mux_v I__1464 (
+            .O(N__6657),
+            .I(N__6607));
+    Span4Mux_h I__1463 (
+            .O(N__6654),
             .I(N__6600));
-    Span4Mux_h I__1446 (
-            .O(N__6628),
-            .I(N__6591));
-    Span4Mux_v I__1445 (
-            .O(N__6625),
-            .I(N__6591));
-    Span4Mux_v I__1444 (
+    Span4Mux_v I__1462 (
+            .O(N__6647),
+            .I(N__6600));
+    LocalMux I__1461 (
+            .O(N__6644),
+            .I(N__6600));
+    IoSpan4Mux I__1460 (
+            .O(N__6641),
+            .I(N__6597));
+    Span4Mux_v I__1459 (
+            .O(N__6632),
+            .I(N__6590));
+    Span4Mux_s2_h I__1458 (
+            .O(N__6629),
+            .I(N__6590));
+    LocalMux I__1457 (
+            .O(N__6626),
+            .I(N__6590));
+    Span4Mux_h I__1456 (
+            .O(N__6623),
+            .I(N__6587));
+    LocalMux I__1455 (
             .O(N__6620),
-            .I(N__6591));
-    Span4Mux_v I__1443 (
+            .I(N__6584));
+    ClkMux I__1454 (
+            .O(N__6619),
+            .I(N__6581));
+    Span4Mux_v I__1453 (
+            .O(N__6612),
+            .I(N__6578));
+    ClkMux I__1452 (
             .O(N__6611),
-            .I(N__6591));
-    Span4Mux_v I__1442 (
-            .O(N__6606),
-            .I(N__6588));
-    LocalMux I__1441 (
-            .O(N__6603),
-            .I(N__6585));
-    Span4Mux_v I__1440 (
+            .I(N__6575));
+    ClkMux I__1451 (
+            .O(N__6610),
+            .I(N__6572));
+    Span4Mux_v I__1450 (
+            .O(N__6607),
+            .I(N__6569));
+    Span4Mux_v I__1449 (
             .O(N__6600),
-            .I(N__6582));
-    Span4Mux_v I__1439 (
-            .O(N__6591),
-            .I(N__6579));
-    Span4Mux_h I__1438 (
-            .O(N__6588),
-            .I(N__6574));
-    Span4Mux_v I__1437 (
-            .O(N__6585),
-            .I(N__6574));
-    IoSpan4Mux I__1436 (
-            .O(N__6582),
-            .I(N__6571));
-    IoSpan4Mux I__1435 (
-            .O(N__6579),
-            .I(N__6568));
-    Span4Mux_v I__1434 (
-            .O(N__6574),
-            .I(N__6565));
-    Odrv4 I__1433 (
-            .O(N__6571),
-            .I(fpga_osc));
-    Odrv4 I__1432 (
-            .O(N__6568),
-            .I(fpga_osc));
-    Odrv4 I__1431 (
-            .O(N__6565),
-            .I(fpga_osc));
-    InMux I__1430 (
-            .O(N__6558),
+            .I(N__6566));
+    Span4Mux_s2_h I__1448 (
+            .O(N__6597),
+            .I(N__6561));
+    Span4Mux_v I__1447 (
+            .O(N__6590),
+            .I(N__6561));
+    Span4Mux_v I__1446 (
+            .O(N__6587),
             .I(N__6554));
-    InMux I__1429 (
-            .O(N__6557),
-            .I(N__6551));
-    LocalMux I__1428 (
-            .O(N__6554),
-            .I(\COUNTER.counterZ0Z_20 ));
-    LocalMux I__1427 (
-            .O(N__6551),
-            .I(\COUNTER.counterZ0Z_20 ));
-    InMux I__1426 (
-            .O(N__6546),
-            .I(\COUNTER.counter_1_cry_19 ));
-    CascadeMux I__1425 (
-            .O(N__6543),
-            .I(N__6539));
-    InMux I__1424 (
-            .O(N__6542),
+    Span4Mux_v I__1445 (
+            .O(N__6584),
+            .I(N__6554));
+    LocalMux I__1444 (
+            .O(N__6581),
+            .I(N__6554));
+    Span4Mux_h I__1443 (
+            .O(N__6578),
+            .I(N__6547));
+    LocalMux I__1442 (
+            .O(N__6575),
+            .I(N__6547));
+    LocalMux I__1441 (
+            .O(N__6572),
+            .I(N__6547));
+    Span4Mux_v I__1440 (
+            .O(N__6569),
+            .I(N__6544));
+    Sp12to4 I__1439 (
+            .O(N__6566),
+            .I(N__6541));
+    Span4Mux_h I__1438 (
+            .O(N__6561),
             .I(N__6536));
-    InMux I__1423 (
-            .O(N__6539),
+    Span4Mux_v I__1437 (
+            .O(N__6554),
+            .I(N__6536));
+    Span4Mux_v I__1436 (
+            .O(N__6547),
             .I(N__6533));
-    LocalMux I__1422 (
+    IoSpan4Mux I__1435 (
+            .O(N__6544),
+            .I(N__6530));
+    Span12Mux_s5_h I__1434 (
+            .O(N__6541),
+            .I(N__6525));
+    Sp12to4 I__1433 (
             .O(N__6536),
-            .I(\COUNTER.counterZ0Z_21 ));
-    LocalMux I__1421 (
+            .I(N__6525));
+    Span4Mux_v I__1432 (
             .O(N__6533),
-            .I(\COUNTER.counterZ0Z_21 ));
-    InMux I__1420 (
-            .O(N__6528),
-            .I(\COUNTER.counter_1_cry_20 ));
-    InMux I__1419 (
+            .I(N__6522));
+    Odrv4 I__1431 (
+            .O(N__6530),
+            .I(fpga_osc));
+    Odrv12 I__1430 (
             .O(N__6525),
-            .I(N__6521));
-    InMux I__1418 (
-            .O(N__6524),
-            .I(N__6518));
-    LocalMux I__1417 (
-            .O(N__6521),
-            .I(\COUNTER.counterZ0Z_22 ));
-    LocalMux I__1416 (
-            .O(N__6518),
-            .I(\COUNTER.counterZ0Z_22 ));
-    InMux I__1415 (
-            .O(N__6513),
-            .I(\COUNTER.counter_1_cry_21 ));
-    InMux I__1414 (
-            .O(N__6510),
-            .I(N__6506));
-    InMux I__1413 (
-            .O(N__6509),
-            .I(N__6503));
-    LocalMux I__1412 (
-            .O(N__6506),
-            .I(\COUNTER.counterZ0Z_23 ));
-    LocalMux I__1411 (
+            .I(fpga_osc));
+    Odrv4 I__1429 (
+            .O(N__6522),
+            .I(fpga_osc));
+    InMux I__1428 (
+            .O(N__6515),
+            .I(N__6511));
+    InMux I__1427 (
+            .O(N__6514),
+            .I(N__6508));
+    LocalMux I__1426 (
+            .O(N__6511),
+            .I(\COUNTER.counterZ0Z_21 ));
+    LocalMux I__1425 (
+            .O(N__6508),
+            .I(\COUNTER.counterZ0Z_21 ));
+    InMux I__1424 (
             .O(N__6503),
+            .I(\COUNTER.counter_1_cry_20 ));
+    CascadeMux I__1423 (
+            .O(N__6500),
+            .I(N__6496));
+    InMux I__1422 (
+            .O(N__6499),
+            .I(N__6493));
+    InMux I__1421 (
+            .O(N__6496),
+            .I(N__6490));
+    LocalMux I__1420 (
+            .O(N__6493),
+            .I(\COUNTER.counterZ0Z_22 ));
+    LocalMux I__1419 (
+            .O(N__6490),
+            .I(\COUNTER.counterZ0Z_22 ));
+    InMux I__1418 (
+            .O(N__6485),
+            .I(\COUNTER.counter_1_cry_21 ));
+    InMux I__1417 (
+            .O(N__6482),
+            .I(N__6478));
+    InMux I__1416 (
+            .O(N__6481),
+            .I(N__6475));
+    LocalMux I__1415 (
+            .O(N__6478),
             .I(\COUNTER.counterZ0Z_23 ));
-    InMux I__1410 (
-            .O(N__6498),
+    LocalMux I__1414 (
+            .O(N__6475),
+            .I(\COUNTER.counterZ0Z_23 ));
+    InMux I__1413 (
+            .O(N__6470),
             .I(\COUNTER.counter_1_cry_22 ));
-    InMux I__1409 (
-            .O(N__6495),
-            .I(N__6491));
+    InMux I__1412 (
+            .O(N__6467),
+            .I(N__6463));
+    InMux I__1411 (
+            .O(N__6466),
+            .I(N__6460));
+    LocalMux I__1410 (
+            .O(N__6463),
+            .I(\COUNTER.counterZ0Z_24 ));
+    LocalMux I__1409 (
+            .O(N__6460),
+            .I(\COUNTER.counterZ0Z_24 ));
     InMux I__1408 (
-            .O(N__6494),
-            .I(N__6488));
-    LocalMux I__1407 (
-            .O(N__6491),
-            .I(\COUNTER.counterZ0Z_24 ));
-    LocalMux I__1406 (
-            .O(N__6488),
-            .I(\COUNTER.counterZ0Z_24 ));
-    InMux I__1405 (
-            .O(N__6483),
-            .I(\COUNTER.counter_1_cry_23 ));
-    InMux I__1404 (
-            .O(N__6480),
-            .I(N__6476));
-    InMux I__1403 (
-            .O(N__6479),
-            .I(N__6473));
-    LocalMux I__1402 (
-            .O(N__6476),
-            .I(\COUNTER.counterZ0Z_25 ));
-    LocalMux I__1401 (
-            .O(N__6473),
-            .I(\COUNTER.counterZ0Z_25 ));
-    InMux I__1400 (
-            .O(N__6468),
-            .I(bfn_6_12_0_));
-    CascadeMux I__1399 (
-            .O(N__6465),
-            .I(N__6461));
-    InMux I__1398 (
-            .O(N__6464),
-            .I(N__6458));
-    InMux I__1397 (
-            .O(N__6461),
-            .I(N__6455));
-    LocalMux I__1396 (
-            .O(N__6458),
-            .I(\COUNTER.counterZ0Z_26 ));
-    LocalMux I__1395 (
             .O(N__6455),
+            .I(\COUNTER.counter_1_cry_23 ));
+    CascadeMux I__1407 (
+            .O(N__6452),
+            .I(N__6448));
+    InMux I__1406 (
+            .O(N__6451),
+            .I(N__6445));
+    InMux I__1405 (
+            .O(N__6448),
+            .I(N__6442));
+    LocalMux I__1404 (
+            .O(N__6445),
+            .I(\COUNTER.counterZ0Z_25 ));
+    LocalMux I__1403 (
+            .O(N__6442),
+            .I(\COUNTER.counterZ0Z_25 ));
+    InMux I__1402 (
+            .O(N__6437),
+            .I(bfn_6_12_0_));
+    InMux I__1401 (
+            .O(N__6434),
+            .I(N__6430));
+    InMux I__1400 (
+            .O(N__6433),
+            .I(N__6427));
+    LocalMux I__1399 (
+            .O(N__6430),
             .I(\COUNTER.counterZ0Z_26 ));
-    InMux I__1394 (
-            .O(N__6450),
+    LocalMux I__1398 (
+            .O(N__6427),
+            .I(\COUNTER.counterZ0Z_26 ));
+    InMux I__1397 (
+            .O(N__6422),
             .I(\COUNTER.counter_1_cry_25 ));
-    InMux I__1393 (
-            .O(N__6447),
-            .I(N__6443));
+    InMux I__1396 (
+            .O(N__6419),
+            .I(N__6415));
+    InMux I__1395 (
+            .O(N__6418),
+            .I(N__6412));
+    LocalMux I__1394 (
+            .O(N__6415),
+            .I(\COUNTER.counterZ0Z_27 ));
+    LocalMux I__1393 (
+            .O(N__6412),
+            .I(\COUNTER.counterZ0Z_27 ));
     InMux I__1392 (
-            .O(N__6446),
-            .I(N__6440));
-    LocalMux I__1391 (
-            .O(N__6443),
-            .I(\COUNTER.counterZ0Z_27 ));
-    LocalMux I__1390 (
-            .O(N__6440),
-            .I(\COUNTER.counterZ0Z_27 ));
-    InMux I__1389 (
-            .O(N__6435),
+            .O(N__6407),
             .I(\COUNTER.counter_1_cry_26 ));
-    InMux I__1388 (
-            .O(N__6432),
-            .I(N__6428));
+    InMux I__1391 (
+            .O(N__6404),
+            .I(N__6400));
+    InMux I__1390 (
+            .O(N__6403),
+            .I(N__6397));
+    LocalMux I__1389 (
+            .O(N__6400),
+            .I(\COUNTER.counterZ0Z_28 ));
+    LocalMux I__1388 (
+            .O(N__6397),
+            .I(\COUNTER.counterZ0Z_28 ));
     InMux I__1387 (
-            .O(N__6431),
-            .I(N__6425));
-    LocalMux I__1386 (
-            .O(N__6428),
-            .I(\COUNTER.counterZ0Z_28 ));
-    LocalMux I__1385 (
-            .O(N__6425),
-            .I(\COUNTER.counterZ0Z_28 ));
-    InMux I__1384 (
-            .O(N__6420),
-            .I(\COUNTER.counter_1_cry_27 ));
-    InMux I__1383 (
-            .O(N__6417),
-            .I(N__6413));
-    InMux I__1382 (
-            .O(N__6416),
-            .I(N__6410));
-    LocalMux I__1381 (
-            .O(N__6413),
-            .I(\COUNTER.counterZ0Z_12 ));
-    LocalMux I__1380 (
-            .O(N__6410),
-            .I(\COUNTER.counterZ0Z_12 ));
-    InMux I__1379 (
-            .O(N__6405),
-            .I(\COUNTER.counter_1_cry_11 ));
-    CascadeMux I__1378 (
-            .O(N__6402),
-            .I(N__6398));
-    InMux I__1377 (
-            .O(N__6401),
-            .I(N__6395));
-    InMux I__1376 (
-            .O(N__6398),
-            .I(N__6392));
-    LocalMux I__1375 (
-            .O(N__6395),
-            .I(\COUNTER.counterZ0Z_13 ));
-    LocalMux I__1374 (
             .O(N__6392),
-            .I(\COUNTER.counterZ0Z_13 ));
-    InMux I__1373 (
-            .O(N__6387),
-            .I(\COUNTER.counter_1_cry_12 ));
-    InMux I__1372 (
-            .O(N__6384),
-            .I(N__6380));
-    InMux I__1371 (
-            .O(N__6383),
-            .I(N__6377));
-    LocalMux I__1370 (
-            .O(N__6380),
-            .I(\COUNTER.counterZ0Z_14 ));
-    LocalMux I__1369 (
+            .I(\COUNTER.counter_1_cry_27 ));
+    InMux I__1386 (
+            .O(N__6389),
+            .I(N__6385));
+    InMux I__1385 (
+            .O(N__6388),
+            .I(N__6382));
+    LocalMux I__1384 (
+            .O(N__6385),
+            .I(\COUNTER.counterZ0Z_29 ));
+    LocalMux I__1383 (
+            .O(N__6382),
+            .I(\COUNTER.counterZ0Z_29 ));
+    InMux I__1382 (
             .O(N__6377),
-            .I(\COUNTER.counterZ0Z_14 ));
-    InMux I__1368 (
-            .O(N__6372),
-            .I(\COUNTER.counter_1_cry_13 ));
-    InMux I__1367 (
-            .O(N__6369),
-            .I(N__6365));
-    InMux I__1366 (
-            .O(N__6368),
-            .I(N__6362));
-    LocalMux I__1365 (
-            .O(N__6365),
-            .I(\COUNTER.counterZ0Z_15 ));
-    LocalMux I__1364 (
+            .I(\COUNTER.counter_1_cry_28 ));
+    InMux I__1381 (
+            .O(N__6374),
+            .I(N__6370));
+    InMux I__1380 (
+            .O(N__6373),
+            .I(N__6367));
+    LocalMux I__1379 (
+            .O(N__6370),
+            .I(\COUNTER.counterZ0Z_13 ));
+    LocalMux I__1378 (
+            .O(N__6367),
+            .I(\COUNTER.counterZ0Z_13 ));
+    InMux I__1377 (
             .O(N__6362),
-            .I(\COUNTER.counterZ0Z_15 ));
-    InMux I__1363 (
-            .O(N__6357),
-            .I(\COUNTER.counter_1_cry_14 ));
-    InMux I__1362 (
-            .O(N__6354),
-            .I(N__6350));
-    InMux I__1361 (
-            .O(N__6353),
-            .I(N__6347));
-    LocalMux I__1360 (
-            .O(N__6350),
-            .I(\COUNTER.counterZ0Z_16 ));
-    LocalMux I__1359 (
+            .I(\COUNTER.counter_1_cry_12 ));
+    InMux I__1376 (
+            .O(N__6359),
+            .I(N__6355));
+    InMux I__1375 (
+            .O(N__6358),
+            .I(N__6352));
+    LocalMux I__1374 (
+            .O(N__6355),
+            .I(\COUNTER.counterZ0Z_14 ));
+    LocalMux I__1373 (
+            .O(N__6352),
+            .I(\COUNTER.counterZ0Z_14 ));
+    InMux I__1372 (
             .O(N__6347),
+            .I(\COUNTER.counter_1_cry_13 ));
+    InMux I__1371 (
+            .O(N__6344),
+            .I(N__6340));
+    InMux I__1370 (
+            .O(N__6343),
+            .I(N__6337));
+    LocalMux I__1369 (
+            .O(N__6340),
+            .I(N__6334));
+    LocalMux I__1368 (
+            .O(N__6337),
+            .I(\COUNTER.counterZ0Z_15 ));
+    Odrv4 I__1367 (
+            .O(N__6334),
+            .I(\COUNTER.counterZ0Z_15 ));
+    InMux I__1366 (
+            .O(N__6329),
+            .I(\COUNTER.counter_1_cry_14 ));
+    InMux I__1365 (
+            .O(N__6326),
+            .I(N__6322));
+    InMux I__1364 (
+            .O(N__6325),
+            .I(N__6319));
+    LocalMux I__1363 (
+            .O(N__6322),
             .I(\COUNTER.counterZ0Z_16 ));
-    InMux I__1358 (
-            .O(N__6342),
+    LocalMux I__1362 (
+            .O(N__6319),
+            .I(\COUNTER.counterZ0Z_16 ));
+    InMux I__1361 (
+            .O(N__6314),
             .I(\COUNTER.counter_1_cry_15 ));
-    InMux I__1357 (
-            .O(N__6339),
-            .I(N__6335));
-    InMux I__1356 (
-            .O(N__6338),
-            .I(N__6332));
-    LocalMux I__1355 (
-            .O(N__6335),
+    CascadeMux I__1360 (
+            .O(N__6311),
+            .I(N__6307));
+    InMux I__1359 (
+            .O(N__6310),
+            .I(N__6304));
+    InMux I__1358 (
+            .O(N__6307),
+            .I(N__6301));
+    LocalMux I__1357 (
+            .O(N__6304),
             .I(\COUNTER.counterZ0Z_17 ));
-    LocalMux I__1354 (
-            .O(N__6332),
+    LocalMux I__1356 (
+            .O(N__6301),
             .I(\COUNTER.counterZ0Z_17 ));
-    InMux I__1353 (
-            .O(N__6327),
+    InMux I__1355 (
+            .O(N__6296),
             .I(bfn_6_11_0_));
-    InMux I__1352 (
-            .O(N__6324),
-            .I(N__6320));
-    InMux I__1351 (
-            .O(N__6323),
-            .I(N__6317));
-    LocalMux I__1350 (
-            .O(N__6320),
-            .I(\COUNTER.counterZ0Z_18 ));
-    LocalMux I__1349 (
-            .O(N__6317),
-            .I(\COUNTER.counterZ0Z_18 ));
-    InMux I__1348 (
-            .O(N__6312),
-            .I(\COUNTER.counter_1_cry_17 ));
-    CascadeMux I__1347 (
-            .O(N__6309),
-            .I(N__6305));
-    InMux I__1346 (
-            .O(N__6308),
-            .I(N__6302));
-    InMux I__1345 (
-            .O(N__6305),
-            .I(N__6299));
-    LocalMux I__1344 (
-            .O(N__6302),
-            .I(\COUNTER.counterZ0Z_19 ));
-    LocalMux I__1343 (
-            .O(N__6299),
-            .I(\COUNTER.counterZ0Z_19 ));
-    InMux I__1342 (
-            .O(N__6294),
-            .I(\COUNTER.counter_1_cry_18 ));
-    InMux I__1341 (
-            .O(N__6291),
+    InMux I__1354 (
+            .O(N__6293),
+            .I(N__6289));
+    InMux I__1353 (
+            .O(N__6292),
             .I(N__6286));
-    InMux I__1340 (
-            .O(N__6290),
-            .I(N__6281));
-    InMux I__1339 (
+    LocalMux I__1352 (
             .O(N__6289),
-            .I(N__6281));
-    LocalMux I__1338 (
+            .I(\COUNTER.counterZ0Z_18 ));
+    LocalMux I__1351 (
             .O(N__6286),
-            .I(\COUNTER.counterZ0Z_4 ));
-    LocalMux I__1337 (
+            .I(\COUNTER.counterZ0Z_18 ));
+    InMux I__1350 (
             .O(N__6281),
-            .I(\COUNTER.counterZ0Z_4 ));
-    InMux I__1336 (
-            .O(N__6276),
-            .I(N__6273));
-    LocalMux I__1335 (
-            .O(N__6273),
-            .I(\COUNTER.counter_1_cry_3_THRU_CO ));
-    InMux I__1334 (
-            .O(N__6270),
-            .I(\COUNTER.counter_1_cry_3 ));
-    InMux I__1333 (
-            .O(N__6267),
-            .I(N__6262));
-    InMux I__1332 (
+            .I(\COUNTER.counter_1_cry_17 ));
+    InMux I__1349 (
+            .O(N__6278),
+            .I(N__6274));
+    InMux I__1348 (
+            .O(N__6277),
+            .I(N__6271));
+    LocalMux I__1347 (
+            .O(N__6274),
+            .I(\COUNTER.counterZ0Z_19 ));
+    LocalMux I__1346 (
+            .O(N__6271),
+            .I(\COUNTER.counterZ0Z_19 ));
+    InMux I__1345 (
             .O(N__6266),
-            .I(N__6257));
-    InMux I__1331 (
-            .O(N__6265),
-            .I(N__6257));
-    LocalMux I__1330 (
+            .I(\COUNTER.counter_1_cry_18 ));
+    InMux I__1344 (
+            .O(N__6263),
+            .I(N__6259));
+    InMux I__1343 (
             .O(N__6262),
-            .I(\COUNTER.counterZ0Z_5 ));
-    LocalMux I__1329 (
-            .O(N__6257),
-            .I(\COUNTER.counterZ0Z_5 ));
-    InMux I__1328 (
-            .O(N__6252),
-            .I(N__6249));
-    LocalMux I__1327 (
-            .O(N__6249),
-            .I(\COUNTER.counter_1_cry_4_THRU_CO ));
-    InMux I__1326 (
-            .O(N__6246),
-            .I(\COUNTER.counter_1_cry_4 ));
-    InMux I__1325 (
-            .O(N__6243),
+            .I(N__6256));
+    LocalMux I__1342 (
+            .O(N__6259),
+            .I(\COUNTER.counterZ0Z_20 ));
+    LocalMux I__1341 (
+            .O(N__6256),
+            .I(\COUNTER.counterZ0Z_20 ));
+    InMux I__1340 (
+            .O(N__6251),
+            .I(\COUNTER.counter_1_cry_19 ));
+    InMux I__1339 (
+            .O(N__6248),
+            .I(N__6243));
+    InMux I__1338 (
+            .O(N__6247),
             .I(N__6238));
-    InMux I__1324 (
-            .O(N__6242),
-            .I(N__6235));
-    InMux I__1323 (
-            .O(N__6241),
-            .I(N__6232));
-    LocalMux I__1322 (
+    InMux I__1337 (
+            .O(N__6246),
+            .I(N__6238));
+    LocalMux I__1336 (
+            .O(N__6243),
+            .I(\COUNTER.counterZ0Z_5 ));
+    LocalMux I__1335 (
             .O(N__6238),
-            .I(\COUNTER.counterZ0Z_6 ));
-    LocalMux I__1321 (
-            .O(N__6235),
-            .I(\COUNTER.counterZ0Z_6 ));
-    LocalMux I__1320 (
-            .O(N__6232),
-            .I(\COUNTER.counterZ0Z_6 ));
-    InMux I__1319 (
-            .O(N__6225),
-            .I(N__6222));
-    LocalMux I__1318 (
+            .I(\COUNTER.counterZ0Z_5 ));
+    InMux I__1334 (
+            .O(N__6233),
+            .I(N__6230));
+    LocalMux I__1333 (
+            .O(N__6230),
+            .I(\COUNTER.counter_1_cry_4_THRU_CO ));
+    InMux I__1332 (
+            .O(N__6227),
+            .I(\COUNTER.counter_1_cry_4 ));
+    InMux I__1331 (
+            .O(N__6224),
+            .I(N__6219));
+    InMux I__1330 (
+            .O(N__6223),
+            .I(N__6214));
+    InMux I__1329 (
             .O(N__6222),
-            .I(\COUNTER.counter_1_cry_5_THRU_CO ));
-    InMux I__1317 (
+            .I(N__6214));
+    LocalMux I__1328 (
             .O(N__6219),
-            .I(\COUNTER.counter_1_cry_5 ));
-    InMux I__1316 (
-            .O(N__6216),
-            .I(N__6212));
-    InMux I__1315 (
-            .O(N__6215),
-            .I(N__6209));
-    LocalMux I__1314 (
-            .O(N__6212),
-            .I(\COUNTER.counterZ0Z_7 ));
-    LocalMux I__1313 (
+            .I(\COUNTER.counterZ0Z_6 ));
+    LocalMux I__1327 (
+            .O(N__6214),
+            .I(\COUNTER.counterZ0Z_6 ));
+    InMux I__1326 (
             .O(N__6209),
-            .I(\COUNTER.counterZ0Z_7 ));
-    InMux I__1312 (
-            .O(N__6204),
-            .I(\COUNTER.counter_1_cry_6 ));
-    InMux I__1311 (
-            .O(N__6201),
-            .I(N__6197));
-    InMux I__1310 (
+            .I(N__6206));
+    LocalMux I__1325 (
+            .O(N__6206),
+            .I(N__6203));
+    Odrv4 I__1324 (
+            .O(N__6203),
+            .I(\COUNTER.counter_1_cry_5_THRU_CO ));
+    InMux I__1323 (
             .O(N__6200),
-            .I(N__6194));
-    LocalMux I__1309 (
+            .I(\COUNTER.counter_1_cry_5 ));
+    InMux I__1322 (
             .O(N__6197),
-            .I(\COUNTER.counterZ0Z_8 ));
-    LocalMux I__1308 (
-            .O(N__6194),
-            .I(\COUNTER.counterZ0Z_8 ));
-    InMux I__1307 (
-            .O(N__6189),
-            .I(\COUNTER.counter_1_cry_7 ));
-    InMux I__1306 (
-            .O(N__6186),
-            .I(N__6182));
-    InMux I__1305 (
+            .I(N__6193));
+    InMux I__1321 (
+            .O(N__6196),
+            .I(N__6190));
+    LocalMux I__1320 (
+            .O(N__6193),
+            .I(\COUNTER.counterZ0Z_7 ));
+    LocalMux I__1319 (
+            .O(N__6190),
+            .I(\COUNTER.counterZ0Z_7 ));
+    InMux I__1318 (
             .O(N__6185),
-            .I(N__6179));
-    LocalMux I__1304 (
+            .I(\COUNTER.counter_1_cry_6 ));
+    InMux I__1317 (
             .O(N__6182),
-            .I(\COUNTER.counterZ0Z_9 ));
-    LocalMux I__1303 (
-            .O(N__6179),
-            .I(\COUNTER.counterZ0Z_9 ));
-    InMux I__1302 (
-            .O(N__6174),
-            .I(bfn_6_10_0_));
-    InMux I__1301 (
-            .O(N__6171),
-            .I(N__6167));
-    InMux I__1300 (
+            .I(N__6178));
+    InMux I__1316 (
+            .O(N__6181),
+            .I(N__6175));
+    LocalMux I__1315 (
+            .O(N__6178),
+            .I(\COUNTER.counterZ0Z_8 ));
+    LocalMux I__1314 (
+            .O(N__6175),
+            .I(\COUNTER.counterZ0Z_8 ));
+    InMux I__1313 (
             .O(N__6170),
-            .I(N__6164));
-    LocalMux I__1299 (
+            .I(\COUNTER.counter_1_cry_7 ));
+    CascadeMux I__1312 (
             .O(N__6167),
-            .I(\COUNTER.counterZ0Z_10 ));
-    LocalMux I__1298 (
+            .I(N__6164));
+    InMux I__1311 (
             .O(N__6164),
-            .I(\COUNTER.counterZ0Z_10 ));
-    InMux I__1297 (
-            .O(N__6159),
-            .I(\COUNTER.counter_1_cry_9 ));
-    CascadeMux I__1296 (
-            .O(N__6156),
-            .I(N__6152));
-    InMux I__1295 (
-            .O(N__6155),
-            .I(N__6149));
-    InMux I__1294 (
-            .O(N__6152),
-            .I(N__6146));
-    LocalMux I__1293 (
+            .I(N__6160));
+    InMux I__1310 (
+            .O(N__6163),
+            .I(N__6157));
+    LocalMux I__1309 (
+            .O(N__6160),
+            .I(N__6154));
+    LocalMux I__1308 (
+            .O(N__6157),
+            .I(\COUNTER.counterZ0Z_9 ));
+    Odrv4 I__1307 (
+            .O(N__6154),
+            .I(\COUNTER.counterZ0Z_9 ));
+    InMux I__1306 (
             .O(N__6149),
-            .I(\COUNTER.counterZ0Z_11 ));
-    LocalMux I__1292 (
+            .I(bfn_6_10_0_));
+    InMux I__1305 (
             .O(N__6146),
-            .I(\COUNTER.counterZ0Z_11 ));
-    InMux I__1291 (
-            .O(N__6141),
-            .I(\COUNTER.counter_1_cry_10 ));
-    CascadeMux I__1290 (
-            .O(N__6138),
-            .I(N__6134));
-    InMux I__1289 (
-            .O(N__6137),
-            .I(N__6131));
-    InMux I__1288 (
+            .I(N__6142));
+    InMux I__1304 (
+            .O(N__6145),
+            .I(N__6139));
+    LocalMux I__1303 (
+            .O(N__6142),
+            .I(\COUNTER.counterZ0Z_10 ));
+    LocalMux I__1302 (
+            .O(N__6139),
+            .I(\COUNTER.counterZ0Z_10 ));
+    InMux I__1301 (
             .O(N__6134),
-            .I(N__6128));
-    LocalMux I__1287 (
+            .I(\COUNTER.counter_1_cry_9 ));
+    InMux I__1300 (
             .O(N__6131),
-            .I(\VPP_VDDQ.countZ0Z_12 ));
-    LocalMux I__1286 (
-            .O(N__6128),
-            .I(\VPP_VDDQ.countZ0Z_12 ));
-    InMux I__1285 (
-            .O(N__6123),
-            .I(\VPP_VDDQ.un1_count_1_cry_11 ));
-    CascadeMux I__1284 (
-            .O(N__6120),
-            .I(N__6117));
-    InMux I__1283 (
-            .O(N__6117),
-            .I(N__6113));
-    InMux I__1282 (
+            .I(N__6127));
+    InMux I__1299 (
+            .O(N__6130),
+            .I(N__6124));
+    LocalMux I__1298 (
+            .O(N__6127),
+            .I(\COUNTER.counterZ0Z_11 ));
+    LocalMux I__1297 (
+            .O(N__6124),
+            .I(\COUNTER.counterZ0Z_11 ));
+    InMux I__1296 (
+            .O(N__6119),
+            .I(\COUNTER.counter_1_cry_10 ));
+    CascadeMux I__1295 (
             .O(N__6116),
-            .I(N__6110));
-    LocalMux I__1281 (
+            .I(N__6113));
+    InMux I__1294 (
             .O(N__6113),
-            .I(\VPP_VDDQ.countZ0Z_13 ));
-    LocalMux I__1280 (
-            .O(N__6110),
-            .I(\VPP_VDDQ.countZ0Z_13 ));
-    InMux I__1279 (
-            .O(N__6105),
-            .I(\VPP_VDDQ.un1_count_1_cry_12 ));
-    InMux I__1278 (
-            .O(N__6102),
-            .I(N__6074));
-    InMux I__1277 (
-            .O(N__6101),
-            .I(N__6074));
-    InMux I__1276 (
-            .O(N__6100),
-            .I(N__6074));
-    InMux I__1275 (
-            .O(N__6099),
-            .I(N__6074));
-    InMux I__1274 (
+            .I(N__6109));
+    InMux I__1293 (
+            .O(N__6112),
+            .I(N__6106));
+    LocalMux I__1292 (
+            .O(N__6109),
+            .I(N__6103));
+    LocalMux I__1291 (
+            .O(N__6106),
+            .I(\COUNTER.counterZ0Z_12 ));
+    Odrv4 I__1290 (
+            .O(N__6103),
+            .I(\COUNTER.counterZ0Z_12 ));
+    InMux I__1289 (
             .O(N__6098),
-            .I(N__6065));
-    InMux I__1273 (
-            .O(N__6097),
-            .I(N__6065));
-    InMux I__1272 (
-            .O(N__6096),
-            .I(N__6065));
-    InMux I__1271 (
+            .I(\COUNTER.counter_1_cry_11 ));
+    CascadeMux I__1288 (
             .O(N__6095),
-            .I(N__6065));
-    InMux I__1270 (
-            .O(N__6094),
-            .I(N__6055));
-    InMux I__1269 (
-            .O(N__6093),
-            .I(N__6055));
-    InMux I__1268 (
+            .I(\VPP_VDDQ.un1_curr_state12_0_cascade_ ));
+    CascadeMux I__1287 (
             .O(N__6092),
-            .I(N__6055));
-    InMux I__1267 (
-            .O(N__6091),
-            .I(N__6055));
-    InMux I__1266 (
-            .O(N__6090),
-            .I(N__6046));
-    InMux I__1265 (
+            .I(N__6089));
+    InMux I__1286 (
             .O(N__6089),
-            .I(N__6046));
-    InMux I__1264 (
-            .O(N__6088),
-            .I(N__6046));
-    InMux I__1263 (
-            .O(N__6087),
-            .I(N__6046));
-    InMux I__1262 (
+            .I(N__6086));
+    LocalMux I__1285 (
             .O(N__6086),
-            .I(N__6037));
-    InMux I__1261 (
+            .I(N__6081));
+    InMux I__1284 (
             .O(N__6085),
-            .I(N__6037));
-    InMux I__1260 (
+            .I(N__6078));
+    InMux I__1283 (
             .O(N__6084),
-            .I(N__6037));
-    InMux I__1259 (
-            .O(N__6083),
-            .I(N__6037));
-    LocalMux I__1258 (
-            .O(N__6074),
-            .I(N__6024));
-    LocalMux I__1257 (
+            .I(N__6075));
+    Span4Mux_v I__1282 (
+            .O(N__6081),
+            .I(N__6072));
+    LocalMux I__1281 (
+            .O(N__6078),
+            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa));
+    LocalMux I__1280 (
+            .O(N__6075),
+            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa));
+    Odrv4 I__1279 (
+            .O(N__6072),
+            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa));
+    CascadeMux I__1278 (
             .O(N__6065),
-            .I(N__6021));
-    CEMux I__1256 (
-            .O(N__6064),
+            .I(\VPP_VDDQ.delayed_vddq_pwrgd_s_1_cascade_ ));
+    InMux I__1277 (
+            .O(N__6062),
+            .I(N__6041));
+    InMux I__1276 (
+            .O(N__6061),
+            .I(N__6041));
+    InMux I__1275 (
+            .O(N__6060),
+            .I(N__6041));
+    InMux I__1274 (
+            .O(N__6059),
+            .I(N__6041));
+    CEMux I__1273 (
+            .O(N__6058),
+            .I(N__6038));
+    CEMux I__1272 (
+            .O(N__6057),
+            .I(N__6035));
+    InMux I__1271 (
+            .O(N__6056),
             .I(N__6018));
-    LocalMux I__1255 (
+    InMux I__1270 (
             .O(N__6055),
-            .I(N__5979));
-    LocalMux I__1254 (
-            .O(N__6046),
-            .I(N__5979));
-    LocalMux I__1253 (
-            .O(N__6037),
-            .I(N__5979));
-    InMux I__1252 (
-            .O(N__6036),
-            .I(N__5968));
-    InMux I__1251 (
+            .I(N__6018));
+    InMux I__1269 (
+            .O(N__6054),
+            .I(N__6018));
+    InMux I__1268 (
+            .O(N__6053),
+            .I(N__6009));
+    InMux I__1267 (
+            .O(N__6052),
+            .I(N__6009));
+    InMux I__1266 (
+            .O(N__6051),
+            .I(N__6009));
+    InMux I__1265 (
+            .O(N__6050),
+            .I(N__6009));
+    LocalMux I__1264 (
+            .O(N__6041),
+            .I(N__6002));
+    LocalMux I__1263 (
+            .O(N__6038),
+            .I(N__6002));
+    LocalMux I__1262 (
             .O(N__6035),
-            .I(N__5968));
-    InMux I__1250 (
+            .I(N__6002));
+    InMux I__1261 (
             .O(N__6034),
-            .I(N__5968));
-    CEMux I__1249 (
+            .I(N__5995));
+    InMux I__1260 (
             .O(N__6033),
-            .I(N__5965));
-    CEMux I__1248 (
+            .I(N__5995));
+    CEMux I__1259 (
             .O(N__6032),
-            .I(N__5962));
-    InMux I__1247 (
+            .I(N__5995));
+    InMux I__1258 (
             .O(N__6031),
-            .I(N__5959));
-    InMux I__1246 (
+            .I(N__5972));
+    InMux I__1257 (
             .O(N__6030),
-            .I(N__5949));
-    InMux I__1245 (
+            .I(N__5972));
+    InMux I__1256 (
             .O(N__6029),
-            .I(N__5949));
-    InMux I__1244 (
+            .I(N__5972));
+    InMux I__1255 (
             .O(N__6028),
-            .I(N__5949));
-    InMux I__1243 (
+            .I(N__5963));
+    InMux I__1254 (
             .O(N__6027),
-            .I(N__5949));
-    Span4Mux_v I__1242 (
-            .O(N__6024),
-            .I(N__5942));
-    Span4Mux_s2_h I__1241 (
-            .O(N__6021),
-            .I(N__5942));
-    LocalMux I__1240 (
+            .I(N__5963));
+    InMux I__1253 (
+            .O(N__6026),
+            .I(N__5963));
+    InMux I__1252 (
+            .O(N__6025),
+            .I(N__5963));
+    LocalMux I__1251 (
             .O(N__6018),
-            .I(N__5942));
-    InMux I__1239 (
-            .O(N__6017),
-            .I(N__5933));
-    InMux I__1238 (
-            .O(N__6016),
-            .I(N__5933));
-    InMux I__1237 (
-            .O(N__6015),
-            .I(N__5933));
-    InMux I__1236 (
-            .O(N__6014),
-            .I(N__5933));
-    InMux I__1235 (
-            .O(N__6013),
-            .I(N__5924));
-    InMux I__1234 (
-            .O(N__6012),
-            .I(N__5924));
-    InMux I__1233 (
-            .O(N__6011),
-            .I(N__5924));
-    InMux I__1232 (
-            .O(N__6010),
-            .I(N__5924));
-    InMux I__1231 (
+            .I(N__5954));
+    LocalMux I__1250 (
             .O(N__6009),
-            .I(N__5917));
-    InMux I__1230 (
-            .O(N__6008),
-            .I(N__5917));
-    InMux I__1229 (
-            .O(N__6007),
-            .I(N__5917));
-    InMux I__1228 (
-            .O(N__6006),
-            .I(N__5908));
-    InMux I__1227 (
-            .O(N__6005),
-            .I(N__5908));
-    InMux I__1226 (
-            .O(N__6004),
-            .I(N__5908));
-    InMux I__1225 (
-            .O(N__6003),
-            .I(N__5908));
-    InMux I__1224 (
+            .I(N__5954));
+    Span4Mux_v I__1249 (
             .O(N__6002),
-            .I(N__5905));
-    InMux I__1223 (
-            .O(N__6001),
-            .I(N__5902));
-    InMux I__1222 (
-            .O(N__6000),
-            .I(N__5893));
-    InMux I__1221 (
-            .O(N__5999),
-            .I(N__5893));
-    InMux I__1220 (
-            .O(N__5998),
-            .I(N__5893));
-    InMux I__1219 (
-            .O(N__5997),
-            .I(N__5893));
-    InMux I__1218 (
-            .O(N__5996),
-            .I(N__5884));
-    InMux I__1217 (
+            .I(N__5954));
+    LocalMux I__1248 (
             .O(N__5995),
-            .I(N__5884));
-    InMux I__1216 (
+            .I(N__5954));
+    InMux I__1247 (
             .O(N__5994),
-            .I(N__5884));
-    InMux I__1215 (
+            .I(N__5945));
+    InMux I__1246 (
             .O(N__5993),
-            .I(N__5884));
-    InMux I__1214 (
+            .I(N__5945));
+    InMux I__1245 (
             .O(N__5992),
-            .I(N__5875));
-    InMux I__1213 (
+            .I(N__5945));
+    InMux I__1244 (
             .O(N__5991),
-            .I(N__5875));
-    InMux I__1212 (
+            .I(N__5945));
+    InMux I__1243 (
             .O(N__5990),
-            .I(N__5875));
-    InMux I__1211 (
+            .I(N__5940));
+    CEMux I__1242 (
             .O(N__5989),
-            .I(N__5875));
-    InMux I__1210 (
+            .I(N__5940));
+    InMux I__1241 (
             .O(N__5988),
-            .I(N__5868));
-    InMux I__1209 (
+            .I(N__5931));
+    InMux I__1240 (
             .O(N__5987),
-            .I(N__5868));
-    InMux I__1208 (
+            .I(N__5931));
+    InMux I__1239 (
             .O(N__5986),
-            .I(N__5868));
-    Span4Mux_v I__1207 (
+            .I(N__5931));
+    InMux I__1238 (
+            .O(N__5985),
+            .I(N__5931));
+    CEMux I__1237 (
+            .O(N__5984),
+            .I(N__5928));
+    InMux I__1236 (
+            .O(N__5983),
+            .I(N__5921));
+    InMux I__1235 (
+            .O(N__5982),
+            .I(N__5912));
+    InMux I__1234 (
+            .O(N__5981),
+            .I(N__5912));
+    InMux I__1233 (
+            .O(N__5980),
+            .I(N__5912));
+    InMux I__1232 (
             .O(N__5979),
-            .I(N__5865));
-    InMux I__1206 (
-            .O(N__5978),
-            .I(N__5862));
-    InMux I__1205 (
-            .O(N__5977),
-            .I(N__5855));
-    InMux I__1204 (
-            .O(N__5976),
-            .I(N__5855));
-    InMux I__1203 (
-            .O(N__5975),
-            .I(N__5855));
-    LocalMux I__1202 (
-            .O(N__5968),
-            .I(N__5852));
-    LocalMux I__1201 (
-            .O(N__5965),
-            .I(N__5847));
-    LocalMux I__1200 (
-            .O(N__5962),
-            .I(N__5847));
-    LocalMux I__1199 (
-            .O(N__5959),
-            .I(N__5844));
-    InMux I__1198 (
-            .O(N__5958),
-            .I(N__5841));
-    LocalMux I__1197 (
-            .O(N__5949),
-            .I(N__5835));
-    Span4Mux_h I__1196 (
-            .O(N__5942),
-            .I(N__5835));
-    LocalMux I__1195 (
-            .O(N__5933),
-            .I(N__5828));
-    LocalMux I__1194 (
+            .I(N__5912));
+    LocalMux I__1231 (
+            .O(N__5972),
+            .I(N__5898));
+    LocalMux I__1230 (
+            .O(N__5963),
+            .I(N__5898));
+    Span4Mux_v I__1229 (
+            .O(N__5954),
+            .I(N__5898));
+    LocalMux I__1228 (
+            .O(N__5945),
+            .I(N__5898));
+    LocalMux I__1227 (
+            .O(N__5940),
+            .I(N__5898));
+    LocalMux I__1226 (
+            .O(N__5931),
+            .I(N__5872));
+    LocalMux I__1225 (
+            .O(N__5928),
+            .I(N__5869));
+    InMux I__1224 (
+            .O(N__5927),
+            .I(N__5859));
+    InMux I__1223 (
+            .O(N__5926),
+            .I(N__5859));
+    InMux I__1222 (
+            .O(N__5925),
+            .I(N__5859));
+    InMux I__1221 (
             .O(N__5924),
-            .I(N__5828));
-    LocalMux I__1193 (
-            .O(N__5917),
-            .I(N__5828));
-    LocalMux I__1192 (
-            .O(N__5908),
-            .I(N__5823));
-    LocalMux I__1191 (
-            .O(N__5905),
-            .I(N__5823));
-    LocalMux I__1190 (
-            .O(N__5902),
-            .I(N__5808));
-    LocalMux I__1189 (
+            .I(N__5859));
+    LocalMux I__1220 (
+            .O(N__5921),
+            .I(N__5856));
+    LocalMux I__1219 (
+            .O(N__5912),
+            .I(N__5853));
+    InMux I__1218 (
+            .O(N__5911),
+            .I(N__5846));
+    InMux I__1217 (
+            .O(N__5910),
+            .I(N__5846));
+    InMux I__1216 (
+            .O(N__5909),
+            .I(N__5846));
+    Span4Mux_s3_v I__1215 (
+            .O(N__5898),
+            .I(N__5843));
+    InMux I__1214 (
+            .O(N__5897),
+            .I(N__5834));
+    InMux I__1213 (
+            .O(N__5896),
+            .I(N__5834));
+    InMux I__1212 (
+            .O(N__5895),
+            .I(N__5834));
+    InMux I__1211 (
+            .O(N__5894),
+            .I(N__5834));
+    InMux I__1210 (
             .O(N__5893),
-            .I(N__5808));
-    LocalMux I__1188 (
+            .I(N__5825));
+    InMux I__1209 (
+            .O(N__5892),
+            .I(N__5825));
+    InMux I__1208 (
+            .O(N__5891),
+            .I(N__5825));
+    InMux I__1207 (
+            .O(N__5890),
+            .I(N__5825));
+    InMux I__1206 (
+            .O(N__5889),
+            .I(N__5816));
+    InMux I__1205 (
+            .O(N__5888),
+            .I(N__5816));
+    InMux I__1204 (
+            .O(N__5887),
+            .I(N__5816));
+    InMux I__1203 (
+            .O(N__5886),
+            .I(N__5816));
+    InMux I__1202 (
+            .O(N__5885),
+            .I(N__5807));
+    InMux I__1201 (
             .O(N__5884),
-            .I(N__5808));
-    LocalMux I__1187 (
+            .I(N__5807));
+    InMux I__1200 (
+            .O(N__5883),
+            .I(N__5807));
+    InMux I__1199 (
+            .O(N__5882),
+            .I(N__5807));
+    InMux I__1198 (
+            .O(N__5881),
+            .I(N__5798));
+    InMux I__1197 (
+            .O(N__5880),
+            .I(N__5798));
+    InMux I__1196 (
+            .O(N__5879),
+            .I(N__5798));
+    InMux I__1195 (
+            .O(N__5878),
+            .I(N__5798));
+    InMux I__1194 (
+            .O(N__5877),
+            .I(N__5791));
+    InMux I__1193 (
+            .O(N__5876),
+            .I(N__5791));
+    InMux I__1192 (
             .O(N__5875),
-            .I(N__5808));
-    LocalMux I__1186 (
+            .I(N__5791));
+    Span4Mux_s1_h I__1191 (
+            .O(N__5872),
+            .I(N__5786));
+    Span4Mux_h I__1190 (
+            .O(N__5869),
+            .I(N__5786));
+    InMux I__1189 (
             .O(N__5868),
-            .I(N__5808));
-    Span4Mux_h I__1185 (
-            .O(N__5865),
-            .I(N__5808));
-    LocalMux I__1184 (
-            .O(N__5862),
-            .I(N__5808));
+            .I(N__5783));
+    LocalMux I__1188 (
+            .O(N__5859),
+            .I(N__5772));
+    Span4Mux_h I__1187 (
+            .O(N__5856),
+            .I(N__5772));
+    Span4Mux_s3_v I__1186 (
+            .O(N__5853),
+            .I(N__5772));
+    LocalMux I__1185 (
+            .O(N__5846),
+            .I(N__5772));
+    Span4Mux_s1_h I__1184 (
+            .O(N__5843),
+            .I(N__5772));
     LocalMux I__1183 (
-            .O(N__5855),
-            .I(N__5797));
-    Span4Mux_v I__1182 (
-            .O(N__5852),
-            .I(N__5797));
-    Span4Mux_v I__1181 (
-            .O(N__5847),
-            .I(N__5797));
-    Span4Mux_v I__1180 (
-            .O(N__5844),
-            .I(N__5797));
+            .O(N__5834),
+            .I(G_0_0));
+    LocalMux I__1182 (
+            .O(N__5825),
+            .I(G_0_0));
+    LocalMux I__1181 (
+            .O(N__5816),
+            .I(G_0_0));
+    LocalMux I__1180 (
+            .O(N__5807),
+            .I(G_0_0));
     LocalMux I__1179 (
-            .O(N__5841),
-            .I(N__5797));
-    InMux I__1178 (
-            .O(N__5840),
-            .I(N__5794));
-    Span4Mux_s2_h I__1177 (
-            .O(N__5835),
-            .I(N__5787));
-    Span4Mux_v I__1176 (
-            .O(N__5828),
-            .I(N__5787));
-    Span4Mux_v I__1175 (
-            .O(N__5823),
-            .I(N__5787));
-    Span4Mux_v I__1174 (
-            .O(N__5808),
-            .I(N__5782));
-    Span4Mux_h I__1173 (
-            .O(N__5797),
-            .I(N__5782));
-    LocalMux I__1172 (
-            .O(N__5794),
-            .I(G_0));
-    Odrv4 I__1171 (
-            .O(N__5787),
-            .I(G_0));
-    Odrv4 I__1170 (
-            .O(N__5782),
-            .I(G_0));
-    InMux I__1169 (
-            .O(N__5775),
-            .I(N__5771));
-    InMux I__1168 (
-            .O(N__5774),
-            .I(N__5768));
-    LocalMux I__1167 (
-            .O(N__5771),
-            .I(\VPP_VDDQ.countZ0Z_14 ));
-    LocalMux I__1166 (
-            .O(N__5768),
-            .I(\VPP_VDDQ.countZ0Z_14 ));
-    InMux I__1165 (
-            .O(N__5763),
-            .I(\VPP_VDDQ.un1_count_1_cry_13 ));
-    InMux I__1164 (
-            .O(N__5760),
-            .I(N__5757));
-    LocalMux I__1163 (
-            .O(N__5757),
-            .I(N__5752));
-    InMux I__1162 (
-            .O(N__5756),
-            .I(N__5749));
-    InMux I__1161 (
-            .O(N__5755),
-            .I(N__5744));
-    Span4Mux_s2_h I__1160 (
+            .O(N__5798),
+            .I(G_0_0));
+    LocalMux I__1178 (
+            .O(N__5791),
+            .I(G_0_0));
+    Odrv4 I__1177 (
+            .O(N__5786),
+            .I(G_0_0));
+    LocalMux I__1176 (
+            .O(N__5783),
+            .I(G_0_0));
+    Odrv4 I__1175 (
+            .O(N__5772),
+            .I(G_0_0));
+    InMux I__1174 (
+            .O(N__5753),
+            .I(N__5748));
+    InMux I__1173 (
             .O(N__5752),
-            .I(N__5739));
-    LocalMux I__1159 (
-            .O(N__5749),
-            .I(N__5739));
-    InMux I__1158 (
+            .I(N__5741));
+    InMux I__1172 (
+            .O(N__5751),
+            .I(N__5741));
+    LocalMux I__1171 (
             .O(N__5748),
-            .I(N__5736));
-    IoInMux I__1157 (
+            .I(N__5738));
+    InMux I__1170 (
             .O(N__5747),
             .I(N__5733));
-    LocalMux I__1156 (
-            .O(N__5744),
-            .I(N__5730));
-    Span4Mux_v I__1155 (
-            .O(N__5739),
-            .I(N__5727));
-    LocalMux I__1154 (
-            .O(N__5736),
-            .I(N__5724));
-    LocalMux I__1153 (
+    InMux I__1169 (
+            .O(N__5746),
+            .I(N__5733));
+    LocalMux I__1168 (
+            .O(N__5741),
+            .I(\VPP_VDDQ.curr_stateZ0Z_0 ));
+    Odrv4 I__1167 (
+            .O(N__5738),
+            .I(\VPP_VDDQ.curr_stateZ0Z_0 ));
+    LocalMux I__1166 (
             .O(N__5733),
-            .I(N__5721));
-    Span4Mux_h I__1152 (
-            .O(N__5730),
+            .I(\VPP_VDDQ.curr_stateZ0Z_0 ));
+    CascadeMux I__1165 (
+            .O(N__5726),
+            .I(N__5722));
+    CascadeMux I__1164 (
+            .O(N__5725),
             .I(N__5718));
-    Odrv4 I__1151 (
-            .O(N__5727),
-            .I(CONSTANT_ONE_NET));
-    Odrv12 I__1150 (
-            .O(N__5724),
-            .I(CONSTANT_ONE_NET));
-    Odrv12 I__1149 (
+    InMux I__1163 (
+            .O(N__5722),
+            .I(N__5712));
+    InMux I__1162 (
             .O(N__5721),
-            .I(CONSTANT_ONE_NET));
-    Odrv4 I__1148 (
+            .I(N__5707));
+    InMux I__1161 (
             .O(N__5718),
-            .I(CONSTANT_ONE_NET));
-    InMux I__1147 (
-            .O(N__5709),
-            .I(bfn_5_16_0_));
-    InMux I__1146 (
-            .O(N__5706),
-            .I(N__5702));
-    InMux I__1145 (
-            .O(N__5705),
+            .I(N__5707));
+    InMux I__1160 (
+            .O(N__5717),
+            .I(N__5704));
+    InMux I__1159 (
+            .O(N__5716),
             .I(N__5699));
-    LocalMux I__1144 (
-            .O(N__5702),
-            .I(\VPP_VDDQ.countZ0Z_15 ));
-    LocalMux I__1143 (
-            .O(N__5699),
-            .I(\VPP_VDDQ.countZ0Z_15 ));
-    CEMux I__1142 (
-            .O(N__5694),
-            .I(N__5691));
-    LocalMux I__1141 (
-            .O(N__5691),
+    InMux I__1158 (
+            .O(N__5715),
+            .I(N__5699));
+    LocalMux I__1157 (
+            .O(N__5712),
+            .I(N__5696));
+    LocalMux I__1156 (
+            .O(N__5707),
+            .I(N__5693));
+    LocalMux I__1155 (
+            .O(N__5704),
             .I(N__5688));
-    Span4Mux_s1_v I__1140 (
-            .O(N__5688),
+    LocalMux I__1154 (
+            .O(N__5699),
+            .I(N__5688));
+    Span4Mux_v I__1153 (
+            .O(N__5696),
             .I(N__5685));
-    Odrv4 I__1139 (
+    Span4Mux_v I__1152 (
+            .O(N__5693),
+            .I(N__5682));
+    Span4Mux_v I__1151 (
+            .O(N__5688),
+            .I(N__5679));
+    Span4Mux_h I__1150 (
             .O(N__5685),
-            .I(\VPP_VDDQ.G_0_0 ));
-    SRMux I__1138 (
+            .I(N__5676));
+    Sp12to4 I__1149 (
             .O(N__5682),
-            .I(N__5677));
-    SRMux I__1137 (
-            .O(N__5681),
-            .I(N__5674));
-    SRMux I__1136 (
-            .O(N__5680),
-            .I(N__5671));
-    LocalMux I__1135 (
-            .O(N__5677),
-            .I(N__5666));
-    LocalMux I__1134 (
-            .O(N__5674),
-            .I(N__5666));
-    LocalMux I__1133 (
-            .O(N__5671),
-            .I(N__5663));
-    Odrv4 I__1132 (
-            .O(N__5666),
-            .I(tmp_RNIGGLR8));
-    Odrv4 I__1131 (
-            .O(N__5663),
-            .I(tmp_RNIGGLR8));
-    InMux I__1130 (
-            .O(N__5658),
-            .I(N__5652));
-    InMux I__1129 (
-            .O(N__5657),
-            .I(N__5649));
-    InMux I__1128 (
-            .O(N__5656),
-            .I(N__5644));
-    InMux I__1127 (
-            .O(N__5655),
-            .I(N__5644));
-    LocalMux I__1126 (
-            .O(N__5652),
-            .I(\COUNTER.counterZ0Z_0 ));
-    LocalMux I__1125 (
-            .O(N__5649),
-            .I(\COUNTER.counterZ0Z_0 ));
-    LocalMux I__1124 (
-            .O(N__5644),
-            .I(\COUNTER.counterZ0Z_0 ));
-    CascadeMux I__1123 (
-            .O(N__5637),
-            .I(N__5633));
-    CascadeMux I__1122 (
-            .O(N__5636),
-            .I(N__5629));
-    InMux I__1121 (
-            .O(N__5633),
-            .I(N__5626));
-    InMux I__1120 (
-            .O(N__5632),
-            .I(N__5621));
-    InMux I__1119 (
-            .O(N__5629),
-            .I(N__5621));
-    LocalMux I__1118 (
-            .O(N__5626),
-            .I(\COUNTER.counterZ0Z_1 ));
-    LocalMux I__1117 (
-            .O(N__5621),
-            .I(\COUNTER.counterZ0Z_1 ));
-    CascadeMux I__1116 (
-            .O(N__5616),
-            .I(N__5611));
-    InMux I__1115 (
-            .O(N__5615),
-            .I(N__5608));
-    InMux I__1114 (
-            .O(N__5614),
-            .I(N__5605));
-    InMux I__1113 (
-            .O(N__5611),
-            .I(N__5602));
-    LocalMux I__1112 (
-            .O(N__5608),
-            .I(\COUNTER.counterZ0Z_2 ));
-    LocalMux I__1111 (
-            .O(N__5605),
-            .I(\COUNTER.counterZ0Z_2 ));
-    LocalMux I__1110 (
-            .O(N__5602),
-            .I(\COUNTER.counterZ0Z_2 ));
-    InMux I__1109 (
-            .O(N__5595),
-            .I(N__5592));
-    LocalMux I__1108 (
-            .O(N__5592),
-            .I(\COUNTER.counter_1_cry_1_THRU_CO ));
-    InMux I__1107 (
-            .O(N__5589),
-            .I(\COUNTER.counter_1_cry_1 ));
-    InMux I__1106 (
-            .O(N__5586),
-            .I(N__5581));
-    InMux I__1105 (
-            .O(N__5585),
-            .I(N__5576));
-    InMux I__1104 (
-            .O(N__5584),
-            .I(N__5576));
-    LocalMux I__1103 (
-            .O(N__5581),
-            .I(\COUNTER.counterZ0Z_3 ));
-    LocalMux I__1102 (
-            .O(N__5576),
-            .I(\COUNTER.counterZ0Z_3 ));
-    InMux I__1101 (
-            .O(N__5571),
-            .I(N__5568));
-    LocalMux I__1100 (
-            .O(N__5568),
-            .I(\COUNTER.counter_1_cry_2_THRU_CO ));
-    InMux I__1099 (
-            .O(N__5565),
-            .I(\COUNTER.counter_1_cry_2 ));
-    InMux I__1098 (
-            .O(N__5562),
-            .I(\VPP_VDDQ.un1_count_1_cry_2 ));
-    InMux I__1097 (
-            .O(N__5559),
-            .I(N__5555));
-    InMux I__1096 (
-            .O(N__5558),
-            .I(N__5552));
-    LocalMux I__1095 (
-            .O(N__5555),
-            .I(\VPP_VDDQ.countZ0Z_4 ));
-    LocalMux I__1094 (
-            .O(N__5552),
-            .I(\VPP_VDDQ.countZ0Z_4 ));
-    InMux I__1093 (
-            .O(N__5547),
-            .I(\VPP_VDDQ.un1_count_1_cry_3 ));
-    InMux I__1092 (
-            .O(N__5544),
-            .I(N__5540));
-    InMux I__1091 (
-            .O(N__5543),
-            .I(N__5537));
-    LocalMux I__1090 (
-            .O(N__5540),
-            .I(\VPP_VDDQ.countZ0Z_5 ));
-    LocalMux I__1089 (
-            .O(N__5537),
-            .I(\VPP_VDDQ.countZ0Z_5 ));
-    InMux I__1088 (
-            .O(N__5532),
-            .I(\VPP_VDDQ.un1_count_1_cry_4 ));
-    InMux I__1087 (
-            .O(N__5529),
-            .I(N__5525));
-    InMux I__1086 (
-            .O(N__5528),
-            .I(N__5522));
-    LocalMux I__1085 (
-            .O(N__5525),
-            .I(\VPP_VDDQ.countZ0Z_6 ));
-    LocalMux I__1084 (
-            .O(N__5522),
-            .I(\VPP_VDDQ.countZ0Z_6 ));
-    InMux I__1083 (
-            .O(N__5517),
-            .I(\VPP_VDDQ.un1_count_1_cry_5 ));
-    CascadeMux I__1082 (
-            .O(N__5514),
-            .I(N__5510));
-    InMux I__1081 (
-            .O(N__5513),
-            .I(N__5507));
-    InMux I__1080 (
-            .O(N__5510),
-            .I(N__5504));
-    LocalMux I__1079 (
-            .O(N__5507),
-            .I(\VPP_VDDQ.countZ0Z_7 ));
-    LocalMux I__1078 (
-            .O(N__5504),
-            .I(\VPP_VDDQ.countZ0Z_7 ));
-    InMux I__1077 (
-            .O(N__5499),
-            .I(\VPP_VDDQ.un1_count_1_cry_6 ));
-    InMux I__1076 (
-            .O(N__5496),
-            .I(N__5492));
-    InMux I__1075 (
-            .O(N__5495),
-            .I(N__5489));
-    LocalMux I__1074 (
-            .O(N__5492),
-            .I(\VPP_VDDQ.countZ0Z_8 ));
-    LocalMux I__1073 (
-            .O(N__5489),
-            .I(\VPP_VDDQ.countZ0Z_8 ));
-    InMux I__1072 (
-            .O(N__5484),
-            .I(bfn_5_15_0_));
-    InMux I__1071 (
-            .O(N__5481),
-            .I(N__5477));
-    InMux I__1070 (
-            .O(N__5480),
-            .I(N__5474));
-    LocalMux I__1069 (
-            .O(N__5477),
-            .I(\VPP_VDDQ.countZ0Z_9 ));
-    LocalMux I__1068 (
-            .O(N__5474),
-            .I(\VPP_VDDQ.countZ0Z_9 ));
-    InMux I__1067 (
-            .O(N__5469),
-            .I(\VPP_VDDQ.un1_count_1_cry_8 ));
-    CascadeMux I__1066 (
-            .O(N__5466),
-            .I(N__5462));
-    InMux I__1065 (
-            .O(N__5465),
-            .I(N__5459));
-    InMux I__1064 (
-            .O(N__5462),
-            .I(N__5456));
-    LocalMux I__1063 (
-            .O(N__5459),
-            .I(\VPP_VDDQ.countZ0Z_10 ));
-    LocalMux I__1062 (
-            .O(N__5456),
-            .I(\VPP_VDDQ.countZ0Z_10 ));
-    InMux I__1061 (
-            .O(N__5451),
-            .I(\VPP_VDDQ.un1_count_1_cry_9 ));
-    CascadeMux I__1060 (
-            .O(N__5448),
-            .I(N__5444));
-    InMux I__1059 (
-            .O(N__5447),
-            .I(N__5441));
-    InMux I__1058 (
-            .O(N__5444),
-            .I(N__5438));
-    LocalMux I__1057 (
-            .O(N__5441),
-            .I(\VPP_VDDQ.countZ0Z_11 ));
-    LocalMux I__1056 (
-            .O(N__5438),
-            .I(\VPP_VDDQ.countZ0Z_11 ));
-    InMux I__1055 (
-            .O(N__5433),
-            .I(\VPP_VDDQ.un1_count_1_cry_10 ));
-    CascadeMux I__1054 (
-            .O(N__5430),
-            .I(\VPP_VDDQ.delayed_vddq_pwrgd_s_1_cascade_ ));
-    InMux I__1053 (
-            .O(N__5427),
-            .I(N__5424));
-    LocalMux I__1052 (
-            .O(N__5424),
-            .I(N__5419));
-    InMux I__1051 (
-            .O(N__5423),
-            .I(N__5414));
-    InMux I__1050 (
-            .O(N__5422),
-            .I(N__5414));
-    Span4Mux_h I__1049 (
-            .O(N__5419),
-            .I(N__5409));
-    LocalMux I__1048 (
-            .O(N__5414),
-            .I(N__5409));
-    Span4Mux_v I__1047 (
-            .O(N__5409),
-            .I(N__5406));
-    IoSpan4Mux I__1046 (
-            .O(N__5406),
-            .I(N__5403));
-    Odrv4 I__1045 (
-            .O(N__5403),
-            .I(slp_s4n));
-    IoInMux I__1044 (
-            .O(N__5400),
-            .I(N__5397));
-    LocalMux I__1043 (
-            .O(N__5397),
-            .I(N__5393));
-    InMux I__1042 (
-            .O(N__5396),
-            .I(N__5390));
-    IoSpan4Mux I__1041 (
-            .O(N__5393),
-            .I(N__5387));
-    LocalMux I__1040 (
-            .O(N__5390),
-            .I(N__5384));
-    Span4Mux_s2_h I__1039 (
-            .O(N__5387),
-            .I(N__5379));
-    Span4Mux_s3_v I__1038 (
-            .O(N__5384),
-            .I(N__5379));
-    Odrv4 I__1037 (
-            .O(N__5379),
-            .I(vccst_en));
-    InMux I__1036 (
-            .O(N__5376),
-            .I(N__5367));
-    InMux I__1035 (
-            .O(N__5375),
-            .I(N__5367));
-    InMux I__1034 (
-            .O(N__5374),
-            .I(N__5367));
-    LocalMux I__1033 (
-            .O(N__5367),
-            .I(\VPP_VDDQ.delayed_vddq_pwrgdZ0 ));
-    CascadeMux I__1032 (
-            .O(N__5364),
-            .I(vccst_en_cascade_));
-    IoInMux I__1031 (
-            .O(N__5361),
-            .I(N__5358));
-    LocalMux I__1030 (
-            .O(N__5358),
-            .I(N__5355));
-    Odrv12 I__1029 (
-            .O(N__5355),
-            .I(vpp_en));
-    IoInMux I__1028 (
-            .O(N__5352),
-            .I(N__5349));
-    LocalMux I__1027 (
-            .O(N__5349),
-            .I(N__5346));
-    Span4Mux_s0_v I__1026 (
-            .O(N__5346),
-            .I(N__5341));
-    InMux I__1025 (
-            .O(N__5345),
-            .I(N__5338));
-    CascadeMux I__1024 (
-            .O(N__5344),
-            .I(N__5335));
-    Span4Mux_v I__1023 (
-            .O(N__5341),
-            .I(N__5326));
-    LocalMux I__1022 (
-            .O(N__5338),
-            .I(N__5323));
-    InMux I__1021 (
-            .O(N__5335),
-            .I(N__5320));
-    InMux I__1020 (
-            .O(N__5334),
-            .I(N__5315));
-    InMux I__1019 (
-            .O(N__5333),
-            .I(N__5315));
-    InMux I__1018 (
-            .O(N__5332),
-            .I(N__5306));
-    InMux I__1017 (
-            .O(N__5331),
-            .I(N__5306));
-    InMux I__1016 (
-            .O(N__5330),
-            .I(N__5306));
-    InMux I__1015 (
-            .O(N__5329),
-            .I(N__5306));
-    Odrv4 I__1014 (
-            .O(N__5326),
-            .I(rsmrstn));
-    Odrv4 I__1013 (
-            .O(N__5323),
-            .I(rsmrstn));
-    LocalMux I__1012 (
-            .O(N__5320),
-            .I(rsmrstn));
-    LocalMux I__1011 (
-            .O(N__5315),
-            .I(rsmrstn));
-    LocalMux I__1010 (
-            .O(N__5306),
-            .I(rsmrstn));
-    CascadeMux I__1009 (
-            .O(N__5295),
-            .I(N__5290));
-    CascadeMux I__1008 (
-            .O(N__5294),
-            .I(N__5287));
-    CascadeMux I__1007 (
-            .O(N__5293),
-            .I(N__5283));
-    InMux I__1006 (
-            .O(N__5290),
-            .I(N__5278));
-    InMux I__1005 (
-            .O(N__5287),
-            .I(N__5278));
-    InMux I__1004 (
-            .O(N__5286),
-            .I(N__5273));
-    InMux I__1003 (
-            .O(N__5283),
-            .I(N__5273));
-    LocalMux I__1002 (
-            .O(N__5278),
-            .I(\VPP_VDDQ.un1_vddq_pwrgdZ0Z_0 ));
-    LocalMux I__1001 (
-            .O(N__5273),
-            .I(\VPP_VDDQ.un1_vddq_pwrgdZ0Z_0 ));
-    CascadeMux I__1000 (
-            .O(N__5268),
-            .I(N__5262));
-    InMux I__999 (
-            .O(N__5267),
-            .I(N__5258));
-    InMux I__998 (
-            .O(N__5266),
-            .I(N__5253));
-    InMux I__997 (
-            .O(N__5265),
-            .I(N__5253));
-    InMux I__996 (
-            .O(N__5262),
-            .I(N__5248));
-    InMux I__995 (
-            .O(N__5261),
-            .I(N__5248));
-    LocalMux I__994 (
-            .O(N__5258),
-            .I(\VPP_VDDQ.curr_stateZ0Z_0 ));
-    LocalMux I__993 (
-            .O(N__5253),
-            .I(\VPP_VDDQ.curr_stateZ0Z_0 ));
-    LocalMux I__992 (
-            .O(N__5248),
-            .I(\VPP_VDDQ.curr_stateZ0Z_0 ));
-    InMux I__991 (
-            .O(N__5241),
-            .I(N__5232));
-    InMux I__990 (
-            .O(N__5240),
-            .I(N__5229));
-    InMux I__989 (
-            .O(N__5239),
-            .I(N__5222));
-    InMux I__988 (
-            .O(N__5238),
-            .I(N__5222));
-    InMux I__987 (
-            .O(N__5237),
-            .I(N__5222));
-    InMux I__986 (
-            .O(N__5236),
-            .I(N__5217));
-    InMux I__985 (
-            .O(N__5235),
-            .I(N__5217));
-    LocalMux I__984 (
-            .O(N__5232),
-            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
-    LocalMux I__983 (
-            .O(N__5229),
-            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
-    LocalMux I__982 (
-            .O(N__5222),
-            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
-    LocalMux I__981 (
-            .O(N__5217),
-            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
-    InMux I__980 (
-            .O(N__5208),
-            .I(N__5205));
-    LocalMux I__979 (
-            .O(N__5205),
-            .I(\VPP_VDDQ.delayed_vddq_pwrgd_0_sqmuxa ));
-    InMux I__978 (
-            .O(N__5202),
-            .I(N__5198));
-    CascadeMux I__977 (
-            .O(N__5201),
-            .I(N__5195));
-    LocalMux I__976 (
-            .O(N__5198),
-            .I(N__5192));
-    InMux I__975 (
-            .O(N__5195),
-            .I(N__5189));
-    Odrv4 I__974 (
-            .O(N__5192),
-            .I(\VPP_VDDQ.un1_curr_state13_0 ));
-    LocalMux I__973 (
-            .O(N__5189),
-            .I(\VPP_VDDQ.un1_curr_state13_0 ));
-    InMux I__972 (
-            .O(N__5184),
-            .I(N__5180));
-    InMux I__971 (
-            .O(N__5183),
-            .I(N__5177));
-    LocalMux I__970 (
-            .O(N__5180),
-            .I(\VPP_VDDQ.countZ0Z_0 ));
-    LocalMux I__969 (
-            .O(N__5177),
-            .I(\VPP_VDDQ.countZ0Z_0 ));
-    InMux I__968 (
-            .O(N__5172),
-            .I(N__5168));
-    InMux I__967 (
-            .O(N__5171),
-            .I(N__5165));
-    LocalMux I__966 (
-            .O(N__5168),
-            .I(\VPP_VDDQ.countZ0Z_1 ));
-    LocalMux I__965 (
-            .O(N__5165),
-            .I(\VPP_VDDQ.countZ0Z_1 ));
-    InMux I__964 (
-            .O(N__5160),
-            .I(\VPP_VDDQ.un1_count_1_cry_0 ));
-    InMux I__963 (
-            .O(N__5157),
-            .I(N__5153));
-    InMux I__962 (
-            .O(N__5156),
-            .I(N__5150));
-    LocalMux I__961 (
-            .O(N__5153),
-            .I(\VPP_VDDQ.countZ0Z_2 ));
-    LocalMux I__960 (
-            .O(N__5150),
-            .I(\VPP_VDDQ.countZ0Z_2 ));
-    InMux I__959 (
-            .O(N__5145),
-            .I(\VPP_VDDQ.un1_count_1_cry_1 ));
-    InMux I__958 (
-            .O(N__5142),
-            .I(N__5138));
-    InMux I__957 (
-            .O(N__5141),
-            .I(N__5135));
-    LocalMux I__956 (
-            .O(N__5138),
-            .I(\VPP_VDDQ.countZ0Z_3 ));
-    LocalMux I__955 (
-            .O(N__5135),
-            .I(\VPP_VDDQ.countZ0Z_3 ));
-    InMux I__954 (
-            .O(N__5130),
-            .I(N__5127));
-    LocalMux I__953 (
-            .O(N__5127),
-            .I(N__5124));
-    Odrv4 I__952 (
-            .O(N__5124),
-            .I(\COUNTER.un4_counter_6_and ));
-    CascadeMux I__951 (
-            .O(N__5121),
-            .I(N__5117));
-    InMux I__950 (
-            .O(N__5120),
-            .I(N__5114));
-    InMux I__949 (
-            .O(N__5117),
-            .I(N__5111));
-    LocalMux I__948 (
-            .O(N__5114),
-            .I(N__5108));
-    LocalMux I__947 (
-            .O(N__5111),
-            .I(N__5105));
-    Odrv12 I__946 (
-            .O(N__5108),
-            .I(\SYS_PWRGD.un1_curr_state10_0 ));
-    Odrv4 I__945 (
-            .O(N__5105),
-            .I(\SYS_PWRGD.un1_curr_state10_0 ));
-    InMux I__944 (
-            .O(N__5100),
-            .I(N__5097));
-    LocalMux I__943 (
-            .O(N__5097),
-            .I(N__5094));
-    Odrv4 I__942 (
-            .O(N__5094),
-            .I(\COUNTER.un4_counter_7_and ));
-    InMux I__941 (
-            .O(N__5091),
-            .I(N__5088));
-    LocalMux I__940 (
-            .O(N__5088),
-            .I(N__5085));
-    Span4Mux_h I__939 (
-            .O(N__5085),
-            .I(N__5081));
-    InMux I__938 (
-            .O(N__5084),
-            .I(N__5078));
-    Odrv4 I__937 (
-            .O(N__5081),
-            .I(count_esr_RNIRFM64_15));
-    LocalMux I__936 (
-            .O(N__5078),
-            .I(count_esr_RNIRFM64_15));
-    CascadeMux I__935 (
-            .O(N__5073),
-            .I(N__5068));
-    CascadeMux I__934 (
-            .O(N__5072),
-            .I(N__5065));
-    InMux I__933 (
-            .O(N__5071),
-            .I(N__5061));
-    InMux I__932 (
-            .O(N__5068),
-            .I(N__5057));
-    InMux I__931 (
-            .O(N__5065),
-            .I(N__5054));
-    InMux I__930 (
-            .O(N__5064),
-            .I(N__5051));
-    LocalMux I__929 (
-            .O(N__5061),
-            .I(N__5048));
-    InMux I__928 (
-            .O(N__5060),
-            .I(N__5045));
-    LocalMux I__927 (
-            .O(N__5057),
-            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
-    LocalMux I__926 (
-            .O(N__5054),
-            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
-    LocalMux I__925 (
-            .O(N__5051),
-            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
-    Odrv4 I__924 (
-            .O(N__5048),
-            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
-    LocalMux I__923 (
-            .O(N__5045),
-            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
-    IoInMux I__922 (
-            .O(N__5034),
-            .I(N__5031));
-    LocalMux I__921 (
-            .O(N__5031),
-            .I(N__5027));
-    IoInMux I__920 (
-            .O(N__5030),
-            .I(N__5024));
-    IoSpan4Mux I__919 (
-            .O(N__5027),
-            .I(N__5021));
-    LocalMux I__918 (
-            .O(N__5024),
-            .I(N__5018));
-    Span4Mux_s1_v I__917 (
-            .O(N__5021),
-            .I(N__5012));
-    Span4Mux_s2_h I__916 (
-            .O(N__5018),
-            .I(N__5012));
-    InMux I__915 (
-            .O(N__5017),
-            .I(N__5006));
-    Span4Mux_v I__914 (
-            .O(N__5012),
-            .I(N__5002));
-    InMux I__913 (
-            .O(N__5011),
-            .I(N__4998));
-    InMux I__912 (
-            .O(N__5010),
-            .I(N__4995));
-    InMux I__911 (
-            .O(N__5009),
-            .I(N__4992));
-    LocalMux I__910 (
-            .O(N__5006),
-            .I(N__4989));
-    CascadeMux I__909 (
-            .O(N__5005),
-            .I(N__4986));
-    Span4Mux_v I__908 (
-            .O(N__5002),
-            .I(N__4983));
-    InMux I__907 (
-            .O(N__5001),
-            .I(N__4980));
-    LocalMux I__906 (
-            .O(N__4998),
-            .I(N__4977));
-    LocalMux I__905 (
-            .O(N__4995),
-            .I(N__4970));
-    LocalMux I__904 (
-            .O(N__4992),
-            .I(N__4970));
-    Span4Mux_s3_h I__903 (
-            .O(N__4989),
-            .I(N__4970));
-    InMux I__902 (
-            .O(N__4986),
-            .I(N__4967));
-    Odrv4 I__901 (
-            .O(N__4983),
-            .I(pch_pwrok));
-    LocalMux I__900 (
-            .O(N__4980),
-            .I(pch_pwrok));
-    Odrv4 I__899 (
-            .O(N__4977),
-            .I(pch_pwrok));
-    Odrv4 I__898 (
-            .O(N__4970),
-            .I(pch_pwrok));
-    LocalMux I__897 (
-            .O(N__4967),
-            .I(pch_pwrok));
-    InMux I__896 (
-            .O(N__4956),
-            .I(N__4953));
-    LocalMux I__895 (
-            .O(N__4953),
-            .I(N__4947));
-    InMux I__894 (
-            .O(N__4952),
-            .I(N__4943));
-    InMux I__893 (
-            .O(N__4951),
-            .I(N__4940));
-    InMux I__892 (
-            .O(N__4950),
-            .I(N__4937));
-    Span4Mux_s3_h I__891 (
-            .O(N__4947),
-            .I(N__4934));
-    InMux I__890 (
-            .O(N__4946),
-            .I(N__4931));
-    LocalMux I__889 (
-            .O(N__4943),
-            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
-    LocalMux I__888 (
-            .O(N__4940),
-            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
-    LocalMux I__887 (
-            .O(N__4937),
-            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
-    Odrv4 I__886 (
-            .O(N__4934),
-            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
-    LocalMux I__885 (
-            .O(N__4931),
-            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
-    IoInMux I__884 (
-            .O(N__4920),
-            .I(N__4917));
-    LocalMux I__883 (
-            .O(N__4917),
-            .I(N__4914));
-    Span4Mux_s3_h I__882 (
-            .O(N__4914),
-            .I(N__4911));
-    Span4Mux_h I__881 (
-            .O(N__4911),
-            .I(N__4908));
-    Odrv4 I__880 (
-            .O(N__4908),
-            .I(sys_pwrok));
-    InMux I__879 (
-            .O(N__4905),
-            .I(N__4901));
-    InMux I__878 (
-            .O(N__4904),
-            .I(N__4898));
-    LocalMux I__877 (
-            .O(N__4901),
-            .I(N__4893));
-    LocalMux I__876 (
-            .O(N__4898),
-            .I(N__4893));
-    Span4Mux_v I__875 (
-            .O(N__4893),
-            .I(N__4889));
-    InMux I__874 (
-            .O(N__4892),
-            .I(N__4886));
-    Sp12to4 I__873 (
-            .O(N__4889),
-            .I(N__4881));
-    LocalMux I__872 (
-            .O(N__4886),
-            .I(N__4881));
-    Odrv12 I__871 (
-            .O(N__4881),
+            .I(N__5673));
+    Span4Mux_h I__1148 (
+            .O(N__5679),
+            .I(N__5670));
+    Odrv4 I__1147 (
+            .O(N__5676),
             .I(vddq_ok));
-    CascadeMux I__870 (
-            .O(N__4878),
-            .I(\VPP_VDDQ.un1_vddq_pwrgdZ0Z_0_cascade_ ));
-    CascadeMux I__869 (
-            .O(N__4875),
-            .I(N__4872));
-    InMux I__868 (
-            .O(N__4872),
-            .I(N__4868));
-    CascadeMux I__867 (
-            .O(N__4871),
-            .I(N__4865));
-    LocalMux I__866 (
-            .O(N__4868),
-            .I(N__4861));
-    InMux I__865 (
-            .O(N__4865),
-            .I(N__4858));
-    InMux I__864 (
-            .O(N__4864),
-            .I(N__4855));
-    Span4Mux_s2_v I__863 (
-            .O(N__4861),
-            .I(N__4852));
-    LocalMux I__862 (
-            .O(N__4858),
-            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa));
-    LocalMux I__861 (
-            .O(N__4855),
-            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa));
-    Odrv4 I__860 (
-            .O(N__4852),
-            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa));
-    CascadeMux I__859 (
-            .O(N__4845),
-            .I(\VPP_VDDQ.un1_curr_state12_0_cascade_ ));
-    CascadeMux I__858 (
-            .O(N__4842),
-            .I(N__4839));
-    InMux I__857 (
-            .O(N__4839),
-            .I(N__4836));
-    LocalMux I__856 (
-            .O(N__4836),
-            .I(\COUNTER.un4_counter_2_and ));
-    InMux I__855 (
-            .O(N__4833),
-            .I(N__4830));
-    LocalMux I__854 (
-            .O(N__4830),
+    Odrv12 I__1146 (
+            .O(N__5673),
+            .I(vddq_ok));
+    Odrv4 I__1145 (
+            .O(N__5670),
+            .I(vddq_ok));
+    CascadeMux I__1144 (
+            .O(N__5663),
+            .I(N__5656));
+    CascadeMux I__1143 (
+            .O(N__5662),
+            .I(N__5652));
+    InMux I__1142 (
+            .O(N__5661),
+            .I(N__5646));
+    InMux I__1141 (
+            .O(N__5660),
+            .I(N__5646));
+    InMux I__1140 (
+            .O(N__5659),
+            .I(N__5641));
+    InMux I__1139 (
+            .O(N__5656),
+            .I(N__5641));
+    InMux I__1138 (
+            .O(N__5655),
+            .I(N__5636));
+    InMux I__1137 (
+            .O(N__5652),
+            .I(N__5636));
+    InMux I__1136 (
+            .O(N__5651),
+            .I(N__5633));
+    LocalMux I__1135 (
+            .O(N__5646),
+            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
+    LocalMux I__1134 (
+            .O(N__5641),
+            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
+    LocalMux I__1133 (
+            .O(N__5636),
+            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
+    LocalMux I__1132 (
+            .O(N__5633),
+            .I(\VPP_VDDQ.curr_stateZ0Z_1 ));
+    InMux I__1131 (
+            .O(N__5624),
+            .I(N__5621));
+    LocalMux I__1130 (
+            .O(N__5621),
+            .I(\VPP_VDDQ.delayed_vddq_pwrgd_0_sqmuxa ));
+    InMux I__1129 (
+            .O(N__5618),
+            .I(N__5609));
+    InMux I__1128 (
+            .O(N__5617),
+            .I(N__5609));
+    InMux I__1127 (
+            .O(N__5616),
+            .I(N__5609));
+    LocalMux I__1126 (
+            .O(N__5609),
+            .I(\VPP_VDDQ.delayed_vddq_pwrgdZ0 ));
+    CascadeMux I__1125 (
+            .O(N__5606),
+            .I(N__5601));
+    InMux I__1124 (
+            .O(N__5605),
+            .I(N__5596));
+    InMux I__1123 (
+            .O(N__5604),
+            .I(N__5592));
+    InMux I__1122 (
+            .O(N__5601),
+            .I(N__5587));
+    InMux I__1121 (
+            .O(N__5600),
+            .I(N__5587));
+    InMux I__1120 (
+            .O(N__5599),
+            .I(N__5584));
+    LocalMux I__1119 (
+            .O(N__5596),
+            .I(N__5581));
+    InMux I__1118 (
+            .O(N__5595),
+            .I(N__5578));
+    LocalMux I__1117 (
+            .O(N__5592),
+            .I(N__5574));
+    LocalMux I__1116 (
+            .O(N__5587),
+            .I(N__5569));
+    LocalMux I__1115 (
+            .O(N__5584),
+            .I(N__5569));
+    Span4Mux_h I__1114 (
+            .O(N__5581),
+            .I(N__5566));
+    LocalMux I__1113 (
+            .O(N__5578),
+            .I(N__5563));
+    InMux I__1112 (
+            .O(N__5577),
+            .I(N__5560));
+    Span4Mux_v I__1111 (
+            .O(N__5574),
+            .I(N__5555));
+    Span4Mux_h I__1110 (
+            .O(N__5569),
+            .I(N__5555));
+    Span4Mux_v I__1109 (
+            .O(N__5566),
+            .I(N__5550));
+    Span4Mux_s3_h I__1108 (
+            .O(N__5563),
+            .I(N__5550));
+    LocalMux I__1107 (
+            .O(N__5560),
+            .I(N__5547));
+    Odrv4 I__1106 (
+            .O(N__5555),
+            .I(slp_s4n));
+    Odrv4 I__1105 (
+            .O(N__5550),
+            .I(slp_s4n));
+    Odrv12 I__1104 (
+            .O(N__5547),
+            .I(slp_s4n));
+    IoInMux I__1103 (
+            .O(N__5540),
+            .I(N__5537));
+    LocalMux I__1102 (
+            .O(N__5537),
+            .I(N__5534));
+    Odrv12 I__1101 (
+            .O(N__5534),
+            .I(vpp_en));
+    CascadeMux I__1100 (
+            .O(N__5531),
+            .I(N__5526));
+    CascadeMux I__1099 (
+            .O(N__5530),
+            .I(N__5523));
+    CascadeMux I__1098 (
+            .O(N__5529),
+            .I(N__5520));
+    InMux I__1097 (
+            .O(N__5526),
+            .I(N__5517));
+    InMux I__1096 (
+            .O(N__5523),
+            .I(N__5512));
+    InMux I__1095 (
+            .O(N__5520),
+            .I(N__5512));
+    LocalMux I__1094 (
+            .O(N__5517),
+            .I(\COUNTER.counterZ0Z_1 ));
+    LocalMux I__1093 (
+            .O(N__5512),
+            .I(\COUNTER.counterZ0Z_1 ));
+    CascadeMux I__1092 (
+            .O(N__5507),
+            .I(N__5504));
+    InMux I__1091 (
+            .O(N__5504),
+            .I(N__5499));
+    InMux I__1090 (
+            .O(N__5503),
+            .I(N__5496));
+    InMux I__1089 (
+            .O(N__5502),
+            .I(N__5493));
+    LocalMux I__1088 (
+            .O(N__5499),
+            .I(\COUNTER.counterZ0Z_2 ));
+    LocalMux I__1087 (
+            .O(N__5496),
+            .I(\COUNTER.counterZ0Z_2 ));
+    LocalMux I__1086 (
+            .O(N__5493),
+            .I(\COUNTER.counterZ0Z_2 ));
+    InMux I__1085 (
+            .O(N__5486),
+            .I(N__5483));
+    LocalMux I__1084 (
+            .O(N__5483),
+            .I(N__5480));
+    Odrv4 I__1083 (
+            .O(N__5480),
+            .I(\COUNTER.counter_1_cry_1_THRU_CO ));
+    InMux I__1082 (
+            .O(N__5477),
+            .I(\COUNTER.counter_1_cry_1 ));
+    InMux I__1081 (
+            .O(N__5474),
+            .I(N__5469));
+    InMux I__1080 (
+            .O(N__5473),
+            .I(N__5464));
+    InMux I__1079 (
+            .O(N__5472),
+            .I(N__5464));
+    LocalMux I__1078 (
+            .O(N__5469),
+            .I(\COUNTER.counterZ0Z_3 ));
+    LocalMux I__1077 (
+            .O(N__5464),
+            .I(\COUNTER.counterZ0Z_3 ));
+    InMux I__1076 (
+            .O(N__5459),
+            .I(N__5456));
+    LocalMux I__1075 (
+            .O(N__5456),
+            .I(\COUNTER.counter_1_cry_2_THRU_CO ));
+    InMux I__1074 (
+            .O(N__5453),
+            .I(\COUNTER.counter_1_cry_2 ));
+    InMux I__1073 (
+            .O(N__5450),
+            .I(N__5445));
+    InMux I__1072 (
+            .O(N__5449),
+            .I(N__5442));
+    InMux I__1071 (
+            .O(N__5448),
+            .I(N__5439));
+    LocalMux I__1070 (
+            .O(N__5445),
+            .I(\COUNTER.counterZ0Z_4 ));
+    LocalMux I__1069 (
+            .O(N__5442),
+            .I(\COUNTER.counterZ0Z_4 ));
+    LocalMux I__1068 (
+            .O(N__5439),
+            .I(\COUNTER.counterZ0Z_4 ));
+    InMux I__1067 (
+            .O(N__5432),
+            .I(N__5429));
+    LocalMux I__1066 (
+            .O(N__5429),
+            .I(\COUNTER.counter_1_cry_3_THRU_CO ));
+    InMux I__1065 (
+            .O(N__5426),
+            .I(\COUNTER.counter_1_cry_3 ));
+    CascadeMux I__1064 (
+            .O(N__5423),
+            .I(N__5420));
+    InMux I__1063 (
+            .O(N__5420),
+            .I(N__5417));
+    LocalMux I__1062 (
+            .O(N__5417),
             .I(\COUNTER.un4_counter_4_and ));
-    CascadeMux I__853 (
-            .O(N__4827),
-            .I(N__4824));
-    InMux I__852 (
-            .O(N__4824),
-            .I(N__4821));
-    LocalMux I__851 (
-            .O(N__4821),
+    CascadeMux I__1061 (
+            .O(N__5414),
+            .I(N__5411));
+    InMux I__1060 (
+            .O(N__5411),
+            .I(N__5408));
+    LocalMux I__1059 (
+            .O(N__5408),
             .I(\COUNTER.un4_counter_5_and ));
-    CascadeMux I__850 (
-            .O(N__4818),
-            .I(N__4815));
-    InMux I__849 (
-            .O(N__4815),
-            .I(N__4812));
-    LocalMux I__848 (
-            .O(N__4812),
+    CascadeMux I__1058 (
+            .O(N__5405),
+            .I(N__5402));
+    InMux I__1057 (
+            .O(N__5402),
+            .I(N__5399));
+    LocalMux I__1056 (
+            .O(N__5399),
             .I(\COUNTER.un4_counter_3_and ));
-    InMux I__847 (
-            .O(N__4809),
-            .I(N__4805));
-    InMux I__846 (
-            .O(N__4808),
-            .I(N__4802));
-    LocalMux I__845 (
-            .O(N__4805),
-            .I(N__4796));
-    LocalMux I__844 (
-            .O(N__4802),
-            .I(N__4793));
-    InMux I__843 (
-            .O(N__4801),
-            .I(N__4790));
-    CascadeMux I__842 (
-            .O(N__4800),
-            .I(N__4787));
-    InMux I__841 (
-            .O(N__4799),
-            .I(N__4783));
-    Span4Mux_v I__840 (
-            .O(N__4796),
-            .I(N__4780));
-    Span12Mux_s3_h I__839 (
-            .O(N__4793),
-            .I(N__4775));
-    LocalMux I__838 (
-            .O(N__4790),
-            .I(N__4775));
-    InMux I__837 (
-            .O(N__4787),
-            .I(N__4770));
-    InMux I__836 (
-            .O(N__4786),
-            .I(N__4770));
-    LocalMux I__835 (
-            .O(N__4783),
-            .I(COUNTER_tmp_i));
-    Odrv4 I__834 (
-            .O(N__4780),
-            .I(COUNTER_tmp_i));
-    Odrv12 I__833 (
-            .O(N__4775),
-            .I(COUNTER_tmp_i));
-    LocalMux I__832 (
-            .O(N__4770),
-            .I(COUNTER_tmp_i));
-    CascadeMux I__831 (
-            .O(N__4761),
-            .I(N__4756));
-    InMux I__830 (
-            .O(N__4760),
-            .I(N__4750));
-    InMux I__829 (
-            .O(N__4759),
-            .I(N__4747));
-    InMux I__828 (
-            .O(N__4756),
-            .I(N__4744));
-    CascadeMux I__827 (
-            .O(N__4755),
-            .I(N__4741));
-    CascadeMux I__826 (
-            .O(N__4754),
-            .I(N__4738));
-    CascadeMux I__825 (
-            .O(N__4753),
-            .I(N__4735));
-    LocalMux I__824 (
-            .O(N__4750),
-            .I(N__4726));
-    LocalMux I__823 (
-            .O(N__4747),
-            .I(N__4723));
-    LocalMux I__822 (
-            .O(N__4744),
-            .I(N__4720));
-    InMux I__821 (
-            .O(N__4741),
-            .I(N__4706));
-    InMux I__820 (
-            .O(N__4738),
-            .I(N__4706));
-    InMux I__819 (
-            .O(N__4735),
-            .I(N__4706));
-    InMux I__818 (
-            .O(N__4734),
-            .I(N__4706));
-    InMux I__817 (
-            .O(N__4733),
-            .I(N__4706));
-    InMux I__816 (
-            .O(N__4732),
-            .I(N__4706));
-    InMux I__815 (
-            .O(N__4731),
-            .I(N__4703));
-    InMux I__814 (
-            .O(N__4730),
-            .I(N__4698));
-    InMux I__813 (
-            .O(N__4729),
-            .I(N__4698));
-    Span4Mux_v I__812 (
-            .O(N__4726),
-            .I(N__4695));
-    Span4Mux_v I__811 (
-            .O(N__4723),
-            .I(N__4690));
-    Span4Mux_s3_h I__810 (
-            .O(N__4720),
-            .I(N__4690));
-    InMux I__809 (
-            .O(N__4719),
-            .I(N__4687));
-    LocalMux I__808 (
-            .O(N__4706),
-            .I(COUNTER_un4_counter_7_THRU_CO));
-    LocalMux I__807 (
-            .O(N__4703),
-            .I(COUNTER_un4_counter_7_THRU_CO));
-    LocalMux I__806 (
-            .O(N__4698),
-            .I(COUNTER_un4_counter_7_THRU_CO));
-    Odrv4 I__805 (
-            .O(N__4695),
-            .I(COUNTER_un4_counter_7_THRU_CO));
-    Odrv4 I__804 (
-            .O(N__4690),
-            .I(COUNTER_un4_counter_7_THRU_CO));
-    LocalMux I__803 (
-            .O(N__4687),
-            .I(COUNTER_un4_counter_7_THRU_CO));
-    InMux I__802 (
-            .O(N__4674),
-            .I(N__4671));
-    LocalMux I__801 (
-            .O(N__4671),
-            .I(\VPP_VDDQ.un6_count_11 ));
-    InMux I__800 (
-            .O(N__4668),
-            .I(N__4665));
-    LocalMux I__799 (
-            .O(N__4665),
-            .I(\VPP_VDDQ.un6_count_10 ));
-    CascadeMux I__798 (
-            .O(N__4662),
-            .I(\VPP_VDDQ.un6_count_8_cascade_ ));
-    InMux I__797 (
-            .O(N__4659),
-            .I(N__4656));
-    LocalMux I__796 (
-            .O(N__4656),
-            .I(\VPP_VDDQ.un6_count_9 ));
-    CascadeMux I__795 (
-            .O(N__4653),
-            .I(N__4650));
-    InMux I__794 (
-            .O(N__4650),
-            .I(N__4647));
-    LocalMux I__793 (
-            .O(N__4647),
-            .I(\COUNTER.un4_counter_1_and ));
-    CascadeMux I__792 (
-            .O(N__4644),
-            .I(N__4641));
-    InMux I__791 (
-            .O(N__4641),
-            .I(N__4638));
-    LocalMux I__790 (
-            .O(N__4638),
+    CascadeMux I__1055 (
+            .O(N__5396),
+            .I(N__5393));
+    InMux I__1054 (
+            .O(N__5393),
+            .I(N__5390));
+    LocalMux I__1053 (
+            .O(N__5390),
             .I(\COUNTER.un4_counter_0_and ));
-    InMux I__789 (
-            .O(N__4635),
-            .I(N__4632));
-    LocalMux I__788 (
-            .O(N__4632),
-            .I(N__4628));
-    CascadeMux I__787 (
-            .O(N__4631),
-            .I(N__4624));
-    Span4Mux_s3_h I__786 (
-            .O(N__4628),
-            .I(N__4619));
-    InMux I__785 (
-            .O(N__4627),
-            .I(N__4616));
-    InMux I__784 (
-            .O(N__4624),
-            .I(N__4611));
-    InMux I__783 (
-            .O(N__4623),
-            .I(N__4611));
-    InMux I__782 (
-            .O(N__4622),
-            .I(N__4608));
-    Span4Mux_s2_v I__781 (
-            .O(N__4619),
-            .I(N__4603));
-    LocalMux I__780 (
-            .O(N__4616),
-            .I(N__4603));
-    LocalMux I__779 (
-            .O(N__4611),
-            .I(\PCH_PWRGD.curr_stateZ0Z_1 ));
-    LocalMux I__778 (
-            .O(N__4608),
-            .I(\PCH_PWRGD.curr_stateZ0Z_1 ));
-    Odrv4 I__777 (
-            .O(N__4603),
-            .I(\PCH_PWRGD.curr_stateZ0Z_1 ));
-    InMux I__776 (
-            .O(N__4596),
-            .I(N__4591));
-    InMux I__775 (
-            .O(N__4595),
-            .I(N__4584));
-    InMux I__774 (
-            .O(N__4594),
-            .I(N__4584));
-    LocalMux I__773 (
-            .O(N__4591),
-            .I(N__4581));
-    InMux I__772 (
-            .O(N__4590),
-            .I(N__4576));
-    InMux I__771 (
-            .O(N__4589),
-            .I(N__4576));
-    LocalMux I__770 (
-            .O(N__4584),
-            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
-    Odrv4 I__769 (
-            .O(N__4581),
-            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
-    LocalMux I__768 (
-            .O(N__4576),
-            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
-    CascadeMux I__767 (
-            .O(N__4569),
-            .I(N__4565));
-    InMux I__766 (
-            .O(N__4568),
-            .I(N__4562));
-    InMux I__765 (
-            .O(N__4565),
-            .I(N__4559));
-    LocalMux I__764 (
-            .O(N__4562),
-            .I(N__4556));
-    LocalMux I__763 (
-            .O(N__4559),
-            .I(N__4553));
-    Odrv12 I__762 (
-            .O(N__4556),
-            .I(\PCH_PWRGD.un1_curr_state10_0 ));
-    Odrv4 I__761 (
-            .O(N__4553),
-            .I(\PCH_PWRGD.un1_curr_state10_0 ));
-    InMux I__760 (
-            .O(N__4548),
-            .I(N__4545));
-    LocalMux I__759 (
-            .O(N__4545),
-            .I(N__4542));
-    IoSpan4Mux I__758 (
-            .O(N__4542),
-            .I(N__4539));
-    IoSpan4Mux I__757 (
-            .O(N__4539),
-            .I(N__4536));
-    Odrv4 I__756 (
-            .O(N__4536),
-            .I(slp_s3n));
-    IoInMux I__755 (
-            .O(N__4533),
-            .I(N__4529));
-    IoInMux I__754 (
-            .O(N__4532),
-            .I(N__4526));
-    LocalMux I__753 (
-            .O(N__4529),
-            .I(N__4523));
-    LocalMux I__752 (
-            .O(N__4526),
-            .I(N__4520));
-    Span12Mux_s3_h I__751 (
-            .O(N__4523),
-            .I(N__4517));
-    Span4Mux_s3_h I__750 (
-            .O(N__4520),
-            .I(N__4514));
-    Odrv12 I__749 (
-            .O(N__4517),
-            .I(v5s_enn));
-    Odrv4 I__748 (
-            .O(N__4514),
-            .I(v5s_enn));
-    InMux I__747 (
-            .O(N__4509),
-            .I(N__4505));
-    InMux I__746 (
-            .O(N__4508),
-            .I(N__4502));
-    LocalMux I__745 (
-            .O(N__4505),
-            .I(N__4497));
-    LocalMux I__744 (
-            .O(N__4502),
-            .I(N__4497));
-    Span4Mux_v I__743 (
-            .O(N__4497),
-            .I(N__4493));
-    InMux I__742 (
-            .O(N__4496),
-            .I(N__4490));
-    Span4Mux_h I__741 (
-            .O(N__4493),
-            .I(N__4485));
-    LocalMux I__740 (
-            .O(N__4490),
-            .I(N__4485));
-    Span4Mux_v I__739 (
-            .O(N__4485),
-            .I(N__4482));
-    Span4Mux_h I__738 (
-            .O(N__4482),
-            .I(N__4479));
-    Odrv4 I__737 (
-            .O(N__4479),
-            .I(slp_susn));
-    InMux I__736 (
-            .O(N__4476),
-            .I(N__4472));
-    InMux I__735 (
-            .O(N__4475),
-            .I(N__4469));
-    LocalMux I__734 (
-            .O(N__4472),
-            .I(N__4466));
-    LocalMux I__733 (
-            .O(N__4469),
-            .I(N__4463));
-    Span4Mux_s3_v I__732 (
-            .O(N__4466),
-            .I(N__4460));
-    Span4Mux_s3_v I__731 (
-            .O(N__4463),
-            .I(N__4457));
-    Odrv4 I__730 (
-            .O(N__4460),
-            .I(vpp_ok));
-    Odrv4 I__729 (
-            .O(N__4457),
-            .I(vpp_ok));
-    CascadeMux I__728 (
-            .O(N__4452),
-            .I(N__4447));
-    CascadeMux I__727 (
-            .O(N__4451),
-            .I(N__4443));
-    InMux I__726 (
-            .O(N__4450),
-            .I(N__4436));
-    InMux I__725 (
-            .O(N__4447),
-            .I(N__4436));
-    InMux I__724 (
-            .O(N__4446),
-            .I(N__4431));
-    InMux I__723 (
-            .O(N__4443),
-            .I(N__4431));
-    InMux I__722 (
-            .O(N__4442),
-            .I(N__4428));
-    InMux I__721 (
-            .O(N__4441),
-            .I(N__4425));
-    LocalMux I__720 (
-            .O(N__4436),
-            .I(N__4422));
-    LocalMux I__719 (
-            .O(N__4431),
-            .I(N__4419));
-    LocalMux I__718 (
-            .O(N__4428),
-            .I(N__4416));
-    LocalMux I__717 (
-            .O(N__4425),
-            .I(N__4413));
-    Odrv12 I__716 (
-            .O(N__4422),
-            .I(\PCH_PWRGD.N_3_i ));
-    Odrv4 I__715 (
-            .O(N__4419),
-            .I(\PCH_PWRGD.N_3_i ));
-    Odrv4 I__714 (
-            .O(N__4416),
-            .I(\PCH_PWRGD.N_3_i ));
-    Odrv4 I__713 (
-            .O(N__4413),
-            .I(\PCH_PWRGD.N_3_i ));
-    InMux I__712 (
-            .O(N__4404),
-            .I(N__4401));
-    LocalMux I__711 (
-            .O(N__4401),
-            .I(N__4398));
-    Odrv4 I__710 (
-            .O(N__4398),
-            .I(G_1));
-    InMux I__709 (
-            .O(N__4395),
-            .I(N__4392));
-    LocalMux I__708 (
-            .O(N__4392),
-            .I(\COUNTER.tmp_RNIRH3PZ0Z_0 ));
-    CascadeMux I__707 (
-            .O(N__4389),
-            .I(tmp_RNIGGLR8_cascade_));
-    InMux I__706 (
-            .O(N__4386),
-            .I(N__4383));
-    LocalMux I__705 (
-            .O(N__4383),
-            .I(\PCH_PWRGD.delayed_vccin_ok_s_1_0 ));
-    InMux I__704 (
-            .O(N__4380),
-            .I(N__4374));
-    InMux I__703 (
-            .O(N__4379),
-            .I(N__4374));
-    LocalMux I__702 (
-            .O(N__4374),
-            .I(N__4371));
-    Span4Mux_h I__701 (
-            .O(N__4371),
-            .I(N__4367));
-    InMux I__700 (
-            .O(N__4370),
-            .I(N__4364));
-    Odrv4 I__699 (
-            .O(N__4367),
-            .I(\RSMRST_PWRGD.N_1_i ));
-    LocalMux I__698 (
-            .O(N__4364),
-            .I(\RSMRST_PWRGD.N_1_i ));
-    InMux I__697 (
-            .O(N__4359),
-            .I(N__4353));
-    InMux I__696 (
-            .O(N__4358),
-            .I(N__4353));
-    LocalMux I__695 (
-            .O(N__4353),
-            .I(N__4350));
-    Span4Mux_h I__694 (
-            .O(N__4350),
-            .I(N__4347));
-    Odrv4 I__693 (
-            .O(N__4347),
-            .I(\PCH_PWRGD.N_1_i ));
-    InMux I__692 (
-            .O(N__4344),
-            .I(N__4341));
-    LocalMux I__691 (
-            .O(N__4341),
-            .I(N__4335));
-    InMux I__690 (
-            .O(N__4340),
-            .I(N__4331));
-    InMux I__689 (
-            .O(N__4339),
-            .I(N__4326));
-    InMux I__688 (
-            .O(N__4338),
-            .I(N__4326));
-    Span4Mux_v I__687 (
-            .O(N__4335),
-            .I(N__4323));
-    InMux I__686 (
-            .O(N__4334),
-            .I(N__4320));
-    LocalMux I__685 (
-            .O(N__4331),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_1 ));
-    LocalMux I__684 (
-            .O(N__4326),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_1 ));
-    Odrv4 I__683 (
-            .O(N__4323),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_1 ));
-    LocalMux I__682 (
-            .O(N__4320),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_1 ));
-    IoInMux I__681 (
-            .O(N__4311),
-            .I(N__4308));
-    LocalMux I__680 (
-            .O(N__4308),
-            .I(N__4305));
-    Span4Mux_s1_v I__679 (
-            .O(N__4305),
-            .I(N__4298));
-    CascadeMux I__678 (
-            .O(N__4304),
-            .I(N__4295));
-    CascadeMux I__677 (
-            .O(N__4303),
-            .I(N__4292));
-    InMux I__676 (
-            .O(N__4302),
-            .I(N__4288));
-    InMux I__675 (
-            .O(N__4301),
-            .I(N__4285));
-    Span4Mux_h I__674 (
-            .O(N__4298),
-            .I(N__4282));
-    InMux I__673 (
-            .O(N__4295),
-            .I(N__4277));
-    InMux I__672 (
-            .O(N__4292),
-            .I(N__4277));
-    InMux I__671 (
-            .O(N__4291),
-            .I(N__4274));
-    LocalMux I__670 (
-            .O(N__4288),
-            .I(N__4271));
-    LocalMux I__669 (
-            .O(N__4285),
-            .I(N__4268));
-    Span4Mux_v I__668 (
-            .O(N__4282),
-            .I(N__4263));
-    LocalMux I__667 (
-            .O(N__4277),
-            .I(N__4263));
-    LocalMux I__666 (
-            .O(N__4274),
-            .I(N__4260));
-    Span4Mux_v I__665 (
-            .O(N__4271),
-            .I(N__4255));
-    Span4Mux_v I__664 (
-            .O(N__4268),
-            .I(N__4255));
-    Span4Mux_h I__663 (
-            .O(N__4263),
-            .I(N__4250));
-    Span4Mux_v I__662 (
-            .O(N__4260),
-            .I(N__4250));
-    Odrv4 I__661 (
-            .O(N__4255),
-            .I(vccin_en));
-    Odrv4 I__660 (
-            .O(N__4250),
-            .I(vccin_en));
-    InMux I__659 (
-            .O(N__4245),
-            .I(N__4242));
-    LocalMux I__658 (
-            .O(N__4242),
-            .I(N__4235));
-    InMux I__657 (
-            .O(N__4241),
-            .I(N__4232));
-    InMux I__656 (
-            .O(N__4240),
-            .I(N__4227));
-    InMux I__655 (
-            .O(N__4239),
-            .I(N__4227));
-    InMux I__654 (
-            .O(N__4238),
-            .I(N__4224));
-    Span4Mux_s3_h I__653 (
-            .O(N__4235),
-            .I(N__4221));
-    LocalMux I__652 (
-            .O(N__4232),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_0 ));
-    LocalMux I__651 (
-            .O(N__4227),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_0 ));
-    LocalMux I__650 (
-            .O(N__4224),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_0 ));
-    Odrv4 I__649 (
-            .O(N__4221),
-            .I(\RSMRST_PWRGD.curr_stateZ0Z_0 ));
-    InMux I__648 (
-            .O(N__4212),
-            .I(N__4209));
-    LocalMux I__647 (
-            .O(N__4209),
-            .I(N__4205));
-    InMux I__646 (
-            .O(N__4208),
-            .I(N__4202));
-    Span4Mux_h I__645 (
-            .O(N__4205),
-            .I(N__4198));
-    LocalMux I__644 (
-            .O(N__4202),
-            .I(N__4195));
-    InMux I__643 (
-            .O(N__4201),
-            .I(N__4192));
-    Odrv4 I__642 (
-            .O(N__4198),
-            .I(\SYS_PWRGD.N_1_i ));
-    Odrv12 I__641 (
-            .O(N__4195),
-            .I(\SYS_PWRGD.N_1_i ));
-    LocalMux I__640 (
-            .O(N__4192),
-            .I(\SYS_PWRGD.N_1_i ));
-    InMux I__639 (
-            .O(N__4185),
-            .I(bfn_4_10_0_));
-    InMux I__638 (
-            .O(N__4182),
-            .I(N__4179));
-    LocalMux I__637 (
-            .O(N__4179),
-            .I(N__4176));
-    Span4Mux_v I__636 (
-            .O(N__4176),
-            .I(N__4173));
-    Odrv4 I__635 (
-            .O(N__4173),
-            .I(\PCH_PWRGD.G_2_1 ));
-    CascadeMux I__634 (
-            .O(N__4170),
-            .I(N__4166));
-    InMux I__633 (
-            .O(N__4169),
-            .I(N__4163));
-    InMux I__632 (
-            .O(N__4166),
-            .I(N__4160));
-    LocalMux I__631 (
-            .O(N__4163),
-            .I(N__4155));
-    LocalMux I__630 (
-            .O(N__4160),
-            .I(N__4155));
-    Span4Mux_s3_h I__629 (
-            .O(N__4155),
-            .I(N__4152));
-    Odrv4 I__628 (
-            .O(N__4152),
-            .I(\RSMRST_PWRGD.un1_curr_state10_0 ));
-    CascadeMux I__627 (
-            .O(N__4149),
-            .I(\PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1_cascade_ ));
-    CEMux I__626 (
-            .O(N__4146),
-            .I(N__4143));
-    LocalMux I__625 (
-            .O(N__4143),
-            .I(\PCH_PWRGD.G_0_4 ));
-    InMux I__624 (
-            .O(N__4140),
-            .I(N__4136));
-    InMux I__623 (
-            .O(N__4139),
-            .I(N__4133));
-    LocalMux I__622 (
-            .O(N__4136),
-            .I(\PCH_PWRGD.countZ0Z_9 ));
-    LocalMux I__621 (
-            .O(N__4133),
-            .I(\PCH_PWRGD.countZ0Z_9 ));
-    InMux I__620 (
-            .O(N__4128),
-            .I(N__4124));
-    InMux I__619 (
-            .O(N__4127),
-            .I(N__4121));
-    LocalMux I__618 (
-            .O(N__4124),
-            .I(\PCH_PWRGD.countZ0Z_8 ));
-    LocalMux I__617 (
-            .O(N__4121),
-            .I(\PCH_PWRGD.countZ0Z_8 ));
-    CascadeMux I__616 (
-            .O(N__4116),
-            .I(N__4112));
-    InMux I__615 (
-            .O(N__4115),
-            .I(N__4109));
-    InMux I__614 (
-            .O(N__4112),
-            .I(N__4106));
-    LocalMux I__613 (
-            .O(N__4109),
-            .I(\PCH_PWRGD.countZ0Z_11 ));
-    LocalMux I__612 (
-            .O(N__4106),
-            .I(\PCH_PWRGD.countZ0Z_11 ));
-    InMux I__611 (
-            .O(N__4101),
-            .I(N__4097));
-    InMux I__610 (
-            .O(N__4100),
-            .I(N__4094));
-    LocalMux I__609 (
-            .O(N__4097),
-            .I(\PCH_PWRGD.countZ0Z_0 ));
-    LocalMux I__608 (
-            .O(N__4094),
-            .I(\PCH_PWRGD.countZ0Z_0 ));
-    InMux I__607 (
-            .O(N__4089),
-            .I(N__4086));
-    LocalMux I__606 (
-            .O(N__4086),
-            .I(\PCH_PWRGD.un4_count_8 ));
-    CascadeMux I__605 (
-            .O(N__4083),
-            .I(N__4080));
-    InMux I__604 (
-            .O(N__4080),
-            .I(N__4076));
-    InMux I__603 (
-            .O(N__4079),
-            .I(N__4073));
-    LocalMux I__602 (
-            .O(N__4076),
-            .I(\PCH_PWRGD.countZ0Z_1 ));
-    LocalMux I__601 (
-            .O(N__4073),
-            .I(\PCH_PWRGD.countZ0Z_1 ));
-    InMux I__600 (
-            .O(N__4068),
-            .I(N__4064));
-    InMux I__599 (
-            .O(N__4067),
-            .I(N__4061));
-    LocalMux I__598 (
-            .O(N__4064),
-            .I(\PCH_PWRGD.countZ0Z_6 ));
-    LocalMux I__597 (
-            .O(N__4061),
-            .I(\PCH_PWRGD.countZ0Z_6 ));
-    CascadeMux I__596 (
-            .O(N__4056),
-            .I(N__4052));
-    InMux I__595 (
-            .O(N__4055),
-            .I(N__4049));
-    InMux I__594 (
-            .O(N__4052),
-            .I(N__4046));
-    LocalMux I__593 (
-            .O(N__4049),
-            .I(\PCH_PWRGD.countZ0Z_10 ));
-    LocalMux I__592 (
-            .O(N__4046),
-            .I(\PCH_PWRGD.countZ0Z_10 ));
-    InMux I__591 (
-            .O(N__4041),
-            .I(N__4037));
-    InMux I__590 (
-            .O(N__4040),
-            .I(N__4034));
-    LocalMux I__589 (
-            .O(N__4037),
-            .I(\PCH_PWRGD.countZ0Z_2 ));
-    LocalMux I__588 (
-            .O(N__4034),
-            .I(\PCH_PWRGD.countZ0Z_2 ));
-    InMux I__587 (
-            .O(N__4029),
-            .I(N__4026));
-    LocalMux I__586 (
-            .O(N__4026),
-            .I(\PCH_PWRGD.un4_count_11 ));
-    InMux I__585 (
-            .O(N__4023),
-            .I(N__4019));
-    InMux I__584 (
-            .O(N__4022),
-            .I(N__4016));
-    LocalMux I__583 (
-            .O(N__4019),
-            .I(\PCH_PWRGD.countZ0Z_14 ));
-    LocalMux I__582 (
-            .O(N__4016),
-            .I(\PCH_PWRGD.countZ0Z_14 ));
-    InMux I__581 (
-            .O(N__4011),
-            .I(N__4007));
-    InMux I__580 (
-            .O(N__4010),
-            .I(N__4004));
-    LocalMux I__579 (
-            .O(N__4007),
-            .I(\PCH_PWRGD.countZ0Z_13 ));
-    LocalMux I__578 (
-            .O(N__4004),
-            .I(\PCH_PWRGD.countZ0Z_13 ));
-    CascadeMux I__577 (
-            .O(N__3999),
-            .I(N__3995));
-    InMux I__576 (
-            .O(N__3998),
-            .I(N__3992));
-    InMux I__575 (
-            .O(N__3995),
-            .I(N__3989));
-    LocalMux I__574 (
-            .O(N__3992),
-            .I(\PCH_PWRGD.countZ0Z_15 ));
-    LocalMux I__573 (
-            .O(N__3989),
-            .I(\PCH_PWRGD.countZ0Z_15 ));
-    InMux I__572 (
-            .O(N__3984),
-            .I(N__3980));
-    InMux I__571 (
-            .O(N__3983),
-            .I(N__3977));
-    LocalMux I__570 (
-            .O(N__3980),
-            .I(\PCH_PWRGD.countZ0Z_12 ));
-    LocalMux I__569 (
-            .O(N__3977),
-            .I(\PCH_PWRGD.countZ0Z_12 ));
-    InMux I__568 (
-            .O(N__3972),
-            .I(N__3969));
-    LocalMux I__567 (
-            .O(N__3969),
-            .I(\PCH_PWRGD.un4_count_10 ));
-    IoInMux I__566 (
-            .O(N__3966),
-            .I(N__3963));
-    LocalMux I__565 (
-            .O(N__3963),
-            .I(N__3960));
-    IoSpan4Mux I__564 (
-            .O(N__3960),
-            .I(N__3957));
-    Odrv4 I__563 (
-            .O(N__3957),
-            .I(vddq_en));
-    InMux I__562 (
-            .O(N__3954),
-            .I(N__3950));
-    InMux I__561 (
-            .O(N__3953),
-            .I(N__3947));
-    LocalMux I__560 (
-            .O(N__3950),
-            .I(\SYS_PWRGD.countZ0Z_12 ));
-    LocalMux I__559 (
-            .O(N__3947),
-            .I(\SYS_PWRGD.countZ0Z_12 ));
-    InMux I__558 (
-            .O(N__3942),
-            .I(\SYS_PWRGD.un1_count_1_cry_11 ));
-    CascadeMux I__557 (
-            .O(N__3939),
-            .I(N__3936));
-    InMux I__556 (
-            .O(N__3936),
-            .I(N__3932));
-    InMux I__555 (
-            .O(N__3935),
-            .I(N__3929));
-    LocalMux I__554 (
-            .O(N__3932),
-            .I(\SYS_PWRGD.countZ0Z_13 ));
-    LocalMux I__553 (
-            .O(N__3929),
-            .I(\SYS_PWRGD.countZ0Z_13 ));
-    InMux I__552 (
-            .O(N__3924),
-            .I(\SYS_PWRGD.un1_count_1_cry_12 ));
-    InMux I__551 (
-            .O(N__3921),
-            .I(N__3917));
-    InMux I__550 (
-            .O(N__3920),
-            .I(N__3914));
-    LocalMux I__549 (
-            .O(N__3917),
-            .I(\SYS_PWRGD.countZ0Z_14 ));
-    LocalMux I__548 (
-            .O(N__3914),
-            .I(\SYS_PWRGD.countZ0Z_14 ));
-    InMux I__547 (
-            .O(N__3909),
-            .I(\SYS_PWRGD.un1_count_1_cry_13 ));
-    InMux I__546 (
-            .O(N__3906),
-            .I(bfn_2_13_0_));
-    CascadeMux I__545 (
-            .O(N__3903),
-            .I(N__3900));
-    InMux I__544 (
-            .O(N__3900),
-            .I(N__3896));
-    InMux I__543 (
-            .O(N__3899),
-            .I(N__3893));
-    LocalMux I__542 (
-            .O(N__3896),
-            .I(N__3890));
-    LocalMux I__541 (
-            .O(N__3893),
-            .I(\SYS_PWRGD.countZ0Z_15 ));
-    Odrv4 I__540 (
-            .O(N__3890),
-            .I(\SYS_PWRGD.countZ0Z_15 ));
-    CEMux I__539 (
-            .O(N__3885),
-            .I(N__3882));
-    LocalMux I__538 (
-            .O(N__3882),
-            .I(N__3879));
-    Span4Mux_v I__537 (
-            .O(N__3879),
-            .I(N__3876));
-    Span4Mux_s1_h I__536 (
-            .O(N__3876),
-            .I(N__3873));
-    Odrv4 I__535 (
-            .O(N__3873),
-            .I(\SYS_PWRGD.G_0_2 ));
-    SRMux I__534 (
-            .O(N__3870),
-            .I(N__3865));
-    SRMux I__533 (
-            .O(N__3869),
-            .I(N__3862));
-    SRMux I__532 (
-            .O(N__3868),
-            .I(N__3859));
-    LocalMux I__531 (
-            .O(N__3865),
-            .I(N__3856));
-    LocalMux I__530 (
-            .O(N__3862),
-            .I(N__3853));
-    LocalMux I__529 (
-            .O(N__3859),
-            .I(N__3850));
-    Span4Mux_h I__528 (
-            .O(N__3856),
-            .I(N__3847));
-    Span4Mux_h I__527 (
-            .O(N__3853),
-            .I(N__3844));
-    Span4Mux_h I__526 (
-            .O(N__3850),
-            .I(N__3841));
-    Odrv4 I__525 (
-            .O(N__3847),
-            .I(\SYS_PWRGD.curr_state_RNIE72J5Z0Z_1 ));
-    Odrv4 I__524 (
-            .O(N__3844),
-            .I(\SYS_PWRGD.curr_state_RNIE72J5Z0Z_1 ));
-    Odrv4 I__523 (
-            .O(N__3841),
-            .I(\SYS_PWRGD.curr_state_RNIE72J5Z0Z_1 ));
-    InMux I__522 (
-            .O(N__3834),
-            .I(N__3830));
-    InMux I__521 (
-            .O(N__3833),
-            .I(N__3827));
-    LocalMux I__520 (
-            .O(N__3830),
-            .I(N__3824));
-    LocalMux I__519 (
-            .O(N__3827),
-            .I(\PCH_PWRGD.countZ0Z_5 ));
-    Odrv4 I__518 (
-            .O(N__3824),
-            .I(\PCH_PWRGD.countZ0Z_5 ));
-    InMux I__517 (
-            .O(N__3819),
-            .I(N__3815));
-    InMux I__516 (
-            .O(N__3818),
-            .I(N__3812));
-    LocalMux I__515 (
-            .O(N__3815),
-            .I(\PCH_PWRGD.countZ0Z_4 ));
-    LocalMux I__514 (
-            .O(N__3812),
-            .I(\PCH_PWRGD.countZ0Z_4 ));
-    CascadeMux I__513 (
-            .O(N__3807),
-            .I(N__3803));
-    InMux I__512 (
-            .O(N__3806),
-            .I(N__3800));
-    InMux I__511 (
-            .O(N__3803),
-            .I(N__3797));
-    LocalMux I__510 (
-            .O(N__3800),
-            .I(\PCH_PWRGD.countZ0Z_7 ));
-    LocalMux I__509 (
-            .O(N__3797),
-            .I(\PCH_PWRGD.countZ0Z_7 ));
-    InMux I__508 (
-            .O(N__3792),
-            .I(N__3788));
-    InMux I__507 (
-            .O(N__3791),
-            .I(N__3785));
-    LocalMux I__506 (
-            .O(N__3788),
-            .I(\PCH_PWRGD.countZ0Z_3 ));
-    LocalMux I__505 (
-            .O(N__3785),
-            .I(\PCH_PWRGD.countZ0Z_3 ));
-    CascadeMux I__504 (
-            .O(N__3780),
-            .I(\PCH_PWRGD.un4_count_9_cascade_ ));
-    CascadeMux I__503 (
-            .O(N__3777),
-            .I(\PCH_PWRGD.N_1_i_cascade_ ));
-    SRMux I__502 (
-            .O(N__3774),
-            .I(N__3770));
-    SRMux I__501 (
-            .O(N__3773),
-            .I(N__3766));
-    LocalMux I__500 (
-            .O(N__3770),
-            .I(N__3763));
-    SRMux I__499 (
-            .O(N__3769),
-            .I(N__3760));
-    LocalMux I__498 (
-            .O(N__3766),
-            .I(N__3757));
-    Span4Mux_s1_h I__497 (
-            .O(N__3763),
-            .I(N__3754));
-    LocalMux I__496 (
-            .O(N__3760),
-            .I(N__3749));
-    Span4Mux_s1_h I__495 (
-            .O(N__3757),
-            .I(N__3749));
-    Odrv4 I__494 (
-            .O(N__3754),
-            .I(\PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1 ));
-    Odrv4 I__493 (
-            .O(N__3749),
-            .I(\PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1 ));
-    InMux I__492 (
-            .O(N__3744),
-            .I(N__3740));
-    InMux I__491 (
-            .O(N__3743),
-            .I(N__3737));
-    LocalMux I__490 (
-            .O(N__3740),
-            .I(\SYS_PWRGD.countZ0Z_3 ));
-    LocalMux I__489 (
-            .O(N__3737),
-            .I(\SYS_PWRGD.countZ0Z_3 ));
-    InMux I__488 (
-            .O(N__3732),
-            .I(\SYS_PWRGD.un1_count_1_cry_2 ));
-    InMux I__487 (
-            .O(N__3729),
-            .I(N__3725));
-    InMux I__486 (
-            .O(N__3728),
-            .I(N__3722));
-    LocalMux I__485 (
-            .O(N__3725),
-            .I(\SYS_PWRGD.countZ0Z_4 ));
-    LocalMux I__484 (
-            .O(N__3722),
-            .I(\SYS_PWRGD.countZ0Z_4 ));
-    InMux I__483 (
-            .O(N__3717),
-            .I(\SYS_PWRGD.un1_count_1_cry_3 ));
-    InMux I__482 (
-            .O(N__3714),
-            .I(N__3710));
-    InMux I__481 (
-            .O(N__3713),
-            .I(N__3707));
-    LocalMux I__480 (
-            .O(N__3710),
-            .I(\SYS_PWRGD.countZ0Z_5 ));
-    LocalMux I__479 (
-            .O(N__3707),
-            .I(\SYS_PWRGD.countZ0Z_5 ));
-    InMux I__478 (
-            .O(N__3702),
-            .I(\SYS_PWRGD.un1_count_1_cry_4 ));
-    InMux I__477 (
-            .O(N__3699),
-            .I(N__3695));
-    InMux I__476 (
-            .O(N__3698),
-            .I(N__3692));
-    LocalMux I__475 (
-            .O(N__3695),
-            .I(\SYS_PWRGD.countZ0Z_6 ));
-    LocalMux I__474 (
-            .O(N__3692),
-            .I(\SYS_PWRGD.countZ0Z_6 ));
-    InMux I__473 (
-            .O(N__3687),
-            .I(\SYS_PWRGD.un1_count_1_cry_5 ));
-    CascadeMux I__472 (
-            .O(N__3684),
-            .I(N__3680));
-    InMux I__471 (
-            .O(N__3683),
-            .I(N__3677));
-    InMux I__470 (
-            .O(N__3680),
-            .I(N__3674));
-    LocalMux I__469 (
-            .O(N__3677),
-            .I(\SYS_PWRGD.countZ0Z_7 ));
-    LocalMux I__468 (
-            .O(N__3674),
-            .I(\SYS_PWRGD.countZ0Z_7 ));
-    InMux I__467 (
-            .O(N__3669),
-            .I(\SYS_PWRGD.un1_count_1_cry_6 ));
-    InMux I__466 (
-            .O(N__3666),
-            .I(N__3662));
-    InMux I__465 (
-            .O(N__3665),
-            .I(N__3659));
-    LocalMux I__464 (
-            .O(N__3662),
-            .I(\SYS_PWRGD.countZ0Z_8 ));
-    LocalMux I__463 (
-            .O(N__3659),
-            .I(\SYS_PWRGD.countZ0Z_8 ));
-    InMux I__462 (
-            .O(N__3654),
-            .I(bfn_2_12_0_));
-    InMux I__461 (
-            .O(N__3651),
-            .I(N__3647));
-    InMux I__460 (
-            .O(N__3650),
-            .I(N__3644));
-    LocalMux I__459 (
-            .O(N__3647),
-            .I(\SYS_PWRGD.countZ0Z_9 ));
-    LocalMux I__458 (
-            .O(N__3644),
-            .I(\SYS_PWRGD.countZ0Z_9 ));
-    InMux I__457 (
-            .O(N__3639),
-            .I(\SYS_PWRGD.un1_count_1_cry_8 ));
-    CascadeMux I__456 (
-            .O(N__3636),
-            .I(N__3632));
-    InMux I__455 (
-            .O(N__3635),
-            .I(N__3629));
-    InMux I__454 (
-            .O(N__3632),
-            .I(N__3626));
-    LocalMux I__453 (
-            .O(N__3629),
-            .I(\SYS_PWRGD.countZ0Z_10 ));
-    LocalMux I__452 (
-            .O(N__3626),
-            .I(\SYS_PWRGD.countZ0Z_10 ));
-    InMux I__451 (
-            .O(N__3621),
-            .I(\SYS_PWRGD.un1_count_1_cry_9 ));
-    InMux I__450 (
-            .O(N__3618),
-            .I(N__3614));
-    InMux I__449 (
-            .O(N__3617),
-            .I(N__3611));
-    LocalMux I__448 (
-            .O(N__3614),
-            .I(\SYS_PWRGD.countZ0Z_11 ));
-    LocalMux I__447 (
-            .O(N__3611),
-            .I(\SYS_PWRGD.countZ0Z_11 ));
-    InMux I__446 (
-            .O(N__3606),
-            .I(\SYS_PWRGD.un1_count_1_cry_10 ));
-    CascadeMux I__445 (
-            .O(N__3603),
-            .I(N__3599));
-    InMux I__444 (
-            .O(N__3602),
-            .I(N__3596));
-    InMux I__443 (
-            .O(N__3599),
-            .I(N__3593));
-    LocalMux I__442 (
-            .O(N__3596),
-            .I(\RSMRST_PWRGD.countZ0Z_12 ));
-    LocalMux I__441 (
-            .O(N__3593),
-            .I(\RSMRST_PWRGD.countZ0Z_12 ));
-    InMux I__440 (
-            .O(N__3588),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_11 ));
-    InMux I__439 (
-            .O(N__3585),
-            .I(N__3581));
-    InMux I__438 (
-            .O(N__3584),
-            .I(N__3578));
-    LocalMux I__437 (
-            .O(N__3581),
-            .I(\RSMRST_PWRGD.countZ0Z_13 ));
-    LocalMux I__436 (
-            .O(N__3578),
-            .I(\RSMRST_PWRGD.countZ0Z_13 ));
-    InMux I__435 (
-            .O(N__3573),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_12 ));
-    CascadeMux I__434 (
-            .O(N__3570),
-            .I(N__3566));
-    InMux I__433 (
-            .O(N__3569),
-            .I(N__3563));
-    InMux I__432 (
-            .O(N__3566),
-            .I(N__3560));
-    LocalMux I__431 (
-            .O(N__3563),
-            .I(\RSMRST_PWRGD.countZ0Z_14 ));
-    LocalMux I__430 (
-            .O(N__3560),
-            .I(\RSMRST_PWRGD.countZ0Z_14 ));
-    InMux I__429 (
-            .O(N__3555),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_13 ));
-    InMux I__428 (
-            .O(N__3552),
-            .I(bfn_2_10_0_));
-    InMux I__427 (
-            .O(N__3549),
-            .I(N__3545));
-    InMux I__426 (
-            .O(N__3548),
-            .I(N__3542));
-    LocalMux I__425 (
-            .O(N__3545),
-            .I(\RSMRST_PWRGD.countZ0Z_15 ));
-    LocalMux I__424 (
-            .O(N__3542),
-            .I(\RSMRST_PWRGD.countZ0Z_15 ));
-    CEMux I__423 (
-            .O(N__3537),
-            .I(N__3534));
-    LocalMux I__422 (
-            .O(N__3534),
-            .I(\RSMRST_PWRGD.G_0_3 ));
-    SRMux I__421 (
-            .O(N__3531),
-            .I(N__3527));
-    SRMux I__420 (
-            .O(N__3530),
-            .I(N__3524));
-    LocalMux I__419 (
-            .O(N__3527),
-            .I(N__3520));
-    LocalMux I__418 (
-            .O(N__3524),
-            .I(N__3517));
-    SRMux I__417 (
-            .O(N__3523),
-            .I(N__3514));
-    Span4Mux_h I__416 (
-            .O(N__3520),
-            .I(N__3511));
-    Span4Mux_h I__415 (
-            .O(N__3517),
-            .I(N__3506));
-    LocalMux I__414 (
-            .O(N__3514),
-            .I(N__3506));
-    Odrv4 I__413 (
-            .O(N__3511),
-            .I(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1 ));
-    Odrv4 I__412 (
-            .O(N__3506),
-            .I(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1 ));
-    CascadeMux I__411 (
-            .O(N__3501),
-            .I(N__3497));
-    InMux I__410 (
-            .O(N__3500),
-            .I(N__3494));
-    InMux I__409 (
-            .O(N__3497),
-            .I(N__3491));
-    LocalMux I__408 (
-            .O(N__3494),
+    CascadeMux I__1052 (
+            .O(N__5387),
+            .I(N__5384));
+    InMux I__1051 (
+            .O(N__5384),
+            .I(N__5381));
+    LocalMux I__1050 (
+            .O(N__5381),
+            .I(N__5378));
+    Odrv4 I__1049 (
+            .O(N__5378),
+            .I(\COUNTER.un4_counter_7_and ));
+    CascadeMux I__1048 (
+            .O(N__5375),
+            .I(N__5372));
+    InMux I__1047 (
+            .O(N__5372),
+            .I(N__5369));
+    LocalMux I__1046 (
+            .O(N__5369),
+            .I(N__5366));
+    Odrv4 I__1045 (
+            .O(N__5366),
+            .I(\COUNTER.un4_counter_6_and ));
+    InMux I__1044 (
+            .O(N__5363),
+            .I(N__5360));
+    LocalMux I__1043 (
+            .O(N__5360),
+            .I(N__5356));
+    InMux I__1042 (
+            .O(N__5359),
+            .I(N__5353));
+    Span4Mux_s3_h I__1041 (
+            .O(N__5356),
+            .I(N__5350));
+    LocalMux I__1040 (
+            .O(N__5353),
+            .I(VPP_VDDQ_un6_count));
+    Odrv4 I__1039 (
+            .O(N__5350),
+            .I(VPP_VDDQ_un6_count));
+    InMux I__1038 (
+            .O(N__5345),
+            .I(N__5342));
+    LocalMux I__1037 (
+            .O(N__5342),
+            .I(N__5338));
+    InMux I__1036 (
+            .O(N__5341),
+            .I(N__5335));
+    Span4Mux_v I__1035 (
+            .O(N__5338),
+            .I(N__5332));
+    LocalMux I__1034 (
+            .O(N__5335),
             .I(\SYS_PWRGD.countZ0Z_0 ));
-    LocalMux I__407 (
-            .O(N__3491),
+    Odrv4 I__1033 (
+            .O(N__5332),
             .I(\SYS_PWRGD.countZ0Z_0 ));
-    InMux I__406 (
-            .O(N__3486),
-            .I(N__3482));
-    InMux I__405 (
-            .O(N__3485),
-            .I(N__3479));
-    LocalMux I__404 (
-            .O(N__3482),
+    InMux I__1032 (
+            .O(N__5327),
+            .I(N__5323));
+    InMux I__1031 (
+            .O(N__5326),
+            .I(N__5320));
+    LocalMux I__1030 (
+            .O(N__5323),
+            .I(N__5317));
+    LocalMux I__1029 (
+            .O(N__5320),
+            .I(\SYS_PWRGD.countZ0Z_9 ));
+    Odrv12 I__1028 (
+            .O(N__5317),
+            .I(\SYS_PWRGD.countZ0Z_9 ));
+    CascadeMux I__1027 (
+            .O(N__5312),
+            .I(N__5309));
+    InMux I__1026 (
+            .O(N__5309),
+            .I(N__5305));
+    InMux I__1025 (
+            .O(N__5308),
+            .I(N__5302));
+    LocalMux I__1024 (
+            .O(N__5305),
+            .I(N__5299));
+    LocalMux I__1023 (
+            .O(N__5302),
+            .I(\SYS_PWRGD.countZ0Z_10 ));
+    Odrv12 I__1022 (
+            .O(N__5299),
+            .I(\SYS_PWRGD.countZ0Z_10 ));
+    InMux I__1021 (
+            .O(N__5294),
+            .I(N__5291));
+    LocalMux I__1020 (
+            .O(N__5291),
+            .I(N__5287));
+    InMux I__1019 (
+            .O(N__5290),
+            .I(N__5284));
+    Span4Mux_v I__1018 (
+            .O(N__5287),
+            .I(N__5281));
+    LocalMux I__1017 (
+            .O(N__5284),
             .I(\SYS_PWRGD.countZ0Z_1 ));
-    LocalMux I__403 (
-            .O(N__3479),
+    Odrv4 I__1016 (
+            .O(N__5281),
             .I(\SYS_PWRGD.countZ0Z_1 ));
-    InMux I__402 (
-            .O(N__3474),
-            .I(\SYS_PWRGD.un1_count_1_cry_0 ));
-    InMux I__401 (
-            .O(N__3471),
-            .I(N__3467));
-    InMux I__400 (
-            .O(N__3470),
-            .I(N__3464));
-    LocalMux I__399 (
-            .O(N__3467),
-            .I(\SYS_PWRGD.countZ0Z_2 ));
-    LocalMux I__398 (
-            .O(N__3464),
-            .I(\SYS_PWRGD.countZ0Z_2 ));
-    InMux I__397 (
-            .O(N__3459),
-            .I(\SYS_PWRGD.un1_count_1_cry_1 ));
-    InMux I__396 (
-            .O(N__3456),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_2 ));
-    InMux I__395 (
-            .O(N__3453),
-            .I(N__3449));
-    InMux I__394 (
-            .O(N__3452),
-            .I(N__3446));
-    LocalMux I__393 (
-            .O(N__3449),
-            .I(\RSMRST_PWRGD.countZ0Z_4 ));
-    LocalMux I__392 (
-            .O(N__3446),
-            .I(\RSMRST_PWRGD.countZ0Z_4 ));
-    InMux I__391 (
-            .O(N__3441),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_3 ));
-    CascadeMux I__390 (
-            .O(N__3438),
-            .I(N__3435));
-    InMux I__389 (
-            .O(N__3435),
-            .I(N__3431));
-    InMux I__388 (
-            .O(N__3434),
-            .I(N__3428));
-    LocalMux I__387 (
-            .O(N__3431),
-            .I(\RSMRST_PWRGD.countZ0Z_5 ));
-    LocalMux I__386 (
-            .O(N__3428),
-            .I(\RSMRST_PWRGD.countZ0Z_5 ));
-    InMux I__385 (
-            .O(N__3423),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_4 ));
-    InMux I__384 (
-            .O(N__3420),
-            .I(N__3416));
-    InMux I__383 (
-            .O(N__3419),
-            .I(N__3413));
-    LocalMux I__382 (
-            .O(N__3416),
-            .I(\RSMRST_PWRGD.countZ0Z_6 ));
-    LocalMux I__381 (
-            .O(N__3413),
-            .I(\RSMRST_PWRGD.countZ0Z_6 ));
-    InMux I__380 (
-            .O(N__3408),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_5 ));
-    CascadeMux I__379 (
-            .O(N__3405),
-            .I(N__3401));
-    InMux I__378 (
-            .O(N__3404),
-            .I(N__3398));
-    InMux I__377 (
-            .O(N__3401),
-            .I(N__3395));
-    LocalMux I__376 (
-            .O(N__3398),
-            .I(\RSMRST_PWRGD.countZ0Z_7 ));
-    LocalMux I__375 (
-            .O(N__3395),
-            .I(\RSMRST_PWRGD.countZ0Z_7 ));
-    InMux I__374 (
-            .O(N__3390),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_6 ));
-    InMux I__373 (
-            .O(N__3387),
-            .I(N__3383));
-    InMux I__372 (
-            .O(N__3386),
-            .I(N__3380));
-    LocalMux I__371 (
-            .O(N__3383),
-            .I(\RSMRST_PWRGD.countZ0Z_8 ));
-    LocalMux I__370 (
-            .O(N__3380),
-            .I(\RSMRST_PWRGD.countZ0Z_8 ));
-    InMux I__369 (
-            .O(N__3375),
-            .I(bfn_2_9_0_));
-    CascadeMux I__368 (
-            .O(N__3372),
-            .I(N__3368));
-    InMux I__367 (
-            .O(N__3371),
-            .I(N__3365));
-    InMux I__366 (
-            .O(N__3368),
-            .I(N__3362));
-    LocalMux I__365 (
-            .O(N__3365),
-            .I(\RSMRST_PWRGD.countZ0Z_9 ));
-    LocalMux I__364 (
-            .O(N__3362),
-            .I(\RSMRST_PWRGD.countZ0Z_9 ));
-    InMux I__363 (
-            .O(N__3357),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_8 ));
-    InMux I__362 (
-            .O(N__3354),
-            .I(N__3350));
-    InMux I__361 (
-            .O(N__3353),
-            .I(N__3347));
-    LocalMux I__360 (
-            .O(N__3350),
-            .I(\RSMRST_PWRGD.countZ0Z_10 ));
-    LocalMux I__359 (
-            .O(N__3347),
-            .I(\RSMRST_PWRGD.countZ0Z_10 ));
-    InMux I__358 (
-            .O(N__3342),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_9 ));
-    InMux I__357 (
-            .O(N__3339),
-            .I(N__3335));
-    InMux I__356 (
-            .O(N__3338),
-            .I(N__3332));
-    LocalMux I__355 (
-            .O(N__3335),
-            .I(\RSMRST_PWRGD.countZ0Z_11 ));
-    LocalMux I__354 (
-            .O(N__3332),
-            .I(\RSMRST_PWRGD.countZ0Z_11 ));
-    InMux I__353 (
-            .O(N__3327),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_10 ));
-    InMux I__352 (
-            .O(N__3324),
-            .I(\PCH_PWRGD.un1_count_1_cry_11 ));
-    InMux I__351 (
-            .O(N__3321),
-            .I(\PCH_PWRGD.un1_count_1_cry_12 ));
-    InMux I__350 (
-            .O(N__3318),
-            .I(\PCH_PWRGD.un1_count_1_cry_13 ));
-    InMux I__349 (
-            .O(N__3315),
-            .I(bfn_1_15_0_));
-    InMux I__348 (
-            .O(N__3312),
-            .I(N__3308));
-    InMux I__347 (
-            .O(N__3311),
-            .I(N__3305));
-    LocalMux I__346 (
-            .O(N__3308),
-            .I(\RSMRST_PWRGD.countZ0Z_0 ));
-    LocalMux I__345 (
-            .O(N__3305),
-            .I(\RSMRST_PWRGD.countZ0Z_0 ));
-    InMux I__344 (
-            .O(N__3300),
-            .I(N__3296));
-    InMux I__343 (
-            .O(N__3299),
-            .I(N__3293));
-    LocalMux I__342 (
-            .O(N__3296),
-            .I(\RSMRST_PWRGD.countZ0Z_1 ));
-    LocalMux I__341 (
-            .O(N__3293),
-            .I(\RSMRST_PWRGD.countZ0Z_1 ));
-    InMux I__340 (
-            .O(N__3288),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_0 ));
-    InMux I__339 (
-            .O(N__3285),
-            .I(N__3281));
-    InMux I__338 (
-            .O(N__3284),
-            .I(N__3278));
-    LocalMux I__337 (
-            .O(N__3281),
-            .I(\RSMRST_PWRGD.countZ0Z_2 ));
-    LocalMux I__336 (
-            .O(N__3278),
-            .I(\RSMRST_PWRGD.countZ0Z_2 ));
-    InMux I__335 (
-            .O(N__3273),
-            .I(\RSMRST_PWRGD.un1_count_1_cry_1 ));
-    InMux I__334 (
-            .O(N__3270),
-            .I(N__3266));
-    InMux I__333 (
-            .O(N__3269),
-            .I(N__3263));
-    LocalMux I__332 (
-            .O(N__3266),
-            .I(\RSMRST_PWRGD.countZ0Z_3 ));
-    LocalMux I__331 (
-            .O(N__3263),
-            .I(\RSMRST_PWRGD.countZ0Z_3 ));
-    InMux I__330 (
-            .O(N__3258),
-            .I(\PCH_PWRGD.un1_count_1_cry_2 ));
-    InMux I__329 (
-            .O(N__3255),
-            .I(\PCH_PWRGD.un1_count_1_cry_3 ));
-    InMux I__328 (
-            .O(N__3252),
-            .I(\PCH_PWRGD.un1_count_1_cry_4 ));
-    InMux I__327 (
-            .O(N__3249),
-            .I(\PCH_PWRGD.un1_count_1_cry_5 ));
-    InMux I__326 (
-            .O(N__3246),
-            .I(\PCH_PWRGD.un1_count_1_cry_6 ));
-    InMux I__325 (
-            .O(N__3243),
-            .I(bfn_1_14_0_));
-    InMux I__324 (
-            .O(N__3240),
-            .I(\PCH_PWRGD.un1_count_1_cry_8 ));
-    InMux I__323 (
-            .O(N__3237),
-            .I(\PCH_PWRGD.un1_count_1_cry_9 ));
-    InMux I__322 (
-            .O(N__3234),
-            .I(\PCH_PWRGD.un1_count_1_cry_10 ));
-    CascadeMux I__321 (
-            .O(N__3231),
-            .I(\SYS_PWRGD.G_0_1_cascade_ ));
-    CascadeMux I__320 (
-            .O(N__3228),
-            .I(\SYS_PWRGD.curr_state_RNIE72J5Z0Z_1_cascade_ ));
-    InMux I__319 (
-            .O(N__3225),
-            .I(N__3222));
-    LocalMux I__318 (
-            .O(N__3222),
-            .I(\SYS_PWRGD.un4_count_11 ));
-    InMux I__317 (
-            .O(N__3219),
-            .I(N__3216));
-    LocalMux I__316 (
-            .O(N__3216),
-            .I(\SYS_PWRGD.un4_count_10 ));
-    CascadeMux I__315 (
-            .O(N__3213),
-            .I(\SYS_PWRGD.un4_count_9_cascade_ ));
-    InMux I__314 (
-            .O(N__3210),
-            .I(N__3207));
-    LocalMux I__313 (
-            .O(N__3207),
+    InMux I__1015 (
+            .O(N__5276),
+            .I(N__5273));
+    LocalMux I__1014 (
+            .O(N__5273),
+            .I(\SYS_PWRGD.un4_count_9 ));
+    InMux I__1013 (
+            .O(N__5270),
+            .I(N__5267));
+    LocalMux I__1012 (
+            .O(N__5267),
+            .I(N__5264));
+    Span4Mux_h I__1011 (
+            .O(N__5264),
+            .I(N__5260));
+    InMux I__1010 (
+            .O(N__5263),
+            .I(N__5257));
+    Span4Mux_h I__1009 (
+            .O(N__5260),
+            .I(N__5254));
+    LocalMux I__1008 (
+            .O(N__5257),
+            .I(\SYS_PWRGD.countZ0Z_7 ));
+    Odrv4 I__1007 (
+            .O(N__5254),
+            .I(\SYS_PWRGD.countZ0Z_7 ));
+    InMux I__1006 (
+            .O(N__5249),
+            .I(N__5246));
+    LocalMux I__1005 (
+            .O(N__5246),
+            .I(N__5242));
+    InMux I__1004 (
+            .O(N__5245),
+            .I(N__5239));
+    Span4Mux_h I__1003 (
+            .O(N__5242),
+            .I(N__5236));
+    LocalMux I__1002 (
+            .O(N__5239),
+            .I(\SYS_PWRGD.countZ0Z_6 ));
+    Odrv4 I__1001 (
+            .O(N__5236),
+            .I(\SYS_PWRGD.countZ0Z_6 ));
+    CascadeMux I__1000 (
+            .O(N__5231),
+            .I(N__5228));
+    InMux I__999 (
+            .O(N__5228),
+            .I(N__5224));
+    InMux I__998 (
+            .O(N__5227),
+            .I(N__5221));
+    LocalMux I__997 (
+            .O(N__5224),
+            .I(N__5218));
+    LocalMux I__996 (
+            .O(N__5221),
+            .I(\SYS_PWRGD.countZ0Z_8 ));
+    Odrv12 I__995 (
+            .O(N__5218),
+            .I(\SYS_PWRGD.countZ0Z_8 ));
+    InMux I__994 (
+            .O(N__5213),
+            .I(N__5210));
+    LocalMux I__993 (
+            .O(N__5210),
+            .I(N__5206));
+    InMux I__992 (
+            .O(N__5209),
+            .I(N__5203));
+    Span4Mux_v I__991 (
+            .O(N__5206),
+            .I(N__5200));
+    LocalMux I__990 (
+            .O(N__5203),
+            .I(\SYS_PWRGD.countZ0Z_4 ));
+    Odrv4 I__989 (
+            .O(N__5200),
+            .I(\SYS_PWRGD.countZ0Z_4 ));
+    InMux I__988 (
+            .O(N__5195),
+            .I(N__5192));
+    LocalMux I__987 (
+            .O(N__5192),
             .I(\SYS_PWRGD.un4_count_8 ));
-    InMux I__312 (
-            .O(N__3204),
-            .I(\PCH_PWRGD.un1_count_1_cry_0 ));
-    InMux I__311 (
-            .O(N__3201),
-            .I(\PCH_PWRGD.un1_count_1_cry_1 ));
-    CascadeMux I__310 (
-            .O(N__3198),
-            .I(\RSMRST_PWRGD.G_1_1_cascade_ ));
-    CascadeMux I__309 (
-            .O(N__3195),
-            .I(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_ ));
-    InMux I__308 (
-            .O(N__3192),
-            .I(N__3189));
-    LocalMux I__307 (
-            .O(N__3189),
-            .I(N__3186));
-    Odrv4 I__306 (
-            .O(N__3186),
-            .I(\RSMRST_PWRGD.un4_count_11 ));
-    InMux I__305 (
-            .O(N__3183),
-            .I(N__3180));
-    LocalMux I__304 (
-            .O(N__3180),
-            .I(\RSMRST_PWRGD.un4_count_10 ));
-    CascadeMux I__303 (
-            .O(N__3177),
-            .I(\RSMRST_PWRGD.un4_count_8_cascade_ ));
-    InMux I__302 (
-            .O(N__3174),
-            .I(N__3171));
-    LocalMux I__301 (
-            .O(N__3171),
-            .I(\RSMRST_PWRGD.un4_count_9 ));
-    IoInMux I__300 (
-            .O(N__3168),
-            .I(N__3165));
-    LocalMux I__299 (
-            .O(N__3165),
-            .I(v33a_enn));
-    IoInMux I__298 (
-            .O(N__3162),
-            .I(N__3159));
-    LocalMux I__297 (
-            .O(N__3159),
-            .I(N__3156));
-    Span4Mux_s2_h I__296 (
-            .O(N__3156),
-            .I(N__3153));
-    Sp12to4 I__295 (
-            .O(N__3153),
-            .I(N__3150));
-    Span12Mux_s11_v I__294 (
-            .O(N__3150),
-            .I(N__3146));
-    InMux I__293 (
-            .O(N__3149),
-            .I(N__3143));
-    Odrv12 I__292 (
-            .O(N__3146),
+    InMux I__986 (
+            .O(N__5189),
+            .I(N__5186));
+    LocalMux I__985 (
+            .O(N__5186),
+            .I(\COUNTER.un4_counter_2_and ));
+    CascadeMux I__984 (
+            .O(N__5183),
+            .I(N__5180));
+    InMux I__983 (
+            .O(N__5180),
+            .I(N__5177));
+    LocalMux I__982 (
+            .O(N__5177),
+            .I(\COUNTER.un4_counter_1_and ));
+    InMux I__981 (
+            .O(N__5174),
+            .I(N__5170));
+    InMux I__980 (
+            .O(N__5173),
+            .I(N__5167));
+    LocalMux I__979 (
+            .O(N__5170),
+            .I(N__5164));
+    LocalMux I__978 (
+            .O(N__5167),
+            .I(\VPP_VDDQ.countZ0Z_8 ));
+    Odrv4 I__977 (
+            .O(N__5164),
+            .I(\VPP_VDDQ.countZ0Z_8 ));
+    CascadeMux I__976 (
+            .O(N__5159),
+            .I(N__5156));
+    InMux I__975 (
+            .O(N__5156),
+            .I(N__5152));
+    InMux I__974 (
+            .O(N__5155),
+            .I(N__5149));
+    LocalMux I__973 (
+            .O(N__5152),
+            .I(N__5146));
+    LocalMux I__972 (
+            .O(N__5149),
+            .I(\VPP_VDDQ.countZ0Z_11 ));
+    Odrv4 I__971 (
+            .O(N__5146),
+            .I(\VPP_VDDQ.countZ0Z_11 ));
+    InMux I__970 (
+            .O(N__5141),
+            .I(N__5138));
+    LocalMux I__969 (
+            .O(N__5138),
+            .I(N__5134));
+    InMux I__968 (
+            .O(N__5137),
+            .I(N__5131));
+    Span4Mux_h I__967 (
+            .O(N__5134),
+            .I(N__5128));
+    LocalMux I__966 (
+            .O(N__5131),
+            .I(\VPP_VDDQ.countZ0Z_0 ));
+    Odrv4 I__965 (
+            .O(N__5128),
+            .I(\VPP_VDDQ.countZ0Z_0 ));
+    InMux I__964 (
+            .O(N__5123),
+            .I(N__5120));
+    LocalMux I__963 (
+            .O(N__5120),
+            .I(\VPP_VDDQ.un6_count_10 ));
+    CascadeMux I__962 (
+            .O(N__5117),
+            .I(\VPP_VDDQ.un6_count_8_cascade_ ));
+    InMux I__961 (
+            .O(N__5114),
+            .I(N__5111));
+    LocalMux I__960 (
+            .O(N__5111),
+            .I(\VPP_VDDQ.un6_count_9 ));
+    IoInMux I__959 (
+            .O(N__5108),
+            .I(N__5104));
+    IoInMux I__958 (
+            .O(N__5107),
+            .I(N__5101));
+    LocalMux I__957 (
+            .O(N__5104),
+            .I(N__5098));
+    LocalMux I__956 (
+            .O(N__5101),
+            .I(N__5095));
+    IoSpan4Mux I__955 (
+            .O(N__5098),
+            .I(N__5092));
+    Span4Mux_s3_h I__954 (
+            .O(N__5095),
+            .I(N__5087));
+    Span4Mux_s3_h I__953 (
+            .O(N__5092),
+            .I(N__5087));
+    Odrv4 I__952 (
+            .O(N__5087),
+            .I(v5s_enn));
+    InMux I__951 (
+            .O(N__5084),
+            .I(N__5081));
+    LocalMux I__950 (
+            .O(N__5081),
+            .I(N__5077));
+    InMux I__949 (
+            .O(N__5080),
+            .I(N__5074));
+    Span12Mux_s4_v I__948 (
+            .O(N__5077),
+            .I(N__5071));
+    LocalMux I__947 (
+            .O(N__5074),
+            .I(\PCH_PWRGD.countZ0Z_14 ));
+    Odrv12 I__946 (
+            .O(N__5071),
+            .I(\PCH_PWRGD.countZ0Z_14 ));
+    InMux I__945 (
+            .O(N__5066),
+            .I(N__5063));
+    LocalMux I__944 (
+            .O(N__5063),
+            .I(N__5059));
+    InMux I__943 (
+            .O(N__5062),
+            .I(N__5056));
+    Span4Mux_v I__942 (
+            .O(N__5059),
+            .I(N__5053));
+    LocalMux I__941 (
+            .O(N__5056),
+            .I(\PCH_PWRGD.countZ0Z_13 ));
+    Odrv4 I__940 (
+            .O(N__5053),
+            .I(\PCH_PWRGD.countZ0Z_13 ));
+    CascadeMux I__939 (
+            .O(N__5048),
+            .I(N__5045));
+    InMux I__938 (
+            .O(N__5045),
+            .I(N__5041));
+    InMux I__937 (
+            .O(N__5044),
+            .I(N__5038));
+    LocalMux I__936 (
+            .O(N__5041),
+            .I(N__5035));
+    LocalMux I__935 (
+            .O(N__5038),
+            .I(\PCH_PWRGD.countZ0Z_15 ));
+    Odrv4 I__934 (
+            .O(N__5035),
+            .I(\PCH_PWRGD.countZ0Z_15 ));
+    InMux I__933 (
+            .O(N__5030),
+            .I(N__5027));
+    LocalMux I__932 (
+            .O(N__5027),
+            .I(N__5023));
+    InMux I__931 (
+            .O(N__5026),
+            .I(N__5020));
+    Span4Mux_v I__930 (
+            .O(N__5023),
+            .I(N__5017));
+    LocalMux I__929 (
+            .O(N__5020),
+            .I(\PCH_PWRGD.countZ0Z_12 ));
+    Odrv4 I__928 (
+            .O(N__5017),
+            .I(\PCH_PWRGD.countZ0Z_12 ));
+    InMux I__927 (
+            .O(N__5012),
+            .I(N__5009));
+    LocalMux I__926 (
+            .O(N__5009),
+            .I(\PCH_PWRGD.un4_count_8 ));
+    CascadeMux I__925 (
+            .O(N__5006),
+            .I(N__5003));
+    InMux I__924 (
+            .O(N__5003),
+            .I(N__5000));
+    LocalMux I__923 (
+            .O(N__5000),
+            .I(N__4996));
+    InMux I__922 (
+            .O(N__4999),
+            .I(N__4992));
+    Span4Mux_v I__921 (
+            .O(N__4996),
+            .I(N__4989));
+    InMux I__920 (
+            .O(N__4995),
+            .I(N__4986));
+    LocalMux I__919 (
+            .O(N__4992),
+            .I(N__4983));
+    Span4Mux_s3_v I__918 (
+            .O(N__4989),
+            .I(N__4978));
+    LocalMux I__917 (
+            .O(N__4986),
+            .I(N__4978));
+    Span4Mux_v I__916 (
+            .O(N__4983),
+            .I(N__4975));
+    Span4Mux_h I__915 (
+            .O(N__4978),
+            .I(N__4972));
+    Span4Mux_h I__914 (
+            .O(N__4975),
+            .I(N__4969));
+    IoSpan4Mux I__913 (
+            .O(N__4972),
+            .I(N__4966));
+    Odrv4 I__912 (
+            .O(N__4969),
+            .I(slp_susn));
+    Odrv4 I__911 (
+            .O(N__4966),
+            .I(slp_susn));
+    InMux I__910 (
+            .O(N__4961),
+            .I(N__4958));
+    LocalMux I__909 (
+            .O(N__4958),
+            .I(N__4954));
+    InMux I__908 (
+            .O(N__4957),
+            .I(N__4951));
+    Span4Mux_s3_v I__907 (
+            .O(N__4954),
+            .I(N__4948));
+    LocalMux I__906 (
+            .O(N__4951),
+            .I(N__4945));
+    Odrv4 I__905 (
+            .O(N__4948),
+            .I(vpp_ok));
+    Odrv12 I__904 (
+            .O(N__4945),
+            .I(vpp_ok));
+    InMux I__903 (
+            .O(N__4940),
+            .I(N__4934));
+    InMux I__902 (
+            .O(N__4939),
+            .I(N__4934));
+    LocalMux I__901 (
+            .O(N__4934),
+            .I(N__4931));
+    Span12Mux_s10_h I__900 (
+            .O(N__4931),
+            .I(N__4928));
+    Odrv12 I__899 (
+            .O(N__4928),
+            .I(slp_s3n));
+    InMux I__898 (
+            .O(N__4925),
+            .I(N__4920));
+    CascadeMux I__897 (
+            .O(N__4924),
+            .I(N__4917));
+    CascadeMux I__896 (
+            .O(N__4923),
+            .I(N__4914));
+    LocalMux I__895 (
+            .O(N__4920),
+            .I(N__4909));
+    InMux I__894 (
+            .O(N__4917),
+            .I(N__4906));
+    InMux I__893 (
+            .O(N__4914),
+            .I(N__4899));
+    InMux I__892 (
+            .O(N__4913),
+            .I(N__4899));
+    InMux I__891 (
+            .O(N__4912),
+            .I(N__4899));
+    Span4Mux_v I__890 (
+            .O(N__4909),
+            .I(N__4896));
+    LocalMux I__889 (
+            .O(N__4906),
+            .I(N__4891));
+    LocalMux I__888 (
+            .O(N__4899),
+            .I(N__4891));
+    Span4Mux_v I__887 (
+            .O(N__4896),
+            .I(N__4888));
+    Span4Mux_s3_h I__886 (
+            .O(N__4891),
+            .I(N__4885));
+    Odrv4 I__885 (
+            .O(N__4888),
+            .I(\SYS_PWRGD.N_3_i ));
+    Odrv4 I__884 (
+            .O(N__4885),
+            .I(\SYS_PWRGD.N_3_i ));
+    InMux I__883 (
+            .O(N__4880),
+            .I(N__4877));
+    LocalMux I__882 (
+            .O(N__4877),
+            .I(N__4873));
+    InMux I__881 (
+            .O(N__4876),
+            .I(N__4870));
+    Span4Mux_v I__880 (
+            .O(N__4873),
+            .I(N__4867));
+    LocalMux I__879 (
+            .O(N__4870),
+            .I(\VPP_VDDQ.countZ0Z_12 ));
+    Odrv4 I__878 (
+            .O(N__4867),
+            .I(\VPP_VDDQ.countZ0Z_12 ));
+    InMux I__877 (
+            .O(N__4862),
+            .I(N__4859));
+    LocalMux I__876 (
+            .O(N__4859),
+            .I(N__4855));
+    InMux I__875 (
+            .O(N__4858),
+            .I(N__4852));
+    Span4Mux_h I__874 (
+            .O(N__4855),
+            .I(N__4849));
+    LocalMux I__873 (
+            .O(N__4852),
+            .I(\VPP_VDDQ.countZ0Z_14 ));
+    Odrv4 I__872 (
+            .O(N__4849),
+            .I(\VPP_VDDQ.countZ0Z_14 ));
+    CascadeMux I__871 (
+            .O(N__4844),
+            .I(N__4841));
+    InMux I__870 (
+            .O(N__4841),
+            .I(N__4837));
+    InMux I__869 (
+            .O(N__4840),
+            .I(N__4834));
+    LocalMux I__868 (
+            .O(N__4837),
+            .I(N__4831));
+    LocalMux I__867 (
+            .O(N__4834),
+            .I(\VPP_VDDQ.countZ0Z_15 ));
+    Odrv12 I__866 (
+            .O(N__4831),
+            .I(\VPP_VDDQ.countZ0Z_15 ));
+    InMux I__865 (
+            .O(N__4826),
+            .I(N__4823));
+    LocalMux I__864 (
+            .O(N__4823),
+            .I(N__4819));
+    InMux I__863 (
+            .O(N__4822),
+            .I(N__4816));
+    Span12Mux_s4_v I__862 (
+            .O(N__4819),
+            .I(N__4813));
+    LocalMux I__861 (
+            .O(N__4816),
+            .I(\VPP_VDDQ.countZ0Z_13 ));
+    Odrv12 I__860 (
+            .O(N__4813),
+            .I(\VPP_VDDQ.countZ0Z_13 ));
+    InMux I__859 (
+            .O(N__4808),
+            .I(N__4805));
+    LocalMux I__858 (
+            .O(N__4805),
+            .I(\VPP_VDDQ.un6_count_11 ));
+    InMux I__857 (
+            .O(N__4802),
+            .I(N__4798));
+    InMux I__856 (
+            .O(N__4801),
+            .I(N__4795));
+    LocalMux I__855 (
+            .O(N__4798),
+            .I(N__4788));
+    LocalMux I__854 (
+            .O(N__4795),
+            .I(N__4785));
+    InMux I__853 (
+            .O(N__4794),
+            .I(N__4780));
+    InMux I__852 (
+            .O(N__4793),
+            .I(N__4780));
+    InMux I__851 (
+            .O(N__4792),
+            .I(N__4777));
+    InMux I__850 (
+            .O(N__4791),
+            .I(N__4774));
+    Span4Mux_s3_h I__849 (
+            .O(N__4788),
+            .I(N__4769));
+    Span4Mux_s3_h I__848 (
+            .O(N__4785),
+            .I(N__4769));
+    LocalMux I__847 (
+            .O(N__4780),
+            .I(N__4766));
+    LocalMux I__846 (
+            .O(N__4777),
+            .I(COUNTER_tmp_i));
+    LocalMux I__845 (
+            .O(N__4774),
+            .I(COUNTER_tmp_i));
+    Odrv4 I__844 (
+            .O(N__4769),
+            .I(COUNTER_tmp_i));
+    Odrv4 I__843 (
+            .O(N__4766),
+            .I(COUNTER_tmp_i));
+    CascadeMux I__842 (
+            .O(N__4757),
+            .I(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa_cascade_));
+    InMux I__841 (
+            .O(N__4754),
+            .I(N__4751));
+    LocalMux I__840 (
+            .O(N__4751),
+            .I(N__4748));
+    Span4Mux_s3_h I__839 (
+            .O(N__4748),
+            .I(N__4745));
+    Odrv4 I__838 (
+            .O(N__4745),
+            .I(G_0));
+    InMux I__837 (
+            .O(N__4742),
+            .I(N__4738));
+    InMux I__836 (
+            .O(N__4741),
+            .I(N__4735));
+    LocalMux I__835 (
+            .O(N__4738),
+            .I(N__4732));
+    LocalMux I__834 (
+            .O(N__4735),
+            .I(\VPP_VDDQ.countZ0Z_6 ));
+    Odrv12 I__833 (
+            .O(N__4732),
+            .I(\VPP_VDDQ.countZ0Z_6 ));
+    InMux I__832 (
+            .O(N__4727),
+            .I(N__4723));
+    InMux I__831 (
+            .O(N__4726),
+            .I(N__4720));
+    LocalMux I__830 (
+            .O(N__4723),
+            .I(N__4717));
+    LocalMux I__829 (
+            .O(N__4720),
+            .I(\VPP_VDDQ.countZ0Z_2 ));
+    Odrv4 I__828 (
+            .O(N__4717),
+            .I(\VPP_VDDQ.countZ0Z_2 ));
+    CascadeMux I__827 (
+            .O(N__4712),
+            .I(N__4709));
+    InMux I__826 (
+            .O(N__4709),
+            .I(N__4706));
+    LocalMux I__825 (
+            .O(N__4706),
+            .I(N__4702));
+    InMux I__824 (
+            .O(N__4705),
+            .I(N__4699));
+    Span4Mux_h I__823 (
+            .O(N__4702),
+            .I(N__4696));
+    LocalMux I__822 (
+            .O(N__4699),
+            .I(\VPP_VDDQ.countZ0Z_10 ));
+    Odrv4 I__821 (
+            .O(N__4696),
+            .I(\VPP_VDDQ.countZ0Z_10 ));
+    InMux I__820 (
+            .O(N__4691),
+            .I(N__4687));
+    InMux I__819 (
+            .O(N__4690),
+            .I(N__4684));
+    LocalMux I__818 (
+            .O(N__4687),
+            .I(N__4681));
+    LocalMux I__817 (
+            .O(N__4684),
+            .I(\VPP_VDDQ.countZ0Z_1 ));
+    Odrv4 I__816 (
+            .O(N__4681),
+            .I(\VPP_VDDQ.countZ0Z_1 ));
+    InMux I__815 (
+            .O(N__4676),
+            .I(N__4672));
+    InMux I__814 (
+            .O(N__4675),
+            .I(N__4669));
+    LocalMux I__813 (
+            .O(N__4672),
+            .I(N__4664));
+    LocalMux I__812 (
+            .O(N__4669),
+            .I(N__4664));
+    Odrv4 I__811 (
+            .O(N__4664),
+            .I(\PCH_PWRGD.countZ0Z_7 ));
+    InMux I__810 (
+            .O(N__4661),
+            .I(N__4658));
+    LocalMux I__809 (
+            .O(N__4658),
+            .I(N__4654));
+    InMux I__808 (
+            .O(N__4657),
+            .I(N__4651));
+    Span4Mux_h I__807 (
+            .O(N__4654),
+            .I(N__4648));
+    LocalMux I__806 (
+            .O(N__4651),
+            .I(\PCH_PWRGD.countZ0Z_10 ));
+    Odrv4 I__805 (
+            .O(N__4648),
+            .I(\PCH_PWRGD.countZ0Z_10 ));
+    CascadeMux I__804 (
+            .O(N__4643),
+            .I(N__4640));
+    InMux I__803 (
+            .O(N__4640),
+            .I(N__4637));
+    LocalMux I__802 (
+            .O(N__4637),
+            .I(N__4633));
+    InMux I__801 (
+            .O(N__4636),
+            .I(N__4630));
+    Span4Mux_h I__800 (
+            .O(N__4633),
+            .I(N__4627));
+    LocalMux I__799 (
+            .O(N__4630),
+            .I(\PCH_PWRGD.countZ0Z_11 ));
+    Odrv4 I__798 (
+            .O(N__4627),
+            .I(\PCH_PWRGD.countZ0Z_11 ));
+    InMux I__797 (
+            .O(N__4622),
+            .I(N__4618));
+    InMux I__796 (
+            .O(N__4621),
+            .I(N__4615));
+    LocalMux I__795 (
+            .O(N__4618),
+            .I(N__4610));
+    LocalMux I__794 (
+            .O(N__4615),
+            .I(N__4610));
+    Odrv4 I__793 (
+            .O(N__4610),
+            .I(\PCH_PWRGD.countZ0Z_0 ));
+    InMux I__792 (
+            .O(N__4607),
+            .I(N__4603));
+    InMux I__791 (
+            .O(N__4606),
+            .I(N__4600));
+    LocalMux I__790 (
+            .O(N__4603),
+            .I(N__4597));
+    LocalMux I__789 (
+            .O(N__4600),
+            .I(\PCH_PWRGD.countZ0Z_3 ));
+    Odrv4 I__788 (
+            .O(N__4597),
+            .I(\PCH_PWRGD.countZ0Z_3 ));
+    InMux I__787 (
+            .O(N__4592),
+            .I(N__4588));
+    InMux I__786 (
+            .O(N__4591),
+            .I(N__4585));
+    LocalMux I__785 (
+            .O(N__4588),
+            .I(N__4582));
+    LocalMux I__784 (
+            .O(N__4585),
+            .I(\PCH_PWRGD.countZ0Z_2 ));
+    Odrv4 I__783 (
+            .O(N__4582),
+            .I(\PCH_PWRGD.countZ0Z_2 ));
+    CascadeMux I__782 (
+            .O(N__4577),
+            .I(N__4574));
+    InMux I__781 (
+            .O(N__4574),
+            .I(N__4570));
+    InMux I__780 (
+            .O(N__4573),
+            .I(N__4567));
+    LocalMux I__779 (
+            .O(N__4570),
+            .I(N__4564));
+    LocalMux I__778 (
+            .O(N__4567),
+            .I(\PCH_PWRGD.countZ0Z_4 ));
+    Odrv12 I__777 (
+            .O(N__4564),
+            .I(\PCH_PWRGD.countZ0Z_4 ));
+    InMux I__776 (
+            .O(N__4559),
+            .I(N__4555));
+    InMux I__775 (
+            .O(N__4558),
+            .I(N__4552));
+    LocalMux I__774 (
+            .O(N__4555),
+            .I(N__4547));
+    LocalMux I__773 (
+            .O(N__4552),
+            .I(N__4547));
+    Odrv4 I__772 (
+            .O(N__4547),
+            .I(\PCH_PWRGD.countZ0Z_1 ));
+    IoInMux I__771 (
+            .O(N__4544),
+            .I(N__4541));
+    LocalMux I__770 (
+            .O(N__4541),
+            .I(N__4538));
+    Span4Mux_s2_h I__769 (
+            .O(N__4538),
+            .I(N__4534));
+    InMux I__768 (
+            .O(N__4537),
+            .I(N__4531));
+    Sp12to4 I__767 (
+            .O(N__4534),
+            .I(N__4528));
+    LocalMux I__766 (
+            .O(N__4531),
+            .I(N__4525));
+    Span12Mux_s11_v I__765 (
+            .O(N__4528),
+            .I(N__4522));
+    Span4Mux_h I__764 (
+            .O(N__4525),
+            .I(N__4519));
+    Odrv12 I__763 (
+            .O(N__4522),
             .I(v1p8a_ok));
-    LocalMux I__291 (
-            .O(N__3143),
+    Odrv4 I__762 (
+            .O(N__4519),
             .I(v1p8a_ok));
-    InMux I__290 (
-            .O(N__3138),
-            .I(N__3135));
-    LocalMux I__289 (
-            .O(N__3135),
-            .I(N__3132));
-    Span4Mux_v I__288 (
-            .O(N__3132),
-            .I(N__3129));
-    Span4Mux_v I__287 (
-            .O(N__3129),
-            .I(N__3126));
-    Odrv4 I__286 (
-            .O(N__3126),
+    InMux I__761 (
+            .O(N__4514),
+            .I(N__4511));
+    LocalMux I__760 (
+            .O(N__4511),
+            .I(N__4508));
+    Span12Mux_s11_v I__759 (
+            .O(N__4508),
+            .I(N__4505));
+    Odrv12 I__758 (
+            .O(N__4505),
             .I(v5a_ok));
-    CascadeMux I__285 (
-            .O(N__3123),
-            .I(N__3119));
-    IoInMux I__284 (
+    IoInMux I__757 (
+            .O(N__4502),
+            .I(N__4499));
+    LocalMux I__756 (
+            .O(N__4499),
+            .I(N__4496));
+    IoSpan4Mux I__755 (
+            .O(N__4496),
+            .I(N__4492));
+    IoInMux I__754 (
+            .O(N__4495),
+            .I(N__4489));
+    IoSpan4Mux I__753 (
+            .O(N__4492),
+            .I(N__4484));
+    LocalMux I__752 (
+            .O(N__4489),
+            .I(N__4484));
+    IoSpan4Mux I__751 (
+            .O(N__4484),
+            .I(N__4481));
+    Span4Mux_s0_h I__750 (
+            .O(N__4481),
+            .I(N__4477));
+    InMux I__749 (
+            .O(N__4480),
+            .I(N__4474));
+    Span4Mux_h I__748 (
+            .O(N__4477),
+            .I(N__4471));
+    LocalMux I__747 (
+            .O(N__4474),
+            .I(N__4468));
+    Sp12to4 I__746 (
+            .O(N__4471),
+            .I(N__4463));
+    Span12Mux_v I__745 (
+            .O(N__4468),
+            .I(N__4463));
+    Odrv12 I__744 (
+            .O(N__4463),
+            .I(v33a_ok));
+    CascadeMux I__743 (
+            .O(N__4460),
+            .I(N__4456));
+    InMux I__742 (
+            .O(N__4459),
+            .I(N__4444));
+    InMux I__741 (
+            .O(N__4456),
+            .I(N__4444));
+    InMux I__740 (
+            .O(N__4455),
+            .I(N__4444));
+    InMux I__739 (
+            .O(N__4454),
+            .I(N__4444));
+    InMux I__738 (
+            .O(N__4453),
+            .I(N__4441));
+    LocalMux I__737 (
+            .O(N__4444),
+            .I(N__4436));
+    LocalMux I__736 (
+            .O(N__4441),
+            .I(N__4436));
+    Span4Mux_v I__735 (
+            .O(N__4436),
+            .I(N__4433));
+    Odrv4 I__734 (
+            .O(N__4433),
+            .I(\RSMRST_PWRGD.N_3_i ));
+    InMux I__733 (
+            .O(N__4430),
+            .I(N__4426));
+    InMux I__732 (
+            .O(N__4429),
+            .I(N__4423));
+    LocalMux I__731 (
+            .O(N__4426),
+            .I(N__4420));
+    LocalMux I__730 (
+            .O(N__4423),
+            .I(\PCH_PWRGD.countZ0Z_8 ));
+    Odrv4 I__729 (
+            .O(N__4420),
+            .I(\PCH_PWRGD.countZ0Z_8 ));
+    InMux I__728 (
+            .O(N__4415),
+            .I(N__4412));
+    LocalMux I__727 (
+            .O(N__4412),
+            .I(N__4408));
+    InMux I__726 (
+            .O(N__4411),
+            .I(N__4405));
+    Span4Mux_h I__725 (
+            .O(N__4408),
+            .I(N__4402));
+    LocalMux I__724 (
+            .O(N__4405),
+            .I(\PCH_PWRGD.countZ0Z_6 ));
+    Odrv4 I__723 (
+            .O(N__4402),
+            .I(\PCH_PWRGD.countZ0Z_6 ));
+    CascadeMux I__722 (
+            .O(N__4397),
+            .I(N__4394));
+    InMux I__721 (
+            .O(N__4394),
+            .I(N__4390));
+    InMux I__720 (
+            .O(N__4393),
+            .I(N__4387));
+    LocalMux I__719 (
+            .O(N__4390),
+            .I(N__4384));
+    LocalMux I__718 (
+            .O(N__4387),
+            .I(\PCH_PWRGD.countZ0Z_9 ));
+    Odrv4 I__717 (
+            .O(N__4384),
+            .I(\PCH_PWRGD.countZ0Z_9 ));
+    InMux I__716 (
+            .O(N__4379),
+            .I(N__4376));
+    LocalMux I__715 (
+            .O(N__4376),
+            .I(N__4372));
+    InMux I__714 (
+            .O(N__4375),
+            .I(N__4369));
+    Span4Mux_v I__713 (
+            .O(N__4372),
+            .I(N__4366));
+    LocalMux I__712 (
+            .O(N__4369),
+            .I(\PCH_PWRGD.countZ0Z_5 ));
+    Odrv4 I__711 (
+            .O(N__4366),
+            .I(\PCH_PWRGD.countZ0Z_5 ));
+    InMux I__710 (
+            .O(N__4361),
+            .I(N__4358));
+    LocalMux I__709 (
+            .O(N__4358),
+            .I(\PCH_PWRGD.un4_count_11 ));
+    CascadeMux I__708 (
+            .O(N__4355),
+            .I(\PCH_PWRGD.un4_count_9_cascade_ ));
+    InMux I__707 (
+            .O(N__4352),
+            .I(N__4349));
+    LocalMux I__706 (
+            .O(N__4349),
+            .I(\PCH_PWRGD.un4_count_10 ));
+    InMux I__705 (
+            .O(N__4346),
+            .I(N__4337));
+    InMux I__704 (
+            .O(N__4345),
+            .I(N__4337));
+    InMux I__703 (
+            .O(N__4344),
+            .I(N__4337));
+    LocalMux I__702 (
+            .O(N__4337),
+            .I(N__4334));
+    Span4Mux_s3_h I__701 (
+            .O(N__4334),
+            .I(N__4331));
+    Odrv4 I__700 (
+            .O(N__4331),
+            .I(\PCH_PWRGD.N_1_i ));
+    InMux I__699 (
+            .O(N__4328),
+            .I(N__4324));
+    InMux I__698 (
+            .O(N__4327),
+            .I(N__4321));
+    LocalMux I__697 (
+            .O(N__4324),
+            .I(N__4318));
+    LocalMux I__696 (
+            .O(N__4321),
+            .I(\VPP_VDDQ.countZ0Z_9 ));
+    Odrv12 I__695 (
+            .O(N__4318),
+            .I(\VPP_VDDQ.countZ0Z_9 ));
+    CascadeMux I__694 (
+            .O(N__4313),
+            .I(COUNTER_un4_counter_7_THRU_CO_cascade_));
+    InMux I__693 (
+            .O(N__4310),
+            .I(N__4307));
+    LocalMux I__692 (
+            .O(N__4307),
+            .I(N__4300));
+    InMux I__691 (
+            .O(N__4306),
+            .I(N__4293));
+    InMux I__690 (
+            .O(N__4305),
+            .I(N__4293));
+    InMux I__689 (
+            .O(N__4304),
+            .I(N__4293));
+    InMux I__688 (
+            .O(N__4303),
+            .I(N__4290));
+    Span4Mux_h I__687 (
+            .O(N__4300),
+            .I(N__4287));
+    LocalMux I__686 (
+            .O(N__4293),
+            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
+    LocalMux I__685 (
+            .O(N__4290),
+            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
+    Odrv4 I__684 (
+            .O(N__4287),
+            .I(\SYS_PWRGD.curr_stateZ0Z_0 ));
+    InMux I__683 (
+            .O(N__4280),
+            .I(N__4277));
+    LocalMux I__682 (
+            .O(N__4277),
+            .I(N__4274));
+    Span4Mux_v I__681 (
+            .O(N__4274),
+            .I(N__4271));
+    Odrv4 I__680 (
+            .O(N__4271),
+            .I(\SYS_PWRGD.G_2_1 ));
+    InMux I__679 (
+            .O(N__4268),
+            .I(N__4263));
+    CascadeMux I__678 (
+            .O(N__4267),
+            .I(N__4260));
+    InMux I__677 (
+            .O(N__4266),
+            .I(N__4255));
+    LocalMux I__676 (
+            .O(N__4263),
+            .I(N__4252));
+    InMux I__675 (
+            .O(N__4260),
+            .I(N__4247));
+    InMux I__674 (
+            .O(N__4259),
+            .I(N__4247));
+    InMux I__673 (
+            .O(N__4258),
+            .I(N__4244));
+    LocalMux I__672 (
+            .O(N__4255),
+            .I(N__4241));
+    Odrv12 I__671 (
+            .O(N__4252),
+            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
+    LocalMux I__670 (
+            .O(N__4247),
+            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
+    LocalMux I__669 (
+            .O(N__4244),
+            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
+    Odrv12 I__668 (
+            .O(N__4241),
+            .I(\PCH_PWRGD.curr_stateZ0Z_0 ));
+    InMux I__667 (
+            .O(N__4232),
+            .I(N__4229));
+    LocalMux I__666 (
+            .O(N__4229),
+            .I(N__4226));
+    Odrv4 I__665 (
+            .O(N__4226),
+            .I(\PCH_PWRGD.G_0_1 ));
+    InMux I__664 (
+            .O(N__4223),
+            .I(N__4220));
+    LocalMux I__663 (
+            .O(N__4220),
+            .I(N__4216));
+    InMux I__662 (
+            .O(N__4219),
+            .I(N__4213));
+    Span4Mux_h I__661 (
+            .O(N__4216),
+            .I(N__4210));
+    LocalMux I__660 (
+            .O(N__4213),
+            .I(\SYS_PWRGD.countZ0Z_5 ));
+    Odrv4 I__659 (
+            .O(N__4210),
+            .I(\SYS_PWRGD.countZ0Z_5 ));
+    InMux I__658 (
+            .O(N__4205),
+            .I(N__4202));
+    LocalMux I__657 (
+            .O(N__4202),
+            .I(N__4198));
+    InMux I__656 (
+            .O(N__4201),
+            .I(N__4195));
+    Span4Mux_v I__655 (
+            .O(N__4198),
+            .I(N__4192));
+    LocalMux I__654 (
+            .O(N__4195),
+            .I(\SYS_PWRGD.countZ0Z_3 ));
+    Odrv4 I__653 (
+            .O(N__4192),
+            .I(\SYS_PWRGD.countZ0Z_3 ));
+    CascadeMux I__652 (
+            .O(N__4187),
+            .I(N__4184));
+    InMux I__651 (
+            .O(N__4184),
+            .I(N__4181));
+    LocalMux I__650 (
+            .O(N__4181),
+            .I(N__4177));
+    InMux I__649 (
+            .O(N__4180),
+            .I(N__4174));
+    Span4Mux_h I__648 (
+            .O(N__4177),
+            .I(N__4171));
+    LocalMux I__647 (
+            .O(N__4174),
+            .I(\SYS_PWRGD.countZ0Z_11 ));
+    Odrv4 I__646 (
+            .O(N__4171),
+            .I(\SYS_PWRGD.countZ0Z_11 ));
+    InMux I__645 (
+            .O(N__4166),
+            .I(N__4163));
+    LocalMux I__644 (
+            .O(N__4163),
+            .I(N__4159));
+    InMux I__643 (
+            .O(N__4162),
+            .I(N__4156));
+    Span4Mux_v I__642 (
+            .O(N__4159),
+            .I(N__4153));
+    LocalMux I__641 (
+            .O(N__4156),
+            .I(\SYS_PWRGD.countZ0Z_2 ));
+    Odrv4 I__640 (
+            .O(N__4153),
+            .I(\SYS_PWRGD.countZ0Z_2 ));
+    InMux I__639 (
+            .O(N__4148),
+            .I(N__4145));
+    LocalMux I__638 (
+            .O(N__4145),
+            .I(N__4141));
+    InMux I__637 (
+            .O(N__4144),
+            .I(N__4138));
+    Span4Mux_h I__636 (
+            .O(N__4141),
+            .I(N__4135));
+    LocalMux I__635 (
+            .O(N__4138),
+            .I(\SYS_PWRGD.countZ0Z_14 ));
+    Odrv4 I__634 (
+            .O(N__4135),
+            .I(\SYS_PWRGD.countZ0Z_14 ));
+    InMux I__633 (
+            .O(N__4130),
+            .I(N__4127));
+    LocalMux I__632 (
+            .O(N__4127),
+            .I(N__4123));
+    InMux I__631 (
+            .O(N__4126),
+            .I(N__4120));
+    Span4Mux_v I__630 (
+            .O(N__4123),
+            .I(N__4117));
+    LocalMux I__629 (
+            .O(N__4120),
+            .I(\SYS_PWRGD.countZ0Z_13 ));
+    Odrv4 I__628 (
+            .O(N__4117),
+            .I(\SYS_PWRGD.countZ0Z_13 ));
+    CascadeMux I__627 (
+            .O(N__4112),
+            .I(N__4109));
+    InMux I__626 (
+            .O(N__4109),
+            .I(N__4105));
+    InMux I__625 (
+            .O(N__4108),
+            .I(N__4102));
+    LocalMux I__624 (
+            .O(N__4105),
+            .I(N__4099));
+    LocalMux I__623 (
+            .O(N__4102),
+            .I(\SYS_PWRGD.countZ0Z_15 ));
+    Odrv4 I__622 (
+            .O(N__4099),
+            .I(\SYS_PWRGD.countZ0Z_15 ));
+    InMux I__621 (
+            .O(N__4094),
+            .I(N__4091));
+    LocalMux I__620 (
+            .O(N__4091),
+            .I(N__4087));
+    InMux I__619 (
+            .O(N__4090),
+            .I(N__4084));
+    Span4Mux_v I__618 (
+            .O(N__4087),
+            .I(N__4081));
+    LocalMux I__617 (
+            .O(N__4084),
+            .I(\SYS_PWRGD.countZ0Z_12 ));
+    Odrv4 I__616 (
+            .O(N__4081),
+            .I(\SYS_PWRGD.countZ0Z_12 ));
+    InMux I__615 (
+            .O(N__4076),
+            .I(N__4073));
+    LocalMux I__614 (
+            .O(N__4073),
+            .I(\SYS_PWRGD.un4_count_10 ));
+    CascadeMux I__613 (
+            .O(N__4070),
+            .I(\SYS_PWRGD.un4_count_11_cascade_ ));
+    InMux I__612 (
+            .O(N__4067),
+            .I(N__4058));
+    InMux I__611 (
+            .O(N__4066),
+            .I(N__4058));
+    InMux I__610 (
+            .O(N__4065),
+            .I(N__4058));
+    LocalMux I__609 (
+            .O(N__4058),
+            .I(N__4055));
+    Span4Mux_s3_h I__608 (
+            .O(N__4055),
+            .I(N__4052));
+    Odrv4 I__607 (
+            .O(N__4052),
+            .I(\SYS_PWRGD.N_1_i ));
+    CascadeMux I__606 (
+            .O(N__4049),
+            .I(N__4045));
+    InMux I__605 (
+            .O(N__4048),
+            .I(N__4042));
+    InMux I__604 (
+            .O(N__4045),
+            .I(N__4039));
+    LocalMux I__603 (
+            .O(N__4042),
+            .I(N__4036));
+    LocalMux I__602 (
+            .O(N__4039),
+            .I(N__4033));
+    Span4Mux_s3_h I__601 (
+            .O(N__4036),
+            .I(N__4028));
+    Span4Mux_s3_h I__600 (
+            .O(N__4033),
+            .I(N__4028));
+    Odrv4 I__599 (
+            .O(N__4028),
+            .I(\VPP_VDDQ.un1_curr_state13_0 ));
+    IoInMux I__598 (
+            .O(N__4025),
+            .I(N__4022));
+    LocalMux I__597 (
+            .O(N__4022),
+            .I(N__4019));
+    IoSpan4Mux I__596 (
+            .O(N__4019),
+            .I(N__4016));
+    Span4Mux_s1_h I__595 (
+            .O(N__4016),
+            .I(N__4013));
+    Odrv4 I__594 (
+            .O(N__4013),
+            .I(v33a_enn));
+    InMux I__593 (
+            .O(N__4010),
+            .I(N__4006));
+    InMux I__592 (
+            .O(N__4009),
+            .I(N__4003));
+    LocalMux I__591 (
+            .O(N__4006),
+            .I(N__4000));
+    LocalMux I__590 (
+            .O(N__4003),
+            .I(\VPP_VDDQ.countZ0Z_5 ));
+    Odrv4 I__589 (
+            .O(N__4000),
+            .I(\VPP_VDDQ.countZ0Z_5 ));
+    InMux I__588 (
+            .O(N__3995),
+            .I(N__3991));
+    InMux I__587 (
+            .O(N__3994),
+            .I(N__3988));
+    LocalMux I__586 (
+            .O(N__3991),
+            .I(N__3985));
+    LocalMux I__585 (
+            .O(N__3988),
+            .I(\VPP_VDDQ.countZ0Z_4 ));
+    Odrv4 I__584 (
+            .O(N__3985),
+            .I(\VPP_VDDQ.countZ0Z_4 ));
+    CascadeMux I__583 (
+            .O(N__3980),
+            .I(N__3977));
+    InMux I__582 (
+            .O(N__3977),
+            .I(N__3973));
+    InMux I__581 (
+            .O(N__3976),
+            .I(N__3970));
+    LocalMux I__580 (
+            .O(N__3973),
+            .I(N__3967));
+    LocalMux I__579 (
+            .O(N__3970),
+            .I(\VPP_VDDQ.countZ0Z_7 ));
+    Odrv12 I__578 (
+            .O(N__3967),
+            .I(\VPP_VDDQ.countZ0Z_7 ));
+    InMux I__577 (
+            .O(N__3962),
+            .I(N__3958));
+    InMux I__576 (
+            .O(N__3961),
+            .I(N__3955));
+    LocalMux I__575 (
+            .O(N__3958),
+            .I(N__3952));
+    LocalMux I__574 (
+            .O(N__3955),
+            .I(\VPP_VDDQ.countZ0Z_3 ));
+    Odrv4 I__573 (
+            .O(N__3952),
+            .I(\VPP_VDDQ.countZ0Z_3 ));
+    SRMux I__572 (
+            .O(N__3947),
+            .I(N__3944));
+    LocalMux I__571 (
+            .O(N__3944),
+            .I(N__3940));
+    SRMux I__570 (
+            .O(N__3943),
+            .I(N__3937));
+    Span4Mux_s2_v I__569 (
+            .O(N__3940),
+            .I(N__3931));
+    LocalMux I__568 (
+            .O(N__3937),
+            .I(N__3931));
+    SRMux I__567 (
+            .O(N__3936),
+            .I(N__3928));
+    Span4Mux_h I__566 (
+            .O(N__3931),
+            .I(N__3923));
+    LocalMux I__565 (
+            .O(N__3928),
+            .I(N__3923));
+    Odrv4 I__564 (
+            .O(N__3923),
+            .I(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1 ));
+    InMux I__563 (
+            .O(N__3920),
+            .I(bfn_4_10_0_));
+    CascadeMux I__562 (
+            .O(N__3917),
+            .I(N__3913));
+    InMux I__561 (
+            .O(N__3916),
+            .I(N__3910));
+    InMux I__560 (
+            .O(N__3913),
+            .I(N__3907));
+    LocalMux I__559 (
+            .O(N__3910),
+            .I(\RSMRST_PWRGD.countZ0Z_9 ));
+    LocalMux I__558 (
+            .O(N__3907),
+            .I(\RSMRST_PWRGD.countZ0Z_9 ));
+    InMux I__557 (
+            .O(N__3902),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_8 ));
+    InMux I__556 (
+            .O(N__3899),
+            .I(N__3895));
+    InMux I__555 (
+            .O(N__3898),
+            .I(N__3892));
+    LocalMux I__554 (
+            .O(N__3895),
+            .I(\RSMRST_PWRGD.countZ0Z_10 ));
+    LocalMux I__553 (
+            .O(N__3892),
+            .I(\RSMRST_PWRGD.countZ0Z_10 ));
+    InMux I__552 (
+            .O(N__3887),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_9 ));
+    InMux I__551 (
+            .O(N__3884),
+            .I(N__3880));
+    InMux I__550 (
+            .O(N__3883),
+            .I(N__3877));
+    LocalMux I__549 (
+            .O(N__3880),
+            .I(\RSMRST_PWRGD.countZ0Z_11 ));
+    LocalMux I__548 (
+            .O(N__3877),
+            .I(\RSMRST_PWRGD.countZ0Z_11 ));
+    InMux I__547 (
+            .O(N__3872),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_10 ));
+    CascadeMux I__546 (
+            .O(N__3869),
+            .I(N__3865));
+    InMux I__545 (
+            .O(N__3868),
+            .I(N__3862));
+    InMux I__544 (
+            .O(N__3865),
+            .I(N__3859));
+    LocalMux I__543 (
+            .O(N__3862),
+            .I(\RSMRST_PWRGD.countZ0Z_12 ));
+    LocalMux I__542 (
+            .O(N__3859),
+            .I(\RSMRST_PWRGD.countZ0Z_12 ));
+    InMux I__541 (
+            .O(N__3854),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_11 ));
+    InMux I__540 (
+            .O(N__3851),
+            .I(N__3847));
+    InMux I__539 (
+            .O(N__3850),
+            .I(N__3844));
+    LocalMux I__538 (
+            .O(N__3847),
+            .I(\RSMRST_PWRGD.countZ0Z_13 ));
+    LocalMux I__537 (
+            .O(N__3844),
+            .I(\RSMRST_PWRGD.countZ0Z_13 ));
+    InMux I__536 (
+            .O(N__3839),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_12 ));
+    CascadeMux I__535 (
+            .O(N__3836),
+            .I(N__3832));
+    InMux I__534 (
+            .O(N__3835),
+            .I(N__3829));
+    InMux I__533 (
+            .O(N__3832),
+            .I(N__3826));
+    LocalMux I__532 (
+            .O(N__3829),
+            .I(\RSMRST_PWRGD.countZ0Z_14 ));
+    LocalMux I__531 (
+            .O(N__3826),
+            .I(\RSMRST_PWRGD.countZ0Z_14 ));
+    InMux I__530 (
+            .O(N__3821),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_13 ));
+    InMux I__529 (
+            .O(N__3818),
+            .I(N__3813));
+    IoInMux I__528 (
+            .O(N__3817),
+            .I(N__3810));
+    InMux I__527 (
+            .O(N__3816),
+            .I(N__3806));
+    LocalMux I__526 (
+            .O(N__3813),
+            .I(N__3803));
+    LocalMux I__525 (
+            .O(N__3810),
+            .I(N__3799));
+    InMux I__524 (
+            .O(N__3809),
+            .I(N__3796));
+    LocalMux I__523 (
+            .O(N__3806),
+            .I(N__3793));
+    Span4Mux_v I__522 (
+            .O(N__3803),
+            .I(N__3790));
+    InMux I__521 (
+            .O(N__3802),
+            .I(N__3787));
+    Span12Mux_s0_h I__520 (
+            .O(N__3799),
+            .I(N__3782));
+    LocalMux I__519 (
+            .O(N__3796),
+            .I(N__3782));
+    Odrv12 I__518 (
+            .O(N__3793),
+            .I(CONSTANT_ONE_NET));
+    Odrv4 I__517 (
+            .O(N__3790),
+            .I(CONSTANT_ONE_NET));
+    LocalMux I__516 (
+            .O(N__3787),
+            .I(CONSTANT_ONE_NET));
+    Odrv12 I__515 (
+            .O(N__3782),
+            .I(CONSTANT_ONE_NET));
+    InMux I__514 (
+            .O(N__3773),
+            .I(bfn_2_16_0_));
+    InMux I__513 (
+            .O(N__3770),
+            .I(N__3767));
+    LocalMux I__512 (
+            .O(N__3767),
+            .I(N__3763));
+    InMux I__511 (
+            .O(N__3766),
+            .I(N__3760));
+    Span4Mux_s2_h I__510 (
+            .O(N__3763),
+            .I(N__3757));
+    LocalMux I__509 (
+            .O(N__3760),
+            .I(\RSMRST_PWRGD.countZ0Z_15 ));
+    Odrv4 I__508 (
+            .O(N__3757),
+            .I(\RSMRST_PWRGD.countZ0Z_15 ));
+    CEMux I__507 (
+            .O(N__3752),
+            .I(N__3749));
+    LocalMux I__506 (
+            .O(N__3749),
+            .I(\RSMRST_PWRGD.G_0_0_1 ));
+    SRMux I__505 (
+            .O(N__3746),
+            .I(N__3742));
+    SRMux I__504 (
+            .O(N__3745),
+            .I(N__3738));
+    LocalMux I__503 (
+            .O(N__3742),
+            .I(N__3735));
+    SRMux I__502 (
+            .O(N__3741),
+            .I(N__3732));
+    LocalMux I__501 (
+            .O(N__3738),
+            .I(N__3729));
+    Span4Mux_s2_h I__500 (
+            .O(N__3735),
+            .I(N__3726));
+    LocalMux I__499 (
+            .O(N__3732),
+            .I(N__3723));
+    Span4Mux_s2_h I__498 (
+            .O(N__3729),
+            .I(N__3720));
+    Odrv4 I__497 (
+            .O(N__3726),
+            .I(\PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1 ));
+    Odrv4 I__496 (
+            .O(N__3723),
+            .I(\PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1 ));
+    Odrv4 I__495 (
+            .O(N__3720),
+            .I(\PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1 ));
+    CascadeMux I__494 (
+            .O(N__3713),
+            .I(N__3709));
+    InMux I__493 (
+            .O(N__3712),
+            .I(N__3706));
+    InMux I__492 (
+            .O(N__3709),
+            .I(N__3703));
+    LocalMux I__491 (
+            .O(N__3706),
+            .I(\RSMRST_PWRGD.un1_curr_state10_0 ));
+    LocalMux I__490 (
+            .O(N__3703),
+            .I(\RSMRST_PWRGD.un1_curr_state10_0 ));
+    InMux I__489 (
+            .O(N__3698),
+            .I(N__3694));
+    InMux I__488 (
+            .O(N__3697),
+            .I(N__3691));
+    LocalMux I__487 (
+            .O(N__3694),
+            .I(\RSMRST_PWRGD.countZ0Z_0 ));
+    LocalMux I__486 (
+            .O(N__3691),
+            .I(\RSMRST_PWRGD.countZ0Z_0 ));
+    InMux I__485 (
+            .O(N__3686),
+            .I(N__3682));
+    InMux I__484 (
+            .O(N__3685),
+            .I(N__3679));
+    LocalMux I__483 (
+            .O(N__3682),
+            .I(\RSMRST_PWRGD.countZ0Z_1 ));
+    LocalMux I__482 (
+            .O(N__3679),
+            .I(\RSMRST_PWRGD.countZ0Z_1 ));
+    InMux I__481 (
+            .O(N__3674),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_0 ));
+    InMux I__480 (
+            .O(N__3671),
+            .I(N__3667));
+    InMux I__479 (
+            .O(N__3670),
+            .I(N__3664));
+    LocalMux I__478 (
+            .O(N__3667),
+            .I(\RSMRST_PWRGD.countZ0Z_2 ));
+    LocalMux I__477 (
+            .O(N__3664),
+            .I(\RSMRST_PWRGD.countZ0Z_2 ));
+    InMux I__476 (
+            .O(N__3659),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_1 ));
+    InMux I__475 (
+            .O(N__3656),
+            .I(N__3652));
+    InMux I__474 (
+            .O(N__3655),
+            .I(N__3649));
+    LocalMux I__473 (
+            .O(N__3652),
+            .I(\RSMRST_PWRGD.countZ0Z_3 ));
+    LocalMux I__472 (
+            .O(N__3649),
+            .I(\RSMRST_PWRGD.countZ0Z_3 ));
+    InMux I__471 (
+            .O(N__3644),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_2 ));
+    InMux I__470 (
+            .O(N__3641),
+            .I(N__3637));
+    InMux I__469 (
+            .O(N__3640),
+            .I(N__3634));
+    LocalMux I__468 (
+            .O(N__3637),
+            .I(\RSMRST_PWRGD.countZ0Z_4 ));
+    LocalMux I__467 (
+            .O(N__3634),
+            .I(\RSMRST_PWRGD.countZ0Z_4 ));
+    InMux I__466 (
+            .O(N__3629),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_3 ));
+    InMux I__465 (
+            .O(N__3626),
+            .I(N__3622));
+    InMux I__464 (
+            .O(N__3625),
+            .I(N__3619));
+    LocalMux I__463 (
+            .O(N__3622),
+            .I(\RSMRST_PWRGD.countZ0Z_5 ));
+    LocalMux I__462 (
+            .O(N__3619),
+            .I(\RSMRST_PWRGD.countZ0Z_5 ));
+    InMux I__461 (
+            .O(N__3614),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_4 ));
+    InMux I__460 (
+            .O(N__3611),
+            .I(N__3607));
+    InMux I__459 (
+            .O(N__3610),
+            .I(N__3604));
+    LocalMux I__458 (
+            .O(N__3607),
+            .I(\RSMRST_PWRGD.countZ0Z_6 ));
+    LocalMux I__457 (
+            .O(N__3604),
+            .I(\RSMRST_PWRGD.countZ0Z_6 ));
+    InMux I__456 (
+            .O(N__3599),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_5 ));
+    CascadeMux I__455 (
+            .O(N__3596),
+            .I(N__3592));
+    InMux I__454 (
+            .O(N__3595),
+            .I(N__3589));
+    InMux I__453 (
+            .O(N__3592),
+            .I(N__3586));
+    LocalMux I__452 (
+            .O(N__3589),
+            .I(\RSMRST_PWRGD.countZ0Z_7 ));
+    LocalMux I__451 (
+            .O(N__3586),
+            .I(\RSMRST_PWRGD.countZ0Z_7 ));
+    InMux I__450 (
+            .O(N__3581),
+            .I(\RSMRST_PWRGD.un1_count_1_cry_6 ));
+    InMux I__449 (
+            .O(N__3578),
+            .I(N__3574));
+    InMux I__448 (
+            .O(N__3577),
+            .I(N__3571));
+    LocalMux I__447 (
+            .O(N__3574),
+            .I(\RSMRST_PWRGD.countZ0Z_8 ));
+    LocalMux I__446 (
+            .O(N__3571),
+            .I(\RSMRST_PWRGD.countZ0Z_8 ));
+    InMux I__445 (
+            .O(N__3566),
+            .I(bfn_2_15_0_));
+    InMux I__444 (
+            .O(N__3563),
+            .I(bfn_2_12_0_));
+    InMux I__443 (
+            .O(N__3560),
+            .I(\PCH_PWRGD.un1_count_1_cry_8 ));
+    InMux I__442 (
+            .O(N__3557),
+            .I(\PCH_PWRGD.un1_count_1_cry_9 ));
+    InMux I__441 (
+            .O(N__3554),
+            .I(\PCH_PWRGD.un1_count_1_cry_10 ));
+    InMux I__440 (
+            .O(N__3551),
+            .I(\PCH_PWRGD.un1_count_1_cry_11 ));
+    InMux I__439 (
+            .O(N__3548),
+            .I(\PCH_PWRGD.un1_count_1_cry_12 ));
+    InMux I__438 (
+            .O(N__3545),
+            .I(\PCH_PWRGD.un1_count_1_cry_13 ));
+    InMux I__437 (
+            .O(N__3542),
+            .I(bfn_2_13_0_));
+    CEMux I__436 (
+            .O(N__3539),
+            .I(N__3536));
+    LocalMux I__435 (
+            .O(N__3536),
+            .I(N__3533));
+    Odrv4 I__434 (
+            .O(N__3533),
+            .I(\PCH_PWRGD.G_0_0_2 ));
+    IoInMux I__433 (
+            .O(N__3530),
+            .I(N__3526));
+    IoInMux I__432 (
+            .O(N__3529),
+            .I(N__3523));
+    LocalMux I__431 (
+            .O(N__3526),
+            .I(N__3520));
+    LocalMux I__430 (
+            .O(N__3523),
+            .I(N__3517));
+    Span4Mux_s1_v I__429 (
+            .O(N__3520),
+            .I(N__3512));
+    IoSpan4Mux I__428 (
+            .O(N__3517),
+            .I(N__3508));
+    IoInMux I__427 (
+            .O(N__3516),
+            .I(N__3505));
+    IoInMux I__426 (
+            .O(N__3515),
+            .I(N__3502));
+    Span4Mux_h I__425 (
+            .O(N__3512),
+            .I(N__3499));
+    IoInMux I__424 (
+            .O(N__3511),
+            .I(N__3496));
+    IoSpan4Mux I__423 (
+            .O(N__3508),
+            .I(N__3489));
+    LocalMux I__422 (
+            .O(N__3505),
+            .I(N__3489));
+    LocalMux I__421 (
+            .O(N__3502),
+            .I(N__3489));
+    Span4Mux_h I__420 (
+            .O(N__3499),
+            .I(N__3483));
+    LocalMux I__419 (
+            .O(N__3496),
+            .I(N__3480));
+    IoSpan4Mux I__418 (
+            .O(N__3489),
+            .I(N__3477));
+    InMux I__417 (
+            .O(N__3488),
+            .I(N__3474));
+    CascadeMux I__416 (
+            .O(N__3487),
+            .I(N__3470));
+    CascadeMux I__415 (
+            .O(N__3486),
+            .I(N__3467));
+    Span4Mux_v I__414 (
+            .O(N__3483),
+            .I(N__3461));
+    Span4Mux_s1_h I__413 (
+            .O(N__3480),
+            .I(N__3461));
+    Span4Mux_s1_h I__412 (
+            .O(N__3477),
+            .I(N__3456));
+    LocalMux I__411 (
+            .O(N__3474),
+            .I(N__3456));
+    InMux I__410 (
+            .O(N__3473),
+            .I(N__3449));
+    InMux I__409 (
+            .O(N__3470),
+            .I(N__3449));
+    InMux I__408 (
+            .O(N__3467),
+            .I(N__3449));
+    InMux I__407 (
+            .O(N__3466),
+            .I(N__3446));
+    Odrv4 I__406 (
+            .O(N__3461),
+            .I(suswarn_n));
+    Odrv4 I__405 (
+            .O(N__3456),
+            .I(suswarn_n));
+    LocalMux I__404 (
+            .O(N__3449),
+            .I(suswarn_n));
+    LocalMux I__403 (
+            .O(N__3446),
+            .I(suswarn_n));
+    InMux I__402 (
+            .O(N__3437),
+            .I(N__3434));
+    LocalMux I__401 (
+            .O(N__3434),
+            .I(N__3427));
+    InMux I__400 (
+            .O(N__3433),
+            .I(N__3420));
+    InMux I__399 (
+            .O(N__3432),
+            .I(N__3420));
+    InMux I__398 (
+            .O(N__3431),
+            .I(N__3420));
+    InMux I__397 (
+            .O(N__3430),
+            .I(N__3417));
+    Odrv12 I__396 (
+            .O(N__3427),
+            .I(\PCH_PWRGD.curr_stateZ0Z_1 ));
+    LocalMux I__395 (
+            .O(N__3420),
+            .I(\PCH_PWRGD.curr_stateZ0Z_1 ));
+    LocalMux I__394 (
+            .O(N__3417),
+            .I(\PCH_PWRGD.curr_stateZ0Z_1 ));
+    CascadeMux I__393 (
+            .O(N__3410),
+            .I(N__3406));
+    InMux I__392 (
+            .O(N__3409),
+            .I(N__3403));
+    InMux I__391 (
+            .O(N__3406),
+            .I(N__3400));
+    LocalMux I__390 (
+            .O(N__3403),
+            .I(N__3397));
+    LocalMux I__389 (
+            .O(N__3400),
+            .I(N__3394));
+    Odrv12 I__388 (
+            .O(N__3397),
+            .I(\PCH_PWRGD.un1_curr_state10_0 ));
+    Odrv4 I__387 (
+            .O(N__3394),
+            .I(\PCH_PWRGD.un1_curr_state10_0 ));
+    InMux I__386 (
+            .O(N__3389),
+            .I(\PCH_PWRGD.un1_count_1_cry_0 ));
+    InMux I__385 (
+            .O(N__3386),
+            .I(\PCH_PWRGD.un1_count_1_cry_1 ));
+    InMux I__384 (
+            .O(N__3383),
+            .I(\PCH_PWRGD.un1_count_1_cry_2 ));
+    InMux I__383 (
+            .O(N__3380),
+            .I(\PCH_PWRGD.un1_count_1_cry_3 ));
+    InMux I__382 (
+            .O(N__3377),
+            .I(\PCH_PWRGD.un1_count_1_cry_4 ));
+    InMux I__381 (
+            .O(N__3374),
+            .I(\PCH_PWRGD.un1_count_1_cry_5 ));
+    InMux I__380 (
+            .O(N__3371),
+            .I(\PCH_PWRGD.un1_count_1_cry_6 ));
+    CascadeMux I__379 (
+            .O(N__3368),
+            .I(N__3364));
+    InMux I__378 (
+            .O(N__3367),
+            .I(N__3352));
+    InMux I__377 (
+            .O(N__3364),
+            .I(N__3352));
+    InMux I__376 (
+            .O(N__3363),
+            .I(N__3352));
+    InMux I__375 (
+            .O(N__3362),
+            .I(N__3352));
+    InMux I__374 (
+            .O(N__3361),
+            .I(N__3349));
+    LocalMux I__373 (
+            .O(N__3352),
+            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
+    LocalMux I__372 (
+            .O(N__3349),
+            .I(\SYS_PWRGD.curr_stateZ0Z_1 ));
+    SRMux I__371 (
+            .O(N__3344),
+            .I(N__3340));
+    SRMux I__370 (
+            .O(N__3343),
+            .I(N__3337));
+    LocalMux I__369 (
+            .O(N__3340),
+            .I(N__3333));
+    LocalMux I__368 (
+            .O(N__3337),
+            .I(N__3330));
+    SRMux I__367 (
+            .O(N__3336),
+            .I(N__3327));
+    Span4Mux_v I__366 (
+            .O(N__3333),
+            .I(N__3320));
+    Span4Mux_s1_h I__365 (
+            .O(N__3330),
+            .I(N__3320));
+    LocalMux I__364 (
+            .O(N__3327),
+            .I(N__3320));
+    Odrv4 I__363 (
+            .O(N__3320),
+            .I(un4_counter_7_c_RNIJ9569));
+    CascadeMux I__362 (
+            .O(N__3317),
+            .I(un4_counter_7_c_RNIJ9569_cascade_));
+    CEMux I__361 (
+            .O(N__3314),
+            .I(N__3311));
+    LocalMux I__360 (
+            .O(N__3311),
+            .I(N__3308));
+    Span4Mux_v I__359 (
+            .O(N__3308),
+            .I(N__3305));
+    Odrv4 I__358 (
+            .O(N__3305),
+            .I(\VPP_VDDQ.G_0_0_0 ));
+    CascadeMux I__357 (
+            .O(N__3302),
+            .I(\PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1_cascade_ ));
+    CascadeMux I__356 (
+            .O(N__3299),
+            .I(N__3294));
+    InMux I__355 (
+            .O(N__3298),
+            .I(N__3289));
+    InMux I__354 (
+            .O(N__3297),
+            .I(N__3289));
+    InMux I__353 (
+            .O(N__3294),
+            .I(N__3286));
+    LocalMux I__352 (
+            .O(N__3289),
+            .I(\RSMRST_PWRGD.N_1_i ));
+    LocalMux I__351 (
+            .O(N__3286),
+            .I(\RSMRST_PWRGD.N_1_i ));
+    CascadeMux I__350 (
+            .O(N__3281),
+            .I(N__3277));
+    InMux I__349 (
+            .O(N__3280),
+            .I(N__3265));
+    InMux I__348 (
+            .O(N__3277),
+            .I(N__3265));
+    InMux I__347 (
+            .O(N__3276),
+            .I(N__3265));
+    InMux I__346 (
+            .O(N__3275),
+            .I(N__3265));
+    InMux I__345 (
+            .O(N__3274),
+            .I(N__3262));
+    LocalMux I__344 (
+            .O(N__3265),
+            .I(\RSMRST_PWRGD.curr_stateZ0Z_1 ));
+    LocalMux I__343 (
+            .O(N__3262),
+            .I(\RSMRST_PWRGD.curr_stateZ0Z_1 ));
+    InMux I__342 (
+            .O(N__3257),
+            .I(N__3248));
+    InMux I__341 (
+            .O(N__3256),
+            .I(N__3248));
+    InMux I__340 (
+            .O(N__3255),
+            .I(N__3241));
+    InMux I__339 (
+            .O(N__3254),
+            .I(N__3241));
+    InMux I__338 (
+            .O(N__3253),
+            .I(N__3241));
+    LocalMux I__337 (
+            .O(N__3248),
+            .I(N__3238));
+    LocalMux I__336 (
+            .O(N__3241),
+            .I(\RSMRST_PWRGD.curr_stateZ0Z_0 ));
+    Odrv4 I__335 (
+            .O(N__3238),
+            .I(\RSMRST_PWRGD.curr_stateZ0Z_0 ));
+    IoInMux I__334 (
+            .O(N__3233),
+            .I(N__3230));
+    LocalMux I__333 (
+            .O(N__3230),
+            .I(N__3227));
+    Span4Mux_s1_v I__332 (
+            .O(N__3227),
+            .I(N__3224));
+    Odrv4 I__331 (
+            .O(N__3224),
+            .I(rsmrstn));
+    IoInMux I__330 (
+            .O(N__3221),
+            .I(N__3218));
+    LocalMux I__329 (
+            .O(N__3218),
+            .I(vddq_en));
+    IoInMux I__328 (
+            .O(N__3215),
+            .I(N__3212));
+    LocalMux I__327 (
+            .O(N__3212),
+            .I(N__3209));
+    Span4Mux_s1_h I__326 (
+            .O(N__3209),
+            .I(N__3206));
+    Span4Mux_v I__325 (
+            .O(N__3206),
+            .I(N__3203));
+    Odrv4 I__324 (
+            .O(N__3203),
+            .I(pch_pwrok));
+    InMux I__323 (
+            .O(N__3200),
+            .I(N__3196));
+    CascadeMux I__322 (
+            .O(N__3199),
+            .I(N__3193));
+    LocalMux I__321 (
+            .O(N__3196),
+            .I(N__3190));
+    InMux I__320 (
+            .O(N__3193),
+            .I(N__3187));
+    Odrv4 I__319 (
+            .O(N__3190),
+            .I(\SYS_PWRGD.un1_curr_state10_0 ));
+    LocalMux I__318 (
+            .O(N__3187),
+            .I(\SYS_PWRGD.un1_curr_state10_0 ));
+    SRMux I__317 (
+            .O(N__3182),
+            .I(N__3178));
+    SRMux I__316 (
+            .O(N__3181),
+            .I(N__3175));
+    LocalMux I__315 (
+            .O(N__3178),
+            .I(N__3172));
+    LocalMux I__314 (
+            .O(N__3175),
+            .I(N__3168));
+    Span4Mux_v I__313 (
+            .O(N__3172),
+            .I(N__3165));
+    SRMux I__312 (
+            .O(N__3171),
+            .I(N__3162));
+    Span4Mux_v I__311 (
+            .O(N__3168),
+            .I(N__3155));
+    Span4Mux_s0_h I__310 (
+            .O(N__3165),
+            .I(N__3155));
+    LocalMux I__309 (
+            .O(N__3162),
+            .I(N__3155));
+    Sp12to4 I__308 (
+            .O(N__3155),
+            .I(N__3152));
+    Odrv12 I__307 (
+            .O(N__3152),
+            .I(\SYS_PWRGD.curr_state_RNIFRIJ6Z0Z_1 ));
+    CascadeMux I__306 (
+            .O(N__3149),
+            .I(\SYS_PWRGD.curr_state_RNIFRIJ6Z0Z_1_cascade_ ));
+    CEMux I__305 (
+            .O(N__3146),
+            .I(N__3143));
+    LocalMux I__304 (
+            .O(N__3143),
+            .I(\SYS_PWRGD.G_0_0_3 ));
+    CascadeMux I__303 (
+            .O(N__3140),
+            .I(\RSMRST_PWRGD.un4_count_9_cascade_ ));
+    InMux I__302 (
+            .O(N__3137),
+            .I(N__3134));
+    LocalMux I__301 (
+            .O(N__3134),
+            .I(\RSMRST_PWRGD.un4_count_8 ));
+    InMux I__300 (
+            .O(N__3131),
+            .I(N__3128));
+    LocalMux I__299 (
+            .O(N__3128),
+            .I(\RSMRST_PWRGD.un4_count_10 ));
+    InMux I__298 (
+            .O(N__3125),
+            .I(N__3122));
+    LocalMux I__297 (
             .O(N__3122),
-            .I(N__3115));
-    InMux I__283 (
+            .I(\RSMRST_PWRGD.un4_count_11 ));
+    InMux I__296 (
             .O(N__3119),
-            .I(N__3112));
-    IoInMux I__282 (
-            .O(N__3118),
-            .I(N__3109));
-    LocalMux I__281 (
-            .O(N__3115),
-            .I(N__3106));
-    LocalMux I__280 (
-            .O(N__3112),
-            .I(N__3103));
-    LocalMux I__279 (
-            .O(N__3109),
-            .I(N__3100));
-    Span4Mux_s3_h I__278 (
-            .O(N__3106),
-            .I(N__3097));
-    Span4Mux_h I__277 (
-            .O(N__3103),
-            .I(N__3094));
-    IoSpan4Mux I__276 (
-            .O(N__3100),
-            .I(N__3091));
-    Sp12to4 I__275 (
-            .O(N__3097),
-            .I(N__3088));
-    Span4Mux_v I__274 (
-            .O(N__3094),
-            .I(N__3085));
-    IoSpan4Mux I__273 (
-            .O(N__3091),
-            .I(N__3082));
-    Span12Mux_v I__272 (
-            .O(N__3088),
-            .I(N__3077));
-    Sp12to4 I__271 (
-            .O(N__3085),
-            .I(N__3077));
-    IoSpan4Mux I__270 (
-            .O(N__3082),
-            .I(N__3074));
-    Odrv12 I__269 (
+            .I(N__3116));
+    LocalMux I__295 (
+            .O(N__3116),
+            .I(\RSMRST_PWRGD.G_1_1 ));
+    CascadeMux I__294 (
+            .O(N__3113),
+            .I(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_ ));
+    InMux I__293 (
+            .O(N__3110),
+            .I(bfn_1_12_0_));
+    InMux I__292 (
+            .O(N__3107),
+            .I(\VPP_VDDQ.un1_count_1_cry_8 ));
+    InMux I__291 (
+            .O(N__3104),
+            .I(\VPP_VDDQ.un1_count_1_cry_9 ));
+    InMux I__290 (
+            .O(N__3101),
+            .I(\VPP_VDDQ.un1_count_1_cry_10 ));
+    InMux I__289 (
+            .O(N__3098),
+            .I(\VPP_VDDQ.un1_count_1_cry_11 ));
+    InMux I__288 (
+            .O(N__3095),
+            .I(\VPP_VDDQ.un1_count_1_cry_12 ));
+    InMux I__287 (
+            .O(N__3092),
+            .I(\VPP_VDDQ.un1_count_1_cry_13 ));
+    InMux I__286 (
+            .O(N__3089),
+            .I(bfn_1_13_0_));
+    InMux I__285 (
+            .O(N__3086),
+            .I(bfn_1_10_0_));
+    InMux I__284 (
+            .O(N__3083),
+            .I(\VPP_VDDQ.un1_count_1_cry_0 ));
+    InMux I__283 (
+            .O(N__3080),
+            .I(\VPP_VDDQ.un1_count_1_cry_1 ));
+    InMux I__282 (
             .O(N__3077),
-            .I(v33a_ok));
-    Odrv4 I__268 (
+            .I(\VPP_VDDQ.un1_count_1_cry_2 ));
+    InMux I__281 (
             .O(N__3074),
-            .I(v33a_ok));
+            .I(\VPP_VDDQ.un1_count_1_cry_3 ));
+    InMux I__280 (
+            .O(N__3071),
+            .I(\VPP_VDDQ.un1_count_1_cry_4 ));
+    InMux I__279 (
+            .O(N__3068),
+            .I(\VPP_VDDQ.un1_count_1_cry_5 ));
+    InMux I__278 (
+            .O(N__3065),
+            .I(\VPP_VDDQ.un1_count_1_cry_6 ));
+    InMux I__277 (
+            .O(N__3062),
+            .I(\SYS_PWRGD.un1_count_1_cry_6 ));
+    InMux I__276 (
+            .O(N__3059),
+            .I(bfn_1_9_0_));
+    InMux I__275 (
+            .O(N__3056),
+            .I(\SYS_PWRGD.un1_count_1_cry_8 ));
+    InMux I__274 (
+            .O(N__3053),
+            .I(\SYS_PWRGD.un1_count_1_cry_9 ));
+    InMux I__273 (
+            .O(N__3050),
+            .I(\SYS_PWRGD.un1_count_1_cry_10 ));
+    InMux I__272 (
+            .O(N__3047),
+            .I(\SYS_PWRGD.un1_count_1_cry_11 ));
+    InMux I__271 (
+            .O(N__3044),
+            .I(\SYS_PWRGD.un1_count_1_cry_12 ));
+    InMux I__270 (
+            .O(N__3041),
+            .I(\SYS_PWRGD.un1_count_1_cry_13 ));
+    InMux I__269 (
+            .O(N__3038),
+            .I(\SYS_PWRGD.un1_count_1_cry_0 ));
+    InMux I__268 (
+            .O(N__3035),
+            .I(\SYS_PWRGD.un1_count_1_cry_1 ));
+    InMux I__267 (
+            .O(N__3032),
+            .I(\SYS_PWRGD.un1_count_1_cry_2 ));
+    InMux I__266 (
+            .O(N__3029),
+            .I(\SYS_PWRGD.un1_count_1_cry_3 ));
+    InMux I__265 (
+            .O(N__3026),
+            .I(\SYS_PWRGD.un1_count_1_cry_4 ));
+    InMux I__264 (
+            .O(N__3023),
+            .I(\SYS_PWRGD.un1_count_1_cry_5 ));
     defparam IN_MUX_bfv_4_9_0_.C_INIT=2'b01;
     ICE_CARRY_IN_MUX IN_MUX_bfv_4_9_0_ (
             .carryinitin(),
@@ -6803,1071 +6970,291 @@ module TOP (
     ICE_CARRY_IN_MUX IN_MUX_bfv_6_12_0_ (
             .carryinitin(\COUNTER.counter_1_cry_24 ),
             .carryinitout(bfn_6_12_0_));
-    defparam IN_MUX_bfv_5_14_0_.C_INIT=2'b00;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_5_14_0_ (
+    defparam IN_MUX_bfv_1_11_0_.C_INIT=2'b00;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_1_11_0_ (
             .carryinitin(),
-            .carryinitout(bfn_5_14_0_));
-    defparam IN_MUX_bfv_5_15_0_.C_INIT=2'b10;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_5_15_0_ (
+            .carryinitout(bfn_1_11_0_));
+    defparam IN_MUX_bfv_1_12_0_.C_INIT=2'b10;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_1_12_0_ (
             .carryinitin(\VPP_VDDQ.un1_count_1_cry_7 ),
-            .carryinitout(bfn_5_15_0_));
-    defparam IN_MUX_bfv_5_16_0_.C_INIT=2'b10;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_5_16_0_ (
+            .carryinitout(bfn_1_12_0_));
+    defparam IN_MUX_bfv_1_13_0_.C_INIT=2'b10;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_1_13_0_ (
             .carryinitin(\VPP_VDDQ.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .carryinitout(bfn_5_16_0_));
+            .carryinitout(bfn_1_13_0_));
+    defparam IN_MUX_bfv_1_8_0_.C_INIT=2'b00;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_1_8_0_ (
+            .carryinitin(),
+            .carryinitout(bfn_1_8_0_));
+    defparam IN_MUX_bfv_1_9_0_.C_INIT=2'b10;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_1_9_0_ (
+            .carryinitin(\SYS_PWRGD.un1_count_1_cry_7 ),
+            .carryinitout(bfn_1_9_0_));
+    defparam IN_MUX_bfv_1_10_0_.C_INIT=2'b10;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_1_10_0_ (
+            .carryinitin(\SYS_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
+            .carryinitout(bfn_1_10_0_));
+    defparam IN_MUX_bfv_2_14_0_.C_INIT=2'b00;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_2_14_0_ (
+            .carryinitin(),
+            .carryinitout(bfn_2_14_0_));
+    defparam IN_MUX_bfv_2_15_0_.C_INIT=2'b10;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_2_15_0_ (
+            .carryinitin(\RSMRST_PWRGD.un1_count_1_cry_7 ),
+            .carryinitout(bfn_2_15_0_));
+    defparam IN_MUX_bfv_2_16_0_.C_INIT=2'b10;
+    ICE_CARRY_IN_MUX IN_MUX_bfv_2_16_0_ (
+            .carryinitin(\RSMRST_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
+            .carryinitout(bfn_2_16_0_));
     defparam IN_MUX_bfv_2_11_0_.C_INIT=2'b00;
     ICE_CARRY_IN_MUX IN_MUX_bfv_2_11_0_ (
             .carryinitin(),
             .carryinitout(bfn_2_11_0_));
     defparam IN_MUX_bfv_2_12_0_.C_INIT=2'b10;
     ICE_CARRY_IN_MUX IN_MUX_bfv_2_12_0_ (
-            .carryinitin(\SYS_PWRGD.un1_count_1_cry_7 ),
+            .carryinitin(\PCH_PWRGD.un1_count_1_cry_7 ),
             .carryinitout(bfn_2_12_0_));
     defparam IN_MUX_bfv_2_13_0_.C_INIT=2'b10;
     ICE_CARRY_IN_MUX IN_MUX_bfv_2_13_0_ (
-            .carryinitin(\SYS_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .carryinitout(bfn_2_13_0_));
-    defparam IN_MUX_bfv_2_8_0_.C_INIT=2'b00;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_2_8_0_ (
-            .carryinitin(),
-            .carryinitout(bfn_2_8_0_));
-    defparam IN_MUX_bfv_2_9_0_.C_INIT=2'b10;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_2_9_0_ (
-            .carryinitin(\RSMRST_PWRGD.un1_count_1_cry_7 ),
-            .carryinitout(bfn_2_9_0_));
-    defparam IN_MUX_bfv_2_10_0_.C_INIT=2'b10;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_2_10_0_ (
-            .carryinitin(\RSMRST_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .carryinitout(bfn_2_10_0_));
-    defparam IN_MUX_bfv_1_13_0_.C_INIT=2'b00;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_1_13_0_ (
-            .carryinitin(),
-            .carryinitout(bfn_1_13_0_));
-    defparam IN_MUX_bfv_1_14_0_.C_INIT=2'b10;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_1_14_0_ (
-            .carryinitin(\PCH_PWRGD.un1_count_1_cry_7 ),
-            .carryinitout(bfn_1_14_0_));
-    defparam IN_MUX_bfv_1_15_0_.C_INIT=2'b10;
-    ICE_CARRY_IN_MUX IN_MUX_bfv_1_15_0_ (
             .carryinitin(\PCH_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .carryinitout(bfn_1_15_0_));
+            .carryinitout(bfn_2_13_0_));
     VCC VCC (
             .Y(VCCG0));
     GND GND (
             .Y(GNDG0));
     GND GND_Inst (
             .Y(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_8_0 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_8_0 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_8_0 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_8_0  (
-            .in0(N__3452),
-            .in1(N__3284),
-            .in2(N__3372),
-            .in3(N__3299),
-            .lcout(\RSMRST_PWRGD.un4_count_10 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_8_5 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_8_5 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_8_5 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_8_5  (
-            .in0(N__3419),
-            .in1(N__3434),
-            .in2(N__3405),
-            .in3(N__3269),
-            .lcout(\RSMRST_PWRGD.un4_count_9 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_9_0 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_9_0 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_9_0 .LUT_INIT=16'b0100000000000000;
-    LogicCell40 \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_9_0  (
-            .in0(N__3311),
-            .in1(N__3548),
-            .in2(N__3570),
-            .in3(N__3584),
-            .lcout(\RSMRST_PWRGD.un4_count_11 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_9_1 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_9_1 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_9_1 .LUT_INIT=16'b0001000100000000;
-    LogicCell40 \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_9_1  (
-            .in0(N__4808),
-            .in1(N__4245),
-            .in2(_gnd_net_),
-            .in3(N__4760),
-            .lcout(),
-            .ltout(\RSMRST_PWRGD.G_1_1_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_9_2 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_9_2 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_9_2 .LUT_INIT=16'b1110000001000000;
-    LogicCell40 \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_9_2  (
-            .in0(N__4344),
-            .in1(N__4291),
-            .in2(N__3198),
-            .in3(N__4370),
-            .lcout(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1 ),
-            .ltout(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_9_3 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_9_3 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_9_3 .LUT_INIT=16'b1111111111110000;
-    LogicCell40 \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_9_3  (
-            .in0(_gnd_net_),
-            .in1(_gnd_net_),
-            .in2(N__3195),
-            .in3(N__6031),
-            .lcout(\RSMRST_PWRGD.G_0_3 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_9_5 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_9_5 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_9_5 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_9_5  (
-            .in0(N__3338),
-            .in1(N__3353),
-            .in2(N__3603),
-            .in3(N__3386),
-            .lcout(),
-            .ltout(\RSMRST_PWRGD.un4_count_8_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_9_6 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_9_6 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_9_6 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_9_6  (
-            .in0(N__3192),
-            .in1(N__3183),
-            .in2(N__3177),
-            .in3(N__3174),
-            .lcout(\RSMRST_PWRGD.N_1_i ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam SLP_SUSn_RNIN4K9_LC_1_10_0.C_ON=1'b0;
-    defparam SLP_SUSn_RNIN4K9_LC_1_10_0.SEQ_MODE=4'b0000;
-    defparam SLP_SUSn_RNIN4K9_LC_1_10_0.LUT_INIT=16'b0000000011111111;
-    LogicCell40 SLP_SUSn_RNIN4K9_LC_1_10_0 (
-            .in0(_gnd_net_),
-            .in1(_gnd_net_),
-            .in2(_gnd_net_),
-            .in3(N__4509),
-            .lcout(v33a_enn),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_RNIPPLE1_3_LC_1_11_0 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_RNIPPLE1_3_LC_1_11_0 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.count_RNIPPLE1_3_LC_1_11_0 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \SYS_PWRGD.count_RNIPPLE1_3_LC_1_11_0  (
-            .in0(N__3698),
-            .in1(N__3713),
-            .in2(N__3684),
-            .in3(N__3743),
-            .lcout(\SYS_PWRGD.un4_count_8 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_1_11_2 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_1_11_2 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_1_11_2 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_1_11_2  (
-            .in0(N__3149),
-            .in1(N__3138),
-            .in2(N__3123),
-            .in3(N__4508),
-            .lcout(vccin_en),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_RNIR1U31_13_LC_1_11_5 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_RNIR1U31_13_LC_1_11_5 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.count_RNIR1U31_13_LC_1_11_5 .LUT_INIT=16'b0000000100000000;
-    LogicCell40 \SYS_PWRGD.count_RNIR1U31_13_LC_1_11_5  (
-            .in0(N__3470),
-            .in1(N__3485),
-            .in2(N__3501),
-            .in3(N__3935),
-            .lcout(\SYS_PWRGD.un4_count_11 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_RNIAHU31_10_LC_1_12_0 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_RNIAHU31_10_LC_1_12_0 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.count_RNIAHU31_10_LC_1_12_0 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \SYS_PWRGD.count_RNIAHU31_10_LC_1_12_0  (
-            .in0(N__3665),
-            .in1(N__3650),
-            .in2(N__3636),
-            .in3(N__3728),
-            .lcout(\SYS_PWRGD.un4_count_10 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.curr_state_RNIF9431_0_LC_1_12_2 .C_ON=1'b0;
-    defparam \SYS_PWRGD.curr_state_RNIF9431_0_LC_1_12_2 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.curr_state_RNIF9431_0_LC_1_12_2 .LUT_INIT=16'b0000000000110000;
-    LogicCell40 \SYS_PWRGD.curr_state_RNIF9431_0_LC_1_12_2  (
-            .in0(_gnd_net_),
-            .in1(N__4809),
-            .in2(N__4761),
-            .in3(N__4956),
-            .lcout(),
-            .ltout(\SYS_PWRGD.G_0_1_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.curr_state_RNIE72J5_1_LC_1_12_3 .C_ON=1'b0;
-    defparam \SYS_PWRGD.curr_state_RNIE72J5_1_LC_1_12_3 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.curr_state_RNIE72J5_1_LC_1_12_3 .LUT_INIT=16'b1110000001000000;
-    LogicCell40 \SYS_PWRGD.curr_state_RNIE72J5_1_LC_1_12_3  (
-            .in0(N__5071),
-            .in1(N__5017),
-            .in2(N__3231),
-            .in3(N__4201),
-            .lcout(\SYS_PWRGD.curr_state_RNIE72J5Z0Z_1 ),
-            .ltout(\SYS_PWRGD.curr_state_RNIE72J5Z0Z_1_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_esr_RNO_0_15_LC_1_12_4 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_esr_RNO_0_15_LC_1_12_4 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.count_esr_RNO_0_15_LC_1_12_4 .LUT_INIT=16'b1111111111110000;
-    LogicCell40 \SYS_PWRGD.count_esr_RNO_0_15_LC_1_12_4  (
-            .in0(_gnd_net_),
-            .in1(_gnd_net_),
-            .in2(N__3228),
-            .in3(N__5958),
-            .lcout(\SYS_PWRGD.G_0_2 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_esr_RNITT9F_15_LC_1_12_5 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_esr_RNITT9F_15_LC_1_12_5 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.count_esr_RNITT9F_15_LC_1_12_5 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \SYS_PWRGD.count_esr_RNITT9F_15_LC_1_12_5  (
-            .in0(N__3920),
-            .in1(N__3953),
-            .in2(N__3903),
-            .in3(N__3617),
-            .lcout(),
-            .ltout(\SYS_PWRGD.un4_count_9_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_RNIRAS54_10_LC_1_12_6 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_RNIRAS54_10_LC_1_12_6 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.count_RNIRAS54_10_LC_1_12_6 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \SYS_PWRGD.count_RNIRAS54_10_LC_1_12_6  (
-            .in0(N__3225),
-            .in1(N__3219),
-            .in2(N__3213),
-            .in3(N__3210),
-            .lcout(\SYS_PWRGD.N_1_i ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_0_LC_1_13_0 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_0_LC_1_13_0 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_0_LC_1_13_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_0_LC_1_13_0  (
-            .in0(N__6091),
-            .in1(N__4101),
-            .in2(N__4569),
-            .in3(N__4568),
-            .lcout(\PCH_PWRGD.countZ0Z_0 ),
-            .ltout(),
-            .carryin(bfn_1_13_0_),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_0 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_1_LC_1_13_1 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_1_LC_1_13_1 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_1_LC_1_13_1 .LUT_INIT=16'b0101101011110000;
-    LogicCell40 \PCH_PWRGD.count_1_LC_1_13_1  (
-            .in0(N__6087),
-            .in1(_gnd_net_),
-            .in2(N__4083),
-            .in3(N__3204),
-            .lcout(\PCH_PWRGD.countZ0Z_1 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_0 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_1 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_2_LC_1_13_2 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_2_LC_1_13_2 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_2_LC_1_13_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_2_LC_1_13_2  (
-            .in0(N__6092),
-            .in1(N__4041),
-            .in2(_gnd_net_),
-            .in3(N__3201),
-            .lcout(\PCH_PWRGD.countZ0Z_2 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_1 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_2 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_3_LC_1_13_3 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_3_LC_1_13_3 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_3_LC_1_13_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_3_LC_1_13_3  (
-            .in0(N__6088),
-            .in1(N__3792),
-            .in2(_gnd_net_),
-            .in3(N__3258),
-            .lcout(\PCH_PWRGD.countZ0Z_3 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_2 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_3 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_4_LC_1_13_4 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_4_LC_1_13_4 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_4_LC_1_13_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_4_LC_1_13_4  (
-            .in0(N__6093),
-            .in1(N__3819),
-            .in2(_gnd_net_),
-            .in3(N__3255),
-            .lcout(\PCH_PWRGD.countZ0Z_4 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_3 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_4 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_5_LC_1_13_5 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_5_LC_1_13_5 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_5_LC_1_13_5 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_5_LC_1_13_5  (
-            .in0(N__6089),
-            .in1(N__3833),
-            .in2(_gnd_net_),
-            .in3(N__3252),
-            .lcout(\PCH_PWRGD.countZ0Z_5 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_4 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_5 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_6_LC_1_13_6 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_6_LC_1_13_6 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_6_LC_1_13_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_6_LC_1_13_6  (
-            .in0(N__6094),
-            .in1(N__4068),
-            .in2(_gnd_net_),
-            .in3(N__3249),
-            .lcout(\PCH_PWRGD.countZ0Z_6 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_5 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_6 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_7_LC_1_13_7 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_7_LC_1_13_7 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_7_LC_1_13_7 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_7_LC_1_13_7  (
-            .in0(N__6090),
-            .in1(N__3806),
-            .in2(_gnd_net_),
-            .in3(N__3246),
-            .lcout(\PCH_PWRGD.countZ0Z_7 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_6 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_7 ),
-            .clk(N__6778),
-            .ce(),
-            .sr(N__3773));
-    defparam \PCH_PWRGD.count_8_LC_1_14_0 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_8_LC_1_14_0 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_8_LC_1_14_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_8_LC_1_14_0  (
-            .in0(N__6086),
-            .in1(N__4128),
-            .in2(_gnd_net_),
-            .in3(N__3243),
-            .lcout(\PCH_PWRGD.countZ0Z_8 ),
-            .ltout(),
-            .carryin(bfn_1_14_0_),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_8 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.count_9_LC_1_14_1 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_9_LC_1_14_1 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_9_LC_1_14_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_9_LC_1_14_1  (
-            .in0(N__6036),
-            .in1(N__4140),
-            .in2(_gnd_net_),
-            .in3(N__3240),
-            .lcout(\PCH_PWRGD.countZ0Z_9 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_8 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_9 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.count_10_LC_1_14_2 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_10_LC_1_14_2 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_10_LC_1_14_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_10_LC_1_14_2  (
-            .in0(N__6083),
-            .in1(N__4055),
-            .in2(_gnd_net_),
-            .in3(N__3237),
-            .lcout(\PCH_PWRGD.countZ0Z_10 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_9 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_10 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.count_11_LC_1_14_3 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_11_LC_1_14_3 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_11_LC_1_14_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_11_LC_1_14_3  (
-            .in0(N__6034),
-            .in1(N__4115),
-            .in2(_gnd_net_),
-            .in3(N__3234),
-            .lcout(\PCH_PWRGD.countZ0Z_11 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_10 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_11 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.count_12_LC_1_14_4 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_12_LC_1_14_4 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_12_LC_1_14_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_12_LC_1_14_4  (
-            .in0(N__6084),
-            .in1(N__3984),
-            .in2(_gnd_net_),
-            .in3(N__3324),
-            .lcout(\PCH_PWRGD.countZ0Z_12 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_11 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_12 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.count_13_LC_1_14_5 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_13_LC_1_14_5 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_13_LC_1_14_5 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_13_LC_1_14_5  (
-            .in0(N__6035),
-            .in1(N__4011),
-            .in2(_gnd_net_),
-            .in3(N__3321),
-            .lcout(\PCH_PWRGD.countZ0Z_13 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_12 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_13 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.count_14_LC_1_14_6 .C_ON=1'b1;
-    defparam \PCH_PWRGD.count_14_LC_1_14_6 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_14_LC_1_14_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \PCH_PWRGD.count_14_LC_1_14_6  (
-            .in0(N__6085),
-            .in1(N__4023),
-            .in2(_gnd_net_),
-            .in3(N__3318),
-            .lcout(\PCH_PWRGD.countZ0Z_14 ),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_13 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_14 ),
-            .clk(N__6780),
-            .ce(),
-            .sr(N__3769));
-    defparam \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_14_7 .C_ON=1'b1;
-    defparam \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_14_7 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_14_7 .LUT_INIT=16'b0000000000000000;
-    LogicCell40 \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_14_7  (
-            .in0(_gnd_net_),
-            .in1(N__5760),
-            .in2(GNDG0),
-            .in3(_gnd_net_),
-            .lcout(),
-            .ltout(),
-            .carryin(\PCH_PWRGD.un1_count_1_cry_14 ),
-            .carryout(\PCH_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_esr_15_LC_1_15_0 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_esr_15_LC_1_15_0 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.count_esr_15_LC_1_15_0 .LUT_INIT=16'b0011001111001100;
-    LogicCell40 \PCH_PWRGD.count_esr_15_LC_1_15_0  (
-            .in0(_gnd_net_),
-            .in1(N__3998),
-            .in2(_gnd_net_),
-            .in3(N__3315),
-            .lcout(\PCH_PWRGD.countZ0Z_15 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6779),
-            .ce(N__4146),
-            .sr(N__3774));
-    defparam \RSMRST_PWRGD.count_0_LC_2_8_0 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_0_LC_2_8_0 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_0_LC_2_8_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_0_LC_2_8_0  (
-            .in0(N__6014),
-            .in1(N__3312),
-            .in2(N__4170),
-            .in3(N__4169),
-            .lcout(\RSMRST_PWRGD.countZ0Z_0 ),
-            .ltout(),
-            .carryin(bfn_2_8_0_),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_0 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_1_LC_2_8_1 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_1_LC_2_8_1 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_1_LC_2_8_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_1_LC_2_8_1  (
-            .in0(N__6099),
-            .in1(N__3300),
-            .in2(_gnd_net_),
-            .in3(N__3288),
-            .lcout(\RSMRST_PWRGD.countZ0Z_1 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_0 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_1 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_2_LC_2_8_2 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_2_LC_2_8_2 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_2_LC_2_8_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_2_LC_2_8_2  (
-            .in0(N__6015),
-            .in1(N__3285),
-            .in2(_gnd_net_),
-            .in3(N__3273),
-            .lcout(\RSMRST_PWRGD.countZ0Z_2 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_1 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_2 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_3_LC_2_8_3 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_3_LC_2_8_3 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_3_LC_2_8_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_3_LC_2_8_3  (
-            .in0(N__6100),
-            .in1(N__3270),
-            .in2(_gnd_net_),
-            .in3(N__3456),
-            .lcout(\RSMRST_PWRGD.countZ0Z_3 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_2 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_3 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_4_LC_2_8_4 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_4_LC_2_8_4 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_4_LC_2_8_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_4_LC_2_8_4  (
-            .in0(N__6016),
-            .in1(N__3453),
-            .in2(_gnd_net_),
-            .in3(N__3441),
-            .lcout(\RSMRST_PWRGD.countZ0Z_4 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_3 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_4 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_5_LC_2_8_5 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_5_LC_2_8_5 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_5_LC_2_8_5 .LUT_INIT=16'b0101101011110000;
-    LogicCell40 \RSMRST_PWRGD.count_5_LC_2_8_5  (
-            .in0(N__6101),
-            .in1(_gnd_net_),
-            .in2(N__3438),
-            .in3(N__3423),
-            .lcout(\RSMRST_PWRGD.countZ0Z_5 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_4 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_5 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_6_LC_2_8_6 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_6_LC_2_8_6 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_6_LC_2_8_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_6_LC_2_8_6  (
-            .in0(N__6017),
-            .in1(N__3420),
-            .in2(_gnd_net_),
-            .in3(N__3408),
-            .lcout(\RSMRST_PWRGD.countZ0Z_6 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_5 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_6 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_7_LC_2_8_7 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_7_LC_2_8_7 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_7_LC_2_8_7 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_7_LC_2_8_7  (
-            .in0(N__6102),
-            .in1(N__3404),
-            .in2(_gnd_net_),
-            .in3(N__3390),
-            .lcout(\RSMRST_PWRGD.countZ0Z_7 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_6 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_7 ),
-            .clk(N__6781),
-            .ce(),
-            .sr(N__3530));
-    defparam \RSMRST_PWRGD.count_8_LC_2_9_0 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_8_LC_2_9_0 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_8_LC_2_9_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_8_LC_2_9_0  (
-            .in0(N__6013),
-            .in1(N__3387),
-            .in2(_gnd_net_),
-            .in3(N__3375),
-            .lcout(\RSMRST_PWRGD.countZ0Z_8 ),
-            .ltout(),
-            .carryin(bfn_2_9_0_),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_8 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.count_9_LC_2_9_1 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_9_LC_2_9_1 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_9_LC_2_9_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_9_LC_2_9_1  (
-            .in0(N__6009),
-            .in1(N__3371),
-            .in2(_gnd_net_),
-            .in3(N__3357),
-            .lcout(\RSMRST_PWRGD.countZ0Z_9 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_8 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_9 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.count_10_LC_2_9_2 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_10_LC_2_9_2 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_10_LC_2_9_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_10_LC_2_9_2  (
-            .in0(N__6010),
-            .in1(N__3354),
-            .in2(_gnd_net_),
-            .in3(N__3342),
-            .lcout(\RSMRST_PWRGD.countZ0Z_10 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_9 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_10 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.count_11_LC_2_9_3 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_11_LC_2_9_3 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_11_LC_2_9_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_11_LC_2_9_3  (
-            .in0(N__6007),
-            .in1(N__3339),
-            .in2(_gnd_net_),
-            .in3(N__3327),
-            .lcout(\RSMRST_PWRGD.countZ0Z_11 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_10 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_11 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.count_12_LC_2_9_4 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_12_LC_2_9_4 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_12_LC_2_9_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_12_LC_2_9_4  (
-            .in0(N__6011),
-            .in1(N__3602),
-            .in2(_gnd_net_),
-            .in3(N__3588),
-            .lcout(\RSMRST_PWRGD.countZ0Z_12 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_11 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_12 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.count_13_LC_2_9_5 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_13_LC_2_9_5 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_13_LC_2_9_5 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_13_LC_2_9_5  (
-            .in0(N__6008),
-            .in1(N__3585),
-            .in2(_gnd_net_),
-            .in3(N__3573),
-            .lcout(\RSMRST_PWRGD.countZ0Z_13 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_12 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_13 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.count_14_LC_2_9_6 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.count_14_LC_2_9_6 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_14_LC_2_9_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \RSMRST_PWRGD.count_14_LC_2_9_6  (
-            .in0(N__6012),
-            .in1(N__3569),
-            .in2(_gnd_net_),
-            .in3(N__3555),
-            .lcout(\RSMRST_PWRGD.countZ0Z_14 ),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_13 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_14 ),
-            .clk(N__6693),
-            .ce(),
-            .sr(N__3523));
-    defparam \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_9_7 .C_ON=1'b1;
-    defparam \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_9_7 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_9_7 .LUT_INIT=16'b0000000000000000;
-    LogicCell40 \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_9_7  (
-            .in0(_gnd_net_),
-            .in1(N__5755),
-            .in2(GNDG0),
-            .in3(_gnd_net_),
-            .lcout(),
-            .ltout(),
-            .carryin(\RSMRST_PWRGD.un1_count_1_cry_14 ),
-            .carryout(\RSMRST_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.count_esr_15_LC_2_10_0 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.count_esr_15_LC_2_10_0 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.count_esr_15_LC_2_10_0 .LUT_INIT=16'b0011001111001100;
-    LogicCell40 \RSMRST_PWRGD.count_esr_15_LC_2_10_0  (
-            .in0(_gnd_net_),
-            .in1(N__3549),
-            .in2(_gnd_net_),
-            .in3(N__3552),
-            .lcout(\RSMRST_PWRGD.countZ0Z_15 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6782),
-            .ce(N__3537),
-            .sr(N__3531));
-    defparam \SYS_PWRGD.count_0_LC_2_11_0 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_0_LC_2_11_0 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_0_LC_2_11_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_0_LC_2_11_0  (
-            .in0(N__6095),
-            .in1(N__3500),
-            .in2(N__5121),
-            .in3(N__5120),
+    defparam \SYS_PWRGD.count_0_LC_1_8_0 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_0_LC_1_8_0 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_0_LC_1_8_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_0_LC_1_8_0  (
+            .in0(N__5985),
+            .in1(N__5341),
+            .in2(N__3199),
+            .in3(N__3200),
             .lcout(\SYS_PWRGD.countZ0Z_0 ),
             .ltout(),
-            .carryin(bfn_2_11_0_),
+            .carryin(bfn_1_8_0_),
             .carryout(\SYS_PWRGD.un1_count_1_cry_0 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_1_LC_2_11_1 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_1_LC_2_11_1 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_1_LC_2_11_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_1_LC_2_11_1  (
-            .in0(N__6027),
-            .in1(N__3486),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_1_LC_1_8_1 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_1_LC_1_8_1 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_1_LC_1_8_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_1_LC_1_8_1  (
+            .in0(N__6059),
+            .in1(N__5290),
             .in2(_gnd_net_),
-            .in3(N__3474),
+            .in3(N__3038),
             .lcout(\SYS_PWRGD.countZ0Z_1 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_0 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_1 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_2_LC_2_11_2 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_2_LC_2_11_2 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_2_LC_2_11_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_2_LC_2_11_2  (
-            .in0(N__6096),
-            .in1(N__3471),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_2_LC_1_8_2 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_2_LC_1_8_2 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_2_LC_1_8_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_2_LC_1_8_2  (
+            .in0(N__5986),
+            .in1(N__4162),
             .in2(_gnd_net_),
-            .in3(N__3459),
+            .in3(N__3035),
             .lcout(\SYS_PWRGD.countZ0Z_2 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_1 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_2 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_3_LC_2_11_3 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_3_LC_2_11_3 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_3_LC_2_11_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_3_LC_2_11_3  (
-            .in0(N__6028),
-            .in1(N__3744),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_3_LC_1_8_3 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_3_LC_1_8_3 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_3_LC_1_8_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_3_LC_1_8_3  (
+            .in0(N__6060),
+            .in1(N__4201),
             .in2(_gnd_net_),
-            .in3(N__3732),
+            .in3(N__3032),
             .lcout(\SYS_PWRGD.countZ0Z_3 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_2 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_3 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_4_LC_2_11_4 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_4_LC_2_11_4 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_4_LC_2_11_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_4_LC_2_11_4  (
-            .in0(N__6097),
-            .in1(N__3729),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_4_LC_1_8_4 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_4_LC_1_8_4 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_4_LC_1_8_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_4_LC_1_8_4  (
+            .in0(N__5987),
+            .in1(N__5209),
             .in2(_gnd_net_),
-            .in3(N__3717),
+            .in3(N__3029),
             .lcout(\SYS_PWRGD.countZ0Z_4 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_3 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_4 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_5_LC_2_11_5 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_5_LC_2_11_5 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_5_LC_2_11_5 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_5_LC_2_11_5  (
-            .in0(N__6029),
-            .in1(N__3714),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_5_LC_1_8_5 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_5_LC_1_8_5 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_5_LC_1_8_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_5_LC_1_8_5  (
+            .in0(N__6061),
+            .in1(N__4219),
             .in2(_gnd_net_),
-            .in3(N__3702),
+            .in3(N__3026),
             .lcout(\SYS_PWRGD.countZ0Z_5 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_4 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_5 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_6_LC_2_11_6 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_6_LC_2_11_6 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_6_LC_2_11_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_6_LC_2_11_6  (
-            .in0(N__6098),
-            .in1(N__3699),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_6_LC_1_8_6 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_6_LC_1_8_6 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_6_LC_1_8_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_6_LC_1_8_6  (
+            .in0(N__5988),
+            .in1(N__5245),
             .in2(_gnd_net_),
-            .in3(N__3687),
+            .in3(N__3023),
             .lcout(\SYS_PWRGD.countZ0Z_6 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_5 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_6 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_7_LC_2_11_7 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_7_LC_2_11_7 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_7_LC_2_11_7 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_7_LC_2_11_7  (
-            .in0(N__6030),
-            .in1(N__3683),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_7_LC_1_8_7 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_7_LC_1_8_7 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_7_LC_1_8_7 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_7_LC_1_8_7  (
+            .in0(N__6062),
+            .in1(N__5263),
             .in2(_gnd_net_),
-            .in3(N__3669),
+            .in3(N__3062),
             .lcout(\SYS_PWRGD.countZ0Z_7 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_6 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_7 ),
-            .clk(N__6755),
+            .clk(N__6763),
             .ce(),
-            .sr(N__3869));
-    defparam \SYS_PWRGD.count_8_LC_2_12_0 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_8_LC_2_12_0 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_8_LC_2_12_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_8_LC_2_12_0  (
-            .in0(N__6006),
-            .in1(N__3666),
+            .sr(N__3181));
+    defparam \SYS_PWRGD.count_8_LC_1_9_0 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_8_LC_1_9_0 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_8_LC_1_9_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_8_LC_1_9_0  (
+            .in0(N__5881),
+            .in1(N__5227),
             .in2(_gnd_net_),
-            .in3(N__3654),
+            .in3(N__3059),
             .lcout(\SYS_PWRGD.countZ0Z_8 ),
             .ltout(),
-            .carryin(bfn_2_12_0_),
+            .carryin(bfn_1_9_0_),
             .carryout(\SYS_PWRGD.un1_count_1_cry_8 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.count_9_LC_2_12_1 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_9_LC_2_12_1 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_9_LC_2_12_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_9_LC_2_12_1  (
-            .in0(N__5977),
-            .in1(N__3651),
+            .sr(N__3171));
+    defparam \SYS_PWRGD.count_9_LC_1_9_1 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_9_LC_1_9_1 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_9_LC_1_9_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_9_LC_1_9_1  (
+            .in0(N__5877),
+            .in1(N__5326),
             .in2(_gnd_net_),
-            .in3(N__3639),
+            .in3(N__3056),
             .lcout(\SYS_PWRGD.countZ0Z_9 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_8 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_9 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.count_10_LC_2_12_2 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_10_LC_2_12_2 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_10_LC_2_12_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_10_LC_2_12_2  (
-            .in0(N__6003),
-            .in1(N__3635),
+            .sr(N__3171));
+    defparam \SYS_PWRGD.count_10_LC_1_9_2 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_10_LC_1_9_2 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_10_LC_1_9_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_10_LC_1_9_2  (
+            .in0(N__5878),
+            .in1(N__5308),
             .in2(_gnd_net_),
-            .in3(N__3621),
+            .in3(N__3053),
             .lcout(\SYS_PWRGD.countZ0Z_10 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_9 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_10 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.count_11_LC_2_12_3 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_11_LC_2_12_3 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_11_LC_2_12_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_11_LC_2_12_3  (
-            .in0(N__5975),
-            .in1(N__3618),
+            .sr(N__3171));
+    defparam \SYS_PWRGD.count_11_LC_1_9_3 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_11_LC_1_9_3 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_11_LC_1_9_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_11_LC_1_9_3  (
+            .in0(N__5875),
+            .in1(N__4180),
             .in2(_gnd_net_),
-            .in3(N__3606),
+            .in3(N__3050),
             .lcout(\SYS_PWRGD.countZ0Z_11 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_10 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_11 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.count_12_LC_2_12_4 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_12_LC_2_12_4 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_12_LC_2_12_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_12_LC_2_12_4  (
-            .in0(N__6004),
-            .in1(N__3954),
+            .sr(N__3171));
+    defparam \SYS_PWRGD.count_12_LC_1_9_4 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_12_LC_1_9_4 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_12_LC_1_9_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_12_LC_1_9_4  (
+            .in0(N__5879),
+            .in1(N__4090),
             .in2(_gnd_net_),
-            .in3(N__3942),
+            .in3(N__3047),
             .lcout(\SYS_PWRGD.countZ0Z_12 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_11 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_12 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.count_13_LC_2_12_5 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_13_LC_2_12_5 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_13_LC_2_12_5 .LUT_INIT=16'b0101101011110000;
-    LogicCell40 \SYS_PWRGD.count_13_LC_2_12_5  (
-            .in0(N__5976),
-            .in1(_gnd_net_),
-            .in2(N__3939),
-            .in3(N__3924),
+            .sr(N__3171));
+    defparam \SYS_PWRGD.count_13_LC_1_9_5 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_13_LC_1_9_5 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_13_LC_1_9_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_13_LC_1_9_5  (
+            .in0(N__5876),
+            .in1(N__4126),
+            .in2(_gnd_net_),
+            .in3(N__3044),
             .lcout(\SYS_PWRGD.countZ0Z_13 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_12 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_13 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.count_14_LC_2_12_6 .C_ON=1'b1;
-    defparam \SYS_PWRGD.count_14_LC_2_12_6 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_14_LC_2_12_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \SYS_PWRGD.count_14_LC_2_12_6  (
-            .in0(N__6005),
-            .in1(N__3921),
+            .sr(N__3171));
+    defparam \SYS_PWRGD.count_14_LC_1_9_6 .C_ON=1'b1;
+    defparam \SYS_PWRGD.count_14_LC_1_9_6 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_14_LC_1_9_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \SYS_PWRGD.count_14_LC_1_9_6  (
+            .in0(N__5880),
+            .in1(N__4144),
             .in2(_gnd_net_),
-            .in3(N__3909),
+            .in3(N__3041),
             .lcout(\SYS_PWRGD.countZ0Z_14 ),
             .ltout(),
             .carryin(\SYS_PWRGD.un1_count_1_cry_13 ),
             .carryout(\SYS_PWRGD.un1_count_1_cry_14 ),
-            .clk(N__6786),
+            .clk(N__6730),
             .ce(),
-            .sr(N__3868));
-    defparam \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7 .C_ON=1'b1;
-    defparam \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7 .LUT_INIT=16'b0000000000000000;
-    LogicCell40 \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7  (
+            .sr(N__3171));
+    defparam \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_9_7 .C_ON=1'b1;
+    defparam \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_9_7 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_9_7 .LUT_INIT=16'b0000000000000000;
+    LogicCell40 \SYS_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_9_7  (
             .in0(_gnd_net_),
-            .in1(N__5756),
+            .in1(N__3816),
             .in2(GNDG0),
             .in3(_gnd_net_),
             .lcout(),
@@ -7877,134 +7264,479 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \SYS_PWRGD.count_esr_15_LC_2_13_0 .C_ON=1'b0;
-    defparam \SYS_PWRGD.count_esr_15_LC_2_13_0 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.count_esr_15_LC_2_13_0 .LUT_INIT=16'b0011001111001100;
-    LogicCell40 \SYS_PWRGD.count_esr_15_LC_2_13_0  (
+    defparam \SYS_PWRGD.count_esr_15_LC_1_10_0 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_esr_15_LC_1_10_0 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.count_esr_15_LC_1_10_0 .LUT_INIT=16'b0011001111001100;
+    LogicCell40 \SYS_PWRGD.count_esr_15_LC_1_10_0  (
             .in0(_gnd_net_),
-            .in1(N__3899),
+            .in1(N__4108),
             .in2(_gnd_net_),
-            .in3(N__3906),
+            .in3(N__3086),
             .lcout(\SYS_PWRGD.countZ0Z_15 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6740),
-            .ce(N__3885),
-            .sr(N__3870));
-    defparam \PCH_PWRGD.count_RNI7J2B_3_LC_2_14_0 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_RNI7J2B_3_LC_2_14_0 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.count_RNI7J2B_3_LC_2_14_0 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \PCH_PWRGD.count_RNI7J2B_3_LC_2_14_0  (
-            .in0(N__3834),
-            .in1(N__3818),
-            .in2(N__3807),
-            .in3(N__3791),
+            .clk(N__6758),
+            .ce(N__3146),
+            .sr(N__3182));
+    defparam \VPP_VDDQ.count_0_LC_1_11_0 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_0_LC_1_11_0 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_0_LC_1_11_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_0_LC_1_11_0  (
+            .in0(N__5894),
+            .in1(N__5137),
+            .in2(N__4049),
+            .in3(N__4048),
+            .lcout(\VPP_VDDQ.countZ0Z_0 ),
+            .ltout(),
+            .carryin(bfn_1_11_0_),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_0 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_1_LC_1_11_1 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_1_LC_1_11_1 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_1_LC_1_11_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_1_LC_1_11_1  (
+            .in0(N__5890),
+            .in1(N__4690),
+            .in2(_gnd_net_),
+            .in3(N__3083),
+            .lcout(\VPP_VDDQ.countZ0Z_1 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_0 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_1 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_2_LC_1_11_2 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_2_LC_1_11_2 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_2_LC_1_11_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_2_LC_1_11_2  (
+            .in0(N__5895),
+            .in1(N__4726),
+            .in2(_gnd_net_),
+            .in3(N__3080),
+            .lcout(\VPP_VDDQ.countZ0Z_2 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_1 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_2 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_3_LC_1_11_3 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_3_LC_1_11_3 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_3_LC_1_11_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_3_LC_1_11_3  (
+            .in0(N__5891),
+            .in1(N__3961),
+            .in2(_gnd_net_),
+            .in3(N__3077),
+            .lcout(\VPP_VDDQ.countZ0Z_3 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_2 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_3 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_4_LC_1_11_4 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_4_LC_1_11_4 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_4_LC_1_11_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_4_LC_1_11_4  (
+            .in0(N__5896),
+            .in1(N__3994),
+            .in2(_gnd_net_),
+            .in3(N__3074),
+            .lcout(\VPP_VDDQ.countZ0Z_4 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_3 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_4 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_5_LC_1_11_5 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_5_LC_1_11_5 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_5_LC_1_11_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_5_LC_1_11_5  (
+            .in0(N__5892),
+            .in1(N__4009),
+            .in2(_gnd_net_),
+            .in3(N__3071),
+            .lcout(\VPP_VDDQ.countZ0Z_5 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_4 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_5 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_6_LC_1_11_6 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_6_LC_1_11_6 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_6_LC_1_11_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_6_LC_1_11_6  (
+            .in0(N__5897),
+            .in1(N__4741),
+            .in2(_gnd_net_),
+            .in3(N__3068),
+            .lcout(\VPP_VDDQ.countZ0Z_6 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_5 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_6 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_7_LC_1_11_7 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_7_LC_1_11_7 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_7_LC_1_11_7 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_7_LC_1_11_7  (
+            .in0(N__5893),
+            .in1(N__3976),
+            .in2(_gnd_net_),
+            .in3(N__3065),
+            .lcout(\VPP_VDDQ.countZ0Z_7 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_6 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_7 ),
+            .clk(N__6774),
+            .ce(),
+            .sr(N__3336));
+    defparam \VPP_VDDQ.count_8_LC_1_12_0 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_8_LC_1_12_0 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_8_LC_1_12_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_8_LC_1_12_0  (
+            .in0(N__6053),
+            .in1(N__5173),
+            .in2(_gnd_net_),
+            .in3(N__3110),
+            .lcout(\VPP_VDDQ.countZ0Z_8 ),
+            .ltout(),
+            .carryin(bfn_1_12_0_),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_8 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.count_9_LC_1_12_1 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_9_LC_1_12_1 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_9_LC_1_12_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_9_LC_1_12_1  (
+            .in0(N__5911),
+            .in1(N__4327),
+            .in2(_gnd_net_),
+            .in3(N__3107),
+            .lcout(\VPP_VDDQ.countZ0Z_9 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_8 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_9 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.count_10_LC_1_12_2 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_10_LC_1_12_2 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_10_LC_1_12_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_10_LC_1_12_2  (
+            .in0(N__6050),
+            .in1(N__4705),
+            .in2(_gnd_net_),
+            .in3(N__3104),
+            .lcout(\VPP_VDDQ.countZ0Z_10 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_9 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_10 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.count_11_LC_1_12_3 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_11_LC_1_12_3 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_11_LC_1_12_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_11_LC_1_12_3  (
+            .in0(N__5909),
+            .in1(N__5155),
+            .in2(_gnd_net_),
+            .in3(N__3101),
+            .lcout(\VPP_VDDQ.countZ0Z_11 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_10 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_11 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.count_12_LC_1_12_4 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_12_LC_1_12_4 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_12_LC_1_12_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_12_LC_1_12_4  (
+            .in0(N__6051),
+            .in1(N__4876),
+            .in2(_gnd_net_),
+            .in3(N__3098),
+            .lcout(\VPP_VDDQ.countZ0Z_12 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_11 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_12 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.count_13_LC_1_12_5 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_13_LC_1_12_5 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_13_LC_1_12_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_13_LC_1_12_5  (
+            .in0(N__5910),
+            .in1(N__4822),
+            .in2(_gnd_net_),
+            .in3(N__3095),
+            .lcout(\VPP_VDDQ.countZ0Z_13 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_12 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_13 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.count_14_LC_1_12_6 .C_ON=1'b1;
+    defparam \VPP_VDDQ.count_14_LC_1_12_6 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_14_LC_1_12_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \VPP_VDDQ.count_14_LC_1_12_6  (
+            .in0(N__6052),
+            .in1(N__4858),
+            .in2(_gnd_net_),
+            .in3(N__3092),
+            .lcout(\VPP_VDDQ.countZ0Z_14 ),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_13 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_14 ),
+            .clk(N__6776),
+            .ce(),
+            .sr(N__3343));
+    defparam \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_12_7 .C_ON=1'b1;
+    defparam \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_12_7 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_12_7 .LUT_INIT=16'b0000000000000000;
+    LogicCell40 \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_1_12_7  (
+            .in0(_gnd_net_),
+            .in1(N__3809),
+            .in2(GNDG0),
+            .in3(_gnd_net_),
             .lcout(),
-            .ltout(\PCH_PWRGD.un4_count_9_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
+            .ltout(),
+            .carryin(\VPP_VDDQ.un1_count_1_cry_14 ),
+            .carryout(\VPP_VDDQ.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_2_14_1 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_2_14_1 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_2_14_1 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_2_14_1  (
-            .in0(N__4029),
-            .in1(N__3972),
-            .in2(N__3780),
-            .in3(N__4089),
-            .lcout(\PCH_PWRGD.N_1_i ),
-            .ltout(\PCH_PWRGD.N_1_i_cascade_ ),
+    defparam \VPP_VDDQ.count_esr_15_LC_1_13_0 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_esr_15_LC_1_13_0 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.count_esr_15_LC_1_13_0 .LUT_INIT=16'b0011001111001100;
+    LogicCell40 \VPP_VDDQ.count_esr_15_LC_1_13_0  (
+            .in0(_gnd_net_),
+            .in1(N__4840),
+            .in2(_gnd_net_),
+            .in3(N__3089),
+            .lcout(\VPP_VDDQ.countZ0Z_15 ),
+            .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.curr_state_RNI5H3S4_1_LC_2_14_2 .C_ON=1'b0;
-    defparam \PCH_PWRGD.curr_state_RNI5H3S4_1_LC_2_14_2 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.curr_state_RNI5H3S4_1_LC_2_14_2 .LUT_INIT=16'b1110001000000000;
-    LogicCell40 \PCH_PWRGD.curr_state_RNI5H3S4_1_LC_2_14_2  (
-            .in0(N__4442),
-            .in1(N__4635),
-            .in2(N__3777),
-            .in3(N__4182),
-            .lcout(\PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1 ),
-            .ltout(\PCH_PWRGD.curr_state_RNI5H3S4Z0Z_1_cascade_ ),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_esr_RNO_0_15_LC_2_14_3 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_esr_RNO_0_15_LC_2_14_3 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.count_esr_RNO_0_15_LC_2_14_3 .LUT_INIT=16'b1111111111110000;
-    LogicCell40 \PCH_PWRGD.count_esr_RNO_0_15_LC_2_14_3  (
+            .clk(N__6775),
+            .ce(N__3314),
+            .sr(N__3344));
+    defparam CONSTANT_ONE_LUT4_LC_1_14_0.C_ON=1'b0;
+    defparam CONSTANT_ONE_LUT4_LC_1_14_0.SEQ_MODE=4'b0000;
+    defparam CONSTANT_ONE_LUT4_LC_1_14_0.LUT_INIT=16'b1111111111111111;
+    LogicCell40 CONSTANT_ONE_LUT4_LC_1_14_0 (
             .in0(_gnd_net_),
             .in1(_gnd_net_),
-            .in2(N__4149),
-            .in3(N__6002),
-            .lcout(\PCH_PWRGD.G_0_4 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_RNIN5IJ_0_LC_2_14_5 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_RNIN5IJ_0_LC_2_14_5 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.count_RNIN5IJ_0_LC_2_14_5 .LUT_INIT=16'b0000000010000000;
-    LogicCell40 \PCH_PWRGD.count_RNIN5IJ_0_LC_2_14_5  (
-            .in0(N__4139),
-            .in1(N__4127),
-            .in2(N__4116),
-            .in3(N__4100),
-            .lcout(\PCH_PWRGD.un4_count_8 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_RNIESHJ_1_LC_2_14_6 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_RNIESHJ_1_LC_2_14_6 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.count_RNIESHJ_1_LC_2_14_6 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \PCH_PWRGD.count_RNIESHJ_1_LC_2_14_6  (
-            .in0(N__4079),
-            .in1(N__4067),
-            .in2(N__4056),
-            .in3(N__4040),
-            .lcout(\PCH_PWRGD.un4_count_11 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.count_esr_RNIFR521_15_LC_2_15_1 .C_ON=1'b0;
-    defparam \PCH_PWRGD.count_esr_RNIFR521_15_LC_2_15_1 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.count_esr_RNIFR521_15_LC_2_15_1 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \PCH_PWRGD.count_esr_RNIFR521_15_LC_2_15_1  (
-            .in0(N__4022),
-            .in1(N__4010),
-            .in2(N__3999),
-            .in3(N__3983),
-            .lcout(\PCH_PWRGD.un4_count_10 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.un1_vddq_en_LC_2_15_4 .C_ON=1'b0;
-    defparam \VPP_VDDQ.un1_vddq_en_LC_2_15_4 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.un1_vddq_en_LC_2_15_4 .LUT_INIT=16'b1010101000000000;
-    LogicCell40 \VPP_VDDQ.un1_vddq_en_LC_2_15_4  (
-            .in0(N__5396),
-            .in1(_gnd_net_),
             .in2(_gnd_net_),
-            .in3(N__4475),
+            .in3(_gnd_net_),
+            .lcout(CONSTANT_ONE_NET),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_14_1 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_14_1 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_14_1 .LUT_INIT=16'b0100000000000000;
+    LogicCell40 \RSMRST_PWRGD.count_esr_RNISRRR_15_LC_1_14_1  (
+            .in0(N__3697),
+            .in1(N__3770),
+            .in2(N__3836),
+            .in3(N__3850),
+            .lcout(),
+            .ltout(\RSMRST_PWRGD.un4_count_9_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_14_2 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_14_2 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_14_2 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \RSMRST_PWRGD.count_RNIR8OP4_10_LC_1_14_2  (
+            .in0(N__3125),
+            .in1(N__3131),
+            .in2(N__3140),
+            .in3(N__3137),
+            .lcout(\RSMRST_PWRGD.N_1_i ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_14_3 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_14_3 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_14_3 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \RSMRST_PWRGD.count_RNI4MLK1_1_LC_1_14_3  (
+            .in0(N__3640),
+            .in1(N__3670),
+            .in2(N__3917),
+            .in3(N__3685),
+            .lcout(\RSMRST_PWRGD.un4_count_8 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_14_4 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_14_4 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_14_4 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \RSMRST_PWRGD.count_RNI9RLK1_3_LC_1_14_4  (
+            .in0(N__3610),
+            .in1(N__3625),
+            .in2(N__3596),
+            .in3(N__3655),
+            .lcout(\RSMRST_PWRGD.un4_count_10 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_14_5 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_14_5 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_14_5 .LUT_INIT=16'b0001000100000000;
+    LogicCell40 \RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_1_14_5  (
+            .in0(N__3256),
+            .in1(N__4801),
+            .in2(_gnd_net_),
+            .in3(N__6881),
+            .lcout(\RSMRST_PWRGD.G_1_1 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_1_14_7 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_1_14_7 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_1_14_7 .LUT_INIT=16'b1111111101000100;
+    LogicCell40 \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_1_14_7  (
+            .in0(N__3257),
+            .in1(N__4453),
+            .in2(_gnd_net_),
+            .in3(N__3274),
+            .lcout(\RSMRST_PWRGD.un1_curr_state10_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_15_0 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_15_0 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_15_0 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \RSMRST_PWRGD.count_RNIIRGK_10_LC_1_15_0  (
+            .in0(N__3883),
+            .in1(N__3898),
+            .in2(N__3869),
+            .in3(N__3577),
+            .lcout(\RSMRST_PWRGD.un4_count_11 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_15_2 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_15_2 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_15_2 .LUT_INIT=16'b1110010000000000;
+    LogicCell40 \RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_1_15_2  (
+            .in0(N__3275),
+            .in1(N__4459),
+            .in2(N__3299),
+            .in3(N__3119),
+            .lcout(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1 ),
+            .ltout(\RSMRST_PWRGD.curr_state_RNII9BF7Z0Z_1_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_15_3 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_15_3 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_15_3 .LUT_INIT=16'b1111111111110000;
+    LogicCell40 \RSMRST_PWRGD.count_esr_RNO_0_15_LC_1_15_3  (
+            .in0(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__3113),
+            .in3(N__5990),
+            .lcout(\RSMRST_PWRGD.G_0_0_1 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.curr_state_0_LC_1_15_4 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.curr_state_0_LC_1_15_4 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.curr_state_0_LC_1_15_4 .LUT_INIT=16'b0101100000001000;
+    LogicCell40 \RSMRST_PWRGD.curr_state_0_LC_1_15_4  (
+            .in0(N__3254),
+            .in1(N__4455),
+            .in2(N__3281),
+            .in3(N__3298),
+            .lcout(\RSMRST_PWRGD.curr_stateZ0Z_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6773),
+            .ce(N__5989),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.curr_state_1_LC_1_15_5 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.curr_state_1_LC_1_15_5 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.curr_state_1_LC_1_15_5 .LUT_INIT=16'b0000000001110100;
+    LogicCell40 \RSMRST_PWRGD.curr_state_1_LC_1_15_5  (
+            .in0(N__3297),
+            .in1(N__3280),
+            .in2(N__4460),
+            .in3(N__3255),
+            .lcout(\RSMRST_PWRGD.curr_stateZ0Z_1 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6773),
+            .ce(N__5989),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.RSMRSTn_LC_1_15_7 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.RSMRSTn_LC_1_15_7 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.RSMRSTn_LC_1_15_7 .LUT_INIT=16'b0010001000000000;
+    LogicCell40 \RSMRST_PWRGD.RSMRSTn_LC_1_15_7  (
+            .in0(N__4454),
+            .in1(N__3276),
+            .in2(_gnd_net_),
+            .in3(N__3253),
+            .lcout(rsmrstn),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6773),
+            .ce(N__5989),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.un1_vddq_en_LC_1_16_1 .C_ON=1'b0;
+    defparam \VPP_VDDQ.un1_vddq_en_LC_1_16_1 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.un1_vddq_en_LC_1_16_1 .LUT_INIT=16'b1100110000000000;
+    LogicCell40 \VPP_VDDQ.un1_vddq_en_LC_1_16_1  (
+            .in0(_gnd_net_),
+            .in1(N__4961),
+            .in2(_gnd_net_),
+            .in3(N__5595),
             .lcout(vddq_en),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8012,13 +7744,748 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
+    defparam \PCH_PWRGD.pch_pwrok_LC_2_7_4 .C_ON=1'b0;
+    defparam \PCH_PWRGD.pch_pwrok_LC_2_7_4 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.pch_pwrok_LC_2_7_4 .LUT_INIT=16'b0010001000000000;
+    LogicCell40 \PCH_PWRGD.pch_pwrok_LC_2_7_4  (
+            .in0(N__3488),
+            .in1(N__3437),
+            .in2(_gnd_net_),
+            .in3(N__4268),
+            .lcout(pch_pwrok),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6677),
+            .ce(N__6057),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.curr_state_RNIPUIK1_0_LC_2_8_4 .C_ON=1'b0;
+    defparam \SYS_PWRGD.curr_state_RNIPUIK1_0_LC_2_8_4 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.curr_state_RNIPUIK1_0_LC_2_8_4 .LUT_INIT=16'b1100110011101110;
+    LogicCell40 \SYS_PWRGD.curr_state_RNIPUIK1_0_LC_2_8_4  (
+            .in0(N__4925),
+            .in1(N__3361),
+            .in2(_gnd_net_),
+            .in3(N__4303),
+            .lcout(\SYS_PWRGD.un1_curr_state10_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.curr_state_RNIFRIJ6_1_LC_2_9_1 .C_ON=1'b0;
+    defparam \SYS_PWRGD.curr_state_RNIFRIJ6_1_LC_2_9_1 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.curr_state_RNIFRIJ6_1_LC_2_9_1 .LUT_INIT=16'b1101100000000000;
+    LogicCell40 \SYS_PWRGD.curr_state_RNIFRIJ6_1_LC_2_9_1  (
+            .in0(N__3362),
+            .in1(N__4065),
+            .in2(N__4924),
+            .in3(N__4280),
+            .lcout(\SYS_PWRGD.curr_state_RNIFRIJ6Z0Z_1 ),
+            .ltout(\SYS_PWRGD.curr_state_RNIFRIJ6Z0Z_1_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.count_esr_RNO_0_15_LC_2_9_2 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_esr_RNO_0_15_LC_2_9_2 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.count_esr_RNO_0_15_LC_2_9_2 .LUT_INIT=16'b1111111111110000;
+    LogicCell40 \SYS_PWRGD.count_esr_RNO_0_15_LC_2_9_2  (
+            .in0(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__3149),
+            .in3(N__5868),
+            .lcout(\SYS_PWRGD.G_0_0_3 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.curr_state_0_LC_2_9_3 .C_ON=1'b0;
+    defparam \SYS_PWRGD.curr_state_0_LC_2_9_3 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.curr_state_0_LC_2_9_3 .LUT_INIT=16'b0101100000001000;
+    LogicCell40 \SYS_PWRGD.curr_state_0_LC_2_9_3  (
+            .in0(N__4305),
+            .in1(N__4913),
+            .in2(N__3368),
+            .in3(N__4066),
+            .lcout(\SYS_PWRGD.curr_stateZ0Z_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6753),
+            .ce(N__6058),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.curr_state_1_LC_2_9_4 .C_ON=1'b0;
+    defparam \SYS_PWRGD.curr_state_1_LC_2_9_4 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.curr_state_1_LC_2_9_4 .LUT_INIT=16'b0000000001110100;
+    LogicCell40 \SYS_PWRGD.curr_state_1_LC_2_9_4  (
+            .in0(N__4067),
+            .in1(N__3367),
+            .in2(N__4923),
+            .in3(N__4306),
+            .lcout(\SYS_PWRGD.curr_stateZ0Z_1 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6753),
+            .ce(N__6058),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.ALL_SYS_PWRGD_LC_2_9_6 .C_ON=1'b0;
+    defparam \SYS_PWRGD.ALL_SYS_PWRGD_LC_2_9_6 .SEQ_MODE=4'b1000;
+    defparam \SYS_PWRGD.ALL_SYS_PWRGD_LC_2_9_6 .LUT_INIT=16'b0010001000000000;
+    LogicCell40 \SYS_PWRGD.ALL_SYS_PWRGD_LC_2_9_6  (
+            .in0(N__4912),
+            .in1(N__3363),
+            .in2(_gnd_net_),
+            .in3(N__4304),
+            .lcout(suswarn_n),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6753),
+            .ce(N__6058),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.curr_state_RNIB8F31_0_LC_2_9_7 .C_ON=1'b0;
+    defparam \PCH_PWRGD.curr_state_RNIB8F31_0_LC_2_9_7 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.curr_state_RNIB8F31_0_LC_2_9_7 .LUT_INIT=16'b1010101011101110;
+    LogicCell40 \PCH_PWRGD.curr_state_RNIB8F31_0_LC_2_9_7  (
+            .in0(N__3430),
+            .in1(N__3466),
+            .in2(_gnd_net_),
+            .in3(N__4258),
+            .lcout(\PCH_PWRGD.un1_curr_state10_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.un4_counter_7_c_RNIJ9569_LC_2_10_0 .C_ON=1'b0;
+    defparam \COUNTER.un4_counter_7_c_RNIJ9569_LC_2_10_0 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.un4_counter_7_c_RNIJ9569_LC_2_10_0 .LUT_INIT=16'b1010100000000000;
+    LogicCell40 \COUNTER.un4_counter_7_c_RNIJ9569_LC_2_10_0  (
+            .in0(N__4754),
+            .in1(N__5363),
+            .in2(N__6092),
+            .in3(N__6876),
+            .lcout(un4_counter_7_c_RNIJ9569),
+            .ltout(un4_counter_7_c_RNIJ9569_cascade_),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.count_esr_RNO_0_15_LC_2_10_1 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_esr_RNO_0_15_LC_2_10_1 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.count_esr_RNO_0_15_LC_2_10_1 .LUT_INIT=16'b1111111111110000;
+    LogicCell40 \VPP_VDDQ.count_esr_RNO_0_15_LC_2_10_1  (
+            .in0(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__3317),
+            .in3(N__6034),
+            .lcout(\VPP_VDDQ.G_0_0_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.curr_state_RNI1BVG4_1_LC_2_10_2 .C_ON=1'b0;
+    defparam \PCH_PWRGD.curr_state_RNI1BVG4_1_LC_2_10_2 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.curr_state_RNI1BVG4_1_LC_2_10_2 .LUT_INIT=16'b1101100000000000;
+    LogicCell40 \PCH_PWRGD.curr_state_RNI1BVG4_1_LC_2_10_2  (
+            .in0(N__3431),
+            .in1(N__4344),
+            .in2(N__3486),
+            .in3(N__4232),
+            .lcout(\PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1 ),
+            .ltout(\PCH_PWRGD.curr_state_RNI1BVG4Z0Z_1_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_esr_RNO_0_15_LC_2_10_3 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_esr_RNO_0_15_LC_2_10_3 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.count_esr_RNO_0_15_LC_2_10_3 .LUT_INIT=16'b1111111111110000;
+    LogicCell40 \PCH_PWRGD.count_esr_RNO_0_15_LC_2_10_3  (
+            .in0(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__3302),
+            .in3(N__6033),
+            .lcout(\PCH_PWRGD.G_0_0_2 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.tmp_RNIRH3P_LC_2_10_4 .C_ON=1'b0;
+    defparam \COUNTER.tmp_RNIRH3P_LC_2_10_4 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.tmp_RNIRH3P_LC_2_10_4 .LUT_INIT=16'b0011001100000000;
+    LogicCell40 \COUNTER.tmp_RNIRH3P_LC_2_10_4  (
+            .in0(_gnd_net_),
+            .in1(N__4802),
+            .in2(_gnd_net_),
+            .in3(N__6875),
+            .lcout(G_0_0),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.curr_state_0_LC_2_10_6 .C_ON=1'b0;
+    defparam \PCH_PWRGD.curr_state_0_LC_2_10_6 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.curr_state_0_LC_2_10_6 .LUT_INIT=16'b0110001001000000;
+    LogicCell40 \PCH_PWRGD.curr_state_0_LC_2_10_6  (
+            .in0(N__3432),
+            .in1(N__4259),
+            .in2(N__3487),
+            .in3(N__4345),
+            .lcout(\PCH_PWRGD.curr_stateZ0Z_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6719),
+            .ce(N__6032),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.curr_state_1_LC_2_10_7 .C_ON=1'b0;
+    defparam \PCH_PWRGD.curr_state_1_LC_2_10_7 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.curr_state_1_LC_2_10_7 .LUT_INIT=16'b0000010100001100;
+    LogicCell40 \PCH_PWRGD.curr_state_1_LC_2_10_7  (
+            .in0(N__4346),
+            .in1(N__3473),
+            .in2(N__4267),
+            .in3(N__3433),
+            .lcout(\PCH_PWRGD.curr_stateZ0Z_1 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6719),
+            .ce(N__6032),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_0_LC_2_11_0 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_0_LC_2_11_0 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_0_LC_2_11_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_0_LC_2_11_0  (
+            .in0(N__5886),
+            .in1(N__4622),
+            .in2(N__3410),
+            .in3(N__3409),
+            .lcout(\PCH_PWRGD.countZ0Z_0 ),
+            .ltout(),
+            .carryin(bfn_2_11_0_),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_0 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_1_LC_2_11_1 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_1_LC_2_11_1 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_1_LC_2_11_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_1_LC_2_11_1  (
+            .in0(N__5882),
+            .in1(N__4559),
+            .in2(_gnd_net_),
+            .in3(N__3389),
+            .lcout(\PCH_PWRGD.countZ0Z_1 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_0 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_1 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_2_LC_2_11_2 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_2_LC_2_11_2 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_2_LC_2_11_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_2_LC_2_11_2  (
+            .in0(N__5887),
+            .in1(N__4591),
+            .in2(_gnd_net_),
+            .in3(N__3386),
+            .lcout(\PCH_PWRGD.countZ0Z_2 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_1 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_2 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_3_LC_2_11_3 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_3_LC_2_11_3 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_3_LC_2_11_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_3_LC_2_11_3  (
+            .in0(N__5883),
+            .in1(N__4606),
+            .in2(_gnd_net_),
+            .in3(N__3383),
+            .lcout(\PCH_PWRGD.countZ0Z_3 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_2 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_3 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_4_LC_2_11_4 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_4_LC_2_11_4 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_4_LC_2_11_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_4_LC_2_11_4  (
+            .in0(N__5888),
+            .in1(N__4573),
+            .in2(_gnd_net_),
+            .in3(N__3380),
+            .lcout(\PCH_PWRGD.countZ0Z_4 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_3 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_4 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_5_LC_2_11_5 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_5_LC_2_11_5 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_5_LC_2_11_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_5_LC_2_11_5  (
+            .in0(N__5884),
+            .in1(N__4375),
+            .in2(_gnd_net_),
+            .in3(N__3377),
+            .lcout(\PCH_PWRGD.countZ0Z_5 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_4 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_5 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_6_LC_2_11_6 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_6_LC_2_11_6 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_6_LC_2_11_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_6_LC_2_11_6  (
+            .in0(N__5889),
+            .in1(N__4411),
+            .in2(_gnd_net_),
+            .in3(N__3374),
+            .lcout(\PCH_PWRGD.countZ0Z_6 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_5 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_6 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_7_LC_2_11_7 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_7_LC_2_11_7 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_7_LC_2_11_7 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_7_LC_2_11_7  (
+            .in0(N__5885),
+            .in1(N__4676),
+            .in2(_gnd_net_),
+            .in3(N__3371),
+            .lcout(\PCH_PWRGD.countZ0Z_7 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_6 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_7 ),
+            .clk(N__6731),
+            .ce(),
+            .sr(N__3745));
+    defparam \PCH_PWRGD.count_8_LC_2_12_0 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_8_LC_2_12_0 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_8_LC_2_12_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_8_LC_2_12_0  (
+            .in0(N__5927),
+            .in1(N__4429),
+            .in2(_gnd_net_),
+            .in3(N__3563),
+            .lcout(\PCH_PWRGD.countZ0Z_8 ),
+            .ltout(),
+            .carryin(bfn_2_12_0_),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_8 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.count_9_LC_2_12_1 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_9_LC_2_12_1 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_9_LC_2_12_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_9_LC_2_12_1  (
+            .in0(N__6056),
+            .in1(N__4393),
+            .in2(_gnd_net_),
+            .in3(N__3560),
+            .lcout(\PCH_PWRGD.countZ0Z_9 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_8 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_9 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.count_10_LC_2_12_2 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_10_LC_2_12_2 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_10_LC_2_12_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_10_LC_2_12_2  (
+            .in0(N__5924),
+            .in1(N__4657),
+            .in2(_gnd_net_),
+            .in3(N__3557),
+            .lcout(\PCH_PWRGD.countZ0Z_10 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_9 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_10 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.count_11_LC_2_12_3 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_11_LC_2_12_3 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_11_LC_2_12_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_11_LC_2_12_3  (
+            .in0(N__6054),
+            .in1(N__4636),
+            .in2(_gnd_net_),
+            .in3(N__3554),
+            .lcout(\PCH_PWRGD.countZ0Z_11 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_10 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_11 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.count_12_LC_2_12_4 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_12_LC_2_12_4 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_12_LC_2_12_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_12_LC_2_12_4  (
+            .in0(N__5925),
+            .in1(N__5026),
+            .in2(_gnd_net_),
+            .in3(N__3551),
+            .lcout(\PCH_PWRGD.countZ0Z_12 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_11 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_12 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.count_13_LC_2_12_5 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_13_LC_2_12_5 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_13_LC_2_12_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_13_LC_2_12_5  (
+            .in0(N__6055),
+            .in1(N__5062),
+            .in2(_gnd_net_),
+            .in3(N__3548),
+            .lcout(\PCH_PWRGD.countZ0Z_13 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_12 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_13 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.count_14_LC_2_12_6 .C_ON=1'b1;
+    defparam \PCH_PWRGD.count_14_LC_2_12_6 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_14_LC_2_12_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \PCH_PWRGD.count_14_LC_2_12_6  (
+            .in0(N__5926),
+            .in1(N__5080),
+            .in2(_gnd_net_),
+            .in3(N__3545),
+            .lcout(\PCH_PWRGD.countZ0Z_14 ),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_13 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_14 ),
+            .clk(N__6759),
+            .ce(),
+            .sr(N__3741));
+    defparam \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7 .C_ON=1'b1;
+    defparam \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7 .LUT_INIT=16'b0000000000000000;
+    LogicCell40 \PCH_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_12_7  (
+            .in0(_gnd_net_),
+            .in1(N__3818),
+            .in2(GNDG0),
+            .in3(_gnd_net_),
+            .lcout(),
+            .ltout(),
+            .carryin(\PCH_PWRGD.un1_count_1_cry_14 ),
+            .carryout(\PCH_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_esr_15_LC_2_13_0 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_esr_15_LC_2_13_0 .SEQ_MODE=4'b1000;
+    defparam \PCH_PWRGD.count_esr_15_LC_2_13_0 .LUT_INIT=16'b0011001111001100;
+    LogicCell40 \PCH_PWRGD.count_esr_15_LC_2_13_0  (
+            .in0(_gnd_net_),
+            .in1(N__5044),
+            .in2(_gnd_net_),
+            .in3(N__3542),
+            .lcout(\PCH_PWRGD.countZ0Z_15 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6732),
+            .ce(N__3539),
+            .sr(N__3746));
+    defparam \RSMRST_PWRGD.count_0_LC_2_14_0 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_0_LC_2_14_0 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_0_LC_2_14_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_0_LC_2_14_0  (
+            .in0(N__5979),
+            .in1(N__3698),
+            .in2(N__3713),
+            .in3(N__3712),
+            .lcout(\RSMRST_PWRGD.countZ0Z_0 ),
+            .ltout(),
+            .carryin(bfn_2_14_0_),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_0 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_1_LC_2_14_1 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_1_LC_2_14_1 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_1_LC_2_14_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_1_LC_2_14_1  (
+            .in0(N__5991),
+            .in1(N__3686),
+            .in2(_gnd_net_),
+            .in3(N__3674),
+            .lcout(\RSMRST_PWRGD.countZ0Z_1 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_0 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_1 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_2_LC_2_14_2 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_2_LC_2_14_2 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_2_LC_2_14_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_2_LC_2_14_2  (
+            .in0(N__5980),
+            .in1(N__3671),
+            .in2(_gnd_net_),
+            .in3(N__3659),
+            .lcout(\RSMRST_PWRGD.countZ0Z_2 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_1 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_2 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_3_LC_2_14_3 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_3_LC_2_14_3 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_3_LC_2_14_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_3_LC_2_14_3  (
+            .in0(N__5992),
+            .in1(N__3656),
+            .in2(_gnd_net_),
+            .in3(N__3644),
+            .lcout(\RSMRST_PWRGD.countZ0Z_3 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_2 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_3 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_4_LC_2_14_4 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_4_LC_2_14_4 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_4_LC_2_14_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_4_LC_2_14_4  (
+            .in0(N__5981),
+            .in1(N__3641),
+            .in2(_gnd_net_),
+            .in3(N__3629),
+            .lcout(\RSMRST_PWRGD.countZ0Z_4 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_3 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_4 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_5_LC_2_14_5 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_5_LC_2_14_5 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_5_LC_2_14_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_5_LC_2_14_5  (
+            .in0(N__5993),
+            .in1(N__3626),
+            .in2(_gnd_net_),
+            .in3(N__3614),
+            .lcout(\RSMRST_PWRGD.countZ0Z_5 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_4 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_5 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_6_LC_2_14_6 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_6_LC_2_14_6 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_6_LC_2_14_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_6_LC_2_14_6  (
+            .in0(N__5982),
+            .in1(N__3611),
+            .in2(_gnd_net_),
+            .in3(N__3599),
+            .lcout(\RSMRST_PWRGD.countZ0Z_6 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_5 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_6 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_7_LC_2_14_7 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_7_LC_2_14_7 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_7_LC_2_14_7 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_7_LC_2_14_7  (
+            .in0(N__5994),
+            .in1(N__3595),
+            .in2(_gnd_net_),
+            .in3(N__3581),
+            .lcout(\RSMRST_PWRGD.countZ0Z_7 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_6 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_7 ),
+            .clk(N__6760),
+            .ce(),
+            .sr(N__3943));
+    defparam \RSMRST_PWRGD.count_8_LC_2_15_0 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_8_LC_2_15_0 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_8_LC_2_15_0 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_8_LC_2_15_0  (
+            .in0(N__6028),
+            .in1(N__3578),
+            .in2(_gnd_net_),
+            .in3(N__3566),
+            .lcout(\RSMRST_PWRGD.countZ0Z_8 ),
+            .ltout(),
+            .carryin(bfn_2_15_0_),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_8 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.count_9_LC_2_15_1 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_9_LC_2_15_1 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_9_LC_2_15_1 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_9_LC_2_15_1  (
+            .in0(N__6031),
+            .in1(N__3916),
+            .in2(_gnd_net_),
+            .in3(N__3902),
+            .lcout(\RSMRST_PWRGD.countZ0Z_9 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_8 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_9 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.count_10_LC_2_15_2 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_10_LC_2_15_2 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_10_LC_2_15_2 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_10_LC_2_15_2  (
+            .in0(N__6025),
+            .in1(N__3899),
+            .in2(_gnd_net_),
+            .in3(N__3887),
+            .lcout(\RSMRST_PWRGD.countZ0Z_10 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_9 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_10 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.count_11_LC_2_15_3 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_11_LC_2_15_3 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_11_LC_2_15_3 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_11_LC_2_15_3  (
+            .in0(N__6029),
+            .in1(N__3884),
+            .in2(_gnd_net_),
+            .in3(N__3872),
+            .lcout(\RSMRST_PWRGD.countZ0Z_11 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_10 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_11 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.count_12_LC_2_15_4 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_12_LC_2_15_4 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_12_LC_2_15_4 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_12_LC_2_15_4  (
+            .in0(N__6026),
+            .in1(N__3868),
+            .in2(_gnd_net_),
+            .in3(N__3854),
+            .lcout(\RSMRST_PWRGD.countZ0Z_12 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_11 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_12 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.count_13_LC_2_15_5 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_13_LC_2_15_5 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_13_LC_2_15_5 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_13_LC_2_15_5  (
+            .in0(N__6030),
+            .in1(N__3851),
+            .in2(_gnd_net_),
+            .in3(N__3839),
+            .lcout(\RSMRST_PWRGD.countZ0Z_13 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_12 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_13 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.count_14_LC_2_15_6 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.count_14_LC_2_15_6 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_14_LC_2_15_6 .LUT_INIT=16'b0110011011001100;
+    LogicCell40 \RSMRST_PWRGD.count_14_LC_2_15_6  (
+            .in0(N__6027),
+            .in1(N__3835),
+            .in2(_gnd_net_),
+            .in3(N__3821),
+            .lcout(\RSMRST_PWRGD.countZ0Z_14 ),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_13 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_14 ),
+            .clk(N__6761),
+            .ce(),
+            .sr(N__3936));
+    defparam \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_15_7 .C_ON=1'b1;
+    defparam \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_15_7 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_15_7 .LUT_INIT=16'b0000000000000000;
+    LogicCell40 \RSMRST_PWRGD.un1_count_1_cry_14_c_THRU_CRY_0_LC_2_15_7  (
+            .in0(_gnd_net_),
+            .in1(N__3802),
+            .in2(GNDG0),
+            .in3(_gnd_net_),
+            .lcout(),
+            .ltout(),
+            .carryin(\RSMRST_PWRGD.un1_count_1_cry_14 ),
+            .carryout(\RSMRST_PWRGD.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.count_esr_15_LC_2_16_0 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.count_esr_15_LC_2_16_0 .SEQ_MODE=4'b1000;
+    defparam \RSMRST_PWRGD.count_esr_15_LC_2_16_0 .LUT_INIT=16'b0011001111001100;
+    LogicCell40 \RSMRST_PWRGD.count_esr_15_LC_2_16_0  (
+            .in0(_gnd_net_),
+            .in1(N__3766),
+            .in2(_gnd_net_),
+            .in3(N__3773),
+            .lcout(\RSMRST_PWRGD.countZ0Z_15 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6762),
+            .ce(N__3752),
+            .sr(N__3947));
     defparam \COUNTER.un4_counter_0_c_LC_4_9_0 .C_ON=1'b1;
     defparam \COUNTER.un4_counter_0_c_LC_4_9_0 .SEQ_MODE=4'b0000;
     defparam \COUNTER.un4_counter_0_c_LC_4_9_0 .LUT_INIT=16'b0000000000000000;
     LogicCell40 \COUNTER.un4_counter_0_c_LC_4_9_0  (
             .in0(_gnd_net_),
             .in1(_gnd_net_),
-            .in2(N__4644),
+            .in2(N__5396),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8033,7 +8500,7 @@ module TOP (
     LogicCell40 \COUNTER.un4_counter_1_c_LC_4_9_1  (
             .in0(_gnd_net_),
             .in1(_gnd_net_),
-            .in2(N__4653),
+            .in2(N__5183),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8047,8 +8514,8 @@ module TOP (
     defparam \COUNTER.un4_counter_2_c_LC_4_9_2 .LUT_INIT=16'b0000000000000000;
     LogicCell40 \COUNTER.un4_counter_2_c_LC_4_9_2  (
             .in0(_gnd_net_),
-            .in1(_gnd_net_),
-            .in2(N__4842),
+            .in1(N__5189),
+            .in2(_gnd_net_),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8063,7 +8530,7 @@ module TOP (
     LogicCell40 \COUNTER.un4_counter_3_c_LC_4_9_3  (
             .in0(_gnd_net_),
             .in1(_gnd_net_),
-            .in2(N__4818),
+            .in2(N__5405),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8077,8 +8544,8 @@ module TOP (
     defparam \COUNTER.un4_counter_4_c_LC_4_9_4 .LUT_INIT=16'b0000000000000000;
     LogicCell40 \COUNTER.un4_counter_4_c_LC_4_9_4  (
             .in0(_gnd_net_),
-            .in1(N__4833),
-            .in2(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__5423),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8093,7 +8560,7 @@ module TOP (
     LogicCell40 \COUNTER.un4_counter_5_c_LC_4_9_5  (
             .in0(_gnd_net_),
             .in1(_gnd_net_),
-            .in2(N__4827),
+            .in2(N__5414),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8107,8 +8574,8 @@ module TOP (
     defparam \COUNTER.un4_counter_6_c_LC_4_9_6 .LUT_INIT=16'b0000000000000000;
     LogicCell40 \COUNTER.un4_counter_6_c_LC_4_9_6  (
             .in0(_gnd_net_),
-            .in1(N__5130),
-            .in2(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__5375),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8122,8 +8589,8 @@ module TOP (
     defparam \COUNTER.un4_counter_7_c_LC_4_9_7 .LUT_INIT=16'b0000000000000000;
     LogicCell40 \COUNTER.un4_counter_7_c_LC_4_9_7  (
             .in0(_gnd_net_),
-            .in1(N__5100),
-            .in2(_gnd_net_),
+            .in1(_gnd_net_),
+            .in2(N__5387),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -8139,8 +8606,23 @@ module TOP (
             .in0(_gnd_net_),
             .in1(_gnd_net_),
             .in2(_gnd_net_),
-            .in3(N__4185),
+            .in3(N__3920),
             .lcout(COUNTER_un4_counter_7_THRU_CO),
+            .ltout(COUNTER_un4_counter_7_THRU_CO_cascade_),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.curr_state_RNIF9431_0_LC_4_10_1 .C_ON=1'b0;
+    defparam \SYS_PWRGD.curr_state_RNIF9431_0_LC_4_10_1 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.curr_state_RNIF9431_0_LC_4_10_1 .LUT_INIT=16'b0000000001010000;
+    LogicCell40 \SYS_PWRGD.curr_state_RNIF9431_0_LC_4_10_1  (
+            .in0(N__4794),
+            .in1(_gnd_net_),
+            .in2(N__4313),
+            .in3(N__4310),
+            .lcout(\SYS_PWRGD.G_2_1 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
@@ -8151,233 +8633,248 @@ module TOP (
     defparam \PCH_PWRGD.curr_state_RNIBS171_0_LC_4_10_2 .SEQ_MODE=4'b0000;
     defparam \PCH_PWRGD.curr_state_RNIBS171_0_LC_4_10_2 .LUT_INIT=16'b0001000100000000;
     LogicCell40 \PCH_PWRGD.curr_state_RNIBS171_0_LC_4_10_2  (
-            .in0(N__4589),
-            .in1(N__4786),
+            .in0(N__4266),
+            .in1(N__4793),
             .in2(_gnd_net_),
-            .in3(N__4729),
-            .lcout(\PCH_PWRGD.G_2_1 ),
+            .in3(N__6856),
+            .lcout(\PCH_PWRGD.G_0_1 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.tmp_LC_4_10_3 .C_ON=1'b0;
-    defparam \COUNTER.tmp_LC_4_10_3 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.tmp_LC_4_10_3 .LUT_INIT=16'b0101101001011010;
-    LogicCell40 \COUNTER.tmp_LC_4_10_3  (
-            .in0(N__4730),
-            .in1(_gnd_net_),
-            .in2(N__4800),
+    defparam \SYS_PWRGD.count_RNI07U31_11_LC_4_10_4 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_RNI07U31_11_LC_4_10_4 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.count_RNI07U31_11_LC_4_10_4 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \SYS_PWRGD.count_RNI07U31_11_LC_4_10_4  (
+            .in0(N__4223),
+            .in1(N__4205),
+            .in2(N__4187),
+            .in3(N__4166),
+            .lcout(\SYS_PWRGD.un4_count_10 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.count_esr_RNIVV9F_15_LC_4_10_5 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_esr_RNIVV9F_15_LC_4_10_5 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.count_esr_RNIVV9F_15_LC_4_10_5 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \SYS_PWRGD.count_esr_RNIVV9F_15_LC_4_10_5  (
+            .in0(N__4148),
+            .in1(N__4130),
+            .in2(N__4112),
+            .in3(N__4094),
+            .lcout(),
+            .ltout(\SYS_PWRGD.un4_count_11_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.count_RNIRAS54_10_LC_4_10_6 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_RNIRAS54_10_LC_4_10_6 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.count_RNIRAS54_10_LC_4_10_6 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \SYS_PWRGD.count_RNIRAS54_10_LC_4_10_6  (
+            .in0(N__4076),
+            .in1(N__5276),
+            .in2(N__4070),
+            .in3(N__5195),
+            .lcout(\SYS_PWRGD.N_1_i ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.curr_state_RNIOISJ1_0_LC_4_11_0 .C_ON=1'b0;
+    defparam \VPP_VDDQ.curr_state_RNIOISJ1_0_LC_4_11_0 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.curr_state_RNIOISJ1_0_LC_4_11_0 .LUT_INIT=16'b1111111100101010;
+    LogicCell40 \VPP_VDDQ.curr_state_RNIOISJ1_0_LC_4_11_0  (
+            .in0(N__5753),
+            .in1(N__5604),
+            .in2(N__5726),
+            .in3(N__5651),
+            .lcout(\VPP_VDDQ.un1_curr_state13_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam SLP_SUSn_RNIN4K9_LC_4_11_1.C_ON=1'b0;
+    defparam SLP_SUSn_RNIN4K9_LC_4_11_1.SEQ_MODE=4'b0000;
+    defparam SLP_SUSn_RNIN4K9_LC_4_11_1.LUT_INIT=16'b0011001100110011;
+    LogicCell40 SLP_SUSn_RNIN4K9_LC_4_11_1 (
+            .in0(_gnd_net_),
+            .in1(N__4999),
+            .in2(_gnd_net_),
             .in3(_gnd_net_),
+            .lcout(v33a_enn),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.count_RNIVJP51_3_LC_4_11_2 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_RNIVJP51_3_LC_4_11_2 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.count_RNIVJP51_3_LC_4_11_2 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \VPP_VDDQ.count_RNIVJP51_3_LC_4_11_2  (
+            .in0(N__4010),
+            .in1(N__3995),
+            .in2(N__3980),
+            .in3(N__3962),
+            .lcout(\VPP_VDDQ.un6_count_9 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.count_RNI63141_10_LC_4_11_4 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_RNI63141_10_LC_4_11_4 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.count_RNI63141_10_LC_4_11_4 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \VPP_VDDQ.count_RNI63141_10_LC_4_11_4  (
+            .in0(N__4742),
+            .in1(N__4727),
+            .in2(N__4712),
+            .in3(N__4691),
+            .lcout(\VPP_VDDQ.un6_count_10 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_RNIUE1S_0_LC_4_11_6 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_RNIUE1S_0_LC_4_11_6 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.count_RNIUE1S_0_LC_4_11_6 .LUT_INIT=16'b0000000010000000;
+    LogicCell40 \PCH_PWRGD.count_RNIUE1S_0_LC_4_11_6  (
+            .in0(N__4675),
+            .in1(N__4661),
+            .in2(N__4643),
+            .in3(N__4621),
+            .lcout(\PCH_PWRGD.un4_count_11 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_RNIU92B_1_LC_4_11_7 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_RNIU92B_1_LC_4_11_7 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.count_RNIU92B_1_LC_4_11_7 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \PCH_PWRGD.count_RNIU92B_1_LC_4_11_7  (
+            .in0(N__4607),
+            .in1(N__4592),
+            .in2(N__4577),
+            .in3(N__4558),
+            .lcout(\PCH_PWRGD.un4_count_10 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_4_12_0 .C_ON=1'b0;
+    defparam \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_4_12_0 .SEQ_MODE=4'b0000;
+    defparam \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_4_12_0 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \RSMRST_PWRGD.un6_rsmrst_pwrgd_LC_4_12_0  (
+            .in0(N__4537),
+            .in1(N__4514),
+            .in2(N__5006),
+            .in3(N__4480),
+            .lcout(\RSMRST_PWRGD.N_3_i ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_RNIGS2B_5_LC_4_12_3 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_RNIGS2B_5_LC_4_12_3 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.count_RNIGS2B_5_LC_4_12_3 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \PCH_PWRGD.count_RNIGS2B_5_LC_4_12_3  (
+            .in0(N__4430),
+            .in1(N__4415),
+            .in2(N__4397),
+            .in3(N__4379),
+            .lcout(),
+            .ltout(\PCH_PWRGD.un4_count_9_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_4_12_4 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_4_12_4 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_4_12_4 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \PCH_PWRGD.count_esr_RNIRGCK2_15_LC_4_12_4  (
+            .in0(N__4361),
+            .in1(N__5012),
+            .in2(N__4355),
+            .in3(N__4352),
+            .lcout(\PCH_PWRGD.N_1_i ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.tmp_LC_4_12_5 .C_ON=1'b0;
+    defparam \COUNTER.tmp_LC_4_12_5 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.tmp_LC_4_12_5 .LUT_INIT=16'b0011001111001100;
+    LogicCell40 \COUNTER.tmp_LC_4_12_5  (
+            .in0(_gnd_net_),
+            .in1(N__6880),
+            .in2(_gnd_net_),
+            .in3(N__4792),
             .lcout(COUNTER_tmp_i),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6727),
+            .clk(N__6754),
             .ce(),
             .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_4_10_5 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_4_10_5 .SEQ_MODE=4'b0000;
-    defparam \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_4_10_5 .LUT_INIT=16'b1100110011101110;
-    LogicCell40 \RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_4_10_5  (
-            .in0(N__4302),
-            .in1(N__4334),
-            .in2(_gnd_net_),
-            .in3(N__4238),
-            .lcout(\RSMRST_PWRGD.un1_curr_state10_0 ),
+    defparam \VPP_VDDQ.count_RNIFC141_11_LC_4_12_6 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_RNIFC141_11_LC_4_12_6 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.count_RNIFC141_11_LC_4_12_6 .LUT_INIT=16'b0000000010000000;
+    LogicCell40 \VPP_VDDQ.count_RNIFC141_11_LC_4_12_6  (
+            .in0(N__4328),
+            .in1(N__5174),
+            .in2(N__5159),
+            .in3(N__5141),
+            .lcout(),
+            .ltout(\VPP_VDDQ.un6_count_8_cascade_ ),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_12_7 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_12_7 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_12_7 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_12_7  (
+            .in0(N__4808),
+            .in1(N__5123),
+            .in2(N__5117),
+            .in3(N__5114),
+            .lcout(VPP_VDDQ_un6_count),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \PCH_PWRGD.delayed_vccin_ok_RNO_0_LC_4_10_6 .C_ON=1'b0;
-    defparam \PCH_PWRGD.delayed_vccin_ok_RNO_0_LC_4_10_6 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.delayed_vccin_ok_RNO_0_LC_4_10_6 .LUT_INIT=16'b0000000010011001;
-    LogicCell40 \PCH_PWRGD.delayed_vccin_ok_RNO_0_LC_4_10_6  (
-            .in0(N__4590),
-            .in1(N__4450),
-            .in2(_gnd_net_),
-            .in3(N__4622),
-            .lcout(\PCH_PWRGD.delayed_vccin_ok_s_1_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.delayed_vccin_ok_LC_4_10_7 .C_ON=1'b0;
-    defparam \PCH_PWRGD.delayed_vccin_ok_LC_4_10_7 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.delayed_vccin_ok_LC_4_10_7 .LUT_INIT=16'b1010100011001100;
-    LogicCell40 \PCH_PWRGD.delayed_vccin_ok_LC_4_10_7  (
-            .in0(N__4386),
-            .in1(N__5001),
-            .in2(N__4452),
-            .in3(N__5840),
-            .lcout(pch_pwrok),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6727),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.curr_state_0_LC_4_11_0 .C_ON=1'b0;
-    defparam \SYS_PWRGD.curr_state_0_LC_4_11_0 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.curr_state_0_LC_4_11_0 .LUT_INIT=16'b0011100000001000;
-    LogicCell40 \SYS_PWRGD.curr_state_0_LC_4_11_0  (
-            .in0(N__5009),
-            .in1(N__4950),
-            .in2(N__5072),
-            .in3(N__4212),
-            .lcout(\SYS_PWRGD.curr_stateZ0Z_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6762),
-            .ce(N__6064),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.curr_state_1_LC_4_11_2 .C_ON=1'b0;
-    defparam \PCH_PWRGD.curr_state_1_LC_4_11_2 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.curr_state_1_LC_4_11_2 .LUT_INIT=16'b0000010001010100;
-    LogicCell40 \PCH_PWRGD.curr_state_1_LC_4_11_2  (
-            .in0(N__4595),
-            .in1(N__4446),
-            .in2(N__4631),
-            .in3(N__4359),
-            .lcout(\PCH_PWRGD.curr_stateZ0Z_1 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6762),
-            .ce(N__6064),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.curr_state_1_LC_4_11_3 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.curr_state_1_LC_4_11_3 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.curr_state_1_LC_4_11_3 .LUT_INIT=16'b0001000000110010;
-    LogicCell40 \RSMRST_PWRGD.curr_state_1_LC_4_11_3  (
-            .in0(N__4339),
-            .in1(N__4240),
-            .in2(N__4304),
-            .in3(N__4380),
-            .lcout(\RSMRST_PWRGD.curr_stateZ0Z_1 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6762),
-            .ce(N__6064),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.curr_state_0_LC_4_11_5 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.curr_state_0_LC_4_11_5 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.curr_state_0_LC_4_11_5 .LUT_INIT=16'b0110001001000000;
-    LogicCell40 \RSMRST_PWRGD.curr_state_0_LC_4_11_5  (
-            .in0(N__4338),
-            .in1(N__4239),
-            .in2(N__4303),
-            .in3(N__4379),
-            .lcout(\RSMRST_PWRGD.curr_stateZ0Z_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6762),
-            .ce(N__6064),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.curr_state_0_LC_4_11_7 .C_ON=1'b0;
-    defparam \PCH_PWRGD.curr_state_0_LC_4_11_7 .SEQ_MODE=4'b1000;
-    defparam \PCH_PWRGD.curr_state_0_LC_4_11_7 .LUT_INIT=16'b0011000010001000;
-    LogicCell40 \PCH_PWRGD.curr_state_0_LC_4_11_7  (
-            .in0(N__4358),
-            .in1(N__4623),
-            .in2(N__4451),
-            .in3(N__4594),
-            .lcout(\PCH_PWRGD.curr_stateZ0Z_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6762),
-            .ce(N__6064),
-            .sr(_gnd_net_));
-    defparam \RSMRST_PWRGD.RSMRSTn_LC_4_12_2 .C_ON=1'b0;
-    defparam \RSMRST_PWRGD.RSMRSTn_LC_4_12_2 .SEQ_MODE=4'b1000;
-    defparam \RSMRST_PWRGD.RSMRSTn_LC_4_12_2 .LUT_INIT=16'b0100010000000000;
-    LogicCell40 \RSMRST_PWRGD.RSMRSTn_LC_4_12_2  (
-            .in0(N__4340),
-            .in1(N__4301),
-            .in2(_gnd_net_),
-            .in3(N__4241),
-            .lcout(rsmrstn),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6766),
-            .ce(N__6032),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.curr_state_1_LC_4_12_6 .C_ON=1'b0;
-    defparam \SYS_PWRGD.curr_state_1_LC_4_12_6 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.curr_state_1_LC_4_12_6 .LUT_INIT=16'b0000001000110010;
-    LogicCell40 \SYS_PWRGD.curr_state_1_LC_4_12_6  (
-            .in0(N__5010),
-            .in1(N__4951),
-            .in2(N__5073),
-            .in3(N__4208),
-            .lcout(\SYS_PWRGD.curr_stateZ0Z_1 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6766),
-            .ce(N__6032),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_1_0_LC_4_13_1 .C_ON=1'b0;
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_1_0_LC_4_13_1 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_1_0_LC_4_13_1 .LUT_INIT=16'b0000010001000100;
-    LogicCell40 \VPP_VDDQ.curr_state_RNIDNTT1_1_0_LC_4_13_1  (
-            .in0(N__5236),
-            .in1(N__5265),
-            .in2(N__5295),
-            .in3(N__5333),
-            .lcout(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \PCH_PWRGD.curr_state_RNIFEJE1_0_LC_4_13_2 .C_ON=1'b0;
-    defparam \PCH_PWRGD.curr_state_RNIFEJE1_0_LC_4_13_2 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.curr_state_RNIFEJE1_0_LC_4_13_2 .LUT_INIT=16'b1100110011101110;
-    LogicCell40 \PCH_PWRGD.curr_state_RNIFEJE1_0_LC_4_13_2  (
-            .in0(N__4441),
-            .in1(N__4627),
-            .in2(_gnd_net_),
-            .in3(N__4596),
-            .lcout(\PCH_PWRGD.un1_curr_state10_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_0_0_LC_4_13_5 .C_ON=1'b0;
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_0_0_LC_4_13_5 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_0_0_LC_4_13_5 .LUT_INIT=16'b0010011001100110;
-    LogicCell40 \VPP_VDDQ.curr_state_RNIDNTT1_0_0_LC_4_13_5  (
-            .in0(N__5235),
-            .in1(N__5266),
-            .in2(N__5294),
-            .in3(N__5334),
-            .lcout(G_1),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam SLP_S3n_RNINQRN_LC_4_14_1.C_ON=1'b0;
-    defparam SLP_S3n_RNINQRN_LC_4_14_1.SEQ_MODE=4'b0000;
-    defparam SLP_S3n_RNINQRN_LC_4_14_1.LUT_INIT=16'b0111011101110111;
-    LogicCell40 SLP_S3n_RNINQRN_LC_4_14_1 (
-            .in0(N__5345),
-            .in1(N__4548),
+    defparam SLP_S3n_RNI2MQD_LC_4_13_0.C_ON=1'b0;
+    defparam SLP_S3n_RNI2MQD_LC_4_13_0.SEQ_MODE=4'b0000;
+    defparam SLP_S3n_RNI2MQD_LC_4_13_0.LUT_INIT=16'b0101010101010101;
+    LogicCell40 SLP_S3n_RNI2MQD_LC_4_13_0 (
+            .in0(N__4939),
+            .in1(_gnd_net_),
             .in2(_gnd_net_),
             .in3(_gnd_net_),
             .lcout(v5s_enn),
@@ -8387,104 +8884,44 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_RNIVJP51_3_LC_4_14_2 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_RNIVJP51_3_LC_4_14_2 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.count_RNIVJP51_3_LC_4_14_2 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \VPP_VDDQ.count_RNIVJP51_3_LC_4_14_2  (
-            .in0(N__5543),
-            .in1(N__5558),
-            .in2(N__5514),
-            .in3(N__5141),
-            .lcout(\VPP_VDDQ.un6_count_9 ),
+    defparam \PCH_PWRGD.count_esr_RNIFR521_15_LC_4_13_1 .C_ON=1'b0;
+    defparam \PCH_PWRGD.count_esr_RNIFR521_15_LC_4_13_1 .SEQ_MODE=4'b0000;
+    defparam \PCH_PWRGD.count_esr_RNIFR521_15_LC_4_13_1 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \PCH_PWRGD.count_esr_RNIFR521_15_LC_4_13_1  (
+            .in0(N__5084),
+            .in1(N__5066),
+            .in2(N__5048),
+            .in3(N__5030),
+            .lcout(\PCH_PWRGD.un4_count_8 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \PCH_PWRGD.un4_vccin_ok_LC_4_14_3 .C_ON=1'b0;
-    defparam \PCH_PWRGD.un4_vccin_ok_LC_4_14_3 .SEQ_MODE=4'b0000;
-    defparam \PCH_PWRGD.un4_vccin_ok_LC_4_14_3 .LUT_INIT=16'b1000100000000000;
-    LogicCell40 \PCH_PWRGD.un4_vccin_ok_LC_4_14_3  (
-            .in0(N__4496),
-            .in1(N__4476),
-            .in2(_gnd_net_),
-            .in3(N__4892),
-            .lcout(\PCH_PWRGD.N_3_i ),
+    defparam \SYS_PWRGD.un8_sys_pwrgd_LC_4_13_3 .C_ON=1'b0;
+    defparam \SYS_PWRGD.un8_sys_pwrgd_LC_4_13_3 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.un8_sys_pwrgd_LC_4_13_3 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \SYS_PWRGD.un8_sys_pwrgd_LC_4_13_3  (
+            .in0(N__4995),
+            .in1(N__4957),
+            .in2(N__5725),
+            .in3(N__4940),
+            .lcout(\SYS_PWRGD.N_3_i ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.tmp_RNIRH3P_0_LC_4_14_5 .C_ON=1'b0;
-    defparam \COUNTER.tmp_RNIRH3P_0_LC_4_14_5 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.tmp_RNIRH3P_0_LC_4_14_5 .LUT_INIT=16'b0011001100000000;
-    LogicCell40 \COUNTER.tmp_RNIRH3P_0_LC_4_14_5  (
-            .in0(_gnd_net_),
-            .in1(N__4801),
-            .in2(_gnd_net_),
-            .in3(N__4759),
-            .lcout(\COUNTER.tmp_RNIRH3PZ0Z_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.tmp_RNIGGLR8_LC_4_15_0 .C_ON=1'b0;
-    defparam \COUNTER.tmp_RNIGGLR8_LC_4_15_0 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.tmp_RNIGGLR8_LC_4_15_0 .LUT_INIT=16'b1010100000000000;
-    LogicCell40 \COUNTER.tmp_RNIGGLR8_LC_4_15_0  (
-            .in0(N__4404),
-            .in1(N__5084),
-            .in2(N__4875),
-            .in3(N__4395),
-            .lcout(tmp_RNIGGLR8),
-            .ltout(tmp_RNIGGLR8_cascade_),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_esr_RNO_0_15_LC_4_15_1 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_esr_RNO_0_15_LC_4_15_1 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.count_esr_RNO_0_15_LC_4_15_1 .LUT_INIT=16'b1111111111110000;
-    LogicCell40 \VPP_VDDQ.count_esr_RNO_0_15_LC_4_15_1  (
-            .in0(_gnd_net_),
-            .in1(_gnd_net_),
-            .in2(N__4389),
-            .in3(N__5978),
-            .lcout(\VPP_VDDQ.G_0_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_15_2 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_15_2 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_15_2 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_15_2  (
-            .in0(N__5774),
-            .in1(N__6116),
-            .in2(N__6138),
-            .in3(N__5705),
-            .lcout(\VPP_VDDQ.un6_count_10 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_RNI63141_10_LC_4_15_4 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_RNI63141_10_LC_4_15_4 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.count_RNI63141_10_LC_4_15_4 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \VPP_VDDQ.count_RNI63141_10_LC_4_15_4  (
-            .in0(N__5156),
-            .in1(N__5171),
-            .in2(N__5466),
-            .in3(N__5528),
+    defparam \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_13_4 .C_ON=1'b0;
+    defparam \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_13_4 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_13_4 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \VPP_VDDQ.count_esr_RNI7CQO_15_LC_4_13_4  (
+            .in0(N__4880),
+            .in1(N__4862),
+            .in2(N__4844),
+            .in3(N__4826),
             .lcout(\VPP_VDDQ.un6_count_11 ),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8492,179 +8929,134 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_RNIFC141_11_LC_4_15_5 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_RNIFC141_11_LC_4_15_5 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.count_RNIFC141_11_LC_4_15_5 .LUT_INIT=16'b0010000000000000;
-    LogicCell40 \VPP_VDDQ.count_RNIFC141_11_LC_4_15_5  (
-            .in0(N__5480),
-            .in1(N__5183),
-            .in2(N__5448),
-            .in3(N__5495),
-            .lcout(),
-            .ltout(\VPP_VDDQ.un6_count_8_cascade_ ),
+    defparam \VPP_VDDQ.curr_state_RNIOISJ1_0_0_LC_4_13_5 .C_ON=1'b0;
+    defparam \VPP_VDDQ.curr_state_RNIOISJ1_0_0_LC_4_13_5 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.curr_state_RNIOISJ1_0_0_LC_4_13_5 .LUT_INIT=16'b0000011100000000;
+    LogicCell40 \VPP_VDDQ.curr_state_RNIOISJ1_0_0_LC_4_13_5  (
+            .in0(N__5721),
+            .in1(N__5577),
+            .in2(N__5662),
+            .in3(N__5746),
+            .lcout(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa),
+            .ltout(VPP_VDDQ_delayed_vddq_pwrgd_1_sqmuxa_cascade_),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_15_6 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_15_6 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_15_6 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \VPP_VDDQ.count_esr_RNIRFM64_15_LC_4_15_6  (
-            .in0(N__4674),
-            .in1(N__4668),
-            .in2(N__4662),
-            .in3(N__4659),
-            .lcout(count_esr_RNIRFM64_15),
+    defparam \VPP_VDDQ.curr_state_RNI4PHT2_0_LC_4_13_6 .C_ON=1'b0;
+    defparam \VPP_VDDQ.curr_state_RNI4PHT2_0_LC_4_13_6 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.curr_state_RNI4PHT2_0_LC_4_13_6 .LUT_INIT=16'b0011000100110000;
+    LogicCell40 \VPP_VDDQ.curr_state_RNI4PHT2_0_LC_4_13_6  (
+            .in0(N__5747),
+            .in1(N__4791),
+            .in2(N__4757),
+            .in3(N__5655),
+            .lcout(G_0),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.counter_4_LC_5_9_0 .C_ON=1'b0;
-    defparam \COUNTER.counter_4_LC_5_9_0 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_4_LC_5_9_0 .LUT_INIT=16'b0000010100001010;
-    LogicCell40 \COUNTER.counter_4_LC_5_9_0  (
-            .in0(N__6276),
+    defparam \COUNTER.counter_2_LC_5_9_0 .C_ON=1'b0;
+    defparam \COUNTER.counter_2_LC_5_9_0 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_2_LC_5_9_0 .LUT_INIT=16'b0000000001011010;
+    LogicCell40 \COUNTER.counter_2_LC_5_9_0  (
+            .in0(N__5486),
             .in1(_gnd_net_),
-            .in2(N__4755),
-            .in3(N__6290),
-            .lcout(\COUNTER.counterZ0Z_4 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6697),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.un4_counter_1_c_RNO_LC_5_9_1 .C_ON=1'b0;
-    defparam \COUNTER.un4_counter_1_c_RNO_LC_5_9_1 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.un4_counter_1_c_RNO_LC_5_9_1 .LUT_INIT=16'b0000001000000000;
-    LogicCell40 \COUNTER.un4_counter_1_c_RNO_LC_5_9_1  (
-            .in0(N__6265),
-            .in1(N__6215),
-            .in2(N__5636),
-            .in3(N__6241),
-            .lcout(\COUNTER.un4_counter_1_and ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.un4_counter_0_c_RNO_LC_5_9_2 .C_ON=1'b0;
-    defparam \COUNTER.un4_counter_0_c_RNO_LC_5_9_2 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.un4_counter_0_c_RNO_LC_5_9_2 .LUT_INIT=16'b1000000000000000;
-    LogicCell40 \COUNTER.un4_counter_0_c_RNO_LC_5_9_2  (
-            .in0(N__5655),
-            .in1(N__6289),
-            .in2(N__5616),
-            .in3(N__5584),
-            .lcout(\COUNTER.un4_counter_0_and ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.counter_6_LC_5_9_3 .C_ON=1'b0;
-    defparam \COUNTER.counter_6_LC_5_9_3 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_6_LC_5_9_3 .LUT_INIT=16'b0000000001100110;
-    LogicCell40 \COUNTER.counter_6_LC_5_9_3  (
-            .in0(N__6243),
-            .in1(N__6225),
-            .in2(_gnd_net_),
-            .in3(N__4734),
-            .lcout(\COUNTER.counterZ0Z_6 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6697),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.counter_1_LC_5_9_4 .C_ON=1'b0;
-    defparam \COUNTER.counter_1_LC_5_9_4 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_1_LC_5_9_4 .LUT_INIT=16'b0000011000000110;
-    LogicCell40 \COUNTER.counter_1_LC_5_9_4  (
-            .in0(N__5656),
-            .in1(N__5632),
-            .in2(N__4753),
-            .in3(_gnd_net_),
-            .lcout(\COUNTER.counterZ0Z_1 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6697),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.counter_5_LC_5_9_5 .C_ON=1'b0;
-    defparam \COUNTER.counter_5_LC_5_9_5 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_5_LC_5_9_5 .LUT_INIT=16'b0000000001100110;
-    LogicCell40 \COUNTER.counter_5_LC_5_9_5  (
-            .in0(N__6266),
-            .in1(N__6252),
-            .in2(_gnd_net_),
-            .in3(N__4733),
-            .lcout(\COUNTER.counterZ0Z_5 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6697),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.counter_2_LC_5_9_6 .C_ON=1'b0;
-    defparam \COUNTER.counter_2_LC_5_9_6 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_2_LC_5_9_6 .LUT_INIT=16'b0000010100001010;
-    LogicCell40 \COUNTER.counter_2_LC_5_9_6  (
-            .in0(N__5595),
-            .in1(_gnd_net_),
-            .in2(N__4754),
-            .in3(N__5615),
+            .in2(N__5507),
+            .in3(N__6869),
             .lcout(\COUNTER.counterZ0Z_2 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6697),
+            .clk(N__6700),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.counter_3_LC_5_9_7 .C_ON=1'b0;
-    defparam \COUNTER.counter_3_LC_5_9_7 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_3_LC_5_9_7 .LUT_INIT=16'b0001000100100010;
-    LogicCell40 \COUNTER.counter_3_LC_5_9_7  (
-            .in0(N__5585),
-            .in1(N__4732),
-            .in2(_gnd_net_),
-            .in3(N__5571),
-            .lcout(\COUNTER.counterZ0Z_3 ),
+    defparam \COUNTER.counter_1_LC_5_9_1 .C_ON=1'b0;
+    defparam \COUNTER.counter_1_LC_5_9_1 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_1_LC_5_9_1 .LUT_INIT=16'b0000001100110000;
+    LogicCell40 \COUNTER.counter_1_LC_5_9_1  (
+            .in0(_gnd_net_),
+            .in1(N__6868),
+            .in2(N__5530),
+            .in3(N__6809),
+            .lcout(\COUNTER.counterZ0Z_1 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6697),
+            .clk(N__6700),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.counter_0_LC_5_10_0 .C_ON=1'b0;
-    defparam \COUNTER.counter_0_LC_5_10_0 .SEQ_MODE=4'b1000;
-    defparam \COUNTER.counter_0_LC_5_10_0 .LUT_INIT=16'b1010101011111111;
-    LogicCell40 \COUNTER.counter_0_LC_5_10_0  (
-            .in0(N__4731),
-            .in1(_gnd_net_),
+    defparam \COUNTER.counter_6_LC_5_9_2 .C_ON=1'b0;
+    defparam \COUNTER.counter_6_LC_5_9_2 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_6_LC_5_9_2 .LUT_INIT=16'b0000000001100110;
+    LogicCell40 \COUNTER.counter_6_LC_5_9_2  (
+            .in0(N__6223),
+            .in1(N__6209),
             .in2(_gnd_net_),
-            .in3(N__5658),
-            .lcout(\COUNTER.counterZ0Z_0 ),
+            .in3(N__6871),
+            .lcout(\COUNTER.counterZ0Z_6 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6726),
+            .clk(N__6700),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.un4_counter_2_c_RNO_LC_5_10_1 .C_ON=1'b0;
-    defparam \COUNTER.un4_counter_2_c_RNO_LC_5_10_1 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.un4_counter_2_c_RNO_LC_5_10_1 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \COUNTER.un4_counter_2_c_RNO_LC_5_10_1  (
-            .in0(N__6185),
-            .in1(N__6200),
-            .in2(N__6156),
-            .in3(N__6170),
+    defparam \SYS_PWRGD.count_RNIV5U31_10_LC_5_9_3 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_RNIV5U31_10_LC_5_9_3 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.count_RNIV5U31_10_LC_5_9_3 .LUT_INIT=16'b0000000001000000;
+    LogicCell40 \SYS_PWRGD.count_RNIV5U31_10_LC_5_9_3  (
+            .in0(N__5345),
+            .in1(N__5327),
+            .in2(N__5312),
+            .in3(N__5294),
+            .lcout(\SYS_PWRGD.un4_count_9 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.counter_5_LC_5_9_4 .C_ON=1'b0;
+    defparam \COUNTER.counter_5_LC_5_9_4 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_5_LC_5_9_4 .LUT_INIT=16'b0000000001100110;
+    LogicCell40 \COUNTER.counter_5_LC_5_9_4  (
+            .in0(N__6247),
+            .in1(N__6233),
+            .in2(_gnd_net_),
+            .in3(N__6870),
+            .lcout(\COUNTER.counterZ0Z_5 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6700),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \SYS_PWRGD.count_RNITTLE1_4_LC_5_9_5 .C_ON=1'b0;
+    defparam \SYS_PWRGD.count_RNITTLE1_4_LC_5_9_5 .SEQ_MODE=4'b0000;
+    defparam \SYS_PWRGD.count_RNITTLE1_4_LC_5_9_5 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \SYS_PWRGD.count_RNITTLE1_4_LC_5_9_5  (
+            .in0(N__5270),
+            .in1(N__5249),
+            .in2(N__5231),
+            .in3(N__5213),
+            .lcout(\SYS_PWRGD.un4_count_8 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.un4_counter_2_c_RNO_LC_5_9_6 .C_ON=1'b0;
+    defparam \COUNTER.un4_counter_2_c_RNO_LC_5_9_6 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.un4_counter_2_c_RNO_LC_5_9_6 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \COUNTER.un4_counter_2_c_RNO_LC_5_9_6  (
+            .in0(N__6145),
+            .in1(N__6181),
+            .in2(N__6167),
+            .in3(N__6130),
             .lcout(\COUNTER.un4_counter_2_and ),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8672,14 +9064,44 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
+    defparam \COUNTER.un4_counter_1_c_RNO_LC_5_9_7 .C_ON=1'b0;
+    defparam \COUNTER.un4_counter_1_c_RNO_LC_5_9_7 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.un4_counter_1_c_RNO_LC_5_9_7 .LUT_INIT=16'b0000010000000000;
+    LogicCell40 \COUNTER.un4_counter_1_c_RNO_LC_5_9_7  (
+            .in0(N__6196),
+            .in1(N__6222),
+            .in2(N__5529),
+            .in3(N__6246),
+            .lcout(\COUNTER.un4_counter_1_and ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.counter_4_LC_5_10_1 .C_ON=1'b0;
+    defparam \COUNTER.counter_4_LC_5_10_1 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_4_LC_5_10_1 .LUT_INIT=16'b0000000001100110;
+    LogicCell40 \COUNTER.counter_4_LC_5_10_1  (
+            .in0(N__5450),
+            .in1(N__5432),
+            .in2(_gnd_net_),
+            .in3(N__6879),
+            .lcout(\COUNTER.counterZ0Z_4 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6750),
+            .ce(),
+            .sr(_gnd_net_));
     defparam \COUNTER.un4_counter_4_c_RNO_LC_5_10_2 .C_ON=1'b0;
     defparam \COUNTER.un4_counter_4_c_RNO_LC_5_10_2 .SEQ_MODE=4'b0000;
     defparam \COUNTER.un4_counter_4_c_RNO_LC_5_10_2 .LUT_INIT=16'b0000000000000001;
     LogicCell40 \COUNTER.un4_counter_4_c_RNO_LC_5_10_2  (
-            .in0(N__6338),
-            .in1(N__6323),
-            .in2(N__6309),
-            .in3(N__6353),
+            .in0(N__6277),
+            .in1(N__6292),
+            .in2(N__6311),
+            .in3(N__6325),
             .lcout(\COUNTER.un4_counter_4_and ),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8691,10 +9113,10 @@ module TOP (
     defparam \COUNTER.un4_counter_5_c_RNO_LC_5_10_3 .SEQ_MODE=4'b0000;
     defparam \COUNTER.un4_counter_5_c_RNO_LC_5_10_3 .LUT_INIT=16'b0000000000000001;
     LogicCell40 \COUNTER.un4_counter_5_c_RNO_LC_5_10_3  (
-            .in0(N__6557),
-            .in1(N__6524),
-            .in2(N__6543),
-            .in3(N__6509),
+            .in0(N__6481),
+            .in1(N__6262),
+            .in2(N__6500),
+            .in3(N__6514),
             .lcout(\COUNTER.un4_counter_5_and ),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8706,10 +9128,10 @@ module TOP (
     defparam \COUNTER.un4_counter_3_c_RNO_LC_5_10_4 .SEQ_MODE=4'b0000;
     defparam \COUNTER.un4_counter_3_c_RNO_LC_5_10_4 .LUT_INIT=16'b0000000000000001;
     LogicCell40 \COUNTER.un4_counter_3_c_RNO_LC_5_10_4  (
-            .in0(N__6416),
-            .in1(N__6368),
-            .in2(N__6402),
-            .in3(N__6383),
+            .in0(N__6358),
+            .in1(N__6373),
+            .in2(N__6116),
+            .in3(N__6344),
             .lcout(\COUNTER.un4_counter_3_and ),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8717,74 +9139,44 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam CONSTANT_ONE_LUT4_LC_5_10_6.C_ON=1'b0;
-    defparam CONSTANT_ONE_LUT4_LC_5_10_6.SEQ_MODE=4'b0000;
-    defparam CONSTANT_ONE_LUT4_LC_5_10_6.LUT_INIT=16'b1111111111111111;
-    LogicCell40 CONSTANT_ONE_LUT4_LC_5_10_6 (
-            .in0(_gnd_net_),
-            .in1(_gnd_net_),
+    defparam \COUNTER.un4_counter_0_c_RNO_LC_5_10_6 .C_ON=1'b0;
+    defparam \COUNTER.un4_counter_0_c_RNO_LC_5_10_6 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.un4_counter_0_c_RNO_LC_5_10_6 .LUT_INIT=16'b1000000000000000;
+    LogicCell40 \COUNTER.un4_counter_0_c_RNO_LC_5_10_6  (
+            .in0(N__5448),
+            .in1(N__5472),
+            .in2(N__6808),
+            .in3(N__5502),
+            .lcout(\COUNTER.un4_counter_0_and ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(_gnd_net_),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.counter_3_LC_5_10_7 .C_ON=1'b0;
+    defparam \COUNTER.counter_3_LC_5_10_7 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_3_LC_5_10_7 .LUT_INIT=16'b0000000001100110;
+    LogicCell40 \COUNTER.counter_3_LC_5_10_7  (
+            .in0(N__5473),
+            .in1(N__5459),
             .in2(_gnd_net_),
-            .in3(_gnd_net_),
-            .lcout(CONSTANT_ONE_NET),
+            .in3(N__6878),
+            .lcout(\COUNTER.counterZ0Z_3 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(_gnd_net_),
+            .clk(N__6750),
             .ce(),
             .sr(_gnd_net_));
-    defparam \COUNTER.tmp_RNIRH3P_LC_5_11_0 .C_ON=1'b0;
-    defparam \COUNTER.tmp_RNIRH3P_LC_5_11_0 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.tmp_RNIRH3P_LC_5_11_0 .LUT_INIT=16'b0011001100000000;
-    LogicCell40 \COUNTER.tmp_RNIRH3P_LC_5_11_0  (
-            .in0(_gnd_net_),
-            .in1(N__4799),
-            .in2(_gnd_net_),
-            .in3(N__4719),
-            .lcout(G_0),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.un4_counter_6_c_RNO_LC_5_11_5 .C_ON=1'b0;
-    defparam \COUNTER.un4_counter_6_c_RNO_LC_5_11_5 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.un4_counter_6_c_RNO_LC_5_11_5 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \COUNTER.un4_counter_6_c_RNO_LC_5_11_5  (
-            .in0(N__6494),
-            .in1(N__6446),
-            .in2(N__6465),
-            .in3(N__6479),
-            .lcout(\COUNTER.un4_counter_6_and ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.curr_state_RNIOA2K_0_LC_5_11_6 .C_ON=1'b0;
-    defparam \SYS_PWRGD.curr_state_RNIOA2K_0_LC_5_11_6 .SEQ_MODE=4'b0000;
-    defparam \SYS_PWRGD.curr_state_RNIOA2K_0_LC_5_11_6 .LUT_INIT=16'b1111111101010000;
-    LogicCell40 \SYS_PWRGD.curr_state_RNIOA2K_0_LC_5_11_6  (
-            .in0(N__4946),
-            .in1(_gnd_net_),
-            .in2(N__5005),
-            .in3(N__5060),
-            .lcout(\SYS_PWRGD.un1_curr_state10_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \COUNTER.un4_counter_7_c_RNO_LC_5_11_7 .C_ON=1'b0;
-    defparam \COUNTER.un4_counter_7_c_RNO_LC_5_11_7 .SEQ_MODE=4'b0000;
-    defparam \COUNTER.un4_counter_7_c_RNO_LC_5_11_7 .LUT_INIT=16'b0000000000000001;
-    LogicCell40 \COUNTER.un4_counter_7_c_RNO_LC_5_11_7  (
-            .in0(N__6815),
-            .in1(N__6431),
-            .in2(N__6834),
-            .in3(N__6797),
+    defparam \COUNTER.un4_counter_7_c_RNO_LC_5_11_0 .C_ON=1'b0;
+    defparam \COUNTER.un4_counter_7_c_RNO_LC_5_11_0 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.un4_counter_7_c_RNO_LC_5_11_0 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \COUNTER.un4_counter_7_c_RNO_LC_5_11_0  (
+            .in0(N__6913),
+            .in1(N__6388),
+            .in2(N__6896),
+            .in3(N__6403),
             .lcout(\COUNTER.un4_counter_7_and ),
             .ltout(),
             .carryin(_gnd_net_),
@@ -8792,74 +9184,59 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.curr_state_0_LC_5_12_3 .C_ON=1'b0;
-    defparam \VPP_VDDQ.curr_state_0_LC_5_12_3 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.curr_state_0_LC_5_12_3 .LUT_INIT=16'b0010000000000000;
-    LogicCell40 \VPP_VDDQ.curr_state_0_LC_5_12_3  (
-            .in0(N__4905),
-            .in1(N__5240),
-            .in2(N__5344),
-            .in3(N__5427),
-            .lcout(\VPP_VDDQ.curr_stateZ0Z_0 ),
+    defparam \COUNTER.un4_counter_6_c_RNO_LC_5_11_3 .C_ON=1'b0;
+    defparam \COUNTER.un4_counter_6_c_RNO_LC_5_11_3 .SEQ_MODE=4'b0000;
+    defparam \COUNTER.un4_counter_6_c_RNO_LC_5_11_3 .LUT_INIT=16'b0000000000000001;
+    LogicCell40 \COUNTER.un4_counter_6_c_RNO_LC_5_11_3  (
+            .in0(N__6433),
+            .in1(N__6466),
+            .in2(N__6452),
+            .in3(N__6418),
+            .lcout(\COUNTER.un4_counter_6_and ),
             .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6741),
-            .ce(N__6033),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.curr_state_1_LC_5_12_5 .C_ON=1'b0;
-    defparam \VPP_VDDQ.curr_state_1_LC_5_12_5 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.curr_state_1_LC_5_12_5 .LUT_INIT=16'b1111000011111010;
-    LogicCell40 \VPP_VDDQ.curr_state_1_LC_5_12_5  (
-            .in0(N__5241),
-            .in1(_gnd_net_),
-            .in2(N__4871),
-            .in3(N__5091),
-            .lcout(\VPP_VDDQ.curr_stateZ0Z_1 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6741),
-            .ce(N__6033),
-            .sr(_gnd_net_));
-    defparam \SYS_PWRGD.SYS_PWROK_LC_5_12_7 .C_ON=1'b0;
-    defparam \SYS_PWRGD.SYS_PWROK_LC_5_12_7 .SEQ_MODE=4'b1000;
-    defparam \SYS_PWRGD.SYS_PWROK_LC_5_12_7 .LUT_INIT=16'b0100010000000000;
-    LogicCell40 \SYS_PWRGD.SYS_PWROK_LC_5_12_7  (
-            .in0(N__5064),
-            .in1(N__5011),
-            .in2(_gnd_net_),
-            .in3(N__4952),
-            .lcout(sys_pwrok),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6741),
-            .ce(N__6033),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.un1_vddq_pwrgd_0_LC_5_13_0 .C_ON=1'b0;
-    defparam \VPP_VDDQ.un1_vddq_pwrgd_0_LC_5_13_0 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.un1_vddq_pwrgd_0_LC_5_13_0 .LUT_INIT=16'b1010101000000000;
-    LogicCell40 \VPP_VDDQ.un1_vddq_pwrgd_0_LC_5_13_0  (
-            .in0(N__5423),
-            .in1(_gnd_net_),
-            .in2(_gnd_net_),
-            .in3(N__4904),
-            .lcout(\VPP_VDDQ.un1_vddq_pwrgdZ0Z_0 ),
-            .ltout(\VPP_VDDQ.un1_vddq_pwrgdZ0Z_0_cascade_ ),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_1 .C_ON=1'b0;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_1 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_1 .LUT_INIT=16'b1100110011011111;
-    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_1  (
-            .in0(N__5331),
-            .in1(N__5267),
-            .in2(N__4878),
-            .in3(N__5238),
+    defparam \VPP_VDDQ.curr_state_1_LC_5_12_2 .C_ON=1'b0;
+    defparam \VPP_VDDQ.curr_state_1_LC_5_12_2 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.curr_state_1_LC_5_12_2 .LUT_INIT=16'b1010101011101110;
+    LogicCell40 \VPP_VDDQ.curr_state_1_LC_5_12_2  (
+            .in0(N__6085),
+            .in1(N__5660),
+            .in2(_gnd_net_),
+            .in3(N__5359),
+            .lcout(\VPP_VDDQ.curr_stateZ0Z_1 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6752),
+            .ce(N__5984),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.curr_state_0_LC_5_12_6 .C_ON=1'b0;
+    defparam \VPP_VDDQ.curr_state_0_LC_5_12_6 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.curr_state_0_LC_5_12_6 .LUT_INIT=16'b0000000010001000;
+    LogicCell40 \VPP_VDDQ.curr_state_0_LC_5_12_6  (
+            .in0(N__5717),
+            .in1(N__5605),
+            .in2(_gnd_net_),
+            .in3(N__5661),
+            .lcout(\VPP_VDDQ.curr_stateZ0Z_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6752),
+            .ce(N__5984),
+            .sr(_gnd_net_));
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_0 .C_ON=1'b0;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_0 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_0 .LUT_INIT=16'b1111111100010011;
+    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNO_2_LC_5_13_0  (
+            .in0(N__5716),
+            .in1(N__5659),
+            .in2(N__5606),
+            .in3(N__5751),
             .lcout(),
             .ltout(\VPP_VDDQ.un1_curr_state12_0_cascade_ ),
             .carryin(_gnd_net_),
@@ -8867,14 +9244,14 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_2 .C_ON=1'b0;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_2 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_2 .LUT_INIT=16'b0011000000000011;
-    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_2  (
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_1 .C_ON=1'b0;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_1 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_1 .LUT_INIT=16'b0000000011000011;
+    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_13_1  (
             .in0(_gnd_net_),
-            .in1(N__4864),
-            .in2(N__4845),
-            .in3(N__5374),
+            .in1(N__5616),
+            .in2(N__6095),
+            .in3(N__6084),
             .lcout(),
             .ltout(\VPP_VDDQ.delayed_vddq_pwrgd_s_1_cascade_ ),
             .carryin(_gnd_net_),
@@ -8882,43 +9259,43 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_3 .C_ON=1'b0;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_3 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_3 .LUT_INIT=16'b1101111010101010;
-    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_3  (
-            .in0(N__5375),
-            .in1(N__5208),
-            .in2(N__5430),
-            .in3(N__6001),
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_2 .C_ON=1'b0;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_2 .SEQ_MODE=4'b1000;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_2 .LUT_INIT=16'b1101111010101010;
+    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_LC_5_13_2  (
+            .in0(N__5617),
+            .in1(N__5624),
+            .in2(N__6065),
+            .in3(N__5983),
             .lcout(\VPP_VDDQ.delayed_vddq_pwrgdZ0 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6745),
+            .clk(N__6729),
             .ce(),
             .sr(_gnd_net_));
-    defparam SLP_S4n_RNIORRN_LC_5_13_4.C_ON=1'b0;
-    defparam SLP_S4n_RNIORRN_LC_5_13_4.SEQ_MODE=4'b0000;
-    defparam SLP_S4n_RNIORRN_LC_5_13_4.LUT_INIT=16'b1010101000000000;
-    LogicCell40 SLP_S4n_RNIORRN_LC_5_13_4 (
-            .in0(N__5422),
-            .in1(_gnd_net_),
-            .in2(_gnd_net_),
-            .in3(N__5332),
-            .lcout(vccst_en),
-            .ltout(vccst_en_cascade_),
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_5 .C_ON=1'b0;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_5 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_5 .LUT_INIT=16'b0000100000000000;
+    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_5  (
+            .in0(N__5752),
+            .in1(N__5715),
+            .in2(N__5663),
+            .in3(N__5600),
+            .lcout(\VPP_VDDQ.delayed_vddq_pwrgd_0_sqmuxa ),
+            .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_5_13_5 .C_ON=1'b0;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_5_13_5 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_5_13_5 .LUT_INIT=16'b1111101011111010;
-    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_5_13_5  (
-            .in0(N__5376),
-            .in1(_gnd_net_),
-            .in2(N__5364),
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNIUFJG_LC_5_13_6 .C_ON=1'b0;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNIUFJG_LC_5_13_6 .SEQ_MODE=4'b0000;
+    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNIUFJG_LC_5_13_6 .LUT_INIT=16'b1110111011101110;
+    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNIUFJG_LC_5_13_6  (
+            .in0(N__5618),
+            .in1(N__5599),
+            .in2(_gnd_net_),
             .in3(_gnd_net_),
             .lcout(vpp_en),
             .ltout(),
@@ -8927,298 +9304,13 @@ module TOP (
             .clk(_gnd_net_),
             .ce(),
             .sr(_gnd_net_));
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_0_LC_5_13_6 .C_ON=1'b0;
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_0_LC_5_13_6 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.curr_state_RNIDNTT1_0_LC_5_13_6 .LUT_INIT=16'b1010111011101110;
-    LogicCell40 \VPP_VDDQ.curr_state_RNIDNTT1_0_LC_5_13_6  (
-            .in0(N__5237),
-            .in1(N__5261),
-            .in2(N__5293),
-            .in3(N__5329),
-            .lcout(\VPP_VDDQ.un1_curr_state13_0 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_7 .C_ON=1'b0;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_7 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_7 .LUT_INIT=16'b0000000010000000;
-    LogicCell40 \VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_13_7  (
-            .in0(N__5330),
-            .in1(N__5286),
-            .in2(N__5268),
-            .in3(N__5239),
-            .lcout(\VPP_VDDQ.delayed_vddq_pwrgd_0_sqmuxa ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_0_LC_5_14_0 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_0_LC_5_14_0 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_0_LC_5_14_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_0_LC_5_14_0  (
-            .in0(N__5989),
-            .in1(N__5184),
-            .in2(N__5201),
-            .in3(N__5202),
-            .lcout(\VPP_VDDQ.countZ0Z_0 ),
-            .ltout(),
-            .carryin(bfn_5_14_0_),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_0 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_1_LC_5_14_1 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_1_LC_5_14_1 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_1_LC_5_14_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_1_LC_5_14_1  (
-            .in0(N__5997),
-            .in1(N__5172),
-            .in2(_gnd_net_),
-            .in3(N__5160),
-            .lcout(\VPP_VDDQ.countZ0Z_1 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_0 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_1 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_2_LC_5_14_2 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_2_LC_5_14_2 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_2_LC_5_14_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_2_LC_5_14_2  (
-            .in0(N__5990),
-            .in1(N__5157),
-            .in2(_gnd_net_),
-            .in3(N__5145),
-            .lcout(\VPP_VDDQ.countZ0Z_2 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_1 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_2 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_3_LC_5_14_3 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_3_LC_5_14_3 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_3_LC_5_14_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_3_LC_5_14_3  (
-            .in0(N__5998),
-            .in1(N__5142),
-            .in2(_gnd_net_),
-            .in3(N__5562),
-            .lcout(\VPP_VDDQ.countZ0Z_3 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_2 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_3 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_4_LC_5_14_4 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_4_LC_5_14_4 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_4_LC_5_14_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_4_LC_5_14_4  (
-            .in0(N__5991),
-            .in1(N__5559),
-            .in2(_gnd_net_),
-            .in3(N__5547),
-            .lcout(\VPP_VDDQ.countZ0Z_4 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_3 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_4 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_5_LC_5_14_5 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_5_LC_5_14_5 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_5_LC_5_14_5 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_5_LC_5_14_5  (
-            .in0(N__5999),
-            .in1(N__5544),
-            .in2(_gnd_net_),
-            .in3(N__5532),
-            .lcout(\VPP_VDDQ.countZ0Z_5 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_4 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_5 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_6_LC_5_14_6 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_6_LC_5_14_6 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_6_LC_5_14_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_6_LC_5_14_6  (
-            .in0(N__5992),
-            .in1(N__5529),
-            .in2(_gnd_net_),
-            .in3(N__5517),
-            .lcout(\VPP_VDDQ.countZ0Z_6 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_5 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_6 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_7_LC_5_14_7 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_7_LC_5_14_7 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_7_LC_5_14_7 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_7_LC_5_14_7  (
-            .in0(N__6000),
-            .in1(N__5513),
-            .in2(_gnd_net_),
-            .in3(N__5499),
-            .lcout(\VPP_VDDQ.countZ0Z_7 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_6 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_7 ),
-            .clk(N__6767),
-            .ce(),
-            .sr(N__5681));
-    defparam \VPP_VDDQ.count_8_LC_5_15_0 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_8_LC_5_15_0 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_8_LC_5_15_0 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_8_LC_5_15_0  (
-            .in0(N__5996),
-            .in1(N__5496),
-            .in2(_gnd_net_),
-            .in3(N__5484),
-            .lcout(\VPP_VDDQ.countZ0Z_8 ),
-            .ltout(),
-            .carryin(bfn_5_15_0_),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_8 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.count_9_LC_5_15_1 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_9_LC_5_15_1 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_9_LC_5_15_1 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_9_LC_5_15_1  (
-            .in0(N__5988),
-            .in1(N__5481),
-            .in2(_gnd_net_),
-            .in3(N__5469),
-            .lcout(\VPP_VDDQ.countZ0Z_9 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_8 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_9 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.count_10_LC_5_15_2 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_10_LC_5_15_2 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_10_LC_5_15_2 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_10_LC_5_15_2  (
-            .in0(N__5993),
-            .in1(N__5465),
-            .in2(_gnd_net_),
-            .in3(N__5451),
-            .lcout(\VPP_VDDQ.countZ0Z_10 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_9 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_10 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.count_11_LC_5_15_3 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_11_LC_5_15_3 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_11_LC_5_15_3 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_11_LC_5_15_3  (
-            .in0(N__5986),
-            .in1(N__5447),
-            .in2(_gnd_net_),
-            .in3(N__5433),
-            .lcout(\VPP_VDDQ.countZ0Z_11 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_10 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_11 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.count_12_LC_5_15_4 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_12_LC_5_15_4 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_12_LC_5_15_4 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_12_LC_5_15_4  (
-            .in0(N__5994),
-            .in1(N__6137),
-            .in2(_gnd_net_),
-            .in3(N__6123),
-            .lcout(\VPP_VDDQ.countZ0Z_12 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_11 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_12 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.count_13_LC_5_15_5 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_13_LC_5_15_5 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_13_LC_5_15_5 .LUT_INIT=16'b0101101011110000;
-    LogicCell40 \VPP_VDDQ.count_13_LC_5_15_5  (
-            .in0(N__5987),
-            .in1(_gnd_net_),
-            .in2(N__6120),
-            .in3(N__6105),
-            .lcout(\VPP_VDDQ.countZ0Z_13 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_12 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_13 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.count_14_LC_5_15_6 .C_ON=1'b1;
-    defparam \VPP_VDDQ.count_14_LC_5_15_6 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_14_LC_5_15_6 .LUT_INIT=16'b0110011011001100;
-    LogicCell40 \VPP_VDDQ.count_14_LC_5_15_6  (
-            .in0(N__5995),
-            .in1(N__5775),
-            .in2(_gnd_net_),
-            .in3(N__5763),
-            .lcout(\VPP_VDDQ.countZ0Z_14 ),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_13 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_14 ),
-            .clk(N__6746),
-            .ce(),
-            .sr(N__5680));
-    defparam \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_5_15_7 .C_ON=1'b1;
-    defparam \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_5_15_7 .SEQ_MODE=4'b0000;
-    defparam \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_5_15_7 .LUT_INIT=16'b0000000000000000;
-    LogicCell40 \VPP_VDDQ.un1_count_1_cry_14_c_THRU_CRY_0_LC_5_15_7  (
-            .in0(_gnd_net_),
-            .in1(N__5748),
-            .in2(GNDG0),
-            .in3(_gnd_net_),
-            .lcout(),
-            .ltout(),
-            .carryin(\VPP_VDDQ.un1_count_1_cry_14 ),
-            .carryout(\VPP_VDDQ.un1_count_1_cry_14_THRU_CRY_0_THRU_CO ),
-            .clk(_gnd_net_),
-            .ce(),
-            .sr(_gnd_net_));
-    defparam \VPP_VDDQ.count_esr_15_LC_5_16_0 .C_ON=1'b0;
-    defparam \VPP_VDDQ.count_esr_15_LC_5_16_0 .SEQ_MODE=4'b1000;
-    defparam \VPP_VDDQ.count_esr_15_LC_5_16_0 .LUT_INIT=16'b0011001111001100;
-    LogicCell40 \VPP_VDDQ.count_esr_15_LC_5_16_0  (
-            .in0(_gnd_net_),
-            .in1(N__5706),
-            .in2(_gnd_net_),
-            .in3(N__5709),
-            .lcout(\VPP_VDDQ.countZ0Z_15 ),
-            .ltout(),
-            .carryin(_gnd_net_),
-            .carryout(),
-            .clk(N__6768),
-            .ce(N__5694),
-            .sr(N__5682));
     defparam \COUNTER.counter_1_cry_1_c_LC_6_9_0 .C_ON=1'b1;
     defparam \COUNTER.counter_1_cry_1_c_LC_6_9_0 .SEQ_MODE=4'b0000;
     defparam \COUNTER.counter_1_cry_1_c_LC_6_9_0 .LUT_INIT=16'b0000000000000000;
     LogicCell40 \COUNTER.counter_1_cry_1_c_LC_6_9_0  (
             .in0(_gnd_net_),
-            .in1(N__5657),
-            .in2(N__5637),
+            .in1(N__6800),
+            .in2(N__5531),
             .in3(_gnd_net_),
             .lcout(),
             .ltout(),
@@ -9232,9 +9324,9 @@ module TOP (
     defparam \COUNTER.counter_1_cry_1_THRU_LUT4_0_LC_6_9_1 .LUT_INIT=16'b1111111100000000;
     LogicCell40 \COUNTER.counter_1_cry_1_THRU_LUT4_0_LC_6_9_1  (
             .in0(_gnd_net_),
-            .in1(N__5614),
+            .in1(N__5503),
             .in2(_gnd_net_),
-            .in3(N__5589),
+            .in3(N__5477),
             .lcout(\COUNTER.counter_1_cry_1_THRU_CO ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_1 ),
@@ -9247,9 +9339,9 @@ module TOP (
     defparam \COUNTER.counter_1_cry_2_THRU_LUT4_0_LC_6_9_2 .LUT_INIT=16'b1111111100000000;
     LogicCell40 \COUNTER.counter_1_cry_2_THRU_LUT4_0_LC_6_9_2  (
             .in0(_gnd_net_),
-            .in1(N__5586),
+            .in1(N__5474),
             .in2(_gnd_net_),
-            .in3(N__5565),
+            .in3(N__5453),
             .lcout(\COUNTER.counter_1_cry_2_THRU_CO ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_2 ),
@@ -9262,9 +9354,9 @@ module TOP (
     defparam \COUNTER.counter_1_cry_3_THRU_LUT4_0_LC_6_9_3 .LUT_INIT=16'b1111111100000000;
     LogicCell40 \COUNTER.counter_1_cry_3_THRU_LUT4_0_LC_6_9_3  (
             .in0(_gnd_net_),
-            .in1(N__6291),
+            .in1(N__5449),
             .in2(_gnd_net_),
-            .in3(N__6270),
+            .in3(N__5426),
             .lcout(\COUNTER.counter_1_cry_3_THRU_CO ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_3 ),
@@ -9277,9 +9369,9 @@ module TOP (
     defparam \COUNTER.counter_1_cry_4_THRU_LUT4_0_LC_6_9_4 .LUT_INIT=16'b1111111100000000;
     LogicCell40 \COUNTER.counter_1_cry_4_THRU_LUT4_0_LC_6_9_4  (
             .in0(_gnd_net_),
-            .in1(N__6267),
+            .in1(N__6248),
             .in2(_gnd_net_),
-            .in3(N__6246),
+            .in3(N__6227),
             .lcout(\COUNTER.counter_1_cry_4_THRU_CO ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_4 ),
@@ -9292,9 +9384,9 @@ module TOP (
     defparam \COUNTER.counter_1_cry_5_THRU_LUT4_0_LC_6_9_5 .LUT_INIT=16'b1111111100000000;
     LogicCell40 \COUNTER.counter_1_cry_5_THRU_LUT4_0_LC_6_9_5  (
             .in0(_gnd_net_),
-            .in1(N__6242),
+            .in1(N__6224),
             .in2(_gnd_net_),
-            .in3(N__6219),
+            .in3(N__6200),
             .lcout(\COUNTER.counter_1_cry_5_THRU_CO ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_5 ),
@@ -9307,14 +9399,14 @@ module TOP (
     defparam \COUNTER.counter_7_LC_6_9_6 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_7_LC_6_9_6  (
             .in0(_gnd_net_),
-            .in1(N__6216),
+            .in1(N__6197),
             .in2(_gnd_net_),
-            .in3(N__6204),
+            .in3(N__6185),
             .lcout(\COUNTER.counterZ0Z_7 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_6 ),
             .carryout(\COUNTER.counter_1_cry_7 ),
-            .clk(N__6640),
+            .clk(N__6619),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_8_LC_6_9_7 .C_ON=1'b1;
@@ -9322,14 +9414,14 @@ module TOP (
     defparam \COUNTER.counter_8_LC_6_9_7 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_8_LC_6_9_7  (
             .in0(_gnd_net_),
-            .in1(N__6201),
+            .in1(N__6182),
             .in2(_gnd_net_),
-            .in3(N__6189),
+            .in3(N__6170),
             .lcout(\COUNTER.counterZ0Z_8 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_7 ),
             .carryout(\COUNTER.counter_1_cry_8 ),
-            .clk(N__6640),
+            .clk(N__6619),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_9_LC_6_10_0 .C_ON=1'b1;
@@ -9337,14 +9429,14 @@ module TOP (
     defparam \COUNTER.counter_9_LC_6_10_0 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_9_LC_6_10_0  (
             .in0(_gnd_net_),
-            .in1(N__6186),
+            .in1(N__6163),
             .in2(_gnd_net_),
-            .in3(N__6174),
+            .in3(N__6149),
             .lcout(\COUNTER.counterZ0Z_9 ),
             .ltout(),
             .carryin(bfn_6_10_0_),
             .carryout(\COUNTER.counter_1_cry_9 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_10_LC_6_10_1 .C_ON=1'b1;
@@ -9352,14 +9444,14 @@ module TOP (
     defparam \COUNTER.counter_10_LC_6_10_1 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_10_LC_6_10_1  (
             .in0(_gnd_net_),
-            .in1(N__6171),
+            .in1(N__6146),
             .in2(_gnd_net_),
-            .in3(N__6159),
+            .in3(N__6134),
             .lcout(\COUNTER.counterZ0Z_10 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_9 ),
             .carryout(\COUNTER.counter_1_cry_10 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_11_LC_6_10_2 .C_ON=1'b1;
@@ -9367,14 +9459,14 @@ module TOP (
     defparam \COUNTER.counter_11_LC_6_10_2 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_11_LC_6_10_2  (
             .in0(_gnd_net_),
-            .in1(N__6155),
+            .in1(N__6131),
             .in2(_gnd_net_),
-            .in3(N__6141),
+            .in3(N__6119),
             .lcout(\COUNTER.counterZ0Z_11 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_10 ),
             .carryout(\COUNTER.counter_1_cry_11 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_12_LC_6_10_3 .C_ON=1'b1;
@@ -9382,14 +9474,14 @@ module TOP (
     defparam \COUNTER.counter_12_LC_6_10_3 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_12_LC_6_10_3  (
             .in0(_gnd_net_),
-            .in1(N__6417),
+            .in1(N__6112),
             .in2(_gnd_net_),
-            .in3(N__6405),
+            .in3(N__6098),
             .lcout(\COUNTER.counterZ0Z_12 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_11 ),
             .carryout(\COUNTER.counter_1_cry_12 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_13_LC_6_10_4 .C_ON=1'b1;
@@ -9397,14 +9489,14 @@ module TOP (
     defparam \COUNTER.counter_13_LC_6_10_4 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_13_LC_6_10_4  (
             .in0(_gnd_net_),
-            .in1(N__6401),
+            .in1(N__6374),
             .in2(_gnd_net_),
-            .in3(N__6387),
+            .in3(N__6362),
             .lcout(\COUNTER.counterZ0Z_13 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_12 ),
             .carryout(\COUNTER.counter_1_cry_13 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_14_LC_6_10_5 .C_ON=1'b1;
@@ -9412,14 +9504,14 @@ module TOP (
     defparam \COUNTER.counter_14_LC_6_10_5 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_14_LC_6_10_5  (
             .in0(_gnd_net_),
-            .in1(N__6384),
+            .in1(N__6359),
             .in2(_gnd_net_),
-            .in3(N__6372),
+            .in3(N__6347),
             .lcout(\COUNTER.counterZ0Z_14 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_13 ),
             .carryout(\COUNTER.counter_1_cry_14 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_15_LC_6_10_6 .C_ON=1'b1;
@@ -9427,14 +9519,14 @@ module TOP (
     defparam \COUNTER.counter_15_LC_6_10_6 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_15_LC_6_10_6  (
             .in0(_gnd_net_),
-            .in1(N__6369),
+            .in1(N__6343),
             .in2(_gnd_net_),
-            .in3(N__6357),
+            .in3(N__6329),
             .lcout(\COUNTER.counterZ0Z_15 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_14 ),
             .carryout(\COUNTER.counter_1_cry_15 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_16_LC_6_10_7 .C_ON=1'b1;
@@ -9442,14 +9534,14 @@ module TOP (
     defparam \COUNTER.counter_16_LC_6_10_7 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_16_LC_6_10_7  (
             .in0(_gnd_net_),
-            .in1(N__6354),
+            .in1(N__6326),
             .in2(_gnd_net_),
-            .in3(N__6342),
+            .in3(N__6314),
             .lcout(\COUNTER.counterZ0Z_16 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_15 ),
             .carryout(\COUNTER.counter_1_cry_16 ),
-            .clk(N__6711),
+            .clk(N__6611),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_17_LC_6_11_0 .C_ON=1'b1;
@@ -9457,14 +9549,14 @@ module TOP (
     defparam \COUNTER.counter_17_LC_6_11_0 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_17_LC_6_11_0  (
             .in0(_gnd_net_),
-            .in1(N__6339),
+            .in1(N__6310),
             .in2(_gnd_net_),
-            .in3(N__6327),
+            .in3(N__6296),
             .lcout(\COUNTER.counterZ0Z_17 ),
             .ltout(),
             .carryin(bfn_6_11_0_),
             .carryout(\COUNTER.counter_1_cry_17 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_18_LC_6_11_1 .C_ON=1'b1;
@@ -9472,14 +9564,14 @@ module TOP (
     defparam \COUNTER.counter_18_LC_6_11_1 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_18_LC_6_11_1  (
             .in0(_gnd_net_),
-            .in1(N__6324),
+            .in1(N__6293),
             .in2(_gnd_net_),
-            .in3(N__6312),
+            .in3(N__6281),
             .lcout(\COUNTER.counterZ0Z_18 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_17 ),
             .carryout(\COUNTER.counter_1_cry_18 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_19_LC_6_11_2 .C_ON=1'b1;
@@ -9487,14 +9579,14 @@ module TOP (
     defparam \COUNTER.counter_19_LC_6_11_2 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_19_LC_6_11_2  (
             .in0(_gnd_net_),
-            .in1(N__6308),
+            .in1(N__6278),
             .in2(_gnd_net_),
-            .in3(N__6294),
+            .in3(N__6266),
             .lcout(\COUNTER.counterZ0Z_19 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_18 ),
             .carryout(\COUNTER.counter_1_cry_19 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_20_LC_6_11_3 .C_ON=1'b1;
@@ -9502,14 +9594,14 @@ module TOP (
     defparam \COUNTER.counter_20_LC_6_11_3 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_20_LC_6_11_3  (
             .in0(_gnd_net_),
-            .in1(N__6558),
+            .in1(N__6263),
             .in2(_gnd_net_),
-            .in3(N__6546),
+            .in3(N__6251),
             .lcout(\COUNTER.counterZ0Z_20 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_19 ),
             .carryout(\COUNTER.counter_1_cry_20 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_21_LC_6_11_4 .C_ON=1'b1;
@@ -9517,14 +9609,14 @@ module TOP (
     defparam \COUNTER.counter_21_LC_6_11_4 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_21_LC_6_11_4  (
             .in0(_gnd_net_),
-            .in1(N__6542),
+            .in1(N__6515),
             .in2(_gnd_net_),
-            .in3(N__6528),
+            .in3(N__6503),
             .lcout(\COUNTER.counterZ0Z_21 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_20 ),
             .carryout(\COUNTER.counter_1_cry_21 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_22_LC_6_11_5 .C_ON=1'b1;
@@ -9532,14 +9624,14 @@ module TOP (
     defparam \COUNTER.counter_22_LC_6_11_5 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_22_LC_6_11_5  (
             .in0(_gnd_net_),
-            .in1(N__6525),
+            .in1(N__6499),
             .in2(_gnd_net_),
-            .in3(N__6513),
+            .in3(N__6485),
             .lcout(\COUNTER.counterZ0Z_22 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_21 ),
             .carryout(\COUNTER.counter_1_cry_22 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_23_LC_6_11_6 .C_ON=1'b1;
@@ -9547,14 +9639,14 @@ module TOP (
     defparam \COUNTER.counter_23_LC_6_11_6 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_23_LC_6_11_6  (
             .in0(_gnd_net_),
-            .in1(N__6510),
+            .in1(N__6482),
             .in2(_gnd_net_),
-            .in3(N__6498),
+            .in3(N__6470),
             .lcout(\COUNTER.counterZ0Z_23 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_22 ),
             .carryout(\COUNTER.counter_1_cry_23 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_24_LC_6_11_7 .C_ON=1'b1;
@@ -9562,14 +9654,14 @@ module TOP (
     defparam \COUNTER.counter_24_LC_6_11_7 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_24_LC_6_11_7  (
             .in0(_gnd_net_),
-            .in1(N__6495),
+            .in1(N__6467),
             .in2(_gnd_net_),
-            .in3(N__6483),
+            .in3(N__6455),
             .lcout(\COUNTER.counterZ0Z_24 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_23 ),
             .carryout(\COUNTER.counter_1_cry_24 ),
-            .clk(N__6698),
+            .clk(N__6673),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_25_LC_6_12_0 .C_ON=1'b1;
@@ -9577,14 +9669,14 @@ module TOP (
     defparam \COUNTER.counter_25_LC_6_12_0 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_25_LC_6_12_0  (
             .in0(_gnd_net_),
-            .in1(N__6480),
+            .in1(N__6451),
             .in2(_gnd_net_),
-            .in3(N__6468),
+            .in3(N__6437),
             .lcout(\COUNTER.counterZ0Z_25 ),
             .ltout(),
             .carryin(bfn_6_12_0_),
             .carryout(\COUNTER.counter_1_cry_25 ),
-            .clk(N__6754),
+            .clk(N__6751),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_26_LC_6_12_1 .C_ON=1'b1;
@@ -9592,14 +9684,14 @@ module TOP (
     defparam \COUNTER.counter_26_LC_6_12_1 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_26_LC_6_12_1  (
             .in0(_gnd_net_),
-            .in1(N__6464),
+            .in1(N__6434),
             .in2(_gnd_net_),
-            .in3(N__6450),
+            .in3(N__6422),
             .lcout(\COUNTER.counterZ0Z_26 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_25 ),
             .carryout(\COUNTER.counter_1_cry_26 ),
-            .clk(N__6754),
+            .clk(N__6751),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_27_LC_6_12_2 .C_ON=1'b1;
@@ -9607,14 +9699,14 @@ module TOP (
     defparam \COUNTER.counter_27_LC_6_12_2 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_27_LC_6_12_2  (
             .in0(_gnd_net_),
-            .in1(N__6447),
+            .in1(N__6419),
             .in2(_gnd_net_),
-            .in3(N__6435),
+            .in3(N__6407),
             .lcout(\COUNTER.counterZ0Z_27 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_26 ),
             .carryout(\COUNTER.counter_1_cry_27 ),
-            .clk(N__6754),
+            .clk(N__6751),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_28_LC_6_12_3 .C_ON=1'b1;
@@ -9622,14 +9714,14 @@ module TOP (
     defparam \COUNTER.counter_28_LC_6_12_3 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_28_LC_6_12_3  (
             .in0(_gnd_net_),
-            .in1(N__6432),
+            .in1(N__6404),
             .in2(_gnd_net_),
-            .in3(N__6420),
+            .in3(N__6392),
             .lcout(\COUNTER.counterZ0Z_28 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_27 ),
             .carryout(\COUNTER.counter_1_cry_28 ),
-            .clk(N__6754),
+            .clk(N__6751),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_29_LC_6_12_4 .C_ON=1'b1;
@@ -9637,14 +9729,14 @@ module TOP (
     defparam \COUNTER.counter_29_LC_6_12_4 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_29_LC_6_12_4  (
             .in0(_gnd_net_),
-            .in1(N__6833),
+            .in1(N__6389),
             .in2(_gnd_net_),
-            .in3(N__6819),
+            .in3(N__6377),
             .lcout(\COUNTER.counterZ0Z_29 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_28 ),
             .carryout(\COUNTER.counter_1_cry_29 ),
-            .clk(N__6754),
+            .clk(N__6751),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_30_LC_6_12_5 .C_ON=1'b1;
@@ -9652,14 +9744,14 @@ module TOP (
     defparam \COUNTER.counter_30_LC_6_12_5 .LUT_INIT=16'b1001100101100110;
     LogicCell40 \COUNTER.counter_30_LC_6_12_5  (
             .in0(_gnd_net_),
-            .in1(N__6816),
+            .in1(N__6914),
             .in2(_gnd_net_),
-            .in3(N__6804),
+            .in3(N__6902),
             .lcout(\COUNTER.counterZ0Z_30 ),
             .ltout(),
             .carryin(\COUNTER.counter_1_cry_29 ),
             .carryout(\COUNTER.counter_1_cry_30 ),
-            .clk(N__6754),
+            .clk(N__6751),
             .ce(),
             .sr(_gnd_net_));
     defparam \COUNTER.counter_31_LC_6_12_6 .C_ON=1'b0;
@@ -9667,14 +9759,29 @@ module TOP (
     defparam \COUNTER.counter_31_LC_6_12_6 .LUT_INIT=16'b0011001111001100;
     LogicCell40 \COUNTER.counter_31_LC_6_12_6  (
             .in0(_gnd_net_),
-            .in1(N__6798),
+            .in1(N__6895),
             .in2(_gnd_net_),
-            .in3(N__6801),
+            .in3(N__6899),
             .lcout(\COUNTER.counterZ0Z_31 ),
             .ltout(),
             .carryin(_gnd_net_),
             .carryout(),
-            .clk(N__6754),
+            .clk(N__6751),
+            .ce(),
+            .sr(_gnd_net_));
+    defparam \COUNTER.counter_0_LC_7_10_0 .C_ON=1'b0;
+    defparam \COUNTER.counter_0_LC_7_10_0 .SEQ_MODE=4'b1000;
+    defparam \COUNTER.counter_0_LC_7_10_0 .LUT_INIT=16'b1100110011111111;
+    LogicCell40 \COUNTER.counter_0_LC_7_10_0  (
+            .in0(_gnd_net_),
+            .in1(N__6877),
+            .in2(_gnd_net_),
+            .in3(N__6801),
+            .lcout(\COUNTER.counterZ0Z_0 ),
+            .ltout(),
+            .carryin(_gnd_net_),
+            .carryout(),
+            .clk(N__6610),
             .ce(),
             .sr(_gnd_net_));
 endmodule // TOP
