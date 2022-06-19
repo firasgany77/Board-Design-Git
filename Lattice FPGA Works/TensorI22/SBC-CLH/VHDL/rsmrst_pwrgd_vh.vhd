@@ -11,9 +11,8 @@ entity rsmrst_pwrgd_block is
 port (
 	V33A_OK:    	   in std_logic; -- NOT OPEN DRAIN!
 	V5A_OK:    		   in std_logic; -- Open-drain, internal weak pull-up required
---	tpm_gpio:  		   in std_logic; -- Provision
 	SLP_SUSn:   	   in std_logic; 
-   clk_100k:     	  in std_logic; -- 100KHz clock, T = 10uSec		
+    clk_100k:     	  in std_logic; -- 100KHz clock, T = 10uSec		
 	RSMRSTn:    	  out std_logic; --with 10ms delay on rising edge
 	rsmrst_pwrgd_out: out std_logic);--without delay
 end rsmrst_pwrgd_block;

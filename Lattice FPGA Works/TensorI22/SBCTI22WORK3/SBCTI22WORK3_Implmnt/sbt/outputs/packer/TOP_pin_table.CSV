@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 17 2022 11:58:00
+* File Generated:     Jun 19 2022 12:57:46
 
 * Purpose:            Detailed IO and package pin info
 
@@ -85,7 +85,7 @@ B15, PIO, not used, , , , , , bottomBank
 B16, CDONE, not used, , , , , , bottomBank
 B17, SPI_SO, not used, , , , , , bottomBank
 B18, SPI_SS_B, not used, , , , , , bottomBank
-B19, PIO, VCCST_CPU_OK,  , , SB_LVCMOS, No Pull Up, , rightBank
+B19, PIO, VCCST_CPU_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
 B20, PIO, V5S_OK,  , , SB_LVCMOS, No Pull Up, , rightBank
 B21, PIO, VR_READY_VCCINAUX,  , , SB_LVCMOS, Pull Up, , rightBank
 B22, PIO_GBIN, VCCINAUX_VR_PE, Output, , SB_LVCMOS, No Pull Up, Simple Output, rightBank

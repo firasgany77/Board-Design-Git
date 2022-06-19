@@ -345,14 +345,6 @@ ARCHITECTURE bdf_type OF TOP IS
 		--);
 	--END COMPONENT;
 
-	COMPONENT all_sys_pwrgd_block
-	PORT (
-		PCH_PWROK : IN STD_LOGIC;
-		clk_100Khz : IN STD_LOGIC;
-		SYS_PWROK : OUT STD_LOGIC
-	);
-    END COMPONENT;
-
 	COMPONENT dsw_pwrok_block
 		PORT (
 			V33DSW_OK : IN STD_LOGIC;
@@ -406,17 +398,19 @@ ARCHITECTURE bdf_type OF TOP IS
  		VPP_OK : IN STD_LOGIC; 
 		SLP_SUSn : IN STD_LOGIC; 
 		SLP_S3n : IN STD_LOGIC;
+		VCCST_CPU_OK : IN STD_LOGIC;
+		RSMRST_PWRGD : IN STD_LOGIC;
 		ALL_SYS_PWRGD : OUT STD_LOGIC
 			);
     END COMPONENT;
 
-	COMPONENT vccst_en_block
-	        Port(
-	    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
-		ALL_SYS_PWRGD :  IN STD_LOGIC;
-        VCCST_EN: OUT STD_LOGIC
-			);
-    END COMPONENT;
+--	COMPONENT vccst_en_block
+	    --    Port(
+	   -- clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+		--ALL_SYS_PWRGD :  IN STD_LOGIC;
+        --VCCST_EN: OUT STD_LOGIC
+		--	);
+    --END COMPONENT;
 
 
 
@@ -440,14 +434,14 @@ ARCHITECTURE bdf_type OF TOP IS
 
 BEGIN
 
-    -- Debug:
-	-- SUSWARN_N <= clk_100Khz_signal; 
+    ------------------------------------------------------------DEBUG-------------------------------------------------------------
+	SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
+	--SUSACK_N <= ALL_SYS_PWRGD_Signal; 
+	------------------------------------------------------------------------------------------------------------------------------
 
     DSW_PWROK <= DSW_PWROK_signal;
-	PCH_PWROK <= pch_pwrok_signal;
 	VCCST_PWRGD <= ALL_SYS_PWRGD_Signal;
-
-	
+	PCH_PWROK <= pch_pwrok_signal;
     
 	-- CPU_C10_GATE# is a signal from the Tiger Lake SoC that can be used for
     -- gating off VccSTG in the S0/C10 system state in order to save power.
@@ -455,25 +449,22 @@ BEGIN
     -- power gate VccSTG in the S0/C10 state even in “Volume” designs. VccSTG
     -- should be gated by CPU_C10_GATE#
 	
-	VCCST_EN <= ALL_SYS_PWRGD_Signal;
+	VCCST_EN <= NOT(slp_s3n_signal);
 	-- VCCST, VCCSTG ramped and stable to VccST_PWRGD assertion: min 2 ms. 
 	-- in intel CRB: 7us between VCCST_PWRGD and VCCST_CPU_EN. 
 
 	VCCIN_EN <= ALL_SYS_PWRGD_Signal;
 
-	-- to debug ALL SYS_PWROK;
-	SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
-	SUSACK_N <= ALL_SYS_PWRGD_Signal; 
-	
-	
 
 	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
 	RSMRSTn <= RSMRSTn_signal;
 	slp_s3n_signal <= SLP_S3n;
 	slp_s4n_signal <= SLP_S4n; 
-	V5S_ENn <= NOT(slp_s3n_signal); 
-	V33S_ENn <= NOT(slp_s3n_signal);
 
+	---------------------------------------------------------- S3 VR's -------------------------------------------------------------------
+	--V5S_ENn <= NOT(slp_s3n_signal); 
+	--V33S_ENn <= NOT(slp_s3n_signal);
+    --------------------------------------------------------------------------------------------------------------------------------------
 
 	-- inputs that go to more that one block need to be wired to a signal. 
 	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
@@ -565,15 +556,17 @@ BEGIN
 	  VPP_OK => VPP_OK_signal, 
 	  SLP_SUSn => slp_susn_signal,
 	  SLP_S3n => slp_s3n_signal, 
+	  VCCST_CPU_OK => VCCST_CPU_OK,
+	  RSMRST_PWRGD => RSMRSTn_signal,
 	  ALL_SYS_PWRGD  => ALL_SYS_PWRGD_signal
 		  );
 
-	VCCST_CPU_EN: vccst_en_block
-	PORT MAP(
-	  clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
-	  ALL_SYS_PWRGD => ALL_SYS_PWRGD_signal,
-	  VCCST_EN => VCCST_EN
-		  );
+	--VCCST_CPU_EN: vccst_en_block
+	--PORT MAP(
+	  --clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
+	  --ALL_SYS_PWRGD => ALL_SYS_PWRGD_signal,
+	  --VCCST_EN => VCCST_EN
+		--  );
 	
 
 END bdf_type;

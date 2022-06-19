@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 17 2022 11:58:00
+* File Generated:     Jun 19 2022 12:57:46
 
 * Purpose:            General info of design implementation
 
@@ -28,26 +28,26 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  109
-    LUTs:                 171
+    LUTs:                 176
     RAMs:                 0
-    IOBs:                 30
+    IOBs:                 31
     GBs:                  0
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 184/1280
-        Combinational Logic Cells: 75       out of   1280      5.85938%
+    Total Logic Cells: 189/1280
+        Combinational Logic Cells: 80       out of   1280      6.25%
         Sequential Logic Cells:    109      out of   1280      8.51563%
-        Logic Tiles:               34       out of   160       21.25%
+        Logic Tiles:               36       out of   160       22.5%
     Registers: 
         Logic Registers:           109      out of   1280      8.51563%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                9        out of   67        13.4328%
+        Input Pins:                10       out of   67        14.9254%
         Output Pins:               21       out of   67        31.3433%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                0        out of   8         0%
@@ -72,6 +72,7 @@ Detailed I/O Info:
     B2          Input      SB_LVCMOS    Yes      3        Simple Input   V1P8A_OK                  
     B8          Input      SB_LVCMOS    Yes      3        Simple Input   V5A_OK                    
     B12         Input      SB_LVCMOS    No       2        Simple Input   FPGA_OSC                  
+    B19         Input      SB_LVCMOS    No       1        Simple Input   VCCST_CPU_OK              
     B26         Input      SB_LVCMOS    Yes      1        Simple Input   VDDQ_OK                   
     B34         Input      SB_LVCMOS    No       0        Simple Input   SLP_S4n                   
 

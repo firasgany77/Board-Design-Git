@@ -10,14 +10,14 @@ SB_DFFE         11 uses
 SB_DFFESR       4 uses
 SB_DFFSR        60 uses
 VCC             5 uses
-SB_LUT4         164 uses
+SB_LUT4         169 uses
 
 I/O Register bits:                  0
 Register bits not including I/Os:   109 (8%)
 
 @S |Mapping Summary:
-Total  LUTs: 164 (12%)
+Total  LUTs: 169 (13%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 164 = 164 
+Distribution of All Consumed Luts 169 = 169 
 
