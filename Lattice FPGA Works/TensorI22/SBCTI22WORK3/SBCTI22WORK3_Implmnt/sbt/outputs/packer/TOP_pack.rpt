@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 19 2022 12:57:46
+* File Generated:     Jun 19 2022 13:11:24
 
 * Purpose:            General info of design implementation
 
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  109
-    LUTs:                 176
+    LUTs:                 175
     RAMs:                 0
     IOBs:                 31
     GBs:                  0
@@ -37,10 +37,10 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 189/1280
-        Combinational Logic Cells: 80       out of   1280      6.25%
+    Total Logic Cells: 188/1280
+        Combinational Logic Cells: 79       out of   1280      6.17188%
         Sequential Logic Cells:    109      out of   1280      8.51563%
-        Logic Tiles:               36       out of   160       22.5%
+        Logic Tiles:               38       out of   160       23.75%
     Registers: 
         Logic Registers:           109      out of   1280      8.51563%
         IO Registers:              0        out of   560       0

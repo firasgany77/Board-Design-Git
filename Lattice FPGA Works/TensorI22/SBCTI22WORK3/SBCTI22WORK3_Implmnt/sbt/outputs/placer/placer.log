@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Jun 19 2022 12:56:56
+* File Generated:     Jun 19 2022 13:10:40
 
 * Purpose:            
 
@@ -35,7 +35,7 @@ I2053: Starting placement of the design
 =============================================================
 
 Input Design Statistics
-    Number of LUTs      	:	169
+    Number of LUTs      	:	168
     Number of DFFs      	:	109
     Number of DFFs packed to IO	:	0
     Number of Carrys    	:	98
@@ -75,7 +75,7 @@ I2088: Phase 2, elapsed time : 0.1 (sec)
 Phase 3
 
 Design Statistics after Packing
-    Number of LUTs      	:	176
+    Number of LUTs      	:	175
     Number of DFFs      	:	109
     Number of DFFs packed to IO	:	0
     Number of Carrys    	:	102
@@ -85,10 +85,10 @@ Device Utilization Summary after Packing
         LUT and DFF      	:	25
         LUT, DFF and CARRY	:	84
     Combinational LogicCells
-        Only LUT         	:	62
+        Only LUT         	:	61
         CARRY Only       	:	13
         LUT with CARRY   	:	5
-    LogicCells                  :	189/1280
+    LogicCells                  :	188/1280
     PLBs                        :	31/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
@@ -104,10 +104,10 @@ Phase 5
 I2088: Phase 5, elapsed time : 0.6 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 24.0 (sec)
+I2088: Phase 6, elapsed time : 14.6 (sec)
 
 Final Design Statistics
-    Number of LUTs      	:	176
+    Number of LUTs      	:	175
     Number of DFFs      	:	109
     Number of DFFs packed to IO	:	0
     Number of Carrys    	:	102
@@ -120,8 +120,8 @@ Final Design Statistics
     Number of PLLs      	:	0
 
 Device Utilization Summary
-    LogicCells                  :	189/1280
-    PLBs                        :	36/160
+    LogicCells                  :	188/1280
+    PLBs                        :	38/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
     PLLs                        :	0/0
@@ -140,7 +140,7 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 1
-Clock: TOP|FPGA_OSC | Frequency: 93.32 MHz | Target: 97.56 MHz
+Clock: TOP|FPGA_OSC | Frequency: 87.86 MHz | Target: 97.56 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -148,5 +148,5 @@ Clock: TOP|FPGA_OSC | Frequency: 93.32 MHz | Target: 97.56 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 25.7 sec.
+I2076: Placer run-time: 16.4 sec.
 

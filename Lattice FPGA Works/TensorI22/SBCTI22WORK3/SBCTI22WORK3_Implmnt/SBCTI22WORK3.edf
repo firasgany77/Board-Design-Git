@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 6 19 12 56 50)
+      (timeStamp 2022 6 19 13 10 32)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L+ice40, mapper maplat, Build 1612R"))
      )
@@ -3612,9 +3612,6 @@
           (instance SLP_SUSn_RNIN4K9 (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "5555"))
           )
-          (instance SLP_S3n_RNI2MQD (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
-           (property LUT_INIT (string "5555"))
-          )
           (instance VPP_OK_RNIJG731 (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "8000"))
           )
@@ -3739,7 +3736,7 @@
            (portRef SLP_S3n)
            (portRef SLP_S3n (instanceRef SYS_PWRGD))
            (portRef I0 (instanceRef VPP_OK_RNIJG731))
-           (portRef I0 (instanceRef SLP_S3n_RNI2MQD))
+           (portRef VCCST_EN)
           ))
           (net (rename slp_s4n "SLP_S4n") (joined
            (portRef SLP_S4n)
@@ -3828,10 +3825,6 @@
           (net m6_0_a2_3 (joined
            (portRef O (instanceRef VPP_OK_RNIJG731))
            (portRef m6_0_a2_3 (instanceRef RSMRST_PWRGD))
-          ))
-          (net (rename vccst_en "VCCST_EN") (joined
-           (portRef O (instanceRef SLP_S3n_RNI2MQD))
-           (portRef VCCST_EN)
           ))
           (net (rename v33a_ok "V33A_OK") (joined
            (portRef V33A_OK)

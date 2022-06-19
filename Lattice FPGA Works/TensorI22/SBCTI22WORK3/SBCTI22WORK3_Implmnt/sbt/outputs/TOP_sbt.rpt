@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 19 2022 12:57:46
+* File Generated:     Jun 19 2022 13:11:24
 
 * Purpose:            General info of design implementation
 
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  109
-    LUTs:                 176
+    LUTs:                 175
     RAMs:                 0
     IOBs:                 31
     GBs:                  0
@@ -37,10 +37,10 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 189/1280
-        Combinational Logic Cells: 80       out of   1280      6.25%
+    Total Logic Cells: 188/1280
+        Combinational Logic Cells: 79       out of   1280      6.17188%
         Sequential Logic Cells:    109      out of   1280      8.51563%
-        Logic Tiles:               36       out of   160       22.5%
+        Logic Tiles:               38       out of   160       23.75%
     Registers: 
         Logic Registers:           109      out of   1280      8.51563%
         IO Registers:              0        out of   560       0
@@ -106,12 +106,12 @@ Detailed I/O Info:
 Router Summary:
 ---------------
     Status:  Successful
-    Runtime: 3 seconds
+    Runtime: 4 seconds
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     1351 out of  28666      4.7129%
-                          Span 4      211 out of   6944      3.03859%
-                         Span 12       15 out of   1440      1.04167%
-      Vertical Inter-LUT Connect       12 out of   1120      1.07143%
+              Local line of tile     1342 out of  28666      4.6815%
+                          Span 4      186 out of   6944      2.67857%
+                         Span 12       25 out of   1440      1.73611%
+      Vertical Inter-LUT Connect       14 out of   1120      1.25%
 

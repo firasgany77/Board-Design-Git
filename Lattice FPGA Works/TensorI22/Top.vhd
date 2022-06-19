@@ -449,7 +449,7 @@ BEGIN
     -- power gate VccSTG in the S0/C10 state even in “Volume” designs. VccSTG
     -- should be gated by CPU_C10_GATE#
 	
-	VCCST_EN <= NOT(slp_s3n_signal);
+	VCCST_EN <= slp_s3n_signal;
 	-- VCCST, VCCSTG ramped and stable to VccST_PWRGD assertion: min 2 ms. 
 	-- in intel CRB: 7us between VCCST_PWRGD and VCCST_CPU_EN. 
 

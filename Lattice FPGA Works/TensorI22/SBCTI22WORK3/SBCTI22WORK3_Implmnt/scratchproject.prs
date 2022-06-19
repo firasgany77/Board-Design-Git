@@ -6,16 +6,13 @@
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/vpp_vddq.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/rsmrst_pwrgd.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/pch_pwrok.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/hda_strap.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/dsw_pwrok.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/counter.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/Top.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/primary_voltages_enabler.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/vccin_en.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/powerled.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/sys_pwrok.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/all_sys_pwrgd.vhd"
-add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/vccst_en.vhd"
 
 
 
