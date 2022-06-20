@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 19 2022 13:11:24
+* File Generated:     Jun 20 2022 14:07:28
 
 * Purpose:            General info of design implementation
 
@@ -23,8 +23,8 @@ Size: 12 X 16
 
 ***** Design Utilization Info *****
 Design: TOP
-Used Logic Cell: 188/1280
-Used Logic Tile: 38/160
+Used Logic Cell: 217/1280
+Used Logic Tile: 43/160
 Used IO Cell:    59/112
 Used Bram Cell For iCE40: 0/16
 Used PLL For iCE40: 0/0
@@ -36,8 +36,8 @@ Clock Domain: fpga_osc
 Clock Source: ipInertedIONet_FPGA_OSC 
 Clock Driver: ipInertedIOPad_FPGA_OSC (ICE_IO)
 Driver Position: (7, 0, 0)
-Fanout to FF: 109
-Fanout to Tile: 25
+Fanout to FF: 128
+Fanout to Tile: 28
 
 
 ***** Placement Info *****
@@ -45,15 +45,15 @@ Logic cell utilization per tile
     . . . . + . . . . 1 . . . . 
    ----------------------------
 17|                             
-16|   1 1 0 1 0 0 0 0 0 0 0 0   
-15|   0 1 0 1 4 1 0 0 0 0 0 0   
-14|   5 8 0 8 8 8 3 0 0 0 0 0   
-13|   3 8 0 8 6 8 3 0 0 0 0 0   
-12|   4 1 0 7 8 6 0 0 0 0 0 0   
-11|   2 1 0 8 8 1 0 0 0 0 0 0   
-10|   6 8 0 8 8 1 0 0 0 0 0 0   
- 9|   5 8 0 4 8 0 0 0 0 0 0 0   
- 8|   0 0 0 0 0 0 0 0 0 0 0 0   
+16|   1 0 0 0 0 0 1 1 1 0 0 0   
+15|   0 0 0 0 0 0 8 8 8 0 2 0   
+14|   0 0 0 0 0 5 8 8 8 0 3 0   
+13|   0 0 0 0 0 5 3 6 6 0 6 0   
+12|   0 0 0 0 1 0 1 4 4 0 8 0   
+11|   0 0 0 0 1 1 8 5 8 0 8 0   
+10|   0 0 0 0 1 0 8 1 8 0 8 5   
+ 9|   0 0 0 0 0 0 5 8 8 0 8 1   
+ 8|   0 0 0 0 0 0 0 8 7 0 4 0   
  7|   0 0 0 0 0 0 0 0 0 0 0 0   
  6|   0 0 0 0 0 0 0 0 0 0 0 0   
  5|   0 0 0 0 0 0 0 0 0 0 0 0   
@@ -64,22 +64,22 @@ Logic cell utilization per tile
  0|                             
 
 Maximum number of Logic cells per logic tile: 8
-Average number of Logic cells per logic tile: 4.95
+Average number of Logic cells per logic tile: 5.05
 
 ***** Input Pin Density Info *****
 Number of input nets per logic tile
      .  .  .  .  +  .  .  .  .  1  .  .  .  . 
    ------------------------------------------
 17|                                           
-16|     2  3  0  3  0  0  0  0  0  0  0  0    
-15|     0  2  0  2  8  2  0  0  0  0  0  0    
-14|    18 16  0 16 22 16 12  0  0  0  0  0    
-13|    12 17  0 17 18 17 10  0  0  0  0  0    
-12|     8  4  0 19 18 14  0  0  0  0  0  0    
-11|     3  2  0  8 16  4  0  0  0  0  0  0    
-10|    10 16  0 22 16  3  0  0  0  0  0  0    
- 9|    20 17  0  9 16  0  0  0  0  0  0  0    
- 8|     0  0  0  0  0  0  0  0  0  0  0  0    
+16|     2  0  0  0  0  0  2  2  2  0  0  0    
+15|     0  0  0  0  0  0 16 16 16  0  8  0    
+14|     0  0  0  0  0 20 17 17 17  0 12  0    
+13|     0  0  0  0  0 11  7  7 22  0 10  0    
+12|     0  0  0  0  0  0  2  7  9  0 14  0    
+11|     0  0  0  0  4  2 16  8 16  0 16  0    
+10|     0  0  0  0  1  0 17  2  8  0 16 20    
+ 9|     0  0  0  0  0  0 20 16 13  0 16  4    
+ 8|     0  0  0  0  0  0  0 17  9  0 16  0    
  7|     0  0  0  0  0  0  0  0  0  0  0  0    
  6|     0  0  0  0  0  0  0  0  0  0  0  0    
  5|     0  0  0  0  0  0  0  0  0  0  0  0    
@@ -90,21 +90,21 @@ Number of input nets per logic tile
  0|                                           
 
 Maximum number of input nets per logic tile: 22
-Average number of input nets per logic tile: 11.53
+Average number of input nets per logic tile: 11.26
 
 Number of input pins per logic tile
      .  .  .  .  +  .  .  .  .  1  .  .  .  . 
    ------------------------------------------
 17|                                           
-16|     2  3  0  3  0  0  0  0  0  0  0  0    
-15|     0  2  0  2 16  2  0  0  0  0  0  0    
-14|    18 22  0 22 25 22 12  0  0  0  0  0    
-13|    12 25  0 25 20 25 10  0  0  0  0  0    
-12|    13  4  0 21 18 19  0  0  0  0  0  0    
-11|     3  2  0  8 16  4  0  0  0  0  0  0    
-10|    22 22  0 28 16  3  0  0  0  0  0  0    
- 9|    20 25  0 12 16  0  0  0  0  0  0  0    
- 8|     0  0  0  0  0  0  0  0  0  0  0  0    
+16|     2  0  0  0  0  0  2  2  2  0  0  0    
+15|     0  0  0  0  0  0 22 22 22  0  8  0    
+14|     0  0  0  0  0 20 25 25 25  0 12  0    
+13|     0  0  0  0  0 17 11 20 22  0 21  0    
+12|     0  0  0  0  0  0  2 12 12  0 18  0    
+11|     0  0  0  0  4  2 22 17 24  0 16  0    
+10|     0  0  0  0  1  0 25  2  8  0 16 20    
+ 9|     0  0  0  0  0  0 20 22 25  0 16  4    
+ 8|     0  0  0  0  0  0  0 25 23  0 16  0    
  7|     0  0  0  0  0  0  0  0  0  0  0  0    
  6|     0  0  0  0  0  0  0  0  0  0  0  0    
  5|     0  0  0  0  0  0  0  0  0  0  0  0    
@@ -114,8 +114,8 @@ Number of input pins per logic tile
  1|     0  0  0  0  0  0  0  0  0  0  0  0    
  0|                                           
 
-Maximum number of input pins per logic tile: 28
-Average number of input pins per logic tile: 14.21
+Maximum number of input pins per logic tile: 25
+Average number of input pins per logic tile: 15.05
 
 ***** Run Time Info *****
 Run Time:  0

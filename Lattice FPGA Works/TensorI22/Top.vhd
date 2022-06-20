@@ -281,7 +281,7 @@ ENTITY TOP IS
                                       -- including emergency power loss.
 
 		PWRBTN_LED : OUT STD_LOGIC; -- OK
-		PWRBTNn : IN STD_LOGIC; -- OK
+		PWRBTNn : OUT STD_LOGIC; -- OK
 		                              -- Signal driven from EC to PCH indicating a system request to go into
                                       -- Sleep State OR if the system is already in the Sleep State then it will cause a wake event.
 
@@ -291,19 +291,6 @@ ENTITY TOP IS
 END TOP;
 
 ARCHITECTURE bdf_type OF TOP IS
-
-	--COMPONENT powerled_block
-		--GENERIC (
-		--	periodclocks : INTEGER
-		--);
-		--PORT (
-			--clk_100Khz : IN STD_LOGIC;
-			--SLP_S3n : IN STD_LOGIC;
-			--SLP_S4n : IN STD_LOGIC;
-			--mem_alert : IN STD_LOGIC;
-			--pwm_out : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
 
 	COMPONENT vpp_vddq_block
 		PORT (
@@ -322,28 +309,6 @@ ARCHITECTURE bdf_type OF TOP IS
 			clk_100Khz : OUT STD_LOGIC
 		);
 	END COMPONENT;
-
-	--COMPONENT hda_strap_block
-		 --PORT (
-			--pch_pwrok : IN STD_LOGIC;
-			--GPIO_PCH : IN STD_LOGIC;
-			--clk_100Khz : IN STD_LOGIC;
-		 	--HDA_SDO_ATP : OUT STD_LOGIC
-		 --);
-	-- END COMPONENT;
-
-	  --COMPONENT vccin_en_block
-		 -- PORT (
-		    --v5s_pwrgd : IN STD_LOGIC;
-			--v33s_pwrgd : IN STD_LOGIC;
-           -- slp_s3n : IN STD_LOGIC;
-			--rsmrst_pwrgd : IN STD_LOGIC;
-			--DSW_PWROK: IN STD_LOGIC;
-			--VCCST_CPU_OK: IN STD_LOGIC; 
-			--clk_100Khz : IN STD_LOGIC;
-			--vccin_en : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
 
 	COMPONENT dsw_pwrok_block
 		PORT (
@@ -366,7 +331,6 @@ ARCHITECTURE bdf_type OF TOP IS
 	END COMPONENT;
 
 
-
 	COMPONENT pch_pwrok_block
 		PORT (
 			clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
@@ -374,7 +338,6 @@ ARCHITECTURE bdf_type OF TOP IS
 			pch_pwrok : OUT STD_LOGIC -- Signal #7 Premium PWROK Generation Flow Diagram
 		);
 	END COMPONENT;
-
 
 
 	COMPONENT primary_voltages_enabler
@@ -404,7 +367,24 @@ ARCHITECTURE bdf_type OF TOP IS
 			);
     END COMPONENT;
 
---	COMPONENT vccst_en_block
+
+	COMPONENT sys_pwrok_block
+	PORT (
+		PCH_PWROK : IN STD_LOGIC;
+		clk_100Khz : IN STD_LOGIC;
+		SYS_PWROK : OUT STD_LOGIC
+	);
+	END COMPONENT;
+
+	--COMPONENT pwrbtn_block
+	--PORT (
+		--rsmrst_n : IN STD_LOGIC;
+		--clk_100Khz : IN STD_LOGIC;
+		--pwrbtn : OUT STD_LOGIC
+	--);
+	--END COMPONENT;
+    
+	--	COMPONENT vccst_en_block
 	    --    Port(
 	   -- clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
 		--ALL_SYS_PWRGD :  IN STD_LOGIC;
@@ -412,15 +392,45 @@ ARCHITECTURE bdf_type OF TOP IS
 		--	);
     --END COMPONENT;
 
+	
+	--COMPONENT hda_strap_block
+		 --PORT (
+			--pch_pwrok : IN STD_LOGIC;
+			--GPIO_PCH : IN STD_LOGIC;
+			--clk_100Khz : IN STD_LOGIC;
+		 	--HDA_SDO_ATP : OUT STD_LOGIC
+		 --);
+	-- END COMPONENT;
 
+	  --COMPONENT vccin_en_block
+		 -- PORT (
+		    --v5s_pwrgd : IN STD_LOGIC;
+			--v33s_pwrgd : IN STD_LOGIC;
+           -- slp_s3n : IN STD_LOGIC;
+			--rsmrst_pwrgd : IN STD_LOGIC;
+			--DSW_PWROK: IN STD_LOGIC;
+			--VCCST_CPU_OK: IN STD_LOGIC; 
+			--clk_100Khz : IN STD_LOGIC;
+			--vccin_en : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
-
+		--COMPONENT powerled_block
+		--GENERIC (
+		--	periodclocks : INTEGER
+		--);
+		--PORT (
+			--clk_100Khz : IN STD_LOGIC;
+			--SLP_S3n : IN STD_LOGIC;
+			--SLP_S4n : IN STD_LOGIC;
+			--mem_alert : IN STD_LOGIC;
+			--pwm_out : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
 	SIGNAL slp_s4n_signal : STD_LOGIC; 
-	--SIGNAL VCCST_EN_signal : STD_LOGIC;
-	--SIGNAL GPIO_FPGA_SoC_4_NOT_signal : STD_LOGIC;
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
@@ -430,13 +440,15 @@ ARCHITECTURE bdf_type OF TOP IS
     SIGNAL VDDQ_OK_signal : STD_LOGIC;
 	SIGNAL VPP_OK_signal : STD_LOGIC;
 	SIGNAL ALL_SYS_PWRGD_signal : STD_LOGIC; 
+    --SIGNAL VCCST_EN_signal : STD_LOGIC;
+	--SIGNAL GPIO_FPGA_SoC_4_NOT_signal : STD_LOGIC;
     
 
 BEGIN
 
     ------------------------------------------------------------DEBUG-------------------------------------------------------------
-	SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
-	--SUSACK_N <= ALL_SYS_PWRGD_Signal; 
+	-- SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
+    --GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 	------------------------------------------------------------------------------------------------------------------------------
 
     DSW_PWROK <= DSW_PWROK_signal;
@@ -471,22 +483,11 @@ BEGIN
 	VDDQ_OK_signal <= VDDQ_OK;
 	VPP_OK_signal <= VPP_OK; 
 
-	--GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
-
- 
+    ---------------------------------------------------------VCCIN\VCCINAUX VR's----------------------------------------------------------
 	--VCCIN_VR_PE <= '1'; 
 	--VCCIN_EN <= '0';
     --VCCINAUX_VR_PE <= '1';
-
-	--POWERLED : powerled_block 
-	--GENERIC MAP(
-		--periodclocks => 100)
-	--PORT MAP(
-		--clk_100Khz => clk_100Khz_signal,
-		--SLP_S3n => slp_s3n_signal,
-		--SLP_S4n => slp_s4n_signal,
-		--mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
-		--pwm_out => PWRBTN_LED);
+	--------------------------------------------------------------------------------------------------------------------------------------
 
 	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
@@ -515,17 +516,6 @@ BEGIN
 		CLK_25mhz => FPGA_OSC, -- CLK_25Mhz which we want to divide in onrder to get the 100Khz
 		clk_100Khz => clk_100Khz_signal);
 
-	--VCCIN_PWRGD: vccin_en_block
-	--PORT MAP(
-		--  v5s_pwrgd => V5S_OK,
-		  --v33s_pwrgd => V33S_OK,
-		 -- slp_s3n => slp_s3n_signal,
-		  --rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		 -- DSW_PWROK => DSW_PWROK_signal,
-		 -- VCCST_CPU_OK => VCCST_CPU_OK, 
-		 -- clk_100Khz => clk_100Khz_signal,
-      --vccin_en => VCCIN_EN);
-  
 	DSW_PWRGD : dsw_pwrok_block
 	PORT MAP(
 		V33DSW_OK => V33DSW_OK, 
@@ -540,7 +530,7 @@ BEGIN
 		  SLP_SUSn => slp_susn_signal,
 		  clk_100Khz => clk_100Khz_signal,
 		  RSMRSTn => RSMRSTn_signal,
-		  rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
+		  rsmrst_pwrgd_out => rsmrst_pwrgd_signal); -- Indication that all rails are ready without delay
 
 	PCH_PWRGD: pch_pwrok_block
 	PORT MAP(
@@ -548,7 +538,7 @@ BEGIN
 		  ALL_SYS_PWRGD => ALL_SYS_PWRGD_Signal,
 		  pch_pwrok => pch_pwrok_signal);
 
-	SYS_PWRGD: all_sys_pwrgd_block
+	ALL_SYS_PWRGD: all_sys_pwrgd_block
 	PORT MAP(
 	  clk_100Khz => clk_100Khz_signal,-- 100KHz clock, T = 10 us = 10,000 ns	
 	  DSW_PWROK => DSW_PWROK_signal,
@@ -561,12 +551,51 @@ BEGIN
 	  ALL_SYS_PWRGD  => ALL_SYS_PWRGD_signal
 		  );
 
+
+    SYS_PWRGD: sys_pwrok_block
+	PORT MAP (
+		PCH_PWROK => pch_pwrok_signal,
+		clk_100Khz => clk_100Khz_signal,
+		SYS_PWROK => SYS_PWROK
+	);
+
+
+
+	--PWRBTN: pwrbtn_block
+	--PORT MAP (
+		--rsmrst_n => RSMRSTn_signal,
+		--clk_100Khz => clk_100Khz_signal,
+		--pwrbtn => PWRBTNn
+	--);
+
 	--VCCST_CPU_EN: vccst_en_block
 	--PORT MAP(
 	  --clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
 	  --ALL_SYS_PWRGD => ALL_SYS_PWRGD_signal,
 	  --VCCST_EN => VCCST_EN
 		--  );
-	
+
+	--POWERLED : powerled_block 
+	--GENERIC MAP(
+		--periodclocks => 100)
+	--PORT MAP(
+		--clk_100Khz => clk_100Khz_signal,
+		--SLP_S3n => slp_s3n_signal,
+		--SLP_S4n => slp_s4n_signal,
+		--mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
+		--pwm_out => PWRBTN_LED);
+
+		
+	--VCCIN_PWRGD: vccin_en_block
+	--PORT MAP(
+		--  v5s_pwrgd => V5S_OK,
+		  --v33s_pwrgd => V33S_OK,
+		 -- slp_s3n => slp_s3n_signal,
+		  --rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		 -- DSW_PWROK => DSW_PWROK_signal,
+		 -- VCCST_CPU_OK => VCCST_CPU_OK, 
+		 -- clk_100Khz => clk_100Khz_signal,
+      --vccin_en => VCCIN_EN);
+  
 
 END bdf_type;

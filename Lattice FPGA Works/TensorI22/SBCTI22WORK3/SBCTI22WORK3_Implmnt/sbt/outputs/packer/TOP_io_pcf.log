@@ -8,7 +8,7 @@ INPUT  SLP_S3n 	 location (11, 17, 0) 	 A38
 INPUT  SLP_S0n 	 location (4, 17, 0) 	 A46 	 
 OUTPUT V5S_ENn 	 location (0, 11, 1) 	 B3 	 
 INPUT  V1P8A_OK 	 location (0, 12, 1) 	 B2 	 
-INPUT  PWRBTNn 	 location (10, 17, 0) 	 A39 	 
+OUTPUT PWRBTNn 	 location (10, 17, 0) 	 A39 	 
 OUTPUT PWRBTN_LED 	 location (2, 17, 1) 	 B36 	 
 INPUT  GPIO_FPGA_SoC_2 	 location (9, 0, 0) 	 B14 	 
 INPUT  VCCIN_VR_PROCHOT_FPGA 	 location (13, 11, 1) 	 A31 	 

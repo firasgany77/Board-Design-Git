@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 19 2022 13:11:24
+* File Generated:     Jun 20 2022 14:07:28
 
 * Purpose:            General info of design implementation
 
@@ -27,28 +27,28 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  109
-    LUTs:                 175
+    FFs:                  128
+    LUTs:                 203
     RAMs:                 0
-    IOBs:                 31
+    IOBs:                 32
     GBs:                  0
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 188/1280
-        Combinational Logic Cells: 79       out of   1280      6.17188%
-        Sequential Logic Cells:    109      out of   1280      8.51563%
-        Logic Tiles:               38       out of   160       23.75%
+    Total Logic Cells: 217/1280
+        Combinational Logic Cells: 89       out of   1280      6.95313%
+        Sequential Logic Cells:    128      out of   1280      10%
+        Logic Tiles:               43       out of   160       26.875%
     Registers: 
-        Logic Registers:           109      out of   1280      8.51563%
+        Logic Registers:           128      out of   1280      10%
         IO Registers:              0        out of   560       0
     Block RAMs:                    0        out of   16        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
         Input Pins:                10       out of   67        14.9254%
-        Output Pins:               21       out of   67        31.3433%
+        Output Pins:               22       out of   67        32.8358%
         InOut Pins:                0        out of   67        0%
     Global Buffers:                0        out of   8         0%
     PLLs:                          0        out of   0       
@@ -90,6 +90,7 @@ Detailed I/O Info:
     A26         Output     SB_LVCMOS    No       1        Simple Output  VCCINAUX_EN               
     A27         Output     SB_LVCMOS    No       1        Simple Output  VCCIN_VR_PE               
     A33         Output     SB_LVCMOS    No       1        Simple Output  VPP_EN                    
+    A39         Output     SB_LVCMOS    No       0        Simple Output  PWRBTNn                   
     A48         Output     SB_LVCMOS    No       0        Simple Output  VDDQ_EN                   
     B3          Output     SB_LVCMOS    No       3        Simple Output  V5S_ENn                   
     B4          Output     SB_LVCMOS    No       3        Simple Output  DSW_PWROK                 
@@ -106,12 +107,12 @@ Detailed I/O Info:
 Router Summary:
 ---------------
     Status:  Successful
-    Runtime: 4 seconds
+    Runtime: 3 seconds
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     1342 out of  28666      4.6815%
-                          Span 4      186 out of   6944      2.67857%
-                         Span 12       25 out of   1440      1.73611%
-      Vertical Inter-LUT Connect       14 out of   1120      1.25%
+              Local line of tile     1525 out of  28666      5.31989%
+                          Span 4      242 out of   6944      3.48502%
+                         Span 12       41 out of   1440      2.84722%
+      Vertical Inter-LUT Connect       17 out of   1120      1.51786%
 

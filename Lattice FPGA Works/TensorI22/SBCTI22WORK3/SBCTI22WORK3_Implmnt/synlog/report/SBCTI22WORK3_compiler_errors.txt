@@ -1,3 +1,2 @@
-@E: CD184 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":444:11:444:12|target suswarn_n of assignment is not writeable
-@E: Parse errors encountered - exiting
+@E: CD326 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":586:1:586:6|Port rsmrst_n of entity work.pwrbtn_block is unconnected. If a port needs to remain unconnected, use the keyword open.
 

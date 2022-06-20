@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Jun 19 2022 13:10:40
+* File Generated:     Jun 20 2022 14:07:02
 
 * Purpose:            
 
@@ -35,10 +35,10 @@ I2053: Starting placement of the design
 =============================================================
 
 Input Design Statistics
-    Number of LUTs      	:	168
-    Number of DFFs      	:	109
+    Number of LUTs      	:	196
+    Number of DFFs      	:	128
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	98
+    Number of Carrys    	:	113
     Number of RAMs      	:	0
     Number of ROMs      	:	0
     Number of IOs       	:	59
@@ -70,26 +70,26 @@ I2088: Phase 1, elapsed time : 0.0 (sec)
 
 
 Phase 2
-I2088: Phase 2, elapsed time : 0.1 (sec)
+I2088: Phase 2, elapsed time : 0.0 (sec)
 
 Phase 3
 
 Design Statistics after Packing
-    Number of LUTs      	:	175
-    Number of DFFs      	:	109
+    Number of LUTs      	:	203
+    Number of DFFs      	:	128
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	102
+    Number of Carrys    	:	118
 
 Device Utilization Summary after Packing
     Sequential LogicCells
-        LUT and DFF      	:	25
-        LUT, DFF and CARRY	:	84
+        LUT and DFF      	:	29
+        LUT, DFF and CARRY	:	99
     Combinational LogicCells
-        Only LUT         	:	61
-        CARRY Only       	:	13
+        Only LUT         	:	70
+        CARRY Only       	:	14
         LUT with CARRY   	:	5
-    LogicCells                  :	188/1280
-    PLBs                        :	31/160
+    LogicCells                  :	217/1280
+    PLBs                        :	35/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
     PLLs                        :	0/0
@@ -98,19 +98,19 @@ Device Utilization Summary after Packing
 I2088: Phase 3, elapsed time : 0.4 (sec)
 
 Phase 4
-I2088: Phase 4, elapsed time : 0.2 (sec)
+I2088: Phase 4, elapsed time : 0.1 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.6 (sec)
+I2088: Phase 5, elapsed time : 0.4 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 14.6 (sec)
+I2088: Phase 6, elapsed time : 19.0 (sec)
 
 Final Design Statistics
-    Number of LUTs      	:	175
-    Number of DFFs      	:	109
+    Number of LUTs      	:	203
+    Number of DFFs      	:	128
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	102
+    Number of Carrys    	:	118
     Number of RAMs      	:	0
     Number of ROMs      	:	0
     Number of IOs       	:	59
@@ -120,8 +120,8 @@ Final Design Statistics
     Number of PLLs      	:	0
 
 Device Utilization Summary
-    LogicCells                  :	188/1280
-    PLBs                        :	38/160
+    LogicCells                  :	217/1280
+    PLBs                        :	43/160
     BRAMs                       :	0/16
     IOs and GBIOs               :	59/67
     PLLs                        :	0/0
@@ -140,7 +140,7 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 1
-Clock: TOP|FPGA_OSC | Frequency: 87.86 MHz | Target: 97.56 MHz
+Clock: TOP|FPGA_OSC | Frequency: 88.11 MHz | Target: 97.56 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -148,5 +148,5 @@ Clock: TOP|FPGA_OSC | Frequency: 87.86 MHz | Target: 97.56 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 16.4 sec.
+I2076: Placer run-time: 20.2 sec.
 

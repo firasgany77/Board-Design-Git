@@ -38,7 +38,7 @@ BEGIN
 					END IF;
 
 				WHEN delay => 
-					IF (count = to_unsigned(10000, 16)) THEN 
+					IF (count = to_unsigned(100, 16)) THEN -- 100 x 10x10^-6 = 1 ms 
 					                                         
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');

@@ -64,7 +64,8 @@ ARCHITECTURE pch_pwrok_block_arch OF pch_pwrok_block IS
 
 BEGIN
 
-sys_pwrgd <= '1' When (ALL_SYS_PWRGD = '1')
+
+sys_pwrgd <= '1' When (ALL_SYS_PWRGD = '1') 
 ELSE 
 '0'; 
 

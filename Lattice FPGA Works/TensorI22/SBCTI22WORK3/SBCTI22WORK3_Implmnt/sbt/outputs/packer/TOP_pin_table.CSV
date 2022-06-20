@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Jun 19 2022 13:11:24
+* File Generated:     Jun 20 2022 14:07:28
 
 * Purpose:            Detailed IO and package pin info
 
@@ -57,7 +57,7 @@ A35, PIO, V33A_OK, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
 A36, VPP_PUMP, not used, , , , , , UnknownBank
 A37, VPP_DIRECT, not used, , , , , , UnknownBank
 A38, PIO, SLP_S3n, Input, , SB_LVCMOS, No Pull Up, Simple Input, topBank
-A39, PIO, PWRBTNn,  , , SB_LVCMOS, No Pull Up, , topBank
+A39, PIO, PWRBTNn, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
 A40, PIO, SLP_SUSn, Input, , SB_LVCMOS, No Pull Up, Simple Input, topBank
 A41, PIO, SLP_S5n,  , , SB_LVCMOS, No Pull Up, , topBank
 A42, VCCIO_0, not used, , , , , , topBank
