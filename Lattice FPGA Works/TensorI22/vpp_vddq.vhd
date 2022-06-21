@@ -17,7 +17,7 @@ ENTITY vpp_vddq_block IS
 	PORT (
 		slp_s4n : IN STD_LOGIC; -- SLP_S4#
 		vddq_pwrgd : IN STD_LOGIC; -- VDDQ_OK :Open-drain, internal weak pull-up required
-		vpp_pwrgd : IN STD_LOGIC; --  no need for PU, it has one next to U24. 
+		vpp_pwrgd : IN STD_LOGIC; --  Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		vpp_en : OUT STD_LOGIC;
 		vddq_en : OUT STD_LOGIC
