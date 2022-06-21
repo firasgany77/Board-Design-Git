@@ -8,9 +8,13 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 
 @N: CD720 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
 @N:"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:7:38:9|Top entity is set to TOP.
-Options changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vccin_en.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\sys_pwrok.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\all_sys_pwrgd.vhd changed - recompiling
+File C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd changed - recompiling
 VHDL syntax check successful!
-Options changed - recompiling
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":38:7:38:9|Synthesizing work.top.bdf_type.
 @W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":435:8:435:25|Signal vccst_pwrgd_signal is undriven. Either assign the signal a value or remove the signal declaration.
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\sys_pwrok.vhd":5:7:5:21|Synthesizing work.sys_pwrok_block.sys_pwrok_arch.
@@ -47,8 +51,7 @@ Post processing for work.top.bdf_type
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":43:2:43:12|Signal VCCIN_VR_PE is floating; a simulation mismatch is possible.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":44:2:44:3|Trying to extract state machine for register curr_state.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":15:8:15:16|Input V33DSW_OK is unused.
-@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":45:2:45:3|Trying to extract state machine for register curr_state.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":23:2:23:10|Input V33DSW_OK is unused.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":43:2:43:3|Trying to extract state machine for register curr_state.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":40:2:40:3|Trying to extract state machine for register curr_state.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":74:1:74:2|Trying to extract state machine for register curr_state.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\all_sys_pwrgd.vhd":37:4:37:5|Trying to extract state machine for register curr_state.
@@ -85,7 +88,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jun 20 14:06:52 2022
+# Mon Jun 20 14:43:08 2022
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -96,7 +99,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jun 20 14:06:52 2022
+# Mon Jun 20 14:43:08 2022
 
 ###########################################################]
 @END
@@ -106,6 +109,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jun 20 14:06:52 2022
+# Mon Jun 20 14:43:08 2022
 
 ###########################################################]

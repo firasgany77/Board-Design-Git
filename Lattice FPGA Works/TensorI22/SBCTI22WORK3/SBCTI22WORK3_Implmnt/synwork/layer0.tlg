@@ -34,8 +34,7 @@ Post processing for work.top.bdf_type
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":43:2:43:12|Signal VCCIN_VR_PE is floating; a simulation mismatch is possible.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":44:2:44:3|Trying to extract state machine for register curr_state.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\primary_voltages_enabler.vhd":15:8:15:16|Input V33DSW_OK is unused.
-@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":45:2:45:3|Trying to extract state machine for register curr_state.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":23:2:23:10|Input V33DSW_OK is unused.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\dsw_pwrok.vhd":43:2:43:3|Trying to extract state machine for register curr_state.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\rsmrst_pwrgd.vhd":40:2:40:3|Trying to extract state machine for register curr_state.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pch_pwrok.vhd":74:1:74:2|Trying to extract state machine for register curr_state.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\all_sys_pwrgd.vhd":37:4:37:5|Trying to extract state machine for register curr_state.

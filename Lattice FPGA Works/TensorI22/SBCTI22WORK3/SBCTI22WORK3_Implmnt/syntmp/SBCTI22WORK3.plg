@@ -6,6 +6,6 @@
 @P:  TOP|FPGA_OSC - Slack : -1.809
 @P: TOP Part : ice40lp1kqn84
 @P: TOP I/O Register bits : 0
-@P: TOP Register bits (Non I/O) : 128 (10%)
-@P: TOP Total Luts : 196 (15%)
+@P: TOP Register bits (Non I/O) : 147 (11%)
+@P: TOP Total Luts : 221 (17%)
 @P:  CPU Time : 0h:00m:01s

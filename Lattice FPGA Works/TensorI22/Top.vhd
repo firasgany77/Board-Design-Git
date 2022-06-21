@@ -312,7 +312,7 @@ ARCHITECTURE bdf_type OF TOP IS
 
 	COMPONENT dsw_pwrok_block
 		PORT (
-			V33DSW_OK : IN STD_LOGIC;
+			V33A_OK : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			DSW_PWROK : OUT STD_LOGIC
 		);
@@ -447,7 +447,8 @@ ARCHITECTURE bdf_type OF TOP IS
 BEGIN
 
     ------------------------------------------------------------DEBUG-------------------------------------------------------------
-	-- SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
+	--To Measure ALL_SYS_PWRGD_Signal  
+	SUSWARN_N <= ALL_SYS_PWRGD_Signal; 
     --GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 	------------------------------------------------------------------------------------------------------------------------------
 
@@ -474,8 +475,8 @@ BEGIN
 	slp_s4n_signal <= SLP_S4n; 
 
 	---------------------------------------------------------- S3 VR's -------------------------------------------------------------------
-	--V5S_ENn <= NOT(slp_s3n_signal); 
-	--V33S_ENn <= NOT(slp_s3n_signal);
+	V5S_ENn <= NOT(slp_s3n_signal); 
+	V33S_ENn <= NOT(slp_s3n_signal);
     --------------------------------------------------------------------------------------------------------------------------------------
 
 	-- inputs that go to more that one block need to be wired to a signal. 
@@ -518,7 +519,7 @@ BEGIN
 
 	DSW_PWRGD : dsw_pwrok_block
 	PORT MAP(
-		V33DSW_OK => V33DSW_OK, 
+		V33A_OK => V33A_OK, 
 		clk_100Khz => clk_100Khz_signal,
 		DSW_PWROK => DSW_PWROK_signal); 
 

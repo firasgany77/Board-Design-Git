@@ -20,7 +20,7 @@ USE IEEE.numeric_std.ALL;
 
 ENTITY dsw_pwrok_block IS
 	PORT (
-		V33DSW_OK  : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
+		V33A_OK  : IN STD_LOGIC; -- Open-drain, internal weak pull-up required
 		clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10uSec		
 		DSW_PWROK  : OUT STD_LOGIC);
 END dsw_pwrok_block;
@@ -34,11 +34,10 @@ ARCHITECTURE dsw_pwrok_arch OF dsw_pwrok_block IS
 	SIGNAL count                          : unsigned(15 DOWNTO 0) := (OTHERS => '0');
     
 BEGIN
-	--pwrok <= '1' WHEN (V33DSW_OK = '1')
-	--ELSE
-	--'0';
-
     pwrok <= '1'; -- when FPGA boots up, this means V33DSW is on. 
+	pwrok <= '1' WHEN (V33A_OK = '1')
+	ELSE
+	'0';
 
 	PROCESS (clk_100Khz)
 	BEGIN
@@ -55,7 +54,7 @@ BEGIN
 					END IF;
 
 				WHEN delay =>                               --  After the 35 ms delay is finished we go to pwrgd state and otuput: DSW_PWROK <= '1'.
-					IF (count = to_unsigned(3600, 16)) THEN  --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
+					IF (count = to_unsigned(1000, 16)) THEN  --  3500 * 10uSec = 35 mSec.  Was: 1000 * 10uSec = 10 mSec
 					                                        --  TL-PDG: P.434 in Non-Dsx is connected to 3V3A.
 						                                    --  tPCH02 in TL-PDG (p461/507) (V33DSW_OK -> DSW_PWROK), min: 10 ms, max: 2000 ms.
 															-- Threshold is 1.8V. 

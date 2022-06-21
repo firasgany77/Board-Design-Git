@@ -22,18 +22,27 @@ END primary_voltages_enabler;
 
 ARCHITECTURE rsmrst_arch OF primary_voltages_enabler IS
 BEGIN
+-----------------------------------------------------------------------------------------------------------------------------------
+--for DSX Design:
+--V33A_ENn <= '0' WHEN (SLP_SUSn = '1')  
+--ELSE
+--'1';                                      
+                                           
+--for Non-DSx Design:
+V33A_ENn  <= '0'; -- once the V33DSW is ready with FPGA ramp up.      
+-----------------------------------------------------------------------------------------------------------------------------------                                       
+           
+-----------------------------------------------------------------------------------------------------------------------------------
+--for DSX Design:
+--V1P8A_EN <= '1' WHEN (V33A_OK = '1')                                                                           
+--ELSE
+--'0';
 
-V33A_ENn <= '0' WHEN (SLP_SUSn = '1')  
-
-ELSE
-'1';                                      -- FPGA starts working and this value gets assigned when V33DSW_OK = '1';
-                                          -- V33A_EN# = LOW --> 3V3A = High
-
-V1P8A_EN <= '1' WHEN (V33A_OK = '1') -- VCC_PRIM_3.3 ramps before VCC_PRIM_1.8 (p.460)
-                                                          -- tPCH06: V33DSW_OK to V1P8A_EN [min 200 us] - Check if condition holds.
-                                                          -- tPCH11: SLP_SUS# asserting to VccPRIM dropping 5% of nominal value. min: 100 ns p.477, p434.
+--for Non-DSx Design:
+V1P8A_EN <= '1' WHEN (SLP_SUSn = '1') 
 ELSE
 '0';
+-----------------------------------------------------------------------------------------------------------------------------------
 
 VCCINAUX_EN <= '1' WHEN (V1P8A_OK = '1')        -- when VR at regulation, V1P8A_OK is at Hi-Z, and the FPGA's PU asserts the logic '1' 
                                                 -- 1.8 V Primary rail ramp in advance of the VCCIN_AUX. VCCIN_AUX can ramp with V1.8A for fixed 1.8V VCCIN_AUX design.
