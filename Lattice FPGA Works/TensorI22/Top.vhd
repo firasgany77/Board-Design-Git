@@ -292,19 +292,6 @@ END TOP;
 
 ARCHITECTURE bdf_type OF TOP IS
 
-	--COMPONENT powerled_block
-		--GENERIC (
-		--	periodclocks : INTEGER
-		--);
-		--PORT (
-			--clk_100Khz : IN STD_LOGIC;
-			--SLP_S3n : IN STD_LOGIC;
-			--SLP_S4n : IN STD_LOGIC;
-			--mem_alert : IN STD_LOGIC;
-			--pwm_out : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
-
 	COMPONENT vpp_vddq_block
 		PORT (
 			slp_s4n : IN STD_LOGIC;
@@ -323,14 +310,6 @@ ARCHITECTURE bdf_type OF TOP IS
 		);
 	END COMPONENT;
 
-	--COMPONENT hda_strap_block
-		 --PORT (
-			--pch_pwrok : IN STD_LOGIC;
-			--GPIO_PCH : IN STD_LOGIC;
-			--clk_100Khz : IN STD_LOGIC;
-		 	--HDA_SDO_ATP : OUT STD_LOGIC
-		 --);
-	-- END COMPONENT;
 
 	  COMPONENT vccin_en_block
 		  PORT (
@@ -361,19 +340,19 @@ ARCHITECTURE bdf_type OF TOP IS
 			SLP_SUSn : IN STD_LOGIC;
 			clk_100Khz : IN STD_LOGIC;
 			RSMRSTn : OUT STD_LOGIC;
-			rsmrst_pwrgd_out : OUT STD_LOGIC
+			rsmrst_pwrgd : OUT STD_LOGIC
 		);
 	END COMPONENT;
 
-	--COMPONENT pch_pwrok_block
-		--PORT (
-			--slp_s3n : IN STD_LOGIC;
-			--vccin_ready : IN STD_LOGIC;
-			--clk_100Khz : IN STD_LOGIC;
-			--vccst_pwrgd : OUT STD_LOGIC;
-			--pch_pwrok : OUT STD_LOGIC
-		--);
-	--END COMPONENT;
+	COMPONENT pch_pwrok_block
+		PORT (
+			slp_s3n : IN STD_LOGIC;
+			vccin_ready : IN STD_LOGIC;
+			clk_100Khz : IN STD_LOGIC;
+			vccst_pwrgd : OUT STD_LOGIC;
+			pch_pwrok : OUT STD_LOGIC
+		);
+	END COMPONENT;
 
 
 	COMPONENT primary_voltages_enabler
@@ -389,10 +368,23 @@ ARCHITECTURE bdf_type OF TOP IS
 	    V1P8A_EN : OUT STD_LOGIC
 			);
     END COMPONENT;
+
+
+	--COMPONENT all_sys_pwrgd_block   
+    --Port(
+    --clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+    --V5S_OK :  IN STD_LOGIC;
+    --V33S_OK : IN STD_LOGIC; 
+    --VDDQ_OK : IN STD_LOGIC; 
+    --VCCST_CPU_OK: IN STD_LOGIC;
+    --RSMRST_PWRGD: IN STD_LOGIC;
+    --ALL_SYS_PWRGD : OUT STD_LOGIC
+        --);
+    --END COMPONENT;
     
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
-	SIGNAL VCCST_EN_signal : STD_LOGIC;
+	SIGNAL slp_s4n_signal : STD_LOGIC;
 	SIGNAL GPIO_FPGA_SoC_4_NOT_signal : STD_LOGIC;
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
@@ -407,54 +399,24 @@ ARCHITECTURE bdf_type OF TOP IS
 BEGIN
 
 	PCH_PWROK <= pch_pwrok_signal;
-	SYS_PWROK <= pch_pwrok_signal; -- SYS_PWROK may be tied to PCH_PWROK if the platform does not need the use of SYS_PWROK.
+	SYS_PWROK <= pch_pwrok_signal; 
 	DSW_PWROK <= DSW_PWROK_signal;
 	--SUSWARN_N <= clk_100Khz_signal; 
 	VCCST_PWRGD <= vccst_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
 
-	-- S0 VR's: When slp_s3n_signal = '1', V5S and V33S rails are ON.
 	V5S_ENn <= NOT(slp_s3n_signal); 
 	V33S_ENn <= NOT(slp_s3n_signal);
 
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
-																			
-    -- RSMRSTn AND VCCST_CPU_OK AND SLP_S3# < vccin_en < vccin_ready < vccin_ok < delayed_vccin_ok < vccst_pwrgd 
-    -- RSMRSTn AND SLP_S4# < VCCST_EN < VCCST_CPU_OK
-
-	VCCST_EN_signal <= RSMRSTn_signal AND SLP_S4n; 
-	VCCST_EN <= VCCST_EN_signal; 
-
-	--> VCCST: Sustain Voltage for Processor Standby Modes. 
-	--> VCCST_EN = '1' -> +VCCST_CPU is generated from +VCC1P05_OUT_FET. +VCCST_CPU is delivered to SoC. 
-
-	--> WHEN (V33A_OK = '1') AND (V5A_OK = '1')  AND (SLP_SUSn = '1')  AND (V1P8A_OK = '1') ->  100 ms delay -> RSMRSTn = '1' -> VCCST_EN -> VCCST_CPU = 1.05V -> VCCST_CPU_OK -> '1
-	--> (rsmrst_pwrgd = '1') AND (slp_s3n = '1') AND (v5s_pwrgd = '1') AND (v33s_pwrgd = '1') AND (DSW_PWROK = '1') --> (vccin_en = '1') 
-	--> (vccin_ready) AND (slp_s3n = '1') -> VCCST_PWRGD = '1' 
-    --> rsmrst_pwrgd <= '1' WHEN (V33A_OK = '1') AND (V5A_OK = '1') AND (SLP_SUSn = '1') AND (V1P8A_OK = '1') [100 msec after all primary rails are ready]
-	
-	slp_susn_signal <= SLP_SUSn; -- We drive whats on RIGHT to whats on left LEFT.
-
-	GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
-
- 
-	--VCCIN_VR_PE <= '1'; 
-	--VCCIN_EN <= '0';
-       --VCCINAUX_VR_PE <= '1';
-
-	--POWERLED : powerled_block 
-	--GENERIC MAP(
-		--periodclocks => 100)
-	--PORT MAP(
-		--clk_100Khz => clk_100Khz_signal,
-		--SLP_S3n => slp_s3n_signal,
-		--SLP_S4n => VCCST_EN_signal,
-		--mem_alert => GPIO_FPGA_SoC_4_NOT_signal,
-		--pwm_out => PWRBTN_LED);
+	slp_s4n_signal <= RSMRSTn_signal AND SLP_S4n; 
+	VCCST_EN <= slp_s3n_signal; 
+	slp_susn_signal <= SLP_SUSn; 
+	--GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
 	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
-		  slp_s4n => VCCST_EN_signal,
+		  slp_s4n => slp_s4n_signal,
 		  vddq_pwrgd => VDDQ_OK,
 		  vpp_pwrgd => VPP_OK,
 		  clk_100Khz => clk_100Khz_signal,
@@ -480,12 +442,6 @@ BEGIN
 		CLK_25mhz => FPGA_OSC, -- CLK_25Mhz which we want to divide in onrder to get the 100Khz
 		clk_100Khz => clk_100Khz_signal);
 
-	--HDA_STRAP : hda_strap_block
-	--PORT MAP(
-		--pch_pwrok => vccst_pwrgd_signal,
-		--GPIO_PCH => GPIO_FPGA_SoC_1,
-		--clk_100Khz => clk_100Khz_signal,
-		--HDA_SDO_ATP => HDA_SDO_ATP);
 
 	  VCCIN_PWRGD: vccin_en_block
 	  PORT MAP(
@@ -496,7 +452,7 @@ BEGIN
 		  DSW_PWROK => DSW_PWROK_signal,
 		  VCCST_CPU_OK => VCCST_CPU_OK, 
 		  clk_100Khz => clk_100Khz_signal,
- vccin_en => VCCIN_EN);
+      vccin_en => VCCIN_EN);
 
 
 	DSW_PWRGD : dsw_pwrok_block
@@ -513,14 +469,25 @@ BEGIN
 		  SLP_SUSn => slp_susn_signal, 
 		  clk_100Khz => clk_100Khz_signal,
 		  RSMRSTn => RSMRSTn_signal,
-		  rsmrst_pwrgd_out => rsmrst_pwrgd_signal);
+		  rsmrst_pwrgd => rsmrst_pwrgd_signal);
 
-	--PCH_PWRGD: pch_pwrok_block
-	--PORT MAP(
-		  --slp_s3n => slp_s3n_signal,
-		 -- vccin_ready => VR_READY_VCCIN,
-		 -- clk_100Khz => clk_100Khz_signal,
-		 -- vccst_pwrgd => vccst_pwrgd_signal,
-		 -- pch_pwrok => pch_pwrok_signal);
+	PCH_PWRGD: pch_pwrok_block
+	PORT MAP(
+		  slp_s3n => slp_s3n_signal,
+		  vccin_ready => VR_READY_VCCIN,
+		  clk_100Khz => clk_100Khz_signal,
+		  vccst_pwrgd => vccst_pwrgd_signal,
+		  pch_pwrok => pch_pwrok_signal);
+
+
+	--ALL_SYS_PWRGD : all_sys_pwrgd_block 
+    --Port MAP(
+    --clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
+    --V5S_OK => V5S_OK,
+    --V33S_OK => V33S_OK,
+    --VDDQ_OK => VDDQ_OK, 
+    --VCCST_CPU_OK => VCCST_CPU_OK, 
+    --RSMRST_PWRGD => rsmrst_pwrgd_signal, 
+    --ALL_SYS_PWRGD => ALL_SYS_PWRGD_Signal);
 
 END bdf_type;
