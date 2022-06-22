@@ -1,2 +1,21 @@
 *.pdf
-* log
+*.log
+*.xdm
+*.areasrr
+*.txt
+*.edf
+*.sap
+*.scf
+*.srd
+*.srm
+*.srr
+*.srs
+*.rpt
+*.tag
+*.oa
+*.hex
+*.nvcm
+*.CSV
+*.route
+*.result
+*.xml
