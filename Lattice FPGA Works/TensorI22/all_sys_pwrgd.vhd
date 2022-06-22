@@ -6,11 +6,9 @@ USE IEEE.numeric_std.ALL;
 ENTITY all_sys_pwrgd_block IS  
 Port(
     clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
-    DSW_PWROK :  IN STD_LOGIC;
+    V5S_OK :  IN STD_LOGIC;
+    V33S_OK : IN STD_LOGIC; 
     VDDQ_OK : IN STD_LOGIC; 
-    VPP_OK : IN STD_LOGIC; 
-    SLP_SUSn : IN STD_LOGIC; 
-    SLP_S3n : IN STD_LOGIC;
     VCCST_CPU_OK: IN STD_LOGIC;
     RSMRST_PWRGD: IN STD_LOGIC;
     ALL_SYS_PWRGD : OUT STD_LOGIC
@@ -27,8 +25,7 @@ ARCHITECTURE sys_pwrgd_arch OF all_sys_pwrgd_block IS
 
 BEGIN
 
--- PDG: Page 436/507
-sys_pwrgd <= '1' When (DSW_PWROK = '1') AND (VDDQ_OK = '1') AND (VPP_OK = '1') AND (SLP_SUSn = '1') AND (SLP_S3n = '1') AND (VCCST_CPU_OK ='1') AND (RSMRST_PWRGD ='1')
+sys_pwrgd <= '1' When (VDDQ_OK = '1') AND (V5S_OK = '1') AND (V33S_OK = '1') AND (VCCST_CPU_OK ='1') AND (RSMRST_PWRGD ='1')
 ELSE 
 '0'; 
 

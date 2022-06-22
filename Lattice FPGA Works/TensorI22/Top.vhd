@@ -149,7 +149,7 @@ ENTITY TOP IS
 		VPP_EN : OUT STD_LOGIC;  -- OK
 		SOC_SPKR : IN STD_LOGIC; -- OK(NEW)
 		SUSACK_N : IN STD_LOGIC; -- OK(NEW) -- TensorI20: removed due to 2.8V requirement -- used for DSx
-		SUSWARN_N: IN STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
+		SUSWARN_N: OUT STD_LOGIC; -- OK(New) -- TensorI20: removed due to 2.8V requirement -- used for DSx
 		SLP_S0n : IN STD_LOGIC;  -- OK(NEW)
 
 		                         -- S0 Sleep Control. When PCH is idle and processor is in C10 state, this
@@ -311,18 +311,18 @@ ARCHITECTURE bdf_type OF TOP IS
 	END COMPONENT;
 
 
-	  COMPONENT vccin_en_block
-		  PORT (
-		    v5s_pwrgd : IN STD_LOGIC;
-			v33s_pwrgd : IN STD_LOGIC;
-            slp_s3n : IN STD_LOGIC;
-			rsmrst_pwrgd : IN STD_LOGIC;
-			DSW_PWROK: IN STD_LOGIC;
-			VCCST_CPU_OK: IN STD_LOGIC; 
-			clk_100Khz : IN STD_LOGIC;
-			vccin_en : OUT STD_LOGIC
-		);
-	END COMPONENT;
+	  --COMPONENT vccin_en_block
+		  --PORT (
+		    --v5s_pwrgd : IN STD_LOGIC;
+			--v33s_pwrgd : IN STD_LOGIC;
+            --slp_s3n : IN STD_LOGIC;
+			--rsmrst_pwrgd : IN STD_LOGIC;
+			--DSW_PWROK: IN STD_LOGIC;
+			--VCCST_CPU_OK: IN STD_LOGIC; 
+			--clk_100Khz : IN STD_LOGIC;
+			--vccin_en : OUT STD_LOGIC
+		--);
+	--END COMPONENT;
 
 	COMPONENT dsw_pwrok_block
 		PORT (
@@ -345,12 +345,10 @@ ARCHITECTURE bdf_type OF TOP IS
 	END COMPONENT;
 
 	COMPONENT pch_pwrok_block
-		PORT (
-			slp_s3n : IN STD_LOGIC;
-			vccin_ready : IN STD_LOGIC;
-			clk_100Khz : IN STD_LOGIC;
-			vccst_pwrgd : OUT STD_LOGIC;
-			pch_pwrok : OUT STD_LOGIC
+	PORT (
+		clk_100Khz : IN STD_LOGIC;
+		all_sys_pwrgd : IN STD_LOGIC;
+		pch_pwrok : OUT STD_LOGIC
 		);
 	END COMPONENT;
 
@@ -370,29 +368,29 @@ ARCHITECTURE bdf_type OF TOP IS
     END COMPONENT;
 
 
-	--COMPONENT all_sys_pwrgd_block   
-    --Port(
-    --clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
-    --V5S_OK :  IN STD_LOGIC;
-    --V33S_OK : IN STD_LOGIC; 
-    --VDDQ_OK : IN STD_LOGIC; 
-    --VCCST_CPU_OK: IN STD_LOGIC;
-    --RSMRST_PWRGD: IN STD_LOGIC;
-    --ALL_SYS_PWRGD : OUT STD_LOGIC
-        --);
-    --END COMPONENT;
+	COMPONENT all_sys_pwrgd_block   
+    Port(
+    clk_100Khz : IN STD_LOGIC; -- 100KHz clock, T = 10 us = 10,000 ns	
+    V5S_OK :  IN STD_LOGIC;
+    V33S_OK : IN STD_LOGIC; 
+    VDDQ_OK : IN STD_LOGIC; 
+    VCCST_CPU_OK: IN STD_LOGIC;
+    RSMRST_PWRGD: IN STD_LOGIC;
+    ALL_SYS_PWRGD : OUT STD_LOGIC
+        );
+    END COMPONENT;
     
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
 	SIGNAL slp_s4n_signal : STD_LOGIC;
-	SIGNAL GPIO_FPGA_SoC_4_NOT_signal : STD_LOGIC;
+	SIGNAL slp_susn_signal : STD_LOGIC;
 	SIGNAL RSMRSTn_signal : STD_LOGIC;
 	SIGNAL vccst_pwrgd_signal : STD_LOGIC;
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
-	SIGNAL slp_susn_signal : STD_LOGIC;
 	SIGNAL delayed_vddq_ok_signal: STD_LOGIC;
+	SIGNAL all_sys_pwrgd_signal: STD_LOGIC; 
 
     
 
@@ -401,8 +399,9 @@ BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; 
 	DSW_PWROK <= DSW_PWROK_signal;
-	--SUSWARN_N <= clk_100Khz_signal; 
-	VCCST_PWRGD <= vccst_pwrgd_signal;
+	SUSWARN_N <= all_sys_pwrgd_signal;  --DEBUG
+	VCCST_PWRGD <= all_sys_pwrgd_signal;
+	VCCIN_EN <= all_sys_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
 
 	V5S_ENn <= NOT(slp_s3n_signal); 
@@ -412,7 +411,6 @@ BEGIN
 	slp_s4n_signal <= RSMRSTn_signal AND SLP_S4n; 
 	VCCST_EN <= slp_s3n_signal; 
 	slp_susn_signal <= SLP_SUSn; 
-	--GPIO_FPGA_SoC_4_NOT_signal <= NOT(GPIO_FPGA_SoC_4);
 
 	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
@@ -443,16 +441,16 @@ BEGIN
 		clk_100Khz => clk_100Khz_signal);
 
 
-	  VCCIN_PWRGD: vccin_en_block
-	  PORT MAP(
-		  v5s_pwrgd => V5S_OK,
-		  v33s_pwrgd => V33S_OK,
-		  slp_s3n => slp_s3n_signal,
-		  rsmrst_pwrgd => rsmrst_pwrgd_signal,
-		  DSW_PWROK => DSW_PWROK_signal,
-		  VCCST_CPU_OK => VCCST_CPU_OK, 
-		  clk_100Khz => clk_100Khz_signal,
-      vccin_en => VCCIN_EN);
+	  --VCCIN_PWRGD: vccin_en_block
+	  --PORT MAP(
+		 -- v5s_pwrgd => V5S_OK,
+		  --v33s_pwrgd => V33S_OK,
+		 -- slp_s3n => slp_s3n_signal,
+		  --rsmrst_pwrgd => rsmrst_pwrgd_signal,
+		  --DSW_PWROK => DSW_PWROK_signal,
+		 -- VCCST_CPU_OK => VCCST_CPU_OK, 
+		 -- clk_100Khz => clk_100Khz_signal,
+         -- vccin_en => VCCIN_EN);
 
 
 	DSW_PWRGD : dsw_pwrok_block
@@ -471,23 +469,24 @@ BEGIN
 		  RSMRSTn => RSMRSTn_signal,
 		  rsmrst_pwrgd => rsmrst_pwrgd_signal);
 
-	PCH_PWRGD: pch_pwrok_block
-	PORT MAP(
-		  slp_s3n => slp_s3n_signal,
-		  vccin_ready => VR_READY_VCCIN,
-		  clk_100Khz => clk_100Khz_signal,
-		  vccst_pwrgd => vccst_pwrgd_signal,
-		  pch_pwrok => pch_pwrok_signal);
+		  PCH_PWRGD: pch_pwrok_block
+		  PORT MAP (
+			clk_100Khz => clk_100Khz_signal,
+			all_sys_pwrgd => all_sys_pwrgd_signal,
+			pch_pwrok => pch_pwrok_signal);
 
 
-	--ALL_SYS_PWRGD : all_sys_pwrgd_block 
-    --Port MAP(
-    --clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
-    --V5S_OK => V5S_OK,
-    --V33S_OK => V33S_OK,
-    --VDDQ_OK => VDDQ_OK, 
-    --VCCST_CPU_OK => VCCST_CPU_OK, 
-    --RSMRST_PWRGD => rsmrst_pwrgd_signal, 
-    --ALL_SYS_PWRGD => ALL_SYS_PWRGD_Signal);
+	ALL_SYS_POWERGOOD : all_sys_pwrgd_block 
+    Port MAP (
+    clk_100Khz => clk_100Khz_signal, -- 100KHz clock, T = 10 us = 10,000 ns	
+    V5S_OK => V5S_OK,
+    V33S_OK => V33S_OK,
+    VDDQ_OK => VDDQ_OK, 
+    VCCST_CPU_OK => VCCST_CPU_OK, 
+    RSMRST_PWRGD => rsmrst_pwrgd_signal, 
+    ALL_SYS_PWRGD => all_sys_pwrgd_signal);
+
+
+	
 
 END bdf_type;
