@@ -7,6 +7,9 @@ USE IEEE.numeric_std.ALL;
 -- This signal must be asserted for at least 10 ms after the Primary power wells are valid.
 -- When de-asserted, this signal is an indication that the power wells are stable.
 
+-- tPCH03A: VccPrimary stable (@95% of full value) to RSMRST# high Applies to Systems that do not implement G3 Flash sharing.
+-- min 10 ms, max: 2000 ms
+
 ENTITY rsmrst_pwrgd_block IS
 	PORT (
 		V33A_OK : IN STD_LOGIC;  -- Open-drain, internal weak pull-up required
@@ -48,7 +51,7 @@ BEGIN
 					END IF;
 
 				WHEN delay => 
-					IF (count = to_unsigned(1500, 16)) THEN -- 1500 * 10 * 10^-6 = 15 mSec 
+					IF (count = to_unsigned(5000, 16)) THEN -- 5000 * 10 * 10^-6 = 50 mSec 
 					                                         
 						curr_state <= pwrgd;
 						count <= (OTHERS => '0');
