@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=SBCTI22WORK3
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../vpp_vddq.vhd=work,../rsmrst_pwrgd.vhd=work,../pch_pwrok.vhd=work,../dsw_pwrok.vhd=work,../counter.vhd=work,../Top.vhd=work,../primary_voltages_enabler.vhd=work,../vccin_en.vhd=work,../sys_pwrok.vhd=work,../all_sys_pwrgd.vhd=work
+ProjectVFiles=
 ProjectCFiles=
 CurImplementation=SBCTI22WORK3_Implmnt
 Implementations=SBCTI22WORK3_Implmnt
