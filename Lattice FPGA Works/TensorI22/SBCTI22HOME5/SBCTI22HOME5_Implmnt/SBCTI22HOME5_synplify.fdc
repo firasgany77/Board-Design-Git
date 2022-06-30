@@ -1,5 +1,0 @@
-
-#1001 : define_clock -name TOP|FPGA_OSC FPGA_OSC -period 20.540 -clockgroup Autoconstr_clkgroup_0 -rise 0.000 -fall 10.270 -route 0.000
-# line 3 in c:/users/firas/dropbox/board-design/board-design-git/lattice fpga works/tensori22/sbcti22work3/sbcti22work3_implmnt/autoconstraint_top.sdc
-
-define_clock -name {TOP|FPGA_OSC} [get_ports {FPGA_OSC}] -period {20.540} -clockgroup {Autoconstr_clkgroup_0} -rise {0.000} -fall {10.270} -route {0.000}

@@ -1,3 +1,0 @@
-
-: 0 work.pwrbtn_block "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\pwrbtn.vhd" 9 7 
-: 0 work.TOP "C:\Users\firas\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd" 6 7 work.pch_pwrok_block work.rsmrst_pwrgd_block work.dsw_pwrok_block work.vccinaux_vccin_en_block work.hda_strap_block work.counter work.vpp_vddq_block work.powerled_block 

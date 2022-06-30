@@ -1,1 +1,0 @@
-@W: MT529 :"c:\users\firas.abdelghani\dropbox\board-design\board-design-git\lattice fpga works\tensori22\counter.vhd":47:3:47:4|Found inferred clock TOP|FPGA_OSC which controls 33 sequential elements including COUNTER.counter[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

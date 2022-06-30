@@ -1,3 +1,0 @@
-@E: CD178 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":255:18:255:29|Can't find formal vccst_cpu_ok
-@E: Parse errors encountered - exiting
-
