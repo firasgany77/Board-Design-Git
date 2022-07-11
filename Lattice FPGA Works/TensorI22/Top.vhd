@@ -165,8 +165,11 @@ BEGIN
 	VCCIN_EN <= all_sys_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
 
-	V5S_ENn <= NOT(slp_s3n_signal); 
-	V33S_ENn <= NOT(slp_s3n_signal);
+	--V5S_ENn <= NOT(slp_s3n_signal); 
+	--V33S_ENn <= NOT(slp_s3n_signal);
+
+	V5S_ENn <= '0';
+	V33S_ENn <= '0';
 
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
 	slp_s4n_signal <= RSMRSTn_signal AND SLP_S4n; 

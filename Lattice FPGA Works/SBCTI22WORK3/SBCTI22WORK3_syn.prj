@@ -8,6 +8,15 @@
 
 
 
+add_file -vhdl -lib work "../TensorI22/all_sys_pwrgd.vhd" 
+add_file -vhdl -lib work "../TensorI22/counter.vhd" 
+add_file -vhdl -lib work "../TensorI22/dsw_pwrok.vhd" 
+add_file -vhdl -lib work "../TensorI22/pch_pwrok.vhd" 
+add_file -vhdl -lib work "../TensorI22/primary_voltages_enabler.vhd" 
+add_file -vhdl -lib work "../TensorI22/rsmrst_pwrgd.vhd" 
+add_file -vhdl -lib work "../TensorI22/sys_pwrok.vhd" 
+add_file -vhdl -lib work "../TensorI22/Top.vhd" 
+add_file -vhdl -lib work "../TensorI22/vpp_vddq.vhd" 
 #implementation: "SBCTI22WORK3_Implmnt"
 impl -add SBCTI22WORK3_Implmnt -type fpga
 

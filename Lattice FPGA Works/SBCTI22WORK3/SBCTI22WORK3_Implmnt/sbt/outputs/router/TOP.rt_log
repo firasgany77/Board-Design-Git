@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:45:10
 
-* File Generated:     Jun 20 2022 14:43:41
+* File Generated:     Jun 30 2022 17:36:04
 
 * Purpose:            Router runtime info
 
@@ -14,14 +14,14 @@
 
 * ******************************************************************************
 
-Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc --outdir C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\router --sdf_file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf --pin_permutation 
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\netlist\oadb-TOP C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\packer\TOP_pk.sdc --outdir C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\SBCTI22WORK3\SBCTI22WORK3_Implmnt\sbt\outputs\router --sdf_file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/SBCTI22WORK3/SBCTI22WORK3_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf --pin_permutation 
 I1203: Reading Design TOP
 I1202: Reading Architecture of device iCE40LP1K
 I1209: Started routing
-I1223: Total Nets : 368 
-I1212: Iteration  1 :   117 unrouted : 0 seconds
-I1212: Iteration  2 :    50 unrouted : 1 seconds
-I1212: Iteration  3 :     9 unrouted : 0 seconds
+I1223: Total Nets : 288 
+I1212: Iteration  1 :    94 unrouted : 1 seconds
+I1212: Iteration  2 :    28 unrouted : 0 seconds
+I1212: Iteration  3 :    11 unrouted : 0 seconds
 I1212: Iteration  4 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
