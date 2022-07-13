@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Jun 15 2022 18:54:53
+# File Generated:     Jul 11 2022 11:23:46
 
 # Family & Device:    iCE40LP1K
 
@@ -71,5 +71,5 @@ set_io VCCST_OVERRIDE_3V3 B10
 set_io VDDQ_EN A48
 set_io V1P8A_EN A1
 set_io V33A_ENn A5
-set_io VR_READY_VCCINAUX B21 -pullup yes
+set_io VR_READY_VCCINAUX B21 -pullup no
 

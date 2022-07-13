@@ -1,39 +1,51 @@
-ble_pack SLP_S3n_RNINQRN_0_LC_1_12_5 { SLP_S3n_RNINQRN_0 }
-clb_pack LT_1_12 { SLP_S3n_RNINQRN_0_LC_1_12_5 }
-set_location LT_1_12 1 12
-ble_pack SLP_S3n_RNINQRN_LC_2_12_6 { SLP_S3n_RNINQRN }
-clb_pack LT_2_12 { SLP_S3n_RNINQRN_LC_2_12_6 }
-set_location LT_2_12 2 12
-ble_pack VPP_VDDQ.un1_vddq_en_LC_2_14_6 { VPP_VDDQ.un1_vddq_en }
-clb_pack LT_2_14 { VPP_VDDQ.un1_vddq_en_LC_2_14_6 }
-set_location LT_2_14 2 14
-ble_pack CONSTANT_ONE_LUT4_LC_5_14_0 { CONSTANT_ONE_LUT4 }
-clb_pack LT_5_14 { CONSTANT_ONE_LUT4_LC_5_14_0 }
-set_location LT_5_14 5 14
-ble_pack VPP_VDDQ.curr_state_1_LC_6_11_2 { VPP_VDDQ.curr_state_RNO[1], VPP_VDDQ.curr_state[1] }
-ble_pack RSMRST_PWRGD.RSMRSTn_LC_6_11_3 { RSMRST_PWRGD.RSMRSTn_RNO, RSMRST_PWRGD.RSMRSTn }
-ble_pack VPP_VDDQ.curr_state_0_LC_6_11_6 { VPP_VDDQ.curr_state_RNO[0], VPP_VDDQ.curr_state[0] }
-clb_pack LT_6_11 { VPP_VDDQ.curr_state_1_LC_6_11_2, RSMRST_PWRGD.RSMRSTn_LC_6_11_3, VPP_VDDQ.curr_state_0_LC_6_11_6 }
+ble_pack VPP_VDDQ.un1_vddq_en_LC_1_14_5 { VPP_VDDQ.un1_vddq_en }
+clb_pack LT_1_14 { VPP_VDDQ.un1_vddq_en_LC_1_14_5 }
+set_location LT_1_14 1 14
+ble_pack RSMRST_PWRGD.un6_rsmrst_pwrok_LC_5_10_0 { RSMRST_PWRGD.un6_rsmrst_pwrok }
+clb_pack LT_5_10 { RSMRST_PWRGD.un6_rsmrst_pwrok_LC_5_10_0 }
+set_location LT_5_10 5 10
+ble_pack VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_12_0 { VPP_VDDQ.delayed_vddq_pwrgd_RNO_1 }
+ble_pack VPP_VDDQ.curr_state_RNID2IU_0_LC_5_12_2 { VPP_VDDQ.curr_state_RNID2IU[0] }
+ble_pack VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_12_3 { VPP_VDDQ.delayed_vddq_pwrgd_RNO_0 }
+ble_pack VPP_VDDQ.delayed_vddq_pwrgd_LC_5_12_4 { VPP_VDDQ.delayed_vddq_pwrgd_RNO, VPP_VDDQ.delayed_vddq_pwrgd }
+ble_pack SLP_S3n_RNINQRN_LC_5_12_7 { SLP_S3n_RNINQRN }
+clb_pack LT_5_12 { VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_5_12_0, VPP_VDDQ.curr_state_RNID2IU_0_LC_5_12_2, VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_5_12_3, VPP_VDDQ.delayed_vddq_pwrgd_LC_5_12_4, SLP_S3n_RNINQRN_LC_5_12_7 }
+set_location LT_5_12 5 12
+ble_pack VPP_VDDQ.curr_state_0_LC_5_13_7 { VPP_VDDQ.curr_state_RNO[0], VPP_VDDQ.curr_state[0] }
+clb_pack LT_5_13 { VPP_VDDQ.curr_state_0_LC_5_13_7 }
+set_location LT_5_13 5 13
+ble_pack PCH_PWRGD.curr_state_1_LC_6_10_4 { PCH_PWRGD.curr_state_7_1_0_.m6, PCH_PWRGD.curr_state[1] }
+clb_pack LT_6_10 { PCH_PWRGD.curr_state_1_LC_6_10_4 }
+set_location LT_6_10 6 10
+ble_pack VR_READY_VCCIN_RNI1AP41_LC_6_11_0 { VR_READY_VCCIN_RNI1AP41 }
+ble_pack ALL_SYS_PWRGD.count_RNIT0U61_4_LC_6_11_2 { ALL_SYS_PWRGD.count_RNIT0U61[4] }
+ble_pack ALL_SYS_PWRGD.count_RNI027U_11_LC_6_11_3 { ALL_SYS_PWRGD.count_RNI027U[11] }
+ble_pack ALL_SYS_PWRGD.count_RNIV07U_10_LC_6_11_4 { ALL_SYS_PWRGD.count_RNIV07U[10] }
+ble_pack ALL_SYS_PWRGD.count_RNIR6KI3_10_LC_6_11_5 { ALL_SYS_PWRGD.count_RNIR6KI3[10] }
+ble_pack PCH_PWRGD.un2_sys_pwrok_LC_6_11_6 { PCH_PWRGD.un2_sys_pwrok }
+ble_pack PCH_PWRGD.curr_state_RNIHKNI1_0_LC_6_11_7 { PCH_PWRGD.curr_state_RNIHKNI1[0] }
+clb_pack LT_6_11 { VR_READY_VCCIN_RNI1AP41_LC_6_11_0, ALL_SYS_PWRGD.count_RNIT0U61_4_LC_6_11_2, ALL_SYS_PWRGD.count_RNI027U_11_LC_6_11_3, ALL_SYS_PWRGD.count_RNIV07U_10_LC_6_11_4, ALL_SYS_PWRGD.count_RNIR6KI3_10_LC_6_11_5, PCH_PWRGD.un2_sys_pwrok_LC_6_11_6, PCH_PWRGD.curr_state_RNIHKNI1_0_LC_6_11_7 }
 set_location LT_6_11 6 11
-ble_pack RSMRST_PWRGD.un6_rsmrst_pwrok_LC_6_12_2 { RSMRST_PWRGD.un6_rsmrst_pwrok }
-ble_pack VPP_VDDQ.un1_vddq_pwrgd_LC_6_12_4 { VPP_VDDQ.un1_vddq_pwrgd }
-ble_pack VPP_VDDQ.curr_state_RNICR092_0_LC_6_12_5 { VPP_VDDQ.curr_state_RNICR092[0] }
-ble_pack VPP_VDDQ.un1_curr_state13_1_LC_6_12_6 { VPP_VDDQ.un1_curr_state13_1 }
-ble_pack VPP_VDDQ.curr_state_RNIDNTT1_0_LC_6_12_7 { VPP_VDDQ.curr_state_RNIDNTT1[0] }
-clb_pack LT_6_12 { RSMRST_PWRGD.un6_rsmrst_pwrok_LC_6_12_2, VPP_VDDQ.un1_vddq_pwrgd_LC_6_12_4, VPP_VDDQ.curr_state_RNICR092_0_LC_6_12_5, VPP_VDDQ.un1_curr_state13_1_LC_6_12_6, VPP_VDDQ.curr_state_RNIDNTT1_0_LC_6_12_7 }
+ble_pack ALL_SYS_PWRGD.count_esr_RNIV28F_15_LC_6_12_3 { ALL_SYS_PWRGD.count_esr_RNIV28F[15] }
+ble_pack VPP_VDDQ.un1_vddq_pwrgd_LC_6_12_5 { VPP_VDDQ.un1_vddq_pwrgd }
+ble_pack VPP_VDDQ.curr_state_RNICR092_0_LC_6_12_6 { VPP_VDDQ.curr_state_RNICR092[0] }
+ble_pack VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_6_12_7 { VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ }
+clb_pack LT_6_12 { ALL_SYS_PWRGD.count_esr_RNIV28F_15_LC_6_12_3, VPP_VDDQ.un1_vddq_pwrgd_LC_6_12_5, VPP_VDDQ.curr_state_RNICR092_0_LC_6_12_6, VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_6_12_7 }
 set_location LT_6_12 6 12
-ble_pack VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_6_13_5 { VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ }
-clb_pack LT_6_13 { VPP_VDDQ.delayed_vddq_pwrgd_RNIJKKQ_LC_6_13_5 }
+ble_pack VPP_VDDQ.curr_state_1_LC_6_13_6 { VPP_VDDQ.curr_state_RNO[1], VPP_VDDQ.curr_state[1] }
+ble_pack RSMRST_PWRGD.RSMRSTn_LC_6_13_7 { RSMRST_PWRGD.RSMRSTn_RNO, RSMRST_PWRGD.RSMRSTn }
+clb_pack LT_6_13 { VPP_VDDQ.curr_state_1_LC_6_13_6, RSMRST_PWRGD.RSMRSTn_LC_6_13_7 }
 set_location LT_6_13 6 13
-ble_pack VPP_VDDQ.count_RNIVJP51_3_LC_6_14_1 { VPP_VDDQ.count_RNIVJP51[3] }
-clb_pack LT_6_14 { VPP_VDDQ.count_RNIVJP51_3_LC_6_14_1 }
+ble_pack VPP_VDDQ.un1_curr_state13_1_LC_6_14_6 { VPP_VDDQ.un1_curr_state13_1 }
+ble_pack VPP_VDDQ.curr_state_RNIDNTT1_0_LC_6_14_7 { VPP_VDDQ.curr_state_RNIDNTT1[0] }
+clb_pack LT_6_14 { VPP_VDDQ.un1_curr_state13_1_LC_6_14_6, VPP_VDDQ.curr_state_RNIDNTT1_0_LC_6_14_7 }
 set_location LT_6_14 6 14
-ble_pack ALL_SYS_PWRGD.count_RNIR6KI3_10_LC_7_10_0 { ALL_SYS_PWRGD.count_RNIR6KI3[10] }
-ble_pack ALL_SYS_PWRGD.count_esr_RNIV28F_15_LC_7_10_3 { ALL_SYS_PWRGD.count_esr_RNIV28F[15] }
-ble_pack ALL_SYS_PWRGD.count_RNI027U_11_LC_7_10_5 { ALL_SYS_PWRGD.count_RNI027U[11] }
-ble_pack ALL_SYS_PWRGD.count_RNIT0U61_4_LC_7_10_6 { ALL_SYS_PWRGD.count_RNIT0U61[4] }
-ble_pack ALL_SYS_PWRGD.count_RNIV07U_10_LC_7_10_7 { ALL_SYS_PWRGD.count_RNIV07U[10] }
-clb_pack LT_7_10 { ALL_SYS_PWRGD.count_RNIR6KI3_10_LC_7_10_0, ALL_SYS_PWRGD.count_esr_RNIV28F_15_LC_7_10_3, ALL_SYS_PWRGD.count_RNI027U_11_LC_7_10_5, ALL_SYS_PWRGD.count_RNIT0U61_4_LC_7_10_6, ALL_SYS_PWRGD.count_RNIV07U_10_LC_7_10_7 }
+ble_pack ALL_SYS_PWRGD.curr_state_0_LC_7_10_0 { ALL_SYS_PWRGD.curr_state_7_1_0_.m4, ALL_SYS_PWRGD.curr_state[0] }
+ble_pack PCH_PWRGD.curr_state_0_LC_7_10_1 { PCH_PWRGD.curr_state_7_1_0_.m4, PCH_PWRGD.curr_state[0] }
+ble_pack PCH_PWRGD.pch_pwrok_LC_7_10_2 { PCH_PWRGD.pch_pwrok_RNO, PCH_PWRGD.pch_pwrok }
+ble_pack ALL_SYS_PWRGD.curr_state_1_LC_7_10_3 { ALL_SYS_PWRGD.curr_state_7_1_0_.m6, ALL_SYS_PWRGD.curr_state[1] }
+ble_pack ALL_SYS_PWRGD.ALL_SYS_PWRGD_LC_7_10_4 { ALL_SYS_PWRGD.ALL_SYS_PWRGD_RNO, ALL_SYS_PWRGD.ALL_SYS_PWRGD }
+clb_pack LT_7_10 { ALL_SYS_PWRGD.curr_state_0_LC_7_10_0, PCH_PWRGD.curr_state_0_LC_7_10_1, PCH_PWRGD.pch_pwrok_LC_7_10_2, ALL_SYS_PWRGD.curr_state_1_LC_7_10_3, ALL_SYS_PWRGD.ALL_SYS_PWRGD_LC_7_10_4 }
 set_location LT_7_10 7 10
 ble_pack ALL_SYS_PWRGD.count_0_LC_7_11_0 { ALL_SYS_PWRGD.count_RNO[0], ALL_SYS_PWRGD.count[0], ALL_SYS_PWRGD.un1_count_1_cry_0_c }
 ble_pack ALL_SYS_PWRGD.count_1_LC_7_11_1 { ALL_SYS_PWRGD.count_RNO[1], ALL_SYS_PWRGD.count[1], ALL_SYS_PWRGD.un1_count_1_cry_1_c }
@@ -58,58 +70,57 @@ set_location LT_7_12 7 12
 ble_pack ALL_SYS_PWRGD.count_esr_15_LC_7_13_0 { ALL_SYS_PWRGD.count_esr_RNO[15], ALL_SYS_PWRGD.count_esr[15] }
 clb_pack LT_7_13 { ALL_SYS_PWRGD.count_esr_15_LC_7_13_0 }
 set_location LT_7_13 7 13
-ble_pack RSMRST_PWRGD.count_RNIR8OP4_10_LC_7_14_0 { RSMRST_PWRGD.count_RNIR8OP4[10] }
-ble_pack RSMRST_PWRGD.count_RNIKOU91_10_LC_7_14_5 { RSMRST_PWRGD.count_RNIKOU91[10] }
-ble_pack RSMRST_PWRGD.count_RNIAEU91_12_LC_7_14_7 { RSMRST_PWRGD.count_RNIAEU91[12] }
-clb_pack LT_7_14 { RSMRST_PWRGD.count_RNIR8OP4_10_LC_7_14_0, RSMRST_PWRGD.count_RNIKOU91_10_LC_7_14_5, RSMRST_PWRGD.count_RNIAEU91_12_LC_7_14_7 }
+ble_pack VPP_VDDQ.count_RNIVJP51_3_LC_7_14_1 { VPP_VDDQ.count_RNIVJP51[3] }
+ble_pack VPP_VDDQ.count_esr_RNIRFM64_15_LC_7_14_2 { VPP_VDDQ.count_esr_RNIRFM64[15] }
+ble_pack RSMRST_PWRGD.count_RNIKOU91_10_LC_7_14_3 { RSMRST_PWRGD.count_RNIKOU91[10] }
+ble_pack RSMRST_PWRGD.count_RNIAEU91_12_LC_7_14_6 { RSMRST_PWRGD.count_RNIAEU91[12] }
+ble_pack RSMRST_PWRGD.count_RNIR8OP4_10_LC_7_14_7 { RSMRST_PWRGD.count_RNIR8OP4[10] }
+clb_pack LT_7_14 { VPP_VDDQ.count_RNIVJP51_3_LC_7_14_1, VPP_VDDQ.count_esr_RNIRFM64_15_LC_7_14_2, RSMRST_PWRGD.count_RNIKOU91_10_LC_7_14_3, RSMRST_PWRGD.count_RNIAEU91_12_LC_7_14_6, RSMRST_PWRGD.count_RNIR8OP4_10_LC_7_14_7 }
 set_location LT_7_14 7 14
-ble_pack RSMRST_PWRGD.count_esr_RNIE05H_15_LC_7_15_2 { RSMRST_PWRGD.count_esr_RNIE05H[15] }
-ble_pack RSMRST_PWRGD.count_RNIF1MK1_3_LC_7_15_4 { RSMRST_PWRGD.count_RNIF1MK1[3] }
-clb_pack LT_7_15 { RSMRST_PWRGD.count_esr_RNIE05H_15_LC_7_15_2, RSMRST_PWRGD.count_RNIF1MK1_3_LC_7_15_4 }
+ble_pack VPP_VDDQ.count_RNI63141_10_LC_7_15_0 { VPP_VDDQ.count_RNI63141[10] }
+ble_pack RSMRST_PWRGD.count_esr_RNIE05H_15_LC_7_15_1 { RSMRST_PWRGD.count_esr_RNIE05H[15] }
+ble_pack VPP_VDDQ.count_esr_RNI7CQO_15_LC_7_15_3 { VPP_VDDQ.count_esr_RNI7CQO[15] }
+ble_pack VPP_VDDQ.count_RNIFC141_11_LC_7_15_5 { VPP_VDDQ.count_RNIFC141[11] }
+ble_pack RSMRST_PWRGD.count_RNIF1MK1_3_LC_7_15_6 { RSMRST_PWRGD.count_RNIF1MK1[3] }
+clb_pack LT_7_15 { VPP_VDDQ.count_RNI63141_10_LC_7_15_0, RSMRST_PWRGD.count_esr_RNIE05H_15_LC_7_15_1, VPP_VDDQ.count_esr_RNI7CQO_15_LC_7_15_3, VPP_VDDQ.count_RNIFC141_11_LC_7_15_5, RSMRST_PWRGD.count_RNIF1MK1_3_LC_7_15_6 }
 set_location LT_7_15 7 15
-ble_pack COUNTER.un4_counter_0_c_LC_8_9_0 { COUNTER.un4_counter_0_c }
-ble_pack COUNTER.un4_counter_1_c_LC_8_9_1 { COUNTER.un4_counter_1_c }
-ble_pack COUNTER.un4_counter_2_c_LC_8_9_2 { COUNTER.un4_counter_2_c }
-ble_pack COUNTER.un4_counter_3_c_LC_8_9_3 { COUNTER.un4_counter_3_c }
-ble_pack COUNTER.un4_counter_4_c_LC_8_9_4 { COUNTER.un4_counter_4_c }
-ble_pack COUNTER.un4_counter_5_c_LC_8_9_5 { COUNTER.un4_counter_5_c }
-ble_pack COUNTER.un4_counter_6_c_LC_8_9_6 { COUNTER.un4_counter_6_c }
-ble_pack COUNTER.un4_counter_7_c_LC_8_9_7 { COUNTER.un4_counter_7_c }
-clb_pack LT_8_9 { COUNTER.un4_counter_0_c_LC_8_9_0, COUNTER.un4_counter_1_c_LC_8_9_1, COUNTER.un4_counter_2_c_LC_8_9_2, COUNTER.un4_counter_3_c_LC_8_9_3, COUNTER.un4_counter_4_c_LC_8_9_4, COUNTER.un4_counter_5_c_LC_8_9_5, COUNTER.un4_counter_6_c_LC_8_9_6, COUNTER.un4_counter_7_c_LC_8_9_7 }
+ble_pack COUNTER.un4_counter_0_c_RNO_LC_8_9_1 { COUNTER.un4_counter_0_c_RNO }
+ble_pack COUNTER.counter_3_LC_8_9_2 { COUNTER.counter_RNO[3], COUNTER.counter[3] }
+ble_pack COUNTER.counter_0_LC_8_9_4 { COUNTER.counter_RNO[0], COUNTER.counter[0] }
+ble_pack COUNTER.counter_2_LC_8_9_6 { COUNTER.counter_RNO[2], COUNTER.counter[2] }
+ble_pack COUNTER.counter_4_LC_8_9_7 { COUNTER.counter_RNO[4], COUNTER.counter[4] }
+clb_pack LT_8_9 { COUNTER.un4_counter_0_c_RNO_LC_8_9_1, COUNTER.counter_3_LC_8_9_2, COUNTER.counter_0_LC_8_9_4, COUNTER.counter_2_LC_8_9_6, COUNTER.counter_4_LC_8_9_7 }
 set_location LT_8_9 8 9
-ble_pack COUNTER_un4_counter_7_THRU_LUT4_0_LC_8_10_0 { COUNTER_un4_counter_7_THRU_LUT4_0 }
-ble_pack RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_8_10_1 { RSMRST_PWRGD.curr_state_RNIR5E01[0] }
-ble_pack COUNTER.tmp_LC_8_10_2 { COUNTER.tmp_RNO, COUNTER.tmp }
-ble_pack VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_8_10_3 { VPP_VDDQ.delayed_vddq_pwrgd_RNO_1 }
-ble_pack VPP_VDDQ.curr_state_RNID2IU_0_LC_8_10_5 { VPP_VDDQ.curr_state_RNID2IU[0] }
-ble_pack VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_8_10_6 { VPP_VDDQ.delayed_vddq_pwrgd_RNO_0 }
-ble_pack VPP_VDDQ.delayed_vddq_pwrgd_LC_8_10_7 { VPP_VDDQ.delayed_vddq_pwrgd_RNO, VPP_VDDQ.delayed_vddq_pwrgd }
-clb_pack LT_8_10 { COUNTER_un4_counter_7_THRU_LUT4_0_LC_8_10_0, RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_8_10_1, COUNTER.tmp_LC_8_10_2, VPP_VDDQ.delayed_vddq_pwrgd_RNO_1_LC_8_10_3, VPP_VDDQ.curr_state_RNID2IU_0_LC_8_10_5, VPP_VDDQ.delayed_vddq_pwrgd_RNO_0_LC_8_10_6, VPP_VDDQ.delayed_vddq_pwrgd_LC_8_10_7 }
+ble_pack PCH_PWRGD.count_esr_RNIFR521_15_LC_8_10_0 { PCH_PWRGD.count_esr_RNIFR521[15] }
+ble_pack PCH_PWRGD.count_esr_RNIRGCK2_15_LC_8_10_1 { PCH_PWRGD.count_esr_RNIRGCK2[15] }
+ble_pack PCH_PWRGD.count_RNI0H1S_1_LC_8_10_3 { PCH_PWRGD.count_RNI0H1S[1] }
+ble_pack PCH_PWRGD.count_RNIESHJ_1_LC_8_10_4 { PCH_PWRGD.count_RNIESHJ[1] }
+ble_pack PCH_PWRGD.count_esr_RNIF0S41_15_LC_8_10_5 { PCH_PWRGD.count_esr_RNIF0S41[15] }
+ble_pack PCH_PWRGD.count_RNILMOE2_2_LC_8_10_6 { PCH_PWRGD.count_RNILMOE2[2] }
+ble_pack ALL_SYS_PWRGD.curr_state_RNIUU4I2_0_LC_8_10_7 { ALL_SYS_PWRGD.curr_state_RNIUU4I2[0] }
+clb_pack LT_8_10 { PCH_PWRGD.count_esr_RNIFR521_15_LC_8_10_0, PCH_PWRGD.count_esr_RNIRGCK2_15_LC_8_10_1, PCH_PWRGD.count_RNI0H1S_1_LC_8_10_3, PCH_PWRGD.count_RNIESHJ_1_LC_8_10_4, PCH_PWRGD.count_esr_RNIF0S41_15_LC_8_10_5, PCH_PWRGD.count_RNILMOE2_2_LC_8_10_6, ALL_SYS_PWRGD.curr_state_RNIUU4I2_0_LC_8_10_7 }
 set_location LT_8_10 8 10
-ble_pack ALL_SYS_PWRGD.curr_state_RNI72Q21_0_LC_8_11_0 { ALL_SYS_PWRGD.curr_state_RNI72Q21[0] }
-ble_pack ALL_SYS_PWRGD.curr_state_RNIKNST6_1_LC_8_11_1 { ALL_SYS_PWRGD.curr_state_RNIKNST6[1] }
-ble_pack ALL_SYS_PWRGD.count_esr_RNO_0_15_LC_8_11_2 { ALL_SYS_PWRGD.count_esr_RNO_0[15] }
+ble_pack COUNTER.tmp_LC_8_11_0 { COUNTER.tmp_RNO, COUNTER.tmp }
+ble_pack COUNTER.tmp_RNIRH3P_LC_8_11_1 { COUNTER.tmp_RNIRH3P }
+ble_pack PCH_PWRGD.count_esr_RNO_0_15_LC_8_11_2 { PCH_PWRGD.count_esr_RNO_0[15] }
 ble_pack PCH_PWRGD.curr_state_RNIBS171_0_LC_8_11_3 { PCH_PWRGD.curr_state_RNIBS171[0] }
 ble_pack PCH_PWRGD.count_RNIO26E5_0_LC_8_11_4 { PCH_PWRGD.count_RNIO26E5[0] }
-ble_pack VPP_VDDQ.count_RNI63141_10_LC_8_11_5 { VPP_VDDQ.count_RNI63141[10] }
-ble_pack PCH_PWRGD.count_RNIN5IJ_0_0_LC_8_11_6 { PCH_PWRGD.count_RNIN5IJ_0[0] }
-ble_pack COUNTER.tmp_RNIRH3P_LC_8_11_7 { COUNTER.tmp_RNIRH3P }
-clb_pack LT_8_11 { ALL_SYS_PWRGD.curr_state_RNI72Q21_0_LC_8_11_0, ALL_SYS_PWRGD.curr_state_RNIKNST6_1_LC_8_11_1, ALL_SYS_PWRGD.count_esr_RNO_0_15_LC_8_11_2, PCH_PWRGD.curr_state_RNIBS171_0_LC_8_11_3, PCH_PWRGD.count_RNIO26E5_0_LC_8_11_4, VPP_VDDQ.count_RNI63141_10_LC_8_11_5, PCH_PWRGD.count_RNIN5IJ_0_0_LC_8_11_6, COUNTER.tmp_RNIRH3P_LC_8_11_7 }
+ble_pack ALL_SYS_PWRGD.curr_state_RNI72Q21_0_LC_8_11_5 { ALL_SYS_PWRGD.curr_state_RNI72Q21[0] }
+ble_pack ALL_SYS_PWRGD.curr_state_RNIKNST6_1_LC_8_11_6 { ALL_SYS_PWRGD.curr_state_RNIKNST6[1] }
+ble_pack ALL_SYS_PWRGD.count_esr_RNO_0_15_LC_8_11_7 { ALL_SYS_PWRGD.count_esr_RNO_0[15] }
+clb_pack LT_8_11 { COUNTER.tmp_LC_8_11_0, COUNTER.tmp_RNIRH3P_LC_8_11_1, PCH_PWRGD.count_esr_RNO_0_15_LC_8_11_2, PCH_PWRGD.curr_state_RNIBS171_0_LC_8_11_3, PCH_PWRGD.count_RNIO26E5_0_LC_8_11_4, ALL_SYS_PWRGD.curr_state_RNI72Q21_0_LC_8_11_5, ALL_SYS_PWRGD.curr_state_RNIKNST6_1_LC_8_11_6, ALL_SYS_PWRGD.count_esr_RNO_0_15_LC_8_11_7 }
 set_location LT_8_11 8 11
+ble_pack RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_8_12_0 { RSMRST_PWRGD.curr_state_RNIR5E01[0] }
 ble_pack RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_8_12_1 { RSMRST_PWRGD.curr_state_RNII9BF7[1] }
 ble_pack RSMRST_PWRGD.curr_state_0_LC_8_12_3 { RSMRST_PWRGD.curr_state_7_1_0_.m4, RSMRST_PWRGD.curr_state[0] }
-ble_pack RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_8_12_4 { RSMRST_PWRGD.curr_state_RNISEFS1[0] }
 ble_pack RSMRST_PWRGD.curr_state_1_LC_8_12_5 { RSMRST_PWRGD.curr_state_7_1_0_.m6, RSMRST_PWRGD.curr_state[1] }
-clb_pack LT_8_12 { RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_8_12_1, RSMRST_PWRGD.curr_state_0_LC_8_12_3, RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_8_12_4, RSMRST_PWRGD.curr_state_1_LC_8_12_5 }
+clb_pack LT_8_12 { RSMRST_PWRGD.curr_state_RNIR5E01_0_LC_8_12_0, RSMRST_PWRGD.curr_state_RNII9BF7_1_LC_8_12_1, RSMRST_PWRGD.curr_state_0_LC_8_12_3, RSMRST_PWRGD.curr_state_1_LC_8_12_5 }
 set_location LT_8_12 8 12
-ble_pack PCH_PWRGD.count_esr_RNO_0_15_LC_8_13_0 { PCH_PWRGD.count_esr_RNO_0[15] }
-ble_pack VPP_VDDQ.count_esr_RNI7CQO_15_LC_8_13_1 { VPP_VDDQ.count_esr_RNI7CQO[15] }
-ble_pack VPP_VDDQ.count_esr_RNIRFM64_15_LC_8_13_2 { VPP_VDDQ.count_esr_RNIRFM64[15] }
-ble_pack VPP_VDDQ.curr_state_RNIQQ0D7_1_LC_8_13_3 { VPP_VDDQ.curr_state_RNIQQ0D7[1] }
-ble_pack VPP_VDDQ.count_esr_RNO_0_15_LC_8_13_4 { VPP_VDDQ.count_esr_RNO_0[15] }
-ble_pack RSMRST_PWRGD.count_esr_RNO_0_15_LC_8_13_5 { RSMRST_PWRGD.count_esr_RNO_0[15] }
-ble_pack VPP_VDDQ.count_RNIFC141_11_LC_8_13_6 { VPP_VDDQ.count_RNIFC141[11] }
-clb_pack LT_8_13 { PCH_PWRGD.count_esr_RNO_0_15_LC_8_13_0, VPP_VDDQ.count_esr_RNI7CQO_15_LC_8_13_1, VPP_VDDQ.count_esr_RNIRFM64_15_LC_8_13_2, VPP_VDDQ.curr_state_RNIQQ0D7_1_LC_8_13_3, VPP_VDDQ.count_esr_RNO_0_15_LC_8_13_4, RSMRST_PWRGD.count_esr_RNO_0_15_LC_8_13_5, VPP_VDDQ.count_RNIFC141_11_LC_8_13_6 }
+ble_pack VPP_VDDQ.curr_state_RNIQQ0D7_1_LC_8_13_0 { VPP_VDDQ.curr_state_RNIQQ0D7[1] }
+ble_pack VPP_VDDQ.count_esr_RNO_0_15_LC_8_13_1 { VPP_VDDQ.count_esr_RNO_0[15] }
+ble_pack RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_8_13_4 { RSMRST_PWRGD.curr_state_RNISEFS1[0] }
+ble_pack RSMRST_PWRGD.count_esr_RNO_0_15_LC_8_13_6 { RSMRST_PWRGD.count_esr_RNO_0[15] }
+clb_pack LT_8_13 { VPP_VDDQ.curr_state_RNIQQ0D7_1_LC_8_13_0, VPP_VDDQ.count_esr_RNO_0_15_LC_8_13_1, RSMRST_PWRGD.curr_state_RNISEFS1_0_LC_8_13_4, RSMRST_PWRGD.count_esr_RNO_0_15_LC_8_13_6 }
 set_location LT_8_13 8 13
 ble_pack VPP_VDDQ.count_0_LC_8_14_0 { VPP_VDDQ.count_RNO[0], VPP_VDDQ.count[0], VPP_VDDQ.un1_count_1_cry_0_c }
 ble_pack VPP_VDDQ.count_1_LC_8_14_1 { VPP_VDDQ.count_RNO[1], VPP_VDDQ.count[1], VPP_VDDQ.un1_count_1_cry_1_c }
@@ -134,12 +145,23 @@ set_location LT_8_15 8 15
 ble_pack VPP_VDDQ.count_esr_15_LC_8_16_0 { VPP_VDDQ.count_esr_RNO[15], VPP_VDDQ.count_esr[15] }
 clb_pack LT_8_16 { VPP_VDDQ.count_esr_15_LC_8_16_0 }
 set_location LT_8_16 8 16
-ble_pack COUNTER.counter_6_LC_9_9_1 { COUNTER.counter_RNO[6], COUNTER.counter[6] }
-ble_pack COUNTER.un4_counter_1_c_RNO_LC_9_9_3 { COUNTER.un4_counter_1_c_RNO }
-ble_pack COUNTER.counter_1_LC_9_9_5 { COUNTER.counter_RNO[1], COUNTER.counter[1] }
-ble_pack COUNTER.counter_5_LC_9_9_7 { COUNTER.counter_RNO[5], COUNTER.counter[5] }
-clb_pack LT_9_9 { COUNTER.counter_6_LC_9_9_1, COUNTER.un4_counter_1_c_RNO_LC_9_9_3, COUNTER.counter_1_LC_9_9_5, COUNTER.counter_5_LC_9_9_7 }
+ble_pack COUNTER.un4_counter_0_c_LC_9_9_0 { COUNTER.un4_counter_0_c }
+ble_pack COUNTER.un4_counter_1_c_LC_9_9_1 { COUNTER.un4_counter_1_c }
+ble_pack COUNTER.un4_counter_2_c_LC_9_9_2 { COUNTER.un4_counter_2_c }
+ble_pack COUNTER.un4_counter_3_c_LC_9_9_3 { COUNTER.un4_counter_3_c }
+ble_pack COUNTER.un4_counter_4_c_LC_9_9_4 { COUNTER.un4_counter_4_c }
+ble_pack COUNTER.un4_counter_5_c_LC_9_9_5 { COUNTER.un4_counter_5_c }
+ble_pack COUNTER.un4_counter_6_c_LC_9_9_6 { COUNTER.un4_counter_6_c }
+ble_pack COUNTER.un4_counter_7_c_LC_9_9_7 { COUNTER.un4_counter_7_c }
+clb_pack LT_9_9 { COUNTER.un4_counter_0_c_LC_9_9_0, COUNTER.un4_counter_1_c_LC_9_9_1, COUNTER.un4_counter_2_c_LC_9_9_2, COUNTER.un4_counter_3_c_LC_9_9_3, COUNTER.un4_counter_4_c_LC_9_9_4, COUNTER.un4_counter_5_c_LC_9_9_5, COUNTER.un4_counter_6_c_LC_9_9_6, COUNTER.un4_counter_7_c_LC_9_9_7 }
 set_location LT_9_9 9 9
+ble_pack COUNTER_un4_counter_7_THRU_LUT4_0_LC_9_10_0 { COUNTER_un4_counter_7_THRU_LUT4_0 }
+ble_pack PCH_PWRGD.count_RNIN5IJ_0_0_LC_9_10_1 { PCH_PWRGD.count_RNIN5IJ_0[0] }
+ble_pack PCH_PWRGD.count_RNI7J2B_3_LC_9_10_2 { PCH_PWRGD.count_RNI7J2B[3] }
+ble_pack PCH_PWRGD.count_RNIN5IJ_0_LC_9_10_4 { PCH_PWRGD.count_RNIN5IJ[0] }
+ble_pack CONSTANT_ONE_LUT4_LC_9_10_5 { CONSTANT_ONE_LUT4 }
+clb_pack LT_9_10 { COUNTER_un4_counter_7_THRU_LUT4_0_LC_9_10_0, PCH_PWRGD.count_RNIN5IJ_0_0_LC_9_10_1, PCH_PWRGD.count_RNI7J2B_3_LC_9_10_2, PCH_PWRGD.count_RNIN5IJ_0_LC_9_10_4, CONSTANT_ONE_LUT4_LC_9_10_5 }
+set_location LT_9_10 9 10
 ble_pack PCH_PWRGD.count_0_LC_9_11_0 { PCH_PWRGD.count_RNO[0], PCH_PWRGD.count[0], PCH_PWRGD.un1_count_1_cry_0_c }
 ble_pack PCH_PWRGD.count_1_LC_9_11_1 { PCH_PWRGD.count_RNO[1], PCH_PWRGD.count[1], PCH_PWRGD.un1_count_1_cry_1_c }
 ble_pack PCH_PWRGD.count_2_LC_9_11_2 { PCH_PWRGD.count_RNO[2], PCH_PWRGD.count[2], PCH_PWRGD.un1_count_1_cry_2_c }
@@ -186,47 +208,27 @@ set_location LT_9_15 9 15
 ble_pack RSMRST_PWRGD.count_esr_15_LC_9_16_0 { RSMRST_PWRGD.count_esr_RNO[15], RSMRST_PWRGD.count_esr[15] }
 clb_pack LT_9_16 { RSMRST_PWRGD.count_esr_15_LC_9_16_0 }
 set_location LT_9_16 9 16
-ble_pack COUNTER.counter_3_LC_11_9_0 { COUNTER.counter_RNO[3], COUNTER.counter[3] }
-ble_pack COUNTER.un4_counter_0_c_RNO_LC_11_9_1 { COUNTER.un4_counter_0_c_RNO }
-ble_pack COUNTER.counter_2_LC_11_9_2 { COUNTER.counter_RNO[2], COUNTER.counter[2] }
-ble_pack COUNTER.un4_counter_3_c_RNO_LC_11_9_3 { COUNTER.un4_counter_3_c_RNO }
-ble_pack COUNTER.un4_counter_2_c_RNO_LC_11_9_4 { COUNTER.un4_counter_2_c_RNO }
-ble_pack COUNTER.counter_4_LC_11_9_5 { COUNTER.counter_RNO[4], COUNTER.counter[4] }
-clb_pack LT_11_9 { COUNTER.counter_3_LC_11_9_0, COUNTER.un4_counter_0_c_RNO_LC_11_9_1, COUNTER.counter_2_LC_11_9_2, COUNTER.un4_counter_3_c_RNO_LC_11_9_3, COUNTER.un4_counter_2_c_RNO_LC_11_9_4, COUNTER.counter_4_LC_11_9_5 }
+ble_pack COUNTER.un4_counter_1_c_RNO_LC_11_9_0 { COUNTER.un4_counter_1_c_RNO }
+ble_pack COUNTER.un4_counter_3_c_RNO_LC_11_9_2 { COUNTER.un4_counter_3_c_RNO }
+ble_pack COUNTER.counter_6_LC_11_9_3 { COUNTER.counter_RNO[6], COUNTER.counter[6] }
+ble_pack COUNTER.counter_1_LC_11_9_4 { COUNTER.counter_RNO[1], COUNTER.counter[1] }
+ble_pack COUNTER.un4_counter_2_c_RNO_LC_11_9_6 { COUNTER.un4_counter_2_c_RNO }
+clb_pack LT_11_9 { COUNTER.un4_counter_1_c_RNO_LC_11_9_0, COUNTER.un4_counter_3_c_RNO_LC_11_9_2, COUNTER.counter_6_LC_11_9_3, COUNTER.counter_1_LC_11_9_4, COUNTER.un4_counter_2_c_RNO_LC_11_9_6 }
 set_location LT_11_9 11 9
-ble_pack COUNTER.un4_counter_4_c_RNO_LC_11_10_4 { COUNTER.un4_counter_4_c_RNO }
-ble_pack COUNTER.counter_0_LC_11_10_7 { COUNTER.counter_RNO[0], COUNTER.counter[0] }
-clb_pack LT_11_10 { COUNTER.un4_counter_4_c_RNO_LC_11_10_4, COUNTER.counter_0_LC_11_10_7 }
+ble_pack COUNTER.counter_5_LC_11_10_0 { COUNTER.counter_RNO[5], COUNTER.counter[5] }
+ble_pack COUNTER.un4_counter_4_c_RNO_LC_11_10_2 { COUNTER.un4_counter_4_c_RNO }
+ble_pack ALL_SYS_PWRGD.un8_sys_pwrgd_LC_11_10_5 { ALL_SYS_PWRGD.un8_sys_pwrgd }
+clb_pack LT_11_10 { COUNTER.counter_5_LC_11_10_0, COUNTER.un4_counter_4_c_RNO_LC_11_10_2, ALL_SYS_PWRGD.un8_sys_pwrgd_LC_11_10_5 }
 set_location LT_11_10 11 10
-ble_pack COUNTER.un4_counter_5_c_RNO_LC_11_11_0 { COUNTER.un4_counter_5_c_RNO }
-ble_pack PCH_PWRGD.count_RNI7J2B_3_LC_11_11_1 { PCH_PWRGD.count_RNI7J2B[3] }
-ble_pack COUNTER.un4_counter_6_c_RNO_LC_11_11_2 { COUNTER.un4_counter_6_c_RNO }
-ble_pack PCH_PWRGD.count_RNI0H1S_1_LC_11_11_3 { PCH_PWRGD.count_RNI0H1S[1] }
-ble_pack PCH_PWRGD.count_RNILMOE2_2_LC_11_11_4 { PCH_PWRGD.count_RNILMOE2[2] }
-ble_pack PCH_PWRGD.count_RNIESHJ_1_LC_11_11_5 { PCH_PWRGD.count_RNIESHJ[1] }
-clb_pack LT_11_11 { COUNTER.un4_counter_5_c_RNO_LC_11_11_0, PCH_PWRGD.count_RNI7J2B_3_LC_11_11_1, COUNTER.un4_counter_6_c_RNO_LC_11_11_2, PCH_PWRGD.count_RNI0H1S_1_LC_11_11_3, PCH_PWRGD.count_RNILMOE2_2_LC_11_11_4, PCH_PWRGD.count_RNIESHJ_1_LC_11_11_5 }
+ble_pack COUNTER.un4_counter_6_c_RNO_LC_11_11_4 { COUNTER.un4_counter_6_c_RNO }
+ble_pack COUNTER.un4_counter_5_c_RNO_LC_11_11_6 { COUNTER.un4_counter_5_c_RNO }
+clb_pack LT_11_11 { COUNTER.un4_counter_6_c_RNO_LC_11_11_4, COUNTER.un4_counter_5_c_RNO_LC_11_11_6 }
 set_location LT_11_11 11 11
-ble_pack PCH_PWRGD.count_RNIN5IJ_0_LC_11_12_0 { PCH_PWRGD.count_RNIN5IJ[0] }
-ble_pack PCH_PWRGD.count_esr_RNIF0S41_15_LC_11_12_1 { PCH_PWRGD.count_esr_RNIF0S41[15] }
-ble_pack COUNTER.un4_counter_7_c_RNO_LC_11_12_2 { COUNTER.un4_counter_7_c_RNO }
-ble_pack PCH_PWRGD.count_esr_RNIFR521_15_LC_11_12_4 { PCH_PWRGD.count_esr_RNIFR521[15] }
-ble_pack PCH_PWRGD.count_esr_RNIRGCK2_15_LC_11_12_5 { PCH_PWRGD.count_esr_RNIRGCK2[15] }
-ble_pack ALL_SYS_PWRGD.un8_sys_pwrgd_LC_11_12_7 { ALL_SYS_PWRGD.un8_sys_pwrgd }
-clb_pack LT_11_12 { PCH_PWRGD.count_RNIN5IJ_0_LC_11_12_0, PCH_PWRGD.count_esr_RNIF0S41_15_LC_11_12_1, COUNTER.un4_counter_7_c_RNO_LC_11_12_2, PCH_PWRGD.count_esr_RNIFR521_15_LC_11_12_4, PCH_PWRGD.count_esr_RNIRGCK2_15_LC_11_12_5, ALL_SYS_PWRGD.un8_sys_pwrgd_LC_11_12_7 }
+ble_pack COUNTER.un4_counter_7_c_RNO_LC_11_12_0 { COUNTER.un4_counter_7_c_RNO }
+clb_pack LT_11_12 { COUNTER.un4_counter_7_c_RNO_LC_11_12_0 }
 set_location LT_11_12 11 12
-ble_pack PCH_PWRGD.un2_sys_pwrok_LC_11_13_0 { PCH_PWRGD.un2_sys_pwrok }
-ble_pack ALL_SYS_PWRGD.curr_state_RNIUU4I2_0_LC_11_13_1 { ALL_SYS_PWRGD.curr_state_RNIUU4I2[0] }
-ble_pack PCH_PWRGD.curr_state_RNIHKNI1_0_LC_11_13_3 { PCH_PWRGD.curr_state_RNIHKNI1[0] }
-ble_pack VR_READY_VCCIN_RNI1AP41_LC_11_13_7 { VR_READY_VCCIN_RNI1AP41 }
-clb_pack LT_11_13 { PCH_PWRGD.un2_sys_pwrok_LC_11_13_0, ALL_SYS_PWRGD.curr_state_RNIUU4I2_0_LC_11_13_1, PCH_PWRGD.curr_state_RNIHKNI1_0_LC_11_13_3, VR_READY_VCCIN_RNI1AP41_LC_11_13_7 }
-set_location LT_11_13 11 13
-ble_pack PCH_PWRGD.curr_state_0_LC_11_14_2 { PCH_PWRGD.curr_state_7_1_0_.m4, PCH_PWRGD.curr_state[0] }
-ble_pack ALL_SYS_PWRGD.curr_state_1_LC_11_14_3 { ALL_SYS_PWRGD.curr_state_7_1_0_.m6, ALL_SYS_PWRGD.curr_state[1] }
-ble_pack PCH_PWRGD.curr_state_1_LC_11_14_6 { PCH_PWRGD.curr_state_7_1_0_.m6, PCH_PWRGD.curr_state[1] }
-clb_pack LT_11_14 { PCH_PWRGD.curr_state_0_LC_11_14_2, ALL_SYS_PWRGD.curr_state_1_LC_11_14_3, PCH_PWRGD.curr_state_1_LC_11_14_6 }
-set_location LT_11_14 11 14
-ble_pack ALL_SYS_PWRGD.un8_sys_pwrgd_1_LC_12_6_6 { ALL_SYS_PWRGD.un8_sys_pwrgd_1 }
-clb_pack LT_12_6 { ALL_SYS_PWRGD.un8_sys_pwrgd_1_LC_12_6_6 }
+ble_pack ALL_SYS_PWRGD.un8_sys_pwrgd_1_LC_12_6_2 { ALL_SYS_PWRGD.un8_sys_pwrgd_1 }
+clb_pack LT_12_6 { ALL_SYS_PWRGD.un8_sys_pwrgd_1_LC_12_6_2 }
 set_location LT_12_6 12 6
 ble_pack COUNTER.counter_1_cry_1_c_LC_12_9_0 { COUNTER.counter_1_cry_1_c }
 ble_pack COUNTER.counter_1_cry_1_THRU_LUT4_0_LC_12_9_1 { COUNTER.counter_1_cry_1_THRU_LUT4_0, COUNTER.counter_1_cry_2_c }
@@ -267,13 +269,6 @@ ble_pack COUNTER.counter_30_LC_12_12_5 { COUNTER.counter_RNO[30], COUNTER.counte
 ble_pack COUNTER.counter_31_LC_12_12_6 { COUNTER.counter_RNO[31], COUNTER.counter[31] }
 clb_pack LT_12_12 { COUNTER.counter_25_LC_12_12_0, COUNTER.counter_26_LC_12_12_1, COUNTER.counter_27_LC_12_12_2, COUNTER.counter_28_LC_12_12_3, COUNTER.counter_29_LC_12_12_4, COUNTER.counter_30_LC_12_12_5, COUNTER.counter_31_LC_12_12_6 }
 set_location LT_12_12 12 12
-ble_pack ALL_SYS_PWRGD.ALL_SYS_PWRGD_LC_12_13_0 { ALL_SYS_PWRGD.ALL_SYS_PWRGD_RNO, ALL_SYS_PWRGD.ALL_SYS_PWRGD }
-ble_pack PCH_PWRGD.pch_pwrok_LC_12_13_6 { PCH_PWRGD.pch_pwrok_RNO, PCH_PWRGD.pch_pwrok }
-clb_pack LT_12_13 { ALL_SYS_PWRGD.ALL_SYS_PWRGD_LC_12_13_0, PCH_PWRGD.pch_pwrok_LC_12_13_6 }
-set_location LT_12_13 12 13
-ble_pack ALL_SYS_PWRGD.curr_state_0_LC_12_14_5 { ALL_SYS_PWRGD.curr_state_7_1_0_.m4, ALL_SYS_PWRGD.curr_state[0] }
-clb_pack LT_12_14 { ALL_SYS_PWRGD.curr_state_0_LC_12_14_5 }
-set_location LT_12_14 12 14
 set_io VR_READY_VCCINAUX B21
 set_io V33A_ENn A5
 set_io V1P8A_EN A1
