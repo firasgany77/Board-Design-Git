@@ -37,4 +37,8 @@ SBC (Motherboard):
 ![BOTTOM_VIEW-removebg](https://user-images.githubusercontent.com/13163663/149961978-4aa4ef4d-ef60-4d7a-ad73-2432dd916e47.png)
 
 
+![IMG_2601](https://user-images.githubusercontent.com/13163663/180716073-6fd57260-bc20-4f9c-8cd2-54549bef75b9.jpg)
+
+![IMG_2602](https://user-images.githubusercontent.com/13163663/180716085-0ebf5540-f90a-4047-921a-6710a8596d5c.jpg)
+
 
