@@ -40,5 +40,7 @@ SBC (Motherboard):
 ![IMG_2601](https://user-images.githubusercontent.com/13163663/180716073-6fd57260-bc20-4f9c-8cd2-54549bef75b9.jpg)
 
 ![IMG_2602](https://user-images.githubusercontent.com/13163663/180716085-0ebf5540-f90a-4047-921a-6710a8596d5c.jpg)
+![IMG_2627](https://user-images.githubusercontent.com/13163663/180716825-b53ad2be-4ac8-4164-841c-762a9f8176cc.jpg)
+
 
 
