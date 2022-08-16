@@ -1,1 +1,1 @@
-CKID0001:@|S:FPGA_OSC@|E:ALL_SYS_PWRGD.count[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:FPGA_OSC@|E:POWERLED.dutycycle_fast[6]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 

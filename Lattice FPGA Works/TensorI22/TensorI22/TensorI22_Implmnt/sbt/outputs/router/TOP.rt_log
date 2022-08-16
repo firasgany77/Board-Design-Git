@@ -1,0 +1,46 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:45:10
+
+* File Generated:     Aug 9 2022 16:48:09
+
+* Purpose:            Router runtime info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\TensorI22\TensorI22_Implmnt\sbt\netlist\oadb-TOP C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP1K.lib C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\TensorI22\TensorI22_Implmnt\sbt\outputs\packer\TOP_pk.sdc --outdir C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\TensorI22\TensorI22_Implmnt\sbt\outputs\router --sdf_file C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/TensorI22/TensorI22_Implmnt\sbt\outputs\simulation_netlist\TOP_sbt.sdf --pin_permutation 
+I1203: Reading Design TOP
+I1202: Reading Architecture of device iCE40LP1K
+I1209: Started routing
+I1223: Total Nets : 848 
+I1212: Iteration  1 :   227 unrouted : 1 seconds
+I1212: Iteration  2 :   135 unrouted : 0 seconds
+I1212: Iteration  3 :    51 unrouted : 1 seconds
+I1212: Iteration  4 :    44 unrouted : 0 seconds
+I1212: Iteration  5 :    32 unrouted : 0 seconds
+I1212: Iteration  6 :    16 unrouted : 0 seconds
+I1212: Iteration  7 :     8 unrouted : 0 seconds
+I1212: Iteration  8 :     6 unrouted : 0 seconds
+I1212: Iteration  9 :     6 unrouted : 0 seconds
+I1212: Iteration 10 :     6 unrouted : 0 seconds
+I1212: Iteration 11 :     6 unrouted : 0 seconds
+I1212: Iteration 12 :     6 unrouted : 0 seconds
+I1212: Iteration 13 :     6 unrouted : 0 seconds
+I1212: Iteration 14 :     6 unrouted : 0 seconds
+I1212: Iteration 15 :     6 unrouted : 0 seconds
+I1212: Iteration 16 :     4 unrouted : 0 seconds
+I1212: Iteration 17 :     2 unrouted : 0 seconds
+I1212: Iteration 18 :     2 unrouted : 0 seconds
+I1212: Iteration 19 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+I1206: Completed routing
+I1204: Writing Design TOP
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 4 seconds

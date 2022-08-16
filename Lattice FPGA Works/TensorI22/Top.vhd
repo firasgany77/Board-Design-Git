@@ -141,6 +141,16 @@ ARCHITECTURE bdf_type OF TOP IS
        ALL_SYS_PWRGD : OUT STD_LOGIC
            );
     END COMPONENT;
+
+	COMPONENT powerled_block
+	Port(
+	clk_100Khz:    in std_logic; -- 100KHz clock, T = 10uSec		
+	SLP_S3n:     in std_logic;
+	SLP_S4n:     in std_logic;
+	mem_alert:    in std_logic;
+	pwm_out:     out std_logic); 
+    END COMPONENT;
+
     
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
@@ -151,8 +161,10 @@ ARCHITECTURE bdf_type OF TOP IS
 	SIGNAL DSW_PWROK_signal : STD_LOGIC;
 	SIGNAL rsmrst_pwrgd_signal : STD_LOGIC;
 	SIGNAL pch_pwrok_signal : STD_LOGIC;
-	SIGNAL delayed_vddq_ok_signal: STD_LOGIC;
-	SIGNAL all_sys_pwrgd_signal: STD_LOGIC; 
+	SIGNAL delayed_vddq_ok_signal : STD_LOGIC;
+	SIGNAL all_sys_pwrgd_signal : STD_LOGIC; 
+	signal GPIO_FPGA_SoC_4_temp : STD_LOGIC;
+
 
 
 BEGIN
@@ -160,21 +172,22 @@ BEGIN
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; 
 	DSW_PWROK <= DSW_PWROK_signal;
-	SUSWARN_N <= all_sys_pwrgd_signal;  --DEBUG
+
+	---------------------------------------------------------- DEBUG -------------------------------------------------------------------
+	SUSWARN_N <= GPIO_FPGA_SoC_4;
+	---------------------------------------------------------- DEBUG -------------------------------------------------------------------
+
 	VCCST_PWRGD <= all_sys_pwrgd_signal;
 	VCCIN_EN <= all_sys_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
 
 	V5S_ENn <= NOT(slp_s3n_signal);
-	V33S_ENn <= '0';
-    --V33S_ENn <= NOT(slp_s3n_signal);
-	
-
+    V33S_ENn <= NOT(slp_s3n_signal);
 
 	slp_s3n_signal <= RSMRSTn_signal AND SLP_S3n;
 	slp_s4n_signal <= RSMRSTn_signal AND SLP_S4n; 
 	VCCST_EN <= slp_s3n_signal; 
-	slp_susn_signal <= SLP_SUSn; 
+	slp_susn_signal <= SLP_SUSn;
 
 	VPP_VDDQ : vpp_vddq_block
 	PORT MAP(
@@ -182,7 +195,7 @@ BEGIN
 		  vddq_pwrgd => VDDQ_OK,
 		  vpp_pwrgd => VPP_OK,
 		  clk_100Khz => clk_100Khz_signal,
-		  vpp_en => VPP_EN,
+		  vpp_en => VPP_EN,	
 		  vddq_en => VDDQ_EN);
 
 
@@ -235,5 +248,13 @@ BEGIN
     VCCST_CPU_OK => VCCST_CPU_OK, 
     RSMRST_PWRGD => rsmrst_pwrgd_signal, 
     ALL_SYS_PWRGD => all_sys_pwrgd_signal);
+
+	POWERLED : powerled_block
+	Port MAP (
+	clk_100Khz => clk_100Khz_signal, 	
+	SLP_S3n => slp_s3n_signal,
+	SLP_S4n => slp_s4n_signal,
+	mem_alert => GPIO_FPGA_SoC_4,
+	pwm_out => PWRBTN_LED); 
 
 END bdf_type;
