@@ -1,7 +1,10 @@
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":6:7:6:9|Synthesizing work.top.bdf_type.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":160:8:160:25|Signal vccst_pwrgd_signal is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":164:8:164:29|Signal delayed_vddq_ok_signal is undriven. Either assign the signal a value or remove the signal declaration.
-@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":166:8:166:27|Signal gpio_fpga_soc_4_temp is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":169:8:169:25|Signal vccst_pwrgd_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":173:8:173:29|Signal delayed_vddq_ok_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":175:8:175:27|Signal gpio_fpga_soc_4_temp is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap_vh.vhd":5:7:5:21|Synthesizing work.hda_strap_block.hda_strap_block_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap_vh.vhd":14:16:14:17|Using user defined encoding for type state_type.
+Post processing for work.hda_strap_block.hda_strap_block_arch
 @N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled_vh.vhd":6:7:6:20|Synthesizing work.powerled_block.powerled_arch.
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled_vh.vhd":17:16:17:17|Using user defined encoding for type state_type.
 @W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled_vh.vhd":22:7:22:15|Signal clk_state is undriven. Either assign the signal a value or remove the signal declaration.
@@ -27,7 +30,6 @@ Post processing for work.primary_voltages_enabler.rsmrst_arch
 @N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":28:17:28:18|Using user defined encoding for type state_type.
 Post processing for work.vpp_vddq_block.vpp_vddq_arch
 Post processing for work.top.bdf_type
-@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":65:2:65:12|Signal HDA_SDO_ATP is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":15:2:15:15|Signal VCCINAUX_VR_PE is floating; a simulation mismatch is possible.
 @W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":11:2:11:12|Signal VCCIN_VR_PE is floating; a simulation mismatch is possible.
 @N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\vpp_vddq.vhd":44:2:44:3|Trying to extract state machine for register curr_state.
@@ -52,6 +54,7 @@ State machine has 3 reachable states with original encodings of:
    01
    10
 @W: CL249 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\powerled_vh.vhd":35:8:35:9|Initial value is not supported on state machine func_state
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\hda_strap_vh.vhd":25:1:25:2|Trying to extract state machine for register curr_state.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":8:2:8:16|Input SATAXPCIE0_FPGA is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":9:2:9:16|Input SATAXPCIE1_FPGA is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":10:2:10:22|Input VCCIN_VR_PROCHOT_FPGA is unused.
@@ -61,7 +64,6 @@ State machine has 3 reachable states with original encodings of:
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":20:2:20:15|Input CPU_C10_GATE_N is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":21:2:21:19|Input VCCST_OVERRIDE_3V3 is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":25:2:25:16|Input FPGA_SLP_WLAN_N is unused.
-@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":26:2:26:16|Input GPIO_FPGA_SoC_1 is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":27:2:27:16|Input GPIO_FPGA_SoC_2 is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":28:2:28:16|Input GPIO_FPGA_SoC_3 is unused.
 @N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\TensorI22\Top.vhd":30:2:30:16|Input GPIO_FPGA_EXP_1 is unused.

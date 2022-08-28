@@ -13,6 +13,7 @@ add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-D
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/Top.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/vpp_vddq.vhd"
 add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/powerled_vh.vhd"
+add_file -vhdl -lib work "C:/Users/firas.abdelghani/Dropbox/Board-Design/Board-Design-Git/Lattice FPGA Works/TensorI22/hda_strap_vh.vhd"
 
 
 

@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=SBCTI22WORK3
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../TensorI22/all_sys_pwrgd.vhd=work,../TensorI22/counter.vhd=work,../TensorI22/dsw_pwrok.vhd=work,../TensorI22/pch_pwrok.vhd=work,../TensorI22/primary_voltages_enabler.vhd=work,../TensorI22/rsmrst_pwrgd.vhd=work,../TensorI22/sys_pwrok.vhd=work,../TensorI22/Top.vhd=work,../TensorI22/vpp_vddq.vhd=work,../TensorI22/powerled_vh.vhd=work
+ProjectVFiles=../TensorI22/all_sys_pwrgd.vhd=work,../TensorI22/counter.vhd=work,../TensorI22/dsw_pwrok.vhd=work,../TensorI22/pch_pwrok.vhd=work,../TensorI22/primary_voltages_enabler.vhd=work,../TensorI22/rsmrst_pwrgd.vhd=work,../TensorI22/sys_pwrok.vhd=work,../TensorI22/Top.vhd=work,../TensorI22/vpp_vddq.vhd=work,../TensorI22/powerled_vh.vhd=work,../TensorI22/hda_strap_vh.vhd=work
 ProjectCFiles=
 CurImplementation=SBCTI22WORK3_Implmnt
 Implementations=SBCTI22WORK3_Implmnt

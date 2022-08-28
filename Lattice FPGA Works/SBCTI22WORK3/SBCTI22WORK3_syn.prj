@@ -18,6 +18,7 @@ add_file -vhdl -lib work "../TensorI22/sys_pwrok.vhd"
 add_file -vhdl -lib work "../TensorI22/Top.vhd" 
 add_file -vhdl -lib work "../TensorI22/vpp_vddq.vhd" 
 add_file -vhdl -lib work "../TensorI22/powerled_vh.vhd" 
+add_file -vhdl -lib work "../TensorI22/hda_strap_vh.vhd" 
 #implementation: "SBCTI22WORK3_Implmnt"
 impl -add SBCTI22WORK3_Implmnt -type fpga
 
