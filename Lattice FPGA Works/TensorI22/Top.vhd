@@ -151,6 +151,15 @@ ARCHITECTURE bdf_type OF TOP IS
 	pwm_out:     out std_logic); 
     END COMPONENT;
 
+
+	COMPONENT hda_strap_block
+	Port(
+	pch_pwrok:    in  std_logic; -- 100KHz clock, T = 10uSec		
+	GPIO_PCH:     in  std_logic; -- -- GPIO_FPGA_PCH_1 (GPP_G1/SD_D0) in SBC-CLH-1-3
+	clk_100Khz:   in  std_logic;
+	HDA_SDO_FPGA: out std_logic); 
+    END COMPONENT;
+
     
 	SIGNAL clk_100Khz_signal : STD_LOGIC;
 	SIGNAL slp_s3n_signal : STD_LOGIC;
@@ -169,14 +178,23 @@ ARCHITECTURE bdf_type OF TOP IS
 
 BEGIN
 
+--################################################################################################################################################--
+--############################################################ IMVP9 CONTROLLERS ATP #############################################################--
+                                                           
+    --VCCIN_VR_PE <= '1'; 
+	--VCCINAUX_VR_PE <= '1'; 
+
+--################################################################################################################################################--
+--################################################################################################################################################--
+
+    SUSWARN_N <= GPIO_FPGA_SoC_4;
+
+--################################################################################################################################################--
+--################################################################################################################################################--
+
 	PCH_PWROK <= pch_pwrok_signal;
 	SYS_PWROK <= pch_pwrok_signal; 
 	DSW_PWROK <= DSW_PWROK_signal;
-
-	---------------------------------------------------------- DEBUG -------------------------------------------------------------------
-	SUSWARN_N <= GPIO_FPGA_SoC_4;
-	---------------------------------------------------------- DEBUG -------------------------------------------------------------------
-
 	VCCST_PWRGD <= all_sys_pwrgd_signal;
 	VCCIN_EN <= all_sys_pwrgd_signal;
 	RSMRSTn <= RSMRSTn_signal;
@@ -256,5 +274,12 @@ BEGIN
 	SLP_S4n => slp_s4n_signal,
 	mem_alert => GPIO_FPGA_SoC_4,
 	pwm_out => PWRBTN_LED); 
+
+	HDA_STRAP : hda_strap_block
+	Port MAP (
+	pch_pwrok => pch_pwrok_signal, 	
+	GPIO_PCH => GPIO_FPGA_SoC_1, -- -- GPIO_FPGA_PCH_1 (GPP_G1/SD_D0) in SBC-CLH-1-3
+    clk_100Khz => clk_100Khz_signal,
+	HDA_SDO_FPGA => HDA_SDO_ATP); 
 
 END bdf_type;
