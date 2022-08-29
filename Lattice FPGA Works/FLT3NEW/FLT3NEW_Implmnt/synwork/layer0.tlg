@@ -1,0 +1,66 @@
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":6:7:6:9|Synthesizing work.top.bdf_type.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":168:8:168:25|Signal vccst_pwrgd_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":172:8:172:29|Signal delayed_vddq_ok_signal is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\pch_pwrok.vhd":5:7:5:21|Synthesizing work.pch_pwrok_block.pch_pwrok_block_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\pch_pwrok.vhd":15:17:15:18|Using user defined encoding for type state_type.
+Post processing for work.pch_pwrok_block.pch_pwrok_block_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\all_sys_pwrgd.vhd":6:7:6:25|Synthesizing work.all_sys_pwrgd_block.sys_pwrgd_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\all_sys_pwrgd.vhd":20:17:20:18|Using user defined encoding for type state_type.
+Post processing for work.all_sys_pwrgd_block.sys_pwrgd_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\vpp_vddq.vhd":16:7:16:20|Synthesizing work.vpp_vddq_block.vpp_vddq_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\vpp_vddq.vhd":30:17:30:18|Using user defined encoding for type state_type.
+Post processing for work.vpp_vddq_block.vpp_vddq_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\PWRBTN.vhd":6:7:6:18|Synthesizing work.pwrbtn_block.pwrbtn_arch.
+Post processing for work.pwrbtn_block.pwrbtn_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\rsmrst_pwrgd.vhd":13:7:13:24|Synthesizing work.rsmrst_pwrgd_block.rsmrst_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\rsmrst_pwrgd.vhd":29:17:29:18|Using user defined encoding for type state_type.
+Post processing for work.rsmrst_pwrgd_block.rsmrst_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\primary_voltages_enabler.vhd":6:7:6:30|Synthesizing work.primary_voltages_enabler.rsmrst_arch.
+Post processing for work.primary_voltages_enabler.rsmrst_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\dsw_pwrok.vhd":5:7:5:21|Synthesizing work.dsw_pwrok_block.dsw_pwrok_arch.
+@N: CD234 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\dsw_pwrok.vhd":13:17:13:18|Using user defined encoding for type state_type.
+Post processing for work.dsw_pwrok_block.dsw_pwrok_arch
+@N: CD630 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\counter.vhd":7:7:7:19|Synthesizing work.counter_block.counter_arch.
+Post processing for work.counter_block.counter_arch
+Post processing for work.top.bdf_type
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":53:2:53:10|Signal V33A_EN_N is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":47:2:47:12|Signal SYS_RESET_N is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":44:2:44:13|Signal SMBUS_GPIO_6 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":43:2:43:13|Signal SMBUS_GPIO_5 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":42:2:42:13|Signal SMBUS_GPIO_4 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":41:2:41:13|Signal SMBUS_GPIO_3 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":40:2:40:13|Signal SMBUS_GPIO_2 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":39:2:39:13|Signal SMBUS_GPIO_1 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":38:2:38:13|Signal SMBUS_GPIO_0 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":35:2:35:18|Signal PWRBTN_FPGA_LED_2 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":24:2:24:13|Signal HDA_SDO_FPGA is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":22:2:22:16|Signal GPIO_FPGA_M2E_1 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":17:2:17:15|Signal FPGA_GPIO_OUT1 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":16:2:16:15|Signal FPGA_GPIO_OUT0 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":13:2:13:18|Signal EN_DS2_Yellow_LED is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":12:2:12:17|Signal EN_DS2_Green_LED is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":8:2:8:6|Signal CDONE is floating; a simulation mismatch is possible.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\dsw_pwrok.vhd":26:2:26:3|Trying to extract state machine for register curr_state.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\dsw_pwrok.vhd":7:2:7:10|Input V33DSW_OK is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\primary_voltages_enabler.vhd":8:1:8:10|Input clk_100Khz is unused.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\rsmrst_pwrgd.vhd":52:2:52:3|Trying to extract state machine for register curr_state.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\PWRBTN.vhd":8:2:8:11|Input clk_100Khz is unused.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\vpp_vddq.vhd":49:2:49:3|Trying to extract state machine for register curr_state.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\all_sys_pwrgd.vhd":39:4:39:5|Trying to extract state machine for register curr_state.
+@N: CL201 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\pch_pwrok.vhd":31:3:31:4|Trying to extract state machine for register curr_state.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":9:2:9:15|Input CPU_C10_GATE_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":10:2:10:9|Input CPUPWRGD is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":14:2:14:14|Input FPGA_GPIO_IN0 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":15:2:15:14|Input FPGA_GPIO_IN1 is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":20:2:20:16|Input FPGA_WD_TRIGGER is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":23:2:23:13|Input H_THRMTRIP_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":29:2:29:10|Input PLT_RST_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":30:2:30:13|Input PMC_SLP_S0_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":31:2:31:13|Input PMC_SLP_S5_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":32:2:32:13|Input PMC_SLP_S3_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":34:2:34:15|Input PMC_SLP_WLAN_N is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":45:2:45:12|Input SUSACK_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":49:2:49:9|Input TPM_GPIO is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":50:2:50:13|Input V12_MAIN_MON is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":61:2:61:11|Input VCCST_FPGA is unused.
+@N: CL159 :"C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FTL3\TOP.vhd":68:2:68:9|Input VR_PGOOD is unused.

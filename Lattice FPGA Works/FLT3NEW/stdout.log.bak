@@ -1,0 +1,79 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\iCEcube2.2020.12\synpbase
+Hostname:    FIRAS-AIRTOP
+Date:        Sun Aug 28 15:54:03 2022
+Version:     L-2016.09L+ice40
+
+Arguments:   -product synplify_pro -batch FLT3NEW_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+auto_infer_blackbox is not supported in current product.
+log file: "C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\FLT3NEW.srr"
+Running: FLT3NEW_Implmnt in foreground
+
+Running FLT3NEW_syn|FLT3NEW_Implmnt
+
+Running: compile (Compile) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:03 2022
+
+Running: compile_flow (Compile Process) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:03 2022
+
+Running: compiler (Compile Input) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:03 2022
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\synwork\FLT3NEW_comp.srs to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\FLT3NEW.srs
+
+compiler completed
+# Sun Aug 28 15:54:05 2022
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:05 2022
+
+multi_srs_gen completed
+# Sun Aug 28 15:54:05 2022
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\synwork\FLT3NEW_mult.srs to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\FLT3NEW.srs
+Complete: Compile Process on FLT3NEW_syn|FLT3NEW_Implmnt
+
+Running: premap (Pre-mapping) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:05 2022
+
+premap completed with warnings
+# Sun Aug 28 15:54:06 2022
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on FLT3NEW_syn|FLT3NEW_Implmnt
+
+Running: map (Map) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:06 2022
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on FLT3NEW_syn|FLT3NEW_Implmnt
+# Sun Aug 28 15:54:06 2022
+Copied C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\synwork\FLT3NEW_m.srm to C:\Users\firas.abdelghani\Dropbox\Board-Design\Board-Design-Git\Lattice FPGA Works\FLT3NEW\FLT3NEW_Implmnt\FLT3NEW.srm
+
+fpga_mapper completed with warnings
+# Sun Aug 28 15:54:07 2022
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Map on FLT3NEW_syn|FLT3NEW_Implmnt
+Complete: Logic Synthesis on FLT3NEW_syn|FLT3NEW_Implmnt
+
+exit status=0
+
+exit status=0
+
